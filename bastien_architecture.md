@@ -69,6 +69,6 @@ The platform consists of the following services and libraries:
 | `universal-logger` | Go/C++ | Standardized logging facade and bootstrap |
 | `distributed-config` | Go | Configuration loading, env expansion, sync |
 | `safe-socket` | Go/Python | Cap'n Proto transport for log messages |
-| `flexible-logger` | Go | **DEPRECATED** — replaced by `universal-logger` |
+| `flexible-logger` | Go | Legacy log processing engine / log routing |
 | `docker-deployment` | Docker | Production docker-compose orchestration |
 | `testing-sandbox` | Shell | Integration and resilience testing harness |

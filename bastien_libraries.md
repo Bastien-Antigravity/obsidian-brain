@@ -9,7 +9,7 @@ microservice-toolbox  (config, CLI, networking primitives)
         └── safe-socket  (Cap'n Proto transport)
 
 universal-logger  (logging facade + bootstrap)
-    └── flexible-logger  (DEPRECATED - underlying engine, do NOT use directly)
+    └── flexible-logger  (underlying log routing engine)
     └── distributed-config  (for config-based log level)
 ```
 
@@ -79,8 +79,8 @@ defer logger.Close()
 logger.Info("Service started on %s", addr)
 ```
 
-### Migration Note
-`flexible-logger` is **DEPRECATED**. All services must import `universal-logger/src/interfaces` instead of `flexible-logger/src/interfaces`. The `Logger` interface is compatible — only the import path changes.
+### Integration Note
+`flexible-logger` operates alongside `universal-logger`. Services should primarily import `universal-logger/src/interfaces` for the logging facade, while `flexible-logger` acts as the routing engine.
 
 ---
 
@@ -121,7 +121,7 @@ Uses the Facade pattern with transport profiles (TCP, Unix socket) and protocol 
 
 ---
 
-## 5. flexible-logger (DEPRECATED)
+## 5. flexible-logger
 **Module**: `github.com/Bastien-Antigravity/flexible-logger` (v1.1.0)
-**Status**: **DEPRECATED** — Do NOT add new dependencies on this library.
-**Migration**: Replace all imports of `flexible-logger/src/interfaces` with `universal-logger/src/interfaces`. The `Logger` interface is API-compatible.
+**Status**: **Active** — Log processing engine and structured data router.
+**Integration**: Functions alongside `universal-logger` as the underlying engine.

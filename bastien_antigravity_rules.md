@@ -23,7 +23,7 @@ You are an expert Systems Architect for the Bastien-Antigravity project—a poly
 
 ### 3. Shared Libraries & Toolbox
 - **microservice-toolbox**: Polyglot (Go/Rust/Python) library providing standardized CLI argument parsing, configuration loading, and networking primitives. **Go is the source of truth** for API parity.
-- **universal-logger**: Standardized logging facade (Go/C++) with bootstrap initialization. Replaces the deprecated `flexible-logger`.
+- **universal-logger**: Standardized logging facade (Go/C++) with bootstrap initialization. Can be used alongside `flexible-logger`.
 - **distributed-config**: Go library for YAML-based configuration with environment variable expansion, capability mapping, and config-server sync.
 - **safe-socket**: Lightweight Cap'n Proto transport for log transmission.
 - **Rules File**: [Shared Libraries Reference](bastien_libraries.md)
