@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "1ff93b3f4e84ca5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "96fdceb1465f14f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29bf4867484b0d4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-AI-Assistant/Sprint-Dashboard.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sprint-Dashboard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "99047b0fe5f006f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "54839004c03db775",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8800dcdb3b87a3ec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "2cdbc3db575536e0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "a4b6bff05a8f41e6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signets"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "50293e3f8d6881ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "93d71a9b60a06479",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03798754bd7a1d4f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sans titre.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour Sans titre"
+            }
+          },
+          {
+            "id": "1d62f4d0cae8b4f4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sans titre.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de Sans titre"
+            }
+          },
+          {
+            "id": "f5de749424c3dbf0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "f64f8132c9eb6b72",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "2843465d843feff6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Sans titre.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de Sans titre"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false
+    }
+  },
+  "active": "29bf4867484b0d4c",
+  "lastOpenFiles": [
+    "01-AI-Assistant/bastien_antigravity_rules.md",
+    "01-AI-Assistant/bastien_ai_workflow.md",
+    "01-AI-Assistant/AI-Session-State.md",
+    "02-Architecture-and-Design/Ecosystem-Topology.canvas",
+    "Sans titre.base",
+    "01-AI-Assistant/Sprint-Dashboard.md",
+    "Sans titre.canvas",
+    "2026-04-15.md",
+    "TODO.md",
+    "02-Architecture-and-Design/bastien_networking.md",
+    "02-Architecture-and-Design/05-Microservice-Map.md",
+    "03-Coding-and-Libraries/bastien_coding_style.md",
+    "02-Architecture-and-Design/04-Process-Lifecycle.md",
+    "02-Architecture-and-Design/03-Repository-Structure.md",
+    "02-Architecture-and-Design/02-Decoupling-and-Interfaces.md",
+    "02-Architecture-and-Design/01-Facade-Pattern.md",
+    "README.md",
+    "00-Knowledge-Strategy.md",
+    "04-Deployment/bastien_deployment.md",
+    "03-Coding-and-Libraries/bastien_libraries.md",
+    "03-Coding-and-Libraries/bastien_documentation.md",
+    "02-Architecture-and-Design/bastien_configuration.md",
+    "02-Architecture-and-Design/bastien_architecture.md"
+  ]
+}

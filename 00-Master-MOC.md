@@ -1,40 +1,57 @@
-# Bastien-Antigravity: Knowledge Hub
-
-Welcome to the central knowledge repository for the Bastien-Antigravity ecosystem. This directory contains the modular "Source of Truth" documents that govern the architecture, coding standards, and operational workflows of our polyglot microservices platform.
-
-## 🧭 Navigation Guide
-
-Refer to the documents below for specific technical standards:
-
-| Document | Purpose |
-|---|---|
-| [**System Hub**](bastien_antigravity_rules.md) | The primary AI system prompt and overview of all core pillars. |
-| [**Architecture**](bastien_architecture.md) | Standards for the Facade pattern, Decoupling, and Component Organization. |
-| [**AI Workflow**](bastien_ai_workflow.md) | Branching rules (`develop` -> `main`), Commit standards, and Testing requirements. |
-| [**Coding Style**](bastien_coding_style.md) | Idioms for Go, Rust, and Python. Naming conventions (`IInterface`, `MModel`). |
-| [**Libraries**](bastien_libraries.md) | Reference for `microservice-toolbox`, `universal-logger`, and `safe-socket`. |
-| [**Networking**](bastien_networking.md) | gRPC control protocols, NATS bus, and WebSocket publishing. |
-| [**Deployment**](bastien_deployment.md) | YAML standards, Profile management, and Docker Guard rules. |
-| [**Documentation**](bastien_documentation.md) | ASCII topology diagrams and ARCHITECTURE.md requirements. |
-
+---
+microservice: ecosystem-core
+type: moc
+status: active
+author: Ruzava & Antigravity
 ---
 
-## 🛠️ Operational Tools
+# 🌌 Bastien-Antigravity: Master Knowledge Hub (MOC)
 
-This directory also houses the central automation scripts used to maintain the ecosystem:
+Welcome to the central Map of Content (MOC) for the ecosystem. This serves as the root node of our Obsidian Brain, governing the architecture, standards, and workflows.
 
-*   [`bastien_make.py`](bastien_make.py): Modular build/test wrapper for individual repositories.
-*   [`bastien_orchestrator.py`](bastien_orchestrator.py): High-level multi-repo builder used for workspace-wide validation.
+## 🤖 01 - AI Assistant & System Hub
+These define how I (Antigravity) and other assistants must operate and behave.
+- [[bastien_antigravity_rules|The System Hub (Primary Prompt)]]
+- [[bastien_ai_workflow|AI Workflow & Git Branching]]
+- [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
+
+## 📐 02 - Architecture & Design
+The structural paradigms for all polyglot microservices.
+- [[Ecosystem-Topology.canvas|🎨 Visual Ecosystem Topology]]
+- [[01-Facade-Pattern|The Facade Pattern Rules]]
+- [[02-Decoupling-and-Interfaces|Decoupling & Interfaces]]
+- [[03-Repository-Structure|Repository Layouts]]
+- [[04-Process-Lifecycle|Process Lifecycle]]
+- [[05-Microservice-Map|Ecosystem Map]]
+- [[bastien_configuration|Configuration Standard]]
+- [[bastien_networking|Networking Protocols]]
+
+## 📚 03 - Coding & Libraries
+Idioms, standards, and our shared toolbox.
+- [[bastien_coding_style|Shared Coding Idioms]]
+- [[bastien_documentation|Documentation Requirements]]
+- [[bastien_libraries|Core Libraries & Toolbox]]
+
+## 🚀 04 - Deployment
+How we get our code to production.
+- [[bastien_deployment|Deployment Strategies]]
+
+## 🧬 05 - Automation Scripts
+Scripts that string the ecosystem together.
+- [[bastien_make.py|Modular Build Wrapper]]
+- [[bastien_orchestrator.py|Multi-repo Validator]]
 
 ---
+## 🧪 Quality & Testing
+Quality Assurance is centralized down in the `sandbox-testing` microservice repo. We will eventually link test scenarios here natively.
+Always request native behavior specs, and we will translate them into Docker/Native execution!
 
-## 🧪 Testing Excellence
-
-Quality Assurance is centralized in the [**sandbox-testing**](../sandbox-testing/README.md) repository. 
-
-### AI-Driven Scenarios
-The AI assistant is trained to generate "Behavioral Specs" natively in the sandbox. To use this feature, simply request a scenario (e.g., *"Antigravity, generate a stress-test for the notif-server gRPC lifecycle"*).
-
-Available testing modes:
-*   **Native Mode**: Direct execution of local binaries.
-*   **Docker Mode**: containerized orchestration via Docker Compose.
+---
+> [!info]- ⚙️ Quick Global Query
+> *(Note: You need the Dataview plugin active to see this)*
+> ```dataview
+> table status, type
+> from ""
+> where type = "moc" or type = "architecture"
+> sort file.name asc
+> ```
