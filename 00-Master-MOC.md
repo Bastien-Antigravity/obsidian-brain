@@ -15,6 +15,7 @@ These define how I (Antigravity) and other assistants must operate and behave.
 - [[AI-Workflow-and-Branching|AI Workflow & Git Branching]]
 - [[00-Daily-AI-Playbook|📖 Daily AI Playbook (Workflow)]]
 - [[00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook (5D Paradigm)]]
+- [[00-Obsidian-App-Config|⚙️ Obsidian App Configuration Guide]]
 - [[01-AI-Assistant/Inbox/Legacy-Tasks|📥 Task Inbox]]
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]

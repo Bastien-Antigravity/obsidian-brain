@@ -20,11 +20,12 @@ The documentation here is not stored in deep, confusing folders. Instead, it rel
 ## 🧑‍💻 How to use it WITHOUT AI (Human Mode)
 
 If you are a developer looking at this repository on your own:
-1. **Install Obsidian:** Download Obsidian (it's free) and open this exact folder (`obsidian-brain`) as your Vault.
-2. **Start at the MOC:** Open `00-Master-MOC.md`. This is the Map of Content, functioning as the table of contents for the entire ecosystem.
-3. **Navigate via Graph/Links:** Click on `[[links]]` inside the documents to jump between rules, tutorials, and architecture decisions.
-4. **Authoring:** Keep files atomic. If an architecture document gets too large, split it into smaller documents!
-5. **Templates:** When creating a new AI task or architecture node, make sure your core Templates plugin is pointed to `05-Scripts/.obsidian-templates/`. You can inject the required Dataview frontmatter automatically.
+1. **Install Obsidian:** Download Obsidian (it's free).
+2. **Configure the App:** Follow the steps in **[[00-Obsidian-App-Config.md]]** (at the root) to set up Dataview and Sidebar Automation.
+3. **Start at the MOC:** Open `00-Master-MOC.md`. This is the Map of Content, functioning as the table of contents for the entire ecosystem.
+4. **Navigate via Graph/Links:** Click on `[[links]]` inside the documents to jump between rules, tutorials, and architecture decisions.
+5. **Authoring:** Keep files atomic. If an architecture document gets too large, split it into smaller documents!
+6. **Templates:** When creating a new AI task or architecture node, make sure your core Templates plugin is pointed to `obsidian-brain/05-Scripts/.obsidian-templates/`. You can inject the required Dataview frontmatter automatically.
 
 ---
 
