@@ -1,20 +1,22 @@
-import sys
-import os
-import subprocess
-from pathlib import Path
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from sys import exit as sysExit, executable as sysExecutable, argv as sysArgv
+from subprocess import run as subprocessRun
+from pathlib import Path as pathlibPath
 
 def run_cmd(cmd, cwd):
     print(f"[{cwd}] Running: {' '.join(cmd)}")
-    result = subprocess.run(cmd, cwd=cwd)
+    result = subprocessRun(cmd, cwd=cwd)
     if result.returncode != 0:
         print(f"Error: Command failed with exit code {result.returncode}")
-        sys.exit(result.returncode)
+        sysExit(result.returncode)
 
 def detect_and_run(target_action, root_dir):
-    root_path = Path(root_dir).resolve()
+    root_path = pathlibPath(root_dir).resolve()
     if not root_path.exists():
         print(f"Error: Directory {root_dir} does not exist.")
-        sys.exit(1)
+        sysExit(1)
 
     print(f"=== Build-Wrapper: {target_action} on {root_path.name} ===")
 
@@ -39,26 +41,26 @@ def detect_and_run(target_action, root_dir):
         py_dir = root_path / "python" if (root_path / "python").exists() else root_path
         if target_action == "build":
             # Just do a compile syntax check for Python "builds"
-            run_cmd([sys.executable, "-m", "compileall", "."], str(py_dir))
+            run_cmd([sysExecutable, "-m", "compileall", "."], str(py_dir))
         elif target_action == "test":
             # Default to pytest if it exists, else just unittest
             try:
-                run_cmd([sys.executable, "-m", "pytest"], str(py_dir))
+                run_cmd([sysExecutable, "-m", "pytest"], str(py_dir))
             except Exception:
-                run_cmd([sys.executable, "-m", "unittest", "discover"], str(py_dir))
+                run_cmd([sysExecutable, "-m", "unittest", "discover"], str(py_dir))
 
     print(f"=== {target_action} completed ===")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
+    if len(sysArgv) < 3:
         print("Usage: python Build-Wrapper.py <build|test> <repo_dir>")
-        sys.exit(1)
+        sysExit(1)
         
-    action = sys.argv[1]
-    target = sys.argv[2]
+    action = sysArgv[1]
+    target = sysArgv[2]
     
     if action not in ["build", "test"]:
         print("Unsupported action. Use build or test.")
-        sys.exit(1)
+        sysExit(1)
         
     detect_and_run(action, target)

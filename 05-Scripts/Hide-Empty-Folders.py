@@ -13,40 +13,38 @@ Bastien-Antigravity/
 │       └── hide_empty_folders.py   <-- ce script
 """
 
-import os
-from pathlib import Path
+from os import walk as osWalk
+from pathlib import Path as pathlibPath
 
 # ==========================================================
 # LOCALISATION AUTOMATIQUE
 # ==========================================================
 
-SCRIPT_DIR = Path(__file__).resolve().parent
+SCRIPT_DIR = pathlibPath(__file__).resolve().parent
 
 # On remonte de 'obsidian-brain/05-Scripts' vers la racine 'Bastien-Antigravity'
 VAULT_ROOT = SCRIPT_DIR.parents[1]
 
 OBSIDIAN_DIR = VAULT_ROOT / ".obsidian"
 SNIPPETS_DIR = OBSIDIAN_DIR / "snippets"
-CSS_FILE = SNIPPETS_DIR / "hide_empty_folders.css"
+CSS_FILE = SNIPPETS_DIR / "Hide-Empty-Folders.css"
 
 # dossiers à ignorer totalement
 IGNORE_DIRS = {
     ".obsidian",
     ".git",
-    "__pycache__",
-    "node_modules",
 }
 
 # ==========================================================
 # OUTILS
 # ==========================================================
 
-def contains_md_recursive(folder: Path) -> bool:
+def contains_md_recursive(folder: pathlibPath) -> bool:
     """
     True si ce dossier contient au moins un .md
     dans lui-même ou n'importe quel sous-dossier.
     """
-    for root, dirs, files in os.walk(folder):
+    for root, dirs, files in osWalk(folder):
         # Ignore technical directories
         dirs[:] = [d for d in dirs if d not in IGNORE_DIRS]
 
@@ -70,8 +68,8 @@ def css_escape(path_str: str) -> str:
 
 folders_to_hide = []
 
-for root, dirs, files in os.walk(VAULT_ROOT):
-    root_path = Path(root)
+for root, dirs, files in osWalk(VAULT_ROOT):
+    root_path = pathlibPath(root)
 
     # ignorer dossiers techniques
     dirs[:] = [d for d in dirs if d not in IGNORE_DIRS]
@@ -92,7 +90,7 @@ for root, dirs, files in os.walk(VAULT_ROOT):
 SNIPPETS_DIR.mkdir(parents=True, exist_ok=True)
 
 lines = [
-    "/* Fichier généré automatiquement par hide_empty_folders.py */",
+    "/* Fichier généré automatiquement par Hide-Empty-Folders.py */",
     "/* Masque les dossiers ne contenant aucune documentation (.md) dans le sidebar */",
     "",
 ]
@@ -113,4 +111,4 @@ print(f"CSS généré : {CSS_FILE}")
 print(f"Dossiers masqués : {len(folders_to_hide)}")
 print("")
 print("Dans Obsidian :")
-print("Settings > Appearance > CSS Snippets > activer hide_empty_folders.css")
+print("Settings > Appearance > CSS Snippets > activer Hide-Empty-Folders.css")

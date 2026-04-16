@@ -49,4 +49,3 @@ You never have to lose context between days.
 If you are an AI assistant tasked with working in this ecosystem, you MUST initialize your context using the following prompt:
 
 > *"Read the ecosystem map in **[[00-Master-MOC]]** and restore session state from **[[01-AI-Assistant/AI-Session-State]]**. Follow the standardized loop in **[[00-Daily-AI-Playbook]]**."*
-
