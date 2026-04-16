@@ -1,4 +1,4 @@
-# AI Workflow & Orchestration Guidelines
+# AI Workflow & Orchestration Guidelines 🚀 `Status: Active`
 
 This document governs how the AI assistant operates inside the `Bastien-Antigravity` polyrepo ecosystem. AI agents must enforce these operational rules precisely.
 

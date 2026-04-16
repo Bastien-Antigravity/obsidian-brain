@@ -29,6 +29,7 @@ When I am coding, I must follow these mandatory steps:
 - **Build First**: Run `python obsidian-brain/05-Scripts/Build-Wrapper.py` to validate code locally.
 - **Commit Often**: Use Conventional Commits (`feat:`, `fix:`, `refactor:`).
 - **Branch Strategy**: Follow the `develop` -> `main` flow defined in [[AI-Workflow-and-Branching]].
+    - *Pro-Tip*: Always commit to `develop` first, then merge to `main` to keep your production branch clean and protected.
 
 ## 4. Closing the Session (Evening)
 Save the progress so we can resume seamlessly tomorrow.
