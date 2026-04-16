@@ -42,3 +42,43 @@ We maintain high-level topological records inside the `/doc` directory of every 
 - The `prompt/` repository contains modular AI system prompts for coding assistants.
 - These prompts document the ecosystem's architecture, coding conventions, and library APIs.
 - **Update Rule**: When a library API changes or a new service is added, update the relevant prompt files in `prompt/`.
+
+---
+
+## Standardized Repository File Structure
+Every repository in the ecosystem MUST contain:
+
+| File | Purpose |
+|------|---------|
+| `README.md` | User-facing documentation |
+| `ARCHITECTURE.md` | System design deep-dive |
+| `AI-Session-State.md` | AI context persistence (at root) |
+| `AI-Init.md` | AI onboarding beacon (at root) |
+| `.github/` | CI/CD workflows |
+| `.gitignore` | Git exclusions |
+
+Optional but recommended:
+| File | Purpose |
+|------|---------|
+| `TESTING.md` | Test instructions |
+| `TODO.md` | Pending tasks |
+| `Makefile` | Build automation (Go repos) |
+| `Dockerfile` | Container build (server repos) |
+| `.dockerignore` | Docker build exclusions |
+
+## Commit Conventions
+- **Format**: Conventional Commits: `feat:`, `fix:`, `refactor:`, `docs:`, `chore:`
+- **Scoping**: `feat(config-server): add gRPC support`
+- **Branch Strategy**: `develop` → `main` (merge, never rebase)
+- **Protected Branches**: Both `develop` and `main` are protected against force push and deletion.
+
+## Dataview YAML Frontmatter
+All Obsidian-visible docs must include standardized YAML:
+```yaml
+---
+title: "Document Title"
+type: {architecture|repository|session-state}
+status: active
+microservice: {repo-name|ecosystem-wide}
+---
+```

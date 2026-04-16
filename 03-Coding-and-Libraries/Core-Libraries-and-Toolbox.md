@@ -54,33 +54,31 @@ addr = cfg.get_listen_addr("my_service")
 
 ## 2. universal-logger
 **Module**: `github.com/Bastien-Antigravity/universal-logger` (v1.1.6)
-**Languages**: Go, C++
+**Languages**: Go, C++, Python, Rust, VBA (via CGO bridge)
 **Role**: Standardized logging facade. Ensures microservices are decoupled from the underlying logging engine.
 
 ### Key Interfaces
 - `interfaces.Logger` — The main logging interface with methods: `Debug`, `Info`, `Warning`, `Error`, `Critical`, `Stream`, `Logon`, `Logout`, `Trade`, `Schedule`, `Report`.
-- `bootstrap.Init(serviceName, profile, logMode, logLevel, enableNotif)` → Returns `(*config.DistConfig, interfaces.Logger)`.
+- `bootstrap.Init(Name, ConfigProfile, LoggerProfile, LogLevel, useLocalNotifier, existingConfig)` → Returns `(*config.DistConfig, interfaces.Logger)`.
+- `bootstrap.InitWithOptions(BootstrapOptions{})` → Advanced entry point with dependency injection.
 
 ### Log Levels
 `NotSet`, `Debug`, `Stream`, `Info`, `Logon`, `Logout`, `Trade`, `Schedule`, `Report`, `Warning`, `Error`, `Critical`
 
 ### Usage Pattern
 ```go
-import (
-    "github.com/Bastien-Antigravity/universal-logger/src/bootstrap"
-    "github.com/Bastien-Antigravity/universal-logger/src/utils"
-    "github.com/Bastien-Antigravity/universal-logger/src/interfaces"
-)
+import "github.com/Bastien-Antigravity/universal-logger/src/bootstrap"
 
-logLevel := utils.GetLogLevel("INFO")
-cfg, logger := bootstrap.Init("my-service", "standalone", "standard", logLevel, false)
+cfg, logger := bootstrap.Init("my-service", "standalone", "standard", "INFO", false, nil)
 defer logger.Close()
 
 logger.Info("Service started on %s", addr)
 ```
 
 ### Integration Note
-`flexible-logger` operates alongside `universal-logger`. Services should primarily import `universal-logger/src/interfaces` for the logging facade, while `flexible-logger` acts as the routing engine.
+- `flexible-logger` operates alongside `universal-logger` as the underlying routing engine.
+- Language wrappers (C++, Python, Rust, VBA) communicate through the **CGO bridge** (`src/cgo_bridge/`), not Go directly.
+- The Go function signature can change without breaking wrappers, as long as the CGO bridge remains stable.
 
 ---
 
