@@ -11,9 +11,13 @@ Welcome to the central Map of Content (MOC) for the ecosystem. This serves as th
 
 ## 🤖 01 - AI Assistant & System Hub
 These define how I (Antigravity) and other assistants must operate and behave.
-- [[bastien_antigravity_rules|The System Hub (Primary Prompt)]]
-- [[bastien_ai_workflow|AI Workflow & Git Branching]]
+- [[AI-System-Rules|The System Hub (Primary Prompt)]]
+- [[AI-Workflow-and-Branching|AI Workflow & Git Branching]]
+- [[00-Daily-AI-Playbook|📖 Daily AI Playbook (Workflow)]]
+- [[00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook (5D Paradigm)]]
+- [[01-AI-Assistant/Inbox/Legacy-Tasks|📥 Task Inbox]]
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
+- [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
 ## 📐 02 - Architecture & Design
 The structural paradigms for all polyglot microservices.
@@ -23,23 +27,53 @@ The structural paradigms for all polyglot microservices.
 - [[03-Repository-Structure|Repository Layouts]]
 - [[04-Process-Lifecycle|Process Lifecycle]]
 - [[05-Microservice-Map|Ecosystem Map]]
-- [[bastien_configuration|Configuration Standard]]
-- [[bastien_networking|Networking Protocols]]
+- [[06-Transverse-Event-Flows|🌀 Transverse Event Flows]]
+- [[07-Configuration-Standard|Configuration Standard]]
+- [[08-Networking-Protocols|Networking Protocols]]
+
+## 📜 Architecture Decision Records (ADRs)
+The historical ledger of ecosystem-wide technical decisions.
+- [[ADR-001-Safe-Socket-Protocol|ADR-001: Safe-Socket Custom TCP Protocol]]
 
 ## 📚 03 - Coding & Libraries
 Idioms, standards, and our shared toolbox.
-- [[bastien_coding_style|Shared Coding Idioms]]
-- [[bastien_documentation|Documentation Requirements]]
-- [[bastien_libraries|Core Libraries & Toolbox]]
+- [[01-General-Naming-Conventions|General Naming Conventions]]
+- [[02-Go-Memory-and-Concurrency|Go Memory and Concurrency]]
+- [[03-Rust-Safety-and-Async|Rust Safety and Async]]
+- [[04-Python-Types-and-Structure|Python Types and Structure]]
+- [[Documentation-Requirements|Documentation Requirements]]
+- [[Core-Libraries-and-Toolbox|Core Libraries & Toolbox]]
 
 ## 🚀 04 - Deployment
 How we get our code to production.
-- [[bastien_deployment|Deployment Strategies]]
+- [[01-Docker-Infrastructure|Docker Infrastructure]]
+- [[02-Environment-Variables|Environment Variables]]
+- [[03-Health-Checks|Health Checks]]
+- [[04-CICD-and-Lifecycle|CI/CD and Lifecycle]]
 
 ## 🧬 05 - Automation Scripts
 Scripts that string the ecosystem together.
-- [[bastien_make.py|Modular Build Wrapper]]
-- [[bastien_orchestrator.py|Multi-repo Validator]]
+- [[Build-Wrapper.py|Modular Build Wrapper]]
+- [[Multi-Repo-Validator.py|Multi-repo Validator]]
+
+## 🌐 06 - Ecosystem Microservices
+Live documentation directly from the source code repositories.
+- [[config-server/README.md|Config-Server]]
+- [[log-server/README.md|Log-Server]]
+- [[notif-server/README.md|Notif-Server]]
+- [[safe-socket/README.md|Safe-Socket]]
+- [[microservice-toolbox/README.md|Microservice-Toolbox]]
+- [[flexible-logger/README.md|Flexible-Logger]]
+- [[universal-logger/README.md|Universal-Logger]]
+- [[distributed-config/README.md|Distributed-Config]]
+
+> [!info]- 📊 Live Microservices List
+> ```dataview
+> table language as "Language", status as "Status"
+> from ""
+> where type = "repository"
+> sort microservice asc
+> ```
 
 ---
 ## 🧪 Quality & Testing

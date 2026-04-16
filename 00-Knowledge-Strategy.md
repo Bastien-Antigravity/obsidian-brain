@@ -33,7 +33,7 @@ author: Ruzava
 
 ### D. Bidirectional Links: Conceptual Fabric (The "Why")
 **Use for:** connecting ideas contextually. 
-**Our Paradigm:** If `log-server` relies on `microservice-toolbox`, the log-server architecture file should include the link `[[bastien_architecture]]` or `[[microservice-toolbox]]`. This naturally builds an interactive dependency graph we can visualize in Obsidian.
+**Our Paradigm:** If `log-server` relies on `microservice-toolbox`, the log-server architecture file should include the link `[[05-Microservice-Map]]` or `[[microservice-toolbox]]`. This naturally builds an interactive dependency graph we can visualize in Obsidian.
 
 ---
 
@@ -56,7 +56,7 @@ How do we view the data depending on the level of complexity we are trying to un
 ```markdown
 # 🗺 AI Microservice Ecosystem MOC
 ## Core Rules
-- [[bastien_coding_style]]
+- [[Coding-Style-Guide]]
 - [[bastien_architecture]]
 
 ## Active Sprints

@@ -21,10 +21,18 @@ where status = "active"
 sort priority desc
 ```
 
+## 🌐 Ecosystem Microservice States
+```dataview
+table status, last-updated
+from ""
+where type = "session-state"
+sort last-updated desc
+```
+
 ## 📐 Core Architecture Nodes
 ```dataview
 table microservice
-from "02-Architecture-and-Design"
+from ""
 where type = "architecture"
 sort file.name asc
 ```

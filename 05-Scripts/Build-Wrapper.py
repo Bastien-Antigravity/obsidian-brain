@@ -16,7 +16,7 @@ def detect_and_run(target_action, root_dir):
         print(f"Error: Directory {root_dir} does not exist.")
         sys.exit(1)
 
-    print(f"=== bastien_make: {target_action} on {root_path.name} ===")
+    print(f"=== Build-Wrapper: {target_action} on {root_path.name} ===")
 
     # 1. Rust Detection
     if (root_path / "Cargo.toml").exists() or (root_path / "rust" / "Cargo.toml").exists():
@@ -51,7 +51,7 @@ def detect_and_run(target_action, root_dir):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: python bastien_make.py <build|test> <repo_dir>")
+        print("Usage: python Build-Wrapper.py <build|test> <repo_dir>")
         sys.exit(1)
         
     action = sys.argv[1]

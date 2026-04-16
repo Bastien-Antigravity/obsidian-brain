@@ -19,9 +19,9 @@ def run_all(action, root_dir):
     repos = get_repos(root_dir)
     print(f"=== Bastien Orchestrator: Discovered {len(repos)} repositories ===")
     
-    make_script = Path(__file__).parent / "bastien_make.py"
+    make_script = Path(__file__).parent / "Build-Wrapper.py"
     if not make_script.exists():
-        print("Error: bastien_make.py engine missing from .scripts/")
+        print("Error: Build-Wrapper.py engine missing from .scripts/")
         sys.exit(1)
 
     failures = []
@@ -29,7 +29,7 @@ def run_all(action, root_dir):
     for repo in repos:
         print(f"\n--- Processing {repo.name} ---")
         try:
-            # We call the bastien_make script to handle the cross-platform stuff
+            # We call the Build-Wrapper script to handle the cross-platform stuff
             subprocess.run([sys.executable, str(make_script), action, str(repo)], check=True)
         except subprocess.CalledProcessError:
             failures.append(repo.name)
@@ -43,7 +43,7 @@ def run_all(action, root_dir):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python bastien_orchestrator.py <build|test>")
+        print("Usage: python Multi-Repo-Validator.py <build|test>")
         sys.exit(1)
         
     action = sys.argv[1]

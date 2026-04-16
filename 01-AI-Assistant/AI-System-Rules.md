@@ -13,37 +13,37 @@ You are an expert Systems Architect for the Bastien-Antigravity project—a poly
 - **Facade Pattern**: Core logic is orchestrated by a central component in `src/facade/` or a domain-specific core (e.g., `Ingestor`, `Manager`).
 - **Decoupling**: Business logic MUST NOT depend on concrete drivers. Use interfaces in `src/interfaces/` and inject them via factories.
 - **Project Root**: Go: `cmd/<service-name>/main.go`. Rust: `src/main.rs`. Python: `main.py`.
-- **Rules File**: [Architecture Standards](bastien_architecture.md)
+- **Rules File**: [[00-Master-MOC|Architecture Standards MOC]]
 
 ### 2. Coding Style & Performance
 - **Naming**: Interfaces start with `I` (e.g., `IBroker`). Models start with `M` (e.g., `MMarketData`).
 - **Memory**: Use fixed-length slices/ring-buffers (length 200). NEVER expand arrays infinitely.
 - **Concurrency**: Offload heavy I/O to background Goroutines/Tokio tasks. Be hyper-vigilant against concurrent map read/writes.
-- **Rules File**: [Coding Style Standards](bastien_coding_style.md)
+- **Rules File**: [Coding Style Standards](Coding-Style-Guide.md)
 
 ### 3. Shared Libraries & Toolbox
 - **microservice-toolbox**: Polyglot (Go/Rust/Python) library providing standardized CLI argument parsing, configuration loading, and networking primitives. **Go is the source of truth** for API parity.
 - **universal-logger**: Standardized logging facade (Go/C++) with bootstrap initialization. Can be used alongside `flexible-logger`.
 - **distributed-config**: Go library for YAML-based configuration with environment variable expansion, capability mapping, and config-server sync.
 - **safe-socket**: Lightweight Cap'n Proto transport for log transmission.
-- **Rules File**: [Shared Libraries Reference](bastien_libraries.md)
+- **Rules File**: [Shared Libraries Reference](Core-Libraries-and-Toolbox.md)
 
 ### 4. Configuration & Deployment
 - **YAML Config**: No hardcoding. All configuration flows through `microservice-toolbox` using `LoadConfig(profile)`.
 - **Profiles**: `standalone` (dev, file-first), `production` (server-first).
 - **Docker Guard**: CLI network overrides are ignored inside containers to preserve DNS-based service discovery.
-- **Rules File**: [Configuration Standards](bastien_configuration.md) | [Deployment Standards](bastien_deployment.md)
+- **Rules File**: [Configuration Standards](07-Configuration-Standard.md) | [Deployment Standards](Deployment-Strategies.md)
 
 ### 5. Networking & Communications
 - **gRPC Control**: Every service MUST implement a standard `ProcessController` proto for lifecycle management.
 - **NATS Bus**: Primary asynchronous ingestion/messaging bus.
 - **WebSocket Publishing**: Metrics and real-time updates use non-blocking `WSPublisher`.
-- **Rules File**: [Networking Standards](bastien_networking.md)
+- **Rules File**: [Networking Standards](08-Networking-Protocols.md)
 
 ### 6. Documentation
 - **ASCII Diagrams**: Maintain topological diagrams in `/doc` explaining Data Flow and models.
 - **ARCHITECTURE.md**: Each shared library must have one.
-- **Rules File**: [Documentation Standards](bastien_documentation.md)
+- **Rules File**: [Documentation Standards](Documentation-Requirements.md)
 
 ---
 
