@@ -1,4 +1,4 @@
-﻿---
+---
 microservice: obsidian-brain
 type: session-state
 status: active
@@ -23,10 +23,10 @@ directives:
 - **Workspace Automation:** Deployed and ran the `hide_empty_folders.py` script, masking 1,086 technical folders for a clean Obsidian experience.
 - **App Configuration Ecosystem:** Created the **[[00-Obsidian-App-Config]]** and updated the ecosystem READMEs to point clearly to our configuration standards.
 
-## ðŸ› Pending Bugs / Issues
+## Pending Bugs / Issues
 - None. System is fully operational.
 
-## â­ Next Actions (Next Session)
+## ­ Next Actions (Next Session)
 1. Execute a "Dry Run" training practice. We will do a simulated coding sprint where you assign me a feature via an `#ai/task` file, and I will show you how I use the Obsidian Brain to solve it.
 2. Atomize the remaining monolithic documentation files (`Deployment-Strategies.md`, `Coding-Style-Guide.md`) utilizing the new `Template-Architecture.md`.
 

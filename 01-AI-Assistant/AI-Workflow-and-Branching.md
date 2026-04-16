@@ -32,4 +32,10 @@ This document governs how the AI assistant operates inside the `Bastien-Antigrav
 
 ## 4. Universal Scripts & Local Tooling
 - Do not expect global system-tools like `curl`, `jq`, or `sed`. Rely on the `Bastien-Antigravity/antigravity-workspace/` tooling engine structure to orchestrate complex validation across folders.
-- **Awareness**: Always remember that `antigravity-workspace/` and `prompt/` templates are housed locally in the workspace umbrella. Leverage them to maximize your own testing confidence before pushing to external GitHub repos.
+## 5. Documentation & Brain Integrity (MANDATORY)
+
+To ensure the ecosystem remains professional and the AI remains "Project Aware," the following autonomous rules apply:
+- **Autonomous Doc Updates**: Any code change (feat, fix, refactor) that modifies public APIs, configuration parameters, or setup steps MUST be accompanied by an automatic update of the corresponding `README.md`, `ARCHITECTURE.md`, or `TESTING.md` in the same repository.
+- **Brain Maintenance**: After completing a task, the AI MUST check if any Map of Content (MOC), Topology Canvas, or Zettelkasten nodes in the `obsidian-brain` require synchronization or new links.
+- **Context Preservation**: Every session and significant feature completion MUST finalize with an update to the repository-specific `AI-Session-State.md`.
+

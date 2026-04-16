@@ -36,6 +36,19 @@ Save the progress so we can resume seamlessly tomorrow.
 - **Command**: *"Save session state"*
 - **Reference**: [[AI-Session-State]]
 
+## 5. The Integrity Loop (Autonomous Doc Cleanup)
+When a task is complete, the AI must automatically:
+1. **Sync READMEs**: Update any microservice `README.md` impacted by code changes.
+2. **Update Session-State**: Log the latest local progress in the repo-specific `AI-Session-State.md`.
+3. **Bridge to Brain**: Update the `00-Master-MOC` or any Architecture node if a new system-wide rule is discovered.
+
+---
+
+## ⚡ Quick-Start Magic Prompt
+Copy and paste this at the start of any new session to perfectly orient the AI:
+
+> *"Restore session state from **[[01-AI-Assistant/AI-Session-State]]** and read the ecosystem map in **[[00-Master-MOC]]**. Follow the standardized loop in **[[00-Daily-AI-Playbook]]**."*
+
 ---
 > [!TIP] Use the Beacons!
 > You can point me to any architectural rule by using the `[[ ]]` link syntax in the chat box or in your task files!
