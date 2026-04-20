@@ -183,8 +183,24 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "00d975ebcd5dcab7",
+  "active": "e556d18da1d66994",
   "lastOpenFiles": [
+    "root.obsidian/workspace.json",
+    "root.obsidian/templates.json",
+    "root.obsidian/snippets/Hide-Empty-Folders.css",
+    "root.obsidian/snippets",
+    "root.obsidian/plugins/file-explorer-plus/styles.css",
+    "root.obsidian/plugins/file-explorer-plus/manifest.json",
+    "root.obsidian/plugins/file-explorer-plus/main.js",
+    "root.obsidian/plugins/file-explorer-plus/data.json",
+    "root.obsidian/plugins/file-explorer-plus",
+    "root.obsidian/plugins/dataview/main.js",
+    "root.obsidian/plugins/dataview/styles.css",
+    "01-AI-Assistant/AI-System-Rules.md",
+    "01-AI-Assistant/AI-Workflow-and-Branching.md",
+    "01-AI-Assistant/AI-Session-State.md",
+    "03-Coding-and-Libraries/05-Architecture-Patterns.md",
+    "README.md",
     "00-Obsidian-App-Config.md"
   ]
 }
