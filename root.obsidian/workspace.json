@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "00c660222c3274f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "0bc416f409065d26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fc14fe29b57714e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "safe-socket/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "60a0b8e072c21768",
+    "type": "split",
+    "children": [
+      {
+        "id": "afbd0227ef76dbdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7b32ef24784ad21",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "6f93289723024e08",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "build-wrapper",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "e80a7e2009144e8f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signets"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d024c91a8493665b",
+    "type": "split",
+    "children": [
+      {
+        "id": "87a98fada11c723e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce712122d508a843",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "obsidian-brain/00-Master-MOC.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour 00-Master-MOC"
+            }
+          },
+          {
+            "id": "5e9f9319b90b514f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "obsidian-brain/00-Master-MOC.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de 00-Master-MOC"
+            }
+          },
+          {
+            "id": "8952d0529dce05d5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "e1ed34df9893b5db",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "e7ba82813edc8647",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false,
+      "workspaces:Gérer les espaces de travail": false,
+      "markdown-importer:Ouvrir l'importateur Markdown": false
+    }
+  },
+  "active": "0fc14fe29b57714e",
+  "lastOpenFiles": [
+    "safe-socket/cmd/test/identity_test.go",
+    "obsidian-brain/01-AI-Assistant/AI-Workflow-and-Branching.md",
+    "obsidian-brain/03-Coding-and-Libraries/01-General-Naming-Conventions.md",
+    "obsidian-brain/00-Master-MOC.md",
+    "obsidian-brain/00-Daily-AI-Playbook.md",
+    "universal-logger/vba/ARCHITECTURE.md",
+    "Inbox/Your-New-Task.md",
+    "obsidian-brain/02-Architecture-and-Design/Ecosystem-Topology.canvas",
+    "Inbox",
+    "obsidian-brain/03-Coding-and-Libraries/08-Dependency-Graph.md",
+    "obsidian-brain/03-Coding-and-Libraries/07-Hidden-Patterns-and-Gotchas.md",
+    "obsidian-brain/03-Coding-and-Libraries/06-Interface-Contracts.md",
+    "obsidian-brain/03-Coding-and-Libraries/05-Architecture-Patterns.md",
+    "obsidian-brain/temp/08-Documentation-Conventions.md",
+    "obsidian-brain/temp/07-Polyglot-Parity-Audit.md",
+    "obsidian-brain/temp/06-Dependency-Graph.md",
+    "obsidian-brain/temp/05-Hidden-Patterns-and-Gotchas.md",
+    "obsidian-brain/temp/04-Interface-Contracts.md",
+    "obsidian-brain/temp/03-Coding-Style-Rules.md",
+    "obsidian-brain/temp/02-Naming-Conventions.md",
+    "obsidian-brain/temp/01-Architecture-Patterns.md",
+    "obsidian-brain/temp",
+    "obsidian-brain/05-Scripts/hide_empty_folders.py",
+    "obsidian-brain/05-Scripts/Hide-Empty-Folders.py",
+    "universal-logger/AI-Init.md",
+    "sandbox-testing/AI-Init.md",
+    "safe-socket/AI-Init.md",
+    "notif-server/AI-Init.md",
+    "microservice-toolbox/AI-Init.md",
+    "log-server/AI-Init.md",
+    "flexible-logger/AI-Init.md",
+    "universal-logger/src/bootstrap/logs/bootstrap.test.log",
+    "universal-logger/src/bootstrap/logs",
+    "obsidian-brain/01-AI-Assistant/Inbox",
+    "Sans titre.canvas",
+    "obsidian-brain/05-Scripts/Multi-Repo-Validator.py",
+    "obsidian-brain/05-Scripts/Build-Wrapper.py",
+    "Sans titre 4.canvas",
+    "Sans titre.base",
+    "Sans titre 3.canvas",
+    "Sans titre 2.canvas",
+    "Sans titre 1.canvas"
+  ]
+}
