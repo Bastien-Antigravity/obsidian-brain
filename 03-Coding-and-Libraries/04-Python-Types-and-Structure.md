@@ -32,7 +32,7 @@ To distinguish standard actions from local variables, use descriptive aliasing f
 ## 🎨 Visual Formatting
 - **Method Separation**: Use a standard horizontal divider between all class methods:
   ```python
-  #-----------------------------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------------------------
   ```
 - **Section Dividers**: Use `# ### SECTION NAME ###` or `##### ... #####` for major logical blocks within a module.
 

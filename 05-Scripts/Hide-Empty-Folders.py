@@ -39,6 +39,7 @@ IGNORE_DIRS = {
 # TOOLS
 # ==========================================================
 
+
 def contains_md_recursive(folder: pathlibPath) -> bool:
     """
     True if this folder contains at least one .md file
@@ -98,9 +99,7 @@ lines = [
 for rel_path in sorted(folders_to_hide):
     safe = css_escape(rel_path)
     # Target both the folder title and its children container
-    lines.append(
-        f'.nav-folder-title[data-path="{safe}"],'
-    )
+    lines.append(f'.nav-folder-title[data-path="{safe}"],')
     lines.append(
         f'.nav-folder-title[data-path="{safe}"] + .nav-folder-children {{ display: none !important; }}'
     )

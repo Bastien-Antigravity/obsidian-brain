@@ -18,7 +18,8 @@ from subprocess import run as subprocessRun
 from pathlib import Path as pathlibPath
 from typing import List
 
-#-----------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------
+
 
 def run_cmd(cmd: List[str], cwd: str) -> None:
     """Helper to run a shell command and exit on failure."""
@@ -28,7 +29,9 @@ def run_cmd(cmd: List[str], cwd: str) -> None:
         print(f"Error: Command failed with exit code {result.returncode}")
         sysExit(result.returncode)
 
-#-----------------------------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------------------------
+
 
 def detect_and_run(target_action: str, root_dir: str) -> None:
     """Detects language and runs the requested action."""
@@ -40,7 +43,9 @@ def detect_and_run(target_action: str, root_dir: str) -> None:
     print(f"=== Build-Wrapper: {target_action} on {root_path.name} ===")
 
     # 1. Rust Detection
-    if (root_path / "Cargo.toml").exists() or (root_path / "rust" / "Cargo.toml").exists():
+    if (root_path / "Cargo.toml").exists() or (
+        root_path / "rust" / "Cargo.toml"
+    ).exists():
         rust_dir = root_path / "rust" if (root_path / "rust").exists() else root_path
         if target_action == "build":
             run_cmd(["cargo", "build"], str(rust_dir))
@@ -70,18 +75,19 @@ def detect_and_run(target_action: str, root_dir: str) -> None:
 
     print(f"=== {target_action} completed ===")
 
-#-----------------------------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     if len(sysArgv) < 3:
         print("Usage: python Build-Wrapper.py <build|test> <repo_dir>")
         sysExit(1)
-        
+
     action = sysArgv[1]
     target = sysArgv[2]
-    
+
     if action not in ["build", "test"]:
         print("Unsupported action. Use build or test.")
         sysExit(1)
-        
+
     detect_and_run(action, target)
