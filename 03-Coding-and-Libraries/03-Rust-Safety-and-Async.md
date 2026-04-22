@@ -8,11 +8,19 @@ microservice: ecosystem-wide
 # 📐 Rust Safety and Async
 
 ## Architectural Rule
+- **Polyglot Parity**: Rust implementations (especially in shared libraries) MUST maintain behavioral and API parity with the Go "Source of Truth".
 - **Async Runtime**: Use `tokio` with full features.
-- **Error Handling**: Use `Result<T, Box<dyn std::error::Error>>` and propagate with `?`.
-- **Ownership**: Prefer borrowing over cloning.
+- **Error Handling**: Use `Result<T, Box<dyn std::error::Error>>` and propagate with `?`. Use `.ok_or_else()` for descriptive error mapping.
+- **Ownership**: Prefer borrowing over cloning. Explicitly `.clone()` only when struct ownership is required.
+- **Polymorphism**: Use `Arc<dyn Trait>` for thread-safe shared ownership of polymorphic components (e.g., Loggers, Config Loaders).
 - **Entry Point Errors**: Use `match` with `eprintln!` + `std::process::exit(1)`. Never `unwrap()` in production paths.
 - **Feature Flags**: Use `#[cfg(feature = "...")]` for optional integrations (e.g., `unilog`).
+
+## ⚙️ Configuration & Merging
+- **Recursive Merging**: Use a `deep_merge` logic for matching YAML/Mapping values to ensure layered configuration consistency across the ecosystem.
+
+## 🏷 Identity & Logging
+- **Static Identity**: Every struct implementing logic should have a `Name` static property (or field) used for logging traceability.
 
 ## Naming Conventions (Rust-specific)
 - **Functions**: `snake_case` — `load_config()`, `run_server()`, `deep_merge()`

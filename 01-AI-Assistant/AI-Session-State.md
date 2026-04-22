@@ -28,7 +28,7 @@ directives:
 
 ## ­ Next Actions (Next Session)
 1. Execute a "Dry Run" training practice. We will do a simulated coding sprint where you assign me a feature via an `#ai/task` file, and I will show you how I use the Obsidian Brain to solve it.
-2. Atomize the remaining monolithic documentation files (`Deployment-Strategies.md`, `Coding-Style-Guide.md`) utilizing the new `Template-Architecture.md`.
+2. Atomize the remaining monolithic documentation files (`Deployment-Strategies.md`) utilizing the new `Template-Architecture.md`. (Note: `Coding-Style-Guide.md` has been successfully refactored and hubbed).
 
 ---
 *To load this state, simply prompt: "Restore session state"*

@@ -38,6 +38,7 @@ The historical ledger of ecosystem-wide technical decisions.
 
 ## 📚 03 - Coding & Libraries
 Idioms, standards, and our shared toolbox.
+- [[00-Coding-Style-Guide|🎨 Coding Style Guide (MOC)]]
 - [[01-General-Naming-Conventions|General Naming Conventions]]
 - [[02-Go-Memory-and-Concurrency|Go Memory and Concurrency]]
 - [[03-Rust-Safety-and-Async|Rust Safety and Async]]

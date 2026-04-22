@@ -8,9 +8,22 @@ microservice: ecosystem-wide
 # 📐 Go Memory and Concurrency
 
 ## Architectural Rule
+- **Interface-First Design**: Major components MUST define their behavior via interfaces in a dedicated `src/interfaces` package. This prevents circular dependencies and enables deterministic testing with mocks.
 - **Memory Efficiency**: Use fixed-length slices/ring-buffers (e.g., `200` length). NEVER expand arrays infinitely. Use `make` with capacity.
 - **Concurrency**: Use `context.Context` for cancellation. Always deep-copy shared resources before crossing Goroutine boundaries.
 - **Atomic State**: Use `atomic.Pointer` with CAS loops for lock-free reads (see `config-server/src/store/store.go`).
+
+## 🛠 Construction & Implementation
+- **Constructor Paradigm**: Use the `New{Type}` convention for instantiating components.
+- **Safeguards**: Use "Ensure" helpers (e.g., `EnsureSafeLogger`) to provide default functional behavior if a dependency is nil.
+
+## 🔗 Connectivity & Self-Healing
+- **Automatic Reporting**: Internal failures in background routines must be reported via a centralized handler (e.g., `error_handler.ReportInternalError`).
+- **Resilient Sockets**: Networking components must use the `microservice-toolbox` connection manager to handle retries and multiplicative backoff.
+
+## 🏷 Metadata & Logging
+- **Clean Metadata**: When detecting source information (caller info), always trim the path using `filepath.Base()` to keep log entries efficient and readable.
+- **Component Identity**: Every struct implementing logic should have a `Name string` field, initialized during construction, and used as a prefix for all logs.
 
 ## Concurrency Patterns (from source code)
 

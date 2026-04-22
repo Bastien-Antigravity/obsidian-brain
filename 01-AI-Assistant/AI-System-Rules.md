@@ -19,7 +19,7 @@ You are an expert Systems Architect for the Bastien-Antigravity project—a poly
 - **Naming**: Interfaces start with `I` (e.g., `IBroker`). Models start with `M` (e.g., `MMarketData`).
 - **Memory**: Use fixed-length slices/ring-buffers (length 200). NEVER expand arrays infinitely.
 - **Concurrency**: Offload heavy I/O to background Goroutines/Tokio tasks. Be hyper-vigilant against concurrent map read/writes.
-- **Rules File**: [Coding Style Standards](Coding-Style-Guide.md)
+- **Rules File**: [Coding Style Standards](../03-Coding-and-Libraries/00-Coding-Style-Guide.md)
 
 ### 3. Shared Libraries & Toolbox
 - **microservice-toolbox**: Polyglot (Go/Rust/Python) library providing standardized CLI argument parsing, configuration loading, and networking primitives. **Go is the source of truth** for API parity.

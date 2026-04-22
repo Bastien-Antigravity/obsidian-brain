@@ -1,18 +1,37 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# coding:utf-8
+"""
+ESSENTIAL PROCESS:
+Modular build wrapper that detects the programming language of a repository and runs the appropriate build or test command.
+
+DATA FLOW:
+1. Detects Presence of Cargo.toml (Rust), go.mod (Go), or requirements.txt/python folder (Python).
+2. Executes build or test action via subprocess.
+
+KEY PARAMETERS:
+- target_action: build | test
+- root_dir: Path to the repository root.
+"""
 
 from sys import exit as sysExit, executable as sysExecutable, argv as sysArgv
 from subprocess import run as subprocessRun
 from pathlib import Path as pathlibPath
+from typing import List
 
-def run_cmd(cmd, cwd):
+#-----------------------------------------------------------------------------------------------
+
+def run_cmd(cmd: List[str], cwd: str) -> None:
+    """Helper to run a shell command and exit on failure."""
     print(f"[{cwd}] Running: {' '.join(cmd)}")
     result = subprocessRun(cmd, cwd=cwd)
     if result.returncode != 0:
         print(f"Error: Command failed with exit code {result.returncode}")
         sysExit(result.returncode)
 
-def detect_and_run(target_action, root_dir):
+#-----------------------------------------------------------------------------------------------
+
+def detect_and_run(target_action: str, root_dir: str) -> None:
+    """Detects language and runs the requested action."""
     root_path = pathlibPath(root_dir).resolve()
     if not root_path.exists():
         print(f"Error: Directory {root_dir} does not exist.")
@@ -50,6 +69,8 @@ def detect_and_run(target_action, root_dir):
                 run_cmd([sysExecutable, "-m", "unittest", "discover"], str(py_dir))
 
     print(f"=== {target_action} completed ===")
+
+#-----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     if len(sysArgv) < 3:

@@ -1,11 +1,26 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# coding:utf-8
+"""
+ESSENTIAL PROCESS:
+Ecosystem orchestrator that discovers all microservice repositories and triggers their build or test cycles.
+
+DATA FLOW:
+1. Scans the root directory for folders containing Go, Rust, or Python markers.
+2. For each discovered repository, executes the Build-Wrapper.py script with the requested action.
+3. Collects and summarizes results.
+
+KEY PARAMETERS:
+- action: build | test
+"""
 
 from sys import argv as sysArgv, exit as sysExit, executable as sysExecutable
 from subprocess import run as subprocessRun, CalledProcessError as subprocessCalledProcessError
 from pathlib import Path as pathlibPath
+from typing import List
 
-def get_repos(root_dir):
+#-----------------------------------------------------------------------------------------------
+
+def get_repos(root_dir: str) -> List[pathlibPath]:
     """Finds all root-level directories that look like they contain microservices."""
     repos = []
     for item in pathlibPath(root_dir).iterdir():
@@ -17,7 +32,10 @@ def get_repos(root_dir):
                 repos.append(item)
     return repos
 
-def run_all(action, root_dir):
+#-----------------------------------------------------------------------------------------------
+
+def run_all(action: str, root_dir: str) -> None:
+    """Orchestrates the build or test action across all discovered repositories."""
     repos = get_repos(root_dir)
     print(f"=== Bastien Orchestrator: Discovered {len(repos)} repositories ===")
     
@@ -42,6 +60,8 @@ def run_all(action, root_dir):
     else:
         print(f"FAILURE: The following repos failed during '{action}': {', '.join(failures)}")
         sysExit(1)
+
+#-----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     if len(sysArgv) < 2:

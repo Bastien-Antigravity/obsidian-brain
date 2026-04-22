@@ -13,7 +13,18 @@ microservice: ecosystem-wide
 - **Interfaces (Rust)**: Use traits with descriptive names (e.g., `Logger`).
 - **Models**: prefix with `M` (e.g., `MMarketData`, `MOrderBook`).
 - **Functions/Methods**: Go: `PascalCase` (exported) / `camelCase` (unexported). Rust: `snake_case`. Python: `snake_case` with `_underscore_prefix` for private.
-- **Constructors (Go)**: Always `New{Type}()` — e.g., `NewServer()`, `NewStore()`, `NewUniLog()`.
+
+## 🛠 Constructor Conventions
+
+| Language | Pattern | Example |
+|----------|---------|---------|
+| **Go** | `New{Type}` | `NewStandardLogger()`, `NewResolver()` |
+| **Rust** | `pub fn new()` | `AppConfig::new()`, `LogServer::new()` |
+| **Python** | `ClassName()` | `FinvizScraper()`, `AAACalculator()` |
+
+> [!NOTE]
+> In **Go**, use `New{Type}With{Dependency}` for more specific factory methods (e.g., `LoadConfigWithLogger`).
+
 
 ## File Naming
 
@@ -33,6 +44,16 @@ schemas "github.com/Bastien-Antigravity/distributed-config/src/schemas"
 utilconf "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/config"
 flex_interfaces "github.com/Bastien-Antigravity/flexible-logger/src/interfaces"
 logger_models "github.com/Bastien-Antigravity/flexible-logger/src/models"
+```
+
+## Python Import Aliasing
+Use `moduleAction` or `moduleLocation` aliasing to distinguish standard actions from local variables:
+```python
+from os.path import join as osPathJoin
+from os.path import exists as osPathExists
+from requests import get as requestsGet
+from time import sleep as timeSleep
+from argparse import ArgumentParser as argparseArgumentParser
 ```
 
 ## Variable Naming Conventions

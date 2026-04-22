@@ -71,9 +71,9 @@ All 7 Go modules are bound into a single workspace. Local changes propagate inst
 
 ## Polyglot Parity Gaps
 
-| Area | Gap |
-|------|-----|
-| CLI flags | Go and Python accept `specificFlags`, Rust does NOT |
-| gRPC overrides | Go separates into dedicated function; Rust/Python merge into CLI |
-| Missing config | Go/Rust silently skip; Python raises `FileNotFoundError` |
+| Area             | Gap                                                               |
+| ---------------- | ----------------------------------------------------------------- |
+| CLI flags        | Go and Python accept `specificFlags`, Rust does NOT               |
+| gRPC overrides   | Go separates into dedicated function; Rust/Python merge into CLI  |
+| Missing config   | Go/Rust silently skip; Python raises `FileNotFoundError`          |
 | Logger bootstrap | Rust auto-bootstraps UniLogger via feature flag; Go/Python do not |
