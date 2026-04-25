@@ -61,6 +61,33 @@ Every Go file uses **horizontal rule comments** to separate logical sections:
 ```
 Applied between every exported function, interface method groups, and struct definitions.
 
+## 📦 Go Import Structure
+Imports MUST be organized into four distinct blocks, separated by a single empty line, to ensure readability and maintain a clear hierarchy of dependencies:
+
+1.  **Block 0 (Standard Library)**: Pure Go standard library packages.
+2.  **Block 1 (Local Imports)**: Internal packages from within the same repository.
+3.  **Block 2 (Ecosystem Imports)**: Packages from other `Bastien-Antigravity` repositories. Every ecosystem library MUST be aliased using its explicit standard name (e.g., `toolbox_config`, `safe_socket`, `unilog`).
+4.  **Block 3 (External Imports)**: All other third-party dependencies.
+
+**Example Structure:**
+```go
+import (
+	"context"
+	"fmt"
+	"os"
+
+	"github.com/Bastien-Antigravity/notif-server/src/core"
+	"github.com/Bastien-Antigravity/notif-server/src/server"
+
+	toolbox_config "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/config"
+	safe_socket "github.com/Bastien-Antigravity/safe-socket"
+	unilog "github.com/Bastien-Antigravity/universal-logger/src/bootstrap"
+
+	"github.com/stretchr/testify/assert"
+)
+```
+
+
 ## Motivation (Why?)
 - Performance: Minimizes GC pressure and prevents OOM in high-throughput data processing.
 - Safety: Eliminates data races in shared memory environments.
