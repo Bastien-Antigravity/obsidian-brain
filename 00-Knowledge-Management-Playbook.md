@@ -21,10 +21,11 @@ Keep folders shallow. Folders represent **Physical Departments**, not categorica
 - **The Root Rule**: Only Master MOCs, Playbooks, and READMEs live at the root.
 - **Micro-Categorization**: Documentation for a microservice lives in that microservice's actual folder (`log-server/README.md`).
 - **Standard Folders**:
-    - `01-AI-Assistant/`: Logic and states for AI tools.
-    - `02-Architecture-and-Design/`: Core standards and ADRs.
-    - `03-Coding-and-Libraries/`: Standard idioms and toolboxes.
-    - `04-Deployment/`: Infrastructure and CI/CD rules.
+    - `00-AI-Engine/`: The portable, generic AI agents, workflows, and dispatcher.
+    - `01-Project-Architecture/`: Core standards and ADRs specific to this project.
+    - `02-Project-Coding/`: Standard idioms and toolboxes.
+    - `03-Project-Deployment/`: Infrastructure and CI/CD rules.
+    - `04-Project-Scripts/`: Auxiliary scripts.
 
 ---
 

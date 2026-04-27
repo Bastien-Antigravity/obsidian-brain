@@ -9,19 +9,20 @@ author: Ruzava & Antigravity
 
 Welcome to the central Map of Content (MOC) for the ecosystem. This serves as the root node of our Obsidian Brain, governing the architecture, standards, and workflows.
 
-## 🤖 01 - AI Assistant & System Hub
-These define how I (Antigravity) and other assistants must operate and behave.
-- [[AI-System-Rules|The System Hub (Primary Prompt)]]
-- [[AI-Workflow-and-Branching|AI Workflow & Git Branching]]
-- [[00-Daily-AI-Playbook|📖 Daily AI Playbook (Workflow)]]
+## 🤖 00 - AI Engine
+These define the generic "Team of Agents" architecture, workflows, and prompts for the AI.
+- [[Workflow-Idea-to-Exploitation|Pipeline: Idea to Exploitation]]
+- [[Daily-AI-Playbook|📖 Daily AI Playbook (Workflow)]]
+- [[Git-Branching-Rules|AI Workflow & Git Branching]]
 - [[00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook (5D Paradigm)]]
 - [[00-Obsidian-App-Config|⚙️ Obsidian App Configuration Guide]]
-- [[01-AI-Assistant/Inbox/Legacy-Tasks|📥 Task Inbox]]
+- [[00-AI-Engine/State-and-Tasks/Inbox/Legacy-Tasks|📥 Task Inbox]]
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
-## 📐 02 - Architecture & Design
+## 📐 01 - Project Architecture
 The structural paradigms for all polyglot microservices.
+- [[Global-Architecture-Rules|The System Hub (Primary Rules)]]
 - [[Ecosystem-Topology.canvas|🎨 Visual Ecosystem Topology]]
 - [[01-Facade-Pattern|The Facade Pattern Rules]]
 - [[02-Decoupling-and-Interfaces|Decoupling & Interfaces]]
@@ -36,7 +37,7 @@ The structural paradigms for all polyglot microservices.
 The historical ledger of ecosystem-wide technical decisions.
 - [[ADR-001-Safe-Socket-Protocol|ADR-001: Safe-Socket Custom TCP Protocol]]
 
-## 📚 03 - Coding & Libraries
+## 📚 02 - Project Coding
 Idioms, standards, and our shared toolbox.
 - [[00-Coding-Style-Guide|🎨 Coding Style Guide (MOC)]]
 - [[01-General-Naming-Conventions|General Naming Conventions]]
@@ -46,14 +47,14 @@ Idioms, standards, and our shared toolbox.
 - [[Documentation-Requirements|Documentation Requirements]]
 - [[Core-Libraries-and-Toolbox|Core Libraries & Toolbox]]
 
-## 🚀 04 - Deployment
+## 🚀 03 - Project Deployment
 How we get our code to production.
 - [[01-Docker-Infrastructure|Docker Infrastructure]]
 - [[02-Environment-Variables|Environment Variables]]
 - [[03-Health-Checks|Health Checks]]
 - [[04-CICD-and-Lifecycle|CI/CD and Lifecycle]]
 
-## 🧬 05 - Automation Scripts
+## 🧬 04 - Project Scripts
 Scripts that string the ecosystem together.
 - [[Build-Wrapper.py|Modular Build Wrapper]]
 - [[Multi-Repo-Validator.py|Multi-repo Validator]]

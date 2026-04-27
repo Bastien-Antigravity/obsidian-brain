@@ -1,6 +1,6 @@
 # AI Workflow & Orchestration Guidelines 🚀 `Status: Active`
 
-This document governs how the AI assistant operates inside the `Bastien-Antigravity` polyrepo ecosystem. AI agents must enforce these operational rules precisely.
+This document governs how the AI assistant operates inside the `{{ECOSYSTEM_NAME}}` polyrepo ecosystem. AI agents must enforce these operational rules precisely.
 
 ## 1. Commit and Branching Rules
 - **Direct Pushes strictly forbidden**: Never push directly to `main`. If you generate a deployment script (`run_command`), the branch pipeline must strictly follow:
@@ -31,7 +31,7 @@ This document governs how the AI assistant operates inside the `Bastien-Antigrav
 - **Artifact Generation**: Use Markdown Artifact files natively to show major implementation plans. Emphasize "Dry-Runs" for all large architectural migrations.
 
 ## 4. Universal Scripts & Local Tooling
-- Do not expect global system-tools like `curl`, `jq`, or `sed`. Rely on the `Bastien-Antigravity/antigravity-workspace/` tooling engine structure to orchestrate complex validation across folders.
+- Do not expect global system-tools like `curl`, `jq`, or `sed`. Rely on the `{{ECOSYSTEM_NAME}}/` tooling engine structure to orchestrate complex validation across folders.
 ## 5. Documentation & Brain Integrity (MANDATORY)
 
 To ensure the ecosystem remains professional and the AI remains "Project Aware," the following autonomous rules apply:
