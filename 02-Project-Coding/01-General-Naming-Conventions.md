@@ -35,18 +35,48 @@ microservice: ecosystem-wide
 | Python | `snake_case.py` | `loader.py`, `args.py`, `test_logger.py` |
 | Scripts | `PascalCase-Hyphenated.py` | `Build-Wrapper.py`, `Hide-Empty-Folders.py` |
 
-## Go Import Aliasing
-Use `snake_case` descriptive aliases to disambiguate packages:
+## 🔗 Ecosystem Import Aliasing
+To ensure parity across our polyglot environment, all `Bastien-Antigravity` repositories MUST be aliased using a standardized set of short, descriptive names.
+
+### Go
 ```go
-factory "github.com/Bastien-Antigravity/safe-socket"
-socket_interfaces "github.com/Bastien-Antigravity/safe-socket/src/interfaces"
-schemas "github.com/Bastien-Antigravity/distributed-config/src/schemas"
-utilconf "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/config"
-flex_interfaces "github.com/Bastien-Antigravity/flexible-logger/src/interfaces"
-logger_models "github.com/Bastien-Antigravity/flexible-logger/src/models"
+safe_socket          "github.com/Bastien-Antigravity/safe-socket"
+safe_socket_ifaces   "github.com/Bastien-Antigravity/safe-socket/src/interfaces"
+distributed_config   "github.com/Bastien-Antigravity/distributed-config/src/schemas"
+toolbox_config       "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/config"
+flexible_logger      "github.com/Bastien-Antigravity/flexible-logger/src/interfaces"
+unilog               "github.com/Bastien-Antigravity/universal-logger/src/bootstrap"
 ```
 
-## Python Import Aliasing
+### Rust
+```rust
+use safe_socket as safe_socket;
+use microservice_toolbox as toolbox;
+use distributed_config as distributed_config;
+use universal_logger as unilog;
+```
+
+### Python
+```python
+import safe_socket as safe_socket
+import microservice_toolbox as toolbox
+import distributed_config as distributed_config
+import universal_logger as unilog
+```
+
+### VBA
+Class Modules and Global Objects MUST use the PascalCase version of the repository name:
+- `Safe_Socket` (from safe-socket)
+- `Microservice_Toolbox` (from microservice-toolbox)
+- `Distributed_Config` (from distributed-config)
+- `UniLog` (from universal-logger)
+
+```vba
+' Example usage
+Dim socketManager As New Safe_Socket.SocketManager
+```
+
+## Python Stdlib Aliasing
 Use `moduleAction` or `moduleLocation` aliasing to distinguish standard actions from local variables:
 ```python
 from os.path import join as osPathJoin
