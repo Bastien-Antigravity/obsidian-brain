@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding:utf-8
+
 """
 ESSENTIAL PROCESS:
 Modular build wrapper that detects the programming language of a repository and runs the appropriate build or test command.
