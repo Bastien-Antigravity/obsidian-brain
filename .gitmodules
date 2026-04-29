@@ -1,6 +1,8 @@
 [submodule "core-kms-brain"]
 	path = core-kms-brain
 	url = C:\\Users\\Ruzava\\Desktop\\Test-AI-Engine\\core-kms-brain
+	branch = develop
 [submodule "tech-stack-brain"]
 	path = tech-stack-brain
 	url = C:\\Users\\Ruzava\\Desktop\\Test-AI-Engine\\tech-stack-brain
+	branch = develop
