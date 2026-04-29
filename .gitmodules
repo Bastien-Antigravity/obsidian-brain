@@ -1,8 +1,8 @@
 [submodule "core-kms-brain"]
 	path = core-kms-brain
-	url = C:\\Users\\Ruzava\\Desktop\\Test-AI-Engine\\core-kms-brain
+	url = https://github.com/Bastien-Antigravity/core-kms-brain.git
 	branch = develop
 [submodule "tech-stack-brain"]
 	path = tech-stack-brain
-	url = C:\\Users\\Ruzava\\Desktop\\Test-AI-Engine\\tech-stack-brain
+	url = https://github.com/Bastien-Antigravity/tech-stack-brain.git
 	branch = develop
