@@ -20,7 +20,11 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
-## 📐 01 - Project Architecture
+## 👔 01 - Project Business
+Functional requirements, Domain-Driven Design (DDD), User Stories, and Epics.
+*(Currently empty. Use this space for Product Management!)*
+
+## 📐 02 - Project Architecture
 The structural paradigms for all polyglot microservices.
 - [[Global-Architecture-Rules|The System Hub (Primary Rules)]]
 - [[Ecosystem-Topology.canvas|🎨 Visual Ecosystem Topology]]
@@ -37,7 +41,7 @@ The structural paradigms for all polyglot microservices.
 The historical ledger of ecosystem-wide technical decisions.
 - [[ADR-001-Safe-Socket-Protocol|ADR-001: Safe-Socket Custom TCP Protocol]]
 
-## 📚 02 - Project Coding
+## 📚 03 - Project Coding
 Idioms, standards, and our shared toolbox.
 - [[00-Coding-Style-Guide|🎨 Coding Style Guide (MOC)]]
 - [[01-General-Naming-Conventions|General Naming Conventions]]
@@ -47,14 +51,14 @@ Idioms, standards, and our shared toolbox.
 - [[Documentation-Requirements|Documentation Requirements]]
 - [[Core-Libraries-and-Toolbox|Core Libraries & Toolbox]]
 
-## 🚀 03 - Project Deployment
+## 🚀 04 - Project Deployment
 How we get our code to production.
 - [[01-Docker-Infrastructure|Docker Infrastructure]]
 - [[02-Environment-Variables|Environment Variables]]
 - [[03-Health-Checks|Health Checks]]
 - [[04-CICD-and-Lifecycle|CI/CD and Lifecycle]]
 
-## 🧬 04 - Project Scripts
+## 🧬 05 - Project Scripts
 Scripts that string the ecosystem together.
 - [[Build-Wrapper.py|Modular Build Wrapper]]
 - [[Multi-Repo-Validator.py|Multi-repo Validator]]
