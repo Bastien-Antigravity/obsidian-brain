@@ -1,7 +1,7 @@
 # Bastien-Antigravity: Obsidian Brain 🌌
 
 
-# Too much work/time consuming to test, to use, evaluate, re-organize, not used for the moment... (including tech-stack-brain, core-kms-brain) => stand by for the moment...
+# Too much work/time consuming to test, use, evaluate, re-organize, not used for the moment... (including tech-stack-brain, core-kms-brain) => stand by for the moment...
 
 
 Welcome to the **Obsidian Brain**. This directory is the central Knowledge Management System (KMS) for the Bastien-Antigravity ecosystem. 
