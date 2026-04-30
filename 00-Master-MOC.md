@@ -16,7 +16,7 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[Git-Branching-Rules|AI Workflow & Git Branching]]
 - [[00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook (5D Paradigm)]]
 - [[00-Obsidian-App-Config|⚙️ Obsidian App Configuration Guide]]
-- [[core-kms-brain/State-and-Tasks/Inbox/Legacy-Tasks|📥 Task Inbox]]
+- [[core-kms-brain/state-and-tasks/Inbox/Legacy-Tasks|📥 Task Inbox]]
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 

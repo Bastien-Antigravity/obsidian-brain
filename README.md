@@ -29,7 +29,7 @@ If you are a developer looking at this repository on your own:
 3. **Start at the MOC:** Open `00-Master-MOC.md`. This is the Map of Content, functioning as the table of contents for the entire ecosystem.
 4. **Navigate via Graph/Links:** Click on `[[links]]` inside the documents to jump between rules, tutorials, and architecture decisions.
 5. **Authoring:** Keep files atomic. If an architecture document gets too large, split it into smaller documents!
-6. **Templates:** When creating a new AI task or architecture node, copy the relevant templates from `00-AI-Engine/State-and-Tasks/Inbox/Templates/`.
+6. **Templates:** When creating a new AI task or architecture node, copy the relevant templates from `00-AI-Engine/state-and-tasks/Inbox/Templates/`.
 
 ---
 
