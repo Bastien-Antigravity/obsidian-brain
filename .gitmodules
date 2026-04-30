@@ -6,3 +6,6 @@
 	path = tech-stack-brain
 	url = https://github.com/Bastien-Antigravity/tech-stack-brain.git
 	branch = develop
+[submodule "business-bdd-brain"]
+	path = business-bdd-brain
+	url = https://github.com/Bastien-Antigravity/business-bdd-brain.git
