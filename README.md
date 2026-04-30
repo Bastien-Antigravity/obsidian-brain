@@ -1,5 +1,9 @@
 # Bastien-Antigravity: Obsidian Brain 🌌
 
+
+# Too much work/time consuming to test, to use, evaluate, re-organize, not used for the moment... (including tech-stack-brain, core-kms-brain) => stand by for the moment...
+
+
 Welcome to the **Obsidian Brain**. This directory is the central Knowledge Management System (KMS) for the Bastien-Antigravity ecosystem. 
 
 Unlike traditional flat documentation folders, this brain runs on a **5-Dimensional Hybrid System** combining PARA, Diátaxis, and Zettelkasten methods. It is designed to be the ultimate source of truth, equally readable by human engineers and AI Assistants.
