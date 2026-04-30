@@ -20,9 +20,12 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
-## 👔 01 - Project Business
-Functional requirements, Domain-Driven Design (DDD), User Stories, and Epics.
-*(Currently empty. Use this space for Product Management!)*
+## 👔 01 - Project Business (BDD Brain)
+Behavior-Driven Development specifications, Domain-Driven Design glossary, and Acceptance Criteria.
+- [[00-Glossary|📘 Domain Glossary (Ubiquitous Language)]]
+- [[business-bdd-brain/User-Manual|📖 BDD Brain User Manual]]
+- [[Connection-Lifecycle|🔌 SafeSocket Connection Lifecycle (Example Spec)]]
+- [[Template-Acceptance-Criteria|📋 Acceptance Criteria Template]]
 
 ## 📐 02 - Project Architecture
 The structural paradigms for all polyglot microservices.
@@ -84,8 +87,11 @@ Live documentation directly from the source code repositories.
 
 ---
 ## 🧪 Quality & Testing
-Quality Assurance is centralized down in the `sandbox-testing` microservice repo. We will eventually link test scenarios here natively.
-Always request native behavior specs, and we will translate them into Docker/Native execution!
+Quality Assurance follows a two-layer architecture:
+1. **Definition Layer** (`business-bdd-brain`): Behavior specs written in markdown BDD format (Given/When/Then).
+2. **Execution Layer** (`sandbox-testing`): Automated test scenarios that validate the behavior specs against real infrastructure.
+
+The flow is: `business-bdd-brain` (WHAT) → `sandbox-testing` (HOW) → microservice (CODE).
 
 ---
 > [!info]- ⚙️ Quick Global Query

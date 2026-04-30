@@ -9,3 +9,4 @@
 [submodule "business-bdd-brain"]
 	path = business-bdd-brain
 	url = https://github.com/Bastien-Antigravity/business-bdd-brain.git
+	branch = develop

@@ -2,6 +2,8 @@
 ecosystem_name: "Bastien-Antigravity"
 architecture_rules_path: "tech-stack-brain/02-Project-Architecture/Global-Architecture-Rules.md"
 coding_standards_path: "tech-stack-brain/03-Project-Coding/00-Coding-Style-Guide.md"
+behavior_specs_path: "business-bdd-brain/02-Behavior-Specs"
+domain_glossary_path: "business-bdd-brain/01-Domain-Glossary/00-Glossary.md"
 master_moc_path: "00-Master-MOC.md"
 ---
 # Project Context Map
