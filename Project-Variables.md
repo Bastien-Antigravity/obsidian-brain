@@ -4,7 +4,9 @@ architecture_rules_path: "tech-stack-brain/02-Project-Architecture/Global-Archit
 coding_standards_path: "tech-stack-brain/03-Project-Coding/00-Coding-Style-Guide.md"
 behavior_specs_path: "business-bdd-brain/02-Behavior-Specs"
 domain_glossary_path: "business-bdd-brain/01-Domain-Glossary/00-Glossary.md"
-master_moc_path: "00-Master-MOC.md"
+master_moc_path: "Ecosystem-Map-MOC.md"
+labs_brain_path: "rapid-prototyping-brain"
+ops_brain_path: "fleet-operation-brain"
 ---
 # Project Context Map
 

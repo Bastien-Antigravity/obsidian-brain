@@ -7,8 +7,8 @@
 
 ## 🛠️ Role Specifics
 - **Architect**: 
-    - Maintain the integrity of the `00-Knowledge-Strategy.md` and `00-Master-MOC.md`.
-    - Ensure that submodules (`core-kms-brain`, `tech-stack-brain`) are synchronized.
+    - Maintain the integrity of the `Knowledge-Strategy.md` and `Ecosystem-Map-MOC.md`.
+    - Ensure that submodules (`core-kms-brain`, `tech-stack-brain`, `business-bdd-brain`, `fleet-operation-brain`, `rapid-prototyping-brain`) are synchronized.
 - **QA**: 
     - Verify that all internal links are functional and not orphaned.
     - Audit the `AI-Session-State` consistency across repositories.
