@@ -10,3 +10,11 @@
 	path = business-bdd-brain
 	url = https://github.com/Bastien-Antigravity/business-bdd-brain.git
 	branch = develop
+[submodule "fleet-operation-brain"]
+	path = fleet-operation-brain
+	url = https://github.com/Bastien-Antigravity/fleet-operation-brain.git
+	branch = develop
+[submodule "rapid-prototyping-brain"]
+	path = rapid-prototyping-brain
+	url = https://github.com/Bastien-Antigravity/rapid-prototyping-brain
+	branch = develop

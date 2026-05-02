@@ -5,6 +5,11 @@ Welcome to the **Obsidian Brain**. This directory is the central Knowledge Manag
 
 Unlike traditional flat documentation folders, this brain runs on a **5-Dimensional Hybrid System** combining PARA, Diátaxis, and Zettelkasten methods. It is designed to be the ultimate source of truth, equally readable by human engineers and AI Assistants.
 
+## 🕹️ Operating Modes
+This Brain supports multiple "Rules of Engagement" depending on the task speed and scale required.
+- **Current Active Mode**: 🛡️ **Spec-First**
+- **Reference**: See **[[MODE-MANUAL]]** for details on how to switch to **Free-Labs** or **Agent Orchestrator**.
+
 ---
 
 ## 🛠️ How it Works

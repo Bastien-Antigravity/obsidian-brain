@@ -86,3 +86,30 @@ We don't need to lose our train of thought between days.
 ---
 > [!TIP] Split Information Aggressively!
 > Do we need to split information? **YES!** Atomicity is powerful. If an architecture document gets too long, split it and use an MOC to group them. Many small, well-linked files always beat one massive file.
+
+---
+
+## 5. Ecosystem Patterns & Global Decisions
+
+This section records fundamental architectural and governance choices that apply to the entire Bastien-Antigravity ecosystem.
+
+### A. The "Super-Bridge" Pattern
+**Decision Date:** 2026-05-02
+**Context:** Multi-language facades (Python, Rust, etc.) were causing "Multiple Go Runtime" panics and memory isolation issues when loading separate shared libraries for logging and configuration.
+**Decision:** Consolidated all shared infrastructure into a single binary (`universal-logger`). All language-specific facades now bridge to this single source of truth via CGO.
+**Impact:** 100% memory synchronization between Logger and Config; stable FFI boundaries.
+
+### B. The AI Governance Framework
+**Decision Date:** 2026-05-02
+**Decision:** Implementation of three core governance layers per repository:
+1. **AI-Project-DNA.md**: Repository-specific role overlays and intent (The "Compass").
+2. **Spec Gate**: Mandatory "Spec-First" protocol. No code implementation without an approved BDD spec in `business-bdd-brain`.
+3. **Lifecycle Hardening**: Mandatory branch/version audit at session start via `AI-Init.md` and `AI-Session-State.md`.
+
+### C. The "Spec-First" Protocol
+**Role: Spec Specialist**
+When the user requests a feature, the AI MUST first act as a "Spec Specialist" to:
+1. Identify the target repo folder in `business-bdd-brain/02-Behavior-Specs/`.
+2. Draft a detailed Gherkin spec (`Given/When/Then`) based on the user's intent.
+3. Account for edge cases and technical constraints.
+4. Obtain user approval (`status: approved`) before transitioning to the "Developer" role.
