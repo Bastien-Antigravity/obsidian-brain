@@ -2,6 +2,14 @@
 microservice: obsidian-brain
 type: session-state
 status: active
+lifecycle:
+  active_branch: main
+  protected_branches: [main]
+  current_version: 1.0.0
+  version_source: VERSION.txt
+done_when:
+  - links_verified: false
+  - strategy_updated: false
 directives:
   - autonomous-doc-sync: mandatory
   - obsidian-brain-sync: mandatory
