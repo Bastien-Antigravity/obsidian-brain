@@ -33,7 +33,10 @@ Fast-path development, experiments, and prototypes. **(Zone 2: Fluid)**
 
 ## 🛰️ 03 - Fleet Operations (Management Brain)
 Fleet-wide action plans, deployment logs, and migration states. **(Zone 3: Fleet)**
-- [[fleet-operation-brain/README|📑 Operations Hub]]
+- [[fleet-operation-brain/README|Fleet Operations (Zone 3)]]
+- **Command Center**: [[fleet-operation-brain/00-Repo-Control/inventory.json|Global Repo Registry]]
+- **Automation**: `fleet-manager.py` (Mass Sync & Audit)
+- **Logs**: [[fleet-operation-brain/02-Deployment-Logs/README|Deployment History]]
 
 ## 📐 04 - Project Architecture
 The structural paradigms for all polyglot microservices.
