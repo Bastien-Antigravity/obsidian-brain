@@ -35,6 +35,8 @@ directives:
 - [x] **Global Ecosystem Harmonization:** Performed a mass audit and cleanup of all 9 repositories, archiving legacy docs and synchronizing with GitHub.
 
 ## 🐛 Local Issues / Bugs
+- **Active Protocol**: [[MODE-MANUAL#Mode-3]] (Agent Orchestrator)
+- **Current Focus**: Global Fleet Synchronization and Zero-Drift verification.
 - **Log Server (FEAT-002)**: Ingestion lag risk on packet loss (Gap Timeout missing).
 - **Notif Server (FEAT-002)**: Lack of HTTP retries and malformed Telegram URL scheme.
 - **Config Server (FEAT-004)**: Persistence atomicity risk (Writing directly to target JSON).

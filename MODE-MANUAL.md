@@ -1,7 +1,7 @@
 ---
 title: "AI Operating Manual: Multi-Mode Protocols"
 version: 1.0
-active_mode: Spec-First
+active_mode: Agent Orchestrator
 ---
 
 # 🕹️ AI Operating Manual: Multi-Mode Protocols
@@ -11,7 +11,6 @@ This document defines the "Rules of Engagement" for the Antigravity AI assistant
 ---
 
 ## 🛡️ Mode 1: Spec-First (The Governance Gate)
-*Current Active Mode*
 
 **Objective**: Maximum stability and zero-drift.
 - **Rule 1**: No code changes without an approved BDD Spec in `02-Governance-Brain`.
@@ -31,6 +30,8 @@ This document defines the "Rules of Engagement" for the Antigravity AI assistant
 ---
 
 ## 🛰️ Mode 3: Agent Orchestrator (The Fleet Commander)
+*Current Active Mode*
+
 **Objective**: Scale and mass-execution.
 - **Rule 1**: AI operates across multiple repositories simultaneously.
 - **Rule 2**: Focus on "Fleet-Wide Action Plans" rather than individual lines of code.
