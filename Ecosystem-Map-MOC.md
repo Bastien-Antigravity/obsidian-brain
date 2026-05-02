@@ -21,14 +21,21 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
-## 👔 01 - Project Business (BDD Brain)
-Behavior-Driven Development specifications, Domain-Driven Design glossary, and Acceptance Criteria.
+## 👔 01 - Project Business (Specifications Brain)
+Behavior-Driven Development specifications, Domain-Driven Design glossary, and Acceptance Criteria. **(Zone 1: Frozen)**
 - [[00-Glossary|📘 Domain Glossary (Ubiquitous Language)]]
 - [[business-bdd-brain/User-Manual|📖 BDD Brain User Manual]]
 - [[Connection-Lifecycle|🔌 SafeSocket Connection Lifecycle (Example Spec)]]
-- [[Template-Acceptance-Criteria|📋 Acceptance Criteria Template]]
 
-## 📐 02 - Project Architecture
+## 🚀 02 - Experimental Labs (Rapid Prototyping)
+Fast-path development, experiments, and prototypes. **(Zone 2: Fluid)**
+- [[rapid-prototyping-brain/README|🧪 Labs Overview]]
+
+## 🛰️ 03 - Fleet Operations (Management Brain)
+Fleet-wide action plans, deployment logs, and migration states. **(Zone 3: Fleet)**
+- [[fleet-operation-brain/README|📑 Operations Hub]]
+
+## 📐 04 - Project Architecture
 The structural paradigms for all polyglot microservices.
 - [[Global-Architecture-Rules|The System Hub (Primary Rules)]]
 - [[Ecosystem-Topology.canvas|🎨 Visual Ecosystem Topology]]
@@ -45,7 +52,7 @@ The structural paradigms for all polyglot microservices.
 The historical ledger of ecosystem-wide technical decisions.
 - [[ADR-001-Safe-Socket-Protocol|ADR-001: Safe-Socket Custom TCP Protocol]]
 
-## 📚 03 - Project Coding
+## 📚 05 - Project Coding
 Idioms, standards, and our shared toolbox.
 - [[00-Coding-Style-Guide|🎨 Coding Style Guide (MOC)]]
 - [[01-General-Naming-Conventions|General Naming Conventions]]
@@ -55,19 +62,19 @@ Idioms, standards, and our shared toolbox.
 - [[Documentation-Requirements|Documentation Requirements]]
 - [[Core-Libraries-and-Toolbox|Core Libraries & Toolbox]]
 
-## 🚀 04 - Project Deployment
+## 🚀 06 - Project Deployment
 How we get our code to production.
 - [[01-Docker-Infrastructure|Docker Infrastructure]]
 - [[02-Environment-Variables|Environment Variables]]
 - [[03-Health-Checks|Health Checks]]
 - [[04-CICD-and-Lifecycle|CI/CD and Lifecycle]]
 
-## 🧬 05 - Project Scripts
+## 🧬 07 - Project Scripts
 Scripts that string the ecosystem together.
 - [[Build-Wrapper.py|Modular Build Wrapper]]
 - [[Multi-Repo-Validator.py|Multi-repo Validator]]
 
-## 🌐 06 - Ecosystem Microservices
+## 🌐 08 - Ecosystem Microservices
 Live documentation directly from the source code repositories.
 - [[config-server/README.md|Config-Server]]
 - [[log-server/README.md|Log-Server]]
