@@ -21,4 +21,4 @@ tags:
 
 ## ✅ Completed
 - [x] Initial structure for `business-bdd-brain`.
-- [x] Creation of `tech-stack-brain/05-Role-Wisdom/`.
+- [x] Creation of `tech-stack-brain/06-Role-Wisdom/`.

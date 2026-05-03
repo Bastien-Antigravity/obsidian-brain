@@ -12,6 +12,8 @@ Welcome to the central Map of Content (MOC) for the ecosystem. This serves as th
 ## 🌌 00 - The Chronos-Nexus (Meta-Brain)
 The "Strategic Oracle" that analyzes history, patterns, and project blind spots.
 - **[[nexus-strategic-brain/STRAT-001-The-Dormant-Pipeline|👁️ Current Strategic Audit]]**
+- **[[nexus-strategic-brain/Strategic-Patterns|🧩 Strategic Patterns]]**
+- **[[nexus-strategic-brain/Anti-Backlog|🚫 The Anti-Backlog]]**
 - **[[core-kms-brain/Role-Prompts/00-Oracle/Prompt-Chronos-Nexus|🛰️ Role 00: Chronos-Nexus]]**
 
 ## 🤖 01 - AI Engine
@@ -56,6 +58,8 @@ The structural paradigms for all polyglot microservices.
 - [[06-Transverse-Event-Flows|🌀 Transverse Event Flows]]
 - [[07-Configuration-Standard|Configuration Standard]]
 - [[08-Networking-Protocols|Networking Protocols]]
+- [[09-Log-Server-Architecture|Log-Server Architecture]]
+- [[10-Testing-Sandbox-Standards|Testing & Sandbox Standards]]
 
 ## 📜 Architecture Decision Records (ADRs)
 The historical ledger of ecosystem-wide technical decisions.
@@ -80,8 +84,15 @@ How we get our code to production.
 
 ## 🧬 07 - Project Scripts
 Scripts that string the ecosystem together.
-- [[tech-stack-brain/05-Project-Scripts/Build-Wrapper.py|Modular Build Wrapper]]
+- [[tech-stack-brain/05-Project-Scripts/Build-Wrapper.py|Modular Build Wrapper]] *(Legacy — use `cargo build` / `go build` directly)*
 - [[tech-stack-brain/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
+
+## 🧠 06 - Role Wisdom
+The historical knowledge and best practices for each AI role.
+- [[tech-stack-brain/06-Role-Wisdom/Architect/|Architect Wisdom]]
+- [[tech-stack-brain/06-Role-Wisdom/Developer/|Developer Wisdom]]
+- [[tech-stack-brain/06-Role-Wisdom/QA/|QA Wisdom]]
+- [[tech-stack-brain/06-Role-Wisdom/Purger/|Purger Wisdom]]
 
 ## 🌐 08 - Ecosystem Microservices
 Live documentation and operational hubs for the service fleet.

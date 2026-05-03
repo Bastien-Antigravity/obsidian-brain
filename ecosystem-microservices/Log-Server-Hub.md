@@ -25,3 +25,11 @@ status: active
 > WHERE type = "behavior-spec"
 > SORT feature_id ASC
 > ```
+
+## 🏗️ Architecture Decision Records (ADR)
+
+### ADR-001: Liveness over Completeness (Gap Timeout)
+*   **Context**: Out-of-order delivery via TCP/UDP can cause sequence gaps in the BTreeMap buffer.
+*   **Decision**: Enforce a **500ms timeout** on missing sequences. If the missing sequence doesn't arrive within this window, the server forces progress to the next available sequence.
+*   **Rationale**: Service availability is prioritized over perfect sequential integrity. A blocked writer stops the entire fleet from logging (back-pressure).
+*   **Consequence**: Small gaps in logs are possible under high packet loss, but service uptime is guaranteed.
