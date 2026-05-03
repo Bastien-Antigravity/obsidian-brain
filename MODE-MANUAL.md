@@ -3,7 +3,7 @@ title: "AI Operating Manual: Multi-Mode Protocols"
 version: 2.0
 type: architecture
 status: active
-active_mode: 3
+active_mode: 1
 ---
 
 # 🕹️ AI Operating Manual: Multi-Mode Protocols
