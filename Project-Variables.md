@@ -1,4 +1,6 @@
 ---
+type: configuration
+status: active
 ecosystem_name: "Bastien-Antigravity"
 architecture_rules_path: "tech-stack-brain/02-Project-Architecture/Global-Architecture-Rules.md"
 coding_standards_path: "tech-stack-brain/03-Project-Coding/00-Coding-Style-Guide.md"

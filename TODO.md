@@ -1,3 +1,11 @@
+---
+type: task
+status: active
+priority: high
+tags:
+  - governance
+  - meta-logic
+---
 # TODO: obsidian-brain (Governance & Meta-Logic)
 
 ## 🚨 High Priority (Governance Gaps)

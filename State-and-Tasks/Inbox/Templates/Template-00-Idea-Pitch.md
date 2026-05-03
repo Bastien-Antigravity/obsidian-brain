@@ -23,4 +23,4 @@ role: orchestrator
 - [ ] Other: ...
 
 ---
-*Once this file is filled out and saved in `Inbox/`, the `Agent-Dispatcher.py` will route it to the Orchestrator to generate the Master Plan.*
+*Once this file is filled out and saved in `Inbox/`, the Orchestrator will analyze it. Simple tasks (Score 1-2) will be **Fast-Tracked** directly to implementation, while complex tasks (Score 3+) will generate a full Master Plan.*

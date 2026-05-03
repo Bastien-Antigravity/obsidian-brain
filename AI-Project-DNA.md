@@ -1,3 +1,10 @@
+---
+type: architecture
+status: active
+tags:
+  - governance
+  - dna
+---
 # 🧬 Project DNA: obsidian-brain
 
 ## 🎯 High-Level Intent (BDD)

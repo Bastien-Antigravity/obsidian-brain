@@ -1,6 +1,8 @@
 ---
 title: "AI Operating Manual: Multi-Mode Protocols"
 version: 1.0
+type: architecture
+status: active
 active_mode: Agent Orchestrator
 ---
 

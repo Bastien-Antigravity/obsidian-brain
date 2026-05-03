@@ -9,7 +9,12 @@ author: Ruzava & Antigravity
 
 Welcome to the central Map of Content (MOC) for the ecosystem. This serves as the root node of our Obsidian Brain, governing the architecture, standards, and workflows.
 
-## 🤖 00 - AI Engine
+## 🌌 00 - The Chronos-Nexus (Meta-Brain)
+The "Strategic Oracle" that analyzes history, patterns, and project blind spots.
+- **[[nexus-strategic-brain/STRAT-001-The-Dormant-Pipeline|👁️ Current Strategic Audit]]**
+- **[[core-kms-brain/Role-Prompts/00-Oracle/Prompt-Chronos-Nexus|🛰️ Role 00: Chronos-Nexus]]**
+
+## 🤖 01 - AI Engine
 These define the generic "Team of Agents" architecture, workflows, and prompts for the AI.
 - [[Workflow-Idea-to-Exploitation|Pipeline: Idea to Exploitation]]
 - [[Daily-AI-Playbook|📖 Daily AI Playbook (Workflow)]]
@@ -17,7 +22,8 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook (5D Paradigm)]]
 - [[00-Obsidian-App-Config|⚙️ Obsidian App Configuration Guide]]
 - [[00-Knowledge-Strategy|🛡️ AI Governance & Knowledge Strategy]]
-- [[core-kms-brain/state-and-tasks/Inbox/Legacy-Tasks|📥 Task Inbox]]
+- [[core-kms-brain/Role-Prompts/09-Sentinel/Prompt-Sentinel|🛡️ Role 09: Sentinel (Integrity Auditor)]]
+- [[state-and-tasks/Inbox/Template-00-Idea-Pitch|📥 Task Inbox]]
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
@@ -74,19 +80,22 @@ How we get our code to production.
 
 ## 🧬 07 - Project Scripts
 Scripts that string the ecosystem together.
-- [[Build-Wrapper.py|Modular Build Wrapper]]
-- [[Multi-Repo-Validator.py|Multi-repo Validator]]
+- [[tech-stack-brain/05-Project-Scripts/Build-Wrapper.py|Modular Build Wrapper]]
+- [[tech-stack-brain/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
 
 ## 🌐 08 - Ecosystem Microservices
-Live documentation directly from the source code repositories.
-- [[config-server/README.md|Config-Server]]
-- [[log-server/README.md|Log-Server]]
-- [[notif-server/README.md|Notif-Server]]
-- [[safe-socket/README.md|Safe-Socket]]
+Live documentation and operational hubs for the service fleet.
+- **[[Config-Server-Hub|🌐 Config-Server Hub]]** (Go)
+- **[[Log-Server-Hub|🌐 Log-Server Hub]]** (Rust)
+- **[[Notif-Server-Hub|🌐 Notif-Server Hub]]** (Go)
+- **[[Safe-Socket-Hub|🌐 Safe-Socket Hub]]** (Go/SHM)
+- **[[Distributed-Config-Hub|🌐 Distributed-Config Hub]]** (Go/Polyglot)
+- **[[Market-Observer-Hub|🌐 Market-Observer Hub]]** (Go)
+- **[[Data-Ingestor-Hub|🌐 Data-Ingestor Hub]]** (Go)
+- **[[Fundamental-Analysis-Hub|🌐 Fundamental-Analysis Hub]]** (Python)
 - [[microservice-toolbox/README.md|Microservice-Toolbox]]
 - [[flexible-logger/README.md|Flexible-Logger]]
 - [[universal-logger/README.md|Universal-Logger]]
-- [[distributed-config/README.md|Distributed-Config]]
 
 > [!info]- 📊 Live Microservices List
 > ```dataview

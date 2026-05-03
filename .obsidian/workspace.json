@@ -11,14 +11,10 @@
             "id": "00d975ebcd5dcab7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -183,24 +179,43 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "e556d18da1d66994",
+  "active": "00d975ebcd5dcab7",
   "lastOpenFiles": [
+    "nexus-strategic-brain/User-Manual.md",
+    "nexus-strategic-brain/README.md",
+    "nexus-strategic-brain/STRAT-001-The-Dormant-Pipeline.md",
+    "nexus-strategic-brain",
+    "STRAT-BACKUP.md",
+    "core-kms-brain/Role-Prompts/00-Oracle/Prompt-Chronos-Nexus.md",
+    "core-kms-brain/Role-Prompts/00-Oracle",
+    "core-kms-brain/Role-Prompts/05-Fleet-Architect/Prompt-Fleet-Architect.md",
+    "core-kms-brain/Role-Prompts/05-Fleet-Architect",
+    "08-Ecosystem-Microservices/Safe-Socket-Hub.md",
+    "ecosystem-microservices/Safe-Socket-Hub.md",
+    "ecosystem-microservices/Notif-Server-Hub.md",
+    "ecosystem-microservices/Market-Observer-Hub.md",
+    "ecosystem-microservices/Log-Server-Hub.md",
+    "ecosystem-microservices/Fundamental-Analysis-Hub.md",
+    "ecosystem-microservices/Distributed-Config-Hub.md",
+    "ecosystem-microservices/Data-Ingestor-Hub.md",
+    "ecosystem-microservices/Config-Server-Hub.md",
+    "ecosystem-microservices",
+    "08-Ecosystem-Microservices/Notif-Server-Hub.md",
+    "08-Ecosystem-Microservices/Market-Observer-Hub.md",
+    "08-Ecosystem-Microservices/Log-Server-Hub.md",
+    "08-Ecosystem-Microservices/Fundamental-Analysis-Hub.md",
+    "08-Ecosystem-Microservices/Distributed-Config-Hub.md",
+    "08-Ecosystem-Microservices/Data-Ingestor-Hub.md",
+    "08-Ecosystem-Microservices/Config-Server-Hub.md",
+    "README.md",
     "root.obsidian/workspace.json",
     "root.obsidian/templates.json",
     "root.obsidian/snippets/Hide-Empty-Folders.css",
     "root.obsidian/snippets",
     "root.obsidian/plugins/file-explorer-plus/styles.css",
     "root.obsidian/plugins/file-explorer-plus/manifest.json",
-    "root.obsidian/plugins/file-explorer-plus/main.js",
-    "root.obsidian/plugins/file-explorer-plus/data.json",
-    "root.obsidian/plugins/file-explorer-plus",
-    "root.obsidian/plugins/dataview/main.js",
-    "root.obsidian/plugins/dataview/styles.css",
     "01-AI-Assistant/AI-System-Rules.md",
     "01-AI-Assistant/AI-Workflow-and-Branching.md",
-    "01-AI-Assistant/AI-Session-State.md",
-    "03-Coding-and-Libraries/05-Architecture-Patterns.md",
-    "README.md",
-    "00-Obsidian-App-Config.md"
+    "01-AI-Assistant/AI-Session-State.md"
   ]
 }
