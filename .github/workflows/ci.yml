@@ -15,7 +15,7 @@ jobs:
       # Go Validation (if applicable)
       - name: Set up Go
         if: hashFiles('go.mod') != ''
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: '1.22'
       - name: Go Lint & Test
