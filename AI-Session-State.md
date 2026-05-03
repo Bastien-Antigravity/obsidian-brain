@@ -31,14 +31,15 @@ directives:
 
 ## 🐛 Local Issues / Bugs
 - **Active Protocol**: [[MODE-MANUAL#Mode-3-Agent-Orchestrator]] (Agent Orchestrator)
-- **Current Focus**: Global Fleet Synchronization (GitHub accounts alignment).
+- **Current Focus**: Fleet-wide synchronization and audit (Final Phase).
 - **Log Server (FEAT-002)**: Ingestion lag risk on packet loss (Gap Timeout missing).
 - **Notif Server (FEAT-002)**: Lack of HTTP retries and malformed Telegram URL scheme.
 - **Config Server (FEAT-004)**: Persistence atomicity risk (Writing directly to target JSON).
 
 - [x] **Phase 1: Brain Sanitization**: Completed full audit and repair of metadata and cross-brain links.
-- [/] **Phase 2: Fleet Management**: Synchronizing all 25+ repositories listed in `inventory.json`.
-- [ ] **Phase 3: Market Layer Audit**: Extend Spec-First hardening to the `market-observer`, `fundamental-analysis`, and `technical-analysis` repos.
+- [x] **Phase 2: Fleet Management**: Global synchronization complete.
+- [x] **Phase 3: Sandbox Debugging**: Fixed data race in `safe-socket` and CI paths in `sandbox-testing`.
+- [/] **Phase 4: Final Fleet Sync**: Synchronizing fixes and performing final audit.
 
 ---
 *To load this state, simply prompt: "Restore session state"*
