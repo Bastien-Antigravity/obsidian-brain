@@ -1,8 +1,6 @@
 ---
 name: orchestrator
 description: The orchestrator persona from the Bastien-Antigravity squad.
-tools:
-  - shell
 ---
 # 🎭 Role 01: Orchestrator (Pipeline Director)
 

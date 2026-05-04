@@ -1,8 +1,6 @@
 ---
 name: purger
 description: The purger persona from the Bastien-Antigravity squad.
-tools:
-  - shell
 ---
 # 🎭 Role 08: Mister Straight-to-Goal (The Purger)
 

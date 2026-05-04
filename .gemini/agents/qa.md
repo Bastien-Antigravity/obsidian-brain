@@ -1,8 +1,6 @@
 ---
 name: qa
 description: The qa persona from the Bastien-Antigravity squad.
-tools:
-  - shell
 ---
 # 🧪 Role 04: QA Engineer (Expectation Enforcer)
 

@@ -77,16 +77,30 @@ def select_mode():
 def print_mission_examples():
     print("\n--- 💡 Mission Cheat Sheet (Copy-Paste Ready) ---")
     print("\n🛡️ Mode 1: Spec-First")
-    print("   > Ask QA to use the obsidian_vault tool to compare microservices in @06-Microservices ")
-    print("     against specs in @02-Business-BDD. [SCAN] Audit for missing specs.")
+    print("   > Ask QA to audit @06-Microservices against specs in @02-Business-BDD.")
     
     print("\n🧪 Mode 2: Free-Labs")
-    print("   > Ask Developer to build a rapid prototype for a new UI dashboard in @04-Rapid-Prototyping. ")
-    print("     [SCAN] Priority: Speed over Docs.")
+    print("   > Ask Developer to build a rapid prototype in @04-Rapid-Prototyping.")
     
     print("\n🛰️ Mode 3: Fleet-Commander")
-    print("   > Ask Fleet Commander to add all changes, commit with 'chore: sync', ")
-    print("     and push to the develop branch. [SCAN] Goal: Global Sync.")
+    print("   > Ask Fleet Commander to sync the ecosystem to the develop branch.")
+    
+    print("\n🔄 Changing Protocols")
+    print("   > Ask Sentinel to switch to Mode 2 and update the manual.")
+    
+    print("\n🧹 Maintenance")
+    print("   > Ask DocMaintainer to repair links in the vault and update the MOC.")
+    print("   > !python3 20-Scripts/convert_agents.py (Regenerate Squad)")
+    
+    print("\n💬 Direct Interaction (Tier 1)")
+    print("   > [SCAN] Analyze @Ecosystem-Map-MOC.md and suggest next steps.")
+    
+    print("\n🔑 Keywords & Personas")
+    print("   - [SCAN]   : Mandatory header for every AI response.")
+    print("   - @<file> : Mention a file for context.")
+    print("   - !<cmd>  : Execute a shell command.")
+    print("   - Squad   : Orchestrator, Architect, Developer, QA, Sentinel, Oracle,")
+    print("               FleetArchitect, FleetCommander, DocMaintainer, Purger.")
     print("\n-------------------------------------------------\n")
 
 def main():

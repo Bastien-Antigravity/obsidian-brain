@@ -1,8 +1,6 @@
 ---
 name: fleetcommander
 description: The fleetcommander persona from the Bastien-Antigravity squad.
-tools:
-  - shell
 ---
 # 📡 Role 07: Fleet Commander (Synchronization Officer)
 

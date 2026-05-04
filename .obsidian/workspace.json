@@ -181,6 +181,7 @@
   },
   "active": "12ade5dff85c4b4c",
   "lastOpenFiles": [
+    "20-Scripts/mission_help.py",
     "02-Business-BDD/02-Behavior-Specs/fundamental-analysis/FEAT-002-Valuation-Metrics.md",
     "02-Business-BDD/02-Behavior-Specs/fundamental-analysis/FEAT-001-Financial-Scraping.md",
     "02-Business-BDD/02-Behavior-Specs/data-ingestor/FEAT-002-Batch-Persistence.md",
@@ -215,7 +216,6 @@
     "10-State-and-Tasks/Domain-Dashboard.md",
     "10-State-and-Tasks",
     "07-Core-KMS/Role-Prompts/03-Developer/Squad/Timescale-Data-Specialist.md",
-    "07-Core-KMS/Role-Prompts/03-Developer/Squad/Rust-Safety-Specialist.md",
     "07-Core-KMS/Role-Prompts/03-Developer/Squad",
     "03-Tech-Stack/02-Project-Architecture/Ecosystem-Topology.canvas"
   ]
