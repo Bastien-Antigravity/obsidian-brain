@@ -181,6 +181,7 @@
   },
   "active": "12ade5dff85c4b4c",
   "lastOpenFiles": [
+    "05-Fleet-Operation/02-Deployment-Logs/LOG-2026-05-04-Fleet-Sync-Final.md",
     "05-Fleet-Operation/02-Deployment-Logs/LOG-2026-05-04-Develop-Sync.md",
     "20-Scripts/mission_help.py",
     "02-Business-BDD/02-Behavior-Specs/fundamental-analysis/FEAT-002-Valuation-Metrics.md",
@@ -216,7 +217,6 @@
     "10-State-and-Tasks/Inbox",
     "10-State-and-Tasks/Domain-Dashboard.md",
     "10-State-and-Tasks",
-    "07-Core-KMS/Role-Prompts/03-Developer/Squad/Timescale-Data-Specialist.md",
     "03-Tech-Stack/02-Project-Architecture/Ecosystem-Topology.canvas"
   ]
 }
