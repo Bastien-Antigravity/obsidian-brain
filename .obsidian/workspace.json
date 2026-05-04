@@ -181,6 +181,7 @@
   },
   "active": "12ade5dff85c4b4c",
   "lastOpenFiles": [
+    "20-Scripts/scaffold_new_brain.py",
     "05-Fleet-Operation/02-Deployment-Logs/LOG-2026-05-04-Fleet-Sync-Final.md",
     "05-Fleet-Operation/02-Deployment-Logs/LOG-2026-05-04-Develop-Sync.md",
     "20-Scripts/mission_help.py",
@@ -215,7 +216,6 @@
     "10-State-and-Tasks/Inbox/Templates",
     "10-State-and-Tasks/Sprint-Dashboard.md",
     "10-State-and-Tasks/Inbox",
-    "10-State-and-Tasks/Domain-Dashboard.md",
     "10-State-and-Tasks",
     "03-Tech-Stack/02-Project-Architecture/Ecosystem-Topology.canvas"
   ]
