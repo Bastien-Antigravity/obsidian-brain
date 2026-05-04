@@ -1,23 +1,23 @@
-[submodule "core-kms-brain"]
-	path = core-kms-brain
-	url = https://github.com/Bastien-Antigravity/core-kms-brain.git
+[submodule "07-Core-KMS"]
+	path = 07-Core-KMS
+	url = https://github.com/Bastien-Antigravity/07-Core-KMS.git
 	branch = develop
-[submodule "tech-stack-brain"]
-	path = tech-stack-brain
-	url = https://github.com/Bastien-Antigravity/tech-stack-brain.git
+[submodule "03-Tech-Stack"]
+	path = 03-Tech-Stack
+	url = https://github.com/Bastien-Antigravity/03-Tech-Stack.git
 	branch = develop
-[submodule "business-bdd-brain"]
-	path = business-bdd-brain
-	url = https://github.com/Bastien-Antigravity/business-bdd-brain.git
+[submodule "02-Business-BDD"]
+	path = 02-Business-BDD
+	url = https://github.com/Bastien-Antigravity/02-Business-BDD.git
 	branch = develop
-[submodule "fleet-operation-brain"]
-	path = fleet-operation-brain
-	url = https://github.com/Bastien-Antigravity/fleet-operation-brain.git
+[submodule "05-Fleet-Operation"]
+	path = 05-Fleet-Operation
+	url = https://github.com/Bastien-Antigravity/05-Fleet-Operation.git
 	branch = develop
-[submodule "rapid-prototyping-brain"]
-	path = rapid-prototyping-brain
-	url = https://github.com/Bastien-Antigravity/rapid-prototyping-brain
+[submodule "04-Rapid-Prototyping"]
+	path = 04-Rapid-Prototyping
+	url = https://github.com/Bastien-Antigravity/04-Rapid-Prototyping
 	branch = develop
-[submodule "nexus-strategic-brain"]
-	path = nexus-strategic-brain
-	url = https://github.com/Bastien-Antigravity/nexus-strategic-brain.git
+[submodule "01-Strategic-Nexus"]
+	path = 01-Strategic-Nexus
+	url = https://github.com/Bastien-Antigravity/01-Strategic-Nexus.git

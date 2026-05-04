@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[distributed-config/README.md|📂 distributed-config/]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/distributed-config/|📜 BDD Specifications]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/distributed-config/|📜 BDD Specifications]]
 - **Polyglot Bridge**: [[FEAT-007-CGO-FFI-Bridge|CGO Shared Library Spec]]
 
 ## 🛠️ Squad Assignment
@@ -22,7 +22,7 @@ status: active
 > [!info] Open Specifications
 > ```dataview
 > TABLE status, feature_id as "ID"
-> FROM "business-bdd-brain/02-Behavior-Specs/distributed-config"
+> FROM "02-Business-BDD/02-Behavior-Specs/distributed-config"
 > WHERE type = "behavior-spec"
 > SORT feature_id ASC
 > ```

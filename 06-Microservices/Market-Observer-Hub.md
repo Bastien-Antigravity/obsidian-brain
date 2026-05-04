@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[market-observer/README.md|📂 market-observer/]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/market-observer/|⚠️ MISSING SPECS]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/market-observer/|📜 BDD Specifications]]
 - **Action Plan**: [[market-observer/TODO.md|📅 Local TODO]]
 
 ## 🛠️ Squad Assignment
@@ -17,15 +17,14 @@ status: active
 - **Primary Specialist**: [[Go-Systems-Specialist|Go-Systems]]
 - **Data Specialist**: [[Timescale-Data-Specialist|Timescale-Data]]
 
-## 📊 Governance Warning
-> [!WARNING] DOCUMENTATION DEBT
-> No BDD Feature Specifications have been defined for this service yet. 
-> **AI Drift Risk: HIGH.**
-> 
-> *Required Specs:*
-> - FEAT-001: Websocket Reconnection Logic
-> - FEAT-002: Orderbook Normalization
-> - FEAT-003: Heartbeat Monitoring
+## 📊 Live Governance Dashboard
+> [!info] Open Specifications
+> ```dataview
+> TABLE status, feature_id as "ID"
+> FROM "02-Business-BDD/02-Behavior-Specs/market-observer"
+> WHERE type = "behavior-spec"
+> SORT feature_id ASC
+> ```
 
 ---
 *Last Audit: [[AI-Session-State|Restore Session State]]*

@@ -21,10 +21,10 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 ## 🛡️ Mode 1: Spec-First (The Governance Gate)
 
 **Objective**: Maximum stability and zero-drift.
-- **Rule 1**: No code changes without an approved BDD Spec in `business-bdd-brain/02-Behavior-Specs/`.
+- **Rule 1**: No code changes without an approved BDD Spec in `02-Business-BDD/02-Behavior-Specs/`.
 - **Rule 2**: Every fix must be audited against the spec before merging.
 - **Rule 3**: Code cannot be merged until it strictly passes all Spec tests.
-- **Primary Brains**: `business-bdd-brain`, `tech-stack-brain`
+- **Primary Brains**: `02-Business-BDD`, `03-Tech-Stack`
 - **AI Persona**: Unified **Systems Engineer** (applying QA, Architecture, and Development rules natively without roleplaying).
 - **Best For**: Core libraries, financial logic, and stable infrastructure.
 
@@ -34,12 +34,12 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 
 **Objective**: Rapid prototyping and experimental flow.
 - **Rule 1**: BDD Specs are optional. Focus on speed and "MVP" (Minimum Viable Product).
-- **Rule 2**: Work is isolated in `rapid-prototyping-brain/`. Experiments are logged in
+- **Rule 2**: Work is isolated in `04-Rapid-Prototyping/`. Experiments are logged in
   `01-Experiment-Index/` using the experiment template.
-- **Rule 3**: After a "Labs" feature is validated, perform a "Graduation Ceremony" — creating the BDD spec in `business-bdd-brain` and transitioning the code to Mode 1 standards.
-- **Primary Brain**: `rapid-prototyping-brain`
+- **Rule 3**: After a "Labs" feature is validated, perform a "Graduation Ceremony" — creating the BDD spec in `02-Business-BDD` and transitioning the code to Mode 1 standards.
+- **Primary Brain**: `04-Rapid-Prototyping`
 - **AI Persona**: Unified **Systems Engineer** (focused on fast-track development and rapid iteration).
-- **Best For**: UI/UX design, new trading strategies, and one-off scripts.
+- **Best For**: UI/UX design, new trading strategies, and one-off 20-Scripts.
 
 ---
 
@@ -48,9 +48,9 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 **Objective**: Scale and mass-execution.
 - **Rule 1**: AI operates across multiple repositories simultaneously.
 - **Rule 2**: Focus on "Fleet-Wide Action Plans" in
-  `fleet-operation-brain/01-Fleet-Action-Plans/` rather than individual lines of code.
+  `05-Fleet-Operation/01-Fleet-Action-Plans/` rather than individual lines of code.
 - **Rule 3**: Automated testing is mandatory for every repo in the action plan.
-- **Primary Brain**: `fleet-operation-brain`
+- **Primary Brain**: `05-Fleet-Operation`
 - **AI Persona**: Unified **Systems Engineer** (focused on global architecture, synchronization, and ecosystem integrity).
 - **Best For**: Global refactors, dependency updates, and release cycles.
 

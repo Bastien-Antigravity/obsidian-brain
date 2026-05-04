@@ -1,17 +1,15 @@
 ---
-microservice: config-server
+microservice: data-ingestor
 type: service-hub
 status: active
 ---
-# 🌐 Service Hub: Config-Server
+# 🌐 Service Hub: Data-Ingestor
 
-*The Central Nerve System for Configuration Distribution.*
+*Pipeline for high-volume data transformation and storage.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[config-server/README.md|📂 config-server/]]
-- **Architecture**: [[config-server/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/config-server/|📜 BDD Specifications]]
-- **Action Plan**: [[config-server/TODO.md|📅 Local TODO]]
+- **Code Repository**: [[data-ingestor/README.md|📂 data-ingestor/]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/data-ingestor/|📜 BDD Specifications]]
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
@@ -22,7 +20,7 @@ status: active
 > [!info] Open Specifications
 > ```dataview
 > TABLE status, feature_id as "ID"
-> FROM "business-bdd-brain/02-Behavior-Specs/config-server"
+> FROM "02-Business-BDD/02-Behavior-Specs/data-ingestor"
 > WHERE type = "behavior-spec"
 > SORT feature_id ASC
 > ```

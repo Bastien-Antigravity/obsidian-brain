@@ -9,16 +9,21 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[fundamental-analysis/README.md|📂 fundamental-analysis/]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/fundamental-analysis/|⚠️ MISSING SPECS]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/fundamental-analysis/|📜 BDD Specifications]]
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
 - **Primary Specialist**: [[Python-Integration-Specialist|Python-Integration]]
 - **Data Specialist**: [[Timescale-Data-Specialist|Timescale-Data]]
 
-## 📊 Governance Warning
-> [!WARNING] DOCUMENTATION DEBT
-> No BDD Feature Specifications defined. 
+## 📊 Live Governance Dashboard
+> [!info] Open Specifications
+> ```dataview
+> TABLE status, feature_id as "ID"
+> FROM "02-Business-BDD/02-Behavior-Specs/fundamental-analysis"
+> WHERE type = "behavior-spec"
+> SORT feature_id ASC
+> ```
 
 ---
 *Last Audit: [[AI-Session-State|Restore Session State]]*

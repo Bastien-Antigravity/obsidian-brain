@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[notif-server/README.md|📂 notif-server/]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/notif-server/|📜 BDD Specifications]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/notif-server/|📜 BDD Specifications]]
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
@@ -20,7 +20,7 @@ status: active
 > [!info] Open Specifications
 > ```dataview
 > TABLE status, feature_id as "ID"
-> FROM "business-bdd-brain/02-Behavior-Specs/notif-server"
+> FROM "02-Business-BDD/02-Behavior-Specs/notif-server"
 > WHERE type = "behavior-spec"
 > SORT feature_id ASC
 > ```
