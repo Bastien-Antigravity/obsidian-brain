@@ -84,8 +84,12 @@ We don't need to lose our train of thought between days.
 * **Restore State:** Next time you engage with me, just say *"Restore session state"* and I will pick up right where we left off based on that file!
 
 ---
-> [!TIP] Split Information Aggressively!
-> Do we need to split information? **YES!** Atomicity is powerful. If an architecture document gets too long, split it and use an MOC to group them. Many small, well-linked files always beat one massive file.
+> [!TIP] Progressive Disclosure (Level-based Organization)
+> While atomicity is good for human zettelkasten, for AI interaction, we organize knowledge by **depth levels**. This allows the AI to fetch exactly the context it needs without loading irrelevant details or getting lost in hundreds of tiny files.
+> - **Level 1 (Macro)**: High-level concepts, MOCs, and system topologies (e.g., `Ecosystem-Map-MOC`).
+> - **Level 2 (Cluster)**: Component or domain-specific documentation (e.g., `Log-Server-Hub`).
+> - **Level 3 (Micro)**: Deep implementation details and data structures.
+> *Only split information if it genuinely belongs to a different Level of depth. Otherwise, consolidate related info into cohesive documents.*
 
 ---
 

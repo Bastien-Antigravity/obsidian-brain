@@ -18,16 +18,12 @@ directives:
 
 # 🧠 AI Session State: obsidian-brain
 
-> [!IMPORTANT] CORE OPERATING DIRECTIVE
-> I am autonomously obligated to update all associated documentation (**README.md**, **ARCHITECTURE.md**) and relevant **Obsidian Brain** nodes after every code modification. No manual user reminder is required.
+> [!IMPORTANT] ASYNCHRONOUS DOCUMENTATION
+> Update associated documentation (**README.md**, **ARCHITECTURE.md**) and relevant **Obsidian Brain** nodes ONLY upon feature completion or sprint closure to preserve compute and prevent task drift. Do not update documentation after every minor code modification.
 
 ## 🚀 Progress Tracking
-- [x] **Vault Structural Evolution:** Migrated the vault root to the project base and consolidated `.obsidian` configurations.
-- [x] **Global Session State Initialization:** Deployed a locally-managed `AI-Session-State.md` tracker to the root of all repositories.
-- [x] **Multi-Mode Framework Implementation:** Created the **[[MODE-MANUAL]]** and the 3-Zone architecture (**Frozen/Fluid/Fleet**).
-- [x] **Role Evolution:** Restructured the AI pipeline with the **Lead Developer**, **Specialist Squad**, **Sentinel**, and **Fleet Commander**.
-- [x] **Brain Hardening (2026-05-03)**: Successfully performed a full structural audit of all 5 brain modes. Fixed stale links, deleted nested duplicates, and implemented missing templates with graduation protocols.
 - [/] **Ecosystem-Wide Action**: Activating **Fleet Commander** for global GitHub synchronization and account alignment.
+- [/] **Phase 5: Content Pivot**: Transitioning from Infrastructure to Value Stream (Orderbook Ingestion).
 
 ## 🐛 Local Issues / Bugs
 - **Active Protocol**: [[MODE-MANUAL#Mode-3-Agent-Orchestrator]] (Agent Orchestrator)
@@ -36,10 +32,14 @@ directives:
 - **Notif Server (FEAT-002)**: Lack of HTTP retries and malformed Telegram URL scheme.
 - **Config Server (FEAT-004)**: Persistence atomicity risk (Writing directly to target JSON).
 
-- [x] **Phase 1: Brain Sanitization**: Completed full audit and repair of metadata and cross-brain links.
-- [x] **Phase 2: Fleet Management**: Global synchronization complete.
-- [x] **Phase 3: Sandbox Debugging**: Fixed data race in `safe-socket` and CI paths in `sandbox-testing`.
-- [/] **Phase 4: Final Fleet Sync**: Synchronizing fixes and performing final audit.
+
+## 🔭 Strategic Oracle (Chronos-Nexus)
+- **Active Audits**: 
+    - [[nexus-strategic-brain/STRAT-002-The-Execution-First-Drift|STRAT-002: The Execution-First Drift]]
+    - [[nexus-strategic-brain/STRAT-003-The-Infrastructure-Gordian-Knot|STRAT-003: The Infrastructure Gordian Knot]]
+    - [[nexus-strategic-brain/STRAT-004-The-Cognitive-Load-Crisis|STRAT-004: The Cognitive Load Crisis]]
+- **Blind Spot Detected**: Brain Fragmentation is causing a "Reasoning Tax" on the AI. Mandatory documentation sync is creating "Write-Only Memory."
+- **Global Law Status**: Near "Signal-to-Noise Ratio (SNR) Collapse" in the Knowledge Base.
 
 ---
 *To load this state, simply prompt: "Restore session state"*

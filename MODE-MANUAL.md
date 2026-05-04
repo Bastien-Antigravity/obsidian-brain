@@ -23,9 +23,9 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 **Objective**: Maximum stability and zero-drift.
 - **Rule 1**: No code changes without an approved BDD Spec in `business-bdd-brain/02-Behavior-Specs/`.
 - **Rule 2**: Every fix must be audited against the spec before merging.
-- **Rule 3**: The **Purger** acts as a Gate for every implementation plan.
+- **Rule 3**: Code cannot be merged until it strictly passes all Spec tests.
 - **Primary Brains**: `business-bdd-brain`, `tech-stack-brain`
-- **Key Personas**: QA → Architect → Developer → FleetArchitect → DocMaintainer
+- **AI Persona**: Unified **Systems Engineer** (applying QA, Architecture, and Development rules natively without roleplaying).
 - **Best For**: Core libraries, financial logic, and stable infrastructure.
 
 ---
@@ -36,11 +36,9 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 - **Rule 1**: BDD Specs are optional. Focus on speed and "MVP" (Minimum Viable Product).
 - **Rule 2**: Work is isolated in `rapid-prototyping-brain/`. Experiments are logged in
   `01-Experiment-Index/` using the experiment template.
-- **Rule 3**: After a "Labs" feature is validated, the **DocMaintainer** performs a
-  "Graduation Ceremony" — creating the BDD spec in `business-bdd-brain` and transitioning
-  the code to Mode 1 standards.
+- **Rule 3**: After a "Labs" feature is validated, perform a "Graduation Ceremony" — creating the BDD spec in `business-bdd-brain` and transitioning the code to Mode 1 standards.
 - **Primary Brain**: `rapid-prototyping-brain`
-- **Key Personas**: Orchestrator (fast-track) → Developer → DocMaintainer (graduation)
+- **AI Persona**: Unified **Systems Engineer** (focused on fast-track development and rapid iteration).
 - **Best For**: UI/UX design, new trading strategies, and one-off scripts.
 
 ---
@@ -53,7 +51,7 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
   `fleet-operation-brain/01-Fleet-Action-Plans/` rather than individual lines of code.
 - **Rule 3**: Automated testing is mandatory for every repo in the action plan.
 - **Primary Brain**: `fleet-operation-brain`
-- **Key Personas**: FleetCommander → FleetArchitect → Sentinel
+- **AI Persona**: Unified **Systems Engineer** (focused on global architecture, synchronization, and ecosystem integrity).
 - **Best For**: Global refactors, dependency updates, and release cycles.
 
 ---
@@ -65,7 +63,7 @@ To switch modes, the USER must:
 2. The AI will update `active_mode` in the YAML header of this file.
 3. The AI will update `AI-Session-State.md` with: `Active Protocol: [[MODE-MANUAL#Mode-X]]`.
 4. The AI will announce:
-   - Which **personas are activated** for this mode.
+   - Which **rules are activated** for this mode (e.g., Unified Systems Engineer).
    - Which **brains are primary** for this mode.
    - Which **constraints are relaxed or enforced** (e.g., "BDD Specs optional" in Mode 2).
 
@@ -81,4 +79,4 @@ To deactivate all modes: `"Switch to Mode: none"`.
 | Sandbox tests? | ✅ Mandatory | ❌ Optional | ✅ Mandatory |
 | Multi-repo ops? | ❌ Single repo | ❌ Single repo | ✅ Fleet-wide |
 | Graduation needed? | N/A | ✅ To Mode 1 | N/A |
-| Primary personas | QA, Dev, Architect | Dev, DocMaintainer | FleetCmd, FleetArch |
+| AI Persona Focus | Strict Compliance | Rapid Iteration | Ecosystem Sync |

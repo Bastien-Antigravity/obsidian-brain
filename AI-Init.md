@@ -1,10 +1,9 @@
 # ⚡ AI Initialization: obsidian-brain
 
-> [!IMPORTANT] MANDATORY INITIALIZATION
-> Copy and paste this prompt when starting a new session in this repository:
+> [!IMPORTANT] RECOMMENDED INITIALIZATION
+> When starting a new session in this repository, you may optionally prompt:
 > 
-> "1. Read the ecosystem map in **[[Ecosystem-Map-MOC]]**."
-> "2. Load project constraints from **[[AI-Project-DNA]]**."
-> "3. Restore session state from **[[AI-Session-State]]**."
-> "4. **Sentinel Audit**: Run `python3 core-kms-brain/Scripts/Brain-Health-Audit.py` and resolve any drift."
-> "5. **Squad Protocol**: You are now the **Lead Developer**. Identify and hire the required **Specialists** from `core-kms-brain/Role-Prompts/03-Developer/Squad/`."
+> "1. Read the **[[Ecosystem-Map-MOC]]** if you need high-level context."
+> "2. Restore session state from **[[AI-Session-State]]** to resume active tasks."
+> 
+> *(Note: The AI automatically utilizes its contextual Knowledge Items (KI) and history. Avoid forcing it to read large architectural rules unless specifically required for the task.)*
