@@ -8,7 +8,7 @@ It is designed as a **Multi-Mode Engine** to balance between rigorous infrastruc
 
 ## 🕹️ Operating Modes
 This Brain supports multiple "Rules of Engagement" depending on the task speed and scale required.
-- **Current Active Mode**: 🛡️ **Spec-First**
+- **Default Active Mode**: 🛡️ **Spec-First**
 - **Reference**: See **[[MODE-MANUAL]]** for details on how to switch to **Free-Labs** or **Agent Orchestrator**.
 
 ---
@@ -40,8 +40,34 @@ The documentation here relies on a hybrid system:
 
 ---
 
-## 🤖 Assistant Mode (AI Protocol)
-Every session MUST be initialized by reading the **[[AI-Init]]** file. This ensures the AI loads the correct "DNA" and restores the **[[AI-Session-State]]**.
+---
+## 🎮 The 3 Levels of AI Engagement
+
+This Brain is designed to be used in three distinct ways, depending on your needs for safety, speed, or specialization.
+
+### 1. 🛡️ Mode-Based Execution (Global Protocols)
+Best for enforcing repo-wide "Rules of Engagement." 
+- **Usage**: Update the `active_mode` in **[[00-AI-Orchestration/MODE-MANUAL]]**.
+- **Impact**: Sets the global protocol (e.g., **Spec-First** requires BDD specs before code).
+
+### 2. 🧠 The AI Squad (Custom Subagent Prompts)
+Best for delegating isolated, specialized tasks to an expert persona.
+- **Usage**: Use the Gemini CLI delegation system (via `scripts/start_squad.py`).
+- **Examples**: *"Ask QA to review the tests"* or *"Ask the Architect to check the blueprint."*
+- **Impact**: Uses a dedicated subagent definition in `.gemini/agents/` with built-in drift mitigation (SCAN).
+
+### 3. 💬 Direct AI Interaction (Raw Orchestrator)
+Best for general brainstorming, repo exploration, or "Free-Form" work.
+- **Usage**: Talk directly to the main Gemini CLI without specific mode or subagent delegation.
+
+---
+
+## 🤖 Assistant Initialization (MANDATORY)
+Regardless of how you interact with the AI, every session MUST be initialized correctly to maintain context reliability across your repositories.
+
+1. **Start the Engine**: Run `./scripts/start_squad.py` from the vault root.
+2. **Restore State**: At the start of every session, you MUST instruct the AI to read the **[[00-AI-Orchestration/AI-Init]]** file and restore the **[[00-AI-Orchestration/AI-Session-State]]**. 
+3. **Save State**: Before closing a session, ensure the AI has updated the **[[00-AI-Orchestration/AI-Session-State]]** with a summary of progress. This acts as our "Hard State" context block.
 
 > [!CAUTION]
-> Never implement code without verifying the current **Active Protocol** in the [[MODE-MANUAL]].
+> Never implement code without verifying the current **Active Protocol** in the [[00-AI-Orchestration/MODE-MANUAL]].

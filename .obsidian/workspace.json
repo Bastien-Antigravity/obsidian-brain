@@ -11,10 +11,14 @@
             "id": "00d975ebcd5dcab7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "README"
             }
           }
         ]
@@ -181,6 +185,7 @@
   },
   "active": "00d975ebcd5dcab7",
   "lastOpenFiles": [
+    "00-AI-Orchestration/AI-Init.md",
     "nexus-strategic-brain/User-Manual.md",
     "nexus-strategic-brain/README.md",
     "nexus-strategic-brain/STRAT-001-The-Dormant-Pipeline.md",
@@ -215,7 +220,6 @@
     "root.obsidian/plugins/file-explorer-plus/styles.css",
     "root.obsidian/plugins/file-explorer-plus/manifest.json",
     "01-AI-Assistant/AI-System-Rules.md",
-    "01-AI-Assistant/AI-Workflow-and-Branching.md",
-    "01-AI-Assistant/AI-Session-State.md"
+    "01-AI-Assistant/AI-Workflow-and-Branching.md"
   ]
 }
