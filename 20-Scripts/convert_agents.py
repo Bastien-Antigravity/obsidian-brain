@@ -1,7 +1,7 @@
 import os
 import glob
 
-source_dir = "/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/core-kms-brain/Role-Prompts"
+source_dir = "/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/07-Core-KMS/Role-Prompts"
 target_dir = "/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/.gemini/agents"
 
 os.makedirs(target_dir, exist_ok=True)
@@ -19,11 +19,15 @@ for folder in os.listdir(source_dir):
             with open(md_file, 'r') as f:
                 content = f.read()
             
+            # Grant shell access to agents that need it
+            shell_agents = ["developer", "fleetcommander", "qa", "purger", "orchestrator"]
+            tools_list = ""
+            if agent_name in shell_agents:
+                tools_list = "\ntools:\n  - shell"
+
             yaml_frontmatter = f"""---
 name: {agent_name}
-description: The {agent_name} persona from the Bastien-Antigravity squad.
-tools:
-  - obsidian_vault
+description: The {agent_name} persona from the Bastien-Antigravity squad.{tools_list}
 ---
 """
             

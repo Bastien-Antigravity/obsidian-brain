@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[log-server/README.md|📂 log-server/]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/log-server/|📜 BDD Specifications]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/log-server/|📜 BDD Specifications]]
 - **Protocols**: [[log-server/capnp/logger.capnp|📄 Cap'n Proto Schema]]
 
 ## 🛠️ Squad Assignment
@@ -21,7 +21,7 @@ status: active
 > [!info] Open Specifications
 > ```dataview
 > TABLE status, feature_id as "ID"
-> FROM "business-bdd-brain/02-Behavior-Specs/log-server"
+> FROM "02-Business-BDD/02-Behavior-Specs/log-server"
 > WHERE type = "behavior-spec"
 > SORT feature_id ASC
 > ```

@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[safe-socket/README.md|📂 safe-socket/]]
-- **Behavior Specs**: [[business-bdd-brain/02-Behavior-Specs/safe-socket/|📜 BDD Specifications]]
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/safe-socket/|📜 BDD Specifications]]
 - **ADRs**: [[ADR-001-Safe-Socket-Protocol|ADR-001: Custom TCP Protocol]]
 
 ## 🛠️ Squad Assignment
@@ -21,7 +21,7 @@ status: active
 > [!info] Open Specifications
 > ```dataview
 > TABLE status, feature_id as "ID"
-> FROM "business-bdd-brain/02-Behavior-Specs/safe-socket"
+> FROM "02-Business-BDD/02-Behavior-Specs/safe-socket"
 > WHERE type = "behavior-spec"
 > SORT feature_id ASC
 > ```

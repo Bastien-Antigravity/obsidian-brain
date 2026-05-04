@@ -22,6 +22,8 @@ directives:
 > Update associated documentation (**README.md**, **ARCHITECTURE.md**) and relevant **Obsidian Brain** nodes ONLY upon feature completion or sprint closure to preserve compute and prevent task drift. Do not update documentation after every minor code modification.
 
 ## 🚀 Progress Tracking
+- [x] **BDD Compliance Audit & Remediation**: Completed ecosystem-wide audit and fixed all identified drift and violations.
+    - **Remediated**: Created 4 missing Hubs and drafted 7 initial BDD specs for orphan services.
 - [/] **Ecosystem-Wide Action**: Activating **Fleet Commander** for global GitHub synchronization and account alignment.
 - [/] **Phase 5: Content Pivot**: Transitioning from Infrastructure to Value Stream (Orderbook Ingestion).
 
@@ -35,9 +37,9 @@ directives:
 
 ## 🔭 Strategic Oracle (Chronos-Nexus)
 - **Active Audits**: 
-    - [[nexus-strategic-brain/STRAT-002-The-Execution-First-Drift|STRAT-002: The Execution-First Drift]]
-    - [[nexus-strategic-brain/STRAT-003-The-Infrastructure-Gordian-Knot|STRAT-003: The Infrastructure Gordian Knot]]
-    - [[nexus-strategic-brain/STRAT-004-The-Cognitive-Load-Crisis|STRAT-004: The Cognitive Load Crisis]]
+    - [[01-Strategic-Nexus/STRAT-002-The-Execution-First-Drift|STRAT-002: The Execution-First Drift]]
+    - [[01-Strategic-Nexus/STRAT-003-The-Infrastructure-Gordian-Knot|STRAT-003: The Infrastructure Gordian Knot]]
+    - [[01-Strategic-Nexus/STRAT-004-The-Cognitive-Load-Crisis|STRAT-004: The Cognitive Load Crisis]]
 - **Blind Spot Detected**: Brain Fragmentation is causing a "Reasoning Tax" on the AI. Mandatory documentation sync is creating "Write-Only Memory."
 - **Global Law Status**: Near "Signal-to-Noise Ratio (SNR) Collapse" in the Knowledge Base.
 

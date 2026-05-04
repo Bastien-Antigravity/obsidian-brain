@@ -9,14 +9,14 @@ author: Ruzava & Antigravity
 
 Welcome to the central Map of Content (MOC) for the ecosystem. This serves as the root node of our Obsidian Brain, governing the architecture, standards, and workflows.
 
-## 🌌 00 - The Chronos-Nexus (Meta-Brain)
+## 🌌 01 - Strategic Nexus
 The "Strategic Oracle" that analyzes history, patterns, and project blind spots.
-- **[[nexus-strategic-brain/STRAT-001-The-Dormant-Pipeline|👁️ Current Strategic Audit]]**
-- **[[nexus-strategic-brain/Strategic-Patterns|🧩 Strategic Patterns]]**
-- **[[nexus-strategic-brain/Anti-Backlog|🚫 The Anti-Backlog]]**
-- **[[core-kms-brain/Role-Prompts/00-Oracle/Prompt-Chronos-Nexus|🛰️ Role 00: Chronos-Nexus]]**
+- **[[01-Strategic-Nexus/STRAT-001-The-Dormant-Pipeline|👁️ Current Strategic Audit]]**
+- **[[01-Strategic-Nexus/Strategic-Patterns|🧩 Strategic Patterns]]**
+- **[[01-Strategic-Nexus/Anti-Backlog|🚫 The Anti-Backlog]]**
+- **[[07-Core-KMS/Role-Prompts/00-Oracle/Prompt-Chronos-Nexus|🛰️ Role 00: Chronos-Nexus]]**
 
-## 🤖 01 - AI Engine
+## 🤖 00 - AI Orchestration
 These define the generic "Team of Agents" architecture, workflows, and prompts for the AI.
 - [[Workflow-Idea-to-Exploitation|Pipeline: Idea to Exploitation]]
 - [[Daily-AI-Playbook|📖 Daily AI Playbook (Workflow)]]
@@ -24,29 +24,29 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook (5D Paradigm)]]
 - [[00-Obsidian-App-Config|⚙️ Obsidian App Configuration Guide]]
 - [[00-Knowledge-Strategy|🛡️ AI Governance & Knowledge Strategy]]
-- [[core-kms-brain/Role-Prompts/09-Sentinel/Prompt-Sentinel|🛡️ Role 09: Sentinel (Integrity Auditor)]]
-- [[state-and-tasks/Inbox/Template-00-Idea-Pitch|📥 Task Inbox]]
+- [[07-Core-KMS/Role-Prompts/09-Sentinel/Prompt-Sentinel|🛡️ Role 09: Sentinel (Integrity Auditor)]]
+- [[10-State-and-Tasks/Inbox/Template-00-Idea-Pitch|📥 Task Inbox]]
 - [[Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[Domain-Dashboard|🌐 Domain Ontology Matrix]]
 
-## 👔 01 - Project Business (Specifications Brain)
+## 👔 02 - Business BDD
 Behavior-Driven Development specifications, Domain-Driven Design glossary, and Acceptance Criteria. **(Zone 1: Frozen)**
 - [[00-Glossary|📘 Domain Glossary (Ubiquitous Language)]]
-- [[business-bdd-brain/User-Manual|📖 BDD Brain User Manual]]
+- [[02-Business-BDD/User-Manual|📖 BDD Brain User Manual]]
 - [[Connection-Lifecycle|🔌 SafeSocket Connection Lifecycle (Example Spec)]]
 
-## 🚀 02 - Experimental Labs (Rapid Prototyping)
+## 🚀 03 - Rapid Prototyping
 Fast-path development, experiments, and prototypes. **(Zone 2: Fluid)**
-- [[rapid-prototyping-brain/README|🧪 Labs Overview]]
+- [[04-Rapid-Prototyping/README|🧪 Labs Overview]]
 
-## 🛰️ 03 - Fleet Operations (Management Brain)
+## 🛰️ 04 - Fleet Operations
 Fleet-wide action plans, deployment logs, and migration states. **(Zone 3: Fleet)**
-- [[fleet-operation-brain/README|Fleet Operations (Zone 3)]]
-- **Command Center**: [[fleet-operation-brain/00-Repo-Control/inventory.json|Global Repo Registry]]
+- [[05-Fleet-Operation/README|Fleet Operations (Zone 3)]]
+- **Command Center**: [[05-Fleet-Operation/00-Repo-Control/inventory.json|Global Repo Registry]]
 - **Automation**: `fleet-manager.py` (Mass Sync & Audit)
-- **Logs**: [[fleet-operation-brain/02-Deployment-Logs/README|Deployment History]]
+- **Logs**: [[05-Fleet-Operation/02-Deployment-Logs/README|Deployment History]]
 
-## 📐 04 - Project Architecture
+## 📐 05 - Tech Stack (Architecture)
 The structural paradigms for all polyglot microservices.
 - [[Global-Architecture-Rules|The System Hub (Primary Rules)]]
 - [[Ecosystem-Topology.canvas|🎨 Visual Ecosystem Topology]]
@@ -65,7 +65,7 @@ The structural paradigms for all polyglot microservices.
 The historical ledger of ecosystem-wide technical decisions.
 - [[ADR-001-Safe-Socket-Protocol|ADR-001: Safe-Socket Custom TCP Protocol]]
 
-## 📚 05 - Project Coding
+## 📚 05 - Tech Stack (Coding)
 Idioms, standards, and our shared toolbox.
 - [[00-Coding-Style-Guide|🎨 Coding Style Guide (MOC)]]
 - [[01-General-Naming-Conventions|General Naming Conventions]]
@@ -75,26 +75,26 @@ Idioms, standards, and our shared toolbox.
 - [[Documentation-Requirements|Documentation Requirements]]
 - [[Core-Libraries-and-Toolbox|Core Libraries & Toolbox]]
 
-## 🚀 06 - Project Deployment
+## 🚀 05 - Tech Stack (Deployment)
 How we get our code to production.
 - [[01-Docker-Infrastructure|Docker Infrastructure]]
 - [[02-Environment-Variables|Environment Variables]]
 - [[03-Health-Checks|Health Checks]]
 - [[04-CICD-and-Lifecycle|CI/CD and Lifecycle]]
 
-## 🧬 07 - Project Scripts
+## 🧬 05 - Tech Stack (Scripts)
 Scripts that string the ecosystem together.
-- [[tech-stack-brain/05-Project-Scripts/Build-Wrapper.py|Modular Build Wrapper]] *(Legacy — use `cargo build` / `go build` directly)*
-- [[tech-stack-brain/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
+- [[03-Tech-Stack/05-Project-Scripts/Build-Wrapper.py|Modular Build Wrapper]] *(Legacy — use `cargo build` / `go build` directly)*
+- [[03-Tech-Stack/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
 
-## 🧠 06 - Role Wisdom
+## 🧠 05 - Tech Stack (Role Wisdom)
 The historical knowledge and best practices for each AI role.
-- [[tech-stack-brain/06-Role-Wisdom/Architect/|Architect Wisdom]]
-- [[tech-stack-brain/06-Role-Wisdom/Developer/|Developer Wisdom]]
-- [[tech-stack-brain/06-Role-Wisdom/QA/|QA Wisdom]]
-- [[tech-stack-brain/06-Role-Wisdom/Purger/|Purger Wisdom]]
+- [[03-Tech-Stack/06-Role-Wisdom/Architect/|Architect Wisdom]]
+- [[03-Tech-Stack/06-Role-Wisdom/Developer/|Developer Wisdom]]
+- [[03-Tech-Stack/06-Role-Wisdom/QA/|QA Wisdom]]
+- [[03-Tech-Stack/06-Role-Wisdom/Purger/|Purger Wisdom]]
 
-## 🌐 08 - Ecosystem Microservices
+## 🌐 06 - Microservices
 Live documentation and operational hubs for the service fleet.
 - **[[Config-Server-Hub|🌐 Config-Server Hub]]** (Go)
 - **[[Log-Server-Hub|🌐 Log-Server Hub]]** (Rust)
@@ -119,10 +119,10 @@ Live documentation and operational hubs for the service fleet.
 ---
 ## 🧪 Quality & Testing
 Quality Assurance follows a two-layer architecture:
-1. **Definition Layer** (`business-bdd-brain`): Behavior specs written in markdown BDD format (Given/When/Then).
+1. **Definition Layer** (`02-Business-BDD`): Behavior specs written in markdown BDD format (Given/When/Then).
 2. **Execution Layer** (`sandbox-testing`): Automated test scenarios that validate the behavior specs against real infrastructure.
 
-The flow is: `business-bdd-brain` (WHAT) → `sandbox-testing` (HOW) → microservice (CODE).
+The flow is: `02-Business-BDD` (WHAT) → `sandbox-testing` (HOW) → microservice (CODE).
 
 ---
 > [!info]- ⚙️ Quick Global Query

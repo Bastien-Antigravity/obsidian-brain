@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "464a5bdbc8b3ed5a",
+        "id": "35e32e91a4933894",
         "type": "tabs",
         "children": [
           {
-            "id": "00d975ebcd5dcab7",
+            "id": "12ade5dff85c4b4c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -183,43 +179,44 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "00d975ebcd5dcab7",
+  "active": "12ade5dff85c4b4c",
   "lastOpenFiles": [
-    "00-AI-Orchestration/AI-Init.md",
-    "nexus-strategic-brain/User-Manual.md",
-    "nexus-strategic-brain/README.md",
-    "nexus-strategic-brain/STRAT-001-The-Dormant-Pipeline.md",
-    "nexus-strategic-brain",
-    "STRAT-BACKUP.md",
-    "core-kms-brain/Role-Prompts/00-Oracle/Prompt-Chronos-Nexus.md",
-    "core-kms-brain/Role-Prompts/00-Oracle",
-    "core-kms-brain/Role-Prompts/05-Fleet-Architect/Prompt-Fleet-Architect.md",
-    "core-kms-brain/Role-Prompts/05-Fleet-Architect",
-    "08-Ecosystem-Microservices/Safe-Socket-Hub.md",
-    "ecosystem-microservices/Safe-Socket-Hub.md",
-    "ecosystem-microservices/Notif-Server-Hub.md",
-    "ecosystem-microservices/Market-Observer-Hub.md",
-    "ecosystem-microservices/Log-Server-Hub.md",
-    "ecosystem-microservices/Fundamental-Analysis-Hub.md",
-    "ecosystem-microservices/Distributed-Config-Hub.md",
-    "ecosystem-microservices/Data-Ingestor-Hub.md",
-    "ecosystem-microservices/Config-Server-Hub.md",
-    "ecosystem-microservices",
-    "08-Ecosystem-Microservices/Notif-Server-Hub.md",
-    "08-Ecosystem-Microservices/Market-Observer-Hub.md",
-    "08-Ecosystem-Microservices/Log-Server-Hub.md",
-    "08-Ecosystem-Microservices/Fundamental-Analysis-Hub.md",
-    "08-Ecosystem-Microservices/Distributed-Config-Hub.md",
-    "08-Ecosystem-Microservices/Data-Ingestor-Hub.md",
-    "08-Ecosystem-Microservices/Config-Server-Hub.md",
+    "02-Business-BDD/02-Behavior-Specs/fundamental-analysis/FEAT-002-Valuation-Metrics.md",
+    "02-Business-BDD/02-Behavior-Specs/fundamental-analysis/FEAT-001-Financial-Scraping.md",
+    "02-Business-BDD/02-Behavior-Specs/data-ingestor/FEAT-002-Batch-Persistence.md",
+    "02-Business-BDD/02-Behavior-Specs/data-ingestor/FEAT-001-Data-Transformation.md",
+    "02-Business-BDD/02-Behavior-Specs/market-observer/FEAT-003-Heartbeat-Monitoring.md",
+    "02-Business-BDD/02-Behavior-Specs/market-observer/FEAT-002-Orderbook-Normalization.md",
+    "02-Business-BDD/02-Behavior-Specs/market-observer/FEAT-001-Websocket-Reconnection.md",
+    "06-Microservices/Tele-Remote-Hub.md",
+    "06-Microservices/Microservice-Toolbox-Hub.md",
+    "06-Microservices/Flexible-Logger-Hub.md",
+    "06-Microservices/Universal-Logger-Hub.md",
+    "20-Scripts/switch_mode.py",
+    "User-Manual.md",
+    "GEMINI.md",
+    "02-Behavior-Specs/<microservice>/<spec-file>.md",
+    "02-Behavior-Specs/<microservice>",
+    "02-Behavior-Specs",
+    "05-Fleet-Operation/05-Fleet-Strategy/04-CICD-Standards.md",
+    "TODO.md",
     "README.md",
-    "root.obsidian/workspace.json",
-    "root.obsidian/templates.json",
-    "root.obsidian/snippets/Hide-Empty-Folders.css",
-    "root.obsidian/snippets",
-    "root.obsidian/plugins/file-explorer-plus/styles.css",
-    "root.obsidian/plugins/file-explorer-plus/manifest.json",
-    "01-AI-Assistant/AI-System-Rules.md",
-    "01-AI-Assistant/AI-Workflow-and-Branching.md"
+    "20-Scripts/start_squad.py",
+    "20-Scripts/convert_agents.py",
+    "20-Scripts",
+    "10-State-and-Tasks/Inbox/Templates/Template-Fast-Track.md",
+    "10-State-and-Tasks/Inbox/Templates/Template-03-QA-Test-Spec.md",
+    "10-State-and-Tasks/Inbox/Templates/Template-02-Architecture-Blueprint.md",
+    "10-State-and-Tasks/Inbox/Templates/Template-01-Master-Plan.md",
+    "10-State-and-Tasks/Inbox/Templates/Template-00-Idea-Pitch.md",
+    "10-State-and-Tasks/Inbox/Templates",
+    "10-State-and-Tasks/Sprint-Dashboard.md",
+    "10-State-and-Tasks/Inbox",
+    "10-State-and-Tasks/Domain-Dashboard.md",
+    "10-State-and-Tasks",
+    "07-Core-KMS/Role-Prompts/03-Developer/Squad/Timescale-Data-Specialist.md",
+    "07-Core-KMS/Role-Prompts/03-Developer/Squad/Rust-Safety-Specialist.md",
+    "07-Core-KMS/Role-Prompts/03-Developer/Squad",
+    "03-Tech-Stack/02-Project-Architecture/Ecosystem-Topology.canvas"
   ]
 }

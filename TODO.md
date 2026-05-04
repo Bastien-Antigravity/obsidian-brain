@@ -20,5 +20,5 @@ tags:
 - [ ] Implement a "Knowledge Compression" script to summarize old session logs.
 
 ## ✅ Completed
-- [x] Initial structure for `business-bdd-brain`.
-- [x] Creation of `tech-stack-brain/06-Role-Wisdom/`.
+- [x] Initial structure for `02-Business-BDD`.
+- [x] Creation of `03-Tech-Stack/06-Role-Wisdom/`.

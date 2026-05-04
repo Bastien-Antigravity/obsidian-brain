@@ -107,13 +107,13 @@ This section records fundamental architectural and governance choices that apply
 **Decision Date:** 2026-05-02
 **Decision:** Implementation of three core governance layers per repository:
 1. **AI-Project-DNA.md**: Repository-specific role overlays and intent (The "Compass").
-2. **Spec Gate**: Mandatory "Spec-First" protocol. No code implementation without an approved BDD spec in `business-bdd-brain`.
+2. **Spec Gate**: Mandatory "Spec-First" protocol. No code implementation without an approved BDD spec in `02-Business-BDD`.
 3. **Lifecycle Hardening**: Mandatory branch/version audit at session start via `AI-Init.md` and `AI-Session-State.md`.
 
 ### C. The "Spec-First" Protocol
 **Role: Spec Specialist**
 When the user requests a feature, the AI MUST first act as a "Spec Specialist" to:
-1. Identify the target repo folder in `business-bdd-brain/02-Behavior-Specs/`.
+1. Identify the target repo folder in `02-Business-BDD/02-Behavior-Specs/`.
 2. Draft a detailed Gherkin spec (`Given/When/Then`) based on the user's intent.
 3. Account for edge cases and technical constraints.
 4. Obtain user approval (`status: approved`) before transitioning to the "Developer" role.
