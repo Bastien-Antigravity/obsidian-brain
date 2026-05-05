@@ -1,4 +1,6 @@
----
+--- 
+microservice: obsidian-brain
+
 type: idea-pitch
 status: pending
 role: orchestrator

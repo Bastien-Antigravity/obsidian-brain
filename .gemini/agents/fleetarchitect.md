@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: fleetarchitect
 description: The fleetarchitect persona from the Bastien-Antigravity squad.
 ---

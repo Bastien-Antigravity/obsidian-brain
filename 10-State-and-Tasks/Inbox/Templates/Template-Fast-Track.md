@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: task
+status: active
+---
+
 # ⚡ Fast-Track Task: [Short Name]
 
 ## 🎯 Objective

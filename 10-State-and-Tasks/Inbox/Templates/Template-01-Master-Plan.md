@@ -1,4 +1,6 @@
----
+--- 
+microservice: obsidian-brain
+
 type: task-plan
 status: pending
 role: orchestrator

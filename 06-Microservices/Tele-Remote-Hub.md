@@ -1,4 +1,4 @@
----
+--- 
 microservice: tele-remote
 type: service-hub
 status: active
@@ -10,12 +10,12 @@ status: active
 ## 🔗 Knowledge Map
 - **Code Repository**: [[tele-remote/README.md|📂 tele-remote/]]
 - **Architecture**: [[tele-remote/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/tele-remote/|📜 BDD Specifications]]
+- **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/tele-remote/)
 - **Action Plan**: [[tele-remote/todo|📅 Local TODO]]
 
 ## 🛠️ Squad Assignment
-- **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
-- **Integration Specialist**: [[Python-Integration-Specialist|Python-Integration]]
+- **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
+- **Integration Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Python-Integration-Specialist|Python-Integration]]
 
 ## 📊 Live Governance Dashboard
 > [!info] Open Specifications
@@ -27,4 +27,4 @@ status: active
 > ```
 
 ---
-*Last Audit: [[AI-Session-State|Restore Session State]]*
+*Last Audit: [[00-AI-Orchestration/AI-Session-State|Restore Session State]]*

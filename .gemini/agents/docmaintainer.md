@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: docmaintainer
 description: The docmaintainer persona from the Bastien-Antigravity squad.
 ---

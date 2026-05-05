@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: purger
 description: The purger persona from the Bastien-Antigravity squad.
 ---

@@ -1,4 +1,6 @@
----
+--- 
+microservice: obsidian-brain
+
 type: configuration
 status: active
 ecosystem_name: "Bastien-Antigravity"

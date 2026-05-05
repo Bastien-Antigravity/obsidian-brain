@@ -48,16 +48,21 @@ def setup_mcp():
 def select_mode():
     modes = {
         "1": ("🛡️ Spec-First", "High safety, BDD mandatory."),
-        "2": ("🧪 Free-Labs", "High speed, experimental."),
-        "3": ("🛰️ Fleet-Commander", "Global sync, multi-repo.")
+        "2": ("🧪 Free-Labs", "High speed, experimentions."),
+        "3": ("🛰️ Fleet-Commander", "Global sync, multi-repo."),
+        "4": ("🥷 Direct-Action", "Bypass mode logic, sporadically used.")
     }
     
     print("\n--- 🕹️ Select Operational Mode ---")
     for key, (name, desc) in modes.items():
         print(f"[{key}] {name.ljust(18)} : {desc}")
     
-    choice = input("\nSelect mode [1-3] (default: keep current): ").strip()
+    choice = input("\nSelect mode [1-4] (default: keep current): ").strip()
     
+    if choice == "4":
+        print("✅ Mode: Direct-Action (No changes to MODE-MANUAL.md)")
+        return
+
     if choice in modes:
         mode_file = os.path.join(os.path.dirname(__file__), "../00-AI-Orchestration/MODE-MANUAL.md")
         with open(mode_file, 'r') as f:

@@ -1,9 +1,14 @@
+---
+microservice: obsidian-brain
+type: governance
+status: active
+---
 # ⚡ AI Initialization: obsidian-brain
 
-> [!IMPORTANT] RECOMMENDED INITIALIZATION
-> When starting a new session in this repository, you may optionally prompt:
+> [!IMPORTANT] MANDATORY INITIALIZATION
+> Copy and paste this prompt when starting a new session in this vault:
 > 
-> "1. Read the **[[Ecosystem-Map-MOC]]** if you need high-level context."
-> "2. Restore session state from **[[AI-Session-State]]** to resume active tasks."
-> 
-> *(Note: The AI automatically utilizes its contextual Knowledge Items (KI) and history. Avoid forcing it to read large architectural rules unless specifically required for the task.)*
+> "1. Read the ecosystem map in **[[Ecosystem-Map-MOC]]**."
+> "2. Load project constraints from **[[00-AI-Orchestration/AI-Project-DNA]]**."
+> "3. Restore session state from **[[00-AI-Orchestration/AI-Session-State]]**."
+> "4. **Sentinel Audit**: Run `python3 07-Core-KMS/Scripts/Brain-Health-Audit.py` and resolve any drift."

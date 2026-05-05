@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: qa
 description: The qa persona from the Bastien-Antigravity squad.
 ---

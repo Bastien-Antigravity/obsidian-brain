@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: task
+status: active
+---
+
 # 🌐 Domain Ontology Matrix
 
 This dashboard groups documentation and states based on **Transversal Themes** rather than what folder they physically live in. 

@@ -1,3 +1,8 @@
+--- 
+microservice: obsidian-brain
+type: documentation
+status: active
+---
 # Bastien-Antigravity: Obsidian Brain 🌌
 
 Welcome to the **Obsidian Brain**. This repository is the central Strategic Command Center and Knowledge Management System (KMS) for the Bastien-Antigravity ecosystem.

@@ -1,4 +1,6 @@
----
+--- 
+microservice: obsidian-brain
+
 type: architecture-blueprint
 status: draft
 role: architect

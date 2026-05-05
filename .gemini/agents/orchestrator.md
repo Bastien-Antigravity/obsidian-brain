@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: orchestrator
 description: The orchestrator persona from the Bastien-Antigravity squad.
 ---

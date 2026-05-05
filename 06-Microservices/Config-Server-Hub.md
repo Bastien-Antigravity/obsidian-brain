@@ -1,4 +1,4 @@
----
+--- 
 microservice: config-server
 type: service-hub
 status: active
@@ -10,13 +10,13 @@ status: active
 ## 🔗 Knowledge Map
 - **Code Repository**: [[config-server/README.md|📂 config-server/]]
 - **Architecture**: [[config-server/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/config-server/|📜 BDD Specifications]]
+- **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/config-server/)
 - **Action Plan**: [[config-server/TODO.md|📅 Local TODO]]
 
 ## 🛠️ Squad Assignment
-- **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
-- **Primary Specialist**: [[Go-Systems-Specialist|Go-Systems]]
-- **Data Specialist**: [[Timescale-Data-Specialist|Timescale-Data]]
+- **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
+- **Primary Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Go-Systems-Specialist|Go-Systems]]
+- **Data Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Timescale-Data-Specialist|Timescale-Data]]
 
 ## 📊 Live Governance Dashboard
 > [!info] Open Specifications
@@ -28,4 +28,4 @@ status: active
 > ```
 
 ---
-*Last Audit: [[AI-Session-State|Restore Session State]]*
+*Last Audit: [[00-AI-Orchestration/AI-Session-State|Restore Session State]]*

@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: sentinel
 description: The sentinel persona from the Bastien-Antigravity squad.
 ---

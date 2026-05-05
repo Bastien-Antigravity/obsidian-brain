@@ -1,3 +1,8 @@
+--- 
+microservice: obsidian-brain
+type: documentation
+status: active
+---
 # 🌌 Bastien-Antigravity: Obsidian Brain User Manual
 
 Welcome to the **Obsidian Brain**. This is the Strategic Command Center for the Bastien-Antigravity ecosystem. It bridges high-level strategy with autonomous AI execution through a specialized Multi-Agent Squad.
@@ -81,7 +86,7 @@ To keep navigation predictable for both humans and AI, the vault follows this nu
 | Folder                             | Purpose                  | Governance               |
 | ---------------------------------- | ------------------------ | ------------------------ |
 | **`00-AI-Orchestration`**  | Meta-Logic & Rules       | Mandatory Rules          |
-| **`01-Strategic-Nexus`**   | Strategic Oracle         | Analysis Only            |
+| **`01-Strategic-Nexus`**   | Strategic Oracle Brain   | Analysis Only            |
 | **`02-Business-BDD`**      | **Zone 1: Frozen** | Behavior Specs (Gherkin) |
 | **`03-Tech-Stack`**        | Architecture & Standards | ADRs & Wisdom            |
 | **`04-Rapid-Prototyping`** | **Zone 2: Fluid**  | Experimental Labs        |
@@ -127,7 +132,7 @@ Each agent has a specialized persona and access level. Use the `/agents list` co
 | **Developer** | Writes polyglot code (Go, Rust, Python, C++). | `shell`, `read_file`, `write_file` |
 | **QA** | Audits code against BDD specs and sandbox standards. | `obsidian_vault`, `shell` |
 | **Sentinel** | Integrity auditor. Monitors persona drift and protocol adherence. | `obsidian_vault` |
-| **Oracle (Nexus)**| Strategic analysis. Identifies long-term patterns and blind spots. | `obsidian_vault` (Strategic Nexus) |
+| **Strategic Oracle**| Strategic analysis. Identifies long-term patterns and blind spots. | `obsidian_vault` (Strategic Oracle) |
 | **FleetArchitect**| Manages cross-repository dependencies and global CI/CD. | `obsidian_vault` (Fleet Operation) |
 | **FleetCommander**| Handles global Git sync, releases, and deployment logs. | `shell`, `obsidian_vault` |
 | **DocMaintainer** | Keeps the Obsidian vault clean, repairs links, and logs sessions. | `obsidian_vault` |

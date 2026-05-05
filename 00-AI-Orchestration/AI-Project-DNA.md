@@ -1,4 +1,6 @@
----
+--- 
+microservice: obsidian-brain
+
 type: architecture
 status: active
 tags:
@@ -19,6 +21,9 @@ tags:
 - **QA**: 
     - Verify that all internal links are functional and not orphaned.
     - Audit the `AI-Session-State` consistency across repositories.
+- **Oracle (Chronos-Oracle)**:
+    - Perform **Log-Driven Strategic Synthesis** by default at the start of every session.
+    - Maintain the `01-Strategic-Nexus/` vault and the **Anti-Backlog**.
 - **Developer**:
     - Follow the PARA/Diátaxis hybrid organizational system.
 

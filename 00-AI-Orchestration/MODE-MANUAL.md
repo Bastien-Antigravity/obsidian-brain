@@ -1,4 +1,6 @@
----
+--- 
+microservice: obsidian-brain
+
 title: "AI Operating Manual: Multi-Mode Protocols"
 version: 2.0
 type: architecture
@@ -56,6 +58,17 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 
 ---
 
+## 🥷 Mode 4: Direct-Action (The Bypass)
+
+**Objective**: Sporadic tasks and direct agent interaction without state overhead.
+- **Rule 1**: Stateless execution. The global `active_mode` remains unchanged.
+- **Rule 2**: No mandatory BDD or Sandbox tests (unless part of a specific sub-task).
+- **Rule 3**: Best used for "Question & Answer" sessions, small script repairs, or one-off audits.
+- **AI Persona**: Unified **Systems Engineer** (Default constraints).
+- **Best For**: Quick README updates, link repairs in the vault, or "asking one agent a question."
+
+---
+
 ## 🚦 The Switching Protocol
 
 To switch modes, the USER must:
@@ -65,18 +78,19 @@ To switch modes, the USER must:
 4. The AI will announce:
    - Which **rules are activated** for this mode (e.g., Unified Systems Engineer).
    - Which **brains are primary** for this mode.
-   - Which **constraints are relaxed or enforced** (e.g., "BDD Specs optional" in Mode 2).
+   - Which **constraints are relaxed or enforced**.
 
-To deactivate all modes: `"Switch to Mode: none"`.
+**Note on Mode 4**: This mode is typically activated via the `start_squad.py` CLI and does not require a global state change.
 
 ---
 
 ## 🔄 Mode Interaction Matrix
 
-| Action | Mode 1 (Spec-First) | Mode 2 (Free-Labs) | Mode 3 (Fleet) |
-|--------|---------------------|---------------------|-----------------|
-| BDD Spec required? | ✅ Mandatory | ❌ Optional | ✅ Per action plan |
-| Sandbox tests? | ✅ Mandatory | ❌ Optional | ✅ Mandatory |
-| Multi-repo ops? | ❌ Single repo | ❌ Single repo | ✅ Fleet-wide |
-| Graduation needed? | N/A | ✅ To Mode 1 | N/A |
-| AI Persona Focus | Strict Compliance | Rapid Iteration | Ecosystem Sync |
+| Action | Mode 1 (Spec-First) | Mode 2 (Free-Labs) | Mode 3 (Fleet) | Mode 4 (Direct) |
+|--------|---------------------|---------------------|-----------------|-----------------|
+| BDD Spec required? | ✅ Mandatory | ❌ Optional | ✅ Per action plan | ❌ Optional |
+| Sandbox tests? | ✅ Mandatory | ❌ Optional | ✅ Mandatory | ❌ Optional |
+| Multi-repo ops? | ❌ Single repo | ❌ Single repo | ✅ Fleet-wide | ✅ Selective |
+| Graduation needed? | N/A | ✅ To Mode 1 | N/A | N/A |
+| AI Persona Focus | Strict Compliance | Rapid Iteration | Ecosystem Sync | Tactical Speed |
+| Global State Update| ✅ Yes | ✅ Yes | ✅ Yes | ❌ No |

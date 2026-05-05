@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: note
+status: active
+---
+
 # 🌌 Bastien-Antigravity: Obsidian Brain
 
 This repository is the central Strategic Command Center and Knowledge Management System (KMS) for the Bastien-Antigravity ecosystem.
@@ -15,13 +21,12 @@ The vault is organized into numbered structural boundaries to ensure predictable
 - **10-State-and-Tasks**: Current sprint tracking and task inboxes.
 - **20-Scripts**: Ecosystem automation scripts.
 
-## 🤖 AI Interaction Rules
-1. **Always use the `obsidian_vault` tool**: Never guess file contents. Use `read_file` or `list_directory`.
-2. **The SCAN Protocol**: Every agent response must begin with a **[SCAN]** block for Role Adherence, Source Verification, and State Management.
-3. **Hard-Stop Context**: Always update `AI-Session-State.md` in the target repository before concluding a task.
-4. **Master Index**: Start your analysis at [[Ecosystem-Map-MOC]].
+## ⚡ Quick Start / Initialization
+To resume your mission efficiently:
+1. **The [SCAN] Protocol**: Every agent response must begin with a **[SCAN]** block.
+2. **Restore Session**: Read [[00-AI-Orchestration/AI-Session-State|AI-Session-State.md]] to resume active tasks.
+3. **Orient**: Start at the **[[Ecosystem-Map-MOC]]** for high-level context.
 
 ## 🛠️ Key Commands
-- **Initialize Session**: `Read AI-Init.md and AI-Session-State.md`
 - **Regenerate Squad**: `python3 20-Scripts/convert_agents.py`
 - **Launch CLI**: `python3 20-Scripts/start_squad.py`

@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: architect
 description: The architect persona from the Bastien-Antigravity squad.
 ---

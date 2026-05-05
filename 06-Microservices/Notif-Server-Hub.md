@@ -1,4 +1,4 @@
----
+--- 
 microservice: notif-server
 type: service-hub
 status: active
@@ -9,12 +9,12 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[notif-server/README.md|📂 notif-server/]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/notif-server/|📜 BDD Specifications]]
+- **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/notif-server/)
 
 ## 🛠️ Squad Assignment
-- **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
-- **Primary Specialist**: [[Go-Systems-Specialist|Go-Systems]]
-- **Integration Specialist**: [[Python-Integration-Specialist|Python-Integration]]
+- **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
+- **Primary Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Go-Systems-Specialist|Go-Systems]]
+- **Integration Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Python-Integration-Specialist|Python-Integration]]
 
 ## 📊 Live Governance Dashboard
 > [!info] Open Specifications

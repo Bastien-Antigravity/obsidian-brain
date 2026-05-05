@@ -1,4 +1,4 @@
----
+--- 
 microservice: universal-logger
 type: service-hub
 status: active
@@ -10,13 +10,13 @@ status: active
 ## 🔗 Knowledge Map
 - **Code Repository**: [[universal-logger/README.md|📂 universal-logger/]]
 - **Architecture**: [[universal-logger/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/universal-logger/|📜 BDD Specifications]]
+- **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/universal-logger/)
 - **Action Plan**: [[universal-logger/TODO.md|📅 Local TODO]]
 
 ## 🛠️ Squad Assignment
-- **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
-- **Primary Specialist**: [[Go-Systems-Specialist|Go-Systems]]
-- **VBA Specialist**: [[VBA-Integration-Specialist|VBA-Integration]]
+- **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
+- **Primary Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Go-Systems-Specialist|Go-Systems]]
+- **VBA Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Excel-VBA-Specialist|VBA-Integration]]
 
 ## 📊 Live Governance Dashboard
 > [!info] Open Specifications
@@ -28,4 +28,4 @@ status: active
 > ```
 
 ---
-*Last Audit: [[AI-Session-State|Restore Session State]]*
+*Last Audit: [[00-AI-Orchestration/AI-Session-State|Restore Session State]]*

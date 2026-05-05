@@ -1,4 +1,8 @@
----
+--- 
+status: active
+type: note
+microservice: obsidian-brain
+
 name: developer
 description: The developer persona from the Bastien-Antigravity squad.
 ---

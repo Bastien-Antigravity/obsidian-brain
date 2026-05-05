@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: task
+status: active
+---
+
 # ⚡ Live Sprint Dashboard
 
 > [!important] 🛠 Dataview Plugin Required

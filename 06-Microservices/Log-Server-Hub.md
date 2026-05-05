@@ -1,4 +1,4 @@
----
+--- 
 microservice: log-server
 type: service-hub
 status: active
@@ -9,11 +9,11 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[log-server/README.md|📂 log-server/]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/log-server/|📜 BDD Specifications]]
+- **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/log-server/)
 - **Protocols**: [[log-server/capnp/logger.capnp|📄 Cap'n Proto Schema]]
 
 ## 🛠️ Squad Assignment
-- **Lead Developer**: [[Prompt-Lead-Developer|Lead-Dev]]
+- **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
 - **Primary Specialist**: [[Rust-Safety-Specialist|Rust-Safety]]
 - **Systems Specialist**: [[CPP-Low-Latency-Specialist|CPP-Low-Latency]]
 
