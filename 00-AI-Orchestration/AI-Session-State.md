@@ -28,7 +28,7 @@ directives:
 - [x] **Vault Stabilization**: DocMaintainer overhaul of MOCs and Hubs completed. (COMPLETED 2026-05-04)
 - [/] **Phase 5: Content Pivot**: Transitioning from Infrastructure to Value Stream (Orderbook Ingestion).
     - **PRIORITY 1**: Fix critical bugs in Config, Log, and Notif servers.
-    - **PRIORITY 2**: Operationalize `FEAT-001-Orderbook-Ingestion` PoC.
+    - **PRIORITY 2**: Operationalize `FEAT-001-Orderbook-Ingestion` (QA Spec & Sandbox READY).
     - **PRIORITY 3**: Initialize Storage/Persistence Hub.
 
 ## 🐛 Local Issues / Bugs
