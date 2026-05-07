@@ -39,7 +39,7 @@ author: Ruzava
 
 ### D. Bidirectional Links: Conceptual Fabric (The "Why")
 **Use for:** connecting ideas contextually. 
-**Our Paradigm:** If `log-server` relies on `microservice-toolbox`, the log-server architecture file should include the link `[[05-Microservice-Map]]` or `[[microservice-toolbox]]`. This naturally builds an interactive dependency graph we can visualize in Obsidian.
+**Our Paradigm:** If `log-server` relies on `microservice-toolbox`, the log-server architecture file should include the link `[[05-Microservice-Map]]` or `[[06-Microservices/Microservice-Toolbox-Hub]]`. This naturally builds an interactive dependency graph we can visualize in Obsidian.
 
 ---
 
@@ -62,11 +62,11 @@ How do we view the data depending on the level of complexity we are trying to un
 ```markdown
 # 🗺 AI Microservice Ecosystem MOC
 ## Core Rules
-- [[Coding-Style-Guide]]
-- [[bastien_architecture]]
+- [[03-Tech-Stack/03-Project-Coding/00-Coding-Style-Guide]]
+- bastien_architecture
 
 ## Active Sprints
-- [[Sprint-1-Refactoring-Log-Server]]
+- Sprint-1-Refactoring-Log-Server
 ```
 
 ## 3. The 5-Dimensional Hybrid System
@@ -74,7 +74,7 @@ We employ a fusion of **PARA, Diátaxis, and Zettelkasten** to avoid chaos while
 
 * **WHERE (PARA Method):** Shallow folders (`04-Deployment`). No deep nesting!
 * **WHAT & HOW (Diátaxis):** Tags classify the type of knowledge (`#type/tutorial`, `#type/how-to`, `#type/reference`, `#type/architecture`).
-* **WHY (Zettelkasten):** Use `[[Bidirectional Links]]` to connect concepts to Architecture Decision Records (ADRs) or design philosophies.
+* **WHY (Zettelkasten):** Use `Bidirectional Links` to connect concepts to Architecture Decision Records (ADRs) or design philosophies.
 * **HOW MANY (Metadata):** YAML frontmatter (`dependencies: 4`, `version: 1.2`) to empower Dataview queries.
 
 ## 4. AI Interaction & Session States

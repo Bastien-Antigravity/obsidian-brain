@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[universal-logger/README.md|📂 universal-logger/]]
-- **Architecture**: [[universal-logger/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
+- **Architecture**: universal-logger/ARCHITECTURE.md
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/universal-logger/)
 - **Action Plan**: [[universal-logger/TODO.md|📅 Local TODO]]
 

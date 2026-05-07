@@ -9,9 +9,9 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[tele-remote/README.md|📂 tele-remote/]]
-- **Architecture**: [[tele-remote/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
+- **Architecture**: tele-remote/ARCHITECTURE.md
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/tele-remote/)
-- **Action Plan**: [[tele-remote/todo|📅 Local TODO]]
+- **Action Plan**: tele-remote/todo
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

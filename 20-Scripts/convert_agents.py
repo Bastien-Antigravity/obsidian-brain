@@ -60,8 +60,15 @@ def main() -> None:
                 with open(md_file, 'r', encoding='utf-8') as f:
                     content = f.read()
                 
+                # Strip existing frontmatter from source content if present
+                import re
+                content = re.sub(r'^---.*?---\s*', '', content, flags=re.DOTALL)
+                
                 yaml_frontmatter = f"""---
 name: {agent_name}
+type: kms
+status: active
+microservice: obsidian-brain
 description: The {agent_name} persona from the Bastien-Antigravity squad.
 ---
 """
@@ -74,7 +81,6 @@ Before finishing any major task or concluding a session, you MUST use the `obsid
 To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:
 
 **[SCAN]** Role: {agent_name} | Source: [Source Verification] | State: [Session Progress]
-
 """
                 
                 target_file = osPathJoin(target_dir, f"{agent_name}.md")

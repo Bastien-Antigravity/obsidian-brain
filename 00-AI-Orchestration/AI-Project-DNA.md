@@ -12,7 +12,7 @@ tags:
 ## 🎯 High-Level Intent (BDD)
 - **Goal**: Serve as the "Global Memory" and "Strategic Command Center" for the entire Bastien-Antigravity ecosystem, housing all architectural decisions, sprint plans, and cross-repo knowledge.
 - **Key Pattern**: **Atomic Knowledge** (Zettelkasten-style notes) and **Strategic MOCs** (Maps of Content for navigation).
-- **Behavioral Source of Truth**: [[02-Business-BDD/02-Behavior-Specs/obsidian-brain]]
+- **Behavioral Source of Truth**: 02-Business-BDD/02-Behavior-Specs/obsidian-brain
 
 ## 🛠️ Role Specifics
 - **Architect**: 

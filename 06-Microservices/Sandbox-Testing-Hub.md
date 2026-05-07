@@ -10,7 +10,7 @@ status: active
 ## 🔗 Knowledge Map
 - **Code Repository**: [📂 sandbox-testing/](../sandbox-testing/)
 - **Architecture**: [[03-Tech-Stack/02-Project-Architecture/10-Testing-Sandbox-Standards|🏛️ Testing & Sandbox Standards]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/sandbox-testing/|📜 BDD Specifications]]
+- **Behavior Specs**: [[02-Business-BDD/Behavior-Specs-MOC]]
 - **Scenario Orchestrator**: `03-Orchestration/scenario_orchestrator.py`
 - **Primary Tool**: `Makefile` (Root entry point)
 

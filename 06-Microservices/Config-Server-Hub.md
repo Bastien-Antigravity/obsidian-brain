@@ -9,7 +9,7 @@ status: active
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[config-server/README.md|📂 config-server/]]
-- **Architecture**: [[config-server/ARCHITECTURE.md|🏛️ Architecture Deep-Dive]]
+- **Architecture**: config-server/ARCHITECTURE.md
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/config-server/)
 - **Action Plan**: [[config-server/TODO.md|📅 Local TODO]]
 

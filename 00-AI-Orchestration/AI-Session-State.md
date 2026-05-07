@@ -14,7 +14,7 @@ directives:
   - autonomous-doc-sync: mandatory
   - obsidian-brain-sync: mandatory
   - conventional-commits: mandatory
-  - active-protocol: "[[MODE-MANUAL#Mode-1]]"
+  - active-protocol: "[[00-AI-Orchestration/MODE-MANUAL]]"
 ---
 
 # 🧠 AI Session State: obsidian-brain

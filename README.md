@@ -48,7 +48,7 @@ The documentation here relies on a hybrid system:
 1. **Install Obsidian:** Download the app.
 2. **Configure:** Follow **[[03-Tech-Stack/Documentation-Requirements|Documentation Standards]]**.
 3. **Start at the MOC:** Open **[[Ecosystem-Map-MOC]]**. This is your entry point.
-4. **Authoring:** Keep files atomic. Use `[[Links]]` to connect concepts.
+4. **Authoring:** Keep files atomic. Use `Links` to connect concepts.
 
 ---
 

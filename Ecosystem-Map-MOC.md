@@ -22,10 +22,12 @@ These define the generic "Team of Agents" architecture, workflows, and prompts f
 - [[00-AI-Orchestration/AI-Init|⚡ AI Initialization]]
 - [[00-AI-Orchestration/AI-Session-State|🧠 AI Session State]]
 - [[00-AI-Orchestration/MODE-MANUAL|🕹️ MODE-MANUAL]]
+- [[00-AI-Orchestration/Project-Variables|⚙️ Project Variables]]
 
 ## 🌌 01 - Strategic Oracle
 The "Strategic Oracle" that analyzes history, patterns, and project blind spots.
 - **[[01-Strategic-Nexus/STRAT-001-The-Dormant-Pipeline|👁️ Current Strategic Audit]]**
+- **[[01-Strategic-Nexus/Strategy-Audit-MOC|🌌 Strategy Audit Index]]**
 - **[[01-Strategic-Nexus/Strategic-Patterns|🧩 Strategic Patterns]]**
 - **[[01-Strategic-Nexus/Anti-Backlog|🚫 The Anti-Backlog]]**
 - **[[01-Strategic-Nexus/README|📖 Nexus Overview]]**
@@ -35,6 +37,7 @@ The "Strategic Oracle" that analyzes history, patterns, and project blind spots.
 Behavior-Driven Development specifications, Domain-Driven Design glossary, and Acceptance Criteria. **(Zone 1: Frozen)**
 - [[02-Business-BDD/01-Domain-Glossary/00-Glossary|📘 Domain Glossary (Ubiquitous Language)]]
 - [[02-Business-BDD/User-Manual|📖 BDD Brain User Manual]]
+- [[02-Business-BDD/Behavior-Specs-MOC|👔 Behavior Specs Index]]
 - [[02-Business-BDD/02-Behavior-Specs/safe-socket/FEAT-000-Connection-Lifecycle|🔌 SafeSocket Connection Lifecycle (Example Spec)]]
 - [[02-Business-BDD/02-Behavior-Specs/web-interface/FEAT-007-UI-Bootstrap|🌐 Web Interface Bootstrap]]
 
@@ -55,6 +58,7 @@ The structural paradigms for all polyglot microservices, coding idioms, and depl
 - [[03-Tech-Stack/02-Project-Architecture/09-Log-Server-Architecture|Log-Server Architecture]]
 - [[03-Tech-Stack/02-Project-Architecture/10-Testing-Sandbox-Standards|Testing & Sandbox Standards]]
 - **ADRs**: [[03-Tech-Stack/02-Project-Architecture/ADRs/ADR-001-Safe-Socket-Protocol|ADR-001: Safe-Socket Custom TCP Protocol]]
+- [[03-Tech-Stack/02-Project-Architecture/Impact-Analysis-v2|📊 Strategic Impact Analysis v2]]
 
 ### 🎨 Coding Standards
 - [[03-Tech-Stack/03-Project-Coding/00-Coding-Style-Guide|🎨 Coding Style Guide (MOC)]]
@@ -81,11 +85,14 @@ Fleet-wide action plans, deployment logs, and migration states. **(Zone 3: Fleet
 - [[05-Fleet-Operation/README|Fleet Operations (Zone 3)]]
 - **Command Center**: [[05-Fleet-Operation/00-Repo-Control/inventory.json|Global Repo Registry]]
 - **Automation**: `fleet-manager.py` (Mass Sync & Audit)
-- **Logs**: [[05-Fleet-Operation/README|Deployment History]]
+- **Logs**: [[05-Fleet-Operation/Deployment-Logs-MOC|🛰️ Deployment Logs Index]]
 - **Strategy**: [[05-Fleet-Operation/05-Fleet-Strategy/04-CICD-Standards|CI/CD Standards]]
+- [[05-Fleet-Operation/05-Fleet-Strategy/01-GitHub-Standard|🐙 GitHub Standards]]
+- [[05-Fleet-Operation/05-Fleet-Strategy/03-CD-Lifecycle|🔄 CD Lifecycle Management]]
 
 ## 🌐 06 - Microservices
 Live documentation and operational hubs for the service fleet.
+- **[[06-Microservices/Hubs-MOC|🌐 Cross-Repo Hubs Index]]**
 - **[[06-Microservices/Config-Server-Hub|🌐 Config-Server Hub]]** (Go)
 - **[[06-Microservices/Log-Server-Hub|🌐 Log-Server Hub]]** (Rust)
 - **[[06-Microservices/Notif-Server-Hub|🌐 Notif-Server Hub]]** (Go)
@@ -101,6 +108,7 @@ Live documentation and operational hubs for the service fleet.
 ## 🧠 07 - Core KMS
 Knowledge Management System, Agent Role Prompts, and Workflows.
 - [[07-Core-KMS/README|KMS Overview]]
+- [[07-Core-KMS/Agent-Roles-MOC|🤖 Agent Roles Index]]
 - [[07-Core-KMS/00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook]]
 - [[07-Core-KMS/Workflows/Daily-AI-Playbook|📖 Daily AI Playbook]]
 - **👥 Agent Squad (Role Prompts & Wisdom)**:
@@ -113,6 +121,7 @@ Knowledge Management System, Agent Role Prompts, and Workflows.
 Current sprint tracking, task inboxes, and domain dashboards.
 - [[10-State-and-Tasks/Sprint-Dashboard|⚡ Live Sprint Dashboard]]
 - [[10-State-and-Tasks/Domain-Dashboard|🌐 Domain Ontology Matrix]]
+- [[10-State-and-Tasks/Templates-MOC|⚡ Templates Index]]
 - [[10-State-and-Tasks/Inbox/Templates/Template-00-Idea-Pitch|📥 Task Inbox (Template)]]
 
 ## 🛠️ 20 - Scripts

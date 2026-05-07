@@ -5,7 +5,7 @@ title: "AI Operating Manual: Multi-Mode Protocols"
 version: 2.0
 type: architecture
 status: active
-active_mode: 1
+active_mode: 3
 ---
 
 # 🕹️ AI Operating Manual: Multi-Mode Protocols
@@ -74,7 +74,7 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 To switch modes, the USER must:
 1. Say: `"Switch to Mode X"` (where X is 1, 2, or 3).
 2. The AI will update `active_mode` in the YAML header of this file.
-3. The AI will update `AI-Session-State.md` with: `Active Protocol: [[MODE-MANUAL#Mode-X]]`.
+3. The AI will update `AI-Session-State.md` with: `Active Protocol: [[00-AI-Orchestration/MODE-MANUAL]]`.
 4. The AI will announce:
    - Which **rules are activated** for this mode (e.g., Unified Systems Engineer).
    - Which **brains are primary** for this mode.

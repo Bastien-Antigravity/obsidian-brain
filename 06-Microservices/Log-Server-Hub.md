@@ -10,7 +10,7 @@ status: active
 ## 🔗 Knowledge Map
 - **Code Repository**: [[log-server/README.md|📂 log-server/]]
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/log-server/)
-- **Protocols**: [[log-server/capnp/logger.capnp|📄 Cap'n Proto Schema]]
+- **Protocols**: log-server/capnp/logger.capnp
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

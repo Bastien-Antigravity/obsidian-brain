@@ -17,7 +17,7 @@ infrastructure:
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [[data-ingestor/README.md|📂 data-ingestor/]]
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/data-ingestor/|📜 BDD Specifications]]
+- **Behavior Specs**: [[02-Business-BDD/Behavior-Specs-MOC]]
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

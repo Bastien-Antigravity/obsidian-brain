@@ -68,18 +68,73 @@ def main() -> None:
     # 3. Create Template Files
     print("📝 Generating Project Compass...")
     
-    gemini_md = f"""# 🌌 Project: {target_name}
+    # 🧬 AI-Project-DNA.md
+    dna_content = f"""---
+microservice: obsidian-brain
+type: governance
+status: active
+---
+# 🧬 AI Project DNA: {target_name}
 
-## 📐 Project DNA
-This repository follows the Bastien-Antigravity 2-Digit Standard.
+## 🎯 High-Level Vision
+Define the primary purpose of this brain here.
 
-## 🤖 AI Interaction Rules
-1. Always use the `obsidian_vault` tool.
-2. Every response must begin with a **[SCAN]** block.
-3. Update `AI-Session-State.md` before concluding a task.
+## 🛡️ Core Constraints
+1. **The [SCAN] Protocol**: Every response must start with a [SCAN] block.
+2. **Double-Digit Hierarchy**: Maintain the 00-99 folder structure.
+3. **Submodule Parity**: Changes must be synced to standalone repositories.
 """
-    with open(target_path / "GEMINI.md", 'w', encoding='utf-8') as f:
-        f.write(gemini_md)
+    with open(target_path / "00-AI-Orchestration/AI-Project-DNA.md", 'w', encoding='utf-8') as f:
+        f.write(dna_content)
+
+    # 🧠 AI-Session-State.md
+    session_content = f"""---
+microservice: obsidian-brain
+type: state
+status: active
+active-protocol: "🛡️ Mode 1: Spec-First"
+---
+# 🧠 AI Session State: {target_name}
+
+## 🚀 Active Missions
+- [ ] Initialize the ecosystem.
+"""
+    with open(target_path / "00-AI-Orchestration/AI-Session-State.md", 'w', encoding='utf-8') as f:
+        f.write(session_content)
+
+    # ⚡ AI-Init.md
+    init_content = f"""---
+microservice: obsidian-brain
+type: governance
+status: active
+---
+# ⚡ AI Initialization: {target_name}
+
+> [!IMPORTANT] MANDATORY INITIALIZATION
+> Copy and paste this prompt when starting a new session:
+> 
+> "1. Read the ecosystem map in **[[Ecosystem-Map-MOC]]**."
+> "2. Load project constraints from **[[AI-Project-DNA]]**."
+> "3. Restore session state from **[[AI-Session-State]]**."
+"""
+    with open(target_path / "00-AI-Orchestration/AI-Init.md", 'w', encoding='utf-8') as f:
+        f.write(init_content)
+
+    # 🗺️ Ecosystem-Map-MOC.md
+    moc_content = f"""---
+microservice: ecosystem-core
+type: moc
+status: active
+---
+# 🌌 {target_name}: Master Knowledge Hub (MOC)
+
+## 🤖 00 - AI Orchestration
+- [[00-AI-Orchestration/AI-Project-DNA|🧬 AI Project DNA]]
+- [[00-AI-Orchestration/AI-Init|⚡ AI Initialization]]
+- [[00-AI-Orchestration/AI-Session-State|🧠 AI Session State]]
+"""
+    with open(target_path / "Ecosystem-Map-MOC.md", 'w', encoding='utf-8') as f:
+        f.write(moc_content)
 
     with open(target_path / "README.md", 'w', encoding='utf-8') as f:
         f.write(f"# 🧠 {target_name.replace('-', ' ').title()}\n\nNew Bastien-Antigravity Ecosystem.\n")
