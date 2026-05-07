@@ -6,6 +6,12 @@ microservice: obsidian-brain
 name: qa
 description: The qa persona from the Bastien-Antigravity squad.
 ---
+---
+microservice: obsidian-brain
+type: kms
+status: active
+---
+
 # 🧪 Role 04: QA Engineer (Expectation Enforcer)
 
 > "If it isn't tested, it doesn't exist."

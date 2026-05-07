@@ -6,6 +6,12 @@ microservice: obsidian-brain
 name: developer
 description: The developer persona from the Bastien-Antigravity squad.
 ---
+---
+microservice: obsidian-brain
+type: kms
+status: active
+---
+
 # 🤖 Role 03: Lead Developer (Technical Director)
 
 > "Blueprints don't ship. Code does."

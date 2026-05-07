@@ -1,10 +1,30 @@
-#!/usr/bin/env python3
-import os
-import shutil
-import subprocess
+#!/usr/bin/env python
+# coding:utf-8
+"""
+ESSENTIAL PROCESS:
+Scaffolds a new Bastien-Antigravity ecosystem directory by creating the 
+standard folder structure and copying the AI Squad DNA.
+
+DATA FLOW:
+1. Inputs project name and destination path from user.
+2. Creates the 2-Digit standard directory hierarchy.
+3. Copies Role-Prompts and Scripts from the parent brain.
+4. Generates initial README, GEMINI.md and MODE-MANUAL files.
+5. Invokes convert_agents.py to initialize subagents.
+
+KEY PARAMETERS:
+- folders: List of standard directory names to create.
+- target_path: The filesystem path where the new brain will be built.
+"""
+
+from shutil import copytree as shutilCopytree, copy as shutilCopy
+from subprocess import run as subprocessRun
+from sys import executable as sysExecutable
 from pathlib import Path
 
-def main():
+# -----------------------------------------------------------------------------------------------
+
+def main() -> None:
     print("\n🏗️  Bastien-Antigravity: Ecosystem Scaffolder")
     print("-------------------------------------------")
     
@@ -42,8 +62,8 @@ def main():
     current_dir = Path(__file__).resolve().parent.parent
     
     print("🧬 Copying AI Squad DNA...")
-    shutil.copytree(current_dir / "07-Core-KMS/Role-Prompts", target_path / "07-Core-KMS/Role-Prompts", dirs_exist_ok=True)
-    shutil.copytree(current_dir / "20-Scripts", target_path / "20-Scripts", dirs_exist_ok=True)
+    shutilCopytree(current_dir / "07-Core-KMS/Role-Prompts", target_path / "07-Core-KMS/Role-Prompts", dirs_exist_ok=True)
+    shutilCopytree(current_dir / "20-Scripts", target_path / "20-Scripts", dirs_exist_ok=True)
 
     # 3. Create Template Files
     print("📝 Generating Project Compass...")
@@ -58,26 +78,29 @@ This repository follows the Bastien-Antigravity 2-Digit Standard.
 2. Every response must begin with a **[SCAN]** block.
 3. Update `AI-Session-State.md` before concluding a task.
 """
-    with open(target_path / "GEMINI.md", 'w') as f:
+    with open(target_path / "GEMINI.md", 'w', encoding='utf-8') as f:
         f.write(gemini_md)
 
-    with open(target_path / "README.md", 'w') as f:
+    with open(target_path / "README.md", 'w', encoding='utf-8') as f:
         f.write(f"# 🧠 {target_name.replace('-', ' ').title()}\n\nNew Bastien-Antigravity Ecosystem.\n")
 
     # Copy User Manual
     if (current_dir / "User-Manual.md").exists():
-        shutil.copy(current_dir / "User-Manual.md", target_path / "User-Manual.md")
+        shutilCopy(current_dir / "User-Manual.md", target_path / "User-Manual.md")
 
     # 4. Initialize Mode Manual
     mode_content = "active_mode: 1\n\n# Mode Manual\n1: Spec-First\n2: Free-Labs\n3: Fleet-Commander\n"
-    (target_path / "00-AI-Orchestration/MODE-MANUAL.md").write_text(mode_content)
+    with open(target_path / "00-AI-Orchestration/MODE-MANUAL.md", 'w', encoding='utf-8') as f:
+        f.write(mode_content)
 
     # 5. Run Agent Conversion in the new project
     print("🤖 Baking the AI Squad into the new ecosystem...")
-    subprocess.run(["python3", "20-Scripts/convert_agents.py"], cwd=target_path)
+    subprocessRun([sysExecutable, "20-Scripts/convert_agents.py"], cwd=target_path)
 
     print(f"\n✅ SUCCESS! Your new Command Center is ready at: {target_path.absolute()}")
-    print(f"👉 To start: cd {target_path} && python3 20-Scripts/start_squad.py\n")
+    print(f"👉 To start: cd {target_path} && {sysExecutable} 20-Scripts/start_squad.py\n")
+
+# -----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     main()

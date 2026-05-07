@@ -121,7 +121,7 @@ The Brain has three distinct "Protocols" that change how the AI works. You can s
 
 ---
 
-## 🤖 7. The AI Squad Dossier
+## 🤖 6. The AI Squad Dossier
 
 Each agent has a specialized persona and access level. Use the `/agents list` command in the CLI to see who is available.
 
@@ -140,7 +140,7 @@ Each agent has a specialized persona and access level. Use the `/agents list` co
 
 ---
 
-## 🔄 8. Mode Behavior Matrix
+## 🔄 7. Mode Behavior Matrix
 
 The agents change their behavior based on the `active_mode` set in `MODE-MANUAL.md`.
 
@@ -153,7 +153,7 @@ The agents change their behavior based on the `active_mode` set in `MODE-MANUAL.
 
 ---
 
-## 🛡️ 9. The "Golden Rules" of Engagement
+## 🛡️ 8. The "Golden Rules" of Engagement
 
 1. **The SCAN Protocol**: Every agent response MUST start with `[SCAN]` to verify Role, Source, and State.
 2. **Hard-Stop Context**: Never end a session without asking the AI to: *"Update AI-Session-State.md with today's progress."*
@@ -161,7 +161,7 @@ The agents change their behavior based on the `active_mode` set in `MODE-MANUAL.
 
 ---
 
-## 🧪 10. The Validation Loop: Trust through Testing
+## 🧪 9. The Validation Loop: Trust through Testing
 
 The entire Bastien-Antigravity ecosystem relies on a **"Trust, but Verify"** model. We do not assume the AI's code is correct because it "looks" right; we assume it is correct only when it **passes the tests.**
 
@@ -180,7 +180,7 @@ The entire Bastien-Antigravity ecosystem relies on a **"Trust, but Verify"** mod
 
 ---
 
-## 🎨 11. Visualizing the Brain: The Obsidian App
+## 🎨 10. Visualizing the Brain: The Obsidian App
 
 While the AI Squad operates in the terminal, you can (and should) keep the **Obsidian App** open on your second monitor. This serves as your **Visual Control Panel**.
 
@@ -194,7 +194,7 @@ While the AI Squad operates in the terminal, you can (and should) keep the **Obs
 
 ---
 
-## 🏗️ 12. Scaling Up: Fabricating a New Brain
+## 🏗️ 11. Scaling Up: Fabricating a New Brain
 
 If you want to start a **completely new project** (e.g., a Marketing campaign, a new SaaS, or a Research paper) while keeping this exact AI architecture, you can "Fabricate" a new brain in seconds.
 

@@ -1,31 +1,58 @@
-import os
-import glob
+#!/usr/bin/env python
+# coding:utf-8
+"""
+ESSENTIAL PROCESS:
+Converts the human-readable Role-Prompts from the core-kms-brain into 
+compatible Gemini CLI agent definitions in the obsidian-brain vault.
 
-source_dir = "/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/07-Core-KMS/Role-Prompts"
-target_dir = "/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/.gemini/agents"
+DATA FLOW:
+1. Scans core-kms-brain/Role-Prompts for markdown files.
+2. Extracts agent names from folder prefixes.
+3. Injects mandatory YAML frontmatter and the [SCAN] restoration block.
+4. Writes the final agent markdown to obsidian-brain/.gemini/agents/.
 
-os.makedirs(target_dir, exist_ok=True)
+KEY PARAMETERS:
+- source_dir: Path to the raw role prompts.
+- target_dir: Path to the generated Gemini agent definitions.
+"""
 
-# Map folder names to clean agent names
-for folder in os.listdir(source_dir):
-    folder_path = os.path.join(source_dir, folder)
-    if os.path.isdir(folder_path):
-        md_files = glob.glob(os.path.join(folder_path, "*.md"))
-        if md_files:
-            md_file = md_files[0]
-            # e.g. "04-QA" -> "qa"
-            agent_name = folder.split("-", 1)[1].lower() if "-" in folder else folder.lower()
-            
-            with open(md_file, 'r') as f:
-                content = f.read()
-            
-            yaml_frontmatter = f"""---
+from os import listdir as osListdir, makedirs as osMakedirs
+from os.path import dirname as osPathDirname, abspath as osPathAbspath, join as osPathJoin, isdir as osPathIsdir
+from glob import glob as globGlob
+
+# -----------------------------------------------------------------------------------------------
+
+def main() -> None:
+    # Dynamically resolve paths relative to the script location
+    script_dir = osPathDirname(osPathAbspath(__file__))
+    # 20-Scripts is in obsidian-brain. Workspace root is one level up from obsidian-brain.
+    workspace_root = osPathAbspath(osPathJoin(script_dir, "..", ".."))
+
+    source_dir = osPathJoin(workspace_root, "core-kms-brain", "Role-Prompts")
+    target_dir = osPathJoin(workspace_root, "obsidian-brain", ".gemini", "agents")
+
+    osMakedirs(target_dir, exist_ok=True)
+
+    # Map folder names to clean agent names
+    for folder in osListdir(source_dir):
+        folder_path = osPathJoin(source_dir, folder)
+        if osPathIsdir(folder_path):
+            md_files = globGlob(osPathJoin(folder_path, "*.md"))
+            if md_files:
+                md_file = md_files[0]
+                # e.g. "04-QA" -> "qa"
+                agent_name = folder.split("-", 1)[1].lower() if "-" in folder else folder.lower()
+                
+                with open(md_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                yaml_frontmatter = f"""---
 name: {agent_name}
 description: The {agent_name} persona from the Bastien-Antigravity squad.
 ---
 """
-            
-            scan_block = f"""
+                
+                scan_block = f"""
 # 💾 STATE MANAGEMENT RULE (CRITICAL)
 Before finishing any major task or concluding a session, you MUST use the `obsidian_vault` tool to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
 
@@ -38,9 +65,13 @@ To prevent context degradation, you MUST begin EVERY single response with the fo
 - State Management (Will I update `AI-Session-State.md` before stopping?): [CHECK/MISSED]
 
 """
-            
-            target_file = os.path.join(target_dir, f"{agent_name}.md")
-            with open(target_file, 'w') as f:
-                f.write(yaml_frontmatter + content + "\n" + scan_block)
-            print(f"Created agent: {target_file}")
+                
+                target_file = osPathJoin(target_dir, f"{agent_name}.md")
+                with open(target_file, 'w', encoding='utf-8') as f:
+                    f.write(yaml_frontmatter + content + "\n" + scan_block)
+                print(f"Created agent: {target_file}")
 
+# -----------------------------------------------------------------------------------------------
+
+if __name__ == "__main__":
+    main()

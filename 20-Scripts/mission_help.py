@@ -1,6 +1,20 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# coding:utf-8
+"""
+ESSENTIAL PROCESS:
+Displays a cheat sheet of missions, personas, and keywords for the 
+Bastien-Antigravity AI Squad to assist the user in delegation.
 
-def main():
+DATA FLOW:
+1. Prints static help content to the terminal.
+
+KEY PARAMETERS:
+None
+"""
+
+# -----------------------------------------------------------------------------------------------
+
+def main() -> None:
     print("\n--- 💡 Bastien-Antigravity Squad Cheat Sheet ---")
     
     print("\n👥 The Squad (Available for Delegation)")
@@ -43,6 +57,8 @@ def main():
     print("   - @<file> : Use '@' to give the AI a specific file (e.g. @README.md).")
     print("   - !<cmd>  : Use '!' to run terminal commands (e.g. !ls).")
     print("\n-------------------------------------------------\n")
+
+# -----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     main()

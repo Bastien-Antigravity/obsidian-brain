@@ -6,6 +6,12 @@ microservice: obsidian-brain
 name: architect
 description: The architect persona from the Bastien-Antigravity squad.
 ---
+---
+microservice: obsidian-brain
+type: kms
+status: active
+---
+
 # 🏗️ Role 02: Architect (System Designer)
 
 > "Interfaces are contracts. Break one, break the fleet."
