@@ -22,13 +22,27 @@ from glob import glob as globGlob
 
 # -----------------------------------------------------------------------------------------------
 
-def main() -> None:
-    # Dynamically resolve paths relative to the script location
-    script_dir = osPathDirname(osPathAbspath(__file__))
-    # 20-Scripts is in obsidian-brain. Workspace root is one level up from obsidian-brain.
-    workspace_root = osPathAbspath(osPathJoin(script_dir, "..", ".."))
+def _find_workspace_root() -> str:
+    """
+    Walk up from this script's location until we find the workspace root.
+    """
+    current = osPathDirname(osPathAbspath(__file__))
+    while current != osPathDirname(current):
+        if osPathExists(osPathJoin(current, "Bastien-Antigravity.code-workspace")):
+            return current
+        if osPathIsdir(osPathJoin(current, "obsidian-brain")) and osPathIsdir(osPathJoin(current, "fleet-operation-brain")):
+            return current
+        current = osPathDirname(current)
+    return osPathAbspath(osPathJoin(osPathDirname(osPathAbspath(__file__)), "..", ".."))
 
+def main() -> None:
+    workspace_root = _find_workspace_root()
+
+    # Try standalone clone first, fall back to submodule inside obsidian-brain
     source_dir = osPathJoin(workspace_root, "core-kms-brain", "Role-Prompts")
+    if not osPathIsdir(source_dir):
+        source_dir = osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Role-Prompts")
+    
     target_dir = osPathJoin(workspace_root, "obsidian-brain", ".gemini", "agents")
 
     osMakedirs(target_dir, exist_ok=True)

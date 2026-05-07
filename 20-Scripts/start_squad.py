@@ -136,16 +136,28 @@ def print_mission_examples() -> None:
 def run_preflight() -> None:
     """
     Runs the Preflight-Check.py from core-kms-brain to detect and auto-fix drift.
+    Searches both the standalone clone and the obsidian-brain submodule.
     """
     script_dir = osPathDirname(osPathAbspath(__file__))
     workspace_root = osPathAbspath(osPathJoin(script_dir, "..", ".."))
-    preflight_script = osPathJoin(workspace_root, "core-kms-brain", "Scripts", "Preflight-Check.py")
     
-    if osPathExists(preflight_script):
+    # Try standalone clone first, then submodule inside obsidian-brain
+    candidates = [
+        osPathJoin(workspace_root, "core-kms-brain", "Scripts", "Preflight-Check.py"),
+        osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Scripts", "Preflight-Check.py"),
+    ]
+    
+    preflight_script = None
+    for candidate in candidates:
+        if osPathExists(candidate):
+            preflight_script = candidate
+            break
+    
+    if preflight_script:
         print("\n🛫 Running Preflight Check...")
         subprocessRun([sysExecutable, preflight_script])
     else:
-        print("\n⚠️ Preflight-Check.py not found at {0} — skipping.".format(preflight_script))
+        print("\n⚠️ Preflight-Check.py not found — skipping.")
 
 # -----------------------------------------------------------------------------------------------
 
