@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: governance
+status: active
+---
+
 # ⚡ AI Initialization: obsidian-brain
 
 > [!IMPORTANT] MANDATORY INITIALIZATION
