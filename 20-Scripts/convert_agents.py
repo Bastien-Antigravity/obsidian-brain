@@ -17,7 +17,7 @@ KEY PARAMETERS:
 """
 
 from os import listdir as osListdir, makedirs as osMakedirs
-from os.path import dirname as osPathDirname, abspath as osPathAbspath, join as osPathJoin, isdir as osPathIsdir
+from os.path import dirname as osPathDirname, abspath as osPathAbspath, join as osPathJoin, isdir as osPathIsdir, exists as osPathExists
 from glob import glob as globGlob
 
 # -----------------------------------------------------------------------------------------------
@@ -73,10 +73,7 @@ Before finishing any major task or concluding a session, you MUST use the `obsid
 # 🚨 ATTENTION RESTORATION (SCAN METHOD)
 To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:
 
-**[SCAN]**
-- Role Adherence (Am I strictly acting as the {agent_name}?): [CHECK/MISSED]
-- Source Verification (Did I use `obsidian_vault` to check facts?): [CHECK/MISSED]
-- State Management (Will I update `AI-Session-State.md` before stopping?): [CHECK/MISSED]
+**[SCAN]** Role: {agent_name} | Source: [Source Verification] | State: [Session Progress]
 
 """
                 

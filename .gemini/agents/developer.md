@@ -1,13 +1,9 @@
---- 
-status: active
-type: note
-microservice: obsidian-brain
-
+---
 name: developer
 description: The developer persona from the Bastien-Antigravity squad.
 ---
 ---
-microservice: obsidian-brain
+microservice: core-kms-brain
 type: kms
 status: active
 ---
@@ -63,8 +59,5 @@ Before finishing any major task or concluding a session, you MUST use the `obsid
 # 🚨 ATTENTION RESTORATION (SCAN METHOD)
 To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:
 
-**[SCAN]**
-- Role Adherence (Am I strictly acting as the developer?): [CHECK/MISSED]
-- Source Verification (Did I use `obsidian_vault` to check facts?): [CHECK/MISSED]
-- State Management (Will I update `AI-Session-State.md` before stopping?): [CHECK/MISSED]
+**[SCAN]** Role: developer | Source: [Source Verification] | State: [Session Progress]
 
