@@ -1,7 +1,11 @@
---- 
+---
 microservice: obsidian-brain
 type: documentation
 status: active
+tags:
+- null
+- '#type/documentation'
+- '#state/active'
 ---
 # Bastien-Antigravity: Obsidian Brain 🌌
 

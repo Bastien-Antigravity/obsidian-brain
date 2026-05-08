@@ -1,20 +1,25 @@
---- 
+---
 microservice: obsidian-brain
 type: session-state
 status: active
 lifecycle:
   active_branch: develop
-  protected_branches: [main]
+  protected_branches:
+  - main
   current_version: 1.0.0
   version_source: VERSION.txt
 done_when:
-  - links_verified: true
-  - strategy_updated: true
+- links_verified: true
+- strategy_updated: true
 directives:
-  - autonomous-doc-sync: mandatory
-  - obsidian-brain-sync: mandatory
-  - conventional-commits: mandatory
-  - active-protocol: "[[00-AI-Orchestration/MODE-MANUAL]]"
+- autonomous-doc-sync: mandatory
+- obsidian-brain-sync: mandatory
+- conventional-commits: mandatory
+- active-protocol: '[[00-AI-Orchestration/MODE-MANUAL]]'
+tags:
+- '#type/session-state'
+- null
+- '#state/active'
 ---
 
 # 🧠 AI Session State: obsidian-brain

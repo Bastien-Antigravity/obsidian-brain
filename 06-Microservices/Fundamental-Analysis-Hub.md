@@ -1,7 +1,11 @@
---- 
+---
 microservice: fundamental-analysis
 type: service-hub
 status: active
+tags:
+- '#type/service-hub'
+- null
+- '#state/active'
 ---
 # 🌐 Service Hub: Fundamental-Analysis
 

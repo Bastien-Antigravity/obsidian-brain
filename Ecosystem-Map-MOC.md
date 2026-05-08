@@ -1,8 +1,12 @@
---- 
+---
 microservice: ecosystem-core
 type: moc
 status: active
 author: Ruzava & Antigravity
+tags:
+- '#state/active'
+- null
+- '#type/moc'
 ---
 
 # 🌌 Bastien-Antigravity: Master Knowledge Hub (MOC)
@@ -108,6 +112,7 @@ Live documentation and operational hubs for the service fleet.
 ## 🧠 07 - Core KMS
 Knowledge Management System, Agent Role Prompts, and Workflows.
 - [[07-Core-KMS/README|KMS Overview]]
+- [[07-Core-KMS/tag_taxonomy|🏷️ Tag Taxonomy (Source of Truth)]]
 - [[07-Core-KMS/Agent-Roles-MOC|🤖 Agent Roles Index]]
 - [[07-Core-KMS/00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook]]
 - [[07-Core-KMS/Workflows/Daily-AI-Playbook|📖 Daily AI Playbook]]

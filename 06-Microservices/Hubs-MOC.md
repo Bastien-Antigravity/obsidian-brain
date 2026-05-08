@@ -2,6 +2,10 @@
 microservice: hubs-moc
 type: moc
 status: active
+tags:
+- '#state/active'
+- null
+- '#type/moc'
 ---
 
 # Hubs MOC

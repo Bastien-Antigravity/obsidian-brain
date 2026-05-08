@@ -1,7 +1,11 @@
---- 
+---
 microservice: flexible-logger
 type: service-hub
 status: active
+tags:
+- '#type/service-hub'
+- null
+- '#state/active'
 ---
 # 🌐 Service Hub: Flexible-Logger
 

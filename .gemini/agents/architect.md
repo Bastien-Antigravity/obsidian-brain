@@ -1,9 +1,13 @@
---- 
+---
 name: architect
 type: kms
 status: active
 microservice: obsidian-brain
 description: The architect persona from the Bastien-Antigravity squad.
+tags:
+- '#type/guide'
+- null
+- '#state/active'
 ---
 # 🏗️ Role 02: Architect (System Designer)
 

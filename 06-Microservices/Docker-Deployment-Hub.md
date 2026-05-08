@@ -1,7 +1,11 @@
---- 
+---
 microservice: docker-deployment
 type: service-hub
 status: active
+tags:
+- '#type/service-hub'
+- null
+- '#state/active'
 ---
 # 🌐 Service Hub: Docker-Deployment
 

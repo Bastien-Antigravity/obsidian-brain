@@ -2,6 +2,10 @@
 microservice: templates-moc
 type: moc
 status: active
+tags:
+- '#state/active'
+- null
+- '#type/moc'
 ---
 
 # Templates MOC

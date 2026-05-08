@@ -1,7 +1,11 @@
---- 
+---
 microservice: config-server
 type: service-hub
 status: active
+tags:
+- '#type/service-hub'
+- null
+- '#state/active'
 ---
 # 🌐 Service Hub: Config-Server
 

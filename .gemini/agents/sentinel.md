@@ -1,9 +1,13 @@
---- 
+---
 name: sentinel
 type: kms
 status: active
 microservice: obsidian-brain
 description: The sentinel persona from the Bastien-Antigravity squad.
+tags:
+- '#type/guide'
+- null
+- '#state/active'
 ---
 # 🛡️ Role 09: Sentinel (Brain Auditor & Logic Guardian)
 

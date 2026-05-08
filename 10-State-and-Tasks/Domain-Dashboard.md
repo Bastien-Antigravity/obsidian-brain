@@ -1,7 +1,11 @@
---- 
+---
 microservice: obsidian-brain
 type: task
 status: active
+tags:
+- null
+- '#type/task'
+- '#state/active'
 ---
 
 # 🌐 Domain Ontology Matrix

@@ -1,9 +1,12 @@
---- 
+---
 microservice: obsidian-brain
-
 type: qa-test-spec
 status: draft
 role: qa
+tags:
+- '#state/draft'
+- '#type/qa-test-spec'
+- null
 ---
 # BDD Test Specification: [Feature/Bug Name]
 

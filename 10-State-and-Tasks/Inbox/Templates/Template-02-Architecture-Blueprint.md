@@ -1,9 +1,12 @@
---- 
+---
 microservice: obsidian-brain
-
 type: architecture-blueprint
 status: draft
 role: architect
+tags:
+- '#state/draft'
+- '#type/architecture-blueprint'
+- null
 ---
 # Architecture Blueprint: [Feature/Bug Name]
 

@@ -1,9 +1,12 @@
---- 
+---
 microservice: obsidian-brain
-
 type: idea-pitch
 status: pending
 role: orchestrator
+tags:
+- '#type/idea-pitch'
+- '#state/pending'
+- null
 ---
 # Idea Pitch: [Feature/Bug Name]
 

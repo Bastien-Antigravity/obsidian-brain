@@ -1,9 +1,12 @@
---- 
+---
 microservice: obsidian-brain
-
 type: task-plan
 status: pending
 role: orchestrator
+tags:
+- '#type/task-plan'
+- null
+- '#state/pending'
 ---
 # Master Plan: [Feature/Bug Name]
 

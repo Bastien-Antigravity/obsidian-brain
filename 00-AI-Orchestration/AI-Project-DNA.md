@@ -1,11 +1,12 @@
---- 
+---
 microservice: obsidian-brain
-
 type: architecture
 status: active
 tags:
-  - governance
-  - dna
+- dna
+- '#state/active'
+- governance
+- '#type/architecture'
 ---
 # 🧬 Project DNA: obsidian-brain
 

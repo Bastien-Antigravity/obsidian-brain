@@ -1,11 +1,13 @@
---- 
+---
 microservice: obsidian-brain
 type: task
 status: active
 priority: high
 tags:
-  - governance
-  - meta-logic
+- meta-logic
+- governance
+- '#type/task'
+- '#state/active'
 ---
 # TODO: obsidian-brain (Governance & Meta-Logic)
 
