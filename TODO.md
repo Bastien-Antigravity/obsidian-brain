@@ -1,4 +1,4 @@
----
+--- 
 microservice: obsidian-brain
 type: task
 status: active
@@ -28,3 +28,4 @@ tags:
 - [x] Python Ecosystem Standardization (18 scripts, headers, aliasing, docstrings).
 - [x] Submodule URL correction (`.gitmodules` → new repo names).
 - [x] Integrated Preflight Check system (`Preflight-Check.py`).
+- [x] Standardized Business Data Models (MarketEvent, OHLCV, Signal) and migrated business services.

@@ -1,4 +1,4 @@
----
+--- 
 microservice: templates-moc
 type: moc
 status: active

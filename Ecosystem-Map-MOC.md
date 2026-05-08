@@ -1,4 +1,4 @@
----
+--- 
 microservice: ecosystem-core
 type: moc
 status: active
@@ -101,10 +101,17 @@ Live documentation and operational hubs for the service fleet.
 - **[[06-Microservices/Log-Server-Hub|🌐 Log-Server Hub]]** (Rust)
 - **[[06-Microservices/Notif-Server-Hub|🌐 Notif-Server Hub]]** (Go)
 - **[[06-Microservices/Safe-Socket-Hub|🌐 Safe-Socket Hub]]** (Go/SHM)
-- **[[06-Microservices/Distributed-Config-Hub.md|🌐 Distributed-Config Hub]]** (Go/Polyglot)
+- **[[06-Microservices/Distributed-Config-Hub|🌐 Distributed-Config Hub]]** (Go/Polyglot)
 - **[[06-Microservices/Market-Observer-Hub|🌐 Market-Observer Hub]]** (Go)
 - **[[06-Microservices/Data-Ingestor-Hub|🌐 Data-Ingestor Hub]]** (Go)
+- **[[06-Microservices/Orderbook-Aggregator-Hub|🌐 Orderbook-Aggregator Hub]]** (Go)
 - **[[06-Microservices/Fundamental-Analysis-Hub|🌐 Fundamental-Analysis Hub]]** (Python)
+- **[[06-Microservices/Technical-Analysis-Hub|🌐 Technical-Analysis Hub]]** (Python)
+- **[[06-Microservices/Web-Interface-Hub|🌐 Web-Interface Hub]]** (NextJS)
+- **[[06-Microservices/Enhanced-Backtesting-Hub|🌐 Enhanced-Backtesting Hub]]** (Rust)
+- **[[06-Microservices/Docker-Deployment-Hub|🐳 Docker-Deployment Hub]]**
+- **[[06-Microservices/Sandbox-Testing-Hub|🧪 Sandbox-Testing Hub]]**
+- **[[06-Microservices/Tele-Remote-Hub|🛰️ Tele-Remote Hub]]**
 - [[06-Microservices/Microservice-Toolbox-Hub|Microservice-Toolbox Hub]]
 - [[06-Microservices/Flexible-Logger-Hub|Flexible-Logger Hub]]
 - [[06-Microservices/Universal-Logger-Hub|Universal-Logger Hub]]
@@ -132,7 +139,7 @@ Current sprint tracking, task inboxes, and domain dashboards.
 ## 🛠️ 20 - Scripts
 Ecosystem automation scripts.
 - [[03-Tech-Stack/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
-- [[core-kms-brain/Scripts/Joint-Audit-Purger.py|🧹 Purger: Dark Matter Audit]]
+- [[07-Core-KMS/Scripts/Joint-Audit-Purger.py|🧹 Purger: Dark Matter Audit]]
 - [[20-Scripts/start_squad.py|Squad Launcher]]
 
 ---

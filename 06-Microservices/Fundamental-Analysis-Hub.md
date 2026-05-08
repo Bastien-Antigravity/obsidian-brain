@@ -1,4 +1,4 @@
----
+--- 
 microservice: fundamental-analysis
 type: service-hub
 status: active

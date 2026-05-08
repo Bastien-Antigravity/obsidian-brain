@@ -1,4 +1,4 @@
----
+--- 
 microservice: tele-remote
 type: service-hub
 status: active

@@ -1,4 +1,4 @@
----
+--- 
 microservice: safe-socket
 type: service-hub
 status: active

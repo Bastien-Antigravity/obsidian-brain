@@ -1,4 +1,4 @@
----
+--- 
 name: docmaintainer
 type: kms
 status: active

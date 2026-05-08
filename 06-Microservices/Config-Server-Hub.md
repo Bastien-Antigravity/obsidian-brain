@@ -1,4 +1,4 @@
----
+--- 
 microservice: config-server
 type: service-hub
 status: active

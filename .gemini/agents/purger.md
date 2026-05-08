@@ -1,4 +1,4 @@
----
+--- 
 name: purger
 type: kms
 status: active

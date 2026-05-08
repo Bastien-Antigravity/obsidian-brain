@@ -1,4 +1,4 @@
----
+--- 
 name: architect
 type: kms
 status: active

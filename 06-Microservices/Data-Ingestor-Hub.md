@@ -1,4 +1,4 @@
----
+--- 
 microservice: data-ingestor
 type: service-hub
 status: active

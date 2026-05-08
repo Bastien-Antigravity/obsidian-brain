@@ -1,4 +1,4 @@
----
+--- 
 microservice: distributed-config
 type: service-hub
 status: active

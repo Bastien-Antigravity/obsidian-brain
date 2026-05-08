@@ -1,4 +1,4 @@
----
+--- 
 microservice: obsidian-brain
 type: idea-pitch
 status: pending

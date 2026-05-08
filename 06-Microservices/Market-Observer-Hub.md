@@ -1,4 +1,4 @@
----
+--- 
 microservice: market-observer
 type: service-hub
 status: active

@@ -1,4 +1,4 @@
----
+--- 
 microservice: docker-deployment
 type: service-hub
 status: active

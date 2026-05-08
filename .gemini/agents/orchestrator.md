@@ -1,4 +1,4 @@
----
+--- 
 name: orchestrator
 type: kms
 status: active

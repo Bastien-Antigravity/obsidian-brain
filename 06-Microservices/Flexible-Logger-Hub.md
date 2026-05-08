@@ -1,4 +1,4 @@
----
+--- 
 microservice: flexible-logger
 type: service-hub
 status: active

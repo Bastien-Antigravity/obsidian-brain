@@ -1,4 +1,4 @@
----
+--- 
 microservice: universal-logger
 type: service-hub
 status: active

@@ -1,4 +1,4 @@
----
+--- 
 microservice: obsidian-brain
 type: qa-test-spec
 status: draft

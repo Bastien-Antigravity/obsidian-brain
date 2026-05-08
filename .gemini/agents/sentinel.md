@@ -1,4 +1,4 @@
----
+--- 
 name: sentinel
 type: kms
 status: active
