@@ -132,6 +132,7 @@ Current sprint tracking, task inboxes, and domain dashboards.
 ## 🛠️ 20 - Scripts
 Ecosystem automation scripts.
 - [[03-Tech-Stack/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
+- [[core-kms-brain/Scripts/Joint-Audit-Purger.py|🧹 Purger: Dark Matter Audit]]
 - [[20-Scripts/start_squad.py|Squad Launcher]]
 
 ---
