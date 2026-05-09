@@ -2,8 +2,10 @@
 # coding:utf-8
 
 import os
-import subprocess
+from os.path import join as osPathJoin, exists as osPathExists, abspath as osPathAbspath, dirname as osPathDirname
+import subprocess as subProcess
 import sys
+from typing import List, Optional, Tuple
 
 """
 ESSENTIAL PROCESS: Fleet Commander - Mass Git Operations
@@ -13,76 +15,101 @@ KEY PARAMETERS:
     - commit_msg: Standardized commit message
 """
 
-class FleetCommander:
-    Name = "FleetCommander"
+# ### COMPONENT CLASS ###
 
-    def __init__(self, base_path):
-        self.base_path = base_path
-        self.repos = [
-            "data-ingestor", "distributed-config", "docker-deployment", 
+class FleetCommander:
+    Name: str = "FleetCommander"
+
+    def __init__(self, base_path: str, config: Optional[object] = None, logger: Optional[object] = None) -> None:
+        self.config = config
+        self.logger = logger
+        self.base_path: str = base_path
+        self.repos: List[str] = [
+            "config-server", "data-ingestor", "distributed-config", "docker-deployment", 
             "enhanced-backtesting", "flexible-logger", "fundamental-analysis", 
             "log-server", "market-observer", "microservice-toolbox", 
             "notif-server", "obsidian-brain", "orderbook-aggregator", 
             "safe-socket", "sandbox-testing", "technical-analysis", 
-            "tele-remote", "universal-logger", "web-interface"
+            "tele-remote", "universal-logger", "web-interface",
+            "obsidian-brain/01-Strategic-Nexus", "obsidian-brain/02-Business-BDD",
+            "obsidian-brain/03-Tech-Stack", "obsidian-brain/04-Rapid-Prototyping",
+            "obsidian-brain/05-Fleet-Operation", "obsidian-brain/07-Core-KMS"
         ]
-        self.commit_msg = "refactor: ecosystem-wide project DNA standardization and modern UI/code architecture"
+        self.commit_msg: str = "refactor: ecosystem-wide project DNA standardization and modern UI/code architecture"
 
-    def run_command(self, cmd, cwd):
+    # -----------------------------------------------------------------------------------------------
+
+    def _log(self, message: str) -> None:
+        """Helper to log messages using the injected logger or fallback to print."""
+        formatted_msg: str = "{0} : {1}".format(self.Name, message)
+        if self.logger and hasattr(self.logger, "info"):
+            self.logger.info(formatted_msg)
+        else:
+            print(formatted_msg)
+
+    # -----------------------------------------------------------------------------------------------
+
+    def _run_command(self, cmd: str, cwd: str) -> Tuple[str, Optional[str]]:
         """Helper to run shell commands within a specific directory."""
         try:
-            result = subprocess.run(
+            result = subProcess.run(
                 cmd, cwd=cwd, shell=True, 
                 capture_output=True, text=True, check=True
             )
             return result.stdout.strip(), None
-        except subprocess.CalledProcessError as e:
+        except subProcess.CalledProcessError as e:
             return e.stdout.strip(), e.stderr.strip()
 
-    def execute_fleet_push(self):
-        print(f"--- {self.Name}: Starting Mass Push Operation ---")
-        results = []
+    # -----------------------------------------------------------------------------------------------
+
+    def execute_fleet_push(self) -> None:
+        """Main execution loop for mass git operations."""
+        self._log("Starting Mass Push Operation ---")
+        results: List[str] = []
 
         for repo in self.repos:
-            repo_path = os.path.join(self.base_path, repo)
-            if not os.path.exists(os.path.join(repo_path, ".git")):
+            repo_path: str = osPathJoin(self.base_path, repo)
+            if not osPathExists(osPathJoin(repo_path, ".git")):
                 results.append(f"{repo}: [SKIP] Not a git repository")
                 continue
 
             # 1. Get current branch
-            branch, err = self.run_command("git rev-parse --abbrev-ref HEAD", repo_path)
+            branch, err = self._run_command("git rev-parse --abbrev-ref HEAD", repo_path)
             if err:
                 results.append(f"{repo}: [ERROR] Failed to get branch: {err}")
                 continue
 
             # 2. Stage changes
-            self.run_command("git add .", repo_path)
+            self._run_command("git add .", repo_path)
 
             # 3. Check for changes
-            status, _ = self.run_command("git status --porcelain", repo_path)
+            status, _ = self._run_command("git status --porcelain", repo_path)
             if not status:
                 results.append(f"{repo}: [OK] No changes")
                 continue
 
             # 4. Commit
-            _, err = self.run_command(f'git commit -m "{self.commit_msg}"', repo_path)
+            _, err = self._run_command(f'git commit -m "{self.commit_msg}"', repo_path)
             if err:
                 results.append(f"{repo}: [ERROR] Commit failed: {err}")
                 continue
 
             # 5. Push
-            _, err = self.run_command(f"git push origin {branch}", repo_path)
+            _, err = self._run_command(f"git push origin {branch}", repo_path)
             if err:
                 results.append(f"{repo}: [ERROR] Push failed: {err}")
             else:
                 results.append(f"{repo}: [SUCCESS] Pushed to {branch}")
 
-        print("\n--- Summary ---")
+        self._log("Summary ---")
         for res in results:
             print(res)
 
+# ### MAIN EXECUTION ###
+
 if __name__ == "__main__":
     # Base path is parent of obsidian-brain
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    script_dir: str = osPathDirname(osPathAbspath(__file__))
+    base_dir: str = osPathAbspath(osPathJoin(script_dir, "..", ".."))
     commander = FleetCommander(base_dir)
     commander.execute_fleet_push()

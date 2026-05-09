@@ -60,7 +60,7 @@ def setup_mcp(mode_choice: str) -> None:
     mode_excludes_map = {
         "1": {"01-Strategic-Nexus", "04-Rapid-Prototyping", "05-Fleet-Operation"},
         "2": {"01-Strategic-Nexus", "02-Business-BDD", "05-Fleet-Operation", "06-Microservices"},
-        "3": {"01-Strategic-Nexus", "02-Business-BDD", "04-Rapid-Prototyping", "06-Microservices"},
+        "3": {"01-Strategic-Nexus", "02-Business-BDD", "04-Rapid-Prototyping"},
         "4": set()
     }
     
