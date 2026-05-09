@@ -112,9 +112,13 @@ Live documentation and operational hubs for the service fleet.
 - **[[06-Microservices/Docker-Deployment-Hub|🐳 Docker-Deployment Hub]]**
 - **[[06-Microservices/Sandbox-Testing-Hub|🧪 Sandbox-Testing Hub]]**
 - **[[06-Microservices/Tele-Remote-Hub|🛰️ Tele-Remote Hub]]**
-- [[06-Microservices/Microservice-Toolbox-Hub|Microservice-Toolbox Hub]]
-- [[06-Microservices/Flexible-Logger-Hub|Flexible-Logger Hub]]
 - [[06-Microservices/Universal-Logger-Hub|Universal-Logger Hub]]
+
+### 📜 Technical Protocols
+- [[06-Microservices/Microservice-Startup-Protocol|📜 Microservice Startup & CLI Protocol]]
+- [[06-Microservices/Microservice-Logging-Standard|📜 Microservice Logging Standard]]
+- [[06-Microservices/Unified-Control-Protocol|📜 Unified Control Protocol (gRPC/REST)]]
+- [[06-Microservices/Web-Interface-Integration-Protocol|📜 Web Interface Integration Protocol]]
 
 ## 🧠 07 - Core KMS
 Knowledge Management System, Agent Role Prompts, and Workflows.

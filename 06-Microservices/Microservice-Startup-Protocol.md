@@ -20,6 +20,17 @@ Every microservice MUST follow this sequence during the `main()` initialization 
 3.  **Phase 3: CLI Arguments**: Apply command-line flags. **CLI always wins.**
 4.  **Phase 4: Remote Sync**: If the bridge is active, synchronize with the global configuration state (Service Discovery).
 
+### 1.1 Level 3 Hybrid Logic (Standalone vs. Connected)
+For Level 3 services (Analysis/Observation), an additional logic gate is required during Phase 2:
+- **If `profile == standalone`**:
+    - Initialize local SQLite3 engine.
+    - Mount file-system data providers.
+    - Disable NATS/Bus initializers.
+- **If `profile == production/develop`**:
+    - Connect to NATS endpoint.
+    - Initialize gRPC remote consumers.
+    - Disable local file-based overrides.
+
 ## 2. Standard CLI Interface
 
 The following flags are mandatory and handled automatically by the toolbox:
@@ -73,4 +84,4 @@ All toolbox implementations MUST implement the **Docker Guard**. If `DOCKER_ENV=
 
 ---
 *Last Updated: 2026-05-08*
-*See also: [[Architecture-Patterns]]*
+*See also: [[Architecture-Patterns]], [[Web-Interface-Integration-Protocol]]*

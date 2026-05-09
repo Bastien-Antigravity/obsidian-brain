@@ -18,8 +18,15 @@ KEY PARAMETERS:
 from os import name as osName, makedirs as osMakedirs
 from os.path import expanduser as osPathExpanduser, exists as osPathExists, abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname
 from json import load as jsonLoad, dump as jsonDump, JSONDecodeError as jsonJSONDecodeError
-from sys import exit as sysExit, executable as sysExecutable
+from sys import exit as sysExit, executable as sysExecutable, stdout as sysStdout
 from subprocess import run as subprocessRun
+
+# Standardize terminal output encoding for Windows
+if sysStdout.encoding != 'utf-8':
+    try:
+        sysStdout.reconfigure(encoding='utf-8')
+    except (AttributeError, Exception):
+        pass
 
 # -----------------------------------------------------------------------------------------------
 
