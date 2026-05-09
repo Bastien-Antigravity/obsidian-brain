@@ -4,7 +4,6 @@ type: kms
 status: active
 microservice: obsidian-brain
 description: The fleetcommander persona from the Bastien-Antigravity squad.
-tags: ['#type/agent', '#state/active']
 ---
 # 📡 Role 07: Fleet Commander (Synchronization Officer)
 

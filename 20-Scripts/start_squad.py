@@ -154,6 +154,10 @@ def print_mission_examples() -> None:
     print("\n🔄 Changing Protocols")
     print("   > Ask Sentinel to switch to Mode 2 and update the manual.")
     
+    print("\n🏁 Governance & Sovereignty")
+    print(f"   > !{sysExecutable} 20-Scripts/close_mission.py (Finalize Task)")
+    print(f"   > !{sysExecutable} 07-Core-KMS/Scripts/Brain-Health-Audit.py (Full Audit)")
+    
     print("\n🧹 Maintenance")
     print("   > Ask DocMaintainer to repair links in the vault and update the MOC.")
     print(f"   > !{sysExecutable} 20-Scripts/convert_agents.py (Regenerate Squad)")
@@ -173,29 +177,36 @@ def print_mission_examples() -> None:
 
 def run_preflight() -> None:
     """
-    Runs the Preflight-Check.py from core-kms-brain to detect and auto-fix drift.
-    Searches both the standalone clone and the obsidian-brain submodule.
+    Runs Preflight and Sovereignty checks to detect drift.
     """
     script_dir = osPathDirname(osPathAbspath(__file__))
     workspace_root = osPathAbspath(osPathJoin(script_dir, "..", ".."))
     
-    # Try standalone clone first, then submodule inside obsidian-brain
-    candidates = [
+    # Preflight Check Candidates
+    preflight_candidates = [
         osPathJoin(workspace_root, "core-kms-brain", "Scripts", "Preflight-Check.py"),
         osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Scripts", "Preflight-Check.py"),
     ]
     
-    preflight_script = None
-    for candidate in candidates:
-        if osPathExists(candidate):
-            preflight_script = candidate
-            break
-    
+    preflight_script = next((c for c in preflight_candidates if osPathExists(c)), None)
     if preflight_script:
-        print("\n🛫 Running Preflight Check...")
+        print(f"\n🛫 Running Preflight Check: {preflight_script}")
         subprocessRun([sysExecutable, preflight_script])
     else:
         print("\n⚠️ Preflight-Check.py not found — skipping.")
+
+    # Sovereignty Check Candidates (Sentinel Audit)
+    audit_candidates = [
+        osPathJoin(workspace_root, "core-kms-brain", "Scripts", "Brain-Health-Audit.py"),
+        osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Scripts", "Brain-Health-Audit.py"),
+    ]
+    
+    audit_script = next((c for c in audit_candidates if osPathExists(c)), None)
+    if audit_script:
+        print(f"\n🛡️ Running Sovereignty Audit: {audit_script}")
+        subprocessRun([sysExecutable, audit_script])
+    else:
+        print("\n⚠️ Sovereignty-Audit script not found — skipping.")
 
 # -----------------------------------------------------------------------------------------------
 

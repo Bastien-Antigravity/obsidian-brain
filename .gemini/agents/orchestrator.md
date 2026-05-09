@@ -4,7 +4,6 @@ type: kms
 status: active
 microservice: obsidian-brain
 description: The orchestrator persona from the Bastien-Antigravity squad.
-tags: ['#type/agent', '#state/active']
 ---
 # 🎭 Role 01: Orchestrator (Pipeline Director)
 
