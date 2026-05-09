@@ -15,7 +15,7 @@ KEY PARAMETERS:
 - obsidian_path: Resolved path to the vault root.
 """
 
-from os import name as osName, makedirs as osMakedirs
+from os import name as osName, makedirs as osMakedirs, listdir as osListdir
 from os.path import expanduser as osPathExpanduser, exists as osPathExists, abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname
 from json import load as jsonLoad, dump as jsonDump, JSONDecodeError as jsonJSONDecodeError
 from sys import exit as sysExit, executable as sysExecutable, stdout as sysStdout
@@ -30,7 +30,7 @@ if sysStdout.encoding != 'utf-8':
 
 # -----------------------------------------------------------------------------------------------
 
-def setup_mcp() -> None:
+def setup_mcp(mode_choice: str) -> None:
     settings_dir = osPathExpanduser("~/.gemini")
     settings_file = osPathJoin(settings_dir, "settings.json")
     
@@ -55,13 +55,30 @@ def setup_mcp() -> None:
     # Automatically resolves the path to the vault root (one level up from this script)
     obsidian_path = osPathAbspath(osPathJoin(osPathDirname(__file__), ".."))
     
+    # --- Dynamic Context Exclusion Logic ---
+    global_excludes = {".obsidian", ".git", ".gemini", "node_modules"}
+    mode_excludes_map = {
+        "1": {"01-Strategic-Nexus", "04-Rapid-Prototyping", "05-Fleet-Operation"},
+        "2": {"01-Strategic-Nexus", "02-Business-BDD", "05-Fleet-Operation", "06-Microservices"},
+        "3": {"01-Strategic-Nexus", "02-Business-BDD", "04-Rapid-Prototyping", "06-Microservices"},
+        "4": set()
+    }
+    
+    current_excludes = mode_excludes_map.get(mode_choice, set())
+    allowed_dirs = []
+    
+    for item in osListdir(obsidian_path):
+        if item in global_excludes or item in current_excludes:
+            continue
+        item_path = osPathJoin(obsidian_path, item)
+        allowed_dirs.append(item_path)
+        
+    mcp_args = ["-y", "@modelcontextprotocol/server-filesystem"] + allowed_dirs
+    # ---------------------------------------
+    
     settings["mcpServers"]["obsidian_vault"] = {
         "command": "npx",
-        "args": [
-            "-y",
-            "@modelcontextprotocol/server-filesystem",
-            obsidian_path
-        ]
+        "args": mcp_args
     }
     
     # Save back
@@ -73,7 +90,7 @@ def setup_mcp() -> None:
 
 # -----------------------------------------------------------------------------------------------
 
-def select_mode() -> None:
+def select_mode() -> str:
     modes = {
         "1": ("🛡️ Spec-First", "High safety, BDD mandatory."),
         "2": ("🧪 Free-Labs", "High speed, experimentions."),
@@ -89,7 +106,7 @@ def select_mode() -> None:
     
     if choice == "4":
         print("✅ Mode: Direct-Action (No changes to MODE-MANUAL.md)")
-        return
+        return "4"
 
     if choice in modes:
         mode_file = osPathJoin(osPathDirname(__file__), "../00-AI-Orchestration/MODE-MANUAL.md")
@@ -104,8 +121,20 @@ def select_mode() -> None:
                     f.write(line)
         
         print(f"✅ Mode switched to: {modes[choice][0]}")
+        return choice
     else:
         print("➡️ Keeping current mode as defined in MODE-MANUAL.md")
+        current_mode = "4"
+        try:
+            mode_file = osPathJoin(osPathDirname(__file__), "../00-AI-Orchestration/MODE-MANUAL.md")
+            with open(mode_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    if line.startswith("active_mode:"):
+                        current_mode = line.split(":")[1].strip()
+                        break
+        except FileNotFoundError:
+            pass
+        return current_mode
 
 # -----------------------------------------------------------------------------------------------
 
@@ -171,8 +200,8 @@ def run_preflight() -> None:
 def main() -> None:
     print("\n🧠 Initializing Bastien-Antigravity AI Squad...")
     run_preflight()
-    select_mode()
-    setup_mcp()
+    mode = select_mode()
+    setup_mcp(mode)
     print_mission_examples()
     
     print("\n🚀 Firing up the Gemini CLI...")
