@@ -1,3 +1,9 @@
+---
+type: governance
+status: active
+tags: ['#type/governance', '#state/active']
+---
+
 # 🧬 Project DNA: obsidian-brain
 
 ## 🎯 High-Level Intent (BDD)

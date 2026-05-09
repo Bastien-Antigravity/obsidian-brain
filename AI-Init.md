@@ -2,6 +2,7 @@
 microservice: obsidian-brain
 type: governance
 status: active
+tags: ['#type/governance', '#state/active']
 ---
 
 # ⚡ AI Initialization: obsidian-brain

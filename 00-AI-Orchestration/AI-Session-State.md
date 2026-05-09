@@ -1,6 +1,6 @@
 --- 
 microservice: obsidian-brain
-type: session-state
+type: governance
 status: active
 lifecycle:
   active_branch: develop
@@ -16,10 +16,7 @@ directives:
 - obsidian-brain-sync: mandatory
 - conventional-commits: mandatory
 - active-protocol: '[[00-AI-Orchestration/MODE-MANUAL]]'
-tags:
-- '#type/session-state'
-- null
-- '#state/active'
+tags: ['#type/governance', '#state/active']
 ---
 
 # 🧠 AI Session State: obsidian-brain

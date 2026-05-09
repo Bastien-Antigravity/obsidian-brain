@@ -16,7 +16,7 @@ KEY PARAMETERS:
 """
 
 from os import name as osName, makedirs as osMakedirs, listdir as osListdir
-from os.path import expanduser as osPathExpanduser, exists as osPathExists, abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname
+from os.path import expanduser as osPathExpanduser, exists as osPathExists, abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, isdir as osPathIsdir
 from json import load as jsonLoad, dump as jsonDump, JSONDecodeError as jsonJSONDecodeError
 from sys import exit as sysExit, executable as sysExecutable, stdout as sysStdout
 from subprocess import run as subprocessRun
@@ -71,7 +71,9 @@ def setup_mcp(mode_choice: str) -> None:
         if item in global_excludes or item in current_excludes:
             continue
         item_path = osPathJoin(obsidian_path, item)
-        allowed_dirs.append(item_path)
+        # MCP server-filesystem only accepts directories as roots
+        if osPathIsdir(item_path):
+            allowed_dirs.append(item_path)
         
     mcp_args = ["-y", "@modelcontextprotocol/server-filesystem"] + allowed_dirs
     # ---------------------------------------
