@@ -8,7 +8,6 @@ KEY PARAMETERS:
     - commit_msg: Standardized commit message
 """
 
-import os
 from os.path import join as osPathJoin, exists as osPathExists, abspath as osPathAbspath, dirname as osPathDirname
 import subprocess as subProcess
 import sys

@@ -31,11 +31,12 @@ def main():
     valid_paths = set()
     
     # 1. Quick Scan for valid links
-    for path in vault_root.rglob("*.md"):
-        if ".git" in path.parts or ".obsidian" in path.parts:
-            continue
-        valid_stems.add(path.stem)
-        valid_paths.add(path.relative_to(vault_root).as_posix())
+    for ext in ["*.md", "*.json"]:
+        for path in vault_root.rglob(ext):
+            if ".git" in path.parts or ".obsidian" in path.parts:
+                continue
+            valid_stems.add(path.stem)
+            valid_paths.add(path.relative_to(vault_root).as_posix())
     
     # 2. Identify "Hot" files (modified in the last 2 hours)
     # This represents the current session's work
