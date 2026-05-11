@@ -31,18 +31,32 @@ class FleetCommander:
         self.logger = logger
         self.base_path: str = base_path
         self.dry_run: bool = dry_run
-        self.repos: List[str] = [
-            "config-server", "data-ingestor", "distributed-config", "docker-deployment", 
-            "enhanced-backtesting", "flexible-logger", "fundamental-analysis", 
-            "log-server", "market-observer", "microservice-toolbox", 
-            "notif-server", "obsidian-brain", "orderbook-aggregator", 
-            "safe-socket", "sandbox-testing", "technical-analysis", 
-            "tele-remote", "universal-logger", "web-interface",
-            "obsidian-brain/01-Strategic-Nexus", "obsidian-brain/02-Business-BDD",
-            "obsidian-brain/03-Tech-Stack", "obsidian-brain/04-Rapid-Prototyping",
-            "obsidian-brain/05-Fleet-Operation", "obsidian-brain/07-Core-KMS"
-        ]
-        self.commit_msg: str = "refactor: ecosystem-wide project DNA standardization and modern UI/code architecture"
+        self.inventory_path = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/00-Repo-Control/inventory.json")
+        self.repos: List[str] = self._load_inventory()
+        self.commit_msg: str = "refactor: fleet-wide standardization of .github configuration"
+
+    def _load_inventory(self) -> List[str]:
+        """Loads repository paths from inventory.json."""
+        import json
+        if not osPathExists(self.inventory_path):
+            self._log(f"Inventory not found at {self.inventory_path}", "error")
+            return []
+            
+        try:
+            with open(self.inventory_path, "r", encoding='utf-8') as f:
+                data = json.load(f)
+                repos = []
+                for repo in data.get("repositories", []):
+                    # inventory.json stores paths relative to workspace root (e.g., ./config-server)
+                    # We need to clean up the "./" for internal consistency if needed
+                    repo_path = repo.get("path", "")
+                    if repo_path.startswith("./"):
+                        repo_path = repo_path[2:]
+                    repos.append(repo_path)
+                return repos
+        except Exception as e:
+            self._log(f"Failed to load inventory: {e}", "error")
+            return []
 
     # -----------------------------------------------------------------------------------------------
 

@@ -107,7 +107,7 @@ Live documentation and operational hubs for the service fleet.
 - **[[06-Microservices/Orderbook-Aggregator-Hub|🌐 Orderbook-Aggregator Hub]]** (Go)
 - **[[06-Microservices/Fundamental-Analysis-Hub|🌐 Fundamental-Analysis Hub]]** (Python)
 - **[[06-Microservices/Technical-Analysis-Hub|🌐 Technical-Analysis Hub]]** (Python)
-- **[[06-Microservices/Web-Interface-Hub|🌐 Web-Interface Hub]]** (NextJS)
+- **[[06-Microservices/Web-Interface-Hub|🌐 Web-Interface Hub]]** (Go)
 - **[[06-Microservices/Enhanced-Backtesting-Hub|🌐 Enhanced-Backtesting Hub]]** (Rust)
 - **[[06-Microservices/Docker-Deployment-Hub|🐳 Docker-Deployment Hub]]**
 - **[[06-Microservices/Sandbox-Testing-Hub|🧪 Sandbox-Testing Hub]]**
