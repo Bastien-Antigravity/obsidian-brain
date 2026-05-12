@@ -12,7 +12,7 @@ tags:
 *High-Performance ordered logging and rotation engine.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[log-server/README.md|📂 log-server/]]
+- **Code Repository**: [📂 log-server](https://github.com/Bastien-Antigravity/log-server)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/log-server/)
 - **Protocols**: log-server/capnp/logger.capnp
 

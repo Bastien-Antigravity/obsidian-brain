@@ -12,7 +12,7 @@ tags:
 *Telegram-based Command & Control center for the microservice fleet.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[tele-remote/README.md|📂 tele-remote/]]
+- **Code Repository**: [📂 tele-remote](https://github.com/Bastien-Antigravity/tele-remote)
 - **Architecture**: tele-remote/ARCHITECTURE.md
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/tele-remote/)
 - **Action Plan**: tele-remote/todo

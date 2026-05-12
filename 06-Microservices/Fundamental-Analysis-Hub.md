@@ -12,7 +12,7 @@ tags:
 *Financial data scraping and fundamental indicator calculation.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[fundamental-analysis/README.md|📂 fundamental-analysis/]]
+- **Code Repository**: [📂 fundamental-analysis](https://github.com/Bastien-Antigravity/fundamental-analysis)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/fundamental-analysis/)
 
 ## 🛠️ Squad Assignment

@@ -52,7 +52,7 @@ Once the Test Specification is generated, pass it to the **Developer**, who must
 to make your tests turn green.
 
 ---
-*Reference: [[10-Testing-Sandbox-Standards]], [[02-Business-BDD/User-Manual]]*
+*Reference: [[10-Testing-Sandbox-Standards]], [[User-Manual]]*
 
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)

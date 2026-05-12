@@ -15,7 +15,7 @@ tags:
 - **Code Repository**: [📂 docker-deployment/](../docker-deployment/)
 - **Architecture**: [[03-Tech-Stack/04-Project-Deployment/01-Docker-Infrastructure|🏛️ Docker Infrastructure Standards]]
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/docker-deployment/)
-- **Deployment Logs**: [[05-Fleet-Operation/README|📜 Deployment Logs]]
+- **Deployment Logs**: [📜 Deployment Logs](https://github.com/Bastien-Antigravity/05-Fleet-Operation)
 
 ## 🛠️ Squad Assignment
 - **Fleet Architect**: [[07-Core-KMS/Role-Prompts/05-FleetArchitect/Prompt-Fleet-Architect|Fleet-Architect]]

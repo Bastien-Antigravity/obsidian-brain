@@ -84,4 +84,4 @@ All toolbox implementations MUST implement the **Docker Guard**. If `DOCKER_ENV=
 
 ---
 *Last Updated: 2026-05-08*
-*See also: [[Architecture-Patterns]], [[Web-Interface-Integration-Protocol]]*
+*See also: [[03-Tech-Stack/02-Project-Architecture/Global-Architecture-Rules|Architecture-Patterns]], [[Web-Interface-Integration-Protocol]]*

@@ -12,7 +12,7 @@ tags:
 *The Configuration Engine: Polyglot, Strategy-based, and Secure.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[distributed-config/README.md|📂 distributed-config/]]
+- **Code Repository**: [📂 distributed-config](https://github.com/Bastien-Antigravity/distributed-config)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/distributed-config/)
 - **Polyglot Bridge**: [[FEAT-007-CGO-FFI-Bridge|CGO Shared Library Spec]]
 

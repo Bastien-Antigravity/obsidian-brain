@@ -25,11 +25,13 @@ tags: ['#type/governance', '#state/active']
 > Update associated documentation (**README.md**, **ARCHITECTURE.md**) and relevant **Obsidian Brain** nodes ONLY upon feature completion or sprint closure to preserve compute and prevent task drift. Do not update documentation after every minor code modification.
 
 ## 🚀 Progress Tracking
-- [x] **Ecosystem-Wide Action**: Activating **Fleet Commander** for global GitHub synchronization. (COMPLETED 2026-05-04)
-- [x] **Vault Stabilization**: DocMaintainer overhaul of MOCs and Hubs completed. (COMPLETED 2026-05-04)
-- [x] **FEAT-001: Unified Multi-Broker Ingestion**: Implementation and validation complete. (COMPLETED 2026-05-05)
-    - High-performance unified merging (~100µs) verified in Sandbox.
-    - Heartbeat Watchdog (30s stale data prune) active.
+
+## 🛰️ Mission: Vault-Hardening-Sync | Trace: 2026-05-12
+- [x] **Ontime-Scheduler Integration**: Registered repo, pushed to GitHub (Go), and created Hub documentation. (COMPLETED 2026-05-12)
+- [x] **Link Remediation**: Repaired 37 broken links in 06-Microservices and Hubs. (COMPLETED 2026-05-12)
+- [x] **Knowledge Compression**: Script rewritten to ecosystem standards and successfully archived old states. (COMPLETED 2026-05-12)
+- [x] **Sovereignty Audit**: Resolved frontmatter violations in core governance and scheduler files. (COMPLETED 2026-05-12)
+
 - [x] **Python Ecosystem Standardization**: All 18 scripts hardened for cross-platform (Win/Mac/Linux). (COMPLETED 2026-05-07)
     - Headers, Import Aliasing, Visual Formatting, Docstrings applied per `04-Python-Types-and-Structure.md`.
     - UTF-8 terminal encoding fixed for Windows.

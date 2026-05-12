@@ -67,7 +67,7 @@ When it is time to perform garbage collection or purge targets (e.g., during the
 2. Do not manually hunt for stale state files or old `scenarios/` directories. The skill handles it automatically safely and efficiently.
 
 ---
-*Reference: [[02-Business-BDD/User-Manual]], [[10-Testing-Sandbox-Standards]]*
+*Reference: [[User-Manual]], [[10-Testing-Sandbox-Standards]]*
 
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)

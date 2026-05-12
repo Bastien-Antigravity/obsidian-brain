@@ -12,9 +12,9 @@ tags:
 *Shared foundational logic: Configuration discovery, connection resilience, and polyglot shims.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[microservice-toolbox/README.md|📂 microservice-toolbox/]]
+- **Code Repository**: [📂 microservice-toolbox](https://github.com/Bastien-Antigravity/microservice-toolbox)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/microservice-toolbox/)
-- **Action Plan**: [[microservice-toolbox/TODO.md|📅 Local TODO]]
+- **Action Plan**: [📅 Local TODO](https://github.com/Bastien-Antigravity/microservice-toolbox/blob/develop/TODO.md)
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

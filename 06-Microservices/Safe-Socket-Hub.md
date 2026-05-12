@@ -12,7 +12,7 @@ tags:
 *Foundational Networking Layer: TCP, UDP, and Shared Memory.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[safe-socket/README.md|📂 safe-socket/]]
+- **Code Repository**: [📂 safe-socket](https://github.com/Bastien-Antigravity/safe-socket)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/safe-socket/)
 - **ADRs**: [[ADR-001-Safe-Socket-Protocol|ADR-001: Custom TCP Protocol]]
 

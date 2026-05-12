@@ -11,13 +11,13 @@ tags:
 *High-Performance Strategy Backtesting Engine with ArcticDB (LMDB) Persistence.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[enhanced-backtesting/README.md|📂 enhanced-backtesting/]]
+- **Code Repository**: [📂 enhanced-backtesting](https://github.com/Bastien-Antigravity/enhanced-backtesting)
 - **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/enhanced-backtesting/]]
 - **Storage Profile**: Uses ArcticDB (LMDB) for tick-data persistence.
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
-- **Primary Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Squad/Python-Quant-Specialist|Python-Quant]]
+- **Primary Specialist**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Python-Quant]]
 
 ## 📊 Live Governance Dashboard
 > [!info] Open Specifications

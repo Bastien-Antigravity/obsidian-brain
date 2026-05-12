@@ -12,9 +12,9 @@ tags:
 *High-performance, sink-based logging facade with object pooling and async delivery.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[flexible-logger/README.md|📂 flexible-logger/]]
+- **Code Repository**: [📂 flexible-logger](https://github.com/Bastien-Antigravity/flexible-logger)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/flexible-logger/)
-- **Action Plan**: [[flexible-logger/TODO.md|📅 Local TODO]]
+- **Action Plan**: [📅 Local TODO](https://github.com/Bastien-Antigravity/flexible-logger/blob/develop/TODO.md)
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

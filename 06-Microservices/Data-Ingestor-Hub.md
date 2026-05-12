@@ -20,7 +20,7 @@ tags:
 - **Initialization**: Following the standard `AI-Init.md` and `AI-Project-DNA.md` patterns.
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[data-ingestor/README.md|📂 data-ingestor/]]
+- **Code Repository**: [📂 data-ingestor](https://github.com/Bastien-Antigravity/data-ingestor)
 - **Behavior Specs**: [[02-Business-BDD/Behavior-Specs-MOC]]
 
 ## 🛠️ Squad Assignment

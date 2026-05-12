@@ -12,10 +12,10 @@ tags:
 *The Central Nerve System for Configuration Distribution.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[config-server/README.md|📂 config-server/]]
+- **Code Repository**: [📂 config-server](https://github.com/Bastien-Antigravity/config-server)
 - **Architecture**: config-server/ARCHITECTURE.md
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/config-server/)
-- **Action Plan**: [[config-server/TODO.md|📅 Local TODO]]
+- **Action Plan**: [📅 Local TODO](https://github.com/Bastien-Antigravity/config-server/blob/develop/TODO.md)
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

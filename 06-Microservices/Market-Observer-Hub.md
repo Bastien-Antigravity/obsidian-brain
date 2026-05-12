@@ -12,9 +12,9 @@ tags:
 *Real-time exchange connectivity and orderbook tracking.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[market-observer/README.md|📂 market-observer/]]
+- **Code Repository**: [📂 market-observer](https://github.com/Bastien-Antigravity/market-observer)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/market-observer/)
-- **Action Plan**: [[market-observer/TODO.md|📅 Local TODO]]
+- **Action Plan**: [📅 Local TODO](https://github.com/Bastien-Antigravity/market-observer/blob/develop/TODO.md)
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

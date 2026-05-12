@@ -2,6 +2,7 @@
 microservice: ontime-scheduler
 type: service-hub
 status: active
+language: Go
 tags:
 - '#type/service-hub'
 - '#state/active'
@@ -10,8 +11,15 @@ tags:
 
 *The ecosystem-wide task scheduler and job execution engine.*
 
+## 🏗️ Architecture
+- **Language**: Go
+- **Transport**: SafeSocket (TCP)
+- **Persistence**: SQLite (Local State)
+
 ## 🔗 Knowledge Map
-- **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/ontime-scheduler/)
+- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/ontime-scheduler/FEAT-001-Go-Migration|📜 BDD Specifications]]
+- **GitHub**: [📂 ontime-scheduler](https://github.com/Bastien-Antigravity/ontime-scheduler)
+- **CI/CD**: [[05-Fleet-Operation/05-Fleet-Strategy/04-CICD-Standards|CI/CD Standards]]
 
 ## 📊 Live Governance Dashboard
 > [!info] Open Specifications

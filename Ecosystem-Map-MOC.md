@@ -34,13 +34,13 @@ The "Strategic Oracle" that analyzes history, patterns, and project blind spots.
 - **[[01-Strategic-Nexus/Strategy-Audit-MOC|🌌 Strategy Audit Index]]**
 - **[[01-Strategic-Nexus/Strategic-Patterns|🧩 Strategic Patterns]]**
 - **[[01-Strategic-Nexus/Anti-Backlog|🚫 The Anti-Backlog]]**
-- **[[01-Strategic-Nexus/README|📖 Nexus Overview]]**
+- **[📖 Nexus Overview](https://github.com/Bastien-Antigravity/01-Strategic-Nexus)**
 - **[[07-Core-KMS/Role-Prompts/00-Oracle/Prompt-Chronos-Oracle|🛰️ Role 00: Chronos-Oracle]]**
 
 ## 👔 02 - Business BDD
 Behavior-Driven Development specifications, Domain-Driven Design glossary, and Acceptance Criteria. **(Zone 1: Frozen)**
 - [[02-Business-BDD/01-Domain-Glossary/00-Glossary|📘 Domain Glossary (Ubiquitous Language)]]
-- [[02-Business-BDD/User-Manual|📖 BDD Brain User Manual]]
+- [[User-Manual]]
 - [[02-Business-BDD/Behavior-Specs-MOC|👔 Behavior Specs Index]]
 - [[02-Business-BDD/02-Behavior-Specs/safe-socket/FEAT-000-Connection-Lifecycle|🔌 SafeSocket Connection Lifecycle (Example Spec)]]
 - [[02-Business-BDD/02-Behavior-Specs/web-interface/FEAT-007-UI-Bootstrap|🌐 Web Interface Bootstrap]]
@@ -82,11 +82,11 @@ The structural paradigms for all polyglot microservices, coding idioms, and depl
 
 ## 🚀 04 - Rapid Prototyping
 Fast-path development, experiments, and prototypes. **(Zone 2: Fluid)**
-- [[04-Rapid-Prototyping/README|🧪 Labs Overview]]
+- [🧪 Labs Overview](https://github.com/Bastien-Antigravity/04-Rapid-Prototyping)
 
 ## 🛰️ 05 - Fleet Operations
 Fleet-wide action plans, deployment logs, and migration states. **(Zone 3: Fleet)**
-- [[05-Fleet-Operation/README|Fleet Operations (Zone 3)]]
+- [Fleet Operations (Zone 3)](https://github.com/Bastien-Antigravity/05-Fleet-Operation)
 - **Command Center**: [[05-Fleet-Operation/00-Repo-Control/inventory.json|Global Repo Registry]]
 - **Automation**: `fleet-manager.py` (Mass Sync & Audit)
 - **Logs**: [[05-Fleet-Operation/Deployment-Logs-MOC|🛰️ Deployment Logs Index]]
@@ -113,6 +113,7 @@ Live documentation and operational hubs for the service fleet.
 - **[[06-Microservices/Sandbox-Testing-Hub|🧪 Sandbox-Testing Hub]]**
 - **[[06-Microservices/Tele-Remote-Hub|🛰️ Tele-Remote Hub]]**
 - [[06-Microservices/Universal-Logger-Hub|Universal-Logger Hub]]
+- **[[06-Microservices/Ontime-Scheduler-Hub|🌐 Ontime-Scheduler Hub]]** (Rust)
 
 ### 📜 Technical Protocols
 - [[06-Microservices/Microservice-Startup-Protocol|📜 Microservice Startup & CLI Protocol]]
@@ -122,7 +123,7 @@ Live documentation and operational hubs for the service fleet.
 
 ## 🧠 07 - Core KMS
 Knowledge Management System, Agent Role Prompts, and Workflows.
-- [[07-Core-KMS/README|KMS Overview]]
+- [KMS Overview](https://github.com/Bastien-Antigravity/07-Core-KMS)
 - [[07-Core-KMS/tag_taxonomy|🏷️ Tag Taxonomy (Source of Truth)]]
 - [[07-Core-KMS/Agent-Roles-MOC|🤖 Agent Roles Index]]
 - [[07-Core-KMS/00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook]]

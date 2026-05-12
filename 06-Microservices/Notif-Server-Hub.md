@@ -12,7 +12,7 @@ tags:
 *Central Notification Dispatcher: Telegram, Discord, Matrix, Gmail.*
 
 ## 🔗 Knowledge Map
-- **Code Repository**: [[notif-server/README.md|📂 notif-server/]]
+- **Code Repository**: [📂 notif-server](https://github.com/Bastien-Antigravity/notif-server)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/notif-server/)
 
 ## 🛠️ Squad Assignment

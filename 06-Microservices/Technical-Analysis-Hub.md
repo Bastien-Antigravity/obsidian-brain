@@ -12,7 +12,7 @@ tags:
 *Real-time and historical technical indicator calculations.*
 
 ## 🔗 Knowledge Map
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/technical-analysis/]] (Status: Missing)
+- **Behavior Specs**: [[02-Business-BDD/Behavior-Specs-MOC]] (Status: Missing)
 
 ## 🛠️ Microservice Details
 - **Name**: technical-analysis
