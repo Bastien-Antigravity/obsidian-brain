@@ -16,6 +16,7 @@ Mission-ID: 7a3f2b1d-9e4c-4a8d-b7f2-e5c8a9d1f0e4
 - **Findings**:
     - **Linter Version**: Pinned to `v2.0.2` in `workflow-go.yml` and `master-ci.yml`.
     - **Config Schema**: Migrated `golangci-global.yml` and local configs to `version: "2"` top-level field.
+    - **Linter Compatibility**: Removed `typecheck` from `linters.enable` as it is a core built-in in v2 and cannot be manually toggled.
 - **Compliance**: Adheres to the new 2026 schema standards.
 
 ---
