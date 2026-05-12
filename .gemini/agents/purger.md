@@ -3,6 +3,7 @@ name: purger
 type: kms
 status: active
 microservice: obsidian-brain
+tags: ['#type/kms', '#state/active']
 description: The purger persona from the Bastien-Antigravity squad.
 ---
 # 🎭 Role 08: Mister Straight-to-Goal (The Purger)

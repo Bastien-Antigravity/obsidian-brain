@@ -3,6 +3,7 @@ name: docmaintainer
 type: kms
 status: active
 microservice: obsidian-brain
+tags: ['#type/kms', '#state/active']
 description: The docmaintainer persona from the Bastien-Antigravity squad.
 ---
 # 📚 Role 06: DocMaintainer (Knowledge Graph Manager)

@@ -12,7 +12,7 @@ tags:
 
 ## 🔗 Knowledge Map
 - **Code Repository**: [📂 enhanced-backtesting](https://github.com/Bastien-Antigravity/enhanced-backtesting)
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/enhanced-backtesting/]]
+- **Behavior Specs**: [[Backtest-Engine|Backtest Engine]]
 - **Storage Profile**: Uses ArcticDB (LMDB) for tick-data persistence.
 
 ## 🛠️ Squad Assignment

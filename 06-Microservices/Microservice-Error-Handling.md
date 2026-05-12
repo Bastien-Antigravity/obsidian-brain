@@ -1,4 +1,5 @@
 ---
+microservice: obsidian-brain
 type: governance
 status: active
 tags:

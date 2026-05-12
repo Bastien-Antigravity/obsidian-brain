@@ -3,6 +3,7 @@ name: qa
 type: kms
 status: active
 microservice: obsidian-brain
+tags: ['#type/kms', '#state/active']
 description: The qa persona from the Bastien-Antigravity squad.
 ---
 # 🧪 Role 04: QA Engineer (Expectation Enforcer)

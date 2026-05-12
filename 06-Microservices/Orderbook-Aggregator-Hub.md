@@ -12,7 +12,7 @@ tags:
 *Unified stream for multi-exchange orderbook data.*
 
 ## 🔗 Knowledge Map
-- **Behavior Specs**: [[02-Business-BDD/02-Behavior-Specs/orderbook-aggregator/]]
+- **Behavior Specs**: [[FEAT-001-Orderbook-Ingestion|Ingestion Spec]]
 
 ## 🛠️ Microservice Details
 - **Name**: orderbook-aggregator

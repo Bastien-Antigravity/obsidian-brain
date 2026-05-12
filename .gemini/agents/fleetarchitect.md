@@ -3,6 +3,7 @@ name: fleetarchitect
 type: kms
 status: active
 microservice: obsidian-brain
+tags: ['#type/kms', '#state/active']
 description: The fleetarchitect persona from the Bastien-Antigravity squad.
 ---
 # 🛰️ Role 05: Fleet Architect (DevOps)

@@ -3,6 +3,7 @@ name: developer
 type: kms
 status: active
 microservice: obsidian-brain
+tags: ['#type/kms', '#state/active']
 description: The developer persona from the Bastien-Antigravity squad.
 ---
 # 🤖 Role 03: Lead Developer (Technical Director)
