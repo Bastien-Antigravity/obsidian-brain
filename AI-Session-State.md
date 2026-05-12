@@ -12,13 +12,13 @@ tags:
 Mission-ID: 7a3f2b1d-9e4c-4a8d-b7f2-e5c8a9d1f0e4
 
 ## 🛡️ Sentinel Audit: 2026-05-12 (V2 Stability & Schema Hardening)
-- **Status**: [VERIFIED] Finalized `golangci-lint` v2 migration.
+- **Status**: [VERIFIED] Finalized `golangci-lint` v2 migration and resolved core compilation errors.
 - **Findings**:
     - **Linter Version**: Upgraded to `v2.12.2` (Go 1.25 compatible).
     - **Config Schema**: Migrated to `version: "2"`.
-    - **Exclusions**: Moved `exclude-rules` from `issues` to `linters.exclusions.rules` as required by the v2 schema.
-    - **Linter Compatibility**: Removed `typecheck` from toggles.
-- **Compliance**: Fully compliant with the 2026 Fleet CI standards.
+    - **Exclusions**: Moved `exclude-rules` from `issues` to `linters.exclusions.rules`.
+    - **Compilation**: Fixed `ShmTransport` atomic initialization error in `safe-socket`.
+- **Compliance**: Fully compliant with the 2026 Fleet CI and Go 1.25 standards.
 
 ---
 
