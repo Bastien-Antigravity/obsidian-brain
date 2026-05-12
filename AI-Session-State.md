@@ -11,13 +11,14 @@ tags:
 # 🚀 AI-Session-State: GolangCI-Lint V2 Migration
 Mission-ID: 7a3f2b1d-9e4c-4a8d-b7f2-e5c8a9d1f0e4
 
-## 🛡️ Sentinel Audit: 2026-05-12 (V2 Stability & Go 1.25)
-- **Status**: [VERIFIED] Upgraded fleet to `golangci-lint` **v2.12.2**.
+## 🛡️ Sentinel Audit: 2026-05-12 (V2 Stability & Schema Hardening)
+- **Status**: [VERIFIED] Finalized `golangci-lint` v2 migration.
 - **Findings**:
-    - **Linter Version**: Upgraded to `v2.12.2` to support the targeted Go version `1.25.4` (resolving build-version mismatch).
-    - **Config Schema**: Migrated `golangci-global.yml` and local configs to `version: "2"` top-level field.
-    - **Linter Compatibility**: Removed `typecheck` from `linters.enable` as it is a core built-in in v2.
-- **Compliance**: Adheres to the new 2026 schema and Go 1.25 standards.
+    - **Linter Version**: Upgraded to `v2.12.2` (Go 1.25 compatible).
+    - **Config Schema**: Migrated to `version: "2"`.
+    - **Exclusions**: Moved `exclude-rules` from `issues` to `linters.exclusions.rules` as required by the v2 schema.
+    - **Linter Compatibility**: Removed `typecheck` from toggles.
+- **Compliance**: Fully compliant with the 2026 Fleet CI standards.
 
 ---
 
