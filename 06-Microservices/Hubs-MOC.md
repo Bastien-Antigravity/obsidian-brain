@@ -33,6 +33,7 @@ This index aggregates the operational hubs for the service fleet.
 - [[Web-Interface-Hub]]
 
 ## 📜 Technical Protocols
+- [[Microservice-Error-Handling]]
 - [[Microservice-Startup-Protocol|📜 Microservice Startup & CLI Protocol]]
 - [[Microservice-Logging-Standard|📜 Microservice Logging Standard]]
 - [[Unified-Control-Protocol|📜 Unified Control Protocol (gRPC/REST)]]
