@@ -171,20 +171,34 @@ At the end of significant tasks, the AI extracts "lessons learned" and records t
 
 ---
 
-## 🛠️ 6. Quick Reference: Essential Commands
+## 🛠️ 6. Quick Reference: How to Get Things Done
 
-| Command | Purpose |
+The primary way to interact with the ecosystem is **delegation** — you ask an agent, and the agent uses the Python script as its "skill" automatically. You should almost never need to run a script manually.
+
+### 🗣️ Delegation Commands (Primary — Ask the AI)
+
+| What you want | What you say | Agent that handles it |
+| :--- | :--- | :--- |
+| Sync the fleet | *"Ask FleetCommander to sync all repos"* | FleetCommander → `fleet-manager.py sync` |
+| Check fleet health | *"Ask FleetCommander to show fleet status"* | FleetCommander → `fleet-manager.py status` |
+| Apply CI/CD templates | *"Ask FleetArchitect to template the fleet"* | FleetArchitect → `fleet-manager.py template` |
+| Audit brain health | *"Ask Sentinel to run a sovereignty audit"* | Sentinel → `Brain-Health-Audit.py` |
+| Close a mission | *"Ask DocMaintainer to close and finalize"* | DocMaintainer → `close_mission.py` |
+| Purge dead code | *"Ask Purger to clean up the repo"* | Purger → `Maintenance-Skill.py purge` |
+| Write a BDD spec | *"Ask QA to draft a spec for feature X"* | QA → writes to `02-Business-BDD/` |
+| Design a system | *"Ask Architect to review the blueprint"* | Architect → reads `03-Tech-Stack/` |
+| Strategic analysis | *"Ask Oracle to analyze recent sessions"* | Oracle → reads `01-Strategic-Nexus/` |
+| Switch modes | *"Switch to Mode 2"* | Any agent → updates `MODE-MANUAL.md` |
+
+### 🔧 Manual Commands (Fallback — Only when needed)
+
+These are for rare cases when you need to run something outside an AI session (e.g., initial setup or debugging):
+
+| Command | When to use |
 | :--- | :--- |
-| `python3 20-Scripts/start_squad.py` | Launch the AI Squad with mode selection. |
-| `python3 fleet-manager.py status` | Check fleet health (branches, sync state). |
-| `python3 fleet-manager.py attach` | Reattach all repos to their designated branches. |
-| `python3 fleet-manager.py sync` | Pull, push, and synchronize the entire fleet. |
-| `python3 fleet-manager.py audit` | Check CI/CD compliance across all repos. |
-| `python3 verify_links_script.py` | Quick broken-link scan across the vault. |
-| `python3 07-Core-KMS/Scripts/Brain-Health-Audit.py` | Full sovereignty audit (YAML, links, orphans). |
-| `python3 20-Scripts/scaffold_new_brain.py` | Clone the AI architecture for a new project. |
-| `python3 20-Scripts/close_mission.py` | Finalize a task and update session state. |
-| `python3 20-Scripts/switch_mode.py` | Switch operational mode without restarting. |
+| `python3 20-Scripts/start_squad.py` | **First thing** — launches the AI session with mode selection. |
+| `python3 20-Scripts/scaffold_new_brain.py` | Cloning the architecture for a brand new project. |
+| `python3 verify_links_script.py` | Quick manual link check (the Sentinel does this automatically). |
 
 ---
 
@@ -192,12 +206,14 @@ At the end of significant tasks, the AI extracts "lessons learned" and records t
 
 | Pitfall | Symptom | Fix |
 | :--- | :--- | :--- |
-| **Forgetting to save state** | The AI starts fresh tomorrow with no context. | Always run `close_mission.py` or manually update `AI-Session-State.md`. |
+| **Running scripts manually** | You type `python3 fleet-manager.py sync` yourself. | Delegate: *"Ask FleetCommander to sync."* The agent handles logging and follow-up automatically. |
+| **Forgetting to save state** | The AI starts fresh tomorrow with no context. | Ask: *"Update AI-Session-State with today's progress."* Or delegate to DocMaintainer. |
 | **Skipping the Preflight** | The Sentinel finds 20+ violations mid-session. | Always launch via `start_squad.py`, which runs the audit automatically. |
 | **Deep folder nesting** | Files become unfindable by both human and AI. | Follow the 2-digit numbering system. Max 2 levels deep. |
 | **Orphaned files** | Knowledge exists but is invisible to the graph. | Link every new file from at least one MOC or Hub. |
 | **Tag dilution** | Custom tags that no dashboard queries. | Only use tags from the official `tag_taxonomy.md`. |
 | **Mode confusion** | The AI writes code in Mode 1 without a spec. | Check `active_mode` in `MODE-MANUAL.md` before starting. |
+
 
 ---
 
