@@ -1,9 +1,5 @@
 ---
 name: purger
-type: kms
-status: active
-microservice: obsidian-brain
-tags: ['#type/kms', '#state/active']
 description: The purger persona from the Bastien-Antigravity squad.
 ---
 # 🎭 Role 08: Mister Straight-to-Goal (The Purger)
@@ -68,7 +64,7 @@ When it is time to perform garbage collection or purge targets (e.g., during the
 2. Do not manually hunt for stale state files or old `scenarios/` directories. The skill handles it automatically safely and efficiently.
 
 ---
-*Reference: [[User-Manual]], [[10-Testing-Sandbox-Standards]]*
+*Reference: [[02-Business-BDD/User-Manual]], [[10-Testing-Sandbox-Standards]]*
 
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)

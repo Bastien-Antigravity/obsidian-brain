@@ -22,10 +22,14 @@ This Brain is an **Operational Engine**. Use the following scripts to govern the
 
 ---
 
-## 📖 Documentation
-- **[[User-Manual]]**: High-level onboarding and usage guide.
-- **[[00-AI-Orchestration/MODE-MANUAL]]**: Detailed protocol rules.
-- **[[Ecosystem-Map-MOC]]**: The central navigation hub.
+## 👤 Human Onboarding
+Before interacting with the AI Squad, human operators should read the structural guides:
+- **[[99-Humans/Architecture-Overview|🗺️ Global Architecture Overview]]** — Start here to understand the 4-Tier & 3-Zone system.
+- **[[99-Humans/General-Misc|🧠 Philosophy & Operator's Guide]]** — Purpose, concepts, mental models, and optimization tips.
+- **[[99-Humans/Testing-Playbook|🧪 Testing Playbook]]** — How we ensure quality across Knowledge, Behavior, and Code.
+- **[[User-Manual|📖 User Manual]]** — High-level onboarding and usage guide.
+- **[[Ecosystem-Map-MOC|🔗 Ecosystem Map (MOC)]]** — The central navigation hub for the vault.
+- **[[00-AI-Orchestration/MODE-MANUAL|🕹️ Mode Manual]]** — Detailed protocol rules.
 
 ---
 

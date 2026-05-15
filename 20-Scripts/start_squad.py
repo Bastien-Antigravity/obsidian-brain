@@ -56,7 +56,7 @@ def setup_mcp(mode_choice: str) -> None:
     obsidian_path = osPathAbspath(osPathJoin(osPathDirname(__file__), ".."))
     
     # --- Dynamic Context Exclusion Logic ---
-    global_excludes = {".obsidian", ".git", ".gemini", "node_modules"}
+    global_excludes = {".obsidian", ".git", ".gemini", "node_modules", "99-Humans"}
     mode_excludes_map = {
         "1": {"01-Strategic-Nexus", "04-Rapid-Prototyping", "05-Fleet-Operation"},
         "2": {"01-Strategic-Nexus", "02-Business-BDD", "05-Fleet-Operation", "06-Microservices"},
@@ -213,6 +213,15 @@ def run_preflight() -> None:
 def main() -> None:
     print("\n🧠 Initializing Bastien-Antigravity AI Squad...")
     run_preflight()
+    
+    # --- Automated Agent Regeneration ---
+    script_dir = osPathDirname(osPathAbspath(__file__))
+    convert_script = osPathJoin(script_dir, "convert_agents.py")
+    if osPathExists(convert_script):
+        print(f"\n🔄 Regenerating AI Squad Agents...")
+        subprocessRun([sysExecutable, convert_script])
+    # ------------------------------------
+
     mode = select_mode()
     setup_mcp(mode)
     print_mission_examples()

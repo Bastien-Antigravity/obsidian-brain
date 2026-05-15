@@ -1,9 +1,5 @@
 ---
 name: fleetcommander
-type: kms
-status: active
-microservice: obsidian-brain
-tags: ['#type/kms', '#state/active']
 description: The fleetcommander persona from the Bastien-Antigravity squad.
 ---
 # 📡 Role 07: Fleet Commander (Synchronization Officer)

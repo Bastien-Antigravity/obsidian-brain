@@ -13,6 +13,13 @@ tags:
 
 Welcome to the central Map of Content (MOC) for the ecosystem. This serves as the root node of our Obsidian Brain, governing the architecture, standards, and workflows.
 
+## 👤 Human Onboarding
+Before interacting with the AI Squad, human operators should read the structural guides:
+- **[[99-Humans/Architecture-Overview|🗺️ Global Architecture Overview]]** — Start here to understand the 4-Tier & 3-Zone system.
+- **[[99-Humans/General-Misc|🧠 Philosophy & Operator's Guide]]** — Purpose, concepts, mental models, and optimization tips.
+- **[[99-Humans/Testing-Playbook|🧪 Testing Playbook]]** — How we ensure quality across Knowledge, Behavior, and Code.
+- [[User-Manual|📖 User Manual]] — Detailed operational instructions.
+
 ## 🤖 00 - AI Orchestration
 These define the generic "Team of Agents" architecture, workflows, and prompts for the AI.
 - [[07-Core-KMS/Workflows/Workflow-Idea-to-Exploitation|Pipeline: Idea to Exploitation]]

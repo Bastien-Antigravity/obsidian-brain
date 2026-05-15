@@ -1,9 +1,5 @@
 ---
 name: qa
-type: kms
-status: active
-microservice: obsidian-brain
-tags: ['#type/kms', '#state/active']
 description: The qa persona from the Bastien-Antigravity squad.
 ---
 # 🧪 Role 04: QA Engineer (Expectation Enforcer)
@@ -53,7 +49,7 @@ Once the Test Specification is generated, pass it to the **Developer**, who must
 to make your tests turn green.
 
 ---
-*Reference: [[10-Testing-Sandbox-Standards]], [[User-Manual]]*
+*Reference: [[10-Testing-Sandbox-Standards]], [[02-Business-BDD/User-Manual]]*
 
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)

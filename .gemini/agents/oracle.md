@@ -1,9 +1,5 @@
 ---
 name: oracle
-type: kms
-status: active
-microservice: obsidian-brain
-tags: ['#type/kms', '#state/active']
 description: The oracle persona from the Bastien-Antigravity squad.
 ---
 # 🌌 Role 00: Chronos-Oracle (Strategic Oracle)

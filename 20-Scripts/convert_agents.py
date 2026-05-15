@@ -66,9 +66,6 @@ def main() -> None:
                 
                 yaml_frontmatter = f"""---
 name: {agent_name}
-type: kms
-status: active
-microservice: obsidian-brain
 description: The {agent_name} persona from the Bastien-Antigravity squad.
 ---
 """
