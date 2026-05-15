@@ -37,7 +37,7 @@ if sys.stdout.encoding != 'utf-8':
 class FleetCommander:
     Name: str = "FleetCommander"
 
-    def __init__(self, base_path: str, config: Optional[object] = None, logger: Optional[object] = None, dry_run: bool = False, target_repo: Optional[str] = None, commit_msg: Optional[str] = None) -> None:
+    def __init__(self, base_path: str, config: Optional[object] = None, logger: Optional[object] = None, dry_run: bool = False, target_repo: Optional[str] = None, is_fleet: bool = False, commit_msg: Optional[str] = None) -> None:
         self.config = config
         self.logger = logger
         self.base_path: str = base_path
@@ -49,9 +49,12 @@ class FleetCommander:
         if target_repo:
             self.repos = [target_repo]
             self.single_mode = True
-        else:
+        elif is_fleet:
             self.repos = self._load_inventory()
             self.single_mode = False
+        else:
+            print("❌ Error: You must explicitly specify either --repo <name> or --fleet.")
+            sys.exit(1)
             
         self.commit_msg: str = commit_msg or "chore(fleet): standardized fleet operation"
 
@@ -280,6 +283,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="FleetCommander - Mass Git & Single Repo Operations")
     parser.add_argument("--dry-run", action="store_true", help="Simulate operations without making changes")
     parser.add_argument("--repo", "-r", type=str, help="Target a specific repository")
+    parser.add_argument("--fleet", action="store_true", help="Explicitly target the entire fleet")
     parser.add_argument("--message", "-m", type=str, help="Commit message")
     args = parser.parse_args()
 
@@ -287,5 +291,5 @@ if __name__ == "__main__":
     script_dir: str = osPathDirname(osPathAbspath(__file__))
     base_dir: str = osPathAbspath(osPathJoin(script_dir, "..", ".."))
     
-    commander = FleetCommander(base_dir, dry_run=args.dry_run, target_repo=args.repo, commit_msg=args.message)
+    commander = FleetCommander(base_dir, dry_run=args.dry_run, target_repo=args.repo, is_fleet=args.fleet, commit_msg=args.message)
     commander.execute_fleet_push()
