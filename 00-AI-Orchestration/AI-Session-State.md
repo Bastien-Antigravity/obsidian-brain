@@ -26,6 +26,12 @@ tags: ['#type/governance', '#state/active']
 
 ## 🚀 Progress Tracking
 
+## 🛰️ Mission-ID: FleetCommander-Unification | Trace-ID: 2026-05-15
+- [x] **Script Unification**: Merged `repo-commander.py` logic into `fleet-commander.py`, adding single-repo targeting (`--repo`) and integrating strict compliance audits (Docs, Architecture, Quick-Overview).
+- [x] **Prompt Consolidation**: Updated `Prompt-FleetCommander.md` to handle both fleet-wide and single-repo compliance check-ins.
+- [x] **Deprecation**: Removed `repo-commander.py` and `Prompt-RepoCommander.md` to streamline the squad.
+- [x] **Finalization**: The unified FleetCommander role is active and ready to enforce standards. (COMPLETED 2026-05-15)
+
 ## 🛰️ Mission-ID: Distributed-Config-Hardening | Trace-ID: 2026-05-14
 - [x] **Sentinel Protocol**: Audited `distributed-config` for race conditions and implemented `RWMutex` fixes in CGO bridge. Verified handle safety lifecycle.
 - [x] **DocMaintainer Protocol**: Graduated `FEAT-008` (Resilience) and `FEAT-012` (Handle Safety) to `active` in Business BDD. Updated implementation links.

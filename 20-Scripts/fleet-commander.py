@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding:utf-8
 """
-ESSENTIAL PROCESS: Fleet Commander - Mass Git Operations
-DATA FLOW: Scans repository folders -> Detects git state -> Commits & Pushes changes
+ESSENTIAL PROCESS: Fleet Commander - Mass Git & Single Repo Operations
+DATA FLOW: Scans repository folders -> Audits Architecture & Docs -> Commits & Pushes changes
 KEY PARAMETERS: 
-    - repos: List of repositories to process
+    - repos: List of repositories to process (or single repo via --repo)
     - commit_msg: Standardized commit message
 """
 
@@ -13,6 +13,17 @@ import subprocess as subProcess
 import sys
 import argparse
 from typing import List, Optional, Tuple
+from pathlib import Path
+
+# --- Environment Setup ---
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.append(str(SCRIPT_DIR / "lib"))
+
+try:
+    from sovereignty import Sovereignty
+except ImportError:
+    print("❌ Error: sovereignty.py not found in lib/")
+    sys.exit(1)
 
 # Standardize terminal output encoding for Windows
 if sys.stdout.encoding != 'utf-8':
@@ -26,14 +37,23 @@ if sys.stdout.encoding != 'utf-8':
 class FleetCommander:
     Name: str = "FleetCommander"
 
-    def __init__(self, base_path: str, config: Optional[object] = None, logger: Optional[object] = None, dry_run: bool = False) -> None:
+    def __init__(self, base_path: str, config: Optional[object] = None, logger: Optional[object] = None, dry_run: bool = False, target_repo: Optional[str] = None, commit_msg: Optional[str] = None) -> None:
         self.config = config
         self.logger = logger
         self.base_path: str = base_path
         self.dry_run: bool = dry_run
+        self.engine = Sovereignty()
+        
         self.inventory_path = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/00-Repo-Control/inventory.json")
-        self.repos: List[str] = self._load_inventory()
-        self.commit_msg: str = "refactor: fleet-wide standardization of .github configuration"
+        
+        if target_repo:
+            self.repos = [target_repo]
+            self.single_mode = True
+        else:
+            self.repos = self._load_inventory()
+            self.single_mode = False
+            
+        self.commit_msg: str = commit_msg or "chore(fleet): standardized fleet operation"
 
     def _load_inventory(self) -> List[str]:
         """Loads repository paths from inventory.json."""
@@ -91,12 +111,77 @@ class FleetCommander:
         except subProcess.CalledProcessError as e:
             return e.stdout.strip() or "No stdout", e.stderr.strip() or "No stderr"
 
+    # --- COMPLIANCE AUDITS ---
+
+    def audit_docs(self, repo_path: Path, repo_name: str) -> bool:
+        self._step(repo_name, "Auditing documentation")
+        mandatory_files = ["AI-Init.md", "AI-Project-DNA.md", "AI-Session-State.md", "TODO.md", "README.md"]
+        success = True
+
+        for filename in mandatory_files:
+            file_path = repo_path / filename
+            if not file_path.exists():
+                self._log(f"[{repo_name}] Missing mandatory file: {filename}", "error")
+                success = False
+            else:
+                self.engine.audit_file(file_path, set(), set())
+        
+        report = self.engine.get_report()
+        if report["errors"]:
+            for err in report["errors"]:
+                self._log(f"[{repo_name}] {err}", "error")
+            success = False
+        
+        return success
+
+    def audit_quick_overview(self, repo_path: Path, repo_name: str) -> bool:
+        self._step(repo_name, "Auditing quick-overview directory")
+        qo_dir = repo_path / "quick-overview"
+        if not qo_dir.exists():
+            self._log(f"[{repo_name}] Missing quick-overview directory.", "error")
+            return False
+            
+        expected_files = [
+            "Architecture-Overview.md",
+            "Features-Behavior.md",
+            "General-Misc.md",
+            "Testing-Playbook.md"
+        ]
+        
+        success = True
+        for filename in expected_files:
+            file_path = qo_dir / filename
+            if not file_path.exists():
+                self._log(f"[{repo_name}] Missing file in quick-overview: {filename}", "error")
+                success = False
+                
+        return success
+
+    def validate_architecture(self, repo_path: Path, repo_name: str) -> bool:
+        self._step(repo_name, "Validating fleet architecture rules")
+        workflow_dir = repo_path / ".github" / "workflows"
+        if not workflow_dir.exists():
+            self._log(f"[{repo_name}] No GitHub workflows found.", "warning")
+            return True
+
+        for wf in workflow_dir.glob("*.yml"):
+            with open(wf, "r", encoding="utf-8") as f:
+                content = f.read()
+                if "[FLEET-ARCHITECT]" not in content:
+                    self._log(f"[{repo_name}] Workflow {wf.name} missing [FLEET-ARCHITECT] header.", "error")
+                    return False
+                if "Sync-ID:" not in content:
+                    self._log(f"[{repo_name}] Workflow {wf.name} missing Sync-ID.", "error")
+                    return False
+        return True
+
     # -----------------------------------------------------------------------------------------------
 
     def execute_fleet_push(self) -> None:
         """Main execution loop for mass git operations."""
         mode_str = " (DRY RUN MODE)" if self.dry_run else ""
-        self._log(f"Starting Mass Push Operation{mode_str} ---", "info")
+        scope_str = "Single Repo" if self.single_mode else "Mass Push"
+        self._log(f"Starting {scope_str} Operation{mode_str} ---", "info")
         
         # Pre-flight check
         git_ver, err = self._run_command("git --version", self.base_path)
@@ -108,52 +193,73 @@ class FleetCommander:
         results: List[str] = []
 
         for repo in self.repos:
-            repo_path: str = osPathJoin(self.base_path, repo)
+            repo_path_str: str = osPathJoin(self.base_path, repo)
+            repo_path: Path = Path(repo_path_str)
             self._log(f"Processing repository: {repo}", "info")
             
-            if not osPathExists(repo_path):
+            if not osPathExists(repo_path_str):
                 results.append(f"{repo}: [SKIP] Path does not exist")
                 continue
 
-            if not osPathExists(osPathJoin(repo_path, ".git")):
+            if not osPathExists(osPathJoin(repo_path_str, ".git")):
                 results.append(f"{repo}: [SKIP] Not a git repository")
                 continue
 
             # 1. Get current branch
             self._step(repo, "Detecting branch")
-            branch, err = self._run_command("git rev-parse --abbrev-ref HEAD", repo_path)
+            branch, err = self._run_command("git rev-parse --abbrev-ref HEAD", repo_path_str)
             if err or branch == "HEAD":
                 # Handle detached HEAD or errors
-                branch, err = self._run_command("git branch --show-current", repo_path)
+                branch, err = self._run_command("git branch --show-current", repo_path_str)
                 if not branch or branch == "HEAD":
                     self._log(f"{repo} is in detached HEAD. Falling back to 'develop'.", "warning")
                     branch = "develop"
             
             self._step(repo, f"Active branch: {branch}")
 
-            # 2. Stage changes
-            self._step(repo, "Staging changes (git add .)")
-            self._run_command("git add .", repo_path)
+            if branch != "develop":
+                self._log(f"Not on 'develop' branch. Push blocked for {repo}.", "error")
+                results.append(f"{repo}: [ERROR] Not on develop branch")
+                continue
 
-            # 3. Check for changes
+            # 2. Compliance Audits
+            excluded_repos = ["obsidian-brain", "01-Strategic-Nexus", "02-Business-BDD", "03-Tech-Stack", "04-Rapid-Prototyping", "05-Fleet-Operation", "07-Core-KMS"]
+            
+            if repo in excluded_repos:
+                self._log(f"[{repo}] Skipping strict compliance audits (Knowledge-Base).", "info")
+            else:
+                docs_ok = self.audit_docs(repo_path, repo)
+                arch_ok = self.validate_architecture(repo_path, repo)
+                qo_ok = self.audit_quick_overview(repo_path, repo)
+
+                if not (docs_ok and arch_ok and qo_ok):
+                    self._log(f"{repo} failed compliance audits. Skipping.", "error")
+                    results.append(f"{repo}: [ERROR] Compliance check failed")
+                    continue
+
+            # 3. Stage changes
+            self._step(repo, "Staging changes (git add .)")
+            self._run_command("git add .", repo_path_str)
+
+            # 4. Check for changes
             self._step(repo, "Checking status")
-            status, _ = self._run_command("git status --porcelain", repo_path)
+            status, _ = self._run_command("git status --porcelain", repo_path_str)
             if not status:
                 self._step(repo, "No changes detected")
                 results.append(f"{repo}: [OK] No changes")
                 continue
 
-            # 4. Commit
+            # 5. Commit
             self._step(repo, f"Committing changes: {self.commit_msg[:30]}...")
-            out, err = self._run_command(f'git commit -m "{self.commit_msg}"', repo_path)
+            out, err = self._run_command(f'git commit -m "{self.commit_msg}"', repo_path_str)
             if err:
                 self._log(f"{repo} commit failed: {err}", "error")
                 results.append(f"{repo}: [ERROR] Commit failed")
                 continue
 
-            # 5. Push
+            # 6. Push
             self._step(repo, f"Pushing to origin {branch}")
-            out, err = self._run_command(f"git push origin {branch}", repo_path)
+            out, err = self._run_command(f"git push origin {branch}", repo_path_str)
             if err:
                 self._log(f"{repo} push failed: {err}", "error")
                 results.append(f"{repo}: [ERROR] Push failed")
@@ -171,13 +277,15 @@ class FleetCommander:
 # ### MAIN EXECUTION ###
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="FleetCommander - Mass Git Operations")
+    parser = argparse.ArgumentParser(description="FleetCommander - Mass Git & Single Repo Operations")
     parser.add_argument("--dry-run", action="store_true", help="Simulate operations without making changes")
+    parser.add_argument("--repo", "-r", type=str, help="Target a specific repository")
+    parser.add_argument("--message", "-m", type=str, help="Commit message")
     args = parser.parse_args()
 
     # Base path is parent of obsidian-brain
     script_dir: str = osPathDirname(osPathAbspath(__file__))
     base_dir: str = osPathAbspath(osPathJoin(script_dir, "..", ".."))
     
-    commander = FleetCommander(base_dir, dry_run=args.dry_run)
+    commander = FleetCommander(base_dir, dry_run=args.dry_run, target_repo=args.repo, commit_msg=args.message)
     commander.execute_fleet_push()
