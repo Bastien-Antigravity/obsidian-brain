@@ -10,13 +10,18 @@ tags: ['#type/governance', '#state/active']
 - **Goal**: Serve as the "Global Memory" and "Strategic Command Center" for the entire Bastien-Antigravity ecosystem, housing all architectural decisions, sprint plans, and cross-repo knowledge.
 - **Key Pattern**: **Atomic Knowledge** (Zettelkasten-style notes) and **Strategic MOCs** (Maps of Content for navigation).
 - **Behavioral Source of Truth**: 02-Business-BDD/02-Behavior-Specs/obsidian-brain
+- **Taxonomy Mandate**: Mandatory use of `#service/`, `#tech/`, `#tier/`, and `#zone/` tags for transversal concepts.
+- **Isolation Protocol**: Human-centric documentation must reside in `quick-overview/` folders and carry the `#ai/ignore` tag.
 
 ## 🛠️ Role Specifics
-- **Architect**: 
+- **FleetArchitect**: 
     - Maintain the integrity of the `Knowledge-Strategy.md` and `Ecosystem-Map-MOC.md`.
-    - Ensure that submodules (`07-Core-KMS`, `03-Tech-Stack`, `02-Business-BDD`, `05-Fleet-Operation`, `04-Rapid-Prototyping`) are synchronized.
-- **QA**: 
-    - Verify that all internal links are functional and not orphaned.
+    - Ensure that submodules (`01-Strategic-Nexus`, `07-Core-KMS`, `03-Tech-Stack`, `02-Business-BDD`, `05-Fleet-Operation`, `04-Rapid-Prototyping`) are synchronized.
+- **DocMaintainer**:
+    - Manage the **Isolation Protocol** and frontmatter integrity across the fleet.
+    - Automate the injection of `#service/` tags.
+- **Sentinel**: 
+    - Run `Brain-Health-Audit.py` to verify link integrity and YAML compliance.
     - Audit the `AI-Session-State` consistency across repositories.
 - **Oracle (Chronos-Oracle)**:
     - Perform **Log-Driven Strategic Synthesis** by default at the start of every session.
@@ -25,7 +30,8 @@ tags: ['#type/governance', '#state/active']
     - Follow the PARA/Diátaxis hybrid organizational system.
 
 ## 🚦 Lifecycle & Versioning
-- **Primary Branch**: `main`
-- **Protected Branches**: `main`
+- **Primary Branch**: `develop`
+- **Protected Branches**: `develop`, `main`
 - **Versioning Strategy**: N/A (Continuous updates).
 - **Version Source of Truth**: `VERSION.txt` (Set to `1.0.0` for tracking).
+
