@@ -1,9 +1,6 @@
 ---
 name: fleetcommander
 description: The fleetcommander persona from the Bastien-Antigravity squad.
-microservice: obsidian-brain
-type: documentation
-status: active
 ---
 # 📡 Role 07: Fleet Commander (Synchronization Officer)
 

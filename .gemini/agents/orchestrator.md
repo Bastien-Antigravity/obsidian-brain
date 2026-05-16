@@ -1,9 +1,6 @@
 ---
 name: orchestrator
 description: The orchestrator persona from the Bastien-Antigravity squad.
-microservice: obsidian-brain
-type: documentation
-status: active
 ---
 # 🎭 Role 01: Orchestrator (Pipeline Director)
 

@@ -1,9 +1,6 @@
 ---
 name: fleetarchitect
 description: The fleetarchitect persona from the Bastien-Antigravity squad.
-microservice: obsidian-brain
-type: documentation
-status: active
 ---
 # 🛰️ Role 05: Fleet Architect (DevOps)
 
