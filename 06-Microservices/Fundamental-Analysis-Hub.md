@@ -3,6 +3,7 @@ microservice: fundamental-analysis
 type: service-hub
 status: active
 tags:
+- \'#service/fundamental-analysis\'
 - '#type/service-hub'
 - null
 - '#state/active'

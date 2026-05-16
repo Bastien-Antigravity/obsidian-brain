@@ -3,6 +3,7 @@ microservice: notif-server
 type: service-hub
 status: active
 tags:
+- \'#service/notif-server\'
 - '#type/service-hub'
 - null
 - '#state/active'

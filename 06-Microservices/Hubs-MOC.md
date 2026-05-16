@@ -3,6 +3,7 @@ microservice: hubs-moc
 type: moc
 status: active
 tags:
+- \'#service/hubs-moc\'
 - '#state/active'
 - null
 - '#type/moc'

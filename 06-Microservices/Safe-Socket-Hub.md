@@ -3,6 +3,7 @@ microservice: safe-socket
 type: service-hub
 status: active
 tags:
+- \'#service/safe-socket\'
 - '#type/service-hub'
 - null
 - '#state/active'

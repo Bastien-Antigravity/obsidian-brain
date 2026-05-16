@@ -4,6 +4,7 @@ type: architecture-blueprint
 status: draft
 role: architect
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - '#type/architecture-blueprint'
 - null

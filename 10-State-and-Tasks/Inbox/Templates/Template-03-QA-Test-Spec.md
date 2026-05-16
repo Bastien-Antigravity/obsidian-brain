@@ -4,6 +4,7 @@ type: qa-test-spec
 status: draft
 role: qa
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - '#type/qa-test-spec'
 - null

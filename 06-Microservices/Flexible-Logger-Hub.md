@@ -3,6 +3,7 @@ microservice: flexible-logger
 type: service-hub
 status: active
 tags:
+- \'#service/flexible-logger\'
 - '#type/service-hub'
 - null
 - '#state/active'

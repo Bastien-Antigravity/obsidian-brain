@@ -3,6 +3,7 @@ microservice: enhanced-backtesting
 type: service-hub
 status: active
 tags:
+- \'#service/enhanced-backtesting\'
 - '#type/service-hub'
 - '#state/active'
 ---

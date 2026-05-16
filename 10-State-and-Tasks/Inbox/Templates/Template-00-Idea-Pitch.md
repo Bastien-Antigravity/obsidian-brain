@@ -4,6 +4,7 @@ type: idea-pitch
 status: pending
 role: orchestrator
 tags:
+- \'#service/obsidian-brain\'
 - '#type/idea-pitch'
 - '#state/pending'
 - null

@@ -3,6 +3,7 @@ microservice: obsidian-brain
 type: documentation
 status: active
 tags:
+- \'#service/obsidian-brain\'
 - '#type/architecture'
 - '#state/active'
 - role/human-onboarding

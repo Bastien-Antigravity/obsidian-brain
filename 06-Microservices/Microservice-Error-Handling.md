@@ -3,6 +3,7 @@ microservice: obsidian-brain
 type: governance
 status: active
 tags:
+- \'#service/obsidian-brain\'
 - '#type/governance'
 - '#state/active'
 ---

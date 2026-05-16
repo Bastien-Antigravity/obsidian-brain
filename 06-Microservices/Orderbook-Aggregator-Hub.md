@@ -3,6 +3,7 @@ microservice: orderbook-aggregator
 type: service-hub
 status: active
 tags:
+- \'#service/orderbook-aggregator\'
 - '#type/service-hub'
 - '#state/active'
 ---

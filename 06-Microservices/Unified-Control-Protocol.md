@@ -3,6 +3,7 @@ type: protocol
 status: active
 microservice: ecosystem-wide
 tags:
+- \'#service/ecosystem-wide\'
 - '#type/protocol'
 - '#state/active'
 ---

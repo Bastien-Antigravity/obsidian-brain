@@ -3,6 +3,7 @@ microservice: templates-moc
 type: moc
 status: active
 tags:
+- \'#service/templates-moc\'
 - '#state/active'
 - null
 - '#type/moc'

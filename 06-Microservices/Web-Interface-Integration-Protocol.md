@@ -3,6 +3,7 @@ type: protocol
 status: active
 microservice: web-interface
 tags:
+- \'#service/web-interface\'
 - '#type/protocol'
 - '#state/active'
 ---

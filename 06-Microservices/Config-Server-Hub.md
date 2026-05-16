@@ -3,6 +3,7 @@ microservice: config-server
 type: service-hub
 status: active
 tags:
+- \'#service/config-server\'
 - '#type/service-hub'
 - null
 - '#state/active'

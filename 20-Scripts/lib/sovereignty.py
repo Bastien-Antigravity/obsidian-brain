@@ -125,9 +125,49 @@ class Sovereignty:
         except Exception as e:
             self.log_error(f"Failed to read {path.name}: {str(e)}")
 
+    def auto_fix_file(self, path: Path):
+        """Fixes taxonomy issues like missing # on domain tags and injecting #service tags."""
+        if not path.suffix == ".md":
+            return
+            
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                content = f.read()
+                
+            original_content = content
+            
+            if content.startswith("---"):
+                parts = content.split("---", 2)
+                if len(parts) >= 3:
+                    yaml_block = parts[1]
+                    
+                    # Fix domain/ missing #
+                    yaml_block = re.sub(r'-\s+domain/([^\s\'"\n]+)', r"- '#domain/\1'", yaml_block)
+                    yaml_block = re.sub(r'-\s+[\'"]domain/([^\'"]+)[\'"]', r"- '#domain/\1'", yaml_block)
+                    
+                    # Inject #service tag based on microservice key
+                    micro_match = re.search(r'^microservice:\s*([^\n\s]+)', yaml_block, re.MULTILINE)
+                    if micro_match:
+                        service_name = micro_match.group(1).strip("'\"")
+                        if service_name and service_name.lower() != "null":
+                            service_tag = f"#service/{service_name}"
+                            if "tags:" in yaml_block and service_tag not in yaml_block:
+                                yaml_block = re.sub(r'(tags:\s*\n)', r'\1- \'' + service_tag + r'\'\n', yaml_block)
+                                
+                    if yaml_block != parts[1]:
+                        content = f"---{yaml_block}---{parts[2]}"
+            
+            if content != original_content:
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                    
+        except Exception as e:
+            self.log_warning(f"Auto-fix failed for {path.name}: {str(e)}")
+
     def get_report(self) -> Dict:
         return {
             "errors": self.errors,
             "warnings": self.warnings,
             "success": len(self.errors) == 0
         }
+

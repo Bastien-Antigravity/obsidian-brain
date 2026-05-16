@@ -3,6 +3,7 @@ microservice: technical-analysis
 type: service-hub
 status: skeleton
 tags:
+- \'#service/technical-analysis\'
 - '#type/service-hub'
 - '#state/skeleton'
 ---

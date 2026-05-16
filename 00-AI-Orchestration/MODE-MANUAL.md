@@ -6,6 +6,7 @@ type: architecture
 status: active
 active_mode: 3
 tags:
+- \'#service/obsidian-brain\'
 - '#state/active'
 - null
 - '#type/architecture'

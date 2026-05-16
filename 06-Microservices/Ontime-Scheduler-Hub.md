@@ -4,6 +4,7 @@ type: service-hub
 status: active
 language: Go
 tags:
+- \'#service/ontime-scheduler\'
 - '#type/service-hub'
 - '#state/active'
 ---

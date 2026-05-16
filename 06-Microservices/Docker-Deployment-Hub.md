@@ -3,6 +3,7 @@ microservice: docker-deployment
 type: service-hub
 status: active
 tags:
+- \'#service/docker-deployment\'
 - '#type/service-hub'
 - null
 - '#state/active'

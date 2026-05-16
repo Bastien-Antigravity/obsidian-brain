@@ -3,6 +3,7 @@ microservice: web-interface
 type: service-hub
 status: active
 tags:
+- \'#service/web-interface\'
 - '#type/service-hub'
 - '#state/active'
 ---

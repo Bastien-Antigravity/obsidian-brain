@@ -3,6 +3,7 @@ microservice: obsidian-brain
 type: documentation
 status: active
 tags:
+- \'#service/obsidian-brain\'
 - "#type/documentation"
 - "#state/active"
 ---

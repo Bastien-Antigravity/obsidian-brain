@@ -3,6 +3,7 @@ microservice: market-observer
 type: service-hub
 status: active
 tags:
+- \'#service/market-observer\'
 - '#type/service-hub'
 - null
 - '#state/active'

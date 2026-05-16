@@ -4,6 +4,7 @@ type: task
 status: active
 priority: high
 tags:
+- \'#service/obsidian-brain\'
 - meta-logic
 - governance
 - '#type/task'

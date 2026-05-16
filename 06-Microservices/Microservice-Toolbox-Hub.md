@@ -3,6 +3,7 @@ microservice: microservice-toolbox
 type: service-hub
 status: active
 tags:
+- \'#service/microservice-toolbox\'
 - '#type/service-hub'
 - null
 - '#state/active'

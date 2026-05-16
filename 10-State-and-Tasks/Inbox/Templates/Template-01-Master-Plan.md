@@ -4,6 +4,7 @@ type: task-plan
 status: pending
 role: orchestrator
 tags:
+- \'#service/obsidian-brain\'
 - '#type/task-plan'
 - null
 - '#state/pending'

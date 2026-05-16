@@ -4,6 +4,7 @@ type: moc
 status: active
 author: Ruzava & Antigravity
 tags:
+- \'#service/ecosystem-core\'
 - '#state/active'
 - null
 - '#type/moc'

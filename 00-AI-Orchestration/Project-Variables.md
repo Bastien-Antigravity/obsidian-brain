@@ -11,6 +11,7 @@ master_moc_path: Ecosystem-Map-MOC.md
 labs_brain_path: 04-Rapid-Prototyping
 ops_brain_path: fleet-operation-brain
 tags:
+- \'#service/obsidian-brain\'
 - '#state/active'
 - null
 - '#type/configuration'

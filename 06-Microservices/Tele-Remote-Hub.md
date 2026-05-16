@@ -3,6 +3,7 @@ microservice: tele-remote
 type: service-hub
 status: active
 tags:
+- \'#service/tele-remote\'
 - '#type/service-hub'
 - null
 - '#state/active'

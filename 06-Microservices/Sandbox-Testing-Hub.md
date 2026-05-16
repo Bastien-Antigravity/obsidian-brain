@@ -3,6 +3,7 @@ microservice: sandbox-testing
 type: service-hub
 status: active
 tags:
+- \'#service/sandbox-testing\'
 - '#type/service-hub'
 - null
 - '#state/active'

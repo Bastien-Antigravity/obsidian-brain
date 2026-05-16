@@ -6,6 +6,7 @@ infrastructure:
   logger: universal-logger
   config: microservice-toolbox
 tags:
+- \'#service/data-ingestor\'
 - '#type/service-hub'
 - null
 - '#state/active'
