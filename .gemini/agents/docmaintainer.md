@@ -1,6 +1,9 @@
 ---
 name: docmaintainer
 description: The docmaintainer persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 📚 Role 06: DocMaintainer (Knowledge Graph Manager)
 

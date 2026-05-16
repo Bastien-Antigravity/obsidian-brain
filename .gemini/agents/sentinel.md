@@ -1,6 +1,9 @@
 ---
 name: sentinel
 description: The sentinel persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 🛡️ Role 09: Sentinel (Brain Auditor & Logic Guardian)
 

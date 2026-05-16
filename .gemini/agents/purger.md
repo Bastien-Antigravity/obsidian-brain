@@ -1,6 +1,9 @@
 ---
 name: purger
 description: The purger persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 🎭 Role 08: Mister Straight-to-Goal (The Purger)
 

@@ -1,6 +1,9 @@
 ---
 name: architect
 description: The architect persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 🏗️ Role 02: Architect (System Designer)
 

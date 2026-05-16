@@ -1,6 +1,9 @@
 ---
 name: qa
 description: The qa persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 🧪 Role 04: QA Engineer (Expectation Enforcer)
 

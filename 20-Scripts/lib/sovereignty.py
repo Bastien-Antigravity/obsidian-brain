@@ -16,9 +16,23 @@ class Sovereignty:
     MANDATORY_TAG_ROOTS = ["#type/", "#state/"]
     
     # --- Result Structure ---
-    def __init__(self):
+    def __init__(self, taxonomy_path: Path = None):
         self.errors = []
         self.warnings = []
+        self.valid_tags = set()
+        if taxonomy_path and taxonomy_path.exists():
+            self._load_taxonomy(taxonomy_path)
+
+    def _load_taxonomy(self, path: Path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                content = f.read()
+                # Find all #tag/ or #tag patterns
+                found = re.findall(r'#[\w/-]+', content)
+                for t in found:
+                    self.valid_tags.add(t)
+        except Exception as e:
+            self.log_warning(f"Could not load taxonomy from {path}: {e}")
 
     def log_error(self, message: str):
         self.errors.append(message)
@@ -102,6 +116,29 @@ class Sovereignty:
             if not re.search(r'Mission-ID:|Trace-ID:|X-Bastien-Mission-ID', content, re.IGNORECASE):
                 self.log_error(f"[{file_name}] Session state entry missing Mission/Trace ID.")
 
+    def validate_orphan_tags(self, content: str, file_name: str):
+        """Identifies tags not defined in the taxonomy, ignoring hex colors."""
+        if not self.valid_tags:
+            return
+            
+        tags = re.findall(r'#([\w/-]+)', content)
+        for t in tags:
+            full_tag = f"#{t}"
+            
+            # Skip hex colors (3 or 6 hex digits)
+            if re.match(r'^[0-9a-fA-F]{3}$|^[0-9a-fA-F]{6}$', t):
+                continue
+            
+            # Check if valid
+            is_valid = False
+            for v in self.valid_tags:
+                if full_tag == v or (v.endswith("/") and full_tag.startswith(v)):
+                    is_valid = True
+                    break
+            
+            if not is_valid:
+                self.log_warning(f"[{file_name}] Orphan tag detected: {full_tag}")
+
     # --- Orchestration ---
 
     def audit_file(self, path: Path, valid_stems: Set[str], valid_paths: Set[str]):
@@ -117,6 +154,7 @@ class Sovereignty:
             
             self.validate_frontmatter(content, file_name)
             self.validate_taxonomy(content, file_name)
+            self.validate_orphan_tags(content, file_name)
             self.validate_links(content, file_name, valid_stems, valid_paths)
             self.validate_telemetry(content, file_name)
             self.validate_utc_mandate(content, file_name)

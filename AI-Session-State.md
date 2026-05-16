@@ -1,3 +1,10 @@
+---
+microservice: obsidian-brain
+type: session-state
+status: active
+Mission-ID: KMS-FIX-AUTOGEN
+---
+
 
 ## 📡 FleetCommander Session (2026-05-15)
 - **Standardized** all fleet repositories to track the `develop` branch.

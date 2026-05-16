@@ -1,6 +1,9 @@
 ---
 name: developer
 description: The developer persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 💻 Developer Wisdom Log
 

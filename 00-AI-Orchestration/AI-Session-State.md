@@ -17,6 +17,7 @@ directives:
 - conventional-commits: mandatory
 - active-protocol: '[[00-AI-Orchestration/MODE-MANUAL]] Mode 1'
 tags: ['#type/governance', '#state/active']
+Mission-ID: KMS-FIX-AUTOGEN
 ---
 
 # 🧠 AI Session State: obsidian-brain

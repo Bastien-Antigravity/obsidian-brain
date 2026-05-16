@@ -1,6 +1,9 @@
 ---
 name: oracle
 description: The oracle persona from the Bastien-Antigravity squad.
+microservice: obsidian-brain
+type: documentation
+status: active
 ---
 # 🌌 Role 00: Chronos-Oracle (Strategic Oracle)
 
