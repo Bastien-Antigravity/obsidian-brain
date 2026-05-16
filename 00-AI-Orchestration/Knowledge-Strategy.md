@@ -133,7 +133,9 @@ When the user requests a feature, the AI MUST first act as a "Spec Specialist" t
 ### D. The Documentation Isolation Protocol
 **Decision Date:** 2026-05-16
 **Context:** AI agents were becoming overwhelmed by human-centric notes, causing context window bloat and task drift.
-**Decision:** Implementation of `#ai/ignore` tags and mandatory `quick-overview/` scaffolding.
+**Decision:** Implementation of `#ai/ignore` tags and mandatory isolation folders.
 1. **Rule:** AI agents MUST ignore any file tagged with `#ai/ignore`.
-2. **Standard:** Every microservice must have a `quick-overview/` folder with architectural and behavioral summaries for human consumption only.
+2. **Standard:** Every repository must have an isolation folder for human-centric documentation.
+   - **Fleet Standard**: `quick-overview/`
+   - **Brain Specific**: `99-Humans/` (For the `obsidian-brain` repository only).
 **Impact:** 100% isolation of technical "Human-only" data; cleaner AI context windows.
