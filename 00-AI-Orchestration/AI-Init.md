@@ -12,7 +12,8 @@ tags: ['#type/governance', '#state/active']
 > "1. Read the ecosystem map in **[[Ecosystem-Map-MOC]]**."
 > "2. Load project constraints from **[[00-AI-Orchestration/AI-Project-DNA]]**."
 > "3. Restore session state from **[[00-AI-Orchestration/AI-Session-State]]**."
-> "4. **Sentinel Audit**: From the workspace root, run `python core-kms-brain/Scripts/Brain-Health-Audit.py` and resolve any drift."
+> "4. **AI-Ignore Rule**: Immediately ignore any files containing the `#ai/ignore` tag. Do not read them unless explicitly asked."
+> "5. **Sentinel Audit**: From the workspace root, run `python obsidian-brain/07-Core-KMS/Scripts/Brain-Health-Audit.py` and resolve any drift."
 
 > [!TIP] Cross-Platform Notes
 > - On Windows, use `python` instead of `python3`.
