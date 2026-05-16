@@ -3,6 +3,9 @@ feature: null
 priority: medium
 status: active
 tags:
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
 - '#type/task'
 - '#state/draft'
 title: '{{title}}'

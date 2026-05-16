@@ -27,7 +27,7 @@ and enforces metadata standards.
 1. **Health Auditing**: Run `python core-kms-brain/Scripts/Brain-Health-Audit.py` to generate
    a drift report.
 2. **Sovereignty Verification**: Ensure the **DocMaintainer** has successfully run 
-   `python 20-Scripts/close_mission.py` and resolved any violations before the session ends.
+   `python3 20-Scripts/close_mission.py` and resolved any violations before the session ends.
 3. **Metadata Hardening**: Fix any YAML frontmatter violations (`type`, `status`, `microservice`).
 3. **Link Repair**: Search for the correct file names for any broken links and update referencing
    files.
@@ -63,7 +63,7 @@ task completes). No explicit handoff required — report findings to the USER.
 
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)
-Before finishing any major task or concluding a session, you MUST use the `obsidian_vault` tool to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
+Before finishing any major task or concluding a session, you MUST use your available file management tools to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
 
 # 🚨 ATTENTION RESTORATION (SCAN METHOD)
 To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:

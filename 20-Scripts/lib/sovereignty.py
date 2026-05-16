@@ -130,9 +130,10 @@ class Sovereignty:
 
     def validate_telemetry(self, content: str, file_name: str):
         """Ensures Roles have the [SCAN] block."""
-        if "Role-" in file_name or "Prompt-" in file_name:
+        # Only enforce on core agent definitions or role prompts
+        if any(x in file_name.lower() for x in ["role-", "prompt-", "agent-"]):
             if "[SCAN]" not in content:
-                self.log_error(f"[{file_name}] Role file missing mandatory [SCAN] telemetry block.")
+                self.log_error(f"[{file_name}] Role definition missing mandatory [SCAN] telemetry block.")
 
     def validate_utc_mandate(self, content: str, file_name: str):
         """Heuristic check for prohibited local time references."""
@@ -196,9 +197,17 @@ class Sovereignty:
             self.validate_telemetry(content, file_name)
             self.validate_utc_mandate(content, file_name)
             self.validate_session_state(content, file_name)
+            self.validate_placeholders(content, file_name)
             
         except Exception as e:
             self.log_error(f"Failed to read {path.name}: {str(e)}")
+
+    def validate_placeholders(self, content: str, file_name: str):
+        """Ensures that template placeholders like {{microservice}} are resolved."""
+        placeholders = re.findall(r'\{\{[\w-]+\}\}', content)
+        if placeholders:
+            for p in placeholders:
+                self.log_error(f"[{file_name}] Unresolved placeholder detected: {p}")
 
     def auto_fix_file(self, path: Path):
         """Fixes taxonomy issues like missing # on domain tags and injecting #service tags."""

@@ -4,6 +4,9 @@ type: session-state
 status: active
 last-updated: {{date}}
 tags:
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
 - \'#service/{{title}}\'
   - #type/task
   - #state/active

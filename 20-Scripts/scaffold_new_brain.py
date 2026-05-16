@@ -51,8 +51,8 @@ def main() -> None:
         "05-Fleet-Operation",
         "06-Microservices",
         "07-Core-KMS/Role-Prompts",
-        "10-State-and-Tasks",
-        "20-Scripts"
+        "20-Scripts",
+        "99-Humans"
     ]
     
     for folder in folders:
@@ -82,7 +82,8 @@ Define the primary purpose of this brain here.
 ## 🛡️ Core Constraints
 1. **The [SCAN] Protocol**: Every response must start with a [SCAN] block.
 2. **Double-Digit Hierarchy**: Maintain the 00-99 folder structure.
-3. **Submodule Parity**: Changes must be synced to standalone repositories.
+3. **Isolation Zones**: Keep human dashboards in `99-Humans/` with `#ai/ignore`.
+4. **Transversal Tags**: Every file must be classified via `#tech/`, `#tier/`, and `#zone/`.
 """
     with open(target_path / "00-AI-Orchestration/AI-Project-DNA.md", 'w', encoding='utf-8') as f:
         f.write(dna_content)

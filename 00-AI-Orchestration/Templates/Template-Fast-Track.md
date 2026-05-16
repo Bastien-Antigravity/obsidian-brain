@@ -1,10 +1,12 @@
 --- 
-microservice: obsidian-brain
+microservice: {{microservice}}
 type: task
 status: active
 tags:
-- \'#service/obsidian-brain\'
-- null
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
+- #service/{{microservice}}
 - '#type/task'
 - '#state/active'
 ---

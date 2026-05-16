@@ -1,13 +1,15 @@
 --- 
-microservice: obsidian-brain
+microservice: {{microservice}}
 type: architecture-blueprint
 status: draft
 role: architect
 tags:
-- \'#service/obsidian-brain\'
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
+- #service/{{microservice}}
 - '#state/draft'
 - '#type/architecture-blueprint'
-- null
 ---
 # Architecture Blueprint: [Feature/Bug Name]
 

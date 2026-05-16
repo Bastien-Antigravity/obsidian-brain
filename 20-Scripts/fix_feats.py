@@ -24,24 +24,24 @@ class FeatFixer:
         self.root_dir: str = osPathJoin(self.vault_root, "02-Business-BDD", "02-Behavior-Specs")
         self.hubs_dir: str = osPathJoin(self.vault_root, "06-Microservices")
         self.domain_map: Dict[str, str] = {
-            "config-server": "domain/networking",
-            "data-ingestor": "domain/analysis",
-            "distributed-config": "domain/networking",
-            "enhanced-backtesting": "domain/analysis",
-            "flexible-logger": "domain/observability",
-            "fundamental-analysis": "domain/analysis",
-            "log-server": "domain/observability",
-            "market-observer": "domain/analysis",
-            "microservice-toolbox": "domain/architecture",
-            "notif-server": "domain/interface",
-            "ontime-scheduler": "domain/architecture",
-            "orderbook-aggregator": "domain/analysis",
-            "safe-socket": "domain/networking",
-            "sandbox-testing": "domain/architecture",
-            "tele-remote": "domain/interface",
-            "universal-logger": "domain/observability",
-            "web-interface": "domain/interface",
-            "technical-analysis": "domain/analysis"
+            "config-server": "#domain/networking",
+            "data-ingestor": "#domain/analysis",
+            "distributed-config": "#domain/networking",
+            "enhanced-backtesting": "#domain/analysis",
+            "flexible-logger": "#domain/observability",
+            "fundamental-analysis": "#domain/analysis",
+            "log-server": "#domain/observability",
+            "market-observer": "#domain/analysis",
+            "microservice-toolbox": "#domain/architecture",
+            "notif-server": "#domain/interface",
+            "ontime-scheduler": "#domain/architecture",
+            "orderbook-aggregator": "#domain/analysis",
+            "safe-socket": "#domain/networking",
+            "sandbox-testing": "#domain/architecture",
+            "tele-remote": "#domain/interface",
+            "universal-logger": "#domain/observability",
+            "web-interface": "#domain/interface",
+            "technical-analysis": "#domain/analysis"
         }
 
     # -----------------------------------------------------------------------------------------------

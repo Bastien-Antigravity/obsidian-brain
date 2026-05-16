@@ -1,11 +1,13 @@
 ---
-microservice: obsidian-brain
+microservice: {{microservice}}
 type: experiment
 status: fluid
 tags:
-- \'#service/obsidian-brain\'
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
+- #service/{{microservice}}
 - '#state/fluid'
-- null
 - '#type/experiment'
 ---
 

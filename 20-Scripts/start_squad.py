@@ -123,6 +123,33 @@ def run_preflight() -> None:
             print(f"📡 Executing Governance Audit: {osPathBasename(script)}...")
             subprocessRun([sysExecutable, script])
 
+def check_session_health() -> None:
+    """
+    Checks if there are uncommitted changes from a previous session.
+    Ensures the mission was properly closed.
+    """
+    vault_root = osPathAbspath(osPathJoin(script_dir, ".."))
+    try:
+        result = subprocessRun(
+            ["git", "status", "--porcelain"], 
+            cwd=vault_root, capture_output=True, text=True, check=True
+        )
+        uncommitted = [line for line in result.stdout.splitlines() if line.strip().endswith(".md")]
+        
+        if uncommitted:
+            print("\n" + "!"*60)
+            print("⚠️  UNCLOSED MISSION DETECTED")
+            print(f"There are {len(uncommitted)} uncommitted markdown files in the vault.")
+            print("Please run 'python3 20-Scripts/close_mission.py' to verify and sign-off.")
+            print("!"*60 + "\n")
+            
+            confirm = input("Ignore and start new session anyway? [y/N]: ").lower().strip()
+            if confirm != 'y':
+                print("👋 Session aborted. Please close the previous mission first.")
+                sysExit(0)
+    except Exception:
+        pass # Git not found or other error
+
 def regenerate_agents() -> None:
     """
     DATA FLOW:
@@ -147,6 +174,7 @@ def start_engine() -> None:
         print("="*60)
 
         # 1. Verification & Sync
+        check_session_health()
         run_preflight()
         regenerate_agents()
 
@@ -173,23 +201,41 @@ def start_engine() -> None:
         helper.print_cheat_sheet()
         
         # 5. CLI Execution
-        print(f"\n🚀 Firing up the Gemini CLI [Protocol: {choice}]...")
+        clis = ["gemini", "claude", "codex", "mistral", "deepseek"]
+        active_cli = "gemini" # Default
+        
+        # Simple detection (in a real scenario, we could check which is in PATH)
+        print(f"\n🚀 Firing up the AI Squad Command [Protocol: {choice}]...")
+        
         try:
-            if osName == 'nt':
-                subprocessRun(["gemini"], shell=True)
-            else:
-                subprocessRun(["gemini"])
+            # Check for Windows or Unix
+            cmd_prefix = [] if osName != 'nt' else ["cmd", "/c"]
+            
+            # Execute the primary CLI
+            subprocessRun(cmd_prefix + [active_cli])
+        except FileNotFoundError:
+            print(f"⚠️ Warning: {active_cli} CLI not found. Trying fallback CLIs...")
+            for fallback in clis[1:]:
+                try:
+                    subprocessRun(cmd_prefix + [fallback])
+                    break
+                except FileNotFoundError:
+                    continue
         except Exception as e:
             print(f"❌ CLI Execution Error: {e}")
             break
             
-        # 5. Lifecycle Decision
+        # 6. Lifecycle Decision
         print("\n--- 🏁 Session Paused ---")
-        decision = input("Re-launch Squad? [y: Yes / n: Exit / s: Switch Mode]: ").lower().strip()
+        decision = input("Re-launch Squad? [y: Yes / n: Exit & Sign-off / s: Switch Mode]: ").lower().strip()
         
         if decision == 's' or decision == 'y':
             continue
         else:
+            print("\n📡 Initiating Mission Sign-off Ritual...")
+            signoff_script = osPathJoin(script_dir, "close_mission.py")
+            if osPathExists(signoff_script):
+                subprocessRun([sysExecutable, signoff_script])
             print("👋 Squad resting. Mission concluded.")
             break
 

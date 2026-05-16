@@ -68,7 +68,7 @@ When it is time to perform garbage collection or purge targets (e.g., during the
 
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)
-Before finishing any major task or concluding a session, you MUST use the `obsidian_vault` tool to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
+Before finishing any major task or concluding a session, you MUST use your available file management tools to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
 
 # 🚨 ATTENTION RESTORATION (SCAN METHOD)
 To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:

@@ -3,6 +3,9 @@ type: adr
 status: proposed
 date: {{date}}
 tags:
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
   - #domain/architecture
   - #type/architecture
   - #state/draft

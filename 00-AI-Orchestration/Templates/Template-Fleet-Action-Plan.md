@@ -1,11 +1,13 @@
 ---
-microservice: obsidian-brain
+microservice: {{microservice}}
 type: fleet-op
 status: active
 tags:
-- \'#service/obsidian-brain\'
+- "#tech/TO-DO"
+- "#tier/TO-DO"
+- "#zone/TO-DO"
+- #service/{{microservice}}
 - '#type/fleet-op'
-- null
 - '#state/active'
 ---
 
