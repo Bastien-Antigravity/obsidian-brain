@@ -17,7 +17,7 @@ directives:
 - conventional-commits: mandatory
 - active-protocol: '[[00-AI-Orchestration/MODE-MANUAL]] Mode 1'
 tags: ['#type/governance', '#state/active']
-Mission-ID: KMS-FIX-AUTOGEN
+Mission-ID: Fleet-Documentation-Taxonomy-Normalization
 ---
 
 # 🧠 AI Session State: obsidian-brain
@@ -26,6 +26,13 @@ Mission-ID: KMS-FIX-AUTOGEN
 > Update associated documentation (**README.md**, **ARCHITECTURE.md**) and relevant **Obsidian Brain** nodes ONLY upon feature completion or sprint closure to preserve compute and prevent task drift. Do NOT update documentation after every minor code modification.
 
 ## 🚀 Progress Tracking
+
+## 🛰️ Mission-ID: Fleet-Documentation-Taxonomy-Normalization | Trace-ID: 2026-05-16
+- [x] **Taxonomy Normalization**: Implemented transversal tag families (`#service/`, `#tech/`, `#tier/`, `#zone/`) across the fleet. Updated `tag_taxonomy.md` and `AI-Project-DNA.md`.
+- [x] **Isolation Protocol**: Deployed `#ai/ignore` tags and scaffolded `quick-overview/` directories in core repos to isolate human documentation.
+- [x] **Sentinel Upgrades**: Hardened the Sovereignty engine with auto-fixing for metadata and orphan tag detection (filtering hex codes).
+- [x] **Governance Hardening**: Updated `CODEOWNERS` for robust protection and synchronized master `AI-Init.md` with modern rules and fixed paths.
+- [x] **Hygiene Resolution**: Remedied 39+ metadata violations across the vault. (COMPLETED 2026-05-16)
 
 ## 🛰️ Mission-ID: FleetCommander-Unification | Trace-ID: 2026-05-15
 - [x] **Script Unification**: Merged `repo-commander.py` logic into `fleet-commander.py`, adding single-repo targeting (`--repo`) and integrating strict compliance audits (Docs, Architecture, Quick-Overview).
