@@ -185,6 +185,9 @@
   },
   "active": "e556d18da1d66994",
   "lastOpenFiles": [
+    "20-Scripts/__pycache__/switch_mode.cpython-312.pyc",
+    "20-Scripts/__pycache__/start_squad.cpython-312.pyc",
+    "20-Scripts/__pycache__",
     "20-Scripts/verify_links_script.py",
     "99-Humans/Domain-Dashboard.md",
     "quick-overview/00-Dashboards/Domain-Dashboard.md",
@@ -218,9 +221,6 @@
     "05-Fleet-Operation/quick-overview",
     "04-Rapid-Prototyping/quick-overview",
     "03-Tech-Stack/quick-overview",
-    "02-Business-BDD/quick-overview",
-    "01-Strategic-Nexus/quick-overview",
-    "07-Core-KMS/Scripts/Hardening-YAML.py",
     "03-Tech-Stack/02-Project-Architecture/Ecosystem-Topology.canvas"
   ]
 }

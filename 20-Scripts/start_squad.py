@@ -2,60 +2,73 @@
 # coding:utf-8
 """
 ESSENTIAL PROCESS:
-Initializes the Bastien-Antigravity AI Squad by configuring MCP servers,
-selecting the operational mode, and launching the Gemini CLI.
+Initializes the Bastien-Antigravity AI Squad Command Center. Handles MCP binding,
+pre-session audits, role synchronization, and launches the Gemini CLI.
 
 DATA FLOW:
-1. Reads/Writes ~/.gemini/settings.json to bind the obsidian_vault.
-2. Updates 00-AI-Orchestration/MODE-MANUAL.md based on user selection.
-3. Spawns the 'gemini' CLI subprocess.
+1. Performs Preflight and Sovereignty audits to detect architecture drift.
+2. Synchronizes Role-Prompts to agent definitions (convert_agents.py).
+3. Invokes the Mode Selector and applies the protocol (switch_mode.py).
+4. Configures the MCP server-filesystem based on mode isolation rules.
+5. Launches the Gemini CLI in a re-launchable lifecycle loop.
 
 KEY PARAMETERS:
-- modes: Dict of available operational protocols.
-- obsidian_path: Resolved path to the vault root.
+- vault_root: Resolved path to the Obsidian Brain vault.
+- mcp_args: Dynamic arguments for the filesystem MCP server.
 """
 
-from os import name as osName, makedirs as osMakedirs, listdir as osListdir
-from os.path import expanduser as osPathExpanduser, exists as osPathExists, abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, isdir as osPathIsdir
-from json import load as jsonLoad, dump as jsonDump, JSONDecodeError as jsonJSONDecodeError
-from sys import exit as sysExit, executable as sysExecutable, stdout as sysStdout
+import sys
+import os
+import json
 from subprocess import run as subprocessRun
+from os.path import abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, exists as osPathExists, expanduser as osPathExpanduser, isdir as osPathIsdir
+
+# Add current directory to sys.path to enable library imports
+script_dir = osPathDirname(osPathAbspath(__file__))
+if script_dir not in sys.path:
+    sys.path.append(script_dir)
+
+try:
+    from switch_mode import get_mode_choice_interactive, apply_mode_protocol, MODES
+except ImportError:
+    print("❌ Error: Could not find switch_mode.py in 20-Scripts/")
+    sys.exit(1)
 
 # Standardize terminal output encoding for Windows
-if sysStdout.encoding != 'utf-8':
+if sys.stdout.encoding != 'utf-8':
     try:
-        sysStdout.reconfigure(encoding='utf-8')
+        sys.stdout.reconfigure(encoding='utf-8')
     except (AttributeError, Exception):
         pass
 
 # -----------------------------------------------------------------------------------------------
 
 def setup_mcp(mode_choice: str) -> None:
+    """
+    DATA FLOW:
+    Resolves vault root and configures the MCP filesystem server.
+    Implements the Isolation Protocol by excluding forbidden zones.
+    """
     settings_dir = osPathExpanduser("~/.gemini")
     settings_file = osPathJoin(settings_dir, "settings.json")
     
-    osMakedirs(settings_dir, exist_ok=True)
+    if not osPathExists(settings_dir):
+        os.makedirs(settings_dir, exist_ok=True)
     
-    # Load existing config or create new
+    settings = {}
     if osPathExists(settings_file):
-        with open(settings_file, 'r', encoding='utf-8') as f:
-            try:
-                settings = jsonLoad(f)
-            except jsonJSONDecodeError:
-                print("⚠️ Warning: Existing settings.json is corrupted. Starting fresh.")
-                settings = {}
-    else:
-        settings = {}
-        
-    # Ensure mcpServers block exists
+        try:
+            with open(settings_file, 'r', encoding='utf-8') as f:
+                settings = json.load(f)
+        except Exception:
+            print("⚠️ Warning: Corruption detected in settings.json. Starting fresh.")
+    
     if "mcpServers" not in settings:
         settings["mcpServers"] = {}
         
-    # Add obsidian_vault configuration
-    # Automatically resolves the path to the vault root (one level up from this script)
-    obsidian_path = osPathAbspath(osPathJoin(osPathDirname(__file__), ".."))
+    vault_root = osPathAbspath(osPathJoin(script_dir, ".."))
     
-    # --- Dynamic Context Exclusion Logic ---
+    # --- Dynamic Context Exclusion Logic (The Firewall) ---
     global_excludes = {".obsidian", ".git", ".gemini", "node_modules", "99-Humans", "quick-overview"}
     mode_excludes_map = {
         "1": {"01-Strategic-Nexus", "04-Rapid-Prototyping", "05-Fleet-Operation"},
@@ -67,181 +80,118 @@ def setup_mcp(mode_choice: str) -> None:
     current_excludes = mode_excludes_map.get(mode_choice, set())
     allowed_dirs = []
     
-    for item in osListdir(obsidian_path):
+    for item in os.listdir(vault_root):
         if item in global_excludes or item in current_excludes:
             continue
-        item_path = osPathJoin(obsidian_path, item)
-        # MCP server-filesystem only accepts directories as roots
+        item_path = osPathJoin(vault_root, item)
         if osPathIsdir(item_path):
             allowed_dirs.append(item_path)
         
     mcp_args = ["-y", "@modelcontextprotocol/server-filesystem"] + allowed_dirs
-    # ---------------------------------------
     
     settings["mcpServers"]["obsidian_vault"] = {
         "command": "npx",
         "args": mcp_args
     }
     
-    # Save back
     with open(settings_file, 'w', encoding='utf-8') as f:
-        jsonDump(settings, f, indent=2)
+        json.dump(settings, f, indent=2)
         
-    print(f"✅ Successfully configured 'obsidian_vault' MCP server in {settings_file}")
-    print(f"📁 Target vault bound to: {obsidian_path}")
-
-# -----------------------------------------------------------------------------------------------
-
-def select_mode() -> str:
-    modes = {
-        "1": ("🛡️ Spec-First", "High safety, BDD mandatory."),
-        "2": ("🧪 Free-Labs", "High speed, experimentions."),
-        "3": ("🛰️ Fleet-Commander", "Global sync, multi-repo."),
-        "4": ("🥷 Direct-Action", "Bypass mode logic, sporadically used.")
-    }
-    
-    print("\n--- 🕹️ Select Operational Mode ---")
-    for key, (name, desc) in modes.items():
-        print(f"[{key}] {name.ljust(18)} : {desc}")
-    
-    choice = input("\nSelect mode [1-4] (default: keep current): ").strip()
-    
-    if choice == "4":
-        print("✅ Mode: Direct-Action (No changes to MODE-MANUAL.md)")
-        return "4"
-
-    if choice in modes:
-        mode_file = osPathJoin(osPathDirname(__file__), "../00-AI-Orchestration/MODE-MANUAL.md")
-        with open(mode_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-        
-        with open(mode_file, 'w', encoding='utf-8') as f:
-            for line in lines:
-                if line.startswith("active_mode:"):
-                    f.write(f"active_mode: {choice}\n")
-                else:
-                    f.write(line)
-        
-        print(f"✅ Mode switched to: {modes[choice][0]}")
-        return choice
-    else:
-        print("➡️ Keeping current mode as defined in MODE-MANUAL.md")
-        current_mode = "4"
-        try:
-            mode_file = osPathJoin(osPathDirname(__file__), "../00-AI-Orchestration/MODE-MANUAL.md")
-            with open(mode_file, 'r', encoding='utf-8') as f:
-                for line in f:
-                    if line.startswith("active_mode:"):
-                        current_mode = line.split(":")[1].strip()
-                        break
-        except FileNotFoundError:
-            pass
-        return current_mode
-
-# -----------------------------------------------------------------------------------------------
-
-def print_mission_examples() -> None:
-    print("\n--- 💡 Mission Cheat Sheet (Copy-Paste Ready) ---")
-    print("\n🛡️ Mode 1: Spec-First")
-    print("   > Ask QA to audit @06-Microservices against specs in @02-Business-BDD.")
-    
-    print("\n🧪 Mode 2: Free-Labs")
-    print("   > Ask Developer to build a rapid prototype in @04-Rapid-Prototyping.")
-    
-    print("\n🛰️ Mode 3: Fleet-Commander")
-    print("   > Ask Fleet Commander to sync the ecosystem to the develop branch.")
-    
-    print("\n🔄 Changing Protocols")
-    print("   > Ask Sentinel to switch to Mode 2 and update the manual.")
-    
-    print("\n🏁 Governance & Sovereignty")
-    print(f"   > !{sysExecutable} 20-Scripts/close_mission.py (Finalize Task)")
-    print(f"   > !{sysExecutable} 07-Core-KMS/Scripts/Brain-Health-Audit.py (Full Audit)")
-    
-    print("\n🧹 Maintenance")
-    print("   > Ask DocMaintainer to repair links in the vault and update the MOC.")
-    print(f"   > !{sysExecutable} 20-Scripts/convert_agents.py (Regenerate Squad)")
-    
-    print("\n💬 Direct Interaction (Tier 1)")
-    print("   > [SCAN] Analyze @Ecosystem-Map-MOC.md and suggest next steps.")
-    
-    print("\n🔑 Keywords & Personas")
-    print("   - [SCAN]   : Mandatory header for every AI response.")
-    print("   - @<file> : Mention a file for context.")
-    print("   - !<cmd>  : Execute a shell command.")
-    print("   - Squad   : Orchestrator, Architect, Developer, QA, Sentinel, Oracle,")
-    print("               FleetArchitect, FleetCommander, DocMaintainer, Purger.")
-    print("\n-------------------------------------------------\n")
+    print(f"✅ MCP Context Boundary defined. Vault bound: {vault_root}")
 
 # -----------------------------------------------------------------------------------------------
 
 def run_preflight() -> None:
     """
-    Runs Preflight and Sovereignty checks to detect drift.
+    ESSENTIAL PROCESS:
+    Runs the full audit chain to ensure the brain is healthy before session start.
     """
-    script_dir = osPathDirname(osPathAbspath(__file__))
     workspace_root = osPathAbspath(osPathJoin(script_dir, "..", ".."))
     
-    # Preflight Check Candidates
-    preflight_candidates = [
+    # Candidates for Preflight and Audit scripts
+    scripts = [
         osPathJoin(workspace_root, "core-kms-brain", "Scripts", "Preflight-Check.py"),
-        osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Scripts", "Preflight-Check.py"),
-    ]
-    
-    preflight_script = next((c for c in preflight_candidates if osPathExists(c)), None)
-    if preflight_script:
-        print(f"\n🛫 Running Preflight Check: {preflight_script}")
-        subprocessRun([sysExecutable, preflight_script])
-    else:
-        print("\n⚠️ Preflight-Check.py not found — skipping.")
-
-    # Sovereignty Check Candidates (Sentinel Audit)
-    audit_candidates = [
+        osPathJoin(script_dir, "../07-Core-KMS/Scripts/Preflight-Check.py"),
         osPathJoin(workspace_root, "core-kms-brain", "Scripts", "Brain-Health-Audit.py"),
-        osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Scripts", "Brain-Health-Audit.py"),
+        osPathJoin(script_dir, "../07-Core-KMS/Scripts/Brain-Health-Audit.py")
     ]
     
-    audit_script = next((c for c in audit_candidates if osPathExists(c)), None)
-    if audit_script:
-        print(f"\n🛡️ Running Sovereignty Audit: {audit_script}")
-        subprocessRun([sysExecutable, audit_script])
-    else:
-        print("\n⚠️ Sovereignty-Audit script not found — skipping.")
+    for script in scripts:
+        if osPathExists(script):
+            print(f"📡 Executing Governance Audit: {os.path.basename(script)}...")
+            subprocessRun([sys.executable, script])
+
+def regenerate_agents() -> None:
+    """
+    DATA FLOW:
+    Triggers the multi-AI agent converter to ensure prompts are synchronized.
+    """
+    convert_script = osPathJoin(script_dir, "convert_agents.py")
+    if osPathExists(convert_script):
+        print("🔄 Synchronizing AI Squad Roles across adapters...")
+        subprocessRun([sys.executable, convert_script])
 
 # -----------------------------------------------------------------------------------------------
 
-def main() -> None:
-    print("\n🧠 Initializing Bastien-Antigravity AI Squad...")
-    run_preflight()
-    
-    # --- Automated Agent Regeneration ---
-    script_dir = osPathDirname(osPathAbspath(__file__))
-    convert_script = osPathJoin(script_dir, "convert_agents.py")
-    if osPathExists(convert_script):
-        print(f"\n🔄 Regenerating AI Squad Agents...")
-        subprocessRun([sysExecutable, convert_script])
-    # ------------------------------------
+def start_engine() -> None:
+    """
+    FUNCTIONAL ANALYSE:
+    Implements the Master Lifecycle Loop. This allows the user to re-launch
+    the engine or switch modes without manually restarting the script.
+    """
+    while True:
+        print("\n" + "="*60)
+        print("🧠 BASTIEN-ANTIGRAVITY: AI SQUAD COMMAND")
+        print("="*60)
 
-    mode = select_mode()
-    setup_mcp(mode)
-    print_mission_examples()
-    
-    print("\n🚀 Firing up the Gemini CLI...")
-    print("   (To test delegation, try: 'Ask QA to review the sandbox standards')\n")
-    try:
-        # Hand over control to the gemini CLI
-        if osName == 'nt':
-            subprocessRun(["gemini"], shell=True)
+        # 1. Verification & Sync
+        run_preflight()
+        regenerate_agents()
+
+        # 2. Mode Management
+        choice = get_mode_choice_interactive()
+        if choice:
+            apply_mode_protocol(choice)
         else:
-            subprocessRun(["gemini"])
-    except FileNotFoundError as e:
-        print(f"\n❌ Error: The 'gemini' CLI command was not found. -> {e}")
-        print("Please make sure it's installed and available in your PATH.")
-        sysExit(1)
-    except KeyboardInterrupt:
-        print("\n\nSession terminated. Squad resting.")
+            # Re-read current mode if skip
+            choice = "4"
+            mode_file = osPathJoin(script_dir, "../00-AI-Orchestration/MODE-MANUAL.md")
+            if osPathExists(mode_file):
+                with open(mode_file, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        if line.startswith("active_mode:"):
+                            choice = line.split(":")[1].strip()
+                            break
+        
+        # 3. Protocol Enforcement
+        setup_mcp(choice)
+        
+        # 4. CLI Execution
+        print(f"\n🚀 Firing up the Gemini CLI [Protocol: {choice}]...")
+        try:
+            if os.name == 'nt':
+                subprocessRun(["gemini"], shell=True)
+            else:
+                subprocessRun(["gemini"])
+        except Exception as e:
+            print(f"❌ CLI Execution Error: {e}")
+            break
+            
+        # 5. Lifecycle Decision
+        print("\n--- 🏁 Session Paused ---")
+        decision = input("Re-launch Squad? [y: Yes / n: Exit / s: Switch Mode]: ").lower().strip()
+        
+        if decision == 's' or decision == 'y':
+            continue
+        else:
+            print("👋 Squad resting. Mission concluded.")
+            break
 
 # -----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    main()
+    try:
+        start_engine()
+    except KeyboardInterrupt:
+        print("\n\n👋 Forced exit. Session terminated.")
+        sys.exit(0)

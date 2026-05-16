@@ -3,20 +3,36 @@
 """
 ESSENTIAL PROCESS:
 Switches the operational protocol of the AI Squad by atomically updating
-BOTH the MODE-MANUAL.md and AI-Session-State.md files.
+the MODE-MANUAL.md and all associated AI-Session-State.md files.
 
 DATA FLOW:
-1. Inputs a mode selection from the user.
-2. Resolves paths to MODE-MANUAL.md and AI-Session-State.md.
+1. Displays a selection UI for the available modes.
+2. Resolves paths to 00-AI-Orchestration and root governance files.
 3. Updates 'active_mode' in MODE-MANUAL.md.
-4. Updates 'active-protocol' in AI-Session-State.md to match.
+4. Updates 'active-protocol' in both orchestration and root session states.
 
 KEY PARAMETERS:
-- modes: Dict mapping numeric choices to protocol names.
+- MODES: Dict mapping numeric choices to (Name, Description) tuples.
 """
 
 from os.path import abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, exists as osPathExists
-from re import sub as reSub
+import re
+import sys
+
+# --- Configuration ---
+MODES = {
+    "1": ("🛡️ Spec-First", "High safety, BDD mandatory."),
+    "2": ("🧪 Free-Labs", "High speed, experimentations."),
+    "3": ("🛰️ Fleet-Commander", "Global sync, multi-repo."),
+    "4": ("🥷 Direct-Action", "Bypass mode logic.")
+}
+
+# Standardize terminal output encoding for Windows
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except (AttributeError, Exception):
+        pass
 
 # -----------------------------------------------------------------------------------------------
 
@@ -31,7 +47,7 @@ def _update_file_field(file_path: str, field_pattern: str, replacement: str) -> 
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    new_content = reSub(field_pattern, replacement, content)
+    new_content = re.sub(field_pattern, replacement, content)
     
     if new_content != content:
         with open(file_path, 'w', encoding='utf-8') as f:
@@ -41,55 +57,70 @@ def _update_file_field(file_path: str, field_pattern: str, replacement: str) -> 
 
 # -----------------------------------------------------------------------------------------------
 
-def main() -> None:
-    modes = {
-        "1": "🛡️ Spec-First",
-        "2": "🧪 Free-Labs",
-        "3": "🛰️ Fleet-Commander"
-    }
+def apply_mode_protocol(choice: str) -> bool:
+    """
+    ATOMALLY updates all governance files to the new protocol.
+    Ensures zero drift between orchestration and root state logs.
+    """
+    if choice not in MODES:
+        return False
+
+    # Resolve paths relative to this script location
+    script_dir = osPathDirname(osPathAbspath(__file__))
+    orchestration_dir = osPathAbspath(osPathJoin(script_dir, "../00-AI-Orchestration"))
     
-    print("\n--- 🕹️ Bastien-Antigravity: Mode Switcher ---")
-    for key, name in modes.items():
-        print("[{0}] {1}".format(key, name))
+    mode_file = osPathJoin(orchestration_dir, "MODE-MANUAL.md")
+    session_orch = osPathJoin(orchestration_dir, "AI-Session-State.md")
+    session_root = osPathJoin(script_dir, "../AI-Session-State.md")
     
-    choice = input("\nSelect new active mode [1-3]: ").strip()
+    # 1. Update MODE-MANUAL.md
+    mode_updated = _update_file_field(
+        mode_file,
+        r"active_mode:\s*\d+",
+        "active_mode: {0}".format(choice)
+    )
     
-    if choice in modes:
-        # Resolve paths relative to this script
-        script_dir = osPathDirname(osPathAbspath(__file__))
-        orchestration_dir = osPathAbspath(osPathJoin(script_dir, "../00-AI-Orchestration"))
-        
-        mode_file = osPathJoin(orchestration_dir, "MODE-MANUAL.md")
-        session_orch = osPathJoin(orchestration_dir, "AI-Session-State.md")
-        session_root = osPathJoin(script_dir, "../AI-Session-State.md")
-        
-        # 1. Update MODE-MANUAL.md
-        mode_updated = _update_file_field(
-            mode_file,
-            r"active_mode:\s*\d+",
-            "active_mode: {0}".format(choice)
-        )
-        
-        if not mode_updated:
-            print("❌ Error: Could not find or update MODE-MANUAL.md at {0}".format(mode_file))
-            return
-        
-        # 2. Atomically update BOTH AI-Session-State.md to match
-        field_pattern = r'active-protocol:\s*".*?"'
-        replacement = 'active-protocol: "[[MODE-MANUAL#Mode-{0}]]"'.format(choice)
-        
-        orch_synced = _update_file_field(session_orch, field_pattern, replacement)
-        root_synced = _update_file_field(session_root, field_pattern, replacement)
-        
-        print("\n✅ SUCCESS: Protocol updated to {0}".format(modes[choice]))
-        print("   MODE-MANUAL.md: {0}".format("Updated" if mode_updated else "No change"))
-        print("   AI-Session-State (Orch): {0}".format("Synced" if orch_synced else "Not found"))
-        print("   AI-Session-State (Root): {0}".format("Synced" if root_synced else "Not found"))
-        print("📢 Next time you launch the Squad, they will follow the rules of Mode {0}.".format(choice))
-    else:
-        print("❌ Invalid selection. No changes made.")
+    if not mode_updated:
+        print("❌ Error: Could not find or update MODE-MANUAL.md at {0}".format(mode_file))
+        return False
+    
+    # 2. Atomically update BOTH AI-Session-State.md to match
+    field_pattern = r'active-protocol:\s*".*?"'
+    replacement = 'active-protocol: "[[MODE-MANUAL#Mode-{0}]]"'.format(choice)
+    
+    orch_synced = _update_file_field(session_orch, field_pattern, replacement)
+    root_synced = _update_file_field(session_root, field_pattern, replacement)
+    
+    print(f"\n✅ SUCCESS: Protocol successfully set to: {MODES[choice][0]}")
+    print(f"   AI-Session-State (Orch): {'Synced' if orch_synced else 'Not found'}")
+    print(f"   AI-Session-State (Root): {'Synced' if root_synced else 'Not found'}")
+    
+    return True
 
 # -----------------------------------------------------------------------------------------------
+
+def get_mode_choice_interactive() -> str:
+    """
+    FUNCTIONAL ANALYSE:
+    Displays the Selection UI and returns the validated choice.
+    Returns None if the user skips selection.
+    """
+    print("\n--- 🕹️ Bastien-Antigravity: Mode Selector ---")
+    for key, (name, desc) in MODES.items():
+        print(f"[{key}] {name.ljust(18)} : {desc}")
+    
+    choice = input("\nSelect new active mode [1-4] (Enter to skip): ").strip()
+    return choice if choice in MODES else None
+
+# -----------------------------------------------------------------------------------------------
+
+def main() -> None:
+    """Entry point for standalone execution."""
+    choice = get_mode_choice_interactive()
+    if choice:
+        apply_mode_protocol(choice)
+    else:
+        print("➡️ No changes made.")
 
 if __name__ == "__main__":
     main()
