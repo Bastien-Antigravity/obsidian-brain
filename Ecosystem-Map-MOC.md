@@ -137,23 +137,28 @@ Knowledge Management System, Agent Role Prompts, and Workflows.
 - [[07-Core-KMS/00-Knowledge-Management-Playbook|📐 Knowledge Management Playbook]]
 - [[07-Core-KMS/Workflows/Daily-AI-Playbook|📖 Daily AI Playbook]]
 - **👥 Agent Squad (Role Prompts & Wisdom)**:
-  - [[07-Core-KMS/Role-Prompts/02-Architect/Prompt-Architect|📐 Role 02: Architect]] ([[07-Core-KMS/Role-Prompts/02-Architect/Wisdom-Log|Wisdom]])
-  - [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|💻 Role 03: Lead Developer]] ([[07-Core-KMS/Role-Prompts/03-Developer/Wisdom-Log|Wisdom]])
+  - [[07-Core-KMS/Role-Prompts/01-Orchestrator/Prompt-Orchestrator|🎭 Role 01: Orchestrator]]
+  - [[07-Core-KMS/Role-Prompts/02-Architect/Prompt-Architect|📐 Role 02: Architect]]
+  - [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|💻 Role 03: Lead Developer]]
   - [[07-Core-KMS/Role-Prompts/04-QA/Prompt-QA|🧪 Role 04: QA]]
+  - [[07-Core-KMS/Role-Prompts/05-FleetArchitect/Prompt-Fleet-Architect|🏛️ Role 05: Fleet Architect]]
+  - [[07-Core-KMS/Role-Prompts/06-DocMaintainer/Prompt-DocMaintainer|📚 Role 06: DocMaintainer]]
+  - [[07-Core-KMS/Role-Prompts/07-FleetCommander/Prompt-FleetCommander|🛰️ Role 07: Fleet Commander]]
   - [[07-Core-KMS/Role-Prompts/08-Purger/Mister-Straight-to-Goal|🧹 Role 08: Purger]]
+  - [[07-Core-KMS/Role-Prompts/09-Sentinel/Prompt-Sentinel|🛡️ Role 09: Sentinel]]
 
-## ⚡ 10 - State and Tasks
-Current sprint tracking, task inboxes, and domain dashboards.
-- [[10-State-and-Tasks/Sprint-Dashboard|⚡ Live Sprint Dashboard]]
-- [[10-State-and-Tasks/Domain-Dashboard|🌐 Domain Ontology Matrix]]
-- [[10-State-and-Tasks/Templates-MOC|⚡ Templates Index]]
-- [[10-State-and-Tasks/Inbox/Templates/Template-00-Idea-Pitch|📥 Task Inbox (Template)]]
+## ⚡ Dashboards & Foundry
+Live sprint tracking and standardized templates.
+- [[99-Humans/Sprint-Dashboard|⚡ Live Sprint Dashboard]]
+- [[99-Humans/Domain-Dashboard|🌐 Domain Ontology Matrix]]
+- [[00-AI-Orchestration/Templates/Template-00-Idea-Pitch|📥 Task Inbox (Foundry)]]
 
 ## 🛠️ 20 - Scripts
 Ecosystem automation scripts.
 - [[03-Tech-Stack/05-Project-Scripts/Multi-Repo-Validator.py|Multi-repo Validator]]
 - [[07-Core-KMS/Scripts/Joint-Audit-Purger.py|🧹 Purger: Dark Matter Audit]]
 - [[20-Scripts/start_squad.py|Squad Launcher]]
+- [[20-Scripts/verify_links_script.py|Link Integrity Validator]]
 
 ---
 ## 🧪 Quality & Testing

@@ -90,7 +90,7 @@ To keep navigation predictable for both humans and AI, the vault follows this nu
 
 | Folder                             | Purpose                  | Governance               |
 | ---------------------------------- | ------------------------ | ------------------------ |
-| **`00-AI-Orchestration`**  | Meta-Logic & Rules       | Mandatory Rules          |
+| **`00-AI-Orchestration`**  | Meta-Logic & Templates   | Global Rules & Foundry   |
 | **`01-Strategic-Nexus`**   | Strategic Oracle Brain   | Analysis Only            |
 | **`02-Business-BDD`**      | **Zone 1: Frozen** | Behavior Specs (Gherkin) |
 | **`03-Tech-Stack`**        | Architecture & Standards | ADRs & Wisdom            |
@@ -98,7 +98,6 @@ To keep navigation predictable for both humans and AI, the vault follows this nu
 | **`05-Fleet-Operation`**   | **Zone 3: Fleet**  | Multi-Repo Inventory     |
 | **`06-Microservices`**     | Service Hubs             | Operational Docs         |
 | **`07-Core-KMS`**          | AI Agent Engine          | Agent Prompts (OS)       |
-| **`10-State-and-Tasks`**   | Task Tracking            | Inbox & Sprints          |
 | **`20-Scripts`**           | Automation               | CLI Scripts              |
 
 ---

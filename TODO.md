@@ -17,7 +17,7 @@ tags:
 - [ ] **Knowledge Compression Script**: Implement an automated way to distill old session logs into fresh patterns to keep the context window clean.
 
 ## 🏗️ Architecture & Refactoring
-- [ ] Consolidate common BDD templates into a centralized `00-Master-Templates` folder.
+- [x] Consolidate common BDD templates into a centralized `00-AI-Orchestration/Templates/` folder.
 
 ## ✅ Completed
 - [x] Initial structure for `02-Business-BDD`. (Now `business-bdd-brain`)
