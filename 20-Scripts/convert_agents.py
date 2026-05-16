@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding:utf-8
+
 """
 ESSENTIAL PROCESS:
 Converts the human-readable Role-Prompts from the core-kms-brain into 

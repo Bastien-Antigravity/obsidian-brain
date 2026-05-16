@@ -10,6 +10,7 @@ domain_glossary_path: 02-Business-BDD/01-Domain-Glossary/00-Glossary.md
 master_moc_path: Ecosystem-Map-MOC.md
 tag_taxonomy_path: 07-Core-KMS/tag_taxonomy.md
 roles_path: 07-Core-KMS/Role-Prompts
+templates_path: 00-AI-Orchestration/Templates
 labs_brain_path: 04-Rapid-Prototyping
 ops_brain_path: 05-Fleet-Operation
 tags:

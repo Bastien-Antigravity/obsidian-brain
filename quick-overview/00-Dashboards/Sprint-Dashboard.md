@@ -4,9 +4,9 @@ type: task
 status: active
 tags:
 - \'#service/obsidian-brain\'
-- null
-- '#type/task'
+- '#type/dashboard'
 - '#state/active'
+- '#ai/ignore'
 ---
 
 # ⚡ Live Sprint Dashboard
