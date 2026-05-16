@@ -17,12 +17,20 @@ tags: ['#type/governance', '#state/active']
 - **FleetArchitect**: 
     - Maintain the integrity of the `Knowledge-Strategy.md` and `Ecosystem-Map-MOC.md`.
     - Ensure that submodules (`01-Strategic-Nexus`, `07-Core-KMS`, `03-Tech-Stack`, `02-Business-BDD`, `05-Fleet-Operation`, `04-Rapid-Prototyping`) are synchronized.
+- **Orchestrator**: 
+    - Act as the central "Pipeline Director."
+    - Score task complexity (Fast-Track vs Standard) and route to downstream roles.
+- **FleetCommander**: 
+    - Manage the synchronization and deployment of the entire fleet.
+    - Enforce compliance before all git pushes using `fleet-manager.py`.
 - **DocMaintainer**:
     - Manage the **Isolation Protocol** and frontmatter integrity across the fleet.
     - Automate the injection of `#service/` tags.
 - **Sentinel**: 
     - Run `Brain-Health-Audit.py` to verify link integrity and YAML compliance.
     - Audit the `AI-Session-State` consistency across repositories.
+- **Purger**:
+    - Periodically identify and remove legacy files, orphaned drafts, and technical debt.
 - **Oracle (Chronos-Oracle)**:
     - Perform **Log-Driven Strategic Synthesis** by default at the start of every session.
     - Maintain the `01-Strategic-Nexus/` vault and the **Anti-Backlog**.
