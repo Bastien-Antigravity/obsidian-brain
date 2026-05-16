@@ -17,27 +17,29 @@ KEY PARAMETERS:
 - mcp_args: Dynamic arguments for the filesystem MCP server.
 """
 
-import sys
-import os
-import json
+from sys import executable as sysExecutable, path as sysPath, stdout as sysStdout, exit as sysExit
+from os import makedirs as osMakedirs, listdir as osListdir, name as osName
+from json import dump as jsonDump, load as jsonLoad
 from subprocess import run as subprocessRun
-from os.path import abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, exists as osPathExists, expanduser as osPathExpanduser, isdir as osPathIsdir
+from os.path import abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, exists as osPathExists, \
+                    expanduser as osPathExpanduser, isdir as osPathIsdir, basename as osPathBasename
 
 # Add current directory to sys.path to enable library imports
 script_dir = osPathDirname(osPathAbspath(__file__))
-if script_dir not in sys.path:
-    sys.path.append(script_dir)
+if script_dir not in sysPath:
+    sysPath.append(script_dir)
 
 try:
     from switch_mode import get_mode_choice_interactive, apply_mode_protocol, MODES
+    from mission_help import MissionHelper
 except ImportError:
-    print("❌ Error: Could not find switch_mode.py in 20-Scripts/")
-    sys.exit(1)
+    print("❌ Error: Could not find switch_mode.py or mission_help.py in 20-Scripts/")
+    sysExit(1)
 
 # Standardize terminal output encoding for Windows
-if sys.stdout.encoding != 'utf-8':
+if sysStdout.encoding != 'utf-8':
     try:
-        sys.stdout.reconfigure(encoding='utf-8')
+        sysStdout.reconfigure(encoding='utf-8')
     except (AttributeError, Exception):
         pass
 
@@ -53,13 +55,13 @@ def setup_mcp(mode_choice: str) -> None:
     settings_file = osPathJoin(settings_dir, "settings.json")
     
     if not osPathExists(settings_dir):
-        os.makedirs(settings_dir, exist_ok=True)
+        osMakedirs(settings_dir, exist_ok=True)
     
     settings = {}
     if osPathExists(settings_file):
         try:
             with open(settings_file, 'r', encoding='utf-8') as f:
-                settings = json.load(f)
+                settings = jsonLoad(f)
         except Exception:
             print("⚠️ Warning: Corruption detected in settings.json. Starting fresh.")
     
@@ -80,7 +82,7 @@ def setup_mcp(mode_choice: str) -> None:
     current_excludes = mode_excludes_map.get(mode_choice, set())
     allowed_dirs = []
     
-    for item in os.listdir(vault_root):
+    for item in osListdir(vault_root):
         if item in global_excludes or item in current_excludes:
             continue
         item_path = osPathJoin(vault_root, item)
@@ -95,7 +97,7 @@ def setup_mcp(mode_choice: str) -> None:
     }
     
     with open(settings_file, 'w', encoding='utf-8') as f:
-        json.dump(settings, f, indent=2)
+        jsonDump(settings, f, indent=2)
         
     print(f"✅ MCP Context Boundary defined. Vault bound: {vault_root}")
 
@@ -118,8 +120,8 @@ def run_preflight() -> None:
     
     for script in scripts:
         if osPathExists(script):
-            print(f"📡 Executing Governance Audit: {os.path.basename(script)}...")
-            subprocessRun([sys.executable, script])
+            print(f"📡 Executing Governance Audit: {osPathBasename(script)}...")
+            subprocessRun([sysExecutable, script])
 
 def regenerate_agents() -> None:
     """
@@ -129,7 +131,7 @@ def regenerate_agents() -> None:
     convert_script = osPathJoin(script_dir, "convert_agents.py")
     if osPathExists(convert_script):
         print("🔄 Synchronizing AI Squad Roles across adapters...")
-        subprocessRun([sys.executable, convert_script])
+        subprocessRun([sysExecutable, convert_script])
 
 # -----------------------------------------------------------------------------------------------
 
@@ -166,10 +168,14 @@ def start_engine() -> None:
         # 3. Protocol Enforcement
         setup_mcp(choice)
         
-        # 4. CLI Execution
+        # 4. Display Mission Guidance
+        helper = MissionHelper()
+        helper.print_cheat_sheet()
+        
+        # 5. CLI Execution
         print(f"\n🚀 Firing up the Gemini CLI [Protocol: {choice}]...")
         try:
-            if os.name == 'nt':
+            if osName == 'nt':
                 subprocessRun(["gemini"], shell=True)
             else:
                 subprocessRun(["gemini"])
@@ -194,4 +200,4 @@ if __name__ == "__main__":
         start_engine()
     except KeyboardInterrupt:
         print("\n\n👋 Forced exit. Session terminated.")
-        sys.exit(0)
+        sysExit(0)

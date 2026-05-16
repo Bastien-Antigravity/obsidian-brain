@@ -20,12 +20,12 @@ from os import walk as osWalk
 from os.path import relpath as osPathRelpath, join as osPathJoin, isdir as osPathIsdir, dirname as osPathDirname, abspath as osPathAbspath
 from re import findall as reFindall
 from typing import Dict, List, Tuple
-import sys
+from sys import stdout as sysStdout
 
 # Standardize terminal output encoding for Windows
-if sys.stdout.encoding != 'utf-8':
+if sysStdout.encoding != 'utf-8':
     try:
-        sys.stdout.reconfigure(encoding='utf-8')
+        sysStdout.reconfigure(encoding='utf-8')
     except (AttributeError, Exception):
         pass
 

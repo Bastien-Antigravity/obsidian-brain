@@ -137,28 +137,9 @@ class FleetCommander:
         
         return success
 
-    def audit_quick_overview(self, repo_path: Path, repo_name: str) -> bool:
-        self._step(repo_name, "Auditing quick-overview directory")
-        qo_dir = repo_path / "quick-overview"
-        if not qo_dir.exists():
-            self._log(f"[{repo_name}] Missing quick-overview directory.", "error")
-            return False
-            
-        expected_files = [
-            "Architecture-Overview.md",
-            "Features-Behavior.md",
-            "General-Misc.md",
-            "Testing-Playbook.md"
-        ]
-        
-        success = True
-        for filename in expected_files:
-            file_path = qo_dir / filename
-            if not file_path.exists():
-                self._log(f"[{repo_name}] Missing file in quick-overview: {filename}", "error")
-                success = False
-                
-        return success
+    def audit_isolation_zone(self, repo_path: Path, repo_name: str) -> bool:
+        self._step(repo_name, "Auditing isolation zone compliance")
+        return self.engine.validate_isolation_zone(repo_path, repo_name)
 
     def validate_architecture(self, repo_path: Path, repo_name: str) -> bool:
         self._step(repo_name, "Validating fleet architecture rules")
@@ -233,9 +214,9 @@ class FleetCommander:
             else:
                 docs_ok = self.audit_docs(repo_path, repo)
                 arch_ok = self.validate_architecture(repo_path, repo)
-                qo_ok = self.audit_quick_overview(repo_path, repo)
+                iso_ok = self.audit_isolation_zone(repo_path, repo)
 
-                if not (docs_ok and arch_ok and qo_ok):
+                if not (docs_ok and arch_ok and iso_ok):
                     self._log(f"{repo} failed compliance audits. Skipping.", "error")
                     results.append(f"{repo}: [ERROR] Compliance check failed")
                     continue

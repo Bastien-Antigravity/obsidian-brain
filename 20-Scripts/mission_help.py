@@ -32,8 +32,16 @@ class MissionHelper:
         print("\n--- 💡 Bastien-Antigravity Squad Cheat Sheet ---")
         
         print("\n👥 The Squad (Available for Delegation)")
-        print("   - Orchestrator, Architect, Developer, QA, Sentinel, Oracle,")
-        print("     FleetArchitect, FleetCommander, DocMaintainer, Purger.")
+        print("   - Orchestrator  : Mission planning & coordination.")
+        print("   - Architect     : System design & ADR enforcement.")
+        print("   - Developer     : Feature implementation & bug fixing.")
+        print("   - QA            : Testing, BDD specs, & auditing.")
+        print("   - Sentinel      : Governance, sovereignty, & health audits.")
+        print("   - Oracle        : Strategic nexus & trajectory analysis.")
+        print("   - FleetArchitect: Cross-repo standards & CI/CD logic.")
+        print("   - FleetCommander: Multi-repo sync & git orchestration.")
+        print("   - DocMaintainer : Link integrity, MOCs, & knowledge mapping.")
+        print("   - Purger        : Technical debt & redundant file removal.")
 
         print("\n🛡️ Mode 1: Spec-First")
         print("   > Ask QA to audit @06-Microservices against specs in @02-Business-BDD.")
@@ -44,32 +52,22 @@ class MissionHelper:
         print("\n🛰️ Mode 3: Fleet-Commander")
         print("   > Ask Fleet Commander to sync the ecosystem to the develop branch.")
         
-        print("\n🔭 Strategic Oracle")
-        print("   > Ask Oracle for a Nexus Pulse on the project trajectory.")
-        
         print("\n🔄 Protocols & Maintenance")
         print("   > Ask Sentinel to switch to Mode 2 and update the manual.")
         print("   > Ask DocMaintainer to repair links in the vault and update the MOC.")
         
-        print("\n🧹 Cleanup")
-        print("   > Ask Purger to audit the vault for redundant files and suggest removals.")
-        
-        print("\n💾 Session Persistence")
+        print("\n🏁 Session Persistence")
         print("   > \"Restore session state\" (Load context at start)")
         print("   > \"Update AI-Session-State.md with progress\" (Save context at end)")
         
         print("\n🛠️ CLI Utility Commands")
-        print("   > /mcp list    (Verify tool availability)")
-        print("   > /agents list (See all available squad members)")
-        print("   > /help        (Native Gemini CLI help)")
-
-        print("\n💬 Direct Interaction (Tier 1)")
-        print("   > [SCAN] Analyze @Ecosystem-Map-MOC.md and suggest next steps.")
+        print("   - /mcp list    : Verify tool availability.")
+        print("   - /agents list : See all available squad members.")
         
         print("\n🔑 Keywords & Symbols")
         print("   - [SCAN]   : Mandatory header for every AI response.")
-        print("   - @<file> : Use '@' to give the AI a specific file (e.g. @README.md).")
-        print("   - !<cmd>  : Use '!' to run terminal commands (e.g. !ls).")
+        print("   - @<file> : Mention a file for context (e.g. @README.md).")
+        print("   - !<cmd>  : Execute terminal commands (e.g. !ls).")
         print("\n-------------------------------------------------\n")
 
 # ### MAIN EXECUTION ###

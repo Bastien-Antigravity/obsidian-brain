@@ -14,6 +14,7 @@ class Sovereignty:
     # --- Configuration ---
     REQUIRED_YAML = ["microservice", "type", "status"]
     MANDATORY_TAG_ROOTS = ["#type/", "#state/"]
+    TRANSVERSAL_TAG_ROOTS = ["#tech/", "#tier/", "#zone/"]
     
     # --- Result Structure ---
     def __init__(self, taxonomy_path: Path = None):
@@ -62,10 +63,46 @@ class Sovereignty:
         return len(missing) == 0
 
     def validate_taxonomy(self, content: str, file_name: str):
-        """Ensures #type/ and #state/ tags are present."""
+        """Ensures mandatory and transversal tags are present."""
+        # 1. Mandatory Roots
         for tag_root in self.MANDATORY_TAG_ROOTS:
             if tag_root not in content:
                 self.log_warning(f"[{file_name}] Missing recommended taxonomy tag: '{tag_root}'")
+        
+        # 2. Transversal Trinity (Need at least one of these)
+        if not any(t in content for t in self.TRANSVERSAL_TAG_ROOTS):
+            self.log_error(f"[{file_name}] TRANSVERSAL ERROR: File must have at least one #tech/, #tier/, or #zone/ tag.")
+
+    def validate_isolation_zone(self, repo_path: Path, repo_name: str) -> bool:
+        """Checks for the presence and structure of the isolation zone."""
+        is_brain = (repo_name == "obsidian-brain")
+        zone_name = "99-Humans" if is_brain else "quick-overview"
+        zone_dir = repo_path / zone_name
+        
+        if not zone_dir.exists():
+            self.log_error(f"[{repo_name}] Missing mandatory isolation zone: {zone_name}")
+            return False
+            
+        # Define mandatory files for the zone
+        if is_brain:
+            # Brain only requires the core dashboards
+            mandatory = ["Sprint-Dashboard.md", "Domain-Dashboard.md"]
+        else:
+            # Microservices require the full structural quartet
+            mandatory = [
+                "Architecture-Overview.md", 
+                "Features-Behavior.md", 
+                "Testing-Playbook.md", 
+                "General-Misc.md"
+            ]
+            
+        success = True
+        for filename in mandatory:
+            if not (zone_dir / filename).exists():
+                self.log_error(f"[{repo_name}] Missing file in {zone_name}: {filename}")
+                success = False
+        
+        return success
 
     def validate_links(self, content: str, file_name: str, valid_stems: Set[str], valid_paths: Set[str]):
         """Identifies broken [[Links]]."""

@@ -16,8 +16,8 @@ KEY PARAMETERS:
 """
 
 from os.path import abspath as osPathAbspath, join as osPathJoin, dirname as osPathDirname, exists as osPathExists
-import re
-import sys
+from re import sub as reSub
+from sys import stdout as sysStdout
 
 # --- Configuration ---
 MODES = {
@@ -28,9 +28,9 @@ MODES = {
 }
 
 # Standardize terminal output encoding for Windows
-if sys.stdout.encoding != 'utf-8':
+if sysStdout.encoding != 'utf-8':
     try:
-        sys.stdout.reconfigure(encoding='utf-8')
+        sysStdout.reconfigure(encoding='utf-8')
     except (AttributeError, Exception):
         pass
 
@@ -47,7 +47,7 @@ def _update_file_field(file_path: str, field_pattern: str, replacement: str) -> 
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    new_content = re.sub(field_pattern, replacement, content)
+    new_content = reSub(field_pattern, replacement, content)
     
     if new_content != content:
         with open(file_path, 'w', encoding='utf-8') as f:
