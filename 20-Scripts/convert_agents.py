@@ -17,6 +17,7 @@ KEY PARAMETERS:
 - target_dir: Path to the generated Gemini agent definitions.
 """
 
+import os
 from os import listdir as osListdir, makedirs as osMakedirs
 from os.path import dirname as osPathDirname, abspath as osPathAbspath, join as osPathJoin, isdir as osPathIsdir, exists as osPathExists
 from glob import glob as globGlob
@@ -44,9 +45,34 @@ def main() -> None:
     if not osPathIsdir(source_dir):
         source_dir = osPathJoin(workspace_root, "obsidian-brain", "07-Core-KMS", "Role-Prompts")
     
-    target_dir = osPathJoin(workspace_root, "obsidian-brain", ".gemini", "agents")
+    # Define supported AI CLI adapters and their relative agent paths
+    ADAPTERS = {
+        "Gemini": ".gemini/agents",
+        "Claude": ".claude/agents",
+        "OpenAI": ".codex/agents",
+        "Mistral": ".mistral/agents",
+        "DeepSeek": ".deepseek/agents"
+    }
 
-    osMakedirs(target_dir, exist_ok=True)
+    # Identify active adapters (only sync if the parent tool directory exists)
+    active_targets = []
+    for name, rel_path in ADAPTERS.items():
+        parent_dir = osPathJoin(workspace_root, "obsidian-brain", rel_path.split("/")[0])
+        if osPathIsdir(parent_dir):
+            target = osPathJoin(workspace_root, "obsidian-brain", rel_path)
+            osMakedirs(target, exist_ok=True)
+            active_targets.append((name, target))
+
+    if not active_targets:
+        print("⚠️ No active AI adapters found (.gemini, .claude, etc.).")
+        return
+
+    # Cleanup: Remove orphaned agents in all active targets
+    for name, target in active_targets:
+        print(f"🧹 Purging old {name} agents in {target}...")
+        for f in osListdir(target):
+            if f.endswith(".md"):
+                os.remove(osPathJoin(target, f))
 
     # Map folder names to clean agent names
     for folder in osListdir(source_dir):
@@ -81,10 +107,12 @@ To prevent context degradation, you MUST begin EVERY single response with the fo
 **[SCAN]** Role: {agent_name} | Source: [Source Verification] | State: [Session Progress]
 """
                 
-                target_file = osPathJoin(target_dir, f"{agent_name}.md")
-                with open(target_file, 'w', encoding='utf-8') as f:
-                    f.write(yaml_frontmatter + content + "\n" + scan_block)
-                print(f"Created agent: {target_file}")
+                # Sync to all active targets
+                for name, target in active_targets:
+                    target_file = osPathJoin(target, f"{agent_name}.md")
+                    with open(target_file, 'w', encoding='utf-8') as f:
+                        f.write(yaml_frontmatter + content + "\n" + scan_block)
+                    print(f"   [{name}] Created agent: {agent_name}")
 
 # -----------------------------------------------------------------------------------------------
 
