@@ -31,7 +31,7 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 - **Rule 2**: Every fix must be audited against the spec before merging.
 - **Rule 3**: Code cannot be merged until it strictly passes all Spec tests.
 - **Primary Brains**: `02-Business-BDD`, `03-Tech-Stack`
-- **AI Persona**: Unified **Systems Engineer** (applying QA, Architecture, and Development rules natively without roleplaying).
+- **AI Persona**: **BrainSentinel** & **FleetArchitect** (Enforcing strict BDD compliance and architectural integrity).
 - **Best For**: Core libraries, financial logic, and stable infrastructure.
 
 ---
@@ -42,9 +42,9 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
 - **Rule 1**: BDD Specs are optional. Focus on speed and "MVP" (Minimum Viable Product).
 - **Rule 2**: Work is isolated in `04-Rapid-Prototyping/`. Experiments are logged in
   `01-Experiment-Index/` using the experiment template.
-- **Rule 3**: After a "Labs" feature is validated, perform a "Graduation Ceremony" — creating the BDD spec in `02-Business-BDD` and transitioning the code to Mode 1 standards.
+- **Rule 3**: After a "Labs" feature is validated, perform a "Graduation Ceremony" — creating the BDD spec in `02-Business-BDD`, populating the `quick-overview/` docs via the **DocMaintainer**, and transitioning the code to Mode 1 standards.
 - **Primary Brain**: `04-Rapid-Prototyping`
-- **AI Persona**: Unified **Systems Engineer** (focused on fast-track development and rapid iteration).
+- **AI Persona**: **Developer** & **DocMaintainer** (Focused on fast iteration followed by documentation hardening).
 - **Best For**: UI/UX design, new trading strategies, and one-off 20-Scripts.
 
 ---
@@ -57,7 +57,7 @@ between these modes, the USER can balance between **Safety (Specs)**, **Speed (L
   `05-Fleet-Operation/01-Fleet-Action-Plans/` rather than individual lines of code.
 - **Rule 3**: Automated testing is mandatory for every repo in the action plan.
 - **Primary Brain**: `05-Fleet-Operation`
-- **AI Persona**: Unified **Systems Engineer** (focused on global architecture, synchronization, and ecosystem integrity).
+- **AI Persona**: **FleetCommander** (Focused on global architecture, synchronization, and ecosystem integrity).
 - **Best For**: Global refactors, dependency updates, and release cycles.
 
 ---

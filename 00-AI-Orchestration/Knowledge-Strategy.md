@@ -27,9 +27,10 @@ Depending on the task, we apply different conceptual layers.
 ### B. Tags: Dimensions & States (The "What" and "Status")
 **Use for:** Cross-cutting concerns that apply regardless of the folder. Tags allow us to filter files globally.
 **Our Paradigm:** Use nested tags.
-* Examples of Type Tags: `#type/architecture`, `#type/test-scenario`, `#type/sprint-plan`
+* Examples of Type Tags: `#type/architecture`, `#type/test-scenario`, `#type/sprint-plan`, `#type/governance`
+* Examples of Transversal Tags: `#service/`, `#tech/`, `#tier/`, `#zone/`
 * Examples of State Tags: `#state/draft`, `#state/active`, `#state/deprecated`, `#ai/task` 
-*(If you want me to look at something, tag it `#ai/task` and I'll know it's for me!)*
+* Isolation Tags: `#ai/ignore` (Hides document from AI context)
 
 ### C. YAML Frontmatter: Programmable Metadata (The "Database")
 **Use for:** structured key-value pairs at the very top of your markdown files. Essential for using querying plugins like Dataview.
@@ -91,8 +92,8 @@ As your AI assistant, this system allows us to work together fluidly.
 
 ### B. Session State Management
 We don't need to lose our train of thought between days.
-* **Save State:** At the end of a session, ask me to *"Save session state"*. I will summarize our progress, known bugs, and the next steps into `01-AI-Assistant/AI-Session-State.md`.
-* **Restore State:** Next time you engage with me, just say *"Restore session state"* and I will pick up right where we left off based on that file!
+* **Save State:** At the end of a session, ask me to *"Save session state"*. I will summarize our progress, known bugs, and the next steps into `00-AI-Orchestration/AI-Session-State.md`.
+* **Restore State:** Next time you engage with me, just say *"Restore session state"*. I will pick up right where we left off based on that file!
 
 ---
 > [!TIP] Progressive Disclosure (Level-based Organization)
@@ -128,3 +129,11 @@ When the user requests a feature, the AI MUST first act as a "Spec Specialist" t
 2. Draft a detailed Gherkin spec (`Given/When/Then`) based on the user's intent.
 3. Account for edge cases and technical constraints.
 4. Obtain user approval (`status: approved`) before transitioning to the "Developer" role.
+
+### D. The Documentation Isolation Protocol
+**Decision Date:** 2026-05-16
+**Context:** AI agents were becoming overwhelmed by human-centric notes, causing context window bloat and task drift.
+**Decision:** Implementation of `#ai/ignore` tags and mandatory `quick-overview/` scaffolding.
+1. **Rule:** AI agents MUST ignore any file tagged with `#ai/ignore`.
+2. **Standard:** Every microservice must have a `quick-overview/` folder with architectural and behavioral summaries for human consumption only.
+**Impact:** 100% isolation of technical "Human-only" data; cleaner AI context windows.

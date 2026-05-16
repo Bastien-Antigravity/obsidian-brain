@@ -39,7 +39,7 @@ tags: ['#type/governance', '#state/active']
 
 ## 🚦 Lifecycle & Versioning
 - **Primary Branch**: `develop`
-- **Protected Branches**: `develop`, `main`
+- **Protected Branches**: `main`
 - **Versioning Strategy**: N/A (Continuous updates).
 - **Version Source of Truth**: `VERSION.txt` (Set to `1.0.0` for tracking).
 
