@@ -43,14 +43,17 @@ class FleetCommander:
         self.base_path: str = base_path
         self.dry_run: bool = dry_run
         self.engine = Sovereignty()
+        self.excluded_repos = set()
         
         self.inventory_path = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/00-Repo-Control/inventory.json")
+        
+        all_repos = self._load_inventory()
         
         if target_repo:
             self.repos = [target_repo]
             self.single_mode = True
         elif is_fleet:
-            self.repos = self._load_inventory()
+            self.repos = all_repos
             self.single_mode = False
         else:
             print("❌ Error: You must explicitly specify either --repo <name> or --fleet.")
@@ -59,7 +62,7 @@ class FleetCommander:
         self.commit_msg: str = commit_msg or "chore(fleet): standardized fleet operation"
 
     def _load_inventory(self) -> List[str]:
-        """Loads repository paths from inventory.json."""
+        """Loads repository paths from inventory.json and populates compliance exclusions."""
         import json
         if not osPathExists(self.inventory_path):
             self._log(f"Inventory not found at {self.inventory_path}", "error")
@@ -76,6 +79,10 @@ class FleetCommander:
                     if repo_path.startswith("./"):
                         repo_path = repo_path[2:]
                     repos.append(repo_path)
+                    
+                    if repo.get("exclude_from_compliance", False):
+                        self.excluded_repos.add(repo_path)
+                        self.excluded_repos.add(repo.get("name", ""))
                 return repos
         except Exception as e:
             self._log(f"Failed to load inventory: {e}", "error")
@@ -207,9 +214,8 @@ class FleetCommander:
                 continue
 
             # 2. Compliance Audits
-            excluded_repos = ["obsidian-brain", "01-Strategic-Nexus", "02-Business-BDD", "03-Tech-Stack", "04-Rapid-Prototyping", "05-Fleet-Operation", "07-Core-KMS"]
-            
-            if repo in excluded_repos:
+            is_excluded = repo in self.excluded_repos or repo.split("/")[-1] in self.excluded_repos
+            if is_excluded:
                 self._log(f"[{repo}] Skipping strict compliance audits (Knowledge-Base).", "info")
             else:
                 docs_ok = self.audit_docs(repo_path, repo)
