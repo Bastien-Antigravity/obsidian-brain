@@ -47,10 +47,12 @@ class FleetCommander:
         
         self.inventory_path = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/00-Repo-Control/inventory.json")
         
+        self.repo_name_to_path = {}
         all_repos = self._load_inventory()
         
         if target_repo:
-            self.repos = [target_repo]
+            resolved_path = self.repo_name_to_path.get(target_repo, target_repo)
+            self.repos = [resolved_path]
             self.single_mode = True
         elif is_fleet:
             self.repos = all_repos
@@ -80,9 +82,13 @@ class FleetCommander:
                         repo_path = repo_path[2:]
                     repos.append(repo_path)
                     
+                    repo_name = repo.get("name", "")
+                    if repo_name:
+                        self.repo_name_to_path[repo_name] = repo_path
+                    
                     if repo.get("exclude_from_compliance", False):
                         self.excluded_repos.add(repo_path)
-                        self.excluded_repos.add(repo.get("name", ""))
+                        self.excluded_repos.add(repo_name)
                 return repos
         except Exception as e:
             self._log(f"Failed to load inventory: {e}", "error")
