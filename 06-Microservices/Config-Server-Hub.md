@@ -1,12 +1,12 @@
---- 
+---
 microservice: config-server
 type: service-hub
 status: active
 tags:
-- \'#service/config-server\'
+- '#service/config-server'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Config-Server
 

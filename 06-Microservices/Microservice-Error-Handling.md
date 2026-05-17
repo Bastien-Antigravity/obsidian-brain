@@ -1,11 +1,12 @@
 ---
 microservice: obsidian-brain
-type: governance
+type: protocol
 status: active
 tags:
-- \'#service/obsidian-brain\'
-- '#type/governance'
+- '#service/obsidian-brain'
+- '#type/protocol'
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # Microservice Error Handling
 

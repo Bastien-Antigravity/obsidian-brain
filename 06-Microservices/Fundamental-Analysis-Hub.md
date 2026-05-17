@@ -1,12 +1,12 @@
---- 
+---
 microservice: fundamental-analysis
 type: service-hub
 status: active
 tags:
-- \'#service/fundamental-analysis\'
+- '#service/fundamental-analysis'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Fundamental-Analysis
 

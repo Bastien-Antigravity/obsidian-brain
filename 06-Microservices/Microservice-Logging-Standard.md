@@ -1,13 +1,13 @@
 ---
+microservice: ecosystem-wide
 type: protocol
 status: active
-microservice: ecosystem-wide
 tags:
-- \'#service/ecosystem-wide\'
+- '#service/ecosystem-wide'
 - '#type/protocol'
 - '#state/active'
+- '#zone/3-fleet'
 ---
-
 # 📜 Microservice Logging Standard
 
 This protocol defines the standardized logging behavior for all microservices in the Bastien Ecosystem. It ensures observability, traceability, and security across all supported languages (Go, Rust, Python, C++).

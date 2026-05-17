@@ -1,13 +1,13 @@
 ---
+microservice: ecosystem-wide
 type: protocol
 status: active
-microservice: ecosystem-wide
 tags:
-- \'#service/ecosystem-wide\'
+- '#service/ecosystem-wide'
 - '#type/protocol'
 - '#state/active'
+- '#zone/3-fleet'
 ---
-
 # 📜 Unified Control Protocol (gRPC/REST Parity)
 
 This protocol mandates that all control and configuration capabilities in the Bastien Ecosystem MUST be accessible via both **gRPC** (for internal automation) and **REST/HTTP** (for the Web Interface).

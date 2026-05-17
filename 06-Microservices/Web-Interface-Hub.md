@@ -1,11 +1,12 @@
---- 
+---
 microservice: web-interface
 type: service-hub
 status: active
 tags:
-- \'#service/web-interface\'
+- '#service/web-interface'
 - '#type/service-hub'
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Web-Interface
 

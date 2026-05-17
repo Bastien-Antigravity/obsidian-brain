@@ -1,11 +1,12 @@
---- 
+---
 microservice: enhanced-backtesting
 type: service-hub
 status: active
 tags:
-- \'#service/enhanced-backtesting\'
+- '#service/enhanced-backtesting'
 - '#type/service-hub'
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Enhanced-Backtesting
 

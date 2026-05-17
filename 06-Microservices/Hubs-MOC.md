@@ -3,12 +3,11 @@ microservice: hubs-moc
 type: moc
 status: active
 tags:
-- \'#service/hubs-moc\'
-- '#state/active'
-- null
+- '#service/hubs-moc'
 - '#type/moc'
+- '#state/active'
+- '#zone/3-fleet'
 ---
-
 # Hubs MOC
 
 This index aggregates the operational hubs for the service fleet.

@@ -1,12 +1,12 @@
---- 
+---
 microservice: ontime-scheduler
 type: service-hub
 status: active
-language: Go
 tags:
-- \'#service/ontime-scheduler\'
+- '#service/ontime-scheduler'
 - '#type/service-hub'
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Ontime-Scheduler
 

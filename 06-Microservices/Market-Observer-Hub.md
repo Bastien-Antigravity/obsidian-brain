@@ -1,12 +1,12 @@
---- 
+---
 microservice: market-observer
 type: service-hub
 status: active
 tags:
-- \'#service/market-observer\'
+- '#service/market-observer'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Market-Observer
 

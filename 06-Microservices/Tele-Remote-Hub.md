@@ -1,12 +1,12 @@
---- 
+---
 microservice: tele-remote
 type: service-hub
 status: active
 tags:
-- \'#service/tele-remote\'
+- '#service/tele-remote'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Tele-Remote
 

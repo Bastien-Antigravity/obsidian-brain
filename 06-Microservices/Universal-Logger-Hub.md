@@ -1,12 +1,12 @@
---- 
+---
 microservice: universal-logger
 type: service-hub
 status: active
 tags:
-- \'#service/universal-logger\'
+- '#service/universal-logger'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Universal-Logger
 

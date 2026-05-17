@@ -1,13 +1,13 @@
 ---
+microservice: ecosystem-wide
 type: protocol
 status: active
-microservice: ecosystem-wide
 tags:
-- \'#service/ecosystem-wide\'
+- '#service/ecosystem-wide'
 - '#type/protocol'
 - '#state/active'
+- '#zone/3-fleet'
 ---
-
 # 📜 Microservice Startup Protocol
 
 This protocol defines the standardized initialization sequence for all microservices in the Bastien Ecosystem. It ensures parity in configuration loading, argument handling, and logging across **Go, Rust, Python, and C++**.

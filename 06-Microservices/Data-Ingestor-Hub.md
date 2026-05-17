@@ -1,15 +1,12 @@
---- 
+---
 microservice: data-ingestor
 type: service-hub
 status: active
-infrastructure:
-  logger: universal-logger
-  config: microservice-toolbox
 tags:
-- \'#service/data-ingestor\'
+- '#service/data-ingestor'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Data-Ingestor
 

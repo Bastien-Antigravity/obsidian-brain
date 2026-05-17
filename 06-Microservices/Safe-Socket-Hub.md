@@ -1,12 +1,12 @@
---- 
+---
 microservice: safe-socket
 type: service-hub
 status: active
 tags:
-- \'#service/safe-socket\'
+- '#service/safe-socket'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Safe-Socket
 

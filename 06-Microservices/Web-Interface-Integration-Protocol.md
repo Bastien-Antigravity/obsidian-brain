@@ -1,13 +1,13 @@
 ---
+microservice: web-interface
 type: protocol
 status: active
-microservice: web-interface
 tags:
-- \'#service/web-interface\'
+- '#service/web-interface'
 - '#type/protocol'
 - '#state/active'
+- '#zone/3-fleet'
 ---
-
 # 🌐 Web Interface Integration Protocol
 
 This protocol defines how to centralize microservice management, monitoring, and real-time data visualization within the primary `web-interface` dashboard.

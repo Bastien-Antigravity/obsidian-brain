@@ -1,12 +1,12 @@
---- 
+---
 microservice: flexible-logger
 type: service-hub
 status: active
 tags:
-- \'#service/flexible-logger\'
+- '#service/flexible-logger'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Flexible-Logger
 

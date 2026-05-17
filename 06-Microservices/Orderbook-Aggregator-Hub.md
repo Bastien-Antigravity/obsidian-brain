@@ -3,11 +3,11 @@ microservice: orderbook-aggregator
 type: service-hub
 status: active
 tags:
-- \'#service/orderbook-aggregator\'
+- '#service/orderbook-aggregator'
 - '#type/service-hub'
 - '#state/active'
+- '#zone/3-fleet'
 ---
-
 # 📦 Service Hub: Orderbook-Aggregator
 
 *Unified stream for multi-exchange orderbook data.*

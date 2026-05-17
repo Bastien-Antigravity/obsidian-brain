@@ -1,12 +1,12 @@
---- 
+---
 microservice: sandbox-testing
 type: service-hub
 status: active
 tags:
-- \'#service/sandbox-testing\'
+- '#service/sandbox-testing'
 - '#type/service-hub'
-- null
 - '#state/active'
+- '#zone/3-fleet'
 ---
 # 🌐 Service Hub: Sandbox-Testing
 

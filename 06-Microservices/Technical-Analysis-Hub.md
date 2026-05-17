@@ -3,11 +3,11 @@ microservice: technical-analysis
 type: service-hub
 status: skeleton
 tags:
-- \'#service/technical-analysis\'
+- '#service/technical-analysis'
 - '#type/service-hub'
 - '#state/skeleton'
+- '#zone/3-fleet'
 ---
-
 # 📊 Service Hub: Technical-Analysis
 
 *Real-time and historical technical indicator calculations.*
