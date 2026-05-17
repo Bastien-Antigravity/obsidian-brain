@@ -207,7 +207,7 @@ class FleetCommander:
                 continue
 
             # 2. Compliance Audits
-            excluded_repos = ["obsidian-brain", "01-Strategic-Nexus", "02-Business-BDD", "03-Tech-Stack", "04-Rapid-Prototyping", "05-Fleet-Operation", "07-Core-KMS", "docker-deployment", "sandbox-testing", "config-server", "log-server", "tele-remote", "notif-server"]
+            excluded_repos = ["obsidian-brain", "01-Strategic-Nexus", "02-Business-BDD", "03-Tech-Stack", "04-Rapid-Prototyping", "05-Fleet-Operation", "07-Core-KMS"]
             
             if repo in excluded_repos:
                 self._log(f"[{repo}] Skipping strict compliance audits (Knowledge-Base).", "info")
