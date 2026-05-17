@@ -180,6 +180,14 @@ class FleetCommander:
         scope_str = "Single Repo" if self.single_mode else "Mass Push"
         self._log(f"Starting {scope_str} Operation{mode_str} ---", "info")
         
+        # Automatically trigger deployment logs housekeeping
+        try:
+            archiver_path = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py")
+            if osPathExists(archiver_path):
+                self._run_command(f"python3 {archiver_path}", self.base_path)
+        except Exception:
+            pass
+            
         # Pre-flight check
         git_ver, err = self._run_command("git --version", self.base_path)
         if err:
