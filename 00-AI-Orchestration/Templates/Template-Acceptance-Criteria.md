@@ -7,8 +7,7 @@ tags:
 - "#tech/TO-DO"
 - "#tier/TO-DO"
 - "#zone/TO-DO"
-- \'#service/<target-microservice>\'
-- type/acceptance-criteria
+- '#service/<target-microservice>'
 - '#type/acceptance-criteria'
 - '#state/template'
 ---
