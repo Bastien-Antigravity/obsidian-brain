@@ -180,11 +180,15 @@ class FleetCommander:
         scope_str = "Single Repo" if self.single_mode else "Mass Push"
         self._log(f"Starting {scope_str} Operation{mode_str} ---", "info")
         
-        # Automatically trigger deployment logs housekeeping
+        # Automatically trigger deployment logs & action plans housekeeping
         try:
-            archiver_path = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py")
-            if osPathExists(archiver_path):
-                self._run_command(f"python3 {archiver_path}", self.base_path)
+            log_archiver = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py")
+            if osPathExists(log_archiver):
+                self._run_command(f"python3 {log_archiver}", self.base_path)
+                
+            plan_archiver = osPathJoin(self.base_path, "obsidian-brain/05-Fleet-Operation/01-Fleet-Action-Plans/archive.py")
+            if osPathExists(plan_archiver):
+                self._run_command(f"python3 {plan_archiver}", self.base_path)
         except Exception:
             pass
             
