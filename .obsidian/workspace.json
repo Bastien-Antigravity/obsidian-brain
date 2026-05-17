@@ -181,6 +181,8 @@
   },
   "active": "ece5524dda1b9694",
   "lastOpenFiles": [
+    "02-Business-BDD/Behavior-Specs-MOC.md",
+    "scratch_audit.py",
     "00-AI-Orchestration/Knowledge-Strategy.md",
     "05-Fleet-Operation/00-Repo-Control/service-registry.json",
     "03-Tech-Stack/03-Project-Coding/tocom2",
@@ -198,7 +200,6 @@
     "20-Scripts/__pycache__/switch_mode.cpython-312.pyc",
     "20-Scripts/__pycache__/start_squad.cpython-312.pyc",
     "20-Scripts/__pycache__",
-    "20-Scripts/verify_links_script.py",
     "99-Humans/Domain-Dashboard.md",
     "quick-overview/00-Dashboards/Domain-Dashboard.md",
     "quick-overview/Domain-Dashboard.md",
@@ -216,7 +217,6 @@
     "00-AI-Orchestration/Templates/Template-03-QA-Test-Spec.md",
     "00-AI-Orchestration/Templates/Template-02-Architecture-Blueprint.md",
     "00-AI-Orchestration/Templates/Template-01-Master-Plan.md",
-    "00-AI-Orchestration/Templates/Template-00-Idea-Pitch.md",
     "03-Tech-Stack/02-Project-Architecture/Ecosystem-Topology.canvas"
   ]
 }
