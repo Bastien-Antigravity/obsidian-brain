@@ -1,17 +1,7 @@
----
-source: docker-deployment/modes/local/ide/setup_ide.py
-workspace: docker-deployment
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-13T19:49:59.575236
----
 
-# Mirror: setup_ide.py
-
-## 📝 Description
-Automatically generated mirror for `docker-deployment/modes/local/ide/setup_ide.py`.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: calls)
@@ -33,6 +23,3 @@ Automatically generated mirror for `docker-deployment/modes/local/ide/setup_ide.
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

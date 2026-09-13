@@ -1,17 +1,7 @@
----
-source: docker-deployment/modes/local/ghcr/auth.py
-workspace: docker-deployment
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-13T19:49:59.578683
----
 
-# Mirror: auth.py
-
-## 📝 Description
-Automatically generated mirror for `docker-deployment/modes/local/ghcr/auth.py`.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: calls)
@@ -34,6 +24,3 @@ Automatically generated mirror for `docker-deployment/modes/local/ghcr/auth.py`.
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publisher.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

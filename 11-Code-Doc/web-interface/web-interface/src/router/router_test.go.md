@@ -1,17 +1,7 @@
----
-source: web-interface/src/router/router_test.go
-workspace: web-interface
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-13T14:08:57.891667
----
 
-# Mirror: router_test.go
-
-## 📝 Description
-Automatically generated mirror for `web-interface/src/router/router_test.go`.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: calls)
@@ -68,6 +58,3 @@ Automatically generated mirror for `web-interface/src/router/router_test.go`.
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger]] (struct: belongs_to)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger]] (struct: defines_method)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

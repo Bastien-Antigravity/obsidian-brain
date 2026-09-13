@@ -13,6 +13,7 @@
 - [[docker-deployment/docker-deployment/scripts/common.py.md|common.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_public_key_path]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_service_ip]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_service_port]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|is_docker_active]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|is_git_tracked_or_unsafe]] (function: calls)

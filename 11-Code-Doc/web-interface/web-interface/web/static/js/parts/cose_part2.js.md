@@ -15,8 +15,3 @@
 ### 🔌 Consumers (Inbound)
 - None detected
 <!-- SYNC:END -->
-face/web/static/js/parts/cytoscape_part18.js.md|cytoscape_part18.js]] (same_package)
-
-### 🔌 Consumers (Inbound)
-- None detected
-<!-- SYNC:END -->
