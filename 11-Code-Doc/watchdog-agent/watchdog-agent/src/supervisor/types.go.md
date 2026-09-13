@@ -17,6 +17,7 @@
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorNotifServer]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagDashboard]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagEngine]] (constant: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRed]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorReset]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorStartSquad]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorTeleRemote]] (constant: belongs_to)

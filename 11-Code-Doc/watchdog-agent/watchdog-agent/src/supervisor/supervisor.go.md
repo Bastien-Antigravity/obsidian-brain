@@ -17,6 +17,7 @@
 - [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|postgres_launcher.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|registry.go]] (calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|registry.go]] (same_package)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|BuildService]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|FindServiceByName]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|IsPortListening]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|KillAll]] (function: belongs_to)

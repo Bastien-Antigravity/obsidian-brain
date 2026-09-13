@@ -10,9 +10,13 @@
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/router.go.md|requireAuth]] (function: calls)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
+- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/router/dynamic.go.md|registerDynamicRoutes]] (function: belongs_to)
+- [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (calls)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
 <!-- SYNC:END -->

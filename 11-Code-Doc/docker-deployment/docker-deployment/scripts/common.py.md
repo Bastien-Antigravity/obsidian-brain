@@ -1,0 +1,42 @@
+
+
+## 🏗️ Architectural Context
+
+<!-- SYNC:START -->
+### 📦 Dependencies (Outbound)
+- None detected
+
+### 🔌 Consumers (Inbound)
+- [[docker-deployment/docker-deployment/modes/docker/run.py.md|run.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publisher.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|setup_ide.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/production/run.py.md|run.py]] (calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|Colors]] (class: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|DEPLOY_DIR]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|EXE_EXT]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|IS_LINUX]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|IS_WINDOWS]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|SCRIPT_PATH]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|encrypt_secret_rsa]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_loopback_alias]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|generate_placeholder_secret]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_public_key_path]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_service_port]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|is_docker_active]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|is_git_tracked_or_unsafe]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|is_port_listening]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|load_env_file]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|strip_ansi]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|wait_for_port]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (calls)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (same_package)
+<!-- SYNC:END -->

@@ -18,5 +18,3 @@
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|system_timestamp]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|wrap_market_event]] (function: belongs_to)
 <!-- SYNC:END -->
-service-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|wrap_market_event]] (function: belongs_to)
-<!-- SYNC:END -->

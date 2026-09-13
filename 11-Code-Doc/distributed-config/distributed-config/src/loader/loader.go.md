@@ -7,8 +7,6 @@
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/core/defaults.go.md|NewDefaultConfig]] (function: calls)
 - [[distributed-config/distributed-config/src/core/merger.go.md|DeepMerge]] (function: calls)
-- [[distributed-config/distributed-config/src/secret/crypto.go.md|Decrypt]] (function: calls)
-- [[distributed-config/distributed-config/src/secret/crypto.go.md|crypto.go]] (imports)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
 
 ### 🔌 Consumers (Inbound)

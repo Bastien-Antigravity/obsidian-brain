@@ -4,7 +4,8 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|scenarioMockLogger.Close]] (method: calls)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|secret_isolation_integration_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/web_interface_bootstrap_test.go.md|TestWebInterfaceBootstrap]] (function: belongs_to)

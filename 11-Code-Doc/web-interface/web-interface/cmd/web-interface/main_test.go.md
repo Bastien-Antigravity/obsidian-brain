@@ -1,13 +1,4 @@
----
-microservice: 08-Base-Scripts
-type: note
-status: active
-tags:
-- '#service/08-Base-Scripts'
-- '#type/note'
-- '#state/active'
-- '#zone/3-fleet'
----
+
 
 ## 🏗️ Architectural Context
 
@@ -42,7 +33,7 @@ tags:
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls)
-- [[web-interface/web-interface/src/router/static.go.md|static.go]] (imports)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/copy_assets.go.md|copy_assets.go]] (calls)

@@ -4,8 +4,10 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|registerDynamicRoutes]] (function: calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
+- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Info]] (method: calls)
 - [[web-interface/web-interface/src/router/static.go.md|registerStaticRoutes]] (function: calls)
 - [[web-interface/web-interface/src/router/static.go.md|static.go]] (same_package)
 

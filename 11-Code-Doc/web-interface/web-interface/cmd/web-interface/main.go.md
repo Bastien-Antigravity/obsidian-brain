@@ -26,7 +26,7 @@
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|postgres_browser.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls)
-- [[web-interface/web-interface/src/router/static.go.md|static.go]] (imports)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (imports)
 - [[web-interface/web-interface/src/server/facade.go.md|NewServerFacade]] (function: calls)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade.Start]] (method: calls)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade.Stop]] (method: calls)

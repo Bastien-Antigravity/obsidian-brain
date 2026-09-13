@@ -17,6 +17,3 @@
 - [[universal-logger/universal-logger/unilog/python/unilog/listeners.py.md|__init__]] (function: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/unilog/listeners.py.md|_put]] (function: belongs_to)
 <!-- SYNC:END -->
-]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/unilog/listeners.py.md|_put]] (function: belongs_to)
-<!-- SYNC:END -->

@@ -28,9 +28,3 @@
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|notifServiceClient]] (struct: defines_method)
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (calls)
 <!-- SYNC:END -->
-c.pb.go.md|notifServiceClient]] (struct: defines_method)
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (calls)
-<!-- SYNC:END -->
-c.pb.go.md|notifServiceClient]] (struct: defines_method)
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (calls)
-<!-- SYNC:END -->

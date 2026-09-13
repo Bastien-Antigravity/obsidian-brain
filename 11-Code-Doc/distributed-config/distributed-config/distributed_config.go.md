@@ -20,6 +20,3 @@
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
 - [[distributed-config/distributed-config/src/cgo_bridge/security.go.md|security.go]] (imports)
 <!-- SYNC:END -->
-ze.go.md|initialize.go]] (imports)
-- [[distributed-config/distributed-config/src/cgo_bridge/security.go.md|security.go]] (imports)
-<!-- SYNC:END -->
