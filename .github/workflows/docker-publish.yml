@@ -6,6 +6,7 @@ on:
     paths:
       - '09-RAG-Engine/**'
       - '09-RAG-Engine'
+      - '.github/workflows/docker-publish.yml'
   workflow_dispatch:
 
 env:
