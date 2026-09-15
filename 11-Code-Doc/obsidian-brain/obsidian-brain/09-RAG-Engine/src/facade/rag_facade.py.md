@@ -61,6 +61,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|import_seed]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|index_directory]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|index_file]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|is_database_empty]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|query]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|reset_index]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|sem_process]] (function: belongs_to)

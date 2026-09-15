@@ -1,17 +1,7 @@
----
-source: docker-deployment/modes/local/health.py
-workspace: docker-deployment
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-13T21:20:15.797201
----
 
-# Mirror: health.py
-
-## 📝 Description
-Automatically generated mirror for `docker-deployment/modes/local/health.py`.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_service_ip]] (function: calls)
@@ -33,6 +23,3 @@ Automatically generated mirror for `docker-deployment/modes/local/health.py`.
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (imports)
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (same_package)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

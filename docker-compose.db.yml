@@ -6,9 +6,9 @@ services:
     container_name: obsidiandb
     restart: unless-stopped
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgrespassword
-      POSTGRES_DB: obsidiandb
+      POSTGRES_USER: ${RAG_DBUSER:-dbuser}
+      POSTGRES_PASSWORD: ${RAG_DBPASSWORD:-dbuser}
+      POSTGRES_DB: ${RAG_DBNAME:-obsidiandb}
     ports:
       - "5432:5432"
     volumes:

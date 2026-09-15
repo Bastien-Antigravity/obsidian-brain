@@ -6,6 +6,7 @@
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_WINDOWS]] (constant: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_native_config]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|DEPLOY_DIR]] (constant: belongs_to)

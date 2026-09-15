@@ -1,17 +1,7 @@
----
-source: docker-deployment/modes/local/run.py
-workspace: docker-deployment
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-13T19:49:59.559982
----
 
-# Mirror: run.py
-
-## 📝 Description
-Automatically generated mirror for `docker-deployment/modes/local/run.py`.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|branch.py]] (imports)
@@ -45,6 +35,3 @@ Automatically generated mirror for `docker-deployment/modes/local/run.py`.
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/mode_local.py.md|mode_local.py]] (calls)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

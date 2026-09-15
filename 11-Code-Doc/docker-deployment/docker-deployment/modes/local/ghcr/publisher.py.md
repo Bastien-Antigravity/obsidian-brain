@@ -1,17 +1,7 @@
----
-source: docker-deployment/modes/local/ghcr/publisher.py
-workspace: docker-deployment
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-13T19:49:59.586112
----
 
-# Mirror: publisher.py
-
-## 📝 Description
-Automatically generated mirror for `docker-deployment/modes/local/ghcr/publisher.py`.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|branch.py]] (imports)
@@ -31,6 +21,3 @@ Automatically generated mirror for `docker-deployment/modes/local/ghcr/publisher
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publish_images_ghcr]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

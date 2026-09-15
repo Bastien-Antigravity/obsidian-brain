@@ -11,6 +11,7 @@
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_service_port]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|is_port_listening]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|wait_for_port]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|ensure_nats_available]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/local/__init__.py.md|__init__.py]] (imports)
