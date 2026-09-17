@@ -59,7 +59,9 @@ def get_config() -> Any:
             def __init__(self):
                 self.data = {}
             def get_grpc_listen_addr(self, name):
-                return "127.0.0.1:50051"
+                if name == "rag_engine":
+                    return "127.0.0.1:8091"
+                return "127.0.0.1:1863"
             def set_logger(self, logger):
                 pass
         return FallbackConfig()
@@ -145,3 +147,47 @@ def get_fleet_repositories(vault_root: Path) -> List[Dict[str, Any]]:
     except Exception as e:
         sys.stderr.write(f"⚠️ Failed to load inventory.json: {e}\n")
         return []
+
+def resolve_active_workspaces(workspace_root: Path) -> set:
+    """
+    Resolves the set of active workspace repository folder names.
+    1. Environment variables: ACTIVE_WORKSPACES or WORKSPACE_PATHS.
+    2. *.code-workspace JSON files in workspace_root.
+    3. Fallback: Sibling directories containing .git.
+    """
+    active = set()
+    workspace_root = Path(workspace_root).resolve()
+
+    # 1. Check environment variable
+    env_var = os.environ.get("ACTIVE_WORKSPACES") or os.environ.get("WORKSPACE_PATHS")
+    if env_var:
+        for item in env_var.split(","):
+            if item.strip():
+                active.add(Path(item.strip()).name)
+        if active:
+            return active
+
+    # 2. Check *.code-workspace JSON files
+    for ws_file in workspace_root.glob("*.code-workspace"):
+        try:
+            with open(ws_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                for folder in data.get("folders", []):
+                    p = folder.get("path")
+                    if p:
+                        active.add(Path(p).name)
+        except Exception:
+            pass
+
+    if active:
+        return active
+
+    # 3. Fallback: Sibling directories containing .git
+    try:
+        for item in workspace_root.iterdir():
+            if item.is_dir() and (item / ".git").exists():
+                active.add(item.name)
+    except Exception:
+        pass
+
+    return active

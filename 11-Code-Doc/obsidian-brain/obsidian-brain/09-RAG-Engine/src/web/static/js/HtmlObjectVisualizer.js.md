@@ -16,6 +16,7 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/base_agent.py.md|base_agent.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/extraction/persona_extractor.py.md|persona_extractor.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/build_inventory.py.md|build_inventory.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/unlock_vault.py.md|unlock_vault.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/py_parser.py.md|py_parser.py]] (calls)

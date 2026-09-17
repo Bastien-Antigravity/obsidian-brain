@@ -60,6 +60,8 @@ SUBMODULE_MAP = {
     "04-Rapid-Prototyping": "rapid-prototyping-brain",
     "05-Fleet-Operation": "fleet-operation-brain",
     "07-Core-KMS": "core-kms-brain",
+    "09-RAG-Engine": "obsidian-rag-mcp",
+    "10-Agent-Factory": "oop-agent-factory",
 }
 
 # -----------------------------------------------------------------------------------------------
@@ -201,7 +203,18 @@ def _check_inventory_portability() -> Tuple[str, List[str]]:
         messages.append("TIP: Run 'python fleet-manager.py discover' to regenerate with relative paths.")
         return "YELLOW", messages
     
-    messages.append("All {0} inventory paths are portable (relative).".format(
+    # Verify that docker-deployment modes link to this SSoT
+    mode_links = ["local", "docker", "production"]
+    broken_mode_links = []
+    for mode in mode_links:
+        ml_path = WORKSPACE_ROOT / "docker-deployment" / "modes" / mode / "inventory.json"
+        if not ml_path.exists():
+            broken_mode_links.append(f"modes/{mode}/inventory.json")
+    if broken_mode_links:
+        messages.append(f"Missing SSoT symlinks in docker-deployment: {', '.join(broken_mode_links)}")
+        return "YELLOW", messages
+
+    messages.append("All {0} inventory paths are portable (relative) and mode symlinks verified.".format(
         len(inventory.get("repositories", []))))
     return "GREEN", messages
 

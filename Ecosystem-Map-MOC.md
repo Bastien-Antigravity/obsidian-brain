@@ -17,7 +17,7 @@ Fleet-wide action plans, deployment logs, and migration states. **(Zone 3: Fleet
 - [[05-Fleet-Operation/README|Fleet Operations (Zone 3)]]
 - **Command Center**: [[05-Fleet-Operation/00-Repo-Control/inventory.json|Global Repo Registry]]
 - **Automation**: `fleet-manager.py` (Mass Sync & Audit)
-- **Logs**: [[05-Fleet-Operation/Deployment-Logs-MOC|🛰️ Deployment Logs Index]]
+- **Logs**: [[05-Fleet-Operation/02-Deployment-Logs/README|🛰️ Deployment Logs Index]]
 - **Strategy**: [[05-Fleet-Operation/05-Fleet-Strategy/04-CICD-Standards|CI/CD Standards]]
 - [[05-Fleet-Operation/05-Fleet-Strategy/01-GitHub-Standard|🐙 GitHub Standards]]
 - [[05-Fleet-Operation/05-Fleet-Strategy/03-CD-Lifecycle|🔄 CD Lifecycle Management]]

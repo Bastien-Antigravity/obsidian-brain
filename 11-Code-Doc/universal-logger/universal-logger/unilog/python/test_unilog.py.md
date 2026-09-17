@@ -11,5 +11,6 @@
 - [[universal-logger/universal-logger/unilog/python/test_unilog.py.md|TestUnilog]] (class: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/test_unilog.py.md|test_all_levels]] (function: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/test_unilog.py.md|test_basic_logging]] (function: belongs_to)
+- [[universal-logger/universal-logger/unilog/python/test_unilog.py.md|test_dynamic_level_transitions]] (function: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/test_unilog.py.md|test_metadata]] (function: belongs_to)
 <!-- SYNC:END -->

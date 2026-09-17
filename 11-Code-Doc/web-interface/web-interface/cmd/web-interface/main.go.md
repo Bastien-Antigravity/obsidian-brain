@@ -12,6 +12,7 @@
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Critical]] (method: calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Error]] (method: calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Info]] (method: calls)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Warning]] (method: calls)
 - [[web-interface/web-interface/src/core/controller.go.md|NewController]] (function: calls)
 - [[web-interface/web-interface/src/core/controller.go.md|controller.go]] (imports)
 - [[web-interface/web-interface/src/fundamental_analysis/fundamental_analysis.go.md|ConnectStockDatabase]] (function: calls)
@@ -34,6 +35,7 @@
 - [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|TimescaleDBCap]] (struct: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|serveConcatenatedJS]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)

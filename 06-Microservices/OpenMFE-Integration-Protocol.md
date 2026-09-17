@@ -22,7 +22,7 @@ The `web-interface` server includes an integrated **MFE Registry** and a client-
 ```mermaid
 sequenceDiagram
     participant MS as Client Microservice (e.g. config-server)
-    participant WI as Web Interface Core (Port 8000)
+    participant WI as Web Interface Core (Port 5000)
     participant Browser as Browser Client
 
     Note over MS, WI: Step 1: Registration
@@ -48,7 +48,7 @@ sequenceDiagram
 ## 2. Integration Specifications
 
 ### 2.1 The Registry Endpoints
-The registry is built directly into the `web-interface` server on **Port 8080** (or the currently configured server port).
+The registry is built directly into the `web-interface` server on **Port 5000** (or the currently configured server port).
 - **POST `/api/v1/register`**: Used by microservices at boot time to publish their frontend configuration.
   ```json
   {
@@ -98,7 +98,7 @@ To prevent runtime filesystem path lookup issues in containerized (Docker) or mu
     ```
 
 #### 2. Support CORS (Cross-Origin Resource Sharing)
-Because the Web Component executes in the client's browser (loaded under the `web-interface` domain, e.g., `localhost:8080`), browser security will block direct API queries to your microservice (running on a different port, e.g., `localhost:3308`) unless CORS headers are explicitly sent.
+Because the Web Component executes in the client's browser (loaded under the `web-interface` domain, e.g., `localhost:5000`), browser security will block direct API queries to your microservice (running on a different port, e.g., `localhost:3308`) unless CORS headers are explicitly sent.
 *   **Go (CORS Middleware)**:
     ```go
     func CorsMiddleware(next http.Handler) http.Handler {
@@ -134,7 +134,7 @@ During initial bootstrap (Phase 5 of service initialization), the microservice m
     ```go
     go func() {
         // Fetch addresses from toolbox config
-        regUrl := "http://localhost:8080/api/v1/register" 
+        regUrl := "http://localhost:5000/api/v1/register" 
         mfeUrl := "http://localhost:3308/static/mfe.js"
         
         payload := fmt.Sprintf(`{
@@ -170,7 +170,7 @@ During initial bootstrap (Phase 5 of service initialization), the microservice m
         }
         for _ in range(5):
             try:
-                r = requests.post("http://localhost:8080/api/v1/register", json=payload, timeout=3)
+                r = requests.post("http://localhost:5000/api/v1/register", json=payload, timeout=3)
                 if r.status_code == 201:
                     break
             except Exception:
@@ -286,7 +286,7 @@ go run ./cmd/web-interface
 ### 2. Register a Mockup Service
 Simulate a microservice startup by registering a mockup metadata node:
 ```bash
-curl -X POST http://localhost:8000/api/v1/register \
+curl -X POST http://localhost:5000/api/v1/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "mock-service",
@@ -297,6 +297,6 @@ curl -X POST http://localhost:8000/api/v1/register \
 ```
 
 ### 3. Open the Dashboard
-Open the main `web-interface` (`http://localhost:8000`):
+Open the main `web-interface` (`http://localhost:5000`):
 1. **Dynamic Navigation:** The sidebar under `MicroServices` should automatically render the link **🧪 Mockup Service**.
 2. **Mounting:** Clicking the link loads `/mfe/mock-service`. The loader downloads `ta-indicators.js` and mounts `<mock-mfe>` dynamically inside the page frame.

@@ -5,7 +5,6 @@
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Debug]] (method: calls)
 - [[config-server/config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: defines_method)
 - [[config-server/config-server/src/server/controller.go.md|Server.GetConfig]] (method: defines_method)
 - [[config-server/config-server/src/server/controller.go.md|Server.GetStatus]] (method: defines_method)

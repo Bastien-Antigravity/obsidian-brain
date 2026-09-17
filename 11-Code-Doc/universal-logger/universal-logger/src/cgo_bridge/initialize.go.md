@@ -8,7 +8,6 @@
 - [[universal-logger/universal-logger/src/bootstrap/unilog_test.go.md|unilog_test.go]] (imports)
 - [[universal-logger/universal-logger/src/config/config_handler.go.md|config_handler.go]] (imports)
 - [[universal-logger/universal-logger/src/interfaces/models.go.md|models.go]] (imports)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Close]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|distconf_bridge.go]] (calls)

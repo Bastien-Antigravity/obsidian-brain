@@ -4,11 +4,13 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (imports)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|RAGControllerImpl]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|StatusInfo]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|__init__]] (function: belongs_to)

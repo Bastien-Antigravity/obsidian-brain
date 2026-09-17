@@ -4,6 +4,7 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.   ]] (method: defines_method)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager. {
    ]] (method: defines_method)

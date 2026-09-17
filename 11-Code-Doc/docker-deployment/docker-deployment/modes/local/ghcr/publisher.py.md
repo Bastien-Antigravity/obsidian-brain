@@ -10,6 +10,7 @@
 - [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (same_package)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|setup_ghcr_credentials]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_env]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|DEPLOY_DIR]] (constant: belongs_to)

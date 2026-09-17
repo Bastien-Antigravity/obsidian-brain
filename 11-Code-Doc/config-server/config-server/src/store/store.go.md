@@ -13,6 +13,7 @@
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
 - [[config-server/config-server/cmd/test/main.go.md|main.go]] (calls)
 - [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (calls)
+- [[config-server/config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (calls)
 - [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (calls)
@@ -27,4 +28,6 @@
 - [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: belongs_to)
 - [[config-server/config-server/src/store/store.go.md|Store]] (struct: belongs_to)
 - [[config-server/config-server/src/store/store.go.md|Store]] (struct: defines_method)
+- [[config-server/config-server/src/store/store_test.go.md|store_test.go]] (calls)
+- [[config-server/config-server/src/store/store_test.go.md|store_test.go]] (same_package)
 <!-- SYNC:END -->

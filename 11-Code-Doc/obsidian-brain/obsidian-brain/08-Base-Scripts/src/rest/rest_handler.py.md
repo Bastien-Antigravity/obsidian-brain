@@ -8,6 +8,7 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|list_commands]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|publish_user_message]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/rest/rest_handler.py.md|SquadRESTHandler]] (class: belongs_to)

@@ -51,6 +51,8 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/telegram/manager.py.md|manager.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/web/server.py.md|server.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/web/server.py.md|start_async_server]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)

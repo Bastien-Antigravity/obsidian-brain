@@ -7,8 +7,11 @@
 - None detected
 
 ### 🔌 Consumers (Inbound)
+- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetLogPath]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/helpers/paths.go.md|getCallerDir]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/helpers/paths_test.go.md|paths_test.go]] (calls)
+- [[flexible-logger/flexible-logger/src/helpers/paths_test.go.md|paths_test.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (calls)

@@ -8,6 +8,7 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/squad_control_pb2_grpc.py.md|SquadControlServiceServicer]] (class: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/squad_control_pb2_grpc.py.md|add_SquadControlServiceServicer_to_server]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/squad_control_pb2_grpc.py.md|squad_control_pb2_grpc.py]] (same_package)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|start_squad.py]] (calls)

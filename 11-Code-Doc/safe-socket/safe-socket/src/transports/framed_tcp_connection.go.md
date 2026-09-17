@@ -47,6 +47,8 @@
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket]] (struct: defines_method)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|MaxPayloadSize]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|NewFramedTCPSocket]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/transports/framed_tcp_connection_test.go.md|framed_tcp_connection_test.go]] (calls)
+- [[safe-socket/safe-socket/src/transports/framed_tcp_connection_test.go.md|framed_tcp_connection_test.go]] (same_package)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|framed_tcp_server.go]] (calls)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|framed_tcp_server.go]] (same_package)
 - [[safe-socket/safe-socket/src/transports/heartbeat_test.go.md|heartbeat_test.go]] (calls)

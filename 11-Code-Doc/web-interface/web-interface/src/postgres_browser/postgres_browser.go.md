@@ -12,6 +12,7 @@
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.GetTableData]] (method: defines_method)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.GetTables]] (method: defines_method)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.getDatabase]] (method: defines_method)
+- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.resolveTimescaleConfig]] (method: defines_method)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.switchDatabase]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
@@ -24,6 +25,7 @@
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.GetTableData]] (method: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.GetTables]] (method: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.getDatabase]] (method: belongs_to)
+- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.resolveTimescaleConfig]] (method: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.switchDatabase]] (method: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler]] (struct: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler]] (struct: defines_method)
@@ -33,4 +35,5 @@
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|RegisterPostgresBrowserRoutes]] (function: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|TableData]] (struct: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|TableInfo]] (struct: belongs_to)
+- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|TimescaleDBCap]] (struct: belongs_to)
 <!-- SYNC:END -->

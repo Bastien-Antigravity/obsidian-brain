@@ -24,6 +24,26 @@ import subprocess
 # Patterns
 FRONT_MATTER_PATTERN = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
+def is_documentation_file(file_path):
+    """Determines whether a markdown file is human documentation subject to frontmatter checks."""
+    path = Path(file_path)
+    if path.suffix != ".md":
+        return False
+    parts = path.parts
+    # Exclude machine-generated AST mirrors, virtualenvs, git, node_modules
+    if any(p in parts for p in ("11-Code-Doc", ".venv", "node_modules", ".git", ".agents")):
+        return False
+    # Include quick-overview human documentation
+    if "quick-overview" in parts:
+        return True
+    # Include 06-Microservices service specs
+    if "06-Microservices" in parts and path.name != "Hubs-MOC.md":
+        return True
+    # Include repo-level AGENTS.md rules
+    if path.name == "AGENTS.md":
+        return True
+    return False
+
 def get_modified_files():
     """Retrieves list of modified and cached markdown files using git."""
     try:
@@ -33,7 +53,7 @@ def get_modified_files():
         )
         files = []
         for line in res.stdout.splitlines():
-            if line.endswith(".md"):
+            if is_documentation_file(line):
                 files.append(line)
         return files
     except Exception:
@@ -169,23 +189,36 @@ def main():
     parser.add_argument("--check", action="store_true", help="Checking only, do not write changes.")
     args = parser.parse_args()
 
-    script_dir = Path(__file__).resolve().parent
-    workspace_root = script_dir.parent.parent
+    try:
+        from src.lib.orchestration_lib import resolve_vault_and_workspace
+        vault_root, workspace_root = resolve_vault_and_workspace(__file__)
+    except Exception:
+        script_dir = Path(__file__).resolve().parent
+        vault_root = script_dir.parent.parent.parent
+        workspace_root = vault_root.parent
 
     if args.check_all:
         files = get_all_documentation_files(workspace_root)
     else:
-        # Default: check git cached files
-        files = [workspace_root / f for f in get_modified_files()]
-        if not files:
-            # If no cached files, fallback to scanning all
+        # Default: check git cached files (git diff paths are relative to vault_root)
+        cached_files = get_modified_files()
+        if cached_files:
+            files = [vault_root / f for f in cached_files]
+        elif args.check:
+            # In pre-commit check hook, if no documentation files are staged, nothing to validate
+            files = []
+        else:
+            # In standalone manual run without arguments, check all documentation files
             files = get_all_documentation_files(workspace_root)
 
     print(f"🔍 Enforcing frontmatter checks on {len(files)} files...")
     
     violations = 0
     for file in files:
-        rel_path = Path(file).relative_to(workspace_root)
+        try:
+            rel_path = Path(file).relative_to(vault_root)
+        except ValueError:
+            rel_path = Path(file).relative_to(workspace_root)
         modified, msg = normalize_frontmatter(file, check_only=args.check)
         if modified:
             if args.check:

@@ -14,6 +14,7 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|auto_fix_file]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|get_report]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|log_error]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/close_mission.py.md|EXCLUSIONS]] (constant: belongs_to)

@@ -42,7 +42,6 @@
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
 - [[config-server/config-server/cmd/test/main.go.md|main.go]] (calls)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
-- [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|TestHandlerConfigEndpoints]] (function: belongs_to)
@@ -81,7 +80,6 @@
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger]] (struct: defines_method)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|newTestHandler]] (function: belongs_to)
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (calls)
-- [[config-server/config-server/src/server/controller.go.md|controller.go]] (calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (calls)
 <!-- SYNC:END -->

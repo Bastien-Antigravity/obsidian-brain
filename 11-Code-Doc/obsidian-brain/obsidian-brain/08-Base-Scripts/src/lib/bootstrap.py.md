@@ -19,7 +19,6 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/close_mission.py.md|close_mission.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/convert_agents.py.md|convert_agents.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/fix_feats.py.md|fix_feats.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/fleet_commander.py.md|fleet_commander.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/fleet_init_update.py.md|fleet_init_update.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/map_feats.py.md|map_feats.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|sovereignty.py]] (imports)

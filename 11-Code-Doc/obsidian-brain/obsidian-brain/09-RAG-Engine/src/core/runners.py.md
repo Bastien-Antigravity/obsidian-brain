@@ -22,6 +22,4 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|run]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|start_visualizer]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|start_watcher]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (same_package)
 <!-- SYNC:END -->

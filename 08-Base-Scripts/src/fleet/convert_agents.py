@@ -161,6 +161,59 @@ To prevent context degradation, you MUST begin EVERY single response with the fo
                     
                     processed_agents.add(agent_name)
 
+        # Process developer squad language & domain specialists
+        squad_path = osPathJoin(source_dir, "03-Developer", "Squad")
+        if osPathIsdir(squad_path):
+            specialist_map = {
+                "pythonspecialist": "Python-Integration-Specialist.md",
+                "gospecialist": "Go-Systems-Specialist.md",
+                "rustspecialist": "Rust-Safety-Specialist.md",
+                "cppspecialist": "CPP-Low-Latency-Specialist.md",
+                "webuispecialist": "Web-UI-Specialist.md",
+                "timescalespecialist": "Timescale-Data-Specialist.md",
+                "vbaspecialist": "Excel-VBA-Specialist.md",
+            }
+            for spec_name, spec_filename in specialist_map.items():
+                if spec_name in processed_agents:
+                    continue
+                spec_file = osPathJoin(squad_path, spec_filename)
+                if osPathExists(spec_file):
+                    with open(spec_file, 'r', encoding='utf-8') as f:
+                        content = f.read()
+
+                    from re import sub as reSub, DOTALL as reDotAll
+                    content = reSub(r'^---.*?---\s*', '', content, flags=reDotAll)
+
+                    yaml_frontmatter = f"""---
+name: {spec_name}
+description: The {spec_name} persona from the Bastien-Antigravity squad.
+---
+"""
+                    scan_block = f"""
+# 💾 STATE MANAGEMENT RULE (CRITICAL)
+Before finishing any major task or concluding a session, you MUST use your available file management tools to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
+
+# 🚨 ATTENTION RESTORATION (SCAN METHOD)
+To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:
+
+**[SCAN]** Role: {spec_name} | Source: [Source Verification] | State: [Session Progress]
+"""
+                    for name, target in active_targets:
+                        if "skills" in target or name == "Antigravity":
+                            skill_dir = osPathJoin(target, spec_name)
+                            osMakedirs(skill_dir, exist_ok=True)
+                            target_file = osPathJoin(skill_dir, "SKILL.md")
+                        else:
+                            target_file = osPathJoin(target, f"{spec_name}.md")
+                        try:
+                            with open(target_file, 'w', encoding='utf-8') as f:
+                                f.write(yaml_frontmatter + content + "\n" + scan_block)
+                            logger.info(f"   [{name}] Created specialist agent: {spec_name}")
+                        except OSError as e:
+                            logger.error(f"   ⚠️ Could not write specialist agent {spec_name} to {name}: {e}")
+
+                    processed_agents.add(spec_name)
+
 # -----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":

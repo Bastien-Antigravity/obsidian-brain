@@ -11,15 +11,15 @@
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|Close]] (function: calls)
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls)
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
-- [[distributed-config/distributed-config/src/cgo_bridge/security.go.md|Decrypt]] (function: calls)
-- [[distributed-config/distributed-config/src/cgo_bridge/security.go.md|security.go]] (same_package)
+- [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetCapability]] (function: calls)
+- [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|networking.go]] (same_package)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_ExpandedName]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_GetSet]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_LiveCapabilityUpdate]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_LiveUpdate]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_Security]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_Sync]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|testInit]] (function: belongs_to)
 <!-- SYNC:END -->

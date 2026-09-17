@@ -12,6 +12,7 @@
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: calls)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_config]] (method: calls)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_level]] (method: calls)
+- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log_with_metadata]] (method: calls)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_config]] (method: calls)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_level]] (method: calls)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_metadata]] (method: calls)

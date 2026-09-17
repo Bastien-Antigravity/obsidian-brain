@@ -6,8 +6,6 @@
 ### 📦 Dependencies (Outbound)
 - [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
 - [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|sanitizeFFIString]] (function: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Close]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_ApplyFileOverride]] (function: belongs_to)

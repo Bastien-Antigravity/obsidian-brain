@@ -8,6 +8,7 @@
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|CommandController]] (class: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|controller.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|process_message]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|DiscordClient]] (class: belongs_to)

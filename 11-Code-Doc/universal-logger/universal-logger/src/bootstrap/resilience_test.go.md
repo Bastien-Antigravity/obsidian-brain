@@ -11,10 +11,6 @@
 - [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|InitWithOptions]] (function: calls)
 - [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|Init]] (function: calls)
 - [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|unilog.go]] (same_package)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Close]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Error]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Info]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Warning]] (method: calls)
 - [[universal-logger/universal-logger/src/utils/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

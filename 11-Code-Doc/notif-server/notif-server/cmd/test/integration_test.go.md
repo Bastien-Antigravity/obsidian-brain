@@ -24,6 +24,7 @@
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: defines_method)
+- [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterMockSender]] (method: calls)

@@ -26,7 +26,9 @@ import src.bootstrap as bootstrap
 COMMANDS_MAP = {
     "agent-dispatcher": "core.agent_dispatcher",
     "brain-health-audit": "auditing.brain_health_audit",
+    "build-inventory": "fleet.build_inventory",
     "fleet-init-update": "fleet.fleet_init_update",
+    "fleet-refresh": "fleet.fleet_refresh",
     "hardening-yaml": "auditing.hardening_yaml",
     "init-new-brain": "lifecycle.init_new_brain",
     "joint-audit-purger": "maintenance.joint_audit_purger",
@@ -40,6 +42,7 @@ COMMANDS_MAP = {
     "knowledge-compressor": "maintenance.knowledge_compressor",
     "mission-help": "core.mission_help",
     "persona-extractor": "extraction.persona_extractor",
+    "scaffold-microservice": "lifecycle.scaffold_microservice",
     "scaffold-new-brain": "lifecycle.scaffold_new_brain",
     "start-squad": "core.start_squad",
     "switch-mode": "core.switch_mode",

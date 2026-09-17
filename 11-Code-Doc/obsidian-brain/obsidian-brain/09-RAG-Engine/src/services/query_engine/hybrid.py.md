@@ -4,6 +4,8 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_query_engine_settings]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/lexical_store.py.md|lexical_store.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py.md|QueryEngine]] (class: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py.md|query_engine.py]] (imports)
@@ -15,6 +17,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/request.py.md|request.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/result.py.md|MQueryResult]] (class: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/result.py.md|result.py]] (imports)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)

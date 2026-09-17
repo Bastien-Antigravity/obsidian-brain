@@ -20,6 +20,8 @@
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
 - [[safe-socket/safe-socket/src/transports/forever_test.go.md|forever_test.go]] (calls)
 - [[safe-socket/safe-socket/src/transports/forever_test.go.md|forever_test.go]] (same_package)
+- [[safe-socket/safe-socket/src/transports/framed_tcp_connection_test.go.md|framed_tcp_connection_test.go]] (calls)
+- [[safe-socket/safe-socket/src/transports/framed_tcp_connection_test.go.md|framed_tcp_connection_test.go]] (same_package)
 - [[safe-socket/safe-socket/src/transports/heartbeat_test.go.md|heartbeat_test.go]] (calls)
 - [[safe-socket/safe-socket/src/transports/heartbeat_test.go.md|heartbeat_test.go]] (same_package)
 - [[safe-socket/safe-socket/src/transports/oom_test.go.md|oom_test.go]] (calls)

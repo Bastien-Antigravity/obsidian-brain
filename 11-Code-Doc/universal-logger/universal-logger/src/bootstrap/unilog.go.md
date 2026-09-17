@@ -9,10 +9,8 @@
 - [[universal-logger/universal-logger/src/config/config_handler.go.md|config_handler.go]] (imports)
 - [[universal-logger/universal-logger/src/interfaces/models.go.md|models.go]] (imports)
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|NewUniLog]] (function: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetLevel]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetLocalNotifQueue]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetMetadata]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|logger_handler.go]] (imports)
+- [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|logger_handler_test.go]] (imports)
+- [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|mockFlexLogger.SetLevel]] (method: calls)
 - [[universal-logger/universal-logger/src/utils/levels.go.md|GetLogLevel]] (function: calls)
 - [[universal-logger/universal-logger/src/utils/notif_message.go.md|notif_message.go]] (imports)
 

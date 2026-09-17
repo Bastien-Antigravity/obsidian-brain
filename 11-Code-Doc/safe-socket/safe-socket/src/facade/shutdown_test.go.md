@@ -19,6 +19,7 @@
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|TestShutdownWithUncooperativeClient]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|TestSynchronousShutdown]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetAddress]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetConnectTimeout]] (method: belongs_to)

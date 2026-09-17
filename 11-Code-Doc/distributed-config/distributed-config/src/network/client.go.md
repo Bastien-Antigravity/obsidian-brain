@@ -19,6 +19,7 @@
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.requestSync]] (method: defines_method)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: calls)
+- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnSyncReceived]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|NewConfigHandler]] (function: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|proto_handler.go]] (same_package)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)

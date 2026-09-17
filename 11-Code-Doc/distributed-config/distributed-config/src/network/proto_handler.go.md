@@ -10,6 +10,7 @@
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: defines_method)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: defines_method)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: defines_method)
+- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnSyncReceived]] (method: defines_method)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.updateLiveConfig]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)
 
@@ -23,6 +24,7 @@
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnSyncReceived]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.updateLiveConfig]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler]] (struct: defines_method)

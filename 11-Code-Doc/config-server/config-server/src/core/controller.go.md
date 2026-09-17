@@ -10,6 +10,7 @@
 - [[config-server/config-server/src/core/controller.go.md|ConfigController]] (interface: belongs_to)
 - [[config-server/config-server/src/core/controller.go.md|StatusInfo]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (imports)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (imports)

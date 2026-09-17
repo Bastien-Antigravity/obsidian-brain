@@ -7,6 +7,7 @@
 - None detected
 
 ### 🔌 Consumers (Inbound)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|rag_db_secrets_encryption_test.py]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_seed_schema_test.py.md|rag_seed_schema_test.py]] (calls)
 - [[sandbox-testing/sandbox-testing/03-Orchestration/scenario_orchestrator.py.md|ScenarioRunner]] (class: belongs_to)
 - [[sandbox-testing/sandbox-testing/03-Orchestration/scenario_orchestrator.py.md|__init__]] (function: belongs_to)

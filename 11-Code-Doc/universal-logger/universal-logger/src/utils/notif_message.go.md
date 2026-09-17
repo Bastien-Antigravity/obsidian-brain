@@ -14,4 +14,6 @@
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|logger.go]] (imports)
 - [[universal-logger/universal-logger/src/cgo_bridge/notif_callback.go.md|notif_callback.go]] (imports)
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|logger_handler.go]] (imports)
+- [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|logger_handler_test.go]] (imports)
+- [[universal-logger/universal-logger/src/utils/logger_utils_test.go.md|logger_utils_test.go]] (imports)
 <!-- SYNC:END -->

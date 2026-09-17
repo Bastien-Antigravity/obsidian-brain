@@ -22,7 +22,9 @@
 - [[universal-logger/universal-logger/src/interfaces/models.go.md|LevelTrade]] (constant: belongs_to)
 - [[universal-logger/universal-logger/src/interfaces/models.go.md|LevelWarning]] (constant: belongs_to)
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|logger_handler.go]] (imports)
+- [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|logger_handler_test.go]] (imports)
 - [[universal-logger/universal-logger/src/utils/levels.go.md|levels.go]] (imports)
 - [[universal-logger/universal-logger/src/utils/logger_utils.go.md|logger_utils.go]] (imports)
+- [[universal-logger/universal-logger/src/utils/logger_utils_test.go.md|logger_utils_test.go]] (imports)
 - [[universal-logger/universal-logger/src/utils/notif_message.go.md|notif_message.go]] (imports)
 <!-- SYNC:END -->

@@ -17,6 +17,8 @@ Automatically generated mirror for `docker-deployment/modes/production/run.py`.
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_compose_cmd]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_env]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_status]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_all]] (function: calls)
 

@@ -23,6 +23,7 @@
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (calls)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (imports)
+- [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (imports)
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.AddProvider]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetAlertingConfig]] (method: belongs_to)

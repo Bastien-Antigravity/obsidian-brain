@@ -18,6 +18,8 @@
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|configControlServiceClient.PersistConfig]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|configControlServiceClient.ReloadConfig]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|configControlServiceClient.SetConfig]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlServiceClient]] (interface: belongs_to)

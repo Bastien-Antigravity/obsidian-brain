@@ -19,6 +19,7 @@
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/devel.go.md|devel.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/devel.go.md|devel.go]] (imports)
+- [[flexible-logger/flexible-logger/src/profiles/high_perf.go.md|high_perf.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/high_perf.go.md|high_perf.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/minimal.go.md|minimal.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/minimal.go.md|minimal.go]] (imports)

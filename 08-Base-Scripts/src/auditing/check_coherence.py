@@ -49,7 +49,15 @@ ROLES = {
     "docindexer": ("07-Core-KMS/Role-Prompts/10-DocIndexer", "Prompt-DocIndexer.md"),
     "codeindexer": ("07-Core-KMS/Role-Prompts/11-CodeIndexer", "Prompt-CodeIndexer.md"),
     "patternsentinel": ("07-Core-KMS/Role-Prompts/12-PatternSentinel", "Prompt-Pattern-Sentinel.md"),
-    "pythonspecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Python-Integration-Specialist.md")
+    "prototyper": ("07-Core-KMS/Role-Prompts/13-Prototyper", "Prompt-Prototyper.md"),
+    # Developer Squad Specialists
+    "pythonspecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Python-Integration-Specialist.md"),
+    "gospecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Go-Systems-Specialist.md"),
+    "rustspecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Rust-Safety-Specialist.md"),
+    "cppspecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "CPP-Low-Latency-Specialist.md"),
+    "webuispecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Web-UI-Specialist.md"),
+    "timescalespecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Timescale-Data-Specialist.md"),
+    "vbaspecialist": ("07-Core-KMS/Role-Prompts/03-Developer/Squad", "Excel-VBA-Specialist.md")
 }
 
 # -----------------------------------------------------------------------------------------------

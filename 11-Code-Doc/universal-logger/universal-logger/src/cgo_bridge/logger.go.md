@@ -4,10 +4,6 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.AddMetadata]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.GetLevel]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetLevel]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetMetadata]] (method: calls)
 - [[universal-logger/universal-logger/src/utils/logger_utils.go.md|LogWithMetadata]] (function: calls)
 - [[universal-logger/universal-logger/src/utils/notif_message.go.md|notif_message.go]] (imports)
 

@@ -11,7 +11,9 @@
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.PersistConfig]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ReloadConfig]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.SetConfig]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Debug]] (method: calls)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Debug]] (method: calls)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)
@@ -26,4 +28,6 @@
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method)
 - [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (calls)
+- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
 <!-- SYNC:END -->

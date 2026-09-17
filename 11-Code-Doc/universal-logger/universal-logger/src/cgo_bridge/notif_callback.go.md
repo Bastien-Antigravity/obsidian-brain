@@ -4,7 +4,6 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.GetNotifQueue]] (method: calls)
 - [[universal-logger/universal-logger/src/utils/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

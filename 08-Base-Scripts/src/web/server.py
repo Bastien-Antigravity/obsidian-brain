@@ -48,12 +48,12 @@ def register_mfe_with_web_interface(config, logger, bs_ip, bs_port):
 
     # Resolve web_interface address from config
     web_ip = "127.0.0.1"
-    web_port = 8000
+    web_port = 5000
     if config and hasattr(config, "data") and isinstance(config.data, dict):
         try:
             web_cap = config.data.get("capabilities", {}).get("web_interface", {})
             web_ip = web_cap.get("ip", "127.0.0.1")
-            web_port = int(web_cap.get("port", 8000))
+            web_port = int(web_cap.get("port", 5000))
         except Exception:
             pass
 

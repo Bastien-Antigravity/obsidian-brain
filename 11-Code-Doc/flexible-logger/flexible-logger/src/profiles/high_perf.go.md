@@ -17,6 +17,7 @@
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|NewCapnpSerializer]] (function: calls)
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|text_serializer.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
+- [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|console.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/writer.go.md|NewWriterSink]] (function: calls)
 

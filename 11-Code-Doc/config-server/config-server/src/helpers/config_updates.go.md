@@ -9,6 +9,7 @@
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (calls)
-- [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (imports)
 - [[config-server/config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: belongs_to)
+- [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (calls)
+- [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (same_package)
 <!-- SYNC:END -->

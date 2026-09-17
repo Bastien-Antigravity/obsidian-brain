@@ -7,6 +7,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/grpc_control/rag_control_pb2_grpc.py.md|RAGControlServiceServicer]] (class: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/grpc_control/rag_control_pb2_grpc.py.md|add_RAGControlServiceServicer_to_server]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/grpc_control/rag_control_pb2_grpc.py.md|rag_control_pb2_grpc.py]] (same_package)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)
