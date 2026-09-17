@@ -1,3 +1,13 @@
+---
+microservice: common
+type: overview
+status: active
+tags:
+- '#service/common'
+- '#type/overview'
+- '#state/active'
+- '#ai/ignore'
+---
 # AGENTS.md: 08-Base-Scripts
 
 ## Service Mission & Architecture Role
