@@ -21,7 +21,6 @@
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetCapability]] (function: belongs_to)
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetFullConfig]] (function: belongs_to)
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetGRPCAddress]] (function: belongs_to)
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetGRPCMgmtAddress]] (function: belongs_to)
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetLastErrorCode]] (function: belongs_to)
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetLastError]] (function: belongs_to)
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetRESTAddress]] (function: belongs_to)

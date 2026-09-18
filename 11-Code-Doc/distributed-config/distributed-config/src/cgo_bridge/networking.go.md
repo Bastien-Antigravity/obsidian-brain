@@ -14,6 +14,5 @@
 - [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetCapability]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetFullConfig]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetGRPCAddress]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetGRPCMgmtAddress]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetRESTAddress]] (function: belongs_to)
 <!-- SYNC:END -->

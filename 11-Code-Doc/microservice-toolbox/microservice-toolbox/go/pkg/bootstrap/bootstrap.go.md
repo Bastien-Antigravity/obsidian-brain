@@ -7,5 +7,6 @@
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args_test.go.md|args_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/bootstrap/bootstrap.go.md|BootstrapServiceSafe]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/bootstrap/bootstrap.go.md|BootstrapService]] (function: belongs_to)
 <!-- SYNC:END -->

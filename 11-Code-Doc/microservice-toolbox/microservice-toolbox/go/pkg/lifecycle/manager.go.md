@@ -19,6 +19,7 @@
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|NewManagerWithLogger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|NewManager]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|ShutdownFunc]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|cleanupHook]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager_test.go.md|manager_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager_test.go.md|manager_test.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|manager.rs]] (calls)

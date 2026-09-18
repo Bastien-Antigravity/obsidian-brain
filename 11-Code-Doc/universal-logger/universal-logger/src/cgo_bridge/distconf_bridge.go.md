@@ -18,6 +18,7 @@
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_GetGRPCAddress]] (function: belongs_to)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_GetLastErrorCode]] (function: belongs_to)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_GetLastError]] (function: belongs_to)
+- [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_GetRESTAddress]] (function: belongs_to)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_Get]] (function: belongs_to)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_New]] (function: belongs_to)
 - [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|DistConf_OnLiveConfUpdate]] (function: belongs_to)
