@@ -131,7 +131,7 @@ class RustExtractor:
         self.matches += len(re.findall(r'match\s+', content))
 
 
-def extract_personas(repo_path, output_dir, is_daemon):
+def extract_personas(repo_path, output_dir, is_daemon, logger=None):
     os.makedirs(output_dir, exist_ok=True)
 
     py_ext = PythonExtractor()
@@ -233,6 +233,8 @@ def extract_personas(repo_path, output_dir, is_daemon):
     with open(flag_path, 'w', encoding='utf-8') as f:
         f.write(timestamp)
     
+    if logger:
+        logger.info(f"Persona Extraction complete. Saved to {output_dir}")
     if not is_daemon:
         print(f"✅ Persona Extraction complete. Saved to {output_dir}")
 
@@ -249,13 +251,16 @@ def main():
 
     prevent_double_start("persona_extractor")
 
-    from lib.orchestration_lib import resolve_vault_and_workspace
+    from lib.orchestration_lib import resolve_vault_and_workspace, get_logger
+    logger = get_logger("PersonaExtractor")
     vault_root, workspace_root = resolve_vault_and_workspace(__file__)
     
     output_dir = os.path.join(str(vault_root), "07-Core-KMS", "quick-overview", "ast-patterns")
     output_dir = os.path.abspath(output_dir)
 
-    extract_personas(str(workspace_root), output_dir, args.daemon)
+    if logger:
+        logger.info(f"Initiating AST persona extraction across {workspace_root}...")
+    extract_personas(str(workspace_root), output_dir, args.daemon, logger=logger)
 
 
 if __name__ == '__main__':
