@@ -25,6 +25,8 @@ import re
 import collections
 import argparse
 import datetime
+import json
+import time
 import sys
 from pathlib import Path
 from lib.bootstrap import ensure_virtualenv, prepend_venv_bin, ensure_import_paths
@@ -133,6 +135,8 @@ class RustExtractor:
 
 def extract_personas(repo_path, output_dir, is_daemon, logger=None):
     os.makedirs(output_dir, exist_ok=True)
+    start_time = time.time()
+    scanned_files = {"python": 0, "go": 0, "rust": 0}
 
     py_ext = PythonExtractor()
     go_ext = GoExtractor()
@@ -147,13 +151,16 @@ def extract_personas(repo_path, output_dir, is_daemon, logger=None):
                 if os.path.getsize(filepath) > 1024 * 1024:
                     continue
                 if file.endswith('.py'):
+                    scanned_files["python"] += 1
                     with open(filepath, 'r', encoding='utf-8') as f:
                         tree = ast.parse(f.read(), filename=filepath)
                         py_ext.visit(tree)
                 elif file.endswith('.go'):
+                    scanned_files["go"] += 1
                     with open(filepath, 'r', encoding='utf-8') as f:
                         go_ext.parse(f.read())
                 elif file.endswith('.rs'):
+                    scanned_files["rust"] += 1
                     with open(filepath, 'r', encoding='utf-8') as f:
                         rs_ext.parse(f.read())
             except Exception:
@@ -229,14 +236,56 @@ def extract_personas(repo_path, output_dir, is_daemon, logger=None):
     except Exception:
         pass
 
+    duration_ms = int((time.time() - start_time) * 1000)
+    manifest = {
+        "timestamp": timestamp,
+        "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "status": "ready",
+        "duration_ms": duration_ms,
+        "files_scanned": scanned_files,
+        "artifacts": {
+            "python": f"persona_python_{timestamp}.md",
+            "go": f"persona_go_{timestamp}.md",
+            "rust": f"persona_rust_{timestamp}.md"
+        },
+        "metrics_summary": {
+            "python": {
+                "async_functions": py_ext.async_funcs,
+                "total_classes": len(py_ext.class_names),
+                "total_functions": len(py_ext.func_names),
+                "top_imports": dict(py_ext.imports.most_common(10)),
+                "top_exceptions": dict(py_ext.exceptions_caught.most_common(10)),
+                "top_logging_calls": dict(py_ext.logging_calls.most_common(10))
+            },
+            "go": {
+                "error_checks": go_ext.error_checks,
+                "panics": go_ext.panics,
+                "goroutines": go_ext.goroutines,
+                "top_interfaces": dict(go_ext.interfaces.most_common(10)),
+                "top_structs": dict(go_ext.structs.most_common(10))
+            },
+            "rust": {
+                "matches": rs_ext.matches,
+                "unwraps": rs_ext.unwraps,
+                "top_traits": dict(rs_ext.traits.most_common(10)),
+                "top_structs": dict(rs_ext.structs.most_common(10))
+            }
+        }
+    }
+
+    manifest_path = os.path.join(output_dir, "manifest.json")
+    with open(manifest_path, 'w', encoding='utf-8') as f:
+        json.dump(manifest, f, indent=2)
+
     flag_path = os.path.join(output_dir, ".persona_ready")
     with open(flag_path, 'w', encoding='utf-8') as f:
         f.write(timestamp)
     
+    total_files = sum(scanned_files.values())
     if logger:
-        logger.info(f"Persona Extraction complete. Saved to {output_dir}")
+        logger.info(f"Persona Extraction complete ({duration_ms}ms, {total_files} files scanned). Manifest saved to {manifest_path}")
     if not is_daemon:
-        print(f"✅ Persona Extraction complete. Saved to {output_dir}")
+        print(f"✅ Persona Extraction complete ({duration_ms}ms, {total_files} files). Manifest: {manifest_path}")
 
 
 def main():
