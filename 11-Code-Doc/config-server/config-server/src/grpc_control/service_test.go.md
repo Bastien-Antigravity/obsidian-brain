@@ -3,7 +3,13 @@ source: config-server/src/grpc_control/service_test.go
 workspace: config-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-17T06:23:59.699181
+last_sync: 2026-09-17 06:23:59.699181
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: service_test.go

@@ -12,26 +12,23 @@ tags:
 
 This index aggregates the operational hubs for the service fleet.
 
-- [[Config-Server-Hub]]
-- [[Data-Ingestor-Hub]]
-- [[Distributed-Config-Hub]]
-- [[Docker-Deployment-Hub]]
-- [[Enhanced-Backtesting-Hub]]
-- [[Flexible-Logger-Hub]]
-- [[Fundamental-Analysis-Hub]]
-- [[Log-Server-Hub]]
-- [[Market-Observer-Hub]]
-- [[Microservice-Toolbox-Hub]]
-- [[Notif-Server-Hub]]
-- [[Ontime-Scheduler-Hub]]
-- [[Orderbook-Aggregator-Hub]]
-- [[RAG-Engine-Hub]]
-- [[Safe-Socket-Hub]]
-- [[Sandbox-Testing-Hub]]
-- [[Technical-Analysis-Hub]]
-- [[Tele-Remote-Hub]]
-- [[Universal-Logger-Hub]]
-- [[Web-Interface-Hub]]
+## 🏛️ Core Platform Hubs (Base 14 Fleet — `is_core: true`)
+- **Libraries & Toolboxes**:
+  - [[Microservice-Toolbox-Hub]]
+  - [[Universal-Logger-Hub]]
+  - [[Flexible-Logger-Hub]]
+  - [[Distributed-Config-Hub]]
+  - [[Safe-Socket-Hub]]
+- **Infrastructure & Daemons**:
+  - [[Config-Server-Hub]]
+  - [[Log-Server-Hub]]
+  - [[Notif-Server-Hub]]
+  - [[Tele-Remote-Hub]]
+  - [[Web-Interface-Hub]]
+  - [[RAG-Engine-Hub]]
+- **Orchestration**:
+  - [[Docker-Deployment-Hub]]
+  - [[Sandbox-Testing-Hub]]
 
 ## 📜 Technical Protocols
 - [[Microservice-Error-Handling]]
@@ -39,3 +36,4 @@ This index aggregates the operational hubs for the service fleet.
 - [[Microservice-Logging-Standard|📜 Microservice Logging Standard]]
 - [[Unified-Control-Protocol|📜 Unified Control Protocol (gRPC/REST)]]
 - [[Web-Interface-Integration-Protocol|📜 Web Interface Integration Protocol]]
+- [[Web-Interface-Page-Rendering|📜 Web Interface Page Rendering & UI Styling]]

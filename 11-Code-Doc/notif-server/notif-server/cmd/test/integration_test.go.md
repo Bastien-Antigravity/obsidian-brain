@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -28,7 +37,7 @@
 - [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterMockSender]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls)
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls)

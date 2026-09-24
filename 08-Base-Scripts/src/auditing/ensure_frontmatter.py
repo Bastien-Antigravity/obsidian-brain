@@ -12,6 +12,10 @@ DATA FLOW:
 3. Automatically inserts or updates key-value pairs (microservice, type, status).
 4. Synchronizes Obsidian tags taxonomy (e.g. #service/<name>, #type/<type>, #state/<status>, #ai/ignore).
 5. Writes changes back to files, and exits with non-zero if checking/hook constraints fail.
+
+KEY PARAMETERS:
+- check_only: If True, only verifies compliance without modifying files.
+- workspace_root: Root workspace path to scan.
 """
 
 import os
@@ -21,8 +25,12 @@ import yaml
 from pathlib import Path
 import subprocess
 
+# -----------------------------------------------------------------------------
+
 # Patterns
 FRONT_MATTER_PATTERN = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+
+# -----------------------------------------------------------------------------
 
 def is_documentation_file(file_path):
     """Determines whether a markdown file is human documentation subject to frontmatter checks."""
@@ -44,6 +52,8 @@ def is_documentation_file(file_path):
         return True
     return False
 
+# -----------------------------------------------------------------------------
+
 def get_modified_files():
     """Retrieves list of modified and cached markdown files using git."""
     try:
@@ -58,6 +68,8 @@ def get_modified_files():
         return files
     except Exception:
         return []
+
+# -----------------------------------------------------------------------------
 
 def get_all_documentation_files(workspace_root):
     """Scans for all human documentation markdown files in quick-overview and 06-Microservices."""
@@ -77,6 +89,8 @@ def get_all_documentation_files(workspace_root):
                 docs.append(p)
                 
     return docs
+
+# -----------------------------------------------------------------------------
 
 def normalize_frontmatter(file_path, check_only=False):
     """

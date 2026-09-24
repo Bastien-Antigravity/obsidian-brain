@@ -9,6 +9,9 @@ DATA FLOW:
 2. Parses frontmatter.
 3. Applies domain tags and backlinks.
 4. Updates files.
+
+KEY PARAMETERS:
+None (Auditing and fixing utility).
 """
 
 from sys import exit as sysExit

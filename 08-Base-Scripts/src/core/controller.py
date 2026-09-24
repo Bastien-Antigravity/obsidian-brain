@@ -179,7 +179,12 @@ class CommandController(Command):
             "knowledge-compressor": "Processes telemetry files and compiles dense codebase summaries to hydrate the AI RAG context window.",
             "mission-help": "Displays detailed usage help, subcommand documentation, and structural layout requirements.",
             "scaffold-new-brain": "Scaffolds empty template notes, system manuals, and mode manuals for new orchestration nodes.",
-            "unlock-vault": "Decrypts secure configuration properties and hydrates local environmental files using the KMS key ring.",
+            "audit-ports": "Audits 4 architectural layers (native.yaml, docker-compose, service-registry, docs) to guarantee zero port drift.",
+            "validate-compliance": "Mechanically verifies source code invariants including shebangs, Triple-Block headers, dividers, ports, and mock pollution.",
+            "format-compliance": "AST-based code refactorer and compliance auto-repair tool for Python source files.",
+            "build-inventory": "Recursively scans the workspace to build and update the fleet-wide inventory.json.",
+            "scaffold-microservice": "Scaffolds standard-compliant Go, Rust, or Python microservices with complete mandatory layout.",
+            "discord-client": "Connects Discord chat channels to the unified squad command controller.",
             "map-feats": "Crawls BDD specifications to map microservices to their behavioral feature files and displays the coverage map.",
             "fix-feats": "Standardizes BDD spec files by injecting missing domain tags, normalizing folder locations, and adding parent hub links.",
             "controller": "Invokes command router execution, handling direct subprocess spawning and command outputs."

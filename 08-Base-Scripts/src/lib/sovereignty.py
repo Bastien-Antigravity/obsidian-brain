@@ -1,9 +1,22 @@
 #!/usr/bin/env python
 # coding:utf-8
+
 """
-🛡️ SOVEREIGNTY ENGINE (Core Library)
-Centralized validation logic for the Bastien-Antigravity Obsidian Brain.
-Enforces DocMaintainer and Sentinel rules with high reliability.
+ESSENTIAL PROCESS:
+Sovereignty Engine and Centralized Knowledge Validation Library.
+Enforces YAML frontmatter schema, Obsidian tag taxonomy, and cross-reference integrity
+across the Bastien-Antigravity ecosystem notes.
+
+DATA FLOW:
+1. Indexes workspace markdown files and builds link/stem registries.
+2. Loads canonical tag taxonomy from 00-AI-Orchestration/Tag-Taxonomy.md.
+3. Evaluates document frontmatter against REQUIRED_YAML keys.
+4. Validates Obsidian tags and wikilinks against indexed notes.
+5. Returns structured error and warning collections.
+
+KEY PARAMETERS:
+- taxonomy_path: Optional path to Tag-Taxonomy.md.
+- workspace_root: Optional path to workspace parent folder.
 """
 import os
 import sys
@@ -24,13 +37,16 @@ try:
 except ImportError:
     yaml = None
 
+# -----------------------------------------------------------------------------
+
 class Sovereignty:
     # --- Configuration ---
     REQUIRED_YAML = ["microservice", "type", "status"]
     MANDATORY_TAG_ROOTS = ["#type/", "#state/"]
     TRANSVERSAL_TAG_ROOTS = ["#tech/", "#tier/", "#zone/"]
     
-    # --- Result Structure ---
+    # -----------------------------------------------------------------------------
+
     def __init__(self, taxonomy_path: Path = None, workspace_root: Path = None):
         self.errors = []
         self.warnings = []

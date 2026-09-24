@@ -3,7 +3,13 @@ source: sandbox-testing/02-Scenarios/go/dynamic_logging_and_alerts_test.go
 workspace: sandbox-testing
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-17T19:14:20.183670
+last_sync: 2026-09-17 19:14:20.183670
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: dynamic_logging_and_alerts_test.go

@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -6,7 +15,7 @@
 ### 📦 Dependencies (Outbound)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterMockSender]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.GetLogLevel]] (method: defines_method)

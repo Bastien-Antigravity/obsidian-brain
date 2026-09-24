@@ -5,18 +5,35 @@
 ESSENTIAL PROCESS:
 Exposes the SquadControlService gRPC endpoints.
 Allows external clients to run subcommands, get status, switch modes, and get the active mode.
+
+DATA FLOW:
+1. Client issues RPC call to SquadControlService (GetStatus, RunCommand, GetActiveMode, SwitchMode).
+2. Servicer invokes CommandController to execute action.
+3. Servicer packages result into corresponding Protobuf response message.
+
+KEY PARAMETERS:
+- controller: CommandController singleton instance.
+- logger: UniLog or compatible logging handle.
+- ip: Network bind IP address.
+- port: Network bind port number.
 """
 
 import time
 import grpc
 from src.grpc_control import squad_control_pb2, squad_control_pb2_grpc
 
+# -----------------------------------------------------------------------------
+
 class SquadControlServiceImpl(squad_control_pb2_grpc.SquadControlServiceServicer):
     """Servicer implementation for gRPC Squad Control."""
+
+    # -----------------------------------------------------------------------------
 
     def __init__(self, controller, logger):
         self.controller = controller
         self.logger = logger
+
+    # -----------------------------------------------------------------------------
 
     async def GetStatus(self, request, context):
         status = await self.controller.get_status()
@@ -26,6 +43,8 @@ class SquadControlServiceImpl(squad_control_pb2_grpc.SquadControlServiceServicer
             version=status.get("version", "1.0.0"),
             timestamp=status.get("timestamp", int(time.time()))
         )
+
+    # -----------------------------------------------------------------------------
 
     async def RunCommand(self, request, context):
         try:
@@ -42,11 +61,15 @@ class SquadControlServiceImpl(squad_control_pb2_grpc.SquadControlServiceServicer
                 timestamp=int(time.time())
             )
 
+    # -----------------------------------------------------------------------------
+
     async def GetActiveMode(self, request, context):
         mode = await self.controller.get_active_mode()
         return squad_control_pb2.GetActiveModeResponse(
             mode=mode
         )
+
+    # -----------------------------------------------------------------------------
 
     async def SwitchMode(self, request, context):
         try:
@@ -61,7 +84,15 @@ class SquadControlServiceImpl(squad_control_pb2_grpc.SquadControlServiceServicer
                 message=str(e)
             )
 
+# -----------------------------------------------------------------------------
+
 _grpc_server = None
+
+def get_grpc_server():
+    global _grpc_server
+    return _grpc_server
+
+# -----------------------------------------------------------------------------
 
 async def start_grpc_server(controller, ip, port, logger):
     """Initializes and starts the asynchronous Squad Control gRPC server."""

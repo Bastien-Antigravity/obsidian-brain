@@ -30,7 +30,9 @@ from pathlib import Path
 from lib.bootstrap import ensure_virtualenv, prepend_venv_bin, ensure_import_paths
 from microservice_toolbox.utils.process_lock import prevent_double_start
 
-# --- Extractor Classes ---
+# -----------------------------------------------------------------------------
+# Extractor Classes
+# -----------------------------------------------------------------------------
 
 class PythonExtractor(ast.NodeVisitor):
     def __init__(self):

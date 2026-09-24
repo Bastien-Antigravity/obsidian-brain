@@ -3,7 +3,13 @@ source: microservice-toolbox/go/pkg/teleremote/client_test.go
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-18T14:33:31.301813
+last_sync: 2026-09-18 14:33:31.301813
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: client_test.go

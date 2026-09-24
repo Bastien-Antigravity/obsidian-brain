@@ -3,7 +3,13 @@ source: docker-deployment/scripts/setup_nats.py
 workspace: docker-deployment
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-14T00:32:39.750684
+last_sync: 2026-09-14 00:32:39.750684
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: setup_nats.py

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # coding:utf-8
 
 """
@@ -16,9 +17,23 @@ DATA FLOW:
 import sys
 from pathlib import Path
 
+# -----------------------------------------------------------------------------
 # 1. Path & Virtual Environment Bootstrapping
 # Inject microservice-toolbox path dynamically so we can import bootstrap_microservice
-_workspace_root = Path(__file__).resolve().parent.parent.parent.parent.parent
+_self_dir = Path(__file__).resolve()
+_workspace_root = None
+for parent in [_self_dir] + list(_self_dir.parents):
+    if (parent / "microservice-toolbox").exists():
+        _workspace_root = parent
+        break
+if not _workspace_root:
+    for p in [Path.cwd()] + list(Path.cwd().parents):
+        if (p / "microservice-toolbox").exists():
+            _workspace_root = p
+            break
+if not _workspace_root:
+    _workspace_root = _self_dir.parent.parent.parent.parent.parent
+
 _toolbox_path = _workspace_root / "microservice-toolbox" / "python"
 if _toolbox_path.exists() and str(_toolbox_path) not in sys.path:
     sys.path.insert(0, str(_toolbox_path))
@@ -26,6 +41,7 @@ if _toolbox_path.exists() and str(_toolbox_path) not in sys.path:
 from microservice_toolbox.utils.bootstrap import bootstrap_microservice
 bootstrap_microservice(__file__, app_name="base_scripts")
 
+# -----------------------------------------------------------------------------
 # 2. Singleton Instantiation (Config & Logger)
 from microservice_toolbox.config.loader import load_config as toolboxLoadConfig
 

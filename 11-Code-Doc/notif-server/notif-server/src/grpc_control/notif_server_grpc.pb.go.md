@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -26,8 +35,6 @@
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|notifControlServiceClient.SetAlertingConfig]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
-- [[notif-server/notif-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (same_package)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NewNotifControlServiceClient]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlServiceClient]] (interface: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlServiceServer]] (interface: belongs_to)

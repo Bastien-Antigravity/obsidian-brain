@@ -7,54 +7,47 @@ tags:
 - '#type/automation'
 - '#state/active'
 - '#zone/3-fleet'
----# 🏗️ Architecture: Base Scripts
+---
 
-The `08-Base-Scripts` directory follows a **Command-and-Control (C2)** architecture pattern designed for high-autonomy AI orchestration.
+# 🏗️ Architecture: Base Scripts
+
+The `08-Base-Scripts` repository follows a **Command-and-Control (C2)** architecture pattern designed for high-autonomy AI orchestration, compliance enforcement, and fleet management.
 
 ---
 
 ## 🧩 Component Map
 
-### 1. The Orchestration Layer
-- **`start_squad.py`**: The central nervous system. It doesn't just launch a client; it orchestrates a **Lifecycle**:
-    1. **Audit**: Checks for unauthorized changes (via `sovereignty.py`).
-    2. **Sync**: Rebuilds runtime `.agents/` from vault source (via `convert_agents.py`).
-    3. **Protocol**: Locks the session into a specific Mode (via `switch_mode.py`).
-    4. **Launch**: Hands off control to the selected Client.
+### 1. The Core Orchestration Layer (`src/core/`)
+- **`main.py`**: The unified CLI entry point router. Directs commands to categorized modules under `src/`.
+- **`start_squad.py`**: The central squad orchestrator managing:
+    1. **Preflight**: Validates inventory, modes, and configurations.
+    2. **Sync**: Rebuilds runtime `.agents/` definitions from vault role prompts (`convert_agents.py`).
+    3. **Protocol**: Locks the session into an active Mode (`switch_mode.py`).
+    4. **Transit**: Connects via `DualSquadEventBus` to NATS (falling back to LocalEventBus).
+    5. **Daemons**: Hosts FastAPI OpenMFE Web server, gRPC SquadControl, and dynamic Telegram controls.
+- **`controller.py`**: The unified CommandController routing actions, status queries, and chat messages.
 
-### 2. The Fleet Layer
-- **`fleet-commander.py`**: Operates at the workspace level. It uses `inventory.json` from `05-Fleet-Operation` to map and manage the 29 sub-repositories.
-- **`lib/sovereignty.py`**: The "Customs Officer" of the fleet. It verifies that every repository adheres to the `.github` exclusion rules and standard file structures.
+### 2. The Auditing & Compliance Layer (`src/auditing/`)
+- **`validate_compliance.py`**: Mechanical code invariant auditor. Validates shebang/encoding, Triple-Block headers, section dividers, dynamic ports, and mock pollution.
+- **`audit_ports.py`**: 4-Layer port drift verification engine ensuring zero drift across native.yaml, docker-compose, service-registry, and documentation.
+- **`check_coherence.py`**: Ast-based check ensuring prompt synchronization between vault and runtime.
+- **`ensure_frontmatter.py`**: Enforces strict YAML frontmatter and tag taxonomy across documentation.
 
-### 3. The Knowledge Layer
-- **`persona_extractor.py`**: Uses AST (Python) and RegEx (Go/Rust) to build a semantic map of the codebase.
-- **`knowledge-compressor.py`**: Implements a "Context Decay" mitigation strategy by distilling logs into patterns.
+### 3. The Fleet Layer (`src/fleet/`)
+- **`fleet_commander.py`**: Operates at the workspace level, managing git state and processes across the microservices fleet.
+- **`build_inventory.py`**: Generates `inventory.json` from workspace directories.
 
----
-
-## 📡 Data Flow: AI Client Initialization
-
-1.  **User** runs `start_squad.py`.
-2.  **Orchestrator** loads `clients/registry.py` to find available engines.
-3.  **Orchestrator** calls `convert_agents.py` to ensure the AI's "brain" matches the latest vault documentation.
-4.  **Orchestrator** invokes `switch_mode.py` to prompt the user for an operational protocol.
-5.  **Subprocess** launches the CLI (e.g., `gemini-cli`) with the correct agent and workspace context.
-
----
-
-## 🛠️ Shared Libraries (`lib/`)
-
-- **`sovereignty.py`**:
-    - `ArchitectureAudit`: Validates repo archetypes (Microservice vs. Polyglot).
-    - `Compliance`: Enforces CI/CD exclusion rules.
-- **`orchestration_lib.py`** (referenced):
-    - Terminal setup, path resolution, and vault/workspace discovery.
+### 4. The Knowledge & Maintenance Layer (`src/maintenance/`, `src/extraction/`, `src/lib/`)
+- **`persona_extractor.py`**: Uses AST (Python) and RegEx (Go/Rust) to build semantic telemetry maps of the codebase.
+- **`knowledge_compressor.py`**: Distills recent session logs into structured architectural decision patterns.
+- **`joint_audit_purger.py`**: Identifies dark matter orphan notes in the vault and generates deletion checklists.
+- **`improved_transformer.py`**: AST-based compliance refactorer auto-repairing Python headers, dividers, and imports.
 
 ---
 
-## 🤖 Client Registry (`clients/`)
+## 📡 Data Flow: Command Execution
 
-The system is client-agnostic. Adding a new AI engine requires:
-1.  Adding a entry in `clients/registry.py`.
-2.  Implementing a wrapper in `clients/API/` (if it's an API-based client).
-3.  Ensuring the `agents_dir` mapping is correct for persona synchronization.
+1. **User / Agent** invokes `python3 main.py <command>`.
+2. **`main.py`** resolves the module namespace via `src.bootstrap` and invokes target `main()`.
+3. **`src.bootstrap`** loads layered configuration (`distributed-config`) and initializes `UniLog` logger singleton.
+4. **Command Execution** performs operations dynamically respecting capability address resolution and ecosystem KMS encryption standards.

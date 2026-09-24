@@ -1,6 +1,23 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+"""
+ESSENTIAL PROCESS:
+QA Engineer agent daemon specialized in verifying logic implementation, auditing unit tests, and reporting verification reports.
+
+DATA FLOW:
+1. Inherits BaseAgent initialization with role-specific prompt and event bus.
+2. Registers specialized tools and handles incoming chat events.
+
+KEY PARAMETERS:
+- config: Application configuration singleton.
+- logger: UniLog logging handle.
+- pg_pool: Shared database connection pool.
+- event_bus: SquadEventBus pub/sub provider.
+"""
+
+# -----------------------------------------------------------------------------
+
 from typing import Any, Dict
 from src.interfaces import SquadEventBus
 from src.agents.base_agent import BaseAgent
@@ -14,6 +31,8 @@ def run_squad_tests(test_command: str) -> str:
     """
     return ""
 
+
+# -----------------------------------------------------------------------------
 
 class QAAgent(BaseAgent):
     """

@@ -1,9 +1,28 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+"""
+ESSENTIAL PROCESS:
+Orchestrator agent daemon responsible for decomposing user goals, delegating tasks to specific agents, and reporting progress.
+
+DATA FLOW:
+1. Inherits BaseAgent initialization with role-specific prompt and event bus.
+2. Registers specialized tools and handles incoming chat events.
+
+KEY PARAMETERS:
+- config: Application configuration singleton.
+- logger: UniLog logging handle.
+- pg_pool: Shared database connection pool.
+- event_bus: SquadEventBus pub/sub provider.
+"""
+
+# -----------------------------------------------------------------------------
+
 from typing import Any
 from src.interfaces import SquadEventBus
 from src.agents.base_agent import BaseAgent
+
+# -----------------------------------------------------------------------------
 
 class OrchestratorAgent(BaseAgent):
     """

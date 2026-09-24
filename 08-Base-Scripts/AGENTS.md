@@ -7,6 +7,7 @@ tags:
 - '#type/overview'
 - '#state/active'
 - '#ai/ignore'
+- '#zone/3-fleet'
 ---
 # AGENTS.md: 08-Base-Scripts
 
@@ -15,7 +16,7 @@ tags:
 
 - **Unified CLI Entrypoint**: `python3 08-Base-Scripts/main.py <command> [args...]`
 - **Execution Environment**: Vault Python virtual environment (`.venv`) initialized via `src/bootstrap` using `microservice-toolbox` Python bindings.
-- **RAG Engine Integration**: Paired with [`09-RAG-Engine`](file:///Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/09-RAG-Engine) for semantic context retrieval, interface discovery, and AST code queries.
+- **RAG Engine Integration**: Paired with [`09-RAG-Engine`](../09-RAG-Engine) for semantic context retrieval, interface discovery, and AST code queries.
 - **Configuration Link**: `standalone.yaml -> ../docker-deployment/modes/local/config/native.yaml`
 
 ---
@@ -26,7 +27,7 @@ All operational scripts are invoked through the central `main.py` router:
 
 ### 1. Squad Lifecycle & Scaffolding
 - `start-squad`: Main orchestrator. Runs preflight audits, synchronizes agent roles, and boots the AI squad environment.
-- `scaffold-microservice`: **Automated Microservice Generator**. Scaffolds new Go, Python, or Rust microservices with standard directories, the 9 mandatory root files, BDD spec stubs, and registration snippets.
+- `scaffold-microservice`: **Automated Microservice Generator**. Scaffolds new Go, Python, or Rust microservices with standard directories, the 12 mandatory root files & folders, BDD spec stubs, and registration snippets.
 - `scaffold-new-brain`: Generates a new standardized Obsidian documentation vault.
 - `switch-mode`: Protocol switcher toggling between Spec-First, Labs, and Fleet operational modes.
 - `unlock-vault`: Manages encryption and vault access protocols.
@@ -34,12 +35,16 @@ All operational scripts are invoked through the central `main.py` router:
 
 ### 2. Auditing & Health Verification
 - `preflight-check`: Mandatory pre-session audit verifying configuration validity, ports, and environment integrity.
+- `audit-ports`: **4-Layer Port Drift Verification Engine**. Scans `native.yaml`, `docker-compose.yaml`, `service-registry.json`, and architecture markdown guides to guarantee zero port drift.
+- `validate-compliance`: **Mechanical Code Invariant Auditor**. Scans Go, Python, Rust, and C++ code to mechanically verify shebang/encoding, Triple-Block headers, section dividers, dynamic port usage, and absence of test mocks.
+- `format-compliance`: **AST Compliance Refactorer**. Auto-repairs Python code formatting, headers, dividers, and imports (`--fix`).
 - `brain-health-audit`: Scans the entire `obsidian-brain` vault for orphan notes, missing tags, and invalid frontmatter.
 - `check-coherence`: Audits runtime agent skills against vault role prompts to ensure 100% coherence.
 - `ensure-frontmatter`: Validates and repairs YAML frontmatter across all markdown files.
 - `hardening-yaml`: Audits and hardens ecosystem YAML files against syntax and schema drift.
 
 ### 3. Fleet & Feature Management
+- `build-inventory`: **Fleet Inventory Builder**. Scans workspace repositories and regenerates `05-Fleet-Operation/inventory.json`.
 - `fleet-commander`: Fleet-wide git and deployment coordinator. Interacts with `05-Fleet-Operation/00-Repo-Control/fleet-manager.py` to enforce compliance and manage multi-repo pushes.
 - `map-feats`: Maps BDD feature specifications (`02-Business-BDD`) to concrete implementation code.
 - `fix-feats`: Auto-aligns feature documentation status with actual codebase state.

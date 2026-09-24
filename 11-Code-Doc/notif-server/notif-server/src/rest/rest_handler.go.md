@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -18,7 +27,9 @@
 - [[notif-server/notif-server/src/grpc_control/service.go.md|service.go]] (imports)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: defines_method)
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServerPort]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method)
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleAddProvider]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleGetAlertingConfig]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleGetSupportedTypes]] (method: defines_method)
@@ -35,7 +46,9 @@
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: belongs_to)
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServerPort]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to)
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleAddProvider]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleGetAlertingConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleGetSupportedTypes]] (method: belongs_to)

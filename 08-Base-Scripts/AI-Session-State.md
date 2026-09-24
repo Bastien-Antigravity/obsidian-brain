@@ -16,6 +16,6 @@ tags:
 
 ## 🎯 Active Status
 - **Current Mission**: Automated microservice scaffolding hardening, single source of truth inventory enforcement, and 21-agent squad coherence.
-- **Scaffolding Generator**: `src/lifecycle/scaffold_microservice.py` provides explicit `[STARTER TEMPLATE / DUMMY ...]` banners in Python and Go, enforcing one-class rule, keyword-only constructors, typing.Protocol, MStatusPayload dataclass, and pytest starter suites.
+- **Scaffolding Generator**: `src/lifecycle/scaffold_microservice.py` provides explicit `[STARTER TEMPLATE / DUMMY ...]` banners in Python and Go, enforcing one-class rule, keyword-only constructors, typing.Protocol, StatusPayload dataclass, and pytest starter suites.
 - **Coherence Verification**: `main.py check-coherence` verifies 100% coherence across all 21 agent skills and obsidian vault role prompts.
 - **Preflight Verification**: `main.py preflight-check` ensures green state across essential files, submodules, modes, and inventories.

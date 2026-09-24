@@ -21,9 +21,9 @@ import json
 from pathlib import Path
 from typing import Tuple, List, Dict, Any
 
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 # TERMINAL COLORS
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 C_RESET = "\033[0m"
 C_CYAN = "\033[96m"
 C_GREEN = "\033[92m"
@@ -32,9 +32,9 @@ C_RED = "\033[91m"
 C_DIM = "\033[2m"
 C_BOLD = "\033[1m"
 
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 # SETUP FUNCTIONS
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 def setup_terminal() -> None:
     """Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems."""
     if sys.stdout.encoding != 'utf-8':
@@ -43,75 +43,56 @@ def setup_terminal() -> None:
         except (AttributeError, Exception):
             pass
 
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 # CONFIGURATION & LOGGING SETUP
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 def get_config() -> Any:
     """
     Returns the centralized ecosystem configuration singleton from bootstrap.
     """
-    try:
-        import src.bootstrap as bootstrap
-        return bootstrap.config
-    except Exception:
-        # Fallback dummy config object in case bootstrap isn't loaded
-        class FallbackConfig:
-            def __init__(self):
-                self.data = {}
-            def get_grpc_listen_addr(self, name):
-                if name == "rag_engine":
-                    return "127.0.0.1:8091"
-                return "127.0.0.1:1863"
-            def set_logger(self, logger):
-                pass
-        return FallbackConfig()
+    import src.bootstrap as bootstrap
+    return bootstrap.config
 
+# -----------------------------------------------------------------------------
 def get_logger(name: str = "SquadLogger") -> Any:
     """
     Returns the centralized UniLog logging engine singleton from bootstrap.
     """
-    try:
-        import src.bootstrap as bootstrap
-        return bootstrap.logger
-    except Exception:
-        import logging
-        logger = logging.getLogger(name)
-        if not logger.handlers:
-            handler = logging.StreamHandler(sys.stdout)
-            formatter = logging.Formatter('[%(levelname)s] %(name)s : %(message)s')
-            handler.setFormatter(formatter)
-            logger.addHandler(handler)
-            logger.setLevel(logging.INFO)
-        return logger
+    import src.bootstrap as bootstrap
+    return bootstrap.logger
 
-
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 # PATH & ECOSYSTEM RESOLUTION
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 def resolve_vault_and_workspace(script_file: str) -> Tuple[Path, Path]:
     """
-    Dynamically resolves the vault root (obsidian-brain) and workspace root (parent of vault).
+    Dynamically resolves the vault root (obsidian-brain or custom brain) and workspace root (parent of vault).
     """
     current = Path(script_file).resolve().parent
     vault_root = None
     for parent in [current] + list(current.parents):
-        if parent.name == "obsidian-brain":
+        if (parent / "08-Base-Scripts").is_dir() and (parent / "00-AI-Orchestration").is_dir():
+            vault_root = parent
+            break
+        if parent.name == "obsidian-brain" or parent.name.endswith("-brain"):
             vault_root = parent
             break
             
     if not vault_root:
         # Fallback to parent of script dir if run directly from 08-Base-Scripts
-        if current.name == "08-Base-Scripts" or current.name == "Scripts":
-            vault_root = current.parent
-        else:
+        for parent in [current] + list(current.parents):
+            if parent.name == "08-Base-Scripts" or parent.name == "Scripts":
+                vault_root = parent.parent
+                break
+        if not vault_root:
             vault_root = current
             
     workspace_root = vault_root.parent
     return vault_root, workspace_root
 
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 # GOVERNANCE & STATE OPERATIONS
-# ———————————————————————————————————————————————————————————————————————————————
+# -----------------------------------------------------------------------------
 def get_active_mode(vault_root: Path) -> str:
     """
     Retrieves the currently selected active squad mode protocol from environment

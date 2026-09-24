@@ -5,6 +5,19 @@
 ESSENTIAL PROCESS:
 FastAPI Web Server for Squad Control Dashboard and MFE registration.
 Serves static MFE assets and handles REST API queries.
+
+DATA FLOW:
+1. Instantiates FastAPI application and mounts static asset directory.
+2. Initializes REST route handlers with command controller and UniLog logger.
+3. Automatically registers OpenMFE micro-frontend with central web_interface.
+4. Starts uvicorn ASGI server on configured IP and port.
+
+KEY PARAMETERS:
+- controller: CommandController singleton instance.
+- config: Distributed configuration handle.
+- logger: UniLog logging handle.
+- host: Network bind host address.
+- port: Network bind port number.
 """
 
 import sys
@@ -17,6 +30,8 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+
+# -----------------------------------------------------------------------------
 
 app = FastAPI(title="Squad Control Web Server")
 
@@ -34,11 +49,15 @@ _STATIC_DIR = Path(__file__).parent / "static"
 _STATIC_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(_STATIC_DIR)), name="static")
 
-# Helper to load routes dynamically
+# -----------------------------------------------------------------------------
+
 def init_routes(controller, logger):
+    """Dynamically initializes and registers squad REST routes."""
     from src.rest.rest_handler import SquadRESTHandler
     rest_handler = SquadRESTHandler(controller, logger)
     rest_handler.register_routes(app)
+
+# -----------------------------------------------------------------------------
 
 def register_mfe_with_web_interface(config, logger, bs_ip, bs_port):
     """
@@ -53,7 +72,7 @@ def register_mfe_with_web_interface(config, logger, bs_ip, bs_port):
         try:
             web_cap = config.data.get("capabilities", {}).get("web_interface", {})
             web_ip = web_cap.get("ip", "127.0.0.1")
-            web_port = int(web_cap.get("port", 5000))
+            web_port = int(web_cap.get("port", getattr(config, "get_listen_port", lambda k, d=None: d)("web_interface") or 5000))
         except Exception:
             pass
 
@@ -90,6 +109,8 @@ def register_mfe_with_web_interface(config, logger, bs_ip, bs_port):
         time.sleep(3)
     logger.warning("OpenMFE: Failed to register base-scripts MFE after 15 attempts")
 
+# -----------------------------------------------------------------------------
+
 def start_async_server(controller, config, logger, host, port):
     """Launches the uvicorn web server and starts the auto-registration daemon thread."""
     init_routes(controller, logger)
@@ -105,7 +126,6 @@ def start_async_server(controller, config, logger, host, port):
     logger.info(f"Starting Squad Control FastAPI server on http://{host}:{port}...")
     
     # Run uvicorn in a non-blocking background task or thread-safe runner
-    # We will pass loop or run synchronously depending on how uvicorn is called.
     config_uv = uvicorn.Config(app, host=host, port=port, log_level="warning")
     server = uvicorn.Server(config_uv)
     

@@ -8,6 +8,9 @@ DATA FLOW:
 1. Scans the BDD Behavior Specs directory.
 2. Parses 'microservice' frontmatter.
 3. Aggregates and prints the mapping.
+
+KEY PARAMETERS:
+None (Read-only mapping utility).
 """
 
 from sys import exit as sysExit

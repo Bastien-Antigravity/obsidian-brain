@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding:utf-8
+
 import unittest
 from unittest.mock import MagicMock, AsyncMock
 import sys
@@ -16,7 +19,7 @@ from src.rest.rest_handler import SquadRESTHandler
 from src.core.controller import CommandController
 
 
-class TestSquadChatRESTEndpoints(unittest.IsolatedAsyncioTestCase):
+class TestSquadChatRESTEndpoints(unittest.TestCase):
     def setUp(self):
         self.mock_controller = MagicMock()
         self.mock_logger = MagicMock()
@@ -26,16 +29,17 @@ class TestSquadChatRESTEndpoints(unittest.IsolatedAsyncioTestCase):
         self.rest_handler.register_routes(self.app)
         self.client = TestClient(self.app)
 
+    def tearDown(self):
+        self.client.close()
+
     def test_route_order_stream_does_not_hit_history(self):
         # Configure mock get_chat_history return
         self.mock_controller.get_chat_history = AsyncMock(return_value=[{"sender": "system", "content": "history"}])
         
-        # Request stream endpoint
-        response = self.client.get("/api/v1/squad/chat/stream/test_session_123")
-        
-        # Verify it returned event-stream content type and did NOT call get_chat_history
+        response = self.client.get("/api/v1/squad/chat/stream/test_session_123?once=true")
         self.assertEqual(response.status_code, 200)
         self.assertIn("text/event-stream", response.headers.get("content-type", ""))
+        self.assertIn("connected", response.text)
         self.mock_controller.get_chat_history.assert_not_called()
 
     def test_get_chat_history_endpoint(self):

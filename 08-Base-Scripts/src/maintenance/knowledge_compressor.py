@@ -1,58 +1,75 @@
 #!/usr/bin/env python
 # coding:utf-8
+
 """
-🧠 KNOWLEDGE COMPRESSOR (Context Distiller)
-Automates the distillation of session logs into 'Fresh Patterns' to keep context clean.
-Parses AI-Session-State.md and generates candidate entries for Knowledge-Strategy.md.
+ESSENTIAL PROCESS:
+Knowledge Compressor and Context Distiller for the Bastien-Antigravity ecosystem.
+Automates distillation of active session state logs into fresh architectural decision patterns,
+ensuring AI session context remains compact and actionable.
+
+DATA FLOW:
+1. Bootstraps environment and resolves vault root.
+2. Reads recent sessions from 00-AI-Orchestration/AI-Session-State.md.
+3. Distills log items into structured pattern candidate blocks.
+4. Writes distillation reports to 00-AI-Orchestration/logs/distillations/.
+
+KEY PARAMETERS:
+- vault_root: Root directory of the obsidian-brain vault.
+- count: Number of recent sessions to extract and distill.
 """
+
 import os
 import re
 import sys
 import argparse
 from datetime import datetime
 from pathlib import Path
-from pathlib import Path
-from lib.bootstrap import ensure_virtualenv, prepend_venv_bin, ensure_import_paths
-from lib.orchestration_lib import setup_terminal
 
-script_dir = Path(__file__).resolve().parent
-vault_root = ensure_virtualenv(str(script_dir))
-prepend_venv_bin(vault_root)
+# Standard ecosystem bootstrap
+import src.bootstrap as bootstrap
+from lib.orchestration_lib import setup_terminal, resolve_vault_and_workspace
 
-ensure_import_paths(script_dir, vault_root)
+logger = bootstrap.logger
 
-setup_terminal()
+# -----------------------------------------------------------------------------
 
 class KnowledgeCompressor:
     def __init__(self, vault_root: Path):
         self.vault_root = vault_root
-        self.session_state_file = vault_root / "AI-Session-State.md"
+        canonical_state = vault_root / "00-AI-Orchestration" / "AI-Session-State.md"
+        legacy_state = vault_root / "AI-Session-State.md"
+        self.session_state_file = canonical_state if canonical_state.exists() else legacy_state
         self.strategy_file = vault_root / "00-AI-Orchestration" / "Knowledge-Strategy.md"
         self.output_dir = vault_root / "00-AI-Orchestration" / "logs" / "distillations"
         os.makedirs(self.output_dir, exist_ok=True)
 
-    def extract_recent_sessions(self, count=3):
+    # -----------------------------------------------------------------------------
+
+    def extract_recent_sessions(self, count: int = 3) -> list:
         """Extracts the last N sessions from AI-Session-State.md."""
         if not self.session_state_file.exists():
-            print(f"❌ Error: {self.session_state_file} not found.")
+            logger.error("KnowledgeCompressor : {0} not found.".format(self.session_state_file))
             return []
 
-        with open(self.session_state_file, 'r', encoding='utf-8') as f:
-            content = f.read()
+        try:
+            with open(self.session_state_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+        except Exception as e:
+            logger.error("KnowledgeCompressor : Error reading session state: {0}".format(e))
+            return []
 
         # Split by H2 headers (Sessions)
         sessions = re.split(r'^##\s+', content, flags=re.MULTILINE)
-        # First part is frontmatter/preamble
         if not sessions:
             return []
             
         return [s.strip() for s in sessions[1:count+1]]
 
-    def distill_to_pattern(self, session_text):
+    # -----------------------------------------------------------------------------
+
+    def distill_to_pattern(self, session_text: str) -> str:
         """
-        Logic to format a session log into a Decision Pattern.
-        In a full implementation, this would call an LLM.
-        For now, it provides a structured template based on the session log.
+        Formats a session log into a Decision Pattern candidate.
         """
         lines = session_text.split('\n')
         title_line = lines[0] if lines else "Unknown Session"
@@ -82,12 +99,14 @@ class KnowledgeCompressor:
         
         return "\n".join(distillation)
 
-    def run(self, count=1):
-        print(f"🔍 Scanning {self.session_state_file.name} for recent wisdom...")
+    # -----------------------------------------------------------------------------
+
+    def run(self, count: int = 1) -> None:
+        logger.info("KnowledgeCompressor : Scanning {0} for recent wisdom...".format(self.session_state_file.name))
         sessions = self.extract_recent_sessions(count)
         
         if not sessions:
-            print("✨ No sessions found to distill.")
+            logger.info("KnowledgeCompressor : No sessions found to distill.")
             return
 
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -109,20 +128,26 @@ class KnowledgeCompressor:
             "\n".join(candidates)
         ]
         
-        with open(report_file, 'w', encoding='utf-8') as f:
-            f.write("\n".join(report_content))
-            
-        print(f"✅ Distillation complete! Review candidates in: {report_file}")
+        try:
+            with open(report_file, 'w', encoding='utf-8') as f:
+                f.write("\n".join(report_content))
+            logger.info("KnowledgeCompressor : Distillation complete! Review candidates in: {0}".format(report_file))
+        except Exception as e:
+            logger.error("KnowledgeCompressor : Error writing distillation report: {0}".format(e))
+
+# -----------------------------------------------------------------------------
 
 def main():
+    setup_terminal()
+    vault_root, _ = resolve_vault_and_workspace(__file__)
     parser = argparse.ArgumentParser(description="Knowledge Compressor - Session Log Distiller")
     parser.add_argument("--count", "-c", type=int, default=1, help="Number of recent sessions to distill")
     args = parser.parse_args()
 
-    # Use globally resolved vault_root path
     compressor = KnowledgeCompressor(vault_root)
     compressor.run(count=args.count)
 
+# -----------------------------------------------------------------------------
 
 if __name__ == "__main__":
     main()

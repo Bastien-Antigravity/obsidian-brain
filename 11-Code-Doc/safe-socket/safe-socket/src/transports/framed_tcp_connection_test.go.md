@@ -3,7 +3,13 @@ source: safe-socket/src/transports/framed_tcp_connection_test.go
 workspace: safe-socket
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-17T19:14:19.606705
+last_sync: 2026-09-17 19:14:19.606705
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: framed_tcp_connection_test.go

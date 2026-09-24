@@ -5,37 +5,63 @@
 ESSENTIAL PROCESS:
 Provides the SquadEventBus interface and DualSquadEventBus concrete class
 routing multi-agent communications via NATS or LocalEventBus in offline mode.
+
+DATA FLOW:
+1. Receives connection request to NATS server via microservice_toolbox.
+2. If NATS is available, connects and delegates publish/subscribe to NATS channels.
+3. If NATS is unavailable or fails, gracefully falls back to in-memory LocalEventBus.
+4. Deduplicates event IDs via EventDeduplicator.
+
+KEY PARAMETERS:
+- nats_cfg: NatsConfig instance or connection string URI.
+- logger: UniLog or compatible ILogger instance.
 """
 
 import json
 import asyncio
+import uuid
+import re
 from typing import Dict, Any, List, Callable, Awaitable, Optional
 from microservice_toolbox.messaging.config import NatsConfig
 from microservice_toolbox.messaging.connector import connect as nats_connect
 
+# -----------------------------------------------------------------------------
+
 class SquadEventBus:
     """Abstract interface defining the pub/sub event bus contract for AI squad coordination."""
+
+    # -----------------------------------------------------------------------------
+
     async def connect(self) -> None:
         """Initializes connection to the underlying message bus."""
         raise NotImplementedError
+
+    # -----------------------------------------------------------------------------
 
     async def publish(self, topic: str, payload: Dict[str, Any]) -> None:
         """Broadcasts a payload JSON dictionary onto a topic channel."""
         raise NotImplementedError
 
+    # -----------------------------------------------------------------------------
+
     async def subscribe(self, topic: str, callback: Callable[[Dict[str, Any]], Awaitable[None]], role: Optional[str] = None) -> None:
         """Registers a non-blocking async callback listener for a topic channel."""
         raise NotImplementedError
+
+    # -----------------------------------------------------------------------------
 
     async def close(self) -> None:
         """Cleans up resources and disconnects from the transit layer."""
         raise NotImplementedError
 
+# -----------------------------------------------------------------------------
 
 class EventDeduplicator:
     _seen = set()
     _seen_list = []
     MAX_SIZE = 1000
+
+    # -----------------------------------------------------------------------------
 
     @classmethod
     def is_duplicate(cls, event_id: str) -> bool:
@@ -51,16 +77,21 @@ class EventDeduplicator:
             return False
         return False
 
+# -----------------------------------------------------------------------------
 
 class LocalEventBus:
     """In-memory fallback event bus for NATS-offline/local testing."""
     _subscribers = None
+
+    # -----------------------------------------------------------------------------
 
     @classmethod
     def _get_subscribers(cls):
         if cls._subscribers is None:
             cls._subscribers = {}
         return cls._subscribers
+
+    # -----------------------------------------------------------------------------
 
     @classmethod
     def subscribe(cls, topic: str, callback: Callable[[Dict[str, Any]], Awaitable[None]], role: Optional[str] = None):
@@ -79,6 +110,8 @@ class LocalEventBus:
                 subs[t] = []
             subs[t].append(callback)
 
+    # -----------------------------------------------------------------------------
+
     @classmethod
     def publish(cls, topic: str, payload: Dict[str, Any]):
         # Deduplicate local events
@@ -92,7 +125,6 @@ class LocalEventBus:
             content = payload.get("content", "").lower()
             sender = payload.get("sender")
             
-            import re
             tags = re.findall(r'@([a-zA-Z0-9_-]+)', content)
             for tag in tags:
                 role = tag.lower()
@@ -130,12 +162,16 @@ class LocalEventBus:
             except Exception:
                 pass
 
+# -----------------------------------------------------------------------------
 
 class DualSquadEventBus(SquadEventBus):
     """
     Unified hybrid event bus that attempts NATS broker routing but cleanly falls back
     to in-memory LocalEventBus if NATS is offline, avoiding noisy traceback logs.
     """
+
+    # -----------------------------------------------------------------------------
+
     def __init__(self, nats_cfg: Any, logger: Any):
         self.logger = logger
         self.nc = None
@@ -152,6 +188,8 @@ class DualSquadEventBus(SquadEventBus):
         else:
             self.cfg = nats_cfg
 
+    # -----------------------------------------------------------------------------
+
     async def connect(self) -> None:
         """Attempts a resilient connection to NATS, falling back to Local otherwise."""
         try:
@@ -166,9 +204,10 @@ class DualSquadEventBus(SquadEventBus):
                 except Exception:
                     pass
 
+    # -----------------------------------------------------------------------------
+
     async def publish(self, topic: str, payload: Dict[str, Any]) -> None:
         """Routes message broadcast depending on NATS connection state."""
-        import uuid
         if "event_id" not in payload:
             payload["event_id"] = str(uuid.uuid4())
 
@@ -179,7 +218,6 @@ class DualSquadEventBus(SquadEventBus):
                 content = payload.get("content", "").lower()
                 sender = payload.get("sender")
                 
-                import re
                 tags = re.findall(r'@([a-zA-Z0-9_-]+)', content)
                 for tag in tags:
                     role = tag.lower()
@@ -201,6 +239,8 @@ class DualSquadEventBus(SquadEventBus):
                 LocalEventBus.publish(topic, payload)
         else:
             LocalEventBus.publish(topic, payload)
+
+    # -----------------------------------------------------------------------------
 
     async def subscribe(self, topic: str, callback: Callable[[Dict[str, Any]], Awaitable[None]], role: Optional[str] = None) -> None:
         """Subscribes callback to the correct event provider."""
@@ -234,6 +274,8 @@ class DualSquadEventBus(SquadEventBus):
                     self.logger.info(f"SquadEventBus subscribed to NATS topic '{t}'")
                 except Exception as e:
                     self.logger.error(f"SquadEventBus failed NATS subscription to '{t}': {e}")
+
+    # -----------------------------------------------------------------------------
 
     async def close(self) -> None:
         """Closes connection cleanly."""

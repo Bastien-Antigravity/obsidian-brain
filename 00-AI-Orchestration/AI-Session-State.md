@@ -3,7 +3,7 @@ microservice: ecosystem-core
 type: governance
 status: active
 Mission-ID: Command-Center-Consolidation
-active-protocol: '[[MODE-MANUAL#Mode-1]]'
+active-protocol: '[[MODE-MANUAL#Mode-2]]'
 tags:
 - '#zone/0-orchestration'
 - '#service/ecosystem-core'

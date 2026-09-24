@@ -2,19 +2,26 @@
 # coding:utf-8
 
 """
-ESSENTIAL PROCESS: Auditor Interface
-Defines the abstract contract for all vault auditing/validation tasks.
+ESSENTIAL PROCESS:
+Auditor Interface defining the abstract contract for all vault auditing/validation tasks.
 
 DATA FLOW:
-None (Abstract Base)
+None (Abstract Base Interface).
+
+KEY PARAMETERS:
+None (Abstract Base Interface).
 """
 
 from abc import ABC, abstractmethod
+
+# -----------------------------------------------------------------------------
 
 class Auditor(ABC):
     """
     Abstract base class representing a workspace auditor.
     """
+
+    # -----------------------------------------------------------------------------
 
     @abstractmethod
     def audit(self, *args, **kwargs) -> bool:

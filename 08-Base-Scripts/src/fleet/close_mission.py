@@ -2,9 +2,20 @@
 # coding:utf-8
 
 """
-🚀 CLOSE MISSION (Governance Gate)
-Finalizes the AI session by verifying state updates and documentation health.
-Run this before concluding any major task.
+ESSENTIAL PROCESS:
+Mission Sign-off Ritual and Governance Gate for Bastien-Antigravity.
+Finalizes active AI sessions by verifying Git branch status, dirty working trees,
+uncommitted files, and knowledge base documentation sovereignty before conclusion.
+
+DATA FLOW:
+1. Identifies active mode and fleet repositories.
+2. Inspects git status and uncommitted changes across repositories.
+3. Validates frontmatter and documentation tags via Sovereignty engine.
+4. Prompts interactive confirmation for task completion and git state.
+
+KEY PARAMETERS:
+- workspace_root: Parent workspace containing the microservice repositories.
+- vault_root: obsidian-brain repository root.
 """
 
 import sys
@@ -18,10 +29,7 @@ from lib.orchestration_lib import setup_terminal, get_active_mode, get_fleet_rep
 script_dir = Path(__file__).resolve().parent
 vault_root = ensure_virtualenv(str(script_dir))
 prepend_venv_bin(vault_root)
-
 ensure_import_paths(script_dir, vault_root)
-
-setup_terminal()
 
 setup_terminal()
 
@@ -35,6 +43,8 @@ except ImportError:
     print("❌ Error: Could not find sovereignty.py in lib/")
     sys.exit(1)
 
+# -----------------------------------------------------------------------------
+
 def get_current_branch(repo_path: Path) -> str:
     try:
         result = subprocessRun(
@@ -45,9 +55,13 @@ def get_current_branch(repo_path: Path) -> str:
     except Exception:
         return ""
 
+# -----------------------------------------------------------------------------
+
 def confirm_step(prompt: str) -> bool:
     choice = input(f"   ❓ {prompt} [y/N]: ").strip().lower()
     return choice == 'y'
+
+# -----------------------------------------------------------------------------
 
 def main():
     print("\n" + "═"*60)

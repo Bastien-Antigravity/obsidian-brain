@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -7,10 +16,9 @@
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.ConsumeRawMessages]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.EnsureSafeLogger]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetConfig]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.LoadNotifSender]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterMockSender]] (method: defines_method)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendNotification]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: defines_method)
@@ -38,14 +46,15 @@
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (same_package)
+- [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (calls)
+- [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.ConsumeRawMessages]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.EnsureSafeLogger]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.LoadNotifSender]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterMockSender]] (method: belongs_to)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendNotification]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: belongs_to)
@@ -61,6 +70,8 @@
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|worker_pool_test.go]] (calls)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|worker_pool_test.go]] (same_package)
+- [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (calls)
+- [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (calls)
 - [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (calls)
 <!-- SYNC:END -->

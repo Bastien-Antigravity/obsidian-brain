@@ -12,6 +12,9 @@ DATA FLOW:
 3. Compares the raw contents after stripping frontmatter and sandbox headers.
 4. If --fix is set, auto-rebuilds the drifted skill files.
 5. Outputs a consistency status report.
+
+KEY PARAMETERS:
+- fix: Boolean flag indicating whether to auto-repair drifted agent definitions.
 """
 
 from sys import exit as sysExit, argv as sysArgv

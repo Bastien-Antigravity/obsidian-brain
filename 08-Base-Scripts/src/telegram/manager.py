@@ -5,20 +5,38 @@
 ESSENTIAL PROCESS:
 Provides the dynamic Telegram TeleClient controller for Squad Control.
 Exposes submenus to switch active modes and execute subcommands.
+
+DATA FLOW:
+1. Instantiates TeleClient with configuration and logger.
+2. Rebuilds dynamic interactive Telegram menu tree (Status, Mode Switch, Subcommands).
+3. Receives interactive button clicks and commands from authorized Telegram users.
+4. Executes controller actions and reports telemetry back to Telegram.
+
+KEY PARAMETERS:
+- tc: TeleClient instance.
+- controller: CommandController singleton instance.
+- logger: UniLog or compatible logging handle.
+- config: Distributed configuration handle.
 """
 
 import asyncio
 from typing import Any, Optional
 from microservice_toolbox.teleremote import TeleClient, Action
 
+# -----------------------------------------------------------------------------
+
 class MenuManager:
     """Orchestrates dynamic rebuild operations for the Squad Control Telegram menu."""
+
+    # -----------------------------------------------------------------------------
 
     def __init__(self, tc: TeleClient, controller: Any, logger: Any, config: Any = None):
         self.tc = tc
         self.controller = controller
         self.logger = logger
         self.config = config
+
+    # -----------------------------------------------------------------------------
 
     def rebuild_menu(self):
         """Pulls status, modes, and commands to rebuild the Telegram menu."""
@@ -95,6 +113,8 @@ class MenuManager:
             loop.create_task(push())
         except RuntimeError:
             pass
+
+# -----------------------------------------------------------------------------
 
 def SetupTelegram(config: Any, controller: Any, logger: Any) -> Optional[TeleClient]:
     """Initializes dynamic Tele-Remote client, binds updates, and registers exit handlers."""

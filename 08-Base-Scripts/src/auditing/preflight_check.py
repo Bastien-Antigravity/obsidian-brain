@@ -261,6 +261,20 @@ def _check_spec_parity() -> Tuple[str, List[str]]:
     missing_repos = set()
     total_checked = 0
     
+    # Load core repositories from inventory.json to know what is expected in local workspace
+    core_repos = set()
+    inventory_path = VAULT_DIR / "05-Fleet-Operation" / "00-Repo-Control" / "inventory.json"
+    if inventory_path.exists():
+        import json
+        try:
+            with open(inventory_path, "r", encoding="utf-8") as f:
+                inv_data = json.load(f)
+                for r in inv_data.get("repositories", []):
+                    if r.get("is_core"):
+                        core_repos.add(r.get("name"))
+        except Exception:
+            pass
+
     for root, _, files in os.walk(str(behavior_specs_dir)):
         for file in files:
             if file.endswith(".md") and file != "TEMPLATE.md":
@@ -282,6 +296,9 @@ def _check_spec_parity() -> Tuple[str, List[str]]:
                                     break
                             
                             if repo_name:
+                                # Domain/external repos (is_core: false) are not required in base local clone
+                                if core_repos and repo_name not in core_repos:
+                                    continue
                                 repo_dir = WORKSPACE_ROOT / repo_name
                                 if not repo_dir.exists():
                                     missing_repos.add((file, repo_name))
@@ -340,6 +357,17 @@ def _check_manifest_elements() -> Tuple[str, List[str]]:
     messages.append("All {0} manifest-registered files are present and verified.".format(total_checked))
     return "GREEN", messages
 
+def _check_ports_and_capabilities() -> Tuple[str, List[str]]:
+    """
+    Checks that ports across native.yaml (SSoT), docker-compose.yaml, and service-registry.json
+    are in 100% mechanical parity without drift.
+    """
+    try:
+        from auditing.audit_ports import audit_ports
+        return audit_ports(auto_sync=False)
+    except Exception as e:
+        return "RED", ["Port audit execution failed: {0}".format(e)]
+
 # ### MAIN ###
 
 def run_preflight(quiet: bool = False) -> bool:
@@ -354,6 +382,7 @@ def run_preflight(quiet: bool = False) -> bool:
         ("Inventory Portability", _check_inventory_portability),
         ("Spec-Code Parity", _check_spec_parity),
         ("Process Manifest Check", _check_manifest_elements),
+        ("4-Layer Port Drift Check", _check_ports_and_capabilities),
     ]
     
     overall = "GREEN"

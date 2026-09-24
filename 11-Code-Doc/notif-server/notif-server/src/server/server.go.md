@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -24,7 +33,7 @@
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (imports)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (imports)
-- [[notif-server/notif-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: belongs_to)
 - [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: belongs_to)
 - [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: belongs_to)

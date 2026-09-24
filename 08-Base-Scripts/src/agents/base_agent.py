@@ -1,6 +1,26 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+"""
+ESSENTIAL PROCESS:
+Autonomous Agent Base Class and Tool Execution Engine for the AI Squad.
+Provides unified LLM prompt compilation, tool calling, memory history retrieval,
+and reactive event bus message processing for all persona roles.
+
+DATA FLOW:
+1. Loads role instructions from Role-Prompts markdown specifications.
+2. Listens for incoming chat messages via SquadEventBus (NATS or Local).
+3. Compiles active prompt with session context, RAG augmentations, and conversation history.
+4. Invokes LLM via Gemini SDK and executes autonomous agent tool calls.
+5. Publishes synthesized thoughts and responses back to the event bus and memory store.
+
+KEY PARAMETERS:
+- role_name: Persona identifier matching Role-Prompts folder.
+- prompt_file: Path to Markdown role prompt specification.
+- event_bus: SquadEventBus instance for pub/sub message transit.
+- pg_pool: Shared database connection pool for memory persistence.
+"""
+
 import os
 import sys
 import json
@@ -9,6 +29,8 @@ from typing import Dict, Any, List, Optional
 from src.interfaces import SquadEventBus
 from google import genai
 from google.genai import types
+
+# -----------------------------------------------------------------------------
 
 def query_rag_engine(query: str) -> str:
     """
@@ -107,6 +129,8 @@ def _fold_generic_code(content: str) -> str:
         
     return "\n".join(folded_lines)
 
+
+# -----------------------------------------------------------------------------
 
 class BaseAgent:
     """

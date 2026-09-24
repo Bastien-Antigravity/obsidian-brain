@@ -27,11 +27,13 @@ if str(BASE_SCRIPTS_DIR) not in sys.path:
 from src.lifecycle.scaffold_microservice import (
     generate_go_scaffold,
     generate_python_scaffold,
+    generate_rust_scaffold,
     generate_common_files,
     generate_bdd_spec,
     create_file,
     create_symlink,
 )
+
 
 
 class TestScaffoldUnits(unittest.TestCase):
@@ -87,11 +89,37 @@ class TestScaffoldUnits(unittest.TestCase):
         status_go = self.test_dir / "src/models/models.go"
         self.assertTrue(status_go.exists(), "src/models/models.go must exist")
 
+        test_go = self.test_dir / "src/core/controller_test.go"
+        self.assertTrue(test_go.exists(), "src/core/controller_test.go must exist")
+        self.assertIn("TestController_Lifecycle", test_go.read_text(encoding="utf-8"))
+
         go_mod = self.test_dir / "go.mod"
         self.assertTrue(go_mod.exists(), "go.mod must exist")
 
         golangci = self.test_dir / ".golangci.yml"
         self.assertTrue(golangci.exists(), ".golangci.yml must exist")
+
+    def test_generate_rust_scaffold(self):
+        """Verify Rust scaffolding creates Cargo.toml, main.rs, core/mod.rs, and tests."""
+        name = "test-rust-service"
+        port = 9030
+        desc = "Test Rust Service Description"
+
+        generate_rust_scaffold(self.test_dir, name, port, desc, dry_run=False)
+
+        cargo_toml = self.test_dir / "Cargo.toml"
+        self.assertTrue(cargo_toml.exists(), "Cargo.toml must exist")
+        self.assertIn(f'name = "{name}"', cargo_toml.read_text(encoding="utf-8"))
+
+        main_rs = self.test_dir / "src/main.rs"
+        self.assertTrue(main_rs.exists(), "src/main.rs must exist")
+        self.assertIn("tokio::main", main_rs.read_text(encoding="utf-8"))
+
+        core_rs = self.test_dir / "src/core/mod.rs"
+        self.assertTrue(core_rs.exists(), "src/core/mod.rs must exist")
+
+        test_rs = self.test_dir / "tests/test_basic.rs"
+        self.assertTrue(test_rs.exists(), "tests/test_basic.rs must exist")
 
     def test_generate_python_scaffold(self):
         """Verify Python scaffolding creates main.py, controller, interface, model, and valid syntax."""
@@ -137,6 +165,11 @@ class TestScaffoldUnits(unittest.TestCase):
         self.assertIn(f"# AGENTS.md: {name}", agents_md)
         self.assertIn("go test -v ./...", agents_md)
 
+        self.assertTrue((self.test_dir / "AI-Init.md").exists(), "AI-Init.md must exist")
+        self.assertTrue((self.test_dir / "AI-Project-DNA.md").exists(), "AI-Project-DNA.md must exist")
+        self.assertTrue((self.test_dir / "AI-Session-State.md").exists(), "AI-Session-State.md must exist")
+        self.assertTrue((self.test_dir / "TODO.md").exists(), "TODO.md must exist")
+
         makefile = self.test_dir / "Makefile"
         self.assertTrue(makefile.exists(), "Makefile must exist for compiled languages")
 
@@ -158,6 +191,19 @@ class TestScaffoldUnits(unittest.TestCase):
 
         # Makefile should NOT be generated for pure Python
         self.assertFalse((self.test_dir / "Makefile").exists())
+
+    def test_generate_common_files_rust(self):
+        """Verify Rust common files generation includes multi-stage Dockerfile and cargo Makefile."""
+        name = "test-rs-common"
+        generate_common_files(self.test_dir, name, lang="rust", port=9030, desc="Rust Desc", dry_run=False)
+
+        dockerfile = (self.test_dir / "Dockerfile").read_text(encoding="utf-8")
+        self.assertIn("FROM rust:1.80-alpine AS builder", dockerfile)
+        self.assertIn("FROM alpine:3.20", dockerfile)
+
+        makefile = (self.test_dir / "Makefile").read_text(encoding="utf-8")
+        self.assertIn("cargo build --release", makefile)
+        self.assertIn("cargo test", makefile)
 
     def test_generate_bdd_spec(self):
         """Verify BDD spec note creation with frontmatter and Gherkin scenarios."""

@@ -1,11 +1,18 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/lib_loader.py.md|lib_loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/lib_loader.py.md|load_libdistconf]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: calls)
@@ -19,6 +26,10 @@
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|get_venv_python]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|prepend_venv_bin]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|redirect_working_directory]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|resolve_library_path]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)

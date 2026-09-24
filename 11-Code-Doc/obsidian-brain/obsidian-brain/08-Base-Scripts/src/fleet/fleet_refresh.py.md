@@ -3,7 +3,13 @@ source: obsidian-brain/08-Base-Scripts/src/fleet/fleet_refresh.py
 workspace: obsidian-brain
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-17T06:24:01.675666
+last_sync: 2026-09-17 06:24:01.675666
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: fleet_refresh.py

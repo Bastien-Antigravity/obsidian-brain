@@ -165,7 +165,9 @@ class MInventoryBuilder:
             return "orchestration"
         if any(repo_name.endswith(s) for s in ("-logger", "-config", "-toolbox", "-socket")):
             return "library"
-        return "level1-microservice"
+        if repo_name in {"config-server", "log-server", "notif-server", "tele-remote", "rag-engine", "web-interface"}:
+            return "level1-microservice"
+        return "level2-microservice"
 
     # -----------------------------------------------------------------------------------------------
 

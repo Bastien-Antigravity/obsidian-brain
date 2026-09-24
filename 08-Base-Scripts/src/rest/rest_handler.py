@@ -5,6 +5,16 @@
 ESSENTIAL PROCESS:
 Provides the REST API endpoints wrapping the Squad Command Controller.
 Allows external clients (like web-interface) to query status, switch modes, list commands, and run commands via SSE stream.
+
+DATA FLOW:
+1. Client sends HTTP GET/POST or SSE request to /api/v1/ routes.
+2. Route handler validates query parameters and payload schema.
+3. Controller evaluates command or publishes message onto event bus.
+4. Handler returns JSON response or streams Server-Sent Events (SSE).
+
+KEY PARAMETERS:
+- controller: CommandController singleton instance.
+- logger: UniLog or compatible logging handle.
 """
 
 import json
@@ -14,12 +24,18 @@ import sys
 from fastapi import FastAPI, APIRouter, Query, HTTPException, Request
 from fastapi.responses import StreamingResponse
 
+# -----------------------------------------------------------------------------
+
 class SquadRESTHandler:
     """REST API Handler exposing squad controller capabilities."""
+
+    # -----------------------------------------------------------------------------
 
     def __init__(self, controller, logger):
         self.controller = controller
         self.logger = logger
+
+    # -----------------------------------------------------------------------------
 
     def register_routes(self, app: FastAPI):
         """Registers the REST routes to the FastAPI application."""
@@ -113,7 +129,7 @@ class SquadRESTHandler:
             return StreamingResponse(event_generator(), media_type="text/event-stream")
 
         @router.get("/api/v1/squad/chat/stream/{session_id}")
-        async def stream_chat_messages(session_id: str):
+        async def stream_chat_messages(session_id: str, request: Request, once: bool = False):
             async def event_generator():
                 queue = asyncio.Queue()
                 
@@ -132,9 +148,19 @@ class SquadRESTHandler:
                     LocalEventBus.subscribe("antigravity.squad.chat", msg_cb)
                 
                 try:
+                    yield f"data: {json.dumps({'event': 'connected', 'session_id': session_id})}\n\n"
+                    if once:
+                        return
                     while True:
-                        msg_payload = await queue.get()
-                        yield f"data: {json.dumps(msg_payload)}\n\n"
+                        if await request.is_disconnected():
+                            break
+                        try:
+                            msg_payload = await asyncio.wait_for(queue.get(), timeout=0.1)
+                            yield f"data: {json.dumps(msg_payload)}\n\n"
+                        except asyncio.TimeoutError:
+                            if await request.is_disconnected():
+                                break
+                            yield ": keep-alive\n\n"
                 except asyncio.CancelledError:
                     pass
                 except Exception as e:

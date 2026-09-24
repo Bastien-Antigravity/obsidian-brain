@@ -3,7 +3,13 @@ source: sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py
 workspace: sandbox-testing
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-17T06:24:02.344722
+last_sync: 2026-09-17 06:24:02.344722
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: rag_db_secrets_encryption_test.py

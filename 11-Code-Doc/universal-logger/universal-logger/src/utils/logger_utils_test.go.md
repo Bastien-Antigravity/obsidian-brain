@@ -3,7 +3,13 @@ source: universal-logger/src/utils/logger_utils_test.go
 workspace: universal-logger
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-17T19:14:20.932318
+last_sync: 2026-09-17 19:14:20.932318
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: logger_utils_test.go

@@ -4,13 +4,13 @@
 """
 ESSENTIAL PROCESS:
 Restores read/write permissions (chmod 0755/0644) to role prompts in Tech Stack and Core KMS,
-enabling AI adapters and templates to be synchronized/edited.
+enabling AI adapters and templates to be synchronized and edited across the fleet.
 
 DATA FLOW:
-1. Bootstraps the virtual environment.
+1. Bootstraps the virtual environment and resolves vault root.
 2. Scans Role-Prompts subdirectories in 03-Tech-Stack and 07-Core-KMS.
 3. Recursively updates permissions on directories (0755) and files (0644).
-4. Cleans up any leftover testing scripts (test_chmod.py).
+4. Logs completion status.
 
 KEY PARAMETERS:
 - folders: List of directories within the vault root to unlock.
@@ -19,41 +19,43 @@ KEY PARAMETERS:
 import os
 import sys
 from pathlib import Path
-from lib.bootstrap import ensure_virtualenv, prepend_venv_bin, ensure_import_paths
 
-def main():
-    script_dir = Path(__file__).resolve().parent
-    vault_root_path = ensure_virtualenv(str(script_dir))
-    prepend_venv_bin(vault_root_path)
-    ensure_import_paths(script_dir, vault_root_path)
+# Standard ecosystem bootstrap
+import src.bootstrap as bootstrap
+from lib.orchestration_lib import setup_terminal, resolve_vault_and_workspace
 
-    vault_root = Path(vault_root_path)
+logger = bootstrap.logger
 
+# -----------------------------------------------------------------------------
+
+def unlock_role_prompts(vault_root: Path) -> None:
+    """Recursively restores permissions to Role-Prompts directories."""
     for folder in ["03-Tech-Stack", "07-Core-KMS"]:
         prompts_dir = vault_root / folder / "Role-Prompts"
         if prompts_dir.exists():
-            print(f"Unlocking {prompts_dir}...")
+            logger.info("UnlockVault : Unlocking {0}...".format(prompts_dir))
             for root, dirs, files in os.walk(prompts_dir):
                 for d in dirs:
                     try:
                         os.chmod(os.path.join(root, d), 0o755)
                     except Exception as e:
-                        print(f"Error chmod dir {d}: {e}")
+                        logger.error("UnlockVault : Error chmod dir {0}: {1}".format(d, e))
                 for f in files:
                     try:
                         os.chmod(os.path.join(root, f), 0o644)
                     except Exception as e:
-                        print(f"Error chmod file {f}: {e}")
+                        logger.error("UnlockVault : Error chmod file {0}: {1}".format(f, e))
 
-    test_script = vault_root / "test_chmod.py"
-    if test_script.exists():
-        try:
-            os.remove(test_script)
-            print("Removed test_chmod.py")
-        except Exception as e:
-            print(f"Error removing test_chmod.py: {e}")
+    logger.info("UnlockVault : Role prompts unlock complete!")
 
-    print("Unlock complete!")
+# -----------------------------------------------------------------------------
+
+def main():
+    setup_terminal()
+    vault_root, _ = resolve_vault_and_workspace(__file__)
+    unlock_role_prompts(vault_root)
+
+# -----------------------------------------------------------------------------
 
 if __name__ == '__main__':
     main()

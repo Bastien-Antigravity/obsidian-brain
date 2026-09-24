@@ -51,6 +51,8 @@ class DiscordClient:
         if not token:
             settings = self.config.data.get("capabilities", {}).get("discord", {})
             token = settings.get("bot_token")
+        if token and token.startswith("ENC(") and hasattr(self.config, "decrypt_secret"):
+            token = self.config.decrypt_secret(token)
         return token
 
     # -----------------------------------------------------------------------------------------------

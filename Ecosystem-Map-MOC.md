@@ -30,18 +30,14 @@ Live documentation and operational hubs for the service fleet.
 - **[[06-Microservices/Notif-Server-Hub|🌐 Notif-Server Hub]]** (Go)
 - **[[06-Microservices/Safe-Socket-Hub|🌐 Safe-Socket Hub]]** (Go/SHM)
 - **[[06-Microservices/Distributed-Config-Hub|🌐 Distributed-Config Hub]]** (Go/Polyglot)
-- **[[06-Microservices/Market-Observer-Hub|🌐 Market-Observer Hub]]** (Go)
-- **[[06-Microservices/Data-Ingestor-Hub|🌐 Data-Ingestor Hub]]** (Go)
-- **[[06-Microservices/Orderbook-Aggregator-Hub|🌐 Orderbook-Aggregator Hub]]** (Go)
-- **[[06-Microservices/Fundamental-Analysis-Hub|🌐 Fundamental-Analysis Hub]]** (Python)
-- **[[06-Microservices/Technical-Analysis-Hub|🌐 Technical-Analysis Hub]]** (Python)
+- **[[06-Microservices/Universal-Logger-Hub|Universal-Logger Hub]]** (Go/Polyglot)
+- **[[06-Microservices/Flexible-Logger-Hub|Flexible-Logger Hub]]** (Go)
+- **[[06-Microservices/Microservice-Toolbox-Hub|Microservice-Toolbox Hub]]** (Polyglot SDK)
+- **[[06-Microservices/Tele-Remote-Hub|🛰️ Tele-Remote Hub]]** (Go)
+- **[[06-Microservices/RAG-Engine-Hub|🧠 RAG-Engine Hub]]** (Python)
 - **[[06-Microservices/Web-Interface-Hub|🌐 Web-Interface Hub]]** (Go)
-- **[[06-Microservices/Enhanced-Backtesting-Hub|🌐 Enhanced-Backtesting Hub]]** (Rust)
 - **[[06-Microservices/Docker-Deployment-Hub|🐳 Docker-Deployment Hub]]**
 - **[[06-Microservices/Sandbox-Testing-Hub|🧪 Sandbox-Testing Hub]]**
-- **[[06-Microservices/Tele-Remote-Hub|🛰️ Tele-Remote Hub]]**
-- [[06-Microservices/Universal-Logger-Hub|Universal-Logger Hub]]
-- **[[06-Microservices/Ontime-Scheduler-Hub|🌐 Ontime-Scheduler Hub]]** (Rust)
 
 ### 📜 Technical Protocols
 - [[06-Microservices/Microservice-Startup-Protocol|📜 Microservice Startup & CLI Protocol]]

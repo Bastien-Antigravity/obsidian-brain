@@ -58,13 +58,13 @@ For real-time data (prices, logs), the backend should:
 
 ## 3. Frontend Standards
 
-The UI design is optimized for a premium, low-fatigue developer experience. Full visual guidelines, styling tokens, and layout schemas are formalized in [PAGE_RENDERING.md](../../web-interface/PAGE_RENDERING.md).
+The UI design is optimized for a premium, low-fatigue developer experience. Full visual guidelines, styling tokens, and layout schemas are formalized in [[Web-Interface-Page-Rendering|📜 Page Rendering & UI Styling Specification]].
 
 ### Visual Identity & Theme Architecture
 *   **Theme Tokens**: Style rules and colors reference CSS variables defined in `/web/static/lib/tokens/design-tokens.css`. Light/dark variations are defined as overrides in `/web/static/lib/theme/themes.css`. Hardcoded colors are strictly prohibited.
 *   **Default Theme**: Dark theme uses soft, non-fatiguing deep blue-gray backgrounds (`hsl(222, 25%, 10%)`).
 *   **Light Theme**: Light theme overrides backgrounds with clean, non-glaring warm gray-whites (`hsl(210, 15%, 93%)`).
-*   **Typography**: Adheres to the strict three-family font system defined in [PAGE_RENDERING.md](../../web-interface/PAGE_RENDERING.md):
+*   **Typography**: Adheres to the strict three-family font system defined in [[Web-Interface-Page-Rendering|Page Rendering Specification]]:
     *   `var(--font-display)` (`Outfit`): Used for headings, main titles, and KPI stats metrics.
     *   `var(--font-sans)` (`Inter`): Used for paragraphs, forms, UI menus, and buttons.
     *   `var(--font-mono)` (`JetBrains Mono` / `Fira Code`): Used for numbers, code blocks, raw data tables (depth/prices), and inputs to prevent layout shifting. AI agents must utilize token variables instead of raw family names.
@@ -79,7 +79,7 @@ The UI design is optimized for a premium, low-fatigue developer experience. Full
     *   `fa-cogs` / `fa-sliders`: Configuration panels.
     *   `fa-bar-chart` / `fa-line-chart`: Metrics and statistics.
     *   `fa-moon-o` / `fa-sun-o`: Theme toggling.
-*   **Dynamic Component Registration**: UI widgets bind interaction dynamically through `data-component="..."` declarations processed by [bastien-ui.js](../../web-interface/web/static/lib/bastien-ui.js). Inline scripting and inline styling are not allowed.
+*   **Dynamic Component Registration**: UI widgets bind interaction dynamically through `data-component="..."` declarations processed by `web/static/lib/bastien-ui.js`. Inline scripting and inline styling are not allowed.
 
 ### UI Template Integration
 1.  Add the page HTML to `web/html/{page_name}.html`, defining the layout content block via `{{define "content"}}`.

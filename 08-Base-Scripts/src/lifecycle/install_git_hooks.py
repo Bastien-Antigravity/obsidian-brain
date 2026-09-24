@@ -23,6 +23,8 @@ from pathlib import Path
 from lib.bootstrap import ensure_virtualenv, prepend_venv_bin, ensure_import_paths
 from lib.orchestration_lib import resolve_vault_and_workspace
 
+# -----------------------------------------------------------------------------
+
 def install_hooks(vault_root, git_hooks_dir):
     hook_content = """#!/bin/sh
 
@@ -83,6 +85,8 @@ fi
             print(f"✅ Successfully installed {hook} hook at {hook_path}")
         except Exception as e:
             print(f"❌ Failed to install {hook} hook: {e}")
+
+# -----------------------------------------------------------------------------
 
 def main():
     script_dir = Path(__file__).resolve().parent

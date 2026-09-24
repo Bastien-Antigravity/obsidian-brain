@@ -893,9 +893,16 @@ def start_engine() -> None:
 
     # Initialize global hybrid Event Bus
     from src.interfaces import DualSquadEventBus
-    from microservice_toolbox.messaging.config import NatsConfig
     nats_cap = config.data.get("capabilities", {}).get("nats", {})
-    nats_servers = nats_cap.get("servers", ["nats://127.0.0.1:4222"])
+    nats_servers = nats_cap.get("servers")
+    if not nats_servers:
+        addr = None
+        if hasattr(config, "get_listen_addr"):
+            addr = config.get_listen_addr("nats") or config.get_listen_addr("nats_server")
+        if addr:
+            nats_servers = [f"nats://{addr}"]
+        else:
+            nats_servers = []
     client_id = nats_cap.get("client_id", "python_agent_squad")
     subject_prefix = nats_cap.get("subject_prefix", "antigravity")
     

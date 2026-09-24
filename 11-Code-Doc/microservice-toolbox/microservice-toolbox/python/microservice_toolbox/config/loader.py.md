@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -7,13 +16,13 @@
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|parse_cli_args]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/lib_loader.py.md|lib_loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/lib_loader.py.md|lib_loader.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/merger.py.md|merger.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|get_base_dir]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|helpers.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.py.md|expansion_check.py]] (calls)

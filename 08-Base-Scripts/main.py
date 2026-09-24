@@ -9,6 +9,9 @@ DATA FLOW:
 1. Imports src.bootstrap to align paths, relaunch in virtualenv, and load configuration.
 2. Resolves the requested themed package mapping.
 3. Parses the first argument (command) and forwards remaining arguments to the correct module main().
+
+KEY PARAMETERS:
+- sys.argv: Command line arguments containing target command and forwarded flags.
 """
 
 import sys
@@ -22,10 +25,14 @@ if str(_self_dir) not in sys.path:
 # Enforce environment bootstrap & configuration loading
 import src.bootstrap as bootstrap
 
+# -----------------------------------------------------------------------------
+
 # Commands map (CLI alias -> themed python module namespace relative to src)
 COMMANDS_MAP = {
     "agent-dispatcher": "core.agent_dispatcher",
+    "audit-ports": "auditing.audit_ports",
     "brain-health-audit": "auditing.brain_health_audit",
+    "validate-compliance": "auditing.validate_compliance",
     "build-inventory": "fleet.build_inventory",
     "fleet-init-update": "fleet.fleet_init_update",
     "fleet-refresh": "fleet.fleet_refresh",
@@ -51,15 +58,19 @@ COMMANDS_MAP = {
     "map-feats": "fleet.map_feats",
     "fix-feats": "fleet.fix_feats",
     "controller": "core.controller",
-    "discord-client": "clients.discord_client"
+    "discord-client": "clients.discord_client",
+    "format-compliance": "lib.improved_transformer"
 }
 
+# -----------------------------------------------------------------------------
 
 def print_usage():
     print("Usage: python3 08-Base-Scripts/main.py <command> [args...]")
     print("\nAvailable commands:")
     for cmd in sorted(COMMANDS_MAP.keys()):
         print(f"  - {cmd}")
+
+# -----------------------------------------------------------------------------
 
 def main():
     if len(sys.argv) < 2:

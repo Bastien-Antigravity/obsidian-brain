@@ -3,7 +3,13 @@ source: docker-deployment/modes/production/run.py
 workspace: docker-deployment
 type: code-mirror
 status: auto-generated
-last_sync: 2026-09-13T19:49:59.588881
+last_sync: 2026-09-13 19:49:59.588881
+microservice: 08-Base-Scripts
+tags:
+- '#service/08-Base-Scripts'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: run.py

@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -7,6 +16,7 @@
 - [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.SetLocalNotifQueue]] (method: calls)
 - [[notif-server/notif-server/src/rest/mfe.js.md|mfe.js]] (imports)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls)

@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
@@ -14,7 +23,6 @@
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotification]] (method: defines_method)
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SetAlertingConfig]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetConfig]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetLogLevel]] (method: calls)
@@ -39,7 +47,9 @@
 - [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/controller.go.md|NotifController]] (interface: belongs_to)
 - [[notif-server/notif-server/src/core/controller.go.md|NotifierInfo]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (imports)
+- [[notif-server/notif-server/src/core/controller.go.md|cloneConfig]] (function: belongs_to)
+- [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (calls)
+- [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (same_package)
 - [[notif-server/notif-server/src/grpc_control/service.go.md|service.go]] (imports)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
