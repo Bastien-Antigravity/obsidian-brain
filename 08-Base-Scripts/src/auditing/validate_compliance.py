@@ -189,14 +189,15 @@ class ComplianceAuditor:
                                 })
                                 break
 
-            # 4. Production Cleanliness Invariant: No test mocks or nil fallbacks in non-test files
-            if not is_test_file:
+            # 4. Production Cleanliness Invariant: No test mocks or nil fallbacks in non-test microservice files
+            is_library_repo = any(lib in file_path.parts for lib in ("microservice-toolbox", "distributed-config", "safe-socket", "universal-logger", "flexible-logger"))
+            if not is_test_file and not is_library_repo:
                 if "EnsureSafeLogger" in line:
                     violations.append({
                         "file": str(file_path),
                         "line": idx,
                         "rule": "PRODUCTION_MOCK_POLLUTION",
-                        "message": "EnsureSafeLogger is an anti-pattern in production code. Standard runtime guarantees non-nil logger via bootstrapper."
+                        "message": "EnsureSafeLogger is an anti-pattern in microservice production code. Standard runtime guarantees non-nil logger via bootstrapper."
                     })
                 if "decrypt == nil" in line:
                     violations.append({

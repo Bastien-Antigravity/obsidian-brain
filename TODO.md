@@ -16,6 +16,10 @@ tags:
 - [x] **Persona Extractor — ENABLED**: Patched and enabled as a background process in `start_squad.py`.
 - [x] **Mode Guardrail**: Added a mandatory "Current Mode" check to the AI-Session-State handshake to ensure the previous mode is "parked."
 - [x] **Knowledge Compression Script**: Implemented an automated way to distill old session logs into fresh patterns to keep the context window clean.
+- [ ] **Ecosystem Logger Fallback & Strict Mode Evolution**:
+  - Review `STRICT_LOGGER=true` opt-in mechanism across base repositories (`microservice-toolbox`, `safe-socket`, `distributed-config`).
+  - When `STRICT_LOGGER` is unset, `EnsureSafeLogger(nil)` currently falls back to `NoOpLogger` / test stub. While safe for isolated unit tests, uninitialized production microservices could run dark without warning.
+  - Design a robust daemon/headless-aware logger fallback or warning mechanism that works seamlessly for microservices without UI interfaces, eliminating silent discard without fragile environment variable dependencies.
 
 ## ✅ Completed
 - [x] Initial structure for `02-Business-BDD`. (Now `business-bdd-brain`)
