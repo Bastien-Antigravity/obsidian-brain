@@ -22,6 +22,10 @@
 	path = 07-Core-KMS
 	url = https://github.com/Bastien-Antigravity/core-kms-brain.git
 	branch = develop
+[submodule "08-Base-Scripts"]
+	path = 08-Base-Scripts
+	url = https://github.com/Bastien-Antigravity/squad-agent-brain.git
+	branch = develop
 [submodule "09-RAG-Engine"]
 	path = 09-RAG-Engine
 	url = https://github.com/Bastien-Antigravity/obsidian-rag-mcp.git
