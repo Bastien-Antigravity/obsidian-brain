@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `watchdog-agent/src/utils/lock_unix.go`.
+
+> **Essential Process**:
+> Unix-specific single-instance filesystem locking implementation using flock. Prevents duplicate watchdog-agent instances from executing concurrently.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,5 +22,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/src/utils/lock_unix.go.md|AcquireLock]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/utils/lock_unix.go.md|AcquireLock]] (function: belongs_to) — *AcquireLock opens and locks the lock file exclusively on Unix-like systems.*
 <!-- SYNC:END -->

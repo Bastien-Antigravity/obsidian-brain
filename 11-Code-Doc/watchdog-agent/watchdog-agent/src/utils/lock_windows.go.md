@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `watchdog-agent/src/utils/lock_windows.go`.
+
+> **Essential Process**:
+> Windows-specific single-instance filesystem locking implementation using CreateFile. Prevents duplicate watchdog-agent instances from executing concurrently.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -21,5 +27,5 @@ tags:
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|registry.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|supervisor.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|AcquireLock]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|AcquireLock]] (function: belongs_to) — *AcquireLock opens and locks the lock file exclusively on Windows using CreateFile.*
 <!-- SYNC:END -->

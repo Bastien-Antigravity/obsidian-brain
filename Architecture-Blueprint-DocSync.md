@@ -23,8 +23,8 @@ The **Code-Doc Semantic Synchronizer** is a proactive service within the RAG Eng
     - `RAGFacade` (for high-level orchestration)
 
 ### 2.2 Mirroring Protocol
-- **Storage Location**: `${WORKSPACE_ROOT}/codedoc/mirror/`
-- **Structure**: Mirrors the repository structure: `codedoc/mirror/<workspace_name>/<relative_path_to_file>.md`
+- **Storage Location**: `${WORKSPACE_ROOT}/obsidian-brain/11-Code-Doc/`
+- **Structure**: Mirrors the repository structure: `obsidian-brain/11-Code-Doc/<workspace_name>/<relative_path_to_file>.md`
 - **Frontmatter Template**:
 ```yaml
 ---
@@ -36,15 +36,17 @@ last_sync: <timestamp>
 ---
 ```
 
-### 2.3 Graph Context Injector
-- **Target Section**: `## 🏗️ Architectural Context`
+### 2.3 Intent-First Description & Graph Context Injector
+- **Target Sections**:
+  - `## 📝 Description`: Injects the `ESSENTIAL PROCESS` extracted directly from the source file's Triple-Block header block.
+  - `## 🏗️ Architectural Context`: Contains the machine-generated graph boundaries.
 - **Idempotency Markers**:
-    - Start: `<!-- SYNC:START -->`
-    - End: `<!-- SYNC:END -->`
+  - Start: `<!-- SYNC:START -->`
+  - End: `<!-- SYNC:END -->`
 - **Injected Content**:
-    - **Imports/Dependencies**: List of internal files/symbols the current file depends on (outbound edges).
-    - **Used By/Consumers**: List of files/symbols that depend on the current file (inbound edges).
-    - **Symbol Definitions**: Key symbols (functions/classes) defined in the file.
+  - **Imports/Dependencies (Outbound)**: List of internal files and symbols called/imported, annotated with their 1-line docstring/intent summary (e.g. `- [[...|HealSymlinks]] (function: calls) — *Summary intent*`).
+  - **Used By/Consumers (Inbound)**: Inbound callers and consumers across the fleet.
+  - **Untouchable Section**: `## 🔍 Implementation Details` (at the bottom) is strictly reserved for manual developer notes and is never altered during synchronization.
 
 ### 2.4 Tag Extraction Engine
 - **Regex Standard**: `@obsidian \[\[(.*?)\]\]`
@@ -57,8 +59,8 @@ last_sync: <timestamp>
     - Query `CodebaseDB` for all nodes of type `file`.
 2. **Mirroring Phase**:
     - For each file node:
-        - Check if mirror `.md` exists in `codedoc/mirror/`.
-        - If missing, create it with the standard frontmatter.
+        - Check if mirror `.md` exists in `obsidian-brain/11-Code-Doc/`.
+        - If missing, create it with standard frontmatter and extracted `ESSENTIAL PROCESS`.
 3. **Extraction Phase**:
     - Read source code content.
     - Compute SHA-256 hash.
