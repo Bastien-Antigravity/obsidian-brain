@@ -90,4 +90,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_fallback]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_passthrough]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_strict_mode]] (function: belongs_to)
 <!-- SYNC:END -->

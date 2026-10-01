@@ -20,6 +20,7 @@ tags:
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|identity_test.go]] (same_package)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|CreateSocket]] (function: calls)
 - [[safe-socket/safe-socket/src/factory/socket_factory_test.go.md|socket_factory_test.go]] (imports)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: calls)
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|NewTcpServerProfile]] (function: calls)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|tcp_server_profile.go]] (imports)

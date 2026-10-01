@@ -13,10 +13,11 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/docker/run.py.md|run.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/branch.py.md|branch.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publisher.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/local/health.py.md|health.py]] (calls)
@@ -37,6 +38,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_loopback_alias]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|flush_stdin]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|generate_placeholder_secret]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_compose_cmd]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_env]] (function: belongs_to)
@@ -52,9 +54,14 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|load_env_file]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|repl]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|resolve_template]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|resolve_workspace_root]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|strip_ansi]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|wait_for_port]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|engine.py]] (calls)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|engine.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|guided_wizard.py]] (calls)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|guided_wizard.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (same_package)

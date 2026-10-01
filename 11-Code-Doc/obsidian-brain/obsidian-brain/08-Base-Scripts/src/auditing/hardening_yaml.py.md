@@ -18,6 +18,8 @@ tags:
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)

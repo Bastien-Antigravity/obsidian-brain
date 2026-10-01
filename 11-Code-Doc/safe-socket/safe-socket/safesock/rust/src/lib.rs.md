@@ -32,6 +32,7 @@ tags:
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|SafeSocketConnection.set_deadline]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|SafeSocketConnection.set_idle_timeout]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|SocketConfig.default]] (method: defines_method)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/safesock/rust/examples/basic_usage.rs.md|basic_usage.rs]] (calls)

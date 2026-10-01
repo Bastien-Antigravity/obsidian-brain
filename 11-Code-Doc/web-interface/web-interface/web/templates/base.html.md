@@ -42,6 +42,10 @@ tags:
 - [[web-interface/web-interface/web/templates/base.html.md|#avatarSidebar (img)]] (element: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|#avatarTop (img)]] (element: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|#date_time (div)]] (element: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|#fleet-status-banner (div)]] (element: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|#fleet-status-details (span)]] (element: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|#fleet-status-dismiss (button)]] (element: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|#fleet-status-refresh (button)]] (element: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|#main (main)]] (element: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|#mfe-nav-accordion (div)]] (element: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|#partOfProject (div)]] (element: belongs_to)
@@ -51,5 +55,6 @@ tags:
 - [[web-interface/web-interface/web/templates/base.html.md|IS_LOGGED_IN]] (constant: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_BASE_URL]] (constant: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_WSS_URL]] (constant: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|pollFleetStatus]] (function: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|updateClock]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -13,6 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[notif-server/notif-server/src/notifiers/config.go.md|config.go]] (same_package)
+- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: calls)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.SendMessage]] (method: defines_method)
@@ -25,7 +27,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (imports)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetLogLevel]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetTag]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.SendMessage]] (method: belongs_to)

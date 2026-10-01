@@ -28,6 +28,10 @@ tags:
 - [[config-server/config-server/src/server/server.go.md|Server.broadcastUpdate]] (method: defines_method)
 - [[config-server/config-server/src/server/server.go.md|Server.persistenceWorker]] (method: defines_method)
 - [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: defines_method)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls)
@@ -35,7 +39,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/cmd/test/main.go.md|main.go]] (calls)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (calls)
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (same_package)
@@ -57,4 +60,6 @@ tags:
 - [[config-server/config-server/src/server/server.go.md|Server]] (struct: belongs_to)
 - [[config-server/config-server/src/server/server.go.md|Server]] (struct: defines_method)
 - [[config-server/config-server/src/server/server.go.md|clientMailbox]] (struct: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 <!-- SYNC:END -->

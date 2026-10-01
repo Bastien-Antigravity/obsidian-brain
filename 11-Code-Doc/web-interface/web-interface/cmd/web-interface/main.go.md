@@ -13,9 +13,6 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/cmd/web-interface/copy_assets.go.md|copyAssets]] (function: calls)
-- [[web-interface/web-interface/cmd/web-interface/copy_assets.go.md|copy_assets.go]] (same_package)
-- [[web-interface/web-interface/cmd/web-interface/copy_assets.go.md|reorganizeAssets]] (function: calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Close]] (method: calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Critical]] (method: calls)
@@ -46,7 +43,4 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|TimescaleDBCap]] (struct: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to)
-- [[web-interface/web-interface/cmd/web-interface/main.go.md|serveConcatenatedJS]] (function: belongs_to)
-- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
-- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 <!-- SYNC:END -->

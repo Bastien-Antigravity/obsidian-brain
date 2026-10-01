@@ -20,7 +20,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/cmd/test/main.go.md|main.go]] (calls)
 - [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (calls)
 - [[config-server/config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (calls)
 - [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (calls)
@@ -28,6 +27,7 @@ tags:
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (calls)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)
 - [[config-server/config-server/src/store/store.go.md|ConfigMap]] (struct: belongs_to)
 - [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: belongs_to)
 - [[config-server/config-server/src/store/store.go.md|NewStore]] (function: belongs_to)

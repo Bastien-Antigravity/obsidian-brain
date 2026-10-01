@@ -30,6 +30,8 @@ Automatically generated mirror for `notif-server/src/core/controller_test.go`.
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
+- [[notif-server/notif-server/src/core/test_logger_test.go.md|testNotifierLogger.Error]] (method: calls)
+- [[notif-server/notif-server/src/core/test_logger_test.go.md|test_logger_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/core/controller_test.go.md|TestControllerAddProviderDetectsChange]] (function: belongs_to)

@@ -32,10 +32,5 @@ tags:
 - [[web-interface/web-interface/web/static/js/base.js.md|base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
-- [[web-interface/web-interface/web/static/js/parts/cose_part2.js.md|cose_part2.js]] (calls)
-- [[web-interface/web-interface/web/static/js/parts/cytoscape_part16.js.md|cytoscape_part16.js]] (calls)
-- [[web-interface/web-interface/web/static/js/parts/layout_part1.js.md|layout_part1.js]] (calls)
-- [[web-interface/web-interface/web/static/js/parts/layout_part4.js.md|layout_part4.js]] (calls)
-- [[web-interface/web-interface/web/static/js/parts/layout_part5.js.md|layout_part5.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (calls)
 <!-- SYNC:END -->

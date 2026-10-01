@@ -17,8 +17,6 @@ tags:
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/parts/cytoscape_part10.js.md|get]] (function: calls)
-- [[web-interface/web-interface/web/static/js/parts/cytoscape_part10.js.md|set]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: belongs_to)

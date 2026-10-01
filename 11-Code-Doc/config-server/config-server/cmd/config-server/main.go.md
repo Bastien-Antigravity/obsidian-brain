@@ -26,7 +26,11 @@ tags:
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls)
 - [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls)
-- [[config-server/config-server/src/telegram/manager.go.md|manager.go]] (imports)
+- [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Critical]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main]] (function: belongs_to)

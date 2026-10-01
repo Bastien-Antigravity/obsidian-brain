@@ -22,6 +22,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 - [[obsidian-brain/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|lab_manager.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/base_agent.py.md|base_agent.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/qa.py.md|qa.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/ensure_frontmatter.py.md|ensure_frontmatter.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)

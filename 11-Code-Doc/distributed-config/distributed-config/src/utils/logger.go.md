@@ -65,4 +65,6 @@ tags:
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Warning]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger]] (struct: defines_method)
+- [[distributed-config/distributed-config/src/utils/logger_test.go.md|logger_test.go]] (calls)
+- [[distributed-config/distributed-config/src/utils/logger_test.go.md|logger_test.go]] (same_package)
 <!-- SYNC:END -->

@@ -16,6 +16,7 @@ tags:
 - [[safe-socket/safe-socket/src/cgo_bridge/errors.c.md|set_socket_error]] (function: calls)
 - [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
 - [[safe-socket/safe-socket/src/cgo_bridge/sanitizer.go.md|SanitizeString]] (function: calls)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/cmd/libsafesocket/main.go.md|SafeSocket_Accept]] (function: belongs_to)

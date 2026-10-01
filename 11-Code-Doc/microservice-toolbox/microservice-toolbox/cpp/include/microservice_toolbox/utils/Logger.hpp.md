@@ -70,4 +70,5 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|StdOutLogger.Warning]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|StdOutLogger]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|StdOutLogger]] (class: defines_method)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|strict]] (constant: belongs_to)
 <!-- SYNC:END -->

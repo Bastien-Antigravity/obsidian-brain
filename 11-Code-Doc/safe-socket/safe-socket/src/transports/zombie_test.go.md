@@ -13,6 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: calls)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Close]] (method: calls)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Read]] (method: calls)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.SetIdleTimeout]] (method: calls)

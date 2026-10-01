@@ -116,7 +116,6 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.volume]] (method: defines_method)
 - [[web-interface/web-interface/web/static/analyst/websocket.js.md|websocket.js]] (imports)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|i.find]] (method: calls)
-- [[web-interface/web-interface/web/static/js/parts/cytoscape_part10.js.md|set]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 
 ### 🔌 Consumers (Inbound)

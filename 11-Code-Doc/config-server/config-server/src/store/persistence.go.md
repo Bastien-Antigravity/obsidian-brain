@@ -20,8 +20,6 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)
-- [[config-server/config-server/cmd/test/main.go.md|main.go]] (calls)
-- [[config-server/config-server/cmd/test/main.go.md|main.go]] (imports)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (imports)
 - [[config-server/config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (imports)
@@ -32,6 +30,8 @@ tags:
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (imports)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (imports)
 - [[config-server/config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: belongs_to)
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: belongs_to)
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: belongs_to)
@@ -39,4 +39,5 @@ tags:
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method)
 - [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (calls)
 - [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (same_package)
+- [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
 <!-- SYNC:END -->

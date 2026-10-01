@@ -28,5 +28,6 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|SquadControlServiceImpl]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|SwitchMode]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|get_grpc_server]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|start_grpc_server]] (function: belongs_to)
 <!-- SYNC:END -->

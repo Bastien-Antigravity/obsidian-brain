@@ -19,6 +19,7 @@ tags:
 - [[safe-socket/safe-socket/cmd/test/deadline_test.go.md|deadline_test.go]] (imports)
 - [[safe-socket/safe-socket/cmd/test/factory_test.go.md|factory_test.go]] (imports)
 - [[safe-socket/safe-socket/cmd/test/heartbeat_audit_test.go.md|heartbeat_audit_test.go]] (imports)
+- [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (imports)
 - [[safe-socket/safe-socket/cmd/test/scenario_test.go.md|scenario_test.go]] (imports)
 - [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|enveloped_connection.go]] (imports)

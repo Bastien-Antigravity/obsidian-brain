@@ -25,4 +25,5 @@ tags:
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (imports)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/telegram/manager.go.md|manager.go]] (imports)
+- [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
 <!-- SYNC:END -->

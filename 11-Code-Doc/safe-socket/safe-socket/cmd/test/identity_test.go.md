@@ -49,6 +49,8 @@ tags:
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport]] (struct: belongs_to)
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport]] (struct: defines_method)
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|TestGetIdentity]] (function: belongs_to)
+- [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (calls)
+- [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (same_package)
 - [[safe-socket/safe-socket/cmd/test/scenario_test.go.md|scenario_test.go]] (calls)
 - [[safe-socket/safe-socket/cmd/test/scenario_test.go.md|scenario_test.go]] (same_package)
 - [[safe-socket/safe-socket/cmd/test/stress_test.go.md|stress_test.go]] (calls)

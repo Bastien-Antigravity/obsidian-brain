@@ -56,7 +56,6 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|gmail.go]] (calls)

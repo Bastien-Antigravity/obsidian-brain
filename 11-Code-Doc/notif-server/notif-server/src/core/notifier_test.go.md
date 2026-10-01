@@ -42,6 +42,7 @@ tags:
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.SendMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender]] (struct: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender]] (struct: defines_method)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|init]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetLogLevel]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetTag]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.SendMessage]] (method: belongs_to)

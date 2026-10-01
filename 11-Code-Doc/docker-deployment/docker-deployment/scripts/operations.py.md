@@ -31,6 +31,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|is_port_listening]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|DEPLOY_DIR]] (constant: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (same_package)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|download_and_install_nats]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|find_existing_nats]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|setup_nats.py]] (imports)
@@ -38,7 +39,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/docker/run.py.md|run.py]] (calls)
-- [[docker-deployment/docker-deployment/modes/local/branch.py.md|branch.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/production/run.py.md|run.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)

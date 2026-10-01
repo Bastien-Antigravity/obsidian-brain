@@ -39,6 +39,8 @@ tags:
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.SetWriteDeadline]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.Write]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.attemptOpen]] (method: defines_method)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Warning]] (method: calls)
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Initiate]] (method: calls)

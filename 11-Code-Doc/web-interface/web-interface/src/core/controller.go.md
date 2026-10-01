@@ -26,5 +26,6 @@ tags:
 - [[web-interface/web-interface/src/core/controller.go.md|NewController]] (function: belongs_to)
 - [[web-interface/web-interface/src/core/controller.go.md|StatusInfo]] (struct: belongs_to)
 - [[web-interface/web-interface/src/core/controller.go.md|WebController]] (interface: belongs_to)
+- [[web-interface/web-interface/src/core/controller.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (imports)
 <!-- SYNC:END -->

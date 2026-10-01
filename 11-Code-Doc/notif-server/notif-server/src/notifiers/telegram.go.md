@@ -13,7 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.EnsureSafeLogger]] (method: calls)
+- [[notif-server/notif-server/src/notifiers/config.go.md|config.go]] (same_package)
+- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Debug]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Error]] (method: calls)

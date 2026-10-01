@@ -20,6 +20,10 @@ tags:
 - [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls)
 - [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/src/server/connection.go.md|Server.handleConnection]] (method: belongs_to)

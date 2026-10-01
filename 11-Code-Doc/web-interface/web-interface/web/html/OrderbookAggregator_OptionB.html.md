@@ -18,8 +18,6 @@ tags:
 - [[web-interface/web-interface/web/html/TradedVolume.html.md|onerror]] (function: calls)
 - [[web-interface/web-interface/web/html/TradedVolume.html.md|onmessage]] (function: calls)
 - [[web-interface/web-interface/web/html/TradedVolume.html.md|onopen]] (function: calls)
-- [[web-interface/web-interface/web/static/js/parts/cytoscape_part10.js.md|get]] (function: calls)
-- [[web-interface/web-interface/web/static/js/parts/cytoscape_part10.js.md|set]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 
 ### 🔌 Consumers (Inbound)

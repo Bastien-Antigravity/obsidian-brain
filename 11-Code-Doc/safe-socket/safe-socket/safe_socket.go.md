@@ -24,6 +24,8 @@ tags:
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|identity_test.go]] (imports)
 - [[safe-socket/safe-socket/cmd/test/matrix_server/main.go.md|main.go]] (calls)
 - [[safe-socket/safe-socket/cmd/test/matrix_server/main.go.md|main.go]] (imports)
+- [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (calls)
+- [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (imports)
 - [[safe-socket/safe-socket/safe_socket.go.md|CreateWithConfig]] (function: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|Create]] (function: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|GetIdentity]] (function: belongs_to)

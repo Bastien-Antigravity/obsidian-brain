@@ -38,6 +38,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CONFIG_CALLBACK_TYPE]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_try_autobuild_library]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: belongs_to)

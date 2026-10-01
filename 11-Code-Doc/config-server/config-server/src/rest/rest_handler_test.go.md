@@ -51,7 +51,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/cmd/test/main.go.md|main.go]] (calls)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)

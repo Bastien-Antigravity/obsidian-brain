@@ -30,6 +30,7 @@ Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lifecycle
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_common_files]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_go_scaffold]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_python_scaffold]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_rust_scaffold]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|main]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|resolve_workspace_root]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -16,6 +16,7 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/check_coherence.py.md|check_coherence.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (imports)
@@ -33,9 +34,5 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|sovereignty.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/install_git_hooks.py.md|install_git_hooks.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/unlock_vault.py.md|unlock_vault.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/maintenance_skill.py.md|maintenance_skill.py]] (imports)
 <!-- SYNC:END -->

@@ -13,6 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[notif-server/notif-server/src/notifiers/config.go.md|config.go]] (same_package)
+- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: calls)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.SendMessage]] (method: defines_method)
@@ -21,6 +23,8 @@ tags:
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Next]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Start]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: calls)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Info]] (method: calls)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Warning]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

@@ -27,6 +27,8 @@ tags:
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetLogLevel]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
+- [[notif-server/notif-server/src/core/test_logger_test.go.md|testNotifierLogger.Error]] (method: calls)
+- [[notif-server/notif-server/src/core/test_logger_test.go.md|test_logger_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (calls)

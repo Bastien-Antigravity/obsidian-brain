@@ -25,6 +25,9 @@ tags:
 - [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls)
 - [[config-server/config-server/src/server/server.go.md|Server.TriggerSave]] (method: calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Debug]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls)
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls)
@@ -32,7 +35,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)
-- [[config-server/config-server/cmd/test/main.go.md|main.go]] (imports)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (imports)
 - [[config-server/config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: belongs_to)
 - [[config-server/config-server/src/server/controller.go.md|Server.GetConfig]] (method: belongs_to)
@@ -41,4 +43,7 @@ tags:
 - [[config-server/config-server/src/server/controller.go.md|Server.PersistConfig]] (method: belongs_to)
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: belongs_to)
 - [[config-server/config-server/src/server/controller.go.md|Server]] (struct: defines_method)
+- [[config-server/config-server/src/server/controller.go.md|init]] (function: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)
+- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 <!-- SYNC:END -->

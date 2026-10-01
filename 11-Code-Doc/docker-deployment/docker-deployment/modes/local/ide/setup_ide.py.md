@@ -14,14 +14,13 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: calls)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|IS_WINDOWS]] (constant: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_native_config]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|DEPLOY_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|MODES_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|SCRIPTS_DIR]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|ensure_ai_context]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|ensure_go_work]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|ensure_root_symlinks]] (function: belongs_to)

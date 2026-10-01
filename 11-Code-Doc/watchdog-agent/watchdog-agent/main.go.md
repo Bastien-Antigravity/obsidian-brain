@@ -22,7 +22,6 @@ tags:
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls)
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|NewController]] (function: calls)
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|LaunchPostgresAttempt]] (function: calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|ValidateRegistry]] (function: calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogError]] (function: calls)

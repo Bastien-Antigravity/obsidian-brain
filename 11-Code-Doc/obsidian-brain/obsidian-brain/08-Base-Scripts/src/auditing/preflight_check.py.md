@@ -13,6 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (imports)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (same_package)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|WORKSPACE_ROOT]] (constant: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/bootstrap.py.md|bootstrap.py]] (imports)
@@ -29,6 +32,7 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|_check_inventory_portability]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|_check_manifest_elements]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|_check_mode_consistency]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|_check_ports_and_capabilities]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|_check_spec_parity]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|_check_submodules]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|main]] (function: belongs_to)

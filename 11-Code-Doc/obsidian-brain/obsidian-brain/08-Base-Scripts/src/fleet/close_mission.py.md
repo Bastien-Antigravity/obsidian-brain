@@ -19,7 +19,6 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|Sovereignty]] (class: calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|audit_file]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|auto_fix_file]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|get_report]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|log_error]] (function: calls)

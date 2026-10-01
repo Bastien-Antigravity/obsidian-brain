@@ -65,6 +65,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/rust_con.rs.md|rust_con.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/rust_gen.rs.md|rust_gen.rs]] (calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/process_lock.py.md|process_lock.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|manager.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|resolver.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|manager.rs]] (calls)

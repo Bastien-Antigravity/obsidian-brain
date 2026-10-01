@@ -20,13 +20,12 @@ Automatically generated mirror for `docker-deployment/modes/local/branch.py`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|WORKSPACE_REPOSITORIES]] (constant: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/modes/local/branch.py.md|DEPLOY_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|MODES_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|SCRIPTS_DIR]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/branch.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|check_develop_branches]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publisher.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publisher.py]] (imports)
