@@ -63,6 +63,8 @@ Automatically generated mirror for `docker-deployment/scripts/fleet_guard/engine
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run_preflight]] (function: belongs_to) — *Convenience functional entry point for mode runners.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|git_verifier.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|git_verifier.py]] (same_package)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|guided_wizard.py]] (calls)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|guided_wizard.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (calls)
 <!-- SYNC:END -->
 
