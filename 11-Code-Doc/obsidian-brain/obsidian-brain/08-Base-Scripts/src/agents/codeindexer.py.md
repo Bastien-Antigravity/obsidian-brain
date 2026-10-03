@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/codeindexer.py`.
+
+> **Essential Process**:
+> CodeIndexer agent daemon specialized in code symbol parsing, cross-referencing, and semantic dependency indexing.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

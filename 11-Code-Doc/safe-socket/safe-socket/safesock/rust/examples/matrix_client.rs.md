@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/safesock/rust/examples/matrix_client.rs`.
+
+> **Essential Process**:
+> Rust implementation of the cross-language matrix client for safe-socket.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

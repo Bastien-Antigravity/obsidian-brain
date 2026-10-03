@@ -21,17 +21,17 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|NewTeleRemoteServiceClient]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|RegisterTeleRemoteServiceServer]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|TeleRemoteServiceClient]] (interface: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|TeleRemoteServiceServer]] (interface: belongs_to)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|TeleRemoteServiceClient]] (interface: belongs_to) — *For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/...*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|TeleRemoteServiceServer]] (interface: belongs_to) — *for forward compatibility.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|TeleRemoteService_Connect_FullMethodName]] (constant: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer.Connect]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer.mustEmbedUnimplementedTeleRemoteServiceServer]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer.testEmbeddedByValue]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer]] (struct: defines_method)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnsafeTeleRemoteServiceServer]] (interface: belongs_to)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnsafeTeleRemoteServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|_TeleRemoteService_Connect_Handler]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|_]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|_]] (constant: belongs_to) — *Requires gRPC-Go v1.64.0 or later.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|teleRemoteServiceClient.Connect]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|teleRemoteServiceClient]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|teleRemoteServiceClient]] (struct: defines_method)

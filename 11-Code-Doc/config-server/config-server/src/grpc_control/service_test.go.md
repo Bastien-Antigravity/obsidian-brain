@@ -17,11 +17,14 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `config-server/src/grpc_control/service_test.go`.
 
+> **Essential Process**:
+> Unit tests for ControlServiceImpl gRPC handler, asserting request translation, controller delegation, and protobuf response payload validation.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: calls)
+- [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: calls) — *NewControlService creates a new ControlServiceImpl instance*
 - [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (same_package)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|mockConfigController.DeleteConfig]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|mockConfigController.GetConfig]] (method: defines_method)

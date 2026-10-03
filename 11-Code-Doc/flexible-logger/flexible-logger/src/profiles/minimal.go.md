@@ -14,7 +14,7 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (imports)
-- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: calls)
+- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: calls) — *CreateLogEngine creates a new fully configured LogEngine instance.*
 - [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (imports)
 - [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
@@ -25,7 +25,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|console.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[flexible-logger/flexible-logger/src/profiles/minimal.go.md|NewMinimalLogger]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/profiles/minimal.go.md|NewMinimalLogger]] (function: belongs_to) — *- Console output (Async)*
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (same_package)
 <!-- SYNC:END -->

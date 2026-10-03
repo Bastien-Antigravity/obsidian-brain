@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/purger.py`.
+
+> **Essential Process**:
+> Purger agent daemon specialized in code cleanup, removing deprecated modules, and enforcing minimalistic design patterns.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

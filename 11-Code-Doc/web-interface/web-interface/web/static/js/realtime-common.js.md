@@ -58,7 +58,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager]] (class: defines_method)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|analyst_config]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|changeDatasource]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/realtime-common.js.md|infos_connection]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/realtime-common.js.md|infos_connection]] (function: belongs_to) — *Legacy compatibility aliases*
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|load_timeframes]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|onclose]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|onerror]] (function: belongs_to)

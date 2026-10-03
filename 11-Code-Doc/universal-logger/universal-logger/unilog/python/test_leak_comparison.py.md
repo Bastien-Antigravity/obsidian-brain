@@ -9,15 +9,21 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/python/test_leak_comparison.py`.
+
+> **Essential Process**:
+> Comparative memory profiling test assessing resource utilization differences between synchronous and asynchronous UniLog logging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|UniLog]] (class: calls)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|close]] (function: calls)
+- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|close]] (function: calls) — *Manually release the logger session and associated resources.*
 - [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (imports)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|get_config]] (function: calls)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|set_config]] (function: calls)
+- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|get_config]] (function: calls) — *Retrieve a configuration value from the distributed config service (Zero-Leak FFI).*
+- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|set_config]] (function: calls) — *Update a configuration value in the memory configuration.*
 - [[universal-logger/universal-logger/unilog/python/unilog/lib_loader.py.md|lib_loader.py]] (imports)
 
 ### 🔌 Consumers (Inbound)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/fleet/fleet_init_update.py`.
+
+> **Essential Process**:
+> Propagates the standardized AI-Init.md file across all repositories defined in the fleet inventory.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

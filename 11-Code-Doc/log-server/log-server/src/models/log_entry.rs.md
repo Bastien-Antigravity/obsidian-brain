@@ -21,8 +21,8 @@ tags:
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (imports)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
-- [[log-server/log-server/src/models/log_entry.rs.md|LEVEL_STRINGS]] (constant: belongs_to)
-- [[log-server/log-server/src/models/log_entry.rs.md|LogEntry]] (struct: belongs_to)
+- [[log-server/log-server/src/models/log_entry.rs.md|LEVEL_STRINGS]] (constant: belongs_to) — *Human-readable log level strings*
+- [[log-server/log-server/src/models/log_entry.rs.md|LogEntry]] (struct: belongs_to) — *Internal log request wrapper for internal use*
 - [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (calls)
 - [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (imports)
 - [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (same_package)

@@ -11,6 +11,9 @@ last_sync: 2026-09-17T06:23:59.478240
 ## 📝 Description
 Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/config/db_config.py`.
 
+> **Essential Process**:
+> Database-backed runtime configuration service for 09-RAG-Engine. Manages the `09-RAG-Engine.configuration` table for live hyperparameter tuning (similarity thresholds, reranker models, search fusion weights, prompts).
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -72,14 +75,14 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|SECRET_KEY_PATTERNS]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_SERVICE_INSTANCE]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_encrypt_secret_for_db]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_encrypt_secret_for_db]] (function: belongs_to) — *Encrypts plaintext with RSA-OAEP SHA-256 for secure database persistence.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_get_pool_and_schema]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_get_public_key_pem]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_is_secret_key]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_get_public_key_pem]] (function: belongs_to) — *Resolves public key PEM string from AppConfig or standard file paths.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|_is_secret_key]] (function: belongs_to) — *Identifies whether a configuration key represents sensitive credentials.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get_all]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get_db_config_service]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|init_table]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get_all]] (function: belongs_to) — *Returns all runtime hyperparameters currently configured in the database.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get_db_config_service]] (function: belongs_to) — *Singleton getter for DBConfigService.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|init_table]] (function: belongs_to) — *Ensures the configuration table exists in the repository schema.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (calls)

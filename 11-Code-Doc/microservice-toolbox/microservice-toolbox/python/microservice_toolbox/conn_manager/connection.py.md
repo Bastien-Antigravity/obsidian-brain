@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py`.
+
+> **Essential Process**:
+> ManagedConnection wraps a connection and handles automatic reconnection. Provides a 'self-healing' interface that triggers background recovery upon failure.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|MaxRetriesReachedError]] (class: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|WriteFailedError]] (class: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|MaxRetriesReachedError]] (class: calls) — *Raised when the network manager gives up after the configured number of attempts.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|WriteFailedError]] (class: calls) — *Raised when data could not be sent over the socket.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|errors.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|errors.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|establish_connection]] (function: calls)

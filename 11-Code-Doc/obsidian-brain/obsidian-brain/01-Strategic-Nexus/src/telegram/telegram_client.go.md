@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/telegram/telegram_client.go`.
+
+> **Essential Process**:
+> Telegram subscriber interface client listening to remote command channels for 01-Strategic-Nexus.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

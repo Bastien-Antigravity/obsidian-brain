@@ -16,9 +16,9 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: belongs_to)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetLogPath]] (function: belongs_to)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|getCallerDir]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: belongs_to) — *GetDefaultLogPath returns the default log path using the executable name.*
+- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetLogPath]] (function: belongs_to) — *If name is empty, it falls back to the executable name.*
+- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|getCallerDir]] (function: belongs_to) — *This provides an extremely robust anchor for 'go run' where os.Executable is in /tmp/.*
 - [[flexible-logger/flexible-logger/src/helpers/paths_test.go.md|paths_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/helpers/paths_test.go.md|paths_test.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)

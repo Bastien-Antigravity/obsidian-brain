@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/cgo_bridge/sanitizer.go`.
+
+> **Essential Process**:
+> Sanitizes incoming C strings passed across the CGO boundary, trimming whitespace and stripping null terminators to prevent memory and string corruption in Go.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -17,5 +23,5 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/cmd/libsafesocket/main.go.md|main.go]] (calls)
-- [[safe-socket/safe-socket/src/cgo_bridge/sanitizer.go.md|SanitizeString]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/cgo_bridge/sanitizer.go.md|SanitizeString]] (function: belongs_to) — *SanitizeString ensures that strings coming from C are clean.*
 <!-- SYNC:END -->

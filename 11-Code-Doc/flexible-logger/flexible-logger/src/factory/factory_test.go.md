@@ -16,7 +16,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (imports)
 - [[flexible-logger/flexible-logger/src/factory/factory_test.go.md|DummySink.Close]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/factory/factory_test.go.md|DummySink.Write]] (method: defines_method)
-- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: calls)
+- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: calls) — *CreateLogEngine creates a new fully configured LogEngine instance.*
 - [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.Hostname]] (method: calls)

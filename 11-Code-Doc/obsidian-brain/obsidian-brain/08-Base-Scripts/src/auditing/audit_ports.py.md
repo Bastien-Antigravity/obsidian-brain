@@ -11,6 +11,9 @@ last_sync: 2026-10-01T01:10:02.915785
 ## 📝 Description
 Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py`.
 
+> **Essential Process**:
+> 4-Layer Port and Capability Drift Auditor and Auto-Synchronizer. Guarantees that ports and capability mappings across all 4 architectural layers: Layer 1: native.yaml (Authoritative Source of Truth) Layer 2: docker-compose.yaml (Container Manifests & Environment Variables) Layer 3: service-registry.json (Fleet Data Registry) Layer 4: Documentation (12-Docker-Deployment-Standards.md & Ecosystem-Onboarding-Guide.md) remain in 100% mechanical alignment without manual drift.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -21,18 +24,18 @@ Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/auditing/
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|get_logger]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|load_compose_ports]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|load_registry_ports]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|load_ssot_capabilities]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|load_compose_ports]] (function: belongs_to) — *Loads port bindings and env defaults from docker-compose.yaml.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|load_registry_ports]] (function: belongs_to) — *Loads services from service-registry.json.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|load_ssot_capabilities]] (function: belongs_to) — *Loads authoritative port mappings from native.yaml.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|parse_env_default]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|parse_env_default]] (function: belongs_to) — *Extracts numeric port default from '${VAR:DEFAULT}', '${VAR:-DEFAULT}' or raw int/str.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (same_package)

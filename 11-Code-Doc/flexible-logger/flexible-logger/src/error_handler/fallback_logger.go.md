@@ -23,7 +23,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|log_engine.go]] (imports)
 - [[flexible-logger/flexible-logger/src/error_handler/error_handler_test.go.md|error_handler_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/error_handler/error_handler_test.go.md|error_handler_test.go]] (same_package)
-- [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: belongs_to) — *It formats the error as a LogEntry to maintain consistency.*
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|remote_notifier.go]] (calls)
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|remote_notifier.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)

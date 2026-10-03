@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/03-Tech-Stack/05-Project-Scripts/Build-Wrapper.py`.
+
+> **Essential Process**:
+> Modular build wrapper that detects the programming language of a repository and runs the appropriate build or test command.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

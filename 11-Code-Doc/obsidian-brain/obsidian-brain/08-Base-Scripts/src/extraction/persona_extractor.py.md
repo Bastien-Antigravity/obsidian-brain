@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/extraction/persona_extractor.py`.
+
+> **Essential Process**:
+> Scans the fleet repositories for Go, Rust, and Python code, extracting structural patterns (AST, Regex matching of structs, traits, interfaces) to build persona context for the AI RAG engine.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/interfaces/extractor.py`.
+
+> **Essential Process**:
+> Extractor Interface defining the abstract contract for codebase parser and extractor utilities.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

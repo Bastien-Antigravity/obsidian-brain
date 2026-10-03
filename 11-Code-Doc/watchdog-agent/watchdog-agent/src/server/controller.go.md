@@ -20,9 +20,9 @@ Automatically generated mirror for `watchdog-agent/src/server/controller.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/core/controller.go.md|controller.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.GetStatus]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartAll]] (method: defines_method) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartService]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.GetStatus]] (method: defines_method) — *GetStatus retrieves the status metadata of all supervised services*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartAll]] (method: defines_method) — *RestartAll kills all running processes so they all restart sequentially*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartService]] (method: defines_method) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|FindServiceByName]] (function: calls) — *FindServiceByName retrieves a registered service pointer by name*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|IsPortListening]] (function: calls) — *IsPortListening checks if TCP port listens*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|KillAll]] (function: calls) — *KillAll kills all supervised command processes clean*
@@ -34,11 +34,11 @@ Automatically generated mirror for `watchdog-agent/src/server/controller.go`.
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (calls)
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.GetStatus]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartAll]] (method: belongs_to) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartService]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller]] (struct: belongs_to) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller]] (struct: defines_method) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.GetStatus]] (method: belongs_to) — *GetStatus retrieves the status metadata of all supervised services*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartAll]] (method: belongs_to) — *RestartAll kills all running processes so they all restart sequentially*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartService]] (method: belongs_to) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller]] (struct: belongs_to) — *RestartAll kills all running processes so they all restart sequentially*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller]] (struct: defines_method) — *RestartAll kills all running processes so they all restart sequentially*
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|NewController]] (function: belongs_to) — *NewController creates a new Controller instance*
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|manager.go]] (calls)
 <!-- SYNC:END -->

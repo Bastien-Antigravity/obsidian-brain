@@ -9,21 +9,27 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/cpp/UniversalLogger.hpp`.
+
+> **Essential Process**:
+> Header-only C++ facade for the universal-logger library, providing RAII lifecycle management, macro caller capture, and CGO bridge bindings.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Set]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Close]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Init]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_AddMetadata]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_GetLevel]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_LogWithMetadata]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetLevel]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetMetadata]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/notif_callback.go.md|UniLog_RegisterNotifCallback]] (function: calls)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: defines_method)
+- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get]] (function: calls) — *export UniLog_Config_Get*
+- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Set]] (function: calls) — *export UniLog_Config_Set*
+- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Close]] (function: calls) — *export UniLog_Close*
+- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Init]] (function: calls) — *export UniLog_Init*
+- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_AddMetadata]] (function: calls) — *export UniLog_AddMetadata*
+- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_GetLevel]] (function: calls) — *export UniLog_GetLevel*
+- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_LogWithMetadata]] (function: calls) — *export UniLog_LogWithMetadata*
+- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetLevel]] (function: calls) — *export UniLog_SetLevel*
+- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetMetadata]] (function: calls) — *export UniLog_SetMetadata*
+- [[universal-logger/universal-logger/src/cgo_bridge/notif_callback.go.md|UniLog_RegisterNotifCallback]] (function: calls) — *export UniLog_RegisterNotifCallback*
+- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: defines_method) — *Disable copying to prevent double-close of the handle*
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: defines_method)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: defines_method)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: defines_method)
@@ -46,8 +52,8 @@ tags:
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_ERROR]] (macro: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_INFO]] (macro: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_WARNING]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNIVERSAL_LOGGER_HPP]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: belongs_to)
+- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNIVERSAL_LOGGER_HPP]] (macro: belongs_to) — *ifndef UNIVERSAL_LOGGER_HPP*
+- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: belongs_to) — *Disable copying to prevent double-close of the handle*
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: belongs_to)

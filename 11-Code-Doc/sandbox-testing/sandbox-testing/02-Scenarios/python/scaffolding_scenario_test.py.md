@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py`.
 
+> **Essential Process**:
+> Validates that: 1. Scaffolding engine generates structurally compliant Go and Python microservices. 2. Container configurations satisfy 12-Docker-Deployment-Standards.md (multi-stage builder, teleremote-network). 3. Symlink patterns align with watchdog-agent heal.go self-healing engine. 4. Generated inventory and service-registry schema contracts match ecosystem SSoTs. 5. Standalone buildability rules are fulfilled for all target languages.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -28,7 +31,7 @@ Automatically generated mirror for `sandbox-testing/02-Scenarios/python/scaffold
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|REPO_CONTROL_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|SANDBOX_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|TEST_DIR]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|TestScaffoldingScenario]] (class: belongs_to)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|TestScaffoldingScenario]] (class: belongs_to) — *Sandbox Scenario Test for Microservice Scaffolding & Ecosystem Coherence.*
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|setUp]] (function: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|tearDown]] (function: belongs_to)

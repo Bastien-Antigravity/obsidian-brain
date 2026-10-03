@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.rs`.
+
+> **Essential Process**:
+> Standardized logging abstraction implementing the unified ILogger interface.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|ManagedConnection.Send]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|ManagedConnection.Send]] (method: calls) — *Send data, reconnecting if necessary*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|UniLog]] (class: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.add_metadata]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.critical]] (method: defines_method)
@@ -41,7 +47,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.stream]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.trade]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.warning]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|print_internal_log]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|print_internal_log]] (function: calls) — *Formats and prints an internal toolbox log message*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (same_package)
 
 ### 🔌 Consumers (Inbound)
@@ -73,7 +79,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.warning]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: belongs_to) — *Logger trait defines the standard interface for structured logging across the toolbox.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.add_metadata]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.critical]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.debug]] (method: belongs_to)
@@ -89,7 +95,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.warning]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: belongs_to) — *In strict mode (STRICT_LOGGER=true), panics to prevent microservices from running dark.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_fallback]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_passthrough]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_strict_mode]] (function: belongs_to)

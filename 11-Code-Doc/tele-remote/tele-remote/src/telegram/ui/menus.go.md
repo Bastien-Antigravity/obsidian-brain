@@ -23,14 +23,14 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (calls)
-- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|OnComponentConnected]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|OnComponentConnected]] (function: belongs_to) — *OnComponentConnected is triggered when a client connects via gRPC or NATS*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|ateCommandAction(bo]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|b.Context,]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|icText(bot *core.]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|b.Context,]] (function: belongs_to) — *RenderMenu builds and displays a CommandMenu as a Reply Keyboard*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|icText(bot *core.]] (function: belongs_to) — *HandleDynamicText routes text messages from Reply buttons back to actions*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|ion(bot *core.]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|nMenu(m *models.]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|r {
-	menuSta]] (function: belongs_to)
+	menuSta]] (function: belongs_to) — *ShowMainMenu displays the dynamic top-level menu*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|seButton(bo]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|seMenuRow(bo]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|th(root *mode]] (function: belongs_to)

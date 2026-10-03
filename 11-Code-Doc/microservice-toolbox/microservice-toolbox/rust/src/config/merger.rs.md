@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/config/merger.rs`.
+
+> **Essential Process**:
+> Deep merges configuration maps and environment variables with precedence rules.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -17,5 +23,5 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/merger.rs.md|deep_merge]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/merger.rs.md|deep_merge]] (function: belongs_to) — *- Otherwise, overwrite dst with src.*
 <!-- SYNC:END -->

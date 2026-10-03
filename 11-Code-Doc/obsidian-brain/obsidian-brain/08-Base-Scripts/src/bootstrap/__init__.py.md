@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/bootstrap/__init__.py`.
+
+> **Essential Process**:
+> Root-level environment bootstrapper and singleton manager for 08-Base-Scripts. Sets up system path, redirects virtualenv execution, and instantiates the application configuration loader and the UniLog logging engine exactly once.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

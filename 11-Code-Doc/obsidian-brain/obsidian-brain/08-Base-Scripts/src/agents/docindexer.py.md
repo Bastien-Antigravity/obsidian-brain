@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/docindexer.py`.
+
+> **Essential Process**:
+> DocIndexer agent daemon specialized in documentation indexing, formatting, and metadata cataloging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

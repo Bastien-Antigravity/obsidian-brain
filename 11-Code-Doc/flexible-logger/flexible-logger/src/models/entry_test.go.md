@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: calls)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Retain]] (method: calls)
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls) — *Release decrements the reference count and returns the entry to the pool if 0.*
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: calls) — *Reset clears the LogEntry for reuse.*
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Retain]] (method: calls) — *Must be called when passing the entry to an additional async consumer.*
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|entry.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

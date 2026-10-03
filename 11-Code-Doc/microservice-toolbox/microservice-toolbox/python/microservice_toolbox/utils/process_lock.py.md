@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/utils/process_lock.py`.
+
+> **Essential Process**:
+> Provides cross-platform process locking using file locking to prevent multiple instances of the same service/command from running concurrently.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetLastError]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetLastError]] (method: calls) — *Get the last error from the underlying engine*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/terminal_ui.py.md|terminal_ui.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/terminal_ui.py.md|truncate]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/terminal_ui.py.md|truncate]] (function: calls) — *Helper to truncate strings to a maximum length.*
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|connection.py]] (calls)

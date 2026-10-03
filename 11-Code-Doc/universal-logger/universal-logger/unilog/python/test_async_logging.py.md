@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/python/test_async_logging.py`.
+
+> **Essential Process**:
+> Asynchronous logging benchmark and correctness test suite verifying non-blocking log execution in asyncio event loops.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -23,6 +29,6 @@ tags:
 - [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|TestAsyncLogging]] (class: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|heartbeat]] (function: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|run_test]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_async_caller_metadata]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_loop_responsiveness]] (function: belongs_to)
+- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_async_caller_metadata]] (function: belongs_to) — *Verify that caller information correctly identifies THIS file, not unilog.py*
+- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_loop_responsiveness]] (function: belongs_to) — *Verify that the async loop is not blocked during intensive logging*
 <!-- SYNC:END -->

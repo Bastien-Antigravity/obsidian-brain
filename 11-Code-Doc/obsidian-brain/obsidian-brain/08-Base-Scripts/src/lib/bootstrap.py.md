@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lib/bootstrap.py`.
+
+> **Essential Process**:
+> Legacy bootstrap wrapper delegating bootstrapping capabilities to microservice-toolbox utils/bootstrap. Ensures zero-code-change backwards compatibility for legacy base scripts.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

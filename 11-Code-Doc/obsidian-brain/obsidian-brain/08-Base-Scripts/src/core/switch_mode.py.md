@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/core/switch_mode.py`.
+
+> **Essential Process**:
+> Switches the operational protocol of the AI Squad by atomically updating the MODE-MANUAL.md and all associated AI-Session-State.md files.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,7 +22,7 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/bootstrap.py.md|bootstrap.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -28,7 +34,7 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|_update_file_field]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|apply_mode_protocol]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|get_mode_choice_interactive]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|main]] (function: belongs_to) — *Entry point for standalone execution.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/telegram/manager.py.md|manager.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/telegram/manager.py.md|manager.py]] (imports)
 <!-- SYNC:END -->

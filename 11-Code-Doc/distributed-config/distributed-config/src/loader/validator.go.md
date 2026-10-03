@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/loader/validator.go`.
+
+> **Essential Process**:
+> Configuration integrity validator ensuring required service capabilities (config_server, log_server, etc.) are present and valid before service boot.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

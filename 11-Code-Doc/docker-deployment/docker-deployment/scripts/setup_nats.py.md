@@ -31,9 +31,9 @@ Automatically generated mirror for `docker-deployment/scripts/setup_nats.py`.
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|detect_platform_target]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|download_and_install_nats]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|ensure_nats_available]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|find_existing_nats]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|get_nats_target_dir]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|print_fallback_instructions]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|find_existing_nats]] (function: belongs_to) — *Check system PATH, workspace watchdog-agent/nats, and standard user paths for nats-server.*
+- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|get_nats_target_dir]] (function: belongs_to) — *Return the workspace directory for NATS server (watchdog-agent/nats/).*
+- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|print_fallback_instructions]] (function: belongs_to) — *Print copy-paste package manager instructions for manual installation.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

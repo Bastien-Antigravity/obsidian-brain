@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/cmd/test/integration_test.go`.
+
+> **Essential Process**:
+> Full End-to-End integration test for the notification ecosystem. Verifies the complete flow from TCP ingestion to platform delivery.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -34,15 +40,15 @@ tags:
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: defines_method)
-- [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls)
+- [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
-- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker pool.*
 - [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls)
-- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls)
-- [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls)
-- [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: calls)
+- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
+- [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
+- [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

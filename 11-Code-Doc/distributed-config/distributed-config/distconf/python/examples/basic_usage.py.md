@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/distconf/python/examples/basic_usage.py`.
+
+> **Essential Process**:
+> Demonstration example showing basic initialization and key-value retrieval in the Python DistConfig client.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

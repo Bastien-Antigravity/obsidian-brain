@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/prototyper.py`.
+
+> **Essential Process**:
+> Prototyper agent daemon specialized in generating boilerplate templates, one-off scripts, and layout mocks.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

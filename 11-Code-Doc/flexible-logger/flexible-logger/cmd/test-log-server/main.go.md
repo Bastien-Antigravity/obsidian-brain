@@ -16,7 +16,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Error]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Info]] (method: calls)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (imports)
-- [[flexible-logger/flexible-logger/src/profiles/no_lock.go.md|NewNoLockLogger]] (function: calls)
+- [[flexible-logger/flexible-logger/src/profiles/no_lock.go.md|NewNoLockLogger]] (function: calls) — *- Notif (Async)*
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/cmd/test-log-server/main.go.md|main]] (function: belongs_to)

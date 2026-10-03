@@ -1,11 +1,17 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/constants.py`.
+
+> **Essential Process**:
+> Shared constants for the 09-RAG-Engine module. Single source of truth for workspace paths, exclusion lists, and access control matrix.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|_CORE_DIR]] (constant: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|_CORE_DIR]] (constant: calls) — *Resolve RAG engine root relative to this core package file*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|access_matrix.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|access_matrix.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)

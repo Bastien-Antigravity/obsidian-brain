@@ -17,7 +17,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Critical]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Debug]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Error]] (method: defines_method)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.GetLevel]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.GetLevel]] (method: defines_method) — *GetLevel returns the current log level.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Info]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.LogWithCaller]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Log]] (method: defines_method)
@@ -25,8 +25,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Logout]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Report]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Schedule]] (method: defines_method)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetCallerSkip]] (method: defines_method)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetLevel]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetCallerSkip]] (method: defines_method) — *SetCallerSkip sets the number of stack frames to skip.*
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetLevel]] (method: defines_method) — *SetLevel sets the current log level.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Stream]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Trade]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: defines_method)
@@ -34,10 +34,10 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.Notify]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.Write]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (same_package)
-- [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: calls)
+- [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: calls) — *It formats the error as a LogEntry to maintain consistency.*
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|fallback_logger.go]] (imports)
 - [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: calls)
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: calls) — *Reset clears the LogEntry for reuse.*
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
@@ -49,7 +49,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Critical]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Debug]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Error]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.GetLevel]] (method: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.GetLevel]] (method: belongs_to) — *GetLevel returns the current log level.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Info]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.LogWithCaller]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Log]] (method: belongs_to)
@@ -57,8 +57,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Logout]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Report]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Schedule]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetCallerSkip]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetLevel]] (method: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetCallerSkip]] (method: belongs_to) — *SetCallerSkip sets the number of stack frames to skip.*
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetLevel]] (method: belongs_to) — *SetLevel sets the current log level.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Stream]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Trade]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: belongs_to)

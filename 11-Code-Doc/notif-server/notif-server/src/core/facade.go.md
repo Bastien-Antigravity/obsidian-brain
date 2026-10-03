@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/core/facade.go`.
+
+> **Essential Process**:
+> Facade for the core notifier package. Re-exports primary types and interfaces to provide a clean public API.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/loader/path_resolver_test.go`.
+
+> **Essential Process**:
+> Unit test suite verifying configuration path resolution priority across CWD, config/ subdirectory, executable directory, and fallback binary names.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

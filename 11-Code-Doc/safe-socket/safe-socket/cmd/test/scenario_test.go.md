@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/cmd/test/scenario_test.go`.
+
+> **Essential Process**:
+> Scenario-driven integration tests evaluating customized timeout, deadline, and rapid heartbeat configurations under simulated latency conditions.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -19,5 +25,5 @@ tags:
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/cmd/test/scenario_test.go.md|TestScenario_CustomParameters]] (function: belongs_to)
+- [[safe-socket/safe-socket/cmd/test/scenario_test.go.md|TestScenario_CustomParameters]] (function: belongs_to) — *for custom scenario testing (latency, timeouts, heartbeats).*
 <!-- SYNC:END -->

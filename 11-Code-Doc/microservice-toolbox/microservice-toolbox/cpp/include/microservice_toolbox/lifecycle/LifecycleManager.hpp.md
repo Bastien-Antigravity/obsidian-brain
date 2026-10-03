@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp`.
+
+> **Essential Process**:
+> Core microservice-toolbox module: LifecycleManager.hpp.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -31,5 +37,5 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager.Wait]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager]] (class: defines_method)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|MICROSERVICE_TOOLBOX_LIFECYCLE_MANAGER_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|MICROSERVICE_TOOLBOX_LIFECYCLE_MANAGER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_LIFECYCLE_MANAGER_HPP*
 <!-- SYNC:END -->

@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls)
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls) — *NewBot registers Telebot settings and initializes memory maps*
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (imports)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Critical]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Debug]] (method: defines_method)

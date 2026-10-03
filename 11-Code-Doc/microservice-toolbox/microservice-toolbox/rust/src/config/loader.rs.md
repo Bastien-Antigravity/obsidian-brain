@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.rs`.
+
+> **Essential Process**:
+> Loads layered configuration from local YAML, environment variables, and distributed config server.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -18,14 +24,14 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {._live_conf_update<F]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {._registry_update<F]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_and_expand_yaml(&]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_config(p]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_config(p]] (method: defines_method) — *Loads and merges configuration data based on the provided profile.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_from_file(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_public_key(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.are_config(&]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.crypt_secret(&]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.crypt_secret(&]] (method: defines_method) — *Uses the hardened distributed-config engine for cross-language consistency.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ep_merge(d]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.lidate_unique_ports(&]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.marshal_local<T]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.marshal_local<T]] (method: defines_method) — *Parity with Go's UnmarshalLocal.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.mmon(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.nc_from_bridge(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.op(&]] (method: defines_method)
@@ -37,7 +43,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_listen_addr(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_local(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_logger(&]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_rest_addr(&]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_rest_addr(&]] (method: defines_method) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_service_name(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_value(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ternal_cb(_]] (method: defines_method)
@@ -58,8 +64,8 @@ tags:
    ]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|_local_empty() {
    ]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|ad_config(p]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|ad_config_with_logger(p]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|ad_config(p]] (function: belongs_to) — *Initializes a configuration loader following the Microservice Toolbox 'Hierarchy of Truth'.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|ad_config_with_logger(p]] (function: belongs_to) — *Semantic helper to match Go LoadConfigWithLogger().*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|ansion() {
        ]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|arshal_local() -> Re]] (function: belongs_to)
@@ -74,14 +80,14 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {._live_conf_update<F]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {._registry_update<F]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_and_expand_yaml(&]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_config(p]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_config(p]] (method: belongs_to) — *Loads and merges configuration data based on the provided profile.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_from_file(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ad_public_key(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.are_config(&]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.crypt_secret(&]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.crypt_secret(&]] (method: belongs_to) — *Uses the hardened distributed-config engine for cross-language consistency.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ep_merge(d]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.lidate_unique_ports(&]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.marshal_local<T]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.marshal_local<T]] (method: belongs_to) — *Parity with Go's UnmarshalLocal.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.mmon(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.nc_from_bridge(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.op(&]] (method: belongs_to)
@@ -93,7 +99,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_listen_addr(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_local(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_logger(&]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_rest_addr(&]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_rest_addr(&]] (method: belongs_to) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_service_name(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_value(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ternal_cb(_]] (method: belongs_to)

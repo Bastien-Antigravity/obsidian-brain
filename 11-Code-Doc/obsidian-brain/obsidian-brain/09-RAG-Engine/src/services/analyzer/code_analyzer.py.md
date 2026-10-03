@@ -1,12 +1,18 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py`.
+
+> **Essential Process**:
+> Advanced multi-language analyzer that bridges the RAG system with the deep structural parsing logic of the CodeEngine.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/analyzer.py.md|Analyzer]] (class: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/analyzer.py.md|analyzer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/capture_bridge.py.md|RAGCaptureBridge]] (class: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/capture_bridge.py.md|RAGCaptureBridge]] (class: calls) — *Helper to capture CodeEngine definitions as RAG-compatible chunks.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/capture_bridge.py.md|capture_bridge.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/capture_bridge.py.md|capture_bridge.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/cpp_parser.py.md|CppParser]] (class: calls)
@@ -27,7 +33,7 @@
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|CodeEngineAnalyzerBridge]] (class: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|CodeEngineAnalyzerBridge]] (class: belongs_to) — *Bridge analyzer that uses CodeEngine's AST-based parsers for structural chunking.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|analyze]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|analyze]] (function: belongs_to) — *Analyzes code files using AST parsers to extract symbols as chunks.*
 <!-- SYNC:END -->

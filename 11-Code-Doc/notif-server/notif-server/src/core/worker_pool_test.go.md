@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/core/worker_pool_test.go`.
+
+> **Essential Process**:
+> Validates the concurrent behavior and isolation of platform-specific worker pools. Ensures that slow workers do not impact the throughput of fast workers.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker pool.*
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|counterMockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|counterMockSender.GetTag]] (method: defines_method)

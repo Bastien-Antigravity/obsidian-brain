@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/interfaces/command.py`.
+
+> **Essential Process**:
+> Command Interface defining the abstract contract for all executable CLI commands in base scripts.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

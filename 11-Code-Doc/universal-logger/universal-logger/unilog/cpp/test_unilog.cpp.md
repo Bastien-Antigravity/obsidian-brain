@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/cpp/test_unilog.cpp`.
+
+> **Essential Process**:
+> Unit test runner verifying C++ UniLog instantiation, configuration roundtrips, dynamic metadata, caller metadata propagation, and logging macros.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -29,5 +35,5 @@ tags:
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniversalLogger.hpp]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/cpp/test_unilog.cpp.md|main]] (function: belongs_to)
+- [[universal-logger/universal-logger/unilog/cpp/test_unilog.cpp.md|main]] (function: belongs_to) — *include <string>*
 <!-- SYNC:END -->

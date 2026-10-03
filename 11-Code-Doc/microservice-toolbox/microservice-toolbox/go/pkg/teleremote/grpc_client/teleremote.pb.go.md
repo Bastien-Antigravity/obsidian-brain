@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.Descriptor]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.Descriptor]] (method: defines_method) — *Deprecated: Use BotCommand.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetCommandType]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetCustomPayload]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetInput]] (method: defines_method)
@@ -22,12 +22,12 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.Reset]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.String]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Descriptor]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.EnumDescriptor]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.EnumDescriptor]] (method: defines_method) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Enum]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Number]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.String]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Type]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.Descriptor]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.Descriptor]] (method: defines_method) — *Deprecated: Use ComponentMessage.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.GetComponentName]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.GetHost]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.GetPayload]] (method: defines_method)
@@ -42,7 +42,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage_Qmsg.isComponentMessage_Payload]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage_Registration.isComponentMessage_Payload]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage_Telemetry.isComponentMessage_Payload]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.Descriptor]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.Descriptor]] (method: defines_method) — *Deprecated: Use QueueMessage.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.GetAckw]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.GetFromAddr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.GetId]] (method: defines_method)
@@ -53,7 +53,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.ProtoReflect]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.Reset]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.String]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.Descriptor]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.Descriptor]] (method: defines_method) — *Deprecated: Use Registration.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.GetMenuJson]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.ProtoMessage]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.ProtoReflect]] (method: defines_method)
@@ -62,7 +62,7 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|client.go]] (imports)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.Descriptor]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.Descriptor]] (method: belongs_to) — *Deprecated: Use BotCommand.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetCommandType]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetCustomPayload]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetInput]] (method: belongs_to)
@@ -73,19 +73,19 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand]] (struct: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CLOSE_ALL_POSITIONS]] (constant: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CUSTOM_COMMAND]] (constant: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CUSTOM_COMMAND]] (constant: belongs_to) — *Extendable for arbitrarily complex commands*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Descriptor]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.EnumDescriptor]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.EnumDescriptor]] (method: belongs_to) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Enum]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Number]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.String]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Type]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType]] (struct: belongs_to) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType]] (struct: defines_method) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_POWER_OFF]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_REFRESH_MENU]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_UNKNOWN]] (constant: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.Descriptor]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.Descriptor]] (method: belongs_to) — *Deprecated: Use ComponentMessage.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.GetComponentName]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.GetHost]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage.GetPayload]] (method: belongs_to)
@@ -108,7 +108,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage_Telemetry.isComponentMessage_Payload]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage_Telemetry]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage_Telemetry]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.Descriptor]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.Descriptor]] (method: belongs_to) — *Deprecated: Use QueueMessage.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.GetAckw]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.GetFromAddr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.GetId]] (method: belongs_to)
@@ -121,7 +121,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage.String]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|QueueMessage]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.Descriptor]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.Descriptor]] (method: belongs_to) — *Deprecated: Use Registration.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.GetMenuJson]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.ProtoMessage]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.ProtoReflect]] (method: belongs_to)
@@ -129,7 +129,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.String]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|_]] (constant: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|file_teleremote_proto_init]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|file_teleremote_proto_rawDescGZIP]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|file_teleremote_proto_rawDesc]] (constant: belongs_to)

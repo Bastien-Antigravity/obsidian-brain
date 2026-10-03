@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/docmaintainer.py`.
+
+> **Essential Process**:
+> DocMaintainer agent daemon specialized in verifying documentation alignment, detecting document drift, and suggesting corrections.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

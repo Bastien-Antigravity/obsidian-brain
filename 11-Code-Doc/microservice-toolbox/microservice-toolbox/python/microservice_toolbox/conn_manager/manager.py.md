@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py`.
+
+> **Essential Process**:
+> NetworkManager handles reliable connection establishment with retries. Implements resilient strategies including backoff, jitter, and unified error reporting.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -17,7 +23,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|connection.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|connection.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|reconnect]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|MaxRetriesReachedError]] (class: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|MaxRetriesReachedError]] (class: calls) — *Raised when the network manager gives up after the configured number of attempts.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|errors.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/errors.py.md|errors.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)

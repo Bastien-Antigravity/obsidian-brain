@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
+
+> **Essential Process**:
+> Unit tests for the OpenMFE dynamic service registry and HTTP handlers. Verifies registration, JSON persistence, CORS compliance, and listing.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls)
+- [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *List returns a slice of all currently registered microfrontends.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (same_package)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Close]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Critical]] (method: defines_method)

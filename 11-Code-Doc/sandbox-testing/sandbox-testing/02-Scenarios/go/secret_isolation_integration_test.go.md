@@ -75,8 +75,8 @@ tags:
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/rag_engine_storage_test.go.md|rag_engine_storage_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/safe_socket_auto_hello_test.go.md|safe_socket_auto_hello_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/safe_socket_auto_hello_test.go.md|safe_socket_auto_hello_test.go]] (same_package)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|TestScenario_ZeroKnowledgeSecretsIntegration]] (function: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|generateTestKeyPair]] (function: belongs_to)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|TestScenario_ZeroKnowledgeSecretsIntegration]] (function: belongs_to) — *audit ensuring zero-knowledge boundaries, per-service key isolation, and non-shared configs.*
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|generateTestKeyPair]] (function: belongs_to) — *generateTestKeyPair creates an in-memory RSA key pair encoded as PEM strings.*
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|scenarioMockLogger.AddMetadata]] (method: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|scenarioMockLogger.Close]] (method: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|scenarioMockLogger.Critical]] (method: belongs_to)

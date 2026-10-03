@@ -13,8 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Broadcast]] (method: calls)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls)
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Broadcast]] (method: calls) — *Broadcast sends a plain text message to the pre-configured ChatID*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls) — *NewBot registers Telebot settings and initializes memory maps*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|bot.go]] (same_package)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|MockLogger.Critical]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|MockLogger.Debug]] (method: defines_method)

@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py`.
+
+> **Essential Process**:
+> Defines the abstract interface for the hybrid search query engine. Coordinates high-level search requests across multiple retrieval strategies.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -11,7 +17,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|rag_facade.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py.md|QueryEngine]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py.md|query]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py.md|query]] (function: belongs_to) — *Executes a unified search operation across the entire brain.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_engine/hybrid.py.md|hybrid.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_engine/hybrid.py.md|hybrid.py]] (imports)
 <!-- SYNC:END -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/python/unilog/models.py`.
+
+> **Essential Process**:
+> Data models, enumerations, and type definitions representing log levels, metadata containers, and FFI callback signatures for UniLog.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -20,6 +26,6 @@ tags:
 - [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (calls)
 - [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (imports)
 - [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (same_package)
-- [[universal-logger/universal-logger/unilog/python/unilog/models.py.md|LogLevel]] (class: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/unilog/models.py.md|from_str]] (function: belongs_to)
+- [[universal-logger/universal-logger/unilog/python/unilog/models.py.md|LogLevel]] (class: belongs_to) — *Log Levels*
+- [[universal-logger/universal-logger/unilog/python/unilog/models.py.md|from_str]] (function: belongs_to) — *Helper to convert string-based levels from config to enum*
 <!-- SYNC:END -->

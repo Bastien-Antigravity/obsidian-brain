@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py`.
+
+> **Essential Process**:
+> Multi-tenant storage proxies that dynamically route indexing, querying, and deletion requests to repository-specific database schemas in PostgreSQL mode.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -23,13 +29,13 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantAlignmentServiceProxy]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantGraphDBProxy]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantLexicalStoreProxy]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantParentStoreProxy]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantVectorStoreProxy]] (class: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantAlignmentServiceProxy]] (class: belongs_to) — *Routes self-healing alignment operations to schema-specific PostgresAlignmentService instances.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantGraphDBProxy]] (class: belongs_to) — *Routes relational graph schema mappings to schema-specific PostgresGraphDB instances.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantLexicalStoreProxy]] (class: belongs_to) — *Routes lexical store operations to schema-specific PostgresLexicalStore instances.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantParentStoreProxy]] (class: belongs_to) — *Routes parent raw content storage operations to schema-specific PostgresParentStore instances.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantVectorStoreProxy]] (class: belongs_to) — *Routes vector store operations to schema-specific PgVectorStore instances.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_active_schemas]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_active_schemas]] (function: belongs_to) — *Retrieves all active database schemas with 30s TTL caching.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_db]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_service]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_store]] (function: belongs_to)
@@ -55,14 +61,14 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|insert_node]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|is_file_changed]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|query]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|register_active_schema]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|register_active_schema]] (function: belongs_to) — *Dynamically register a newly accessed or created schema in the active schema cache.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|register_link]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|register_links_batch]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|remove_edges_by_source_or_type]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|remove_node]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|reset_registry]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|reset_store]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|set_bulk_mode]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|set_bulk_mode]] (function: belongs_to) — *Propagates bulk ingestion mode across active schema stores.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|store_parent]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|store_parents_batch]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|traverse_neighborhood]] (function: belongs_to)

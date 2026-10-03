@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/patternsentinel.py`.
+
+> **Essential Process**:
+> PatternSentinel agent daemon specialized in layout coherence checks, identifying anti-patterns, and enforcing strategic rules.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

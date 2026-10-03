@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/strategies/standalone.go`.
+
+> **Essential Process**:
+> Standalone configuration strategy operating completely offline without network dependencies, loading strictly from local YAML files and env vars.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/env_loader.go.md|LoadCommonFromEnv]] (function: calls)
-- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls)
+- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls) — *and Test profiles to allow instant "Zero-Config" local bootstrap.*
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (imports)
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|StandaloneStrategy.Close]] (method: defines_method)

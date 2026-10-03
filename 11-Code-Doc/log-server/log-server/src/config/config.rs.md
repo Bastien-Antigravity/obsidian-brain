@@ -13,10 +13,10 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: defines_method)
+- [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: defines_method) — *Create new server configuration*
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: belongs_to)
+- [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: belongs_to) — *Create new server configuration*
 - [[log-server/log-server/src/config/config.rs.md|Config]] (struct: belongs_to)
 - [[log-server/log-server/src/config/config.rs.md|Config]] (struct: defines_method)
 - [[log-server/log-server/src/config/config.rs.md|test_config_new]] (function: belongs_to)

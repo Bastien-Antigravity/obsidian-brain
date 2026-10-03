@@ -20,5 +20,5 @@ tags:
 - [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|connection_test.go]] (imports)
 - [[flexible-logger/flexible-logger/cmd/test/main.go.md|main.go]] (calls)
 - [[flexible-logger/flexible-logger/cmd/test/main.go.md|main.go]] (imports)
-- [[flexible-logger/flexible-logger/src/test_utils/mock_server.go.md|StartMockServer]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/test_utils/mock_server.go.md|StartMockServer]] (function: belongs_to) — *It returns the assigned address (host:port) and a cleanup function to stop the server.*
 <!-- SYNC:END -->

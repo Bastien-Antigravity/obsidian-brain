@@ -17,16 +17,17 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|CommandController]] (class: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|controller.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|process_message]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/knowledge_compressor.py.md|run]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|DiscordClient]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|HAS_DISCORD]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|_resolve_token]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|_setup_bot]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|_resolve_token]] (function: belongs_to) — *Resolves the Discord bot token from environment or settings file.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|_setup_bot]] (function: belongs_to) — *Configures the discord.py client and registers handlers.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|main]] (function: belongs_to) — *Invokes and starts the Discord Gateway Client adapter.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|on_message]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|on_ready]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|start]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/clients/discord_client.py.md|start]] (function: belongs_to) — *Establishes connection to the Gateway.*
 <!-- SYNC:END -->

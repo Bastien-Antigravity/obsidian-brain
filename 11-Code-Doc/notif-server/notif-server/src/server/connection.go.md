@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/server/connection.go`.
+
+> **Essential Process**:
+> Handles individual client connections and stable identity resolution. Implements the persistent message loop for TCP ingestion.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,11 +9,17 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/utils/terminal_ui.rs`.
+
+> **Essential Process**:
+> Formats console diagnostic output, tables, and CLI banners for microservices.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|get_hostname]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|get_hostname]] (function: calls) — *Get system hostname (cached)*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|helpers.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|helpers.rs]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
@@ -21,6 +27,6 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|print_internal_log]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|print_internal_log]] (function: belongs_to) — *Formats and prints an internal toolbox log message*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|truncate]] (function: belongs_to)
 <!-- SYNC:END -->

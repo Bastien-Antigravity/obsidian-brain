@@ -4,7 +4,7 @@
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE. if (!text]] (method: defines_method)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE. if (!text]] (method: defines_method) — *Helper functions*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.Line(terminal, tex]] (method: defines_method)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.View(container) ]] (method: defines_method)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.bindEvents]] (method: defines_method)
@@ -22,7 +22,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.switchTab]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE. if (!text]] (method: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE. if (!text]] (method: belongs_to) — *Helper functions*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.Line(terminal, tex]] (method: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.View(container) ]] (method: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.bindEvents]] (method: belongs_to)
@@ -41,7 +41,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE]] (class: defines_method)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|earch = async]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|loadScript]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|loadScript]] (function: belongs_to) — *Helper functions*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|loadStylesheet]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|setupImportmap]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|syncTheme]] (function: belongs_to)

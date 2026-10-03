@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/errors.go`.
+
+> **Essential Process**:
+> Defines standardized error types and categorization for connection manager failures.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

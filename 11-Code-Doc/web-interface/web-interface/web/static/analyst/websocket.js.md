@@ -29,6 +29,6 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient.connect]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient.reconnect]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient.sendMessage]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient]] (class: belongs_to) — *websocket.js*
+- [[web-interface/web-interface/web/static/analyst/websocket.js.md|WebSocketClient]] (class: defines_method) — *websocket.js*
 <!-- SYNC:END -->

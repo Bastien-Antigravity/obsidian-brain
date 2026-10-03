@@ -1,11 +1,17 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py`.
+
+> **Essential Process**:
+> Shared PostgreSQL connection pooling and schema name resolver for RAG Engine services. Ensures single-instance connection pooling to prevent DB port exhaustion.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls) — *Resolves database connection settings with decrypted credentials and target RAG database.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
@@ -34,7 +40,7 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|pgvector.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|pgvector.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|HAS_POSTGRES]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|close_pg_pool]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|close_pg_pool]] (function: belongs_to) — *Closes all connections in the shared pool.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_pg_pool]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_schema_name]] (function: belongs_to)
 <!-- SYNC:END -->

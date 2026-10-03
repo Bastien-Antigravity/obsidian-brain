@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/utils/machine_detector_test.go`.
+
+> **Essential Process**:
+> Validates loopback and local network IP resolution for MachineDetector.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls)
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls)
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|machine_detector.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

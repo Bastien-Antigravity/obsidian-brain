@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py`.
+
+> **Essential Process**:
+> Enforces mandatory YAML frontmatter (microservice, type, status) across all markdown files in the Obsidian vault based on their directory location.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -26,10 +32,12 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/check_coherence.py.md|check_coherence.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|VAULT_ROOT]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|ZONE_MAP]] (constant: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|ZONE_MAP]] (constant: belongs_to) — *Mapping of folder prefixes to metadata*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|_find_workspace_root]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|apply_hardening]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|main]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/preflight_check.py.md|preflight_check.py]] (same_package)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/fix_feats.py.md|fix_feats.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/map_feats.py.md|map_feats.py]] (calls)
 <!-- SYNC:END -->

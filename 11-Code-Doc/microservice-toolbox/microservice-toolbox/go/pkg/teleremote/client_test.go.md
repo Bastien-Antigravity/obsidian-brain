@@ -17,14 +17,17 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/go/pkg/teleremote/client_test.go`.
 
+> **Essential Process**:
+> Unit tests for TeleClient action tree generation, menu JSON serialization, and handler dispatching.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|NewTeleClient]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.AddAction]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.GenerateMenuJSON]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.SendTelemetry]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.UpdateActions]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|NewTeleClient]] (function: calls) — *NewTeleClient initializes a new Tele-Remote client*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.AddAction]] (method: calls) — *AddAction registers a new action or sub-menu tree*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.GenerateMenuJSON]] (method: calls) — *GenerateMenuJSON returns the structured JSON representation of the action tree*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.SendTelemetry]] (method: calls) — *SendTelemetry streams an arbitrary text message to the Telegram admin chat*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.UpdateActions]] (method: calls) — *UpdateActions replaces all current actions and handlers*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|client.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py`.
+
+> **Essential Process**:
+> Defines the abstract interface for the structural codebase graph database. Retains information about symbol definitions, references, and workspace mapping.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -9,12 +15,12 @@
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|CodebaseDB]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|clear]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|close]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|find_symbols]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|get_edges]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|get_nodes]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_edge]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_node]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|clear]] (function: belongs_to) — *Clears all codebase nodes and edges.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|close]] (function: belongs_to) — *Closes the database connection or pool.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|find_symbols]] (function: belongs_to) — *Resolves matching symbols by workspace and label.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|get_edges]] (function: belongs_to) — *Returns all codebase edges.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|get_nodes]] (function: belongs_to) — *Returns all codebase nodes.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_edge]] (function: belongs_to) — *Inserts a codebase dependency edge.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_node]] (function: belongs_to) — *Inserts or updates a codebase node.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|postgres_db.py]] (imports)
 <!-- SYNC:END -->

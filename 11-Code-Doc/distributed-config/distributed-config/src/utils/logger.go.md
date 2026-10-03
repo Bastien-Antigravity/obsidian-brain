@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/utils/logger.go`.
+
+> **Essential Process**:
+> Standardized logging abstraction compatible with universal-logger and microservice-toolbox, providing fallback no-op and console sinks.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -50,7 +56,7 @@ tags:
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (calls)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: belongs_to) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
 - [[distributed-config/distributed-config/src/utils/logger.go.md|Logger]] (interface: belongs_to)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Critical]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Debug]] (method: belongs_to)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/factory/config_factory.go`.
+
+> **Essential Process**:
+> Strategy factory instantiating the appropriate ConfigStrategy implementation based on profile aliases (standalone, test, staging, production).
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

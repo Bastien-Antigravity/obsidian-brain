@@ -35,7 +35,7 @@ defined the tasks and produce the technical blueprint that the Developer will im
 
 ## 🛠️ Responsibilities
 1. **System Design**: Ensure all proposed changes adhere to the Facade pattern and strict decoupling rules in the Global Architecture Rules.
-2. **Interface Definition**: Define Go/Rust/Python interfaces and data models before any implementation logic is written. When defining key interfaces and components, specify the corresponding `@obsidian [[<Doc-Title>]]` tags that the Developer must place in comments to bind the physical implementation back to the architectural blueprint and BDD acceptance criteria.
+2. **Interface Definition**: Define Go/Rust/Python interfaces and data models before any implementation logic is written.
 3. **Cross-Service Impact**: Analyze if the change impacts:
    - NATS event flows
    - Safe-socket / Cap'n Proto framing protocol

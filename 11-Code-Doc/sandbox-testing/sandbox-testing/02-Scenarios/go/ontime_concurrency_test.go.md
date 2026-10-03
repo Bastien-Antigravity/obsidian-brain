@@ -18,8 +18,8 @@ tags:
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|secret_isolation_integration_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|TestOntimeConcurrentExecutionLock]] (function: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|TestOntimeConcurrentJobCreation]] (function: belongs_to)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|TestOntimeConcurrentExecutionLock]] (function: belongs_to) — *and verifies that only 1 execution actually occurred.*
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|TestOntimeConcurrentJobCreation]] (function: belongs_to) — *50 simultaneous job creation requests without data corruption.*
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|ontimeBaseURL]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|setOntimeDistributedMode]] (function: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|waitForOntimeServer]] (function: belongs_to)

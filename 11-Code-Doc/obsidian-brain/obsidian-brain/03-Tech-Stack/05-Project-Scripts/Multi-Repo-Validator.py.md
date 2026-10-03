@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/03-Tech-Stack/05-Project-Scripts/Multi-Repo-Validator.py`.
+
+> **Essential Process**:
+> Ecosystem orchestrator that discovers all microservice repositories and triggers their build or test cycles.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

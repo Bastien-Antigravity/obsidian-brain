@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lifecycle/init_new_brain.py`.
+
+> **Essential Process**:
+> Resets and initializes a new AI Brain environment by updating project variables, clearing the task inbox, and resetting session state.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

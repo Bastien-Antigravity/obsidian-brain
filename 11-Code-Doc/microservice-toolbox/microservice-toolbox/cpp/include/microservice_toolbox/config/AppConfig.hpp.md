@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp`.
+
+> **Essential Process**:
+> High-level application configuration interface providing typed accessors and resolution.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -38,12 +44,12 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConf.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConf.hpp]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.ApplyFileOverride]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Decrypt]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetAddress]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetGRPCAddress]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetLastError]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetRESTAddress]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Decrypt]] (method: calls) — *Decrypt a secret*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetAddress]] (method: calls) — *Get an address (host:port) for a capability*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: calls) — *Get full configuration as JSON*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetGRPCAddress]] (method: calls) — *Get a gRPC address for a capability*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetLastError]] (method: calls) — *Get the last error from the underlying engine*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetRESTAddress]] (method: calls) — *Get a REST address for a capability*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|Logger.hpp]] (imports)
 
 ### 🔌 Consumers (Inbound)
@@ -73,7 +79,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|Endpoint]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|LoadConfigWithLogger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|LoadConfig]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|MICROSERVICE_TOOLBOX_APP_CONFIG_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|MICROSERVICE_TOOLBOX_APP_CONFIG_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_APP_CONFIG_HPP*
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.cpp.md|expansion_check.cpp]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.cpp.md|expansion_check.cpp]] (imports)
 <!-- SYNC:END -->

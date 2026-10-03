@@ -21,7 +21,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: belongs_to)
+- [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: belongs_to) — *Render +/- 20 ticks from the center to fully saturate the layout*
 - [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|checkArr]] (function: belongs_to)
 - [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|connectVolumeMechanic]] (function: belongs_to)
 - [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|connect]] (function: belongs_to)

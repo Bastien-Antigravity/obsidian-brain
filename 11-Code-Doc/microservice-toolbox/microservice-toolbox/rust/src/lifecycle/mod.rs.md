@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/lifecycle/mod.rs`.
+
+> **Essential Process**:
+> Core microservice-toolbox module: mod.rs.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/src/mfe/registry.go`.
+
+> **Essential Process**:
+> Manages dynamic Micro-Frontend (OpenMFE) service registration and cataloging. Persists active registered frontends atomically to disk and exposes HTTP APIs.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: defines_method)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: defines_method)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: defines_method)
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: defines_method) — *List returns a slice of all currently registered microfrontends.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: defines_method) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: defines_method) — *Register adds or updates a microfrontend service in the registry.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: defines_method)
@@ -29,17 +35,17 @@ tags:
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (imports)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (imports)
-- [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: belongs_to)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: belongs_to)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: belongs_to)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: belongs_to) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: belongs_to) — *List returns a slice of all currently registered microfrontends.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: belongs_to) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: belongs_to) — *Register adds or updates a microfrontend service in the registry.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.save]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: defines_method)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Service]] (struct: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry.go.md|Service]] (struct: belongs_to) — *Service represents a registered Micro-Frontend service.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registerReq]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (same_package)

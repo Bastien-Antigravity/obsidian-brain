@@ -17,8 +17,8 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (imports)
-- [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|ISubscriberCallbacks]] (struct: belongs_to)
-- [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|ISubscriber]] (interface: belongs_to)
+- [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|ISubscriberCallbacks]] (struct: belongs_to) — *ISubscriberCallbacks defines the triggers from any transport layer to the Bot context*
+- [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|ISubscriber]] (interface: belongs_to) — *ISubscriber abstracts an incoming connection listener (gRPC server, NATS loop, etc)*
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|grpc.go]] (imports)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|grpc.go]] (imports)
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|bot.go]] (imports)

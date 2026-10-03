@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp`.
+
+> **Essential Process**:
+> Parses command-line arguments for C++ microservice toolbox configuration.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -23,6 +29,6 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.PrintHelp]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: defines_method)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|args.go]] (calls)
 <!-- SYNC:END -->

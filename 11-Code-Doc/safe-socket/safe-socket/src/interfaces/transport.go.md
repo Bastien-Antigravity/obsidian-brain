@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/interfaces/transport.go`.
+
+> **Essential Process**:
+> Defines the low-level TransportConnection and TransportListener contracts across TCP, TLS, UDP, and Shared Memory transports, standardizing framed network I/O.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -29,8 +35,8 @@ tags:
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
 - [[safe-socket/safe-socket/src/interfaces/logger_test.go.md|logger_test.go]] (imports)
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|TransportConnection]] (interface: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|TransportListener]] (interface: belongs_to)
+- [[safe-socket/safe-socket/src/interfaces/transport.go.md|TransportConnection]] (interface: belongs_to) — *- For Servers: This interface is returned by the Listener.Accept() method.*
+- [[safe-socket/safe-socket/src/interfaces/transport.go.md|TransportListener]] (interface: belongs_to) — *TransportListener defines a listener that waits for incoming connections.*
 - [[safe-socket/safe-socket/src/profiles/shm_profile.go.md|shm_profile.go]] (imports)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|tcp_client_profile.go]] (imports)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|tcp_server_profile.go]] (imports)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/core/controller.go`.
+
+> **Essential Process**:
+> Unified command controller coordinating database logging and background evolutionary skill iterations for 01-Strategic-Nexus.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -22,7 +28,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/cmd/strategic-nexus/main.go.md|main.go]] (calls)
 - [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md| string) string ]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|, prefix string)]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|, prefix string)]] (function: belongs_to) — *Inline helper to avoid external dependency checks*
 - [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|DBManager]] (interface: belongs_to)
 - [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|EvolutionPipeline]] (interface: belongs_to)
 - [[obsidian-brain/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|Logger]] (interface: belongs_to)

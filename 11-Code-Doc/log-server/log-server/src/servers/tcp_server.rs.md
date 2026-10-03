@@ -17,29 +17,29 @@ tags:
 - [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
-- [[log-server/log-server/src/models/log_packet.rs.md|LogPacket]] (struct: calls)
+- [[log-server/log-server/src/models/log_packet.rs.md|LogPacket]] (struct: calls) — *A packet containing a sequence number and the log entry*
 - [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (imports)
 - [[log-server/log-server/src/models/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.handle_tcp_connection]] (method: defines_method)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.name]] (method: defines_method)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.new]] (method: defines_method)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.run]] (method: defines_method)
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.handle_tcp_connection]] (method: defines_method) — *Handle individual TCP connection*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.name]] (method: defines_method) — *Get server name*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.new]] (method: defines_method) — *Create new TCP server*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.run]] (method: defines_method) — *Run the TCP server*
 - [[log-server/log-server/src/transport/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: calls)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: calls)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.send_heartbeat]] (method: calls)
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: calls) — *Split into its component halves*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: calls) — *Receive framed data from socket. Automatically skips 0-length heartbeat frames.*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.send_heartbeat]] (method: calls) — *Send a 0-length heartbeat frame*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|safe_socket.rs]] (imports)
 - [[log-server/log-server/src/utils/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/utils/terminal_ui.rs.md|print_internal_log]] (function: calls)
+- [[log-server/log-server/src/utils/terminal_ui.rs.md|print_internal_log]] (function: calls) — *Formats and prints an internal server log message (visual alignment only)*
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.handle_tcp_connection]] (method: belongs_to)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.name]] (method: belongs_to)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.new]] (method: belongs_to)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.run]] (method: belongs_to)
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.handle_tcp_connection]] (method: belongs_to) — *Handle individual TCP connection*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.name]] (method: belongs_to) — *Get server name*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.new]] (method: belongs_to) — *Create new TCP server*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.run]] (method: belongs_to) — *Run the TCP server*
 - [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer]] (struct: belongs_to)
 - [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer]] (struct: defines_method)
 <!-- SYNC:END -->

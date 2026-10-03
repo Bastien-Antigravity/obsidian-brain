@@ -16,9 +16,9 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/interfaces/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/interfaces/memory_store.py.md|MemoryStore]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: calls) — *Factory to construct and return a singleton RAGFacade instance.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|query_brain]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|query_brain]] (function: calls) — *Search the knowledge base for relevant context. Supports verbosity overrides ('full', 'signatures').*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/base_agent.py.md|base_agent.py]] (calls)
@@ -34,11 +34,20 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|RAGMemoryStore]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|ShortTermMemory]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|_format_results]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|_init_db]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|clear]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|retrieve]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|_format_results]] (function: belongs_to) — *Formats RAG results into system prompt turns.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|_init_db]] (function: belongs_to) — *Declares and builds the conversation_turns table if not already present.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: belongs_to) — *Appends a new turn to the in-memory buffer, capping size.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: belongs_to) — *No-op. Chunks are indexed via RAG pipelines.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: belongs_to) — *Persists a conversation turn in the short-term storage layer.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: belongs_to) — *Persists a new message turn to the database.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|clear]] (function: belongs_to) — *Clears the buffer.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|clear]] (function: belongs_to) — *No-op.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|clear]] (function: belongs_to) — *Purges conversation history for the specified session from the database.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|clear]] (function: belongs_to) — *Purges history inside all integrated memory layers.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|retrieve]] (function: belongs_to) — *Queries the RAG Engine for relevant context matching the query.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|retrieve]] (function: belongs_to) — *Retrieves active conversation history buffer.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|retrieve]] (function: belongs_to) — *Retrieves and consolidates short-term turns and long-term semantic context turns.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|retrieve]] (function: belongs_to) — *Retrieves and returns the last limit conversation turns from the database.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|sovereignty.py]] (calls)

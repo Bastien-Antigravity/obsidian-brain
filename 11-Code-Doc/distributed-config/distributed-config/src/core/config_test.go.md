@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/core/config_test.go`.
+
+> **Essential Process**:
+> Unit and concurrency tests validating atomic pointer swapping (RCU), lock-free read consistency, and capability resolution in the core Config struct.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: calls)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: calls) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (same_package)

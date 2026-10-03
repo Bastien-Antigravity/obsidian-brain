@@ -9,22 +9,28 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/network/client.go`.
+
+> **Essential Process**:
+> safe-socket network client managing TCP connection lifecycle, exponential backoff reconnection, and real-time bidirectional synchronization with config-server.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: calls)
-- [[distributed-config/distributed-config/src/network/backoff.go.md|NewBackoff]] (function: calls)
+- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: calls) — *GetDelay calculates the delay for the current attempt.*
+- [[distributed-config/distributed-config/src/network/backoff.go.md|NewBackoff]] (function: calls) — *NewBackoff creates a new backoff strategy using parameters from the config*
 - [[distributed-config/distributed-config/src/network/backoff.go.md|backoff.go]] (same_package)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.FullRefresh]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.IsConnected]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfig]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: defines_method)
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: defines_method) — *Close closes the connection and stops the background listener.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.FullRefresh]] (method: defines_method) — *FullRefresh explicitly requests the full configuration from the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: defines_method) — *GetConfig fetches configuration from the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.IsConnected]] (method: defines_method) — *IsConnected returns true if the client is currently connected.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: defines_method) — *UpdateConfigMap sends a specific configuration map to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfig]] (method: defines_method) — *UpdateConfig sends the entire current live configuration to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: defines_method) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: defines_method) — *connect establishes the connection and acts the handshake.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.requestSync]] (method: defines_method)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: calls)
@@ -36,18 +42,18 @@ tags:
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.FullRefresh]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.IsConnected]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfig]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: belongs_to) — *Close closes the connection and stops the background listener.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.FullRefresh]] (method: belongs_to) — *FullRefresh explicitly requests the full configuration from the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: belongs_to) — *GetConfig fetches configuration from the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.IsConnected]] (method: belongs_to) — *IsConnected returns true if the client is currently connected.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: belongs_to) — *UpdateConfigMap sends a specific configuration map to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfig]] (method: belongs_to) — *UpdateConfig sends the entire current live configuration to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: belongs_to) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: belongs_to) — *connect establishes the connection and acts the handshake.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.requestSync]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: defines_method)
-- [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: belongs_to) — *IsConnected returns true if the client is currently connected.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: defines_method) — *IsConnected returns true if the client is currently connected.*
+- [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: belongs_to) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (calls)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (calls)

@@ -24,7 +24,7 @@ Automatically generated mirror for `docker-deployment/modes/local/branch.py`.
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/modes/local/branch.py.md|MODES_DIR]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/modes/local/branch.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|SCRIPTS_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/branch.py.md|check_develop_branches]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publisher.py]] (calls)

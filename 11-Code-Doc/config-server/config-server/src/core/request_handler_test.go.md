@@ -17,15 +17,18 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `config-server/src/core/request_handler_test.go`.
 
+> **Essential Process**:
+> Unit tests for core.ProcessRequest, verifying command dispatching, protobuf unmarshaling, atomic PUT_SYNC updates, broadcast triggering, and error handling.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls)
+- [[config-server/config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls) — *It may also trigger a broadcast and persistence via the provided callbacks.*
 - [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (same_package)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
-- [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls)
-- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls)
-- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls)
+- [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
+- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
+- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_GetSyncAndFullRefresh]] (function: belongs_to)

@@ -17,6 +17,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.hpp]] (imports)
-- [[safe-socket/safe-socket/safesock/libsafesocket/libsafesocket.h.md|GO_CGO_EXPORT_PROLOGUE_H]] (macro: belongs_to)
-- [[safe-socket/safe-socket/safesock/libsafesocket/libsafesocket.h.md|GO_CGO_PROLOGUE_H]] (macro: belongs_to)
+- [[safe-socket/safe-socket/safesock/libsafesocket/libsafesocket.h.md|GO_CGO_EXPORT_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_EXPORT_PROLOGUE_H*
+- [[safe-socket/safe-socket/safesock/libsafesocket/libsafesocket.h.md|GO_CGO_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_PROLOGUE_H*
 <!-- SYNC:END -->

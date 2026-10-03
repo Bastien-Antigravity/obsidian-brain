@@ -16,5 +16,5 @@ tags:
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[flexible-logger/flexible-logger/src/interfaces/serializer.go.md|Serializer]] (interface: belongs_to)
+- [[flexible-logger/flexible-logger/src/interfaces/serializer.go.md|Serializer]] (interface: belongs_to) — *Serializer converts entry to bytes*
 <!-- SYNC:END -->

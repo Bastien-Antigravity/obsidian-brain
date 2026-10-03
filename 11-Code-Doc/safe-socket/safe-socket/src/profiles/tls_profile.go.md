@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/profiles/tls_profile.go`.
+
+> **Essential Process**:
+> Defines TLS socket profiles for encrypted client and server stream transports, securing network communication across untrusted network boundaries.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

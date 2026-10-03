@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/go/pkg/logger/logger.go`.
+
+> **Essential Process**:
+> Standardized logging abstraction implementing the unified ILogger interface.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -46,7 +52,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|manager.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|manager.go]] (imports)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: belongs_to) — *production microservices from silently running dark without operational logs.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.AddMetadata]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.Critical]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.Debug]] (method: belongs_to)
@@ -61,7 +67,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.Warning]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|Logger]] (interface: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|Logger]] (interface: belongs_to) — *a hard dependency on the logging implementation.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.AddMetadata]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Critical]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Debug]] (method: belongs_to)

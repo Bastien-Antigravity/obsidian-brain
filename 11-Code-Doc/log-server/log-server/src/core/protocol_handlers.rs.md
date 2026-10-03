@@ -20,10 +20,10 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|le_grpc_message(
-  ]] (function: belongs_to)
+  ]] (function: belongs_to) — *Handle gRPC log message*
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|le_tcp_message(
-  ]] (function: belongs_to)
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|tify_client_from_handshake(dat]] (function: belongs_to)
+  ]] (function: belongs_to) — *Handle incoming TCP client connection*
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|tify_client_from_handshake(dat]] (function: belongs_to) — *without needing to manually link or re-generate safe-socket schemas in Rust.*
 - [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (imports)
 - [[log-server/log-server/src/servers/tcp_server.rs.md|tcp_server.rs]] (imports)
 <!-- SYNC:END -->

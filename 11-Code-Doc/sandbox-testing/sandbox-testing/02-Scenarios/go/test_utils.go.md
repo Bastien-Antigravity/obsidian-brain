@@ -30,7 +30,7 @@ tags:
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/log_server_resilience_test.go.md|log_server_resilience_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/notif_server_hardening_test.go.md|notif_server_hardening_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/notif_server_hardening_test.go.md|notif_server_hardening_test.go]] (same_package)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|contains]] (function: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|doHandshake]] (function: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|getDockerLogs]] (function: belongs_to)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|contains]] (function: belongs_to) — *contains is a primitive string containment check.*
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|doHandshake]] (function: belongs_to) — *doHandshake performs a standard tcp-hello handshake for testing purposes.*
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|getDockerLogs]] (function: belongs_to) — *getDockerLogs fetches the last N lines of logs from a container.*
 <!-- SYNC:END -->

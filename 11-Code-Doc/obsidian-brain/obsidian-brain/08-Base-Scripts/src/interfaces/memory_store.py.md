@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/interfaces/memory_store.py`.
+
+> **Essential Process**:
+> MemoryStore Interface defining the abstract contract for short-term and long-term memory storage layers.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

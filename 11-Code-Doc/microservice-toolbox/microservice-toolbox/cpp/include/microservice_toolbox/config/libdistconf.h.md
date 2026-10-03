@@ -17,7 +17,7 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConf.hpp]] (imports)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|GO_CGO_EXPORT_PROLOGUE_H]] (macro: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|GO_CGO_PROLOGUE_H]] (macro: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|call_config_update_cb]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|GO_CGO_EXPORT_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_EXPORT_PROLOGUE_H*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|GO_CGO_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_PROLOGUE_H*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|call_config_update_cb]] (function: belongs_to) — *Helper to safely execute a C callback from Go*
 <!-- SYNC:END -->

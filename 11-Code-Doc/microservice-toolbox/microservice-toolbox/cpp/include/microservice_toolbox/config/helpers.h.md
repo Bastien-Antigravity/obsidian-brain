@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/config/helpers.h`.
+
+> **Essential Process**:
+> Thread-local error string storage and retrieval helpers for C++ FFI bridge.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,6 +22,6 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/helpers.h.md|HELPERS_H]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/helpers.h.md|HELPERS_H]] (macro: belongs_to) — *ifndef HELPERS_H*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|libdistconf.h]] (imports)
 <!-- SYNC:END -->

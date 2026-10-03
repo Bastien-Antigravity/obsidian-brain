@@ -23,6 +23,6 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.reset]] (method: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.setGraph]] (method: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.updateDisplay]] (method: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig]] (class: defines_method)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig]] (class: belongs_to) — *src/web/static/js/graph/ForceConfig.js*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig]] (class: defines_method) — *src/web/static/js/graph/ForceConfig.js*
 <!-- SYNC:END -->

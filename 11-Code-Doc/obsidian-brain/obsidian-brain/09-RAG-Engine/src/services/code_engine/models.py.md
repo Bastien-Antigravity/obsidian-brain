@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/models.py`.
+
+> **Essential Process**:
+> Defines the data models and type definitions for the codebase graph. Ensures structural integrity for nodes, edges, and symbol mapping across the microservice.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

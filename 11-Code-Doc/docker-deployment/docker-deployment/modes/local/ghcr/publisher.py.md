@@ -25,7 +25,7 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|LOCAL_MODE_DIR]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|MODES_DIR]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|SCRIPTS_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|SERVICES_DOCKER]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publish_images_ghcr]] (function: belongs_to)

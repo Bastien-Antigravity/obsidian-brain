@@ -28,15 +28,15 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/types.go`.
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorConfigServer]] (constant: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorLogServer]] (constant: belongs_to) — *- Service: Thread-safe runtime specification for supervised processes.*
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorLogServer]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorNotifServer]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagDashboard]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagEngine]] (constant: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRed]] (constant: belongs_to) — *KEY PARAMETERS:*
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRed]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorReset]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorStartSquad]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorTeleRemote]] (constant: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWatchdog]] (constant: belongs_to) — *- Logger: Shared ILogger instance for logging across supervisor subsystems.*
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWatchdog]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWebInterface]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|Service]] (struct: belongs_to) — *Service represents a managed service configurations*
 <!-- SYNC:END -->

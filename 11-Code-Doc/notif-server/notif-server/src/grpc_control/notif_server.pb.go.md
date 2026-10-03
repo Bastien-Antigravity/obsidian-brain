@@ -13,20 +13,20 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.Descriptor]] (method: defines_method) — *Deprecated: Use AddProviderRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.GetType]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.Descriptor]] (method: defines_method) — *Deprecated: Use AlertingConfigSection.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.GetSettings]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.Descriptor]] (method: defines_method) — *Deprecated: Use ControlResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.GetErrorCode]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.GetMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.GetSuccess]] (method: defines_method)
@@ -35,12 +35,12 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use GetAlertingConfigRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.Descriptor]] (method: defines_method) — *Deprecated: Use GetAlertingConfigResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.GetConfig]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.GetSuccess]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.GetTimestamp]] (method: defines_method)
@@ -48,12 +48,12 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.Descriptor]] (method: defines_method) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.Descriptor]] (method: defines_method) — *Deprecated: Use GetStatusResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.GetDetails]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.GetHealthy]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.GetStatus]] (method: defines_method)
@@ -63,24 +63,24 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.Descriptor]] (method: defines_method) — *Deprecated: Use GetSupportedTypesRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.Descriptor]] (method: defines_method) — *Deprecated: Use GetSupportedTypesResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.GetSuccess]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.GetTypes]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.Descriptor]] (method: defines_method) — *Deprecated: Use ListNotifiersRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.Descriptor]] (method: defines_method) — *Deprecated: Use ListNotifiersResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.GetNotifiers]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.GetSuccess]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.GetTimestamp]] (method: defines_method)
@@ -88,7 +88,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.Descriptor]] (method: defines_method) — *Deprecated: Use NotifierInfo.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.GetHealthy]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.GetName]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.GetType]] (method: defines_method)
@@ -96,18 +96,18 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.Descriptor]] (method: defines_method) — *Deprecated: Use RemoveProviderRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.Descriptor]] (method: defines_method) — *Deprecated: Use SendTestNotificationRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.GetLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.GetMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.GetTitle]] (method: defines_method)
@@ -115,7 +115,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use SetAlertingConfigRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.GetKey]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.GetPlatform]] (method: defines_method)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.GetValue]] (method: defines_method)
@@ -125,7 +125,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.String]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use AddProviderRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.GetTag]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.GetType]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.ProtoMessage]] (method: belongs_to)
@@ -134,7 +134,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AddProviderRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.Descriptor]] (method: belongs_to) — *Deprecated: Use AlertingConfigSection.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.GetSettings]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.ProtoReflect]] (method: belongs_to)
@@ -142,7 +142,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|AlertingConfigSection]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use ControlResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.GetErrorCode]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.GetMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.GetSuccess]] (method: belongs_to)
@@ -153,14 +153,14 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ControlResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use GetAlertingConfigRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.ProtoReflect]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.Reset]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest.String]] (method: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest]] (struct: belongs_to) — *Deprecated: Use GetAlertingConfigRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigRequest]] (struct: defines_method) — *Deprecated: Use GetAlertingConfigRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use GetAlertingConfigResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.GetConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.GetSuccess]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.GetTimestamp]] (method: belongs_to)
@@ -170,14 +170,14 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetAlertingConfigResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.ProtoReflect]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.Reset]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest.String]] (method: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest]] (struct: belongs_to) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusRequest]] (struct: defines_method) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use GetStatusResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.GetDetails]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.GetHealthy]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.GetStatus]] (method: belongs_to)
@@ -189,14 +189,14 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetStatusResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use GetSupportedTypesRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.ProtoReflect]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.Reset]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest.String]] (method: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest]] (struct: belongs_to) — *Deprecated: Use GetSupportedTypesRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesRequest]] (struct: defines_method) — *Deprecated: Use GetSupportedTypesRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use GetSupportedTypesResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.GetSuccess]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.GetTypes]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.ProtoMessage]] (method: belongs_to)
@@ -205,14 +205,14 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|GetSupportedTypesResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use ListNotifiersRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.ProtoReflect]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.Reset]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest.String]] (method: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest]] (struct: belongs_to) — *Deprecated: Use ListNotifiersRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersRequest]] (struct: defines_method) — *Deprecated: Use ListNotifiersRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use ListNotifiersResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.GetNotifiers]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.GetSuccess]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.GetTimestamp]] (method: belongs_to)
@@ -222,7 +222,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ListNotifiersResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.Descriptor]] (method: belongs_to) — *Deprecated: Use NotifierInfo.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.GetHealthy]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.GetName]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.GetType]] (method: belongs_to)
@@ -232,14 +232,14 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|NotifierInfo]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.ProtoReflect]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.Reset]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest.String]] (method: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest]] (struct: belongs_to) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|ReloadConfigRequest]] (struct: defines_method) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use RemoveProviderRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.GetTag]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.ProtoReflect]] (method: belongs_to)
@@ -247,7 +247,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|RemoveProviderRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use SendTestNotificationRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.GetLevel]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.GetMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.GetTitle]] (method: belongs_to)
@@ -257,7 +257,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SendTestNotificationRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use SetAlertingConfigRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.GetKey]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.GetPlatform]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.GetValue]] (method: belongs_to)
@@ -267,7 +267,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|SetAlertingConfigRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|_]] (constant: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|file_notif_server_proto_init]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|file_notif_server_proto_rawDescGZIP]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server.pb.go.md|file_notif_server_proto_rawDesc]] (constant: belongs_to)

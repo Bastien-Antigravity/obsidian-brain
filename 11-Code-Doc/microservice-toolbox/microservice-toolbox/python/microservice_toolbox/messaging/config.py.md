@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/messaging/config.py`.
+
+> **Essential Process**:
+> Configuration data structures for NATS Core and JetStream messaging connections.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.Descriptor]] (method: defines_method) — *Deprecated: Use ControlResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.GetErrorCode]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.GetMessage]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.GetSuccess]] (method: defines_method)
@@ -22,14 +22,14 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use GetConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.GetKey]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.GetSection]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.ProtoMessage]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.Descriptor]] (method: defines_method) — *Deprecated: Use GetConfigResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.GetSuccess]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.GetTimestamp]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.GetValue]] (method: defines_method)
@@ -37,12 +37,12 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.Descriptor]] (method: defines_method) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.ProtoMessage]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.Descriptor]] (method: defines_method) — *Deprecated: Use GetStatusResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.GetActiveClients]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.GetClientNames]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.GetHealthy]] (method: defines_method)
@@ -53,12 +53,12 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use ListConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.ProtoMessage]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.Descriptor]] (method: defines_method) — *Deprecated: Use ListConfigResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.GetJsonConfig]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.GetSuccess]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.GetTimestamp]] (method: defines_method)
@@ -66,17 +66,17 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use PersistConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.ProtoMessage]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.ProtoMessage]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.ProtoReflect]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.Reset]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.String]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.Descriptor]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.Descriptor]] (method: defines_method) — *Deprecated: Use SetConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.GetKey]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.GetSection]] (method: defines_method)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.GetValue]] (method: defines_method)
@@ -86,7 +86,7 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.String]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use ControlResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.GetErrorCode]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.GetMessage]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.GetSuccess]] (method: belongs_to)
@@ -97,7 +97,7 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.String]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use GetConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.GetKey]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.GetSection]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.ProtoMessage]] (method: belongs_to)
@@ -106,7 +106,7 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest.String]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigRequest]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use GetConfigResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.GetSuccess]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.GetTimestamp]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.GetValue]] (method: belongs_to)
@@ -116,14 +116,14 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse.String]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetConfigResponse]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.ProtoMessage]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.ProtoReflect]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.Reset]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest.String]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest]] (struct: belongs_to) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusRequest]] (struct: defines_method) — *Deprecated: Use GetStatusRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use GetStatusResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.GetActiveClients]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.GetClientNames]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.GetHealthy]] (method: belongs_to)
@@ -136,14 +136,14 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse.String]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|GetStatusResponse]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use ListConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.ProtoMessage]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.ProtoReflect]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.Reset]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest.String]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest]] (struct: belongs_to) — *Deprecated: Use ListConfigRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigRequest]] (struct: defines_method) — *Deprecated: Use ListConfigRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use ListConfigResponse.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.GetJsonConfig]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.GetSuccess]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.GetTimestamp]] (method: belongs_to)
@@ -153,21 +153,21 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse.String]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ListConfigResponse]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use PersistConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.ProtoMessage]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.ProtoReflect]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.Reset]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest.String]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest]] (struct: belongs_to) — *Deprecated: Use PersistConfigRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|PersistConfigRequest]] (struct: defines_method) — *Deprecated: Use PersistConfigRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.ProtoMessage]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.ProtoReflect]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.Reset]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest.String]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.Descriptor]] (method: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest]] (struct: belongs_to) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ReloadConfigRequest]] (struct: defines_method) — *Deprecated: Use ReloadConfigRequest.ProtoReflect.Descriptor instead.*
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use SetConfigRequest.ProtoReflect.Descriptor instead.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.GetKey]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.GetSection]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.GetValue]] (method: belongs_to)
@@ -177,7 +177,7 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest.String]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|SetConfigRequest]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|_]] (constant: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|file_config_server_proto_init]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|file_config_server_proto_rawDescGZIP]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server.pb.go.md|file_config_server_proto_rawDesc]] (constant: belongs_to)

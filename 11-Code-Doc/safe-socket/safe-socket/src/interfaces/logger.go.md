@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/interfaces/logger.go`.
+
+> **Essential Process**:
+> Defines the universal logging interface contract for safe-socket components, decoupling transport, facade, and protocol logging from concrete logger backends.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -26,8 +32,8 @@ tags:
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|lib.rs]] (calls)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|Logger]] (interface: belongs_to)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: belongs_to) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|Logger]] (interface: belongs_to) — *Logger is the main interface for logging*
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Close]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Critical]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: belongs_to)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/profiles/shm_profile.go`.
+
+> **Essential Process**:
+> Defines shared-memory (SHM) socket profiles for high-throughput, low-latency intra-node IPC communications.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

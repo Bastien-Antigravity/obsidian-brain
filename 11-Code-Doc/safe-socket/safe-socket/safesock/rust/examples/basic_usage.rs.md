@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/safesock/rust/examples/basic_usage.rs`.
+
+> **Essential Process**:
+> Basic demonstration example showcasing Rust SafeSocket connection usage.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

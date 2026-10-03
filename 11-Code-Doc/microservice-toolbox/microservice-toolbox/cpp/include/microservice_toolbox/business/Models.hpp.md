@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp`.
+
+> **Essential Process**:
+> Core microservice-toolbox module: Models.hpp.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -22,7 +28,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp.md|Trade.to_json]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp.md|MICROSERVICE_TOOLBOX_BUSINESS_MODELS_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp.md|MICROSERVICE_TOOLBOX_BUSINESS_MODELS_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_BUSINESS_MODELS_HPP*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp.md|MarketEvent.to_json]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp.md|MarketEvent]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/business/Models.hpp.md|MarketEvent]] (class: defines_method)

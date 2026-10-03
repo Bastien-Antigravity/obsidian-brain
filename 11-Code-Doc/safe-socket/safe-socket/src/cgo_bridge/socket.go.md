@@ -9,14 +9,20 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/cgo_bridge/socket.go`.
+
+> **Essential Process**:
+> Implements Go-level orchestration for CGO bridge functions, exposing socket lifecycle (create, open, accept, read, write, close) through integer handles.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
-- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Get]] (function: calls)
-- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Register]] (function: calls)
-- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Unregister]] (function: calls)
+- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Get]] (function: calls) — *Get retrieves a value from the registry.*
+- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Register]] (function: calls) — *Register stores a socket/connection and returns a handle.*
+- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Unregister]] (function: calls) — *Unregister removes a handle from the registry.*
 - [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
 

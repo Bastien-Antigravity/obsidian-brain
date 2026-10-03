@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py`.
 
+> **Essential Process**:
+> Unified single source of truth for dynamic CGO shared library discovery and loading (libunilog and libdistconf) into Python processes across the Bastien-Antigravity ecosystem.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -34,12 +37,12 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CONFIG_CALLBACK_TYPE]] (constant: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: belongs_to) — *Generic callback alias for backward compatibility*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CONFIG_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*config_update_cb)(GoUintptr handle, const char* json_data);*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*logger_callback_cb)(const char* json_data);*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to) — *Binds standard DistConf function signatures to a ctypes.CDLL handle safely.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_try_autobuild_library]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to) — *Returns the OS-specific dynamic library file extension.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|resolve_library_path]] (function: belongs_to)

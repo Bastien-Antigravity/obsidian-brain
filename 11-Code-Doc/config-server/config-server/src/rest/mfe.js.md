@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `config-server/src/rest/mfe.js`.
+
+> **Essential Process**:
+> OpenMFE web component for config-server, encapsulating dynamic configuration inspection, live updates, baseline reloading, and state persistence in Shadow DOM.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -46,5 +52,5 @@ tags:
 - [[config-server/config-server/src/rest/mfe.js.md|ConfigServerMFE.renderSkeleton]] (method: belongs_to)
 - [[config-server/config-server/src/rest/mfe.js.md|ConfigServerMFE]] (class: belongs_to)
 - [[config-server/config-server/src/rest/mfe.js.md|ConfigServerMFE]] (class: defines_method)
-- [[config-server/config-server/src/rest/mfe.js.md|gerEdit = (]] (function: belongs_to)
+- [[config-server/config-server/src/rest/mfe.js.md|gerEdit = (]] (function: belongs_to) — *Bind inline edit clicks and pencil buttons*
 <!-- SYNC:END -->

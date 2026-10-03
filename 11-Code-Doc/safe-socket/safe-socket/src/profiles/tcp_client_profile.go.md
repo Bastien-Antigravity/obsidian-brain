@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/profiles/tcp_client_profile.go`.
+
+> **Essential Process**:
+> Defines TCP client socket profiles for standard stream-oriented connections with or without application-level handshake protocols.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -27,8 +33,8 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpClientProfile]] (function: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpHelloClientProfile]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpClientProfile]] (function: belongs_to) — *NewTcpClientProfile creates a new instance of a TCP profile without a protocol.*
+- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpHelloClientProfile]] (function: belongs_to) — *NewTcpHelloClientProfile creates a new instance of a TCP profile with the Hello protocol.*
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetAddress]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetConnectTimeout]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetName]] (method: belongs_to)

@@ -11,13 +11,16 @@ last_sync: 2026-10-01T01:10:01.546996
 ## 📝 Description
 Automatically generated mirror for `config-server/src/telegram/manager_test.go`.
 
+> **Essential Process**:
+> Unit tests for MenuManager, verifying dynamic menu tree building, action hierarchy construction, and callback wiring against mock controllers.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
-- [[config-server/config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: calls)
-- [[config-server/config-server/src/telegram/manager.go.md|NewMenuManager]] (function: calls)
+- [[config-server/config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: calls) — *RebuildMenu dynamically pulls the configuration map and registers it with the TeleClient.*
+- [[config-server/config-server/src/telegram/manager.go.md|NewMenuManager]] (function: calls) — *NewMenuManager creates a new MenuManager.*
 - [[config-server/config-server/src/telegram/manager.go.md|manager.go]] (same_package)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockController.DeleteConfig]] (method: defines_method)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockController.GetConfig]] (method: defines_method)

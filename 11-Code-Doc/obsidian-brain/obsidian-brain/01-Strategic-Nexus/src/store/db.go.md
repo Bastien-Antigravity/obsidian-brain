@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/store/db.go`.
+
+> **Essential Process**:
+> Manages the PostgreSQL database connection pool and schema lifecycle for the 01-Strategic-Nexus.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

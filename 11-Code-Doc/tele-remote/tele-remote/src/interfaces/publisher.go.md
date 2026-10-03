@@ -16,5 +16,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/src/interfaces/publisher.go.md|IPublisher]] (interface: belongs_to)
+- [[tele-remote/tele-remote/src/interfaces/publisher.go.md|IPublisher]] (interface: belongs_to) — *IPublisher defines the contract for sending commands back to a component.*
 <!-- SYNC:END -->

@@ -20,5 +20,5 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (calls)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (imports)
-- [[tele-remote/tele-remote/src/telegram/routes/routes.go.md|SetupRoutes]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/routes/routes.go.md|SetupRoutes]] (function: belongs_to) — *SetupRoutes initializes all static handlers and maps fallback dynamic routing*
 <!-- SYNC:END -->

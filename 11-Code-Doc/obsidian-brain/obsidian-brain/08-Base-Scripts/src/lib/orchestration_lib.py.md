@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py`.
+
+> **Essential Process**:
+> Provides shared orchestration utility functions for path resolution, mode retrieval, dynamic inventory querying, and structured logging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/bootstrap/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|add]] (function: calls) — *Appends a new turn to the in-memory buffer, capping size.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/memory.py.md|memory.py]] (same_package)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
@@ -70,7 +76,7 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|get_logger]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|resolve_active_workspaces]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|setup_terminal]] (function: belongs_to) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/install_git_hooks.py.md|install_git_hooks.py]] (calls)

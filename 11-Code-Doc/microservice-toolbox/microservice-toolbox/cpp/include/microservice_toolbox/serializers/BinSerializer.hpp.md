@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp`.
 
+> **Essential Process**:
+> Binary MsgPack serializer implementing the unified Serializer interface.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -29,7 +32,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|BinSerializer.Unmarshal]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|BinSerializer]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|BinSerializer]] (class: defines_method)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|MICROSERVICE_TOOLBOX_SERIALIZERS_BIN_SERIALIZER_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|MICROSERVICE_TOOLBOX_SERIALIZERS_BIN_SERIALIZER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_SERIALIZERS_BIN_SERIALIZER_HPP*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/core/request_handler.go`.
+
+> **Essential Process**:
+> Handles serialization and deserialization of notification messages using Cap'n Proto. Provides a high-performance binary encoding for cross-process communication.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -34,7 +40,7 @@ tags:
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
-- [[notif-server/notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: belongs_to)
+- [[notif-server/notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: belongs_to) — *This helper is exposed for servers or other components using this library.*
 - [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapDeSerialize]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: belongs_to)

@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/llm_client.py`.
+
+> **Essential Process**:
+> Defines the abstract interface for the LLM integration layer (IA models). Enables querying arbitrary generative models with standard request schemas.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `config-server/src/core/controller.go`.
+
+> **Essential Process**:
+> Defines the core configuration controller interface and health status data structures for unified management across TCP, gRPC, REST, and Telegram subsystems.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,8 +22,8 @@ tags:
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/core/controller.go.md|ConfigController]] (interface: belongs_to)
-- [[config-server/config-server/src/core/controller.go.md|StatusInfo]] (struct: belongs_to)
+- [[config-server/config-server/src/core/controller.go.md|ConfigController]] (interface: belongs_to) — *ConfigController defines the unified interface for configuration management.*
+- [[config-server/config-server/src/core/controller.go.md|StatusInfo]] (struct: belongs_to) — *StatusInfo represents the server health and runtime statistics.*
 - [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (imports)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)

@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.Descriptor]] (method: defines_method)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.Descriptor]] (method: defines_method) — *Deprecated: Use ConfigMsg.ProtoReflect.Descriptor instead.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.GetCommand]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.GetPayload]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.GetVersion]] (method: defines_method)
@@ -22,7 +22,7 @@ tags:
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.Reset]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.String]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Descriptor]] (method: defines_method)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.EnumDescriptor]] (method: defines_method)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.EnumDescriptor]] (method: defines_method) — *Deprecated: Use ConfigMsg_Cmd.Descriptor instead.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Enum]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Number]] (method: defines_method)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.String]] (method: defines_method)
@@ -33,7 +33,7 @@ tags:
 - [[distributed-config/distributed-config/src/network/network_test.go.md|network_test.go]] (imports)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|proto_handler.go]] (imports)
 - [[distributed-config/distributed-config/src/network/sync_logic_test.go.md|sync_logic_test.go]] (imports)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.Descriptor]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.Descriptor]] (method: belongs_to) — *Deprecated: Use ConfigMsg.ProtoReflect.Descriptor instead.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.GetCommand]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.GetPayload]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg.GetVersion]] (method: belongs_to)
@@ -47,18 +47,18 @@ tags:
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_BROADCAST_REGISTRY]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_BROADCAST_SYNC]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Descriptor]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.EnumDescriptor]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.EnumDescriptor]] (method: belongs_to) — *Deprecated: Use ConfigMsg_Cmd.Descriptor instead.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Enum]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Number]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.String]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Type]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd]] (struct: belongs_to)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd]] (struct: defines_method)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd]] (struct: belongs_to) — *Deprecated: Use ConfigMsg_Cmd.Descriptor instead.*
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd]] (struct: defines_method) — *Deprecated: Use ConfigMsg_Cmd.Descriptor instead.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_ERROR]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_FULL_REFRESH]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_GET_SYNC]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_PUT_SYNC]] (constant: belongs_to)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|_]] (constant: belongs_to)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_src_schemas_config_proto_init]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_src_schemas_config_proto_rawDescGZIP]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_src_schemas_config_proto_rawDesc]] (constant: belongs_to)

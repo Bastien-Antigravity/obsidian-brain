@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/fleetarchitect.py`.
+
+> **Essential Process**:
+> FleetArchitect agent daemon specialized in cross-service coordination, shared configuration management, and microservice layout structures.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

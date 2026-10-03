@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/facade/heartbeat_connection.go`.
+
+> **Essential Process**:
+> Wraps a TransportConnection decorator to periodically dispatch zero-length heartbeat frames, keeping TCP/TLS/SHM connections alive and failing fast upon transport partition.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

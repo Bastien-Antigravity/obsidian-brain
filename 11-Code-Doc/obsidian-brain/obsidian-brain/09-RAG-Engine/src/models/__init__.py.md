@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/models/__init__.py`.
+
+> **Essential Process**:
+> Package initialization for RAG models. Exports standardized data structures for chunks, documents, requests, and results.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

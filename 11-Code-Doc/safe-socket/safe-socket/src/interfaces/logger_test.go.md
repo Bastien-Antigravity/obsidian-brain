@@ -11,10 +11,13 @@ last_sync: 2026-10-01T01:10:03.294413
 ## 📝 Description
 Automatically generated mirror for `safe-socket/src/interfaces/logger_test.go`.
 
+> **Essential Process**:
+> Unit tests for EnsureSafeLogger and NoOpLogger in safe-socket.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Close]] (method: calls)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Critical]] (method: calls)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: calls)

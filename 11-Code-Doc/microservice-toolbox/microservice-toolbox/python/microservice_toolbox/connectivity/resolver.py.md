@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py`.
+
+> **Essential Process**:
+> Resolver handles environment-aware network address translation. Implements the 'Docker Guard' policy to ensure fleet reachability.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -21,7 +27,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|__init__]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|get_primary_interface_ip]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|is_loopback]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|new_resolver]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|new_resolver]] (function: belongs_to) — *Factory method for Resolver.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|resolve_bind_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/connectivity/resolver.py.md|resolve_full_bind_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/network/grpc_server.py.md|grpc_server.py]] (calls)

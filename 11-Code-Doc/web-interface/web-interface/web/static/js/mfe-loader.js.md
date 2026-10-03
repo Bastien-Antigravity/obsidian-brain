@@ -24,7 +24,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/app.js.md|app.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|DISCOVERY_SERVICE_URL]] (constant: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|init]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|init]] (function: belongs_to) — *Initialize*
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|injectNavigation]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|loadMFE]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -40,7 +40,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|onerror]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|onopen]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls)
+- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.getFromElement]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/atoms/MetricBadge.js.md|MetricBadge.updateValue]] (method: calls)
@@ -69,7 +69,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/market-observer.js.md|MarketObserverDashboard]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/market-observer.js.md|MarketObserverDashboard]] (class: defines_method)
 - [[web-interface/web-interface/web/static/js/market-observer.js.md|activityRenderer]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/market-observer.js.md|formatPct]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/market-observer.js.md|formatPct]] (function: belongs_to) — *Helper for formatting*
 - [[web-interface/web-interface/web/static/js/market-observer.js.md|gainerLoserRenderer]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/market-observer.js.md|getComp]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/market-observer.js.md|getComp]] (function: belongs_to) — *Use BastienUI ComponentRegistry if available*
 <!-- SYNC:END -->

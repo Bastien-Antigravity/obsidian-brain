@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/loader/validator_test.go`.
+
+> **Essential Process**:
+> Unit test suite verifying common configuration validation rules and mandatory service schema validation logic.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

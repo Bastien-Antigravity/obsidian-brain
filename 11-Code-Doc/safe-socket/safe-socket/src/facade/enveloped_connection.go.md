@@ -9,15 +9,21 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/facade/enveloped_connection.go`.
+
+> **Essential Process**:
+> Wraps UDP transport connections to enforce stateless packet encapsulation and decapsulation via Cap'n Proto PacketEnvelope frames without persistent sessions.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: defines_method)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: defines_method) — *LocalAddr returns the local network address.*
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: defines_method) — *ReadMessage implementation for Enveloped Connection*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: defines_method)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: defines_method) — *RemoteAddr returns the remote network address.*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetDeadline]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetIdleTimeout]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: defines_method)
@@ -25,18 +31,18 @@ tags:
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Write]] (method: defines_method)
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Decapsulate]] (method: calls)
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Encapsulate]] (method: calls)
+- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Decapsulate]] (method: calls) — *It also reconstructs a partial HelloMsg for identity verification.*
+- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Encapsulate]] (method: calls) — *Encapsulate wraps the user payload into a PacketEnvelope.*
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: calls)
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: belongs_to)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: belongs_to) — *LocalAddr returns the local network address.*
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: belongs_to) — *ReadMessage implementation for Enveloped Connection*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: belongs_to)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: belongs_to) — *RemoteAddr returns the remote network address.*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetIdleTimeout]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: belongs_to)

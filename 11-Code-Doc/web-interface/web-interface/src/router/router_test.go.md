@@ -9,11 +9,17 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/src/router/router_test.go`.
+
+> **Essential Process**:
+> Unit tests for the web interface router, security endpoints, and API status. Verifies route registration, decryption endpoint suppression, and toolbox status.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: calls)
+- [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: calls) — *RegisterDynamicRoutes binds all API, Stock query, and OpenMFE dynamic routes.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Close]] (method: defines_method)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Critical]] (method: defines_method)

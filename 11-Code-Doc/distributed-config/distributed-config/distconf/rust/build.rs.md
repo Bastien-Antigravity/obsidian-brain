@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/distconf/rust/build.rs`.
+
+> **Essential Process**:
+> Cargo build script for distconf-rs, locating, compiling, and linking libdistconf.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

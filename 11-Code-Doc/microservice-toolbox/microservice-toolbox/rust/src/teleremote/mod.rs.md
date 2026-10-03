@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/mod.rs`.
 
+> **Essential Process**:
+> Teleremote client module for dynamic Telegram bot UI registration and telemetry.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)

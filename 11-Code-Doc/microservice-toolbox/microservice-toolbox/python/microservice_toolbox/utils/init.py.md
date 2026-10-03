@@ -9,23 +9,29 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/utils/init.py`.
+
+> **Essential Process**:
+> Standardized, reliable bootstrapper for Python microservices. Configures virtualenv paths, dynamic CGO library bindings, distributed configuration, and universal logging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: calls) — *Updates the logger after instantiation.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|UniLog]] (class: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|_find_nearest_venv]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|_find_nearest_venv]] (function: calls) — *Walk up from the start directory until a directory containing .venv is found.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|ensure_import_paths]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|find_vault_root]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|get_venv_python]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|prepend_venv_bin]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|redirect_working_directory]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|ensure_import_paths]] (function: calls) — *Ensure the script directory and vault root are available on sys.path.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|find_vault_root]] (function: calls) — *Walk up from the start directory until the vault root (obsidian-brain) is found.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|get_venv_python]] (function: calls) — *Return the expected virtualenv python executable path for the current OS.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|prepend_venv_bin]] (function: calls) — *Ensure the vault virtualenv bin/Scripts directory is on PATH.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|redirect_working_directory]] (function: calls) — *Redirects the current working directory to the target directory reliably.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)

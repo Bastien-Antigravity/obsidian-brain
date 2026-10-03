@@ -36,8 +36,8 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NewNotifControlServiceClient]] (function: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlServiceClient]] (interface: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlServiceServer]] (interface: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlServiceClient]] (interface: belongs_to) — *For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/...*
+- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlServiceServer]] (interface: belongs_to) — *for forward compatibility.*
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlService_AddProvider_FullMethodName]] (constant: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlService_GetAlertingConfig_FullMethodName]] (constant: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|NotifControlService_GetStatus_FullMethodName]] (constant: belongs_to)
@@ -61,7 +61,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer.testEmbeddedByValue]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer]] (struct: defines_method)
-- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnsafeNotifControlServiceServer]] (interface: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnsafeNotifControlServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_AddProvider_Handler]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_GetAlertingConfig_Handler]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_GetStatus_Handler]] (function: belongs_to)
@@ -71,7 +71,7 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_RemoveProvider_Handler]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_SendTestNotification_Handler]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_SetAlertingConfig_Handler]] (function: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_]] (constant: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_]] (constant: belongs_to) — *Requires gRPC-Go v1.64.0 or later.*
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|notifControlServiceClient.AddProvider]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|notifControlServiceClient.GetAlertingConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|notifControlServiceClient.GetStatus]] (method: belongs_to)

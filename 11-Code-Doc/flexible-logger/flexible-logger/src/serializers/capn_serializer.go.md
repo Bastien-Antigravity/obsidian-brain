@@ -32,7 +32,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetTimestamp]] (method: calls)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|NewRootLoggerMsg]] (function: calls)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|logger.go]] (imports)
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer.Serialize]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer.Serialize]] (method: defines_method) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)
@@ -41,9 +41,9 @@ tags:
 - [[flexible-logger/flexible-logger/src/profiles/no_lock.go.md|no_lock.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|notif_logger.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/standard.go.md|standard.go]] (calls)
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer.Serialize]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer.Serialize]] (method: belongs_to) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: belongs_to) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: defines_method) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|NewCapnpSerializer]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|mapLevel]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/serializers/serializer_test.go.md|serializer_test.go]] (calls)

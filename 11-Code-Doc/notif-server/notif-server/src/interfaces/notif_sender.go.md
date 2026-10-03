@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/interfaces/notif_sender.go`.
+
+> **Essential Process**:
+> Defines the standard interface for notification senders (e.g., Telegram, Discord). Ensures that all notification platforms implement a unified dispatch method.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

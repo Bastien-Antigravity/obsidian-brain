@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/rest/mfe_client.go`.
+
+> **Essential Process**:
+> HTTP REST server listener for frontend Microfrontends to query status and trigger evolution/planning events.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

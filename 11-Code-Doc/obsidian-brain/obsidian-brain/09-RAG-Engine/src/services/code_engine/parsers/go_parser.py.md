@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/go_parser.py`.
+
+> **Essential Process**:
+> Specialized parser for Go files using Tree-sitter. Extracts structs, interfaces, functions, methods, packages imports, and references.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

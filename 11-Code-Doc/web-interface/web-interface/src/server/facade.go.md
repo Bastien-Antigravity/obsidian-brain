@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/src/server/facade.go`.
+
+> **Essential Process**:
+> Manages the HTTP server lifecycle for the web-interface microservice. Provides graceful startup, timeout enforcement, and context-bound shutdown.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

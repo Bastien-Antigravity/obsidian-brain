@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Register]] (function: calls)
+- [[safe-socket/safe-socket/src/cgo_bridge/initialize.go.md|Register]] (function: calls) — *Register stores a socket/connection and returns a handle.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.DecodeFromPtr]] (method: defines_method)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.EncodeAsPtr]] (method: defines_method)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromAddressBytes]] (method: defines_method)
@@ -100,11 +100,11 @@ tags:
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future.Struct]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future]] (struct: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future]] (struct: defines_method)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_TypeID]] (constant: belongs_to)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_TypeID]] (constant: belongs_to) — *HelloMsg_TypeID is the unique identifier for the type HelloMsg.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewHelloMsg]] (function: belongs_to)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewHelloMsg_List]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewHelloMsg_List]] (function: belongs_to) — *NewHelloMsg creates a new list of HelloMsg.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewPacketEnvelope]] (function: belongs_to)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewPacketEnvelope_List]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewPacketEnvelope_List]] (function: belongs_to) — *NewPacketEnvelope creates a new list of PacketEnvelope.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewRootHelloMsg]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewRootPacketEnvelope]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope.DecodeFromPtr]] (method: belongs_to)
@@ -126,7 +126,7 @@ tags:
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future.Struct]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future]] (struct: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future]] (struct: defines_method)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_TypeID]] (constant: belongs_to)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_TypeID]] (constant: belongs_to) — *PacketEnvelope_TypeID is the unique identifier for the type PacketEnvelope.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|ReadRootHelloMsg]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|ReadRootPacketEnvelope]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|RegisterSchema]] (function: belongs_to)

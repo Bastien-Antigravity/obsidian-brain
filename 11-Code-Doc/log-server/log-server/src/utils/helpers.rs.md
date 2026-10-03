@@ -19,17 +19,17 @@ tags:
 - [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
-- [[log-server/log-server/src/utils/helpers.rs.md|create_log_folder]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|get_exec_parent_dir]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|get_hostname]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|get_utc_timestamp]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|line_str]] (macro: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|parse_sequence_number]] (function: belongs_to)
+- [[log-server/log-server/src/utils/helpers.rs.md|create_log_folder]] (function: belongs_to) — *Create log folder if not exists*
+- [[log-server/log-server/src/utils/helpers.rs.md|get_exec_parent_dir]] (function: belongs_to) — *Get executable parent directory*
+- [[log-server/log-server/src/utils/helpers.rs.md|get_hostname]] (function: belongs_to) — *Get system hostname (cached)*
+- [[log-server/log-server/src/utils/helpers.rs.md|get_utc_timestamp]] (function: belongs_to) — *Get current UTC timestamp as string*
+- [[log-server/log-server/src/utils/helpers.rs.md|line_str]] (macro: belongs_to) — *For line!() formatting*
+- [[log-server/log-server/src/utils/helpers.rs.md|parse_sequence_number]] (function: belongs_to) — *Parse sequence number from log message*
 - [[log-server/log-server/src/utils/helpers.rs.md|test_get_utc_timestamp]] (function: belongs_to)
 - [[log-server/log-server/src/utils/helpers.rs.md|test_parse_sequence_number]] (function: belongs_to)
 - [[log-server/log-server/src/utils/helpers.rs.md|test_truncate]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|truncate]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|validate_file_path]] (function: belongs_to)
+- [[log-server/log-server/src/utils/helpers.rs.md|truncate]] (function: belongs_to) — *Helper to truncate long strings*
+- [[log-server/log-server/src/utils/helpers.rs.md|validate_file_path]] (function: belongs_to) — *Validate file path is safe and within allowed directories*
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (same_package)

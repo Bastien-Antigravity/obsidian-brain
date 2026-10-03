@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/logger/logger.py`.
+
+> **Essential Process**:
+> Logger Protocol definition, native Python logger wrapper, and safe logger fallback helper.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

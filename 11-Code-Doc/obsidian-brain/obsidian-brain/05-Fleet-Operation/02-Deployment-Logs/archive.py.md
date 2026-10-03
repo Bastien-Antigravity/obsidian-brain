@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py`.
+
+> **Essential Process**:
+> Audits the Deployment Logs folder and archives historical deployment logs into the 'deployments/' folder (with context firewall ignore rules).
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/maintenance/maintenance_skill.py`.
+
+> **Essential Process**:
+> Performs routine maintenance tasks across the ecosystem, specifically purging stale AI-Session-State.md files to prevent context bloat.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

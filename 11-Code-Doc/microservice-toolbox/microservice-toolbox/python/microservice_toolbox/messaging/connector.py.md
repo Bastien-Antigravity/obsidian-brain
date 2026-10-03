@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/messaging/connector.py`.
+
+> **Essential Process**:
+> Asynchronous client connector establishing robust NATS connections with lifecycle event logging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

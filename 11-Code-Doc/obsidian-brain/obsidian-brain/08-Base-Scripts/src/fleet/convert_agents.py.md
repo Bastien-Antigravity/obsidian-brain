@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/fleet/convert_agents.py`.
+
+> **Essential Process**:
+> Converts the human-readable Role-Prompts from the core-kms-brain into compatible Gemini CLI agent definitions in the obsidian-brain vault.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

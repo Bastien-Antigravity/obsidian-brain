@@ -21,10 +21,10 @@ Automatically generated mirror for `universal-logger/src/logger/logger_handler_t
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[universal-logger/universal-logger/src/interfaces/models.go.md|models.go]] (imports)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|NewUniLog]] (function: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.AddMetadata]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.GetMetadata]] (method: calls)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetMetadata]] (method: calls)
+- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|NewUniLog]] (function: calls) — *when the logger instance is about to be garbage collected.*
+- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.AddMetadata]] (method: calls) — *AddMetadata adds a single key-value pair to the logger's metadata.*
+- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.GetMetadata]] (method: calls) — *GetMetadata returns a thread-safe copy of the logger's metadata.*
+- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.SetMetadata]] (method: calls) — *SetMetadata replaces all existing metadata with the provided map.*
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|logger_handler.go]] (same_package)
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|capturingSink.Close]] (method: defines_method)
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|capturingSink.Write]] (method: defines_method)
@@ -47,7 +47,7 @@ Automatically generated mirror for `universal-logger/src/logger/logger_handler_t
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|mockFlexLogger.Stream]] (method: defines_method)
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|mockFlexLogger.Trade]] (method: defines_method)
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|mockFlexLogger.Warning]] (method: defines_method)
-- [[universal-logger/universal-logger/src/utils/logger_utils.go.md|LogWithMetadata]] (function: calls)
+- [[universal-logger/universal-logger/src/utils/logger_utils.go.md|LogWithMetadata]] (function: calls) — *It delegates directly to LogWithCaller on the Logger interface for maximum performance.*
 - [[universal-logger/universal-logger/src/utils/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

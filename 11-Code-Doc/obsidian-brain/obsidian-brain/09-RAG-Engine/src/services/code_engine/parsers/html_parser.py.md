@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/html_parser.py`.
+
+> **Essential Process**:
+> Specialized parser for HTML files using Tree-sitter. Extracts stylesheet, script, and page anchor relationships. Also extracts inline JavaScript and processes it via the JavaScriptParser.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lifecycle/install_git_hooks.py`.
+
+> **Essential Process**:
+> Installs background post-commit and post-merge git hooks inside the vault's .git/ directory. This automates the synchronization of RAG indexing and AI coding personas on Git events.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

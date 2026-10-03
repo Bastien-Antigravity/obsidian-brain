@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/cpp/main.cpp`.
+
+> **Essential Process**:
+> Interactive CLI demonstration and sample client showcasing C++ UniLog usage.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -26,5 +32,5 @@ tags:
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniversalLogger.hpp]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/cpp/main.cpp.md|main]] (function: belongs_to)
+- [[universal-logger/universal-logger/unilog/cpp/main.cpp.md|main]] (function: belongs_to) — *include <string>*
 <!-- SYNC:END -->

@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/py_parser.py`.
+
+> **Essential Process**:
+> Specialized parser for Python files. Extracts classes, functions, async functions, imports, and references using AST.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

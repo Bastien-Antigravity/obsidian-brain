@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/llm/__init__.py`.
+
+> **Essential Process**:
+> Package initialization for LLM services. Exports a factory function to get configured LLMClient instances.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

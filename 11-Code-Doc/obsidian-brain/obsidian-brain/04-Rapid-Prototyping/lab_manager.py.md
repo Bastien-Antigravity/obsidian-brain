@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/lab_manager.py`.
+
+> **Essential Process**:
+> Bootstrap entrypoint wrapper for lab_manager.py. Re-executes under virtual environment and delegates command execution to src/lab_manager.py.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

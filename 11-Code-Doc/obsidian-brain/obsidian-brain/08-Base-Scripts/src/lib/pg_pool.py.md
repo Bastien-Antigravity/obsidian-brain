@@ -21,7 +21,7 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|controller.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|controller.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/pg_pool.py.md|HAS_POSTGRES]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/pg_pool.py.md|close_pg_pool]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/pg_pool.py.md|close_pg_pool]] (function: belongs_to) — *Closes all active connections in the pool on shutdown.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/pg_pool.py.md|get_pg_pool]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/pg_pool.py.md|resolve_schema_name]] (function: belongs_to)
 <!-- SYNC:END -->

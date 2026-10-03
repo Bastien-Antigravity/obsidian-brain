@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/core/defaults.go`.
+
+> **Essential Process**:
+> Instantiates default in-memory configuration structures pre-populated with ecosystem-wide fallback ports, hosts, and capability definitions.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

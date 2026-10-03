@@ -13,13 +13,13 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: calls)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: calls) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|teleremote.pb.go]] (imports)
 - [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|subscriber.go]] (imports)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: defines_method)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: defines_method)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: defines_method)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Send]] (method: calls)
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Send]] (method: calls) — *Send wraps tb.Context.Send to intercept and log all outgoing responses*
 
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: belongs_to)

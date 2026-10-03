@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/distconf/rust/examples/ffi_validation.rs`.
+
+> **Essential Process**:
+> FFI validation example for the Rust DistConfig crate.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

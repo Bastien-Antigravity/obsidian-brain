@@ -31,8 +31,8 @@ tags:
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlServiceClient]] (interface: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlServiceServer]] (interface: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlServiceClient]] (interface: belongs_to) — *For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/...*
+- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlServiceServer]] (interface: belongs_to) — *for forward compatibility.*
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlService_GetConfig_FullMethodName]] (constant: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlService_GetStatus_FullMethodName]] (constant: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|ConfigControlService_ListConfig_FullMethodName]] (constant: belongs_to)
@@ -51,14 +51,14 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer.testEmbeddedByValue]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer]] (struct: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnsafeConfigControlServiceServer]] (interface: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnsafeConfigControlServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_GetConfig_Handler]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_GetStatus_Handler]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_ListConfig_Handler]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_PersistConfig_Handler]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_ReloadConfig_Handler]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_SetConfig_Handler]] (function: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_]] (constant: belongs_to)
+- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_]] (constant: belongs_to) — *Requires gRPC-Go v1.64.0 or later.*
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|configControlServiceClient.GetConfig]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|configControlServiceClient.GetStatus]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|configControlServiceClient.ListConfig]] (method: belongs_to)

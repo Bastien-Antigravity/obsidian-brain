@@ -28,5 +28,5 @@ tags:
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard]] (class: defines_method)
-- [[web-interface/web-interface/web/static/js/ta-indicators.js.md|onmessage]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/ta-indicators.js.md|onmessage]] (function: belongs_to) — *Legacy hook for WebSocket onmessage*
 <!-- SYNC:END -->

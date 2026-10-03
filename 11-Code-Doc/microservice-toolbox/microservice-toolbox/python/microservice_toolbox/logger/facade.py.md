@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/logger/facade.py`.
+
+> **Essential Process**:
+> Python Facade for the Universal Logger (Go) shared library. Provides integrated configuration management and high-performance logging over CGO.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -20,7 +26,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|from_str]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|models.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|models.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls) — *Generic callback alias for backward compatibility*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: calls)
 
@@ -36,41 +42,41 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|__enter__]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|__exit__]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|__init__]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_async_log]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_async_log]] (function: belongs_to) — *Internal async Logging Method*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_bridge_cb]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_dispatch_log_to_cgo]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_dispatch_update]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_dispatch_update]] (function: belongs_to) — *Internal bridge called from Go shared library background thread.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_get_caller_info]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_log]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_log]] (function: belongs_to) — *Internal sync Logging Method*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_put]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|add_metadata]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|add_metadata]] (function: belongs_to) — *Add a single key-value pair to all future logs.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_critical]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_debug]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_error]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_info]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_logon]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_logon]] (function: belongs_to) — *Async Specialized Domain Methods*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_logout]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_report]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_schedule]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_stream]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_trade]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_warning]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|close]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|close]] (function: belongs_to) — *Manually release the logger session and associated resources.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|critical]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|debug]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|debug]] (function: belongs_to) — *Logging Methods*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|error]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|get_config]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|get_level]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|get_config]] (function: belongs_to) — *Retrieve a configuration value from the distributed config service (Zero-Leak FFI).*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|get_level]] (function: belongs_to) — *Retrieve the current log level from the Go core.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|info]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|logon]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|logon]] (function: belongs_to) — *Specialized Domain Methods*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|logout]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|on_config_update]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|on_notification]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|report]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|schedule]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|set_config]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|set_level]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|set_metadata]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|set_config]] (function: belongs_to) — *Update a configuration value in the memory configuration.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|set_level]] (function: belongs_to) — *Change the current log level dynamically.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|set_metadata]] (function: belongs_to) — *Replace all existing metadata with the provided dictionary.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|stream]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|trade]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|warning]] (function: belongs_to)

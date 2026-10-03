@@ -9,14 +9,20 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/core/notifier_test.go`.
+
+> **Essential Process**:
+> Unit tests for the Notifier core logic. Verifies asynchronous message flow, worker pool dispatch, and queue capacity handling.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker pool.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: calls) — *SendRaw sends a raw byte message (serialized).*
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.GetTag]] (method: defines_method)

@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp`.
 
+> **Essential Process**:
+> Top-level logger module providing uniform logging interfaces and safe loggers.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -27,7 +30,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/NetworkManager.hpp.md|NetworkManager.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|EnsureSafeLogger]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|MICROSERVICE_TOOLBOX_LOGGER_LOGGER_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|MICROSERVICE_TOOLBOX_LOGGER_LOGGER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_LOGGER_LOGGER_HPP*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

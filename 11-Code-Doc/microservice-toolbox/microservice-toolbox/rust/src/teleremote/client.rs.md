@@ -17,34 +17,37 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/client.rs`.
 
+> **Essential Process**:
+> Client facade connecting Rust services to the central tele-remote Telegram bot via gRPC.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|ManagedConnection.Send]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|ManagedConnection.Send]] (method: calls) — *Send data, reconnecting if necessary*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.new]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_callback]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_input_prompt]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_sub_menu]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.actions]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.add_action]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.close]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.actions]] (method: defines_method) — *Returns a reference to the actions collection.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.add_action]] (method: defines_method) — *Registers a new action or submenu tree.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.close]] (method: defines_method) — *Gracefully closes the tele-remote client connection.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.convert_action_to_btn]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.generate_menu_json]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.handlers]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.new]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.push_menu_update]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.generate_menu_json]] (method: defines_method) — *Returns the structured JSON representation of the action tree.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.handlers]] (method: defines_method) — *Returns a reference to the registered command handlers map.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.new]] (method: defines_method) — *Creates a new TeleClient instance.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.push_menu_update]] (method: defines_method) — *Manually triggers transmission of updated menu schema to tele-remote.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.register_handlers_recursive]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.send_telemetry]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.start]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.update_actions]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.send_telemetry]] (method: defines_method) — *Streams an arbitrary text telemetry message to the Telegram bot admin chat.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.start]] (method: defines_method) — *Spawns the background connection manager and command dispatcher.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.update_actions]] (method: defines_method) — *Replaces all current actions and handlers.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.error]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.warning]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: calls) — *Logger trait defines the standard interface for structured logging across the toolbox.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), panics to prevent microservices from running dark.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
 
@@ -57,18 +60,18 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action]] (struct: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|BtnDef]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|RowDef]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.actions]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.add_action]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.close]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.actions]] (method: belongs_to) — *Returns a reference to the actions collection.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.add_action]] (method: belongs_to) — *Registers a new action or submenu tree.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.close]] (method: belongs_to) — *Gracefully closes the tele-remote client connection.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.convert_action_to_btn]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.generate_menu_json]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.handlers]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.new]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.push_menu_update]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.generate_menu_json]] (method: belongs_to) — *Returns the structured JSON representation of the action tree.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.handlers]] (method: belongs_to) — *Returns a reference to the registered command handlers map.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.new]] (method: belongs_to) — *Creates a new TeleClient instance.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.push_menu_update]] (method: belongs_to) — *Manually triggers transmission of updated menu schema to tele-remote.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.register_handlers_recursive]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.send_telemetry]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.start]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.update_actions]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.send_telemetry]] (method: belongs_to) — *Streams an arbitrary text telemetry message to the Telegram bot admin chat.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.start]] (method: belongs_to) — *Spawns the background connection manager and command dispatcher.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.update_actions]] (method: belongs_to) — *Replaces all current actions and handlers.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/mod.rs.md|mod.rs]] (imports)

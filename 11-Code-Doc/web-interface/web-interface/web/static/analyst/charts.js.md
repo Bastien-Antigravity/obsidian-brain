@@ -132,16 +132,16 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager.onmessage]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager.onopen]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager.unbind]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|TA_WebSocketBindingManager]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas.addRow]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas.onMessageWithChildCallback]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas.onclose]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas.onerror]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas.onmessage]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas.onopen]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|TickDatas]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager._generateId]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager.bind]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager.onclose]] (method: belongs_to)
@@ -149,8 +149,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager.onmessage]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager.onopen]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager.unbind]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|Tick_WebSocketBindingManager]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart.__init__]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart.auto_resize]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart.containsAny]] (method: belongs_to)
@@ -167,8 +167,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart.updateMainChartAndInit]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart.updateMainChartOnly]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart.updateMainChart]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|patternChart]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart.__init__]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart.auto_resize]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart.getCurrentTime]] (method: belongs_to)
@@ -183,8 +183,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart.updateMainChartAndInit]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart.updateMainChartOnly]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart.updateMainChart]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|taIndicatorsAllChart]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart.__init__]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart.auto_resize]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart.init]] (method: belongs_to)
@@ -196,8 +196,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart.onopen]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart.ontick]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart.updateMainChart]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|tradedVolumeChart]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart.__init__]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart.auto_resize]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart.containsAny]] (method: belongs_to)
@@ -219,8 +219,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart.updateMainChartOnly]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart.updateMainChart]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart.volatility]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|volatilityChart]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.__init__]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.auto_resize]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.containsAny]] (method: belongs_to)
@@ -240,8 +240,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.ontick]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.updateMainChar]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.volume]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart]] (class: belongs_to)
-- [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart]] (class: defines_method)
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart]] (class: belongs_to) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
+- [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart]] (class: defines_method) — */////////////////////////////////////////////////////////////////////////////////////////////////////////////////////...*
 - [[web-interface/web-interface/web/static/analyst/searchBar.js.md|searchBar.js]] (calls)
 - [[web-interface/web-interface/web/static/analyst/searchBar.js.md|searchBar.js]] (same_package)
 - [[web-interface/web-interface/web/static/analyst/websocket.js.md|websocket.js]] (calls)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/business/models.rs`.
+
+> **Essential Process**:
+> Defines standard market data domain models (MarketEvent, OHLCV, Signal) across the fleet.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

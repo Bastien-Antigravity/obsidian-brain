@@ -27,7 +27,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message_Bytes]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message_]] (method: defines_method)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.NewTags]] (method: defines_method)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.NewTags]] (method: defines_method) — *allocated capnp.TextList, preferring placement in s's segment.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Segment]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetAttachment]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetLevel]] (method: defines_method)
@@ -42,7 +42,7 @@ tags:
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (imports)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewNotifierMsg]] (function: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewNotifierMsg_List]] (function: belongs_to)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewNotifierMsg_List]] (function: belongs_to) — *NewNotifierMsg creates a new list of NotifierMsg.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewRootNotifierMsg]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.AttachmentBytes]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Attachment]] (method: belongs_to)
@@ -58,7 +58,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message_Bytes]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message_]] (method: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.NewTags]] (method: belongs_to)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.NewTags]] (method: belongs_to) — *allocated capnp.TextList, preferring placement in s's segment.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Segment]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetAttachment]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetLevel]] (method: belongs_to)
@@ -67,12 +67,12 @@ tags:
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Tags]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.ToPtr]] (method: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: defines_method)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: belongs_to) — *allocated capnp.TextList, preferring placement in s's segment.*
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: defines_method) — *allocated capnp.TextList, preferring placement in s's segment.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future.Struct]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future]] (struct: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future]] (struct: defines_method)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_TypeID]] (constant: belongs_to)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_TypeID]] (constant: belongs_to) — *NotifierMsg_TypeID is the unique identifier for the type NotifierMsg.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|ReadRootNotifierMsg]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|RegisterSchema]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|schema_cd0e7dad96752db7]] (constant: belongs_to)

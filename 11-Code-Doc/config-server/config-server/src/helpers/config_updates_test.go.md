@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `config-server/src/helpers/config_updates_test.go`.
 
+> **Essential Process**:
+> Unit tests verifying ApplyUpdates delta merging, ensuring new sections are created, existing keys are updated, and input maps remain immutable.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)

@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `notif-server/src/notifiers/telegram.go`.
+
+> **Essential Process**:
+> Implements the Telegram notification sender. Handles authentication with the Telegram Bot API and executes message delivery. Dispatches operational and delivery messages through the ecosystem Universal Logger.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[notif-server/notif-server/src/notifiers/config.go.md|config.go]] (same_package)
-- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: calls)
+- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: calls) — *getOption retrieves an option from the config map trying multiple case variations.*
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Debug]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Error]] (method: calls)
@@ -29,7 +35,7 @@ tags:
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
-- [[notif-server/notif-server/src/notifiers/telegram.go.md|NewTelegramSender]] (function: belongs_to)
+- [[notif-server/notif-server/src/notifiers/telegram.go.md|NewTelegramSender]] (function: belongs_to) — *is considered unconfigured and returns (nil, nil) without failing.*
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|TelegramSender.GetLogLevel]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|TelegramSender.GetTag]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|TelegramSender.SendMessage]] (method: belongs_to)

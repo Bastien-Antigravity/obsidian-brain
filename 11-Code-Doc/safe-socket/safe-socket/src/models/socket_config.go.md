@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/models/socket_config.go`.
+
+> **Essential Process**:
+> Encapsulates runtime environment configuration parameters for socket instances, decoupling profile templates from dynamic network attributes and connection timeouts.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -29,6 +35,6 @@ tags:
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
 - [[safe-socket/safe-socket/src/factory/socket_factory_test.go.md|socket_factory_test.go]] (imports)
 - [[safe-socket/safe-socket/src/interfaces/protocol.go.md|protocol.go]] (imports)
-- [[safe-socket/safe-socket/src/models/socket_config.go.md|SocketConfig]] (struct: belongs_to)
+- [[safe-socket/safe-socket/src/models/socket_config.go.md|SocketConfig]] (struct: belongs_to) — *This decouples static profile data (what we are) from runtime environment data (where we are).*
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
 <!-- SYNC:END -->

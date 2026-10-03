@@ -20,7 +20,7 @@ tags:
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.mergeData]] (method: defines_method)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.openConnectionLog]] (method: defines_method)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.renderList]] (method: defines_method)
-- [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.scheduleUpdate]] (method: defines_method)
+- [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.scheduleUpdate]] (method: defines_method) — *2. Merge Aggregations*
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.sendSubscription]] (method: defines_method)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.setupTimeframeEventListener]] (method: defines_method)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.setupTimeframeSelector]] (method: defines_method)
@@ -56,7 +56,7 @@ tags:
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.mergeData]] (method: belongs_to)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.openConnectionLog]] (method: belongs_to)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.renderList]] (method: belongs_to)
-- [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.scheduleUpdate]] (method: belongs_to)
+- [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.scheduleUpdate]] (method: belongs_to) — *2. Merge Aggregations*
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.sendSubscription]] (method: belongs_to)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.setupTimeframeEventListener]] (method: belongs_to)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard.setupTimeframeSelector]] (method: belongs_to)
@@ -69,6 +69,6 @@ tags:
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard]] (class: belongs_to)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserverDashboard]] (class: defines_method)
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|activityRenderer]] (function: belongs_to)
-- [[web-interface/web-interface/web/html/MarketObserver.html.md|formatPct]] (function: belongs_to)
+- [[web-interface/web-interface/web/html/MarketObserver.html.md|formatPct]] (function: belongs_to) — *Helper for formatting*
 - [[web-interface/web-interface/web/html/MarketObserver.html.md|gainerLoserRenderer]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/errors.rs`.
+
+> **Essential Process**:
+> Defines standardized error types and categorization for connection manager failures.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

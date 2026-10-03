@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/orchestrator.py`.
+
+> **Essential Process**:
+> Orchestrator agent daemon responsible for decomposing user goals, delegating tasks to specific agents, and reporting progress.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

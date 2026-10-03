@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/cpp_parser.py`.
+
+> **Essential Process**:
+> Specialized parser for C/C++ files using Tree-sitter. Extracts classes, structs, methods (both inline and qualified), includes, and references.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

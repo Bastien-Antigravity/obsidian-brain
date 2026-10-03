@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/config/merger.py`.
+
+> **Essential Process**:
+> Provides deep merging capabilities for configuration dictionaries. Ensures nested structures are correctly overlaid following the 'Hierarchy of Truth'.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

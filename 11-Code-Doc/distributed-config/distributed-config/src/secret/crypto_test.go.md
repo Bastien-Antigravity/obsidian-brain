@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/secret/crypto_test.go`.
+
+> **Essential Process**:
+> Unit test suite verifying RSA keypair generation, token encryption, and round-trip ciphertext decryption using temporary test keys and env overrides.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

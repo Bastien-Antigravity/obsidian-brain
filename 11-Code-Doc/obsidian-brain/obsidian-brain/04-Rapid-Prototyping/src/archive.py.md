@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/src/archive.py`.
+
+> **Essential Process**:
+> Audits the Rapid Prototyping Labs root and archives any historical CHAT or EXP files into the 'experiments/' folder to ensure a clean, zero-friction playground.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

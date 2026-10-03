@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/qa.py`.
+
+> **Essential Process**:
+> QA Engineer agent daemon specialized in verifying logic implementation, auditing unit tests, and reporting verification reports.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -22,7 +28,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/qa.py.md|QAAgent]] (class: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/qa.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/qa.py.md|execute_tool]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/qa.py.md|execute_tool]] (function: belongs_to) — *Executes a function call requested by the model.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/agents/qa.py.md|run_squad_tests]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|start_squad.py]] (calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|start_squad.py]] (imports)

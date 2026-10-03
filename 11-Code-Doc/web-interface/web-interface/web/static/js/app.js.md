@@ -32,13 +32,13 @@ tags:
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|s.save]] (method: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|w]] (class: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|y]] (class: calls)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|init]] (function: calls)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|init]] (function: calls) — *Initialize*
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|mfe-loader.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/app.js.md|connectVolumeMechanic]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/app.js.md|initiateConnection]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/app.js.md|initiateConnection]] (function: belongs_to) — *Connect Orchestrator*
 - [[web-interface/web-interface/web/static/js/app.js.md|logEvent]] (function: belongs_to)
 <!-- SYNC:END -->

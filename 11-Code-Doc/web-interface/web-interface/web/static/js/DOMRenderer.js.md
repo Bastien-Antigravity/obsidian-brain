@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: calls)
+- [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: calls) — *Render +/- 20 ticks from the center to fully saturate the layout*
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: defines_method)

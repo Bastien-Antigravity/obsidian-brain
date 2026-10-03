@@ -18,7 +18,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[universal-logger/universal-logger/cmd/universal-logger/main.go.md|main.go]] (calls)
 - [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|unilog.go]] (calls)
-- [[universal-logger/universal-logger/src/utils/levels.go.md|GetLogLevel]] (function: belongs_to)
+- [[universal-logger/universal-logger/src/utils/levels.go.md|GetLogLevel]] (function: belongs_to) — *GetLogLevel converts string to Level.*
 - [[universal-logger/universal-logger/src/utils/levels.go.md|LevelCritical]] (constant: belongs_to)
 - [[universal-logger/universal-logger/src/utils/levels.go.md|LevelDebug]] (constant: belongs_to)
 - [[universal-logger/universal-logger/src/utils/levels.go.md|LevelError]] (constant: belongs_to)

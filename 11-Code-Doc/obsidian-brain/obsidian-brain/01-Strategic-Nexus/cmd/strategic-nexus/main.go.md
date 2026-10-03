@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/cmd/strategic-nexus/main.go`.
+
+> **Essential Process**:
+> Boots and initializes the 01-Strategic-Nexus Go microservice. Automatically sets up Postgres connections, loads configurations, and routes either background server routines or direct CLI invocations.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

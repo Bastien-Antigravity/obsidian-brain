@@ -9,17 +9,23 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `config-server/src/grpc_control/service.go`.
+
+> **Essential Process**:
+> Implements ConfigControlServiceServer gRPC methods, translating Protobuf RPC requests into core.ConfigController invocations.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetConfig]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetStatus]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ListConfig]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.PersistConfig]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ReloadConfig]] (method: defines_method)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.SetConfig]] (method: defines_method)
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetConfig]] (method: defines_method) — *GetConfig returns a specific configuration value*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetStatus]] (method: defines_method) — *GetStatus returns server health and metadata*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ListConfig]] (method: defines_method) — *ListConfig returns the entire configuration state as JSON*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.PersistConfig]] (method: defines_method) — *PersistConfig manually triggers a save of the current memory state*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ReloadConfig]] (method: defines_method) — *ReloadConfig reloads configuration from the base YAML*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.SetConfig]] (method: defines_method) — *SetConfig updates a configuration value atomically*
 - [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Debug]] (method: calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Info]] (method: calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
@@ -28,15 +34,15 @@ tags:
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (same_package)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetConfig]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetStatus]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ListConfig]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.PersistConfig]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ReloadConfig]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.SetConfig]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to)
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetConfig]] (method: belongs_to) — *GetConfig returns a specific configuration value*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.GetStatus]] (method: belongs_to) — *GetStatus returns server health and metadata*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ListConfig]] (method: belongs_to) — *ListConfig returns the entire configuration state as JSON*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.PersistConfig]] (method: belongs_to) — *PersistConfig manually triggers a save of the current memory state*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ReloadConfig]] (method: belongs_to) — *ReloadConfig reloads configuration from the base YAML*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.SetConfig]] (method: belongs_to) — *SetConfig updates a configuration value atomically*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to) — *GetStatus returns server health and metadata*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method) — *GetStatus returns server health and metadata*
+- [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to) — *NewControlService creates a new ControlServiceImpl instance*
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
 <!-- SYNC:END -->

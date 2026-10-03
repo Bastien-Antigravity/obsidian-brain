@@ -11,10 +11,13 @@ last_sync: 2026-10-01T01:10:01.736049
 ## 📝 Description
 Automatically generated mirror for `distributed-config/src/utils/logger_test.go`.
 
+> **Essential Process**:
+> Unit tests for EnsureSafeLogger in distributed-config. Verifies safe fallback and strict mode enforcement via STRICT_LOGGER.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls)
+- [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
 - [[distributed-config/distributed-config/src/utils/logger.go.md|logger.go]] (same_package)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Critical]] (method: calls)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Debug]] (method: calls)

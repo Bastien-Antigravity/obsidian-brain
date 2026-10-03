@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/rust/build.rs`.
 
+> **Essential Process**:
+> Cargo build script compiling Protocol Buffer definitions for teleremote.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)

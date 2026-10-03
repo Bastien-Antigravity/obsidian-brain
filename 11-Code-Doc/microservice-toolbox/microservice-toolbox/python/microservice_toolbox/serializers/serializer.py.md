@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/serializers/serializer.py`.
+
+> **Essential Process**:
+> Defines the abstract interface for serialization providers within the ecosystem. ISerializer manages transforming generic objects to bytes and vice-versa.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

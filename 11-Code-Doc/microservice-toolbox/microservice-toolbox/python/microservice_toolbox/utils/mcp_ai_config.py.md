@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/utils/mcp_ai_config.py`.
+
+> **Essential Process**:
+> Safely load, repair, and migrate MCP server configuration files for Antigravity-IDE and gemini-cli.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -17,6 +17,9 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py`.
 
+> **Essential Process**:
+> Scaffolds a new Bastien-Antigravity microservice adhering to canonical repository structure, mandatory root files, Docker standards, and BDD specifications.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
@@ -24,15 +27,15 @@ Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/lifecycle
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|create_file]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|create_symlink]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_bdd_spec]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_common_files]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_go_scaffold]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_python_scaffold]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_rust_scaffold]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|create_file]] (function: belongs_to) — *Creates a file with parent directory creation, respecting dry-run mode.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|create_symlink]] (function: belongs_to) — *Creates a symbolic link, respecting dry-run mode.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_bdd_spec]] (function: belongs_to) — *Generates the initial BDD behavior specification note in 02-Business-BDD.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_common_files]] (function: belongs_to) — *Generates files mandatory across all languages: Dockerfile, compose, AGENTS.md, etc.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_go_scaffold]] (function: belongs_to) — *Generates the Go microservice skeleton and source files.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_python_scaffold]] (function: belongs_to) — *Generates the Python microservice skeleton and architecture folders.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|generate_rust_scaffold]] (function: belongs_to) — *Generates the Rust microservice skeleton and source files.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|resolve_workspace_root]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|resolve_workspace_root]] (function: belongs_to) — *Resolves the Bastien-Antigravity workspace root dynamically.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

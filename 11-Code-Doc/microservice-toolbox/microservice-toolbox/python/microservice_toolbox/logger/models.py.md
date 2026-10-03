@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/logger/models.py`.
+
+> **Essential Process**:
+> LogLevel constants matching the canonical Go universal-logger levels.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/models/metadata.py`.
+
+> **Essential Process**:
+> Normalized metadata structure for indexed chunks.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -12,8 +18,8 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/vector_store.py.md|vector_store.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/chunk.py.md|chunk.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|MChunkMetadata]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|validate_source_path]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|MChunkMetadata]] (class: belongs_to) — *Normalized metadata for a logical chunk.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|validate_source_path]] (function: belongs_to) — *Prevents path traversal or absolute path leaks on results.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (calls)

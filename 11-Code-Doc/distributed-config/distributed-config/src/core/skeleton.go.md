@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/core/skeleton.go`.
+
+> **Essential Process**:
+> Instantiates a minimal skeleton configuration template for new bootstrap environments where no pre-existing configuration file exists.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

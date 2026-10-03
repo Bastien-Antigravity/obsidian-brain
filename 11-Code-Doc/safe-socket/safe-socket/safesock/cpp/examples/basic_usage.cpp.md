@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/safesock/cpp/examples/basic_usage.cpp`.
+
+> **Essential Process**:
+> Demonstration client showcasing C++ SafeSocket connection and messaging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -17,5 +23,5 @@ tags:
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.close]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/safesock/cpp/examples/basic_usage.cpp.md|main]] (function: belongs_to)
+- [[safe-socket/safe-socket/safesock/cpp/examples/basic_usage.cpp.md|main]] (function: belongs_to) — *include <string>*
 <!-- SYNC:END -->

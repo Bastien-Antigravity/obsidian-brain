@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/distconf/rust/src/lib.rs`.
+
+> **Essential Process**:
+> Rust wrapper crate for distributed-config, providing safe idiomatic abstractions, error types, configuration accessors, and FFI bindings to libdistconf.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -41,7 +47,7 @@ tags:
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DISTCONF_ERR_KEY_NOT_FOUND]] (constant: belongs_to)
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DISTCONF_ERR_NETWORK_FAILURE]] (constant: belongs_to)
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DISTCONF_ERR_VALIDATION_FAILED]] (constant: belongs_to)
-- [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DISTCONF_SUCCESS]] (constant: belongs_to)
+- [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DISTCONF_SUCCESS]] (constant: belongs_to) — *Standardized Error Codes (must match helpers.h)*
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DistConfError.fmt]] (method: belongs_to)
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DistConfError]] (struct: belongs_to)
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DistConfError]] (struct: defines_method)

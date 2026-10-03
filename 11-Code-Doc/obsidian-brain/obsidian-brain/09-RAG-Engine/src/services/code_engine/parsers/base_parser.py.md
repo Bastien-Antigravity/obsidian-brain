@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/base_parser.py`.
+
+> **Essential Process**:
+> Defines the base interface for language-specific parsers. Enforces a consistent API for symbol definition extraction and reference resolution across all languages.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

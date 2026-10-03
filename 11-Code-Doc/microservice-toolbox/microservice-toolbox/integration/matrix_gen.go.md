@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.Write]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.Write]] (method: calls) — *Write sends data over the connection, automatically reconnecting if needed.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|NewBinSerializer]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|NewJSONSerializer]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/serializer_test.go.md|serializer_test.go]] (imports)

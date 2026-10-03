@@ -16,5 +16,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/src/models/persistence_types.go.md|RegistryState]] (struct: belongs_to)
+- [[tele-remote/tele-remote/src/models/persistence_types.go.md|RegistryState]] (struct: belongs_to) — *RegistryState represents the persisted state of all connected microservices*
 <!-- SYNC:END -->

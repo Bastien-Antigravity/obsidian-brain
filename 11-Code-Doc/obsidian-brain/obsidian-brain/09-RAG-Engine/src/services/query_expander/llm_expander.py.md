@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py`.
+
+> **Essential Process**:
+> LLM-based query expander. Generates semantic variants of a user's natural language query to improve search recall.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -17,5 +23,5 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|_SYSTEM_PROMPT]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|_USER_PROMPT_TMPL]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|expand_query]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|expand_query]] (function: belongs_to) — *Expands a given query into multiple semantic variants.*
 <!-- SYNC:END -->

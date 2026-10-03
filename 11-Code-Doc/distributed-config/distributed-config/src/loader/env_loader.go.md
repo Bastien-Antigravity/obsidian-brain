@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/loader/env_loader.go`.
+
+> **Essential Process**:
+> Environment variable extractor populating CommonConfig parameters from system environment variables (e.g., NAME, RESET, PUBLIC_KEY).
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/messaging/config.rs`.
+
+> **Essential Process**:
+> Configuration parameters for message broker connectors (NATS, JetStream).
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

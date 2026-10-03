@@ -15,10 +15,10 @@ tags:
 ### 📦 Dependencies (Outbound)
 - [[log-server/log-server/src/utils/helpers.rs.md|helpers.rs]] (imports)
 - [[log-server/log-server/src/utils/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/utils/terminal_ui.rs.md|colorize_level]] (function: calls)
+- [[log-server/log-server/src/utils/terminal_ui.rs.md|colorize_level]] (function: calls) — *Returns colorized level string for console*
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/core/log_formatter.rs.md|format_log_message]] (function: belongs_to)
+- [[log-server/log-server/src/core/log_formatter.rs.md|format_log_message]] (function: belongs_to) — *Unified log message formatting - used by both protocols*
 - [[log-server/log-server/src/core/log_formatter.rs.md|test_format_log_message_basic]] (function: belongs_to)
 - [[log-server/log-server/src/core/log_formatter.rs.md|test_format_log_message_with_metadata]] (function: belongs_to)
 - [[log-server/log-server/src/core/log_formatter.rs.md|test_truncation]] (function: belongs_to)

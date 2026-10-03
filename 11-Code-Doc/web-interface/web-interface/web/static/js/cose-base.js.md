@@ -33,7 +33,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|ConstraintHandler]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|__webpack_require__]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|_toConsumableArray]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/cose-base.js.md|setUnion]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/cose-base.js.md|setUnion]] (function: belongs_to) — *find union of two sets*
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (same_package)
 <!-- SYNC:END -->

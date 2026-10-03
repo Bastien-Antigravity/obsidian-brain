@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/web/static/lib/theme/ThemeEngine.js`.
+
+> **Essential Process**:
+> Singleton ThemeEngine managing the Bastien UI theme lifecycle.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

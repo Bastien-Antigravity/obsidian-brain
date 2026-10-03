@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go`.
+
+> **Essential Process**:
+> Implements the Genetic-Pareto Prompt Evolution algorithm inside the 01-Strategic-Nexus. Uses Google GenAI Go SDK to mutate prompt candidates and checks fitness.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

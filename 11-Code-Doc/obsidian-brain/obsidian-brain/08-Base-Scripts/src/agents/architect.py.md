@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/architect.py`.
+
+> **Essential Process**:
+> Architect agent daemon specializing in codebase layout design, design patterns, and referencing architectural specifications (ADRs).
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

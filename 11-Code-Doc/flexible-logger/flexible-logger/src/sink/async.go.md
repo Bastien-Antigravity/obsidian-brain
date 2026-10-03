@@ -13,11 +13,11 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: calls)
+- [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: calls) — *It formats the error as a LogEntry to maintain consistency.*
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|fallback_logger.go]] (imports)
 - [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Retain]] (method: calls)
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls) — *Release decrements the reference count and returns the entry to the pool if 0.*
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Retain]] (method: calls) — *Must be called when passing the entry to an additional async consumer.*
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink.Close]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink.SetOnError]] (method: defines_method)

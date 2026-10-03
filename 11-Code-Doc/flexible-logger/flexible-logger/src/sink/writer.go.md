@@ -14,7 +14,7 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls)
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls) — *Release decrements the reference count and returns the entry to the pool if 0.*
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSerializer.Serialize]] (method: calls)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|sink_test.go]] (same_package)

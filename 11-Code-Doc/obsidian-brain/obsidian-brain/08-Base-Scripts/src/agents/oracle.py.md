@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/oracle.py`.
+
+> **Essential Process**:
+> Oracle agent daemon specialized in long-term chronological log auditing, historical analysis, and querying temporal knowledge vaults.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

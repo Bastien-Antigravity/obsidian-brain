@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/python/setup.py`.
+
+> **Essential Process**:
+> Package packaging and distribution setup script for the unilog Python client library.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,7 +22,7 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|BuildGoLib]] (class: belongs_to)
+- [[universal-logger/universal-logger/unilog/python/setup.py.md|BuildGoLib]] (class: belongs_to) — *Custom Build Commands*
 - [[universal-logger/universal-logger/unilog/python/setup.py.md|finalize_options]] (function: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/setup.py.md|initialize_options]] (function: belongs_to)
 - [[universal-logger/universal-logger/unilog/python/setup.py.md|run]] (function: belongs_to)

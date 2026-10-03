@@ -14,8 +14,8 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level.String]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level]] (struct: calls)
+- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level.String]] (method: calls) — *String returns the enum's constant name.*
+- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level]] (struct: calls) — *String returns the enum's constant name.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.Hostname]] (method: calls)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.Message_]] (method: calls)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|ReadRootLoggerMsg]] (function: calls)

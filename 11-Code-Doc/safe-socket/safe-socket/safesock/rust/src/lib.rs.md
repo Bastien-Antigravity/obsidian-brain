@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/safesock/rust/src/lib.rs`.
+
+> **Essential Process**:
+> Rust wrapper crate for safe-socket, providing idiomatic Rust types, RAII handle lifecycle (Drop), framed I/O, and FFI bindings to libsafesocket.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -18,7 +18,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|log_engine.go]] (imports)
 - [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (imports)
-- [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|Sink]] (interface: belongs_to)
+- [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|Sink]] (interface: belongs_to) — *Sink defines where log entries are written*
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/devel.go.md|devel.go]] (imports)

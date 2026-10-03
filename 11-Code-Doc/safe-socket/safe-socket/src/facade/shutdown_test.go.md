@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/facade/shutdown_test.go`.
+
+> **Essential Process**:
+> Unit tests for SocketServer shutdown semantics, asserting synchronous connection draining, deadline wait limits, and deadlock prevention with uncooperative clients.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -21,8 +27,8 @@ tags:
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.Close]] (method: calls)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.Listen]] (method: calls)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|NewSocketServer]] (function: calls)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.GetAddr]] (method: calls)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|NewSocketServer]] (function: calls) — *NewSocketServer creates a new instance of SocketServer.*
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.GetAddr]] (method: calls) — *GetAddr returns the listener's network address, if the server is listening.*
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/interfaces/sync.py`.
+
+> **Essential Process**:
+> SyncService Interface defining the abstract contract for file, agent, and git synchronization tools.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

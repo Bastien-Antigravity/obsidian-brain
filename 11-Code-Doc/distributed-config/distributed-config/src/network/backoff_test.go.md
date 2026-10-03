@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/network/backoff_test.go`.
+
+> **Essential Process**:
+> Unit test suite verifying exponential backoff calculation, ceiling caps, and randomized jitter distribution boundaries.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: calls)
-- [[distributed-config/distributed-config/src/network/backoff.go.md|NewBackoff]] (function: calls)
+- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: calls) — *GetDelay calculates the delay for the current attempt.*
+- [[distributed-config/distributed-config/src/network/backoff.go.md|NewBackoff]] (function: calls) — *NewBackoff creates a new backoff strategy using parameters from the config*
 - [[distributed-config/distributed-config/src/network/backoff.go.md|backoff.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

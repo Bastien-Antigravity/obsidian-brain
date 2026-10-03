@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/safesock/cpp/examples/matrix_client.cpp`.
+
+> **Essential Process**:
+> Multi-language interoperability matrix client implemented in C++.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -18,5 +24,5 @@ tags:
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.send]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/safesock/cpp/examples/matrix_client.cpp.md|main]] (function: belongs_to)
+- [[safe-socket/safe-socket/safesock/cpp/examples/matrix_client.cpp.md|main]] (function: belongs_to) — *include <chrono>*
 <!-- SYNC:END -->

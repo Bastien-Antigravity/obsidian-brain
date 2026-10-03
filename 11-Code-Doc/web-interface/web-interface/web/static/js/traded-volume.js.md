@@ -29,5 +29,5 @@ tags:
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|TradedVolumeDashboard.renderRow]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|TradedVolumeDashboard]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|TradedVolumeDashboard]] (class: defines_method)
-- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: belongs_to) — *Legacy hook for WebSocket onmessage*
 <!-- SYNC:END -->

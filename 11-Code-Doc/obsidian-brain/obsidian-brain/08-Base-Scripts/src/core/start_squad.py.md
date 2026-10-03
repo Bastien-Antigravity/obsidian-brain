@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/core/start_squad.py`.
+
+> **Essential Process**:
+> Initializes the Bastien-Antigravity AI Squad Command Center. Handles MCP binding, pre-session audits, role synchronization, and launches the selected AI client.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -45,21 +51,21 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|CommandController]] (class: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|controller.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|controller.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|get_active_mode]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/controller.py.md|get_active_mode]] (function: calls) — *Reads active mode from the orchestration manual.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/mission_help.py.md|mission_help.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|switch_mode.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/convert_agents.py.md|convert_agents.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|service.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|start_grpc_server]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/grpc_control/service.py.md|start_grpc_server]] (function: calls) — *Initializes and starts the asynchronous Squad Control gRPC server.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/interfaces/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/interfaces/interfaces.py.md|DualSquadEventBus]] (class: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/bootstrap.py.md|bootstrap.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|get_logger]] (function: calls)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/telegram/manager.py.md|SetupTelegram]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/telegram/manager.py.md|SetupTelegram]] (function: calls) — *Initializes dynamic Tele-Remote client, binds updates, and registers exit handlers.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/telegram/manager.py.md|manager.py]] (imports)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/web/server.py.md|server.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/web/server.py.md|start_async_server]] (function: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/web/server.py.md|start_async_server]] (function: calls) — *Launches the uvicorn web server and starts the auto-registration daemon thread.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
@@ -70,16 +76,16 @@ tags:
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|C_RED]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|C_RESET]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|EXCLUSIONS]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|_check_single_repo]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|_check_single_repo]] (function: belongs_to) — *Worker function for parallel git status checks.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|_strip_frontmatter]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|archive_strat_files]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|check_environment]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|check_rag_attached]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|check_rag_attached]] (function: belongs_to) — *Returns True if the 09-RAG-Engine exists and a valid server entrypoint is available.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|check_session_health]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|ensure_background_services]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|generate_active_rituals]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|get_vault_python]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|log_session_event]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|get_vault_python]] (function: belongs_to) — *Return the vault virtualenv Python when available, otherwise current Python.*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|log_session_event]] (function: belongs_to) — *Logs a message with timestamp to the session log file.*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|main]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|print_process_manifest_summary]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|protect_core_kms]] (function: belongs_to)

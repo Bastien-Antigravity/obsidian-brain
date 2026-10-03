@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/rs_parser.py`.
+
+> **Essential Process**:
+> Specialized parser for Rust files using Tree-sitter. Extracts structs, enums, traits, functions, impl blocks, imports, and references.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

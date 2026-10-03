@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Descriptor]] (method: defines_method) — *Deprecated: Use NotifRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetAttachment]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetMessage]] (method: defines_method)
@@ -22,7 +22,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.ProtoReflect]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Reset]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.String]] (method: defines_method)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.Descriptor]] (method: defines_method)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.Descriptor]] (method: defines_method) — *Deprecated: Use NotifResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.GetSuccess]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.ProtoMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.ProtoReflect]] (method: defines_method)
@@ -32,7 +32,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (imports)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use NotifRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetAttachment]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetLevel]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetMessage]] (method: belongs_to)
@@ -43,7 +43,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest]] (struct: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest]] (struct: defines_method)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.Descriptor]] (method: belongs_to)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use NotifResponse.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.GetSuccess]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.ProtoMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.ProtoReflect]] (method: belongs_to)
@@ -51,7 +51,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|_]] (constant: belongs_to)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_proto_notif_service_proto_init]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_proto_notif_service_proto_rawDescGZIP]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_proto_notif_service_proto_rawDesc]] (constant: belongs_to)

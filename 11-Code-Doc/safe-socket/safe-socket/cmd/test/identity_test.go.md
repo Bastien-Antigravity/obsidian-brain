@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/cmd/test/identity_test.go`.
+
+> **Essential Process**:
+> Unit tests verifying Cap'n Proto peer identity extraction across deeply nested transport connection wrapper decorators.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -22,7 +28,7 @@ tags:
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport.SetReadDeadline]] (method: defines_method)
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport.SetWriteDeadline]] (method: defines_method)
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport.Write]] (method: defines_method)
-- [[safe-socket/safe-socket/safe_socket.go.md|GetIdentity]] (function: calls)
+- [[safe-socket/safe-socket/safe_socket.go.md|GetIdentity]] (function: calls) — *It traverses through Heartbeat, Handshake, or Envelope wrappers to find the HelloMsg.*
 - [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|NewHandshakeConnection]] (function: calls)
 - [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|NewHeartbeatConnection]] (function: calls)

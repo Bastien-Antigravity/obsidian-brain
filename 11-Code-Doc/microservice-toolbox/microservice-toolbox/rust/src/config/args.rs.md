@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/rust/src/config/args.rs`.
+
+> **Essential Process**:
+> Parses command-line overrides for service configuration parameters.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

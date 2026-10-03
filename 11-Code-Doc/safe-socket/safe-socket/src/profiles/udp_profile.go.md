@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/profiles/udp_profile.go`.
+
+> **Essential Process**:
+> Defines UDP datagram socket profiles for connectionless or packet-sequenced low-latency network communication.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

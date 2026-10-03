@@ -16,5 +16,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/build.rs.md|main]] (function: belongs_to)
+- [[log-server/log-server/build.rs.md|main]] (function: belongs_to) — *tools/build.rs*
 <!-- SYNC:END -->

@@ -1,25 +1,31 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.py`.
+
+> **Essential Process**:
+> Unified FastAPI web server for RAG Dashboard and Codebase Visualizer. Pure static frontend (SPA) approach using index.html and JSON APIs.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls) — *Resolves database connection settings with decrypted credentials and target RAG database.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|RAGControllerImpl]] (class: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|RAGControllerImpl]] (class: calls) — *Standardized controller implementation for RAG operations.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|controller.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_brain_stats]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|index_directory]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_brain_stats]] (function: calls) — *Calculates stats respecting active squad firewalls.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|index_directory]] (function: calls) — *Indexes directory/microservice repository.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|register_routes]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: calls) — *REST API Handler mapping config and status queries to RAGController.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|register_routes]] (function: calls) — *Registers the REST routes to the FastAPI application mux.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|rest_handler.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|mount_to_app]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|mount_to_app]] (function: calls) — *Mount the SSE transport endpoints on an existing FastAPI application.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|archive.py]] (calls)
@@ -47,14 +53,14 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|synchronizer.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/seed/seed_service.py.md|seed_service.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|InterceptHandler]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|SafeQueueWriter]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|InterceptHandler]] (class: belongs_to) — *Custom logging handler that intercepts standard library logs and routes them to our UniLogger.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|SafeQueueWriter]] (class: belongs_to) — *Thread-safe stdout redirector that prevents recursion and strips log prefixes for the UI.*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to) — *Mount static files at / using absolute path*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|__init__]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_register_mfe_with_web_interface]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_setup_uvicorn_logging]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_setup_uvicorn_logging]] (function: belongs_to) — *Reconfigures Uvicorn logging to use our standardized UniLogger via a Handler.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_strip_prefix]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|catch_all]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|catch_all]] (function: belongs_to) — *Fallback route to serve static files.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|do_register]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|emit]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|event_generator]] (function: belongs_to)
@@ -67,6 +73,6 @@
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|serve_codebase_graph_json]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|serve_source]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|sse_reload_graph]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|start_async_server]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|start_async_server]] (function: belongs_to) — *Starts the uvicorn server for FastAPI with harmonized logging.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: belongs_to)
 <!-- SYNC:END -->

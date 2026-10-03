@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/interfaces/auditor.py`.
+
+> **Essential Process**:
+> Auditor Interface defining the abstract contract for all vault auditing/validation tasks.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/cmd/config-tool/main.go`.
+
+> **Essential Process**:
+> Fleet administrative utility for RSA-2048 keypair generation and plaintext token encryption into canonical ENC(...) format for configuration files.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

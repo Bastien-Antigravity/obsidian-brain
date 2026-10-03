@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp`.
+
+> **Essential Process**:
+> Core microservice-toolbox module: Serializer.hpp.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -18,6 +24,6 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|BinSerializer.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/JsonSerializer.hpp.md|JsonSerializer.hpp]] (imports)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|Serializer]] (class: belongs_to)
 <!-- SYNC:END -->

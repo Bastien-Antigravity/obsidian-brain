@@ -57,7 +57,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/base.js.md|update]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/base.js.md|w3_OpenClose]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/base.js.md|w3_close]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/base.js.md|w3_open]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/base.js.md|w3_open]] (function: belongs_to) — *Global aliases for HTML event handlers*
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|database-explorer.js]] (calls)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|database-explorer.js]] (same_package)
 <!-- SYNC:END -->

@@ -21,7 +21,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/factory/factory_test.go.md|factory_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/factory/factory_test.go.md|factory_test.go]] (same_package)
-- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: belongs_to) — *CreateLogEngine creates a new fully configured LogEngine instance.*
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (calls)

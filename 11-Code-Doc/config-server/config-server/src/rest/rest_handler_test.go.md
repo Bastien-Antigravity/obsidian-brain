@@ -9,13 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `config-server/src/rest/rest_handler_test.go`.
+
+> **Essential Process**:
+> Unit tests for the REST API handler, verifying routing, CORS headers, OpenMFE web asset serving, configuration mutations, and method rejection.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: calls)
+- [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
+- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: calls) — *Handler returns the REST API handler with route registration and CORS wrapping.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.DeleteConfig]] (method: defines_method)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetConfig]] (method: defines_method)
@@ -47,7 +53,7 @@ tags:
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Trade]] (method: defines_method)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Warning]] (method: defines_method)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
-- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls)
+- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)

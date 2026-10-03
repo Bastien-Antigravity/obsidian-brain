@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/transports/shm_client.go`.
+
+> **Essential Process**:
+> Implements client initialization and memory-mapping for shared memory (SHM) connections.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -24,5 +30,5 @@ tags:
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
-- [[safe-socket/safe-socket/src/transports/shm_client.go.md|ConnectShm]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/transports/shm_client.go.md|ConnectShm]] (function: belongs_to) — *If the file is smaller than TotalSize, it is grown.*
 <!-- SYNC:END -->

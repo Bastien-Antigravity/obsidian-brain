@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/facade/reliable_connection.go`.
+
+> **Essential Process**:
+> Implements a lightweight Reliable UDP (RUDP) framing layer over connectionless transports, providing sequencing, ACKs, retransmission, and duplicate packet deduplication.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

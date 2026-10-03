@@ -17,17 +17,20 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go`.
 
+> **Essential Process**:
+> Unit tests for notification sender implementations (Matrix, Discord, Telegram, Gmail). Validates optional configuration handling, seamless TAG fallback, and Logger integration.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/notifiers/discord.go.md|NewDiscordSender]] (function: calls)
+- [[notif-server/notif-server/src/notifiers/discord.go.md|NewDiscordSender]] (function: calls) — *unconfigured and returns (nil, nil) without failing.*
 - [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|NewGmailSender]] (function: calls)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|gmail.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetLogLevel]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetTag]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.SendMessage]] (method: calls)
-- [[notif-server/notif-server/src/notifiers/matrix.go.md|NewMatrixSender]] (function: calls)
+- [[notif-server/notif-server/src/notifiers/matrix.go.md|NewMatrixSender]] (function: calls) — *unconfigured and returns (nil, nil) without failing.*
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|matrix.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.AddMetadata]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: defines_method)
@@ -51,9 +54,9 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Stream]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Trade]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Warning]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/telegram.go.md|NewTelegramSender]] (function: calls)
+- [[notif-server/notif-server/src/notifiers/telegram.go.md|NewTelegramSender]] (function: calls) — *is considered unconfigured and returns (nil, nil) without failing.*
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (same_package)
-- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls)
+- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (calls)

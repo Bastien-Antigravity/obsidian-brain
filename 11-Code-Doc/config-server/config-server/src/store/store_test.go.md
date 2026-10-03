@@ -17,15 +17,18 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `config-server/src/store/store_test.go`.
 
+> **Essential Process**:
+> Unit tests verifying thread-safe Copy-On-Write (COW) semantics, atomic updates, rollback guarantees on modification failure, and concurrency safety of Store.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls)
-- [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls)
-- [[config-server/config-server/src/store/store.go.md|Store.GetSection]] (method: calls)
-- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls)
-- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls)
-- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls)
+- [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls) — *Helper to deep copy the map (used for COW updates)*
+- [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
+- [[config-server/config-server/src/store/store.go.md|Store.GetSection]] (method: calls) — *GetSection returns a copy of a specific section.*
+- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
+- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *remains untouched (Atomicity/Rollback).*
 - [[config-server/config-server/src/store/store.go.md|store.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

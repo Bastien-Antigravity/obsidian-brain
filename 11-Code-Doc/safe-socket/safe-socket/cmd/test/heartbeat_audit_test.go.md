@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/cmd/test/heartbeat_audit_test.go`.
+
+> **Essential Process**:
+> Integration audit verifying that background heartbeats keep idle connections alive across TCP, UDP, and SHM transports.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -19,5 +25,5 @@ tags:
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/cmd/test/heartbeat_audit_test.go.md|TestHeartbeatAudit]] (function: belongs_to)
+- [[safe-socket/safe-socket/cmd/test/heartbeat_audit_test.go.md|TestHeartbeatAudit]] (function: belongs_to) — *TestHeartbeatAudit verifies that heartbeats prevent idle timeouts across all transports.*
 <!-- SYNC:END -->

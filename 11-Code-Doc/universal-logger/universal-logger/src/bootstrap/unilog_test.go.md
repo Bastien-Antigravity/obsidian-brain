@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|Init]] (function: calls)
+- [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|Init]] (function: calls) — *existingConfig: OPTIONAL. If provided, the logger will use this configuration instance instead of creating a new one.*
 - [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|unilog.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

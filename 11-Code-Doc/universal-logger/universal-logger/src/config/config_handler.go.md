@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.GetConfig]] (method: defines_method)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.OnConfigUpdate]] (method: defines_method)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.SetConfig]] (method: defines_method)
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.GetConfig]] (method: defines_method) — *Get returns a configuration value for a given section and key.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.OnConfigUpdate]] (method: defines_method) — *OnConfigUpdate registers a callback for configuration updates.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.SetConfig]] (method: defines_method) — *Subsystems monitoring updates via OnConfigUpdate will be notified.*
 
 ### 🔌 Consumers (Inbound)
 - [[universal-logger/universal-logger/cmd/universal-logger/main.go.md|main.go]] (calls)
@@ -24,10 +24,10 @@ tags:
 - [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|unilog.go]] (imports)
 - [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|config.go]] (calls)
 - [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.GetConfig]] (method: belongs_to)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.OnConfigUpdate]] (method: belongs_to)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.SetConfig]] (method: belongs_to)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig]] (struct: belongs_to)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig]] (struct: defines_method)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|NewDistributedConfig]] (function: belongs_to)
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.GetConfig]] (method: belongs_to) — *Get returns a configuration value for a given section and key.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.OnConfigUpdate]] (method: belongs_to) — *OnConfigUpdate registers a callback for configuration updates.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.SetConfig]] (method: belongs_to) — *Subsystems monitoring updates via OnConfigUpdate will be notified.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig]] (struct: belongs_to) — *OnConfigUpdate registers a callback for configuration updates.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig]] (struct: defines_method) — *OnConfigUpdate registers a callback for configuration updates.*
+- [[universal-logger/universal-logger/src/config/config_handler.go.md|NewDistributedConfig]] (function: belongs_to) — *NewDistributedConfig initializes a new configuration service.*
 <!-- SYNC:END -->

@@ -28,10 +28,10 @@ Automatically generated mirror for `docker-deployment/scripts/fleet_guard/git_ve
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|CANONICAL_BRANCH]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|DEFAULT_GITHUB_ORG]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|WORKSPACE_REPOSITORIES]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|audit_all_repositories]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|audit_all_repositories]] (function: belongs_to) — *Audit all repositories defined for the specified deployment mode.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|audit_repository]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|clone_missing_repositories]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|load_mode_repositories]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|clone_missing_repositories]] (function: belongs_to) — *Clone missing repositories from GitHub into workspace root.*
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/git_verifier.py.md|load_mode_repositories]] (function: belongs_to) — *Load ecosystem repository manifest for the targeted execution mode.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

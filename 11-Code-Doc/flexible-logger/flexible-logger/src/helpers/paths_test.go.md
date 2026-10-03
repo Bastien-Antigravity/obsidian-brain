@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: calls)
+- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: calls) — *GetDefaultLogPath returns the default log path using the executable name.*
 - [[flexible-logger/flexible-logger/src/helpers/paths.go.md|paths.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

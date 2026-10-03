@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/developer.py`.
+
+> **Essential Process**:
+> Lead Developer agent daemon specialized in reading/writing source files, compiling code, and implementing logic changes.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

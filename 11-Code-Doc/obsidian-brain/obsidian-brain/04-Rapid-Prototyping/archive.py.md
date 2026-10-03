@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/archive.py`.
+
+> **Essential Process**:
+> Bootstrap entrypoint wrapper for archive.py. Re-executes under virtual environment and delegates command execution to src/archive.py.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

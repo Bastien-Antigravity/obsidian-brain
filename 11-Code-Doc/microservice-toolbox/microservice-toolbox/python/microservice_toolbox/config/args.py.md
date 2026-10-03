@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/config/args.py`.
+
+> **Essential Process**:
+> Parses command-line arguments and environment variables for microservice initialization. Provides a standardized set of CLI flags (name, host, port, profile, etc.) used across the fleet.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

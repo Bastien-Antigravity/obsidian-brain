@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `universal-logger/unilog/python/unilog/__init__.py`.
+
+> **Essential Process**:
+> Package initialization for the unilog Python library, exposing primary classes and enumerations for external consumer import.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

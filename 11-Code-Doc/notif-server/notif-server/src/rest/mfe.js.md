@@ -56,5 +56,5 @@ tags:
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.renderSkeleton]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE]] (class: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE]] (class: defines_method)
-- [[notif-server/notif-server/src/rest/mfe.js.md|ggerEdit = ]] (function: belongs_to)
+- [[notif-server/notif-server/src/rest/mfe.js.md|ggerEdit = ]] (function: belongs_to) — *Bind inline edit clicks and pencil buttons*
 <!-- SYNC:END -->

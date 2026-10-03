@@ -21,7 +21,7 @@ Automatically generated mirror for `universal-logger/src/utils/logger_utils_test
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[universal-logger/universal-logger/src/interfaces/models.go.md|models.go]] (imports)
-- [[universal-logger/universal-logger/src/utils/logger_utils.go.md|LogWithMetadata]] (function: calls)
+- [[universal-logger/universal-logger/src/utils/logger_utils.go.md|LogWithMetadata]] (function: calls) — *It delegates directly to LogWithCaller on the Logger interface for maximum performance.*
 - [[universal-logger/universal-logger/src/utils/logger_utils.go.md|logger_utils.go]] (same_package)
 - [[universal-logger/universal-logger/src/utils/logger_utils_test.go.md|mockLoggerWithCaller.AddMetadata]] (method: defines_method)
 - [[universal-logger/universal-logger/src/utils/logger_utils_test.go.md|mockLoggerWithCaller.Close]] (method: defines_method)

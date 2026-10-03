@@ -11,6 +11,9 @@ last_sync: 2026-10-01T01:10:02.656316
 ## 📝 Description
 Automatically generated mirror for `notif-server/src/core/test_logger_test.go`.
 
+> **Essential Process**:
+> Test logger fixture implementing log_interfaces.Logger for core unit tests. Isolated to test builds (_test.go).
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)

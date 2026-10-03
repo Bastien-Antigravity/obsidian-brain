@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/agents/fleetcommander.py`.
+
+> **Essential Process**:
+> FleetCommander agent daemon specialized in command dispatch, system monitoring, and triggering cross-language microservice routines.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

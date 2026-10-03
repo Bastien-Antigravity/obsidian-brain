@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py`.
+
+> **Essential Process**:
+> Monitors the Obsidian Vault recursively for pending tasks and automates the handover to specific AI Agent personas.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -22,9 +28,9 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|OBSIDIAN_DIR]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|ROLE_MAP]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|ROLE_PROMPT_SOURCES]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|SEMANTIC_KEYWORDS]] (constant: belongs_to)
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|ROLE_MAP]] (constant: belongs_to) — *Role to Prompt Filename Mapping*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|ROLE_PROMPT_SOURCES]] (constant: belongs_to) — *Source of Truth Precedence*
+- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|SEMANTIC_KEYWORDS]] (constant: belongs_to) — *Semantic Keywords for Fallback Scoring*
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|get_role_prompt_path]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|is_ignored_by_firewall]] (function: belongs_to)

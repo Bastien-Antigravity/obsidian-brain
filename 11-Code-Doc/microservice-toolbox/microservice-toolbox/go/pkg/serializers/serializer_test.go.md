@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/go/pkg/serializers/serializer_test.go`.
+
+> **Essential Process**:
+> Defines the unified serialization interface for binary and text encoding formats.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

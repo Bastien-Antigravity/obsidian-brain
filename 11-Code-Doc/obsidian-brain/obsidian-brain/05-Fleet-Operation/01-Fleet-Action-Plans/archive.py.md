@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/05-Fleet-Operation/01-Fleet-Action-Plans/archive.py`.
+
+> **Essential Process**:
+> Audits the Fleet Action Plans folder and archives completed or historical plans into the 'plans/' folder (with context firewall ignore rules).
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

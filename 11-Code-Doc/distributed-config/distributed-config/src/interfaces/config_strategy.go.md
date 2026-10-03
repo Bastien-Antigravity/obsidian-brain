@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `distributed-config/src/interfaces/config_strategy.go`.
+
+> **Essential Process**:
+> Defines the ConfigStrategy lifecycle contract governing profile behaviors across standalone, test, staging, and production environments.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

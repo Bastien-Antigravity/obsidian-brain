@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp`.
+
+> **Essential Process**:
+> Core microservice-toolbox module: Logger.hpp.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -41,7 +47,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|EnsureSafeLogger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|Logger]] (class: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|MICROSERVICE_TOOLBOX_UTILS_LOGGER_HPP]] (macro: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|MICROSERVICE_TOOLBOX_UTILS_LOGGER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_UTILS_LOGGER_HPP*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|NoOpLogger.AddMetadata]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|NoOpLogger.Critical]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/utils/Logger.hpp.md|NoOpLogger.Debug]] (method: belongs_to)

@@ -21,7 +21,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|onerror]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|onopen]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls)
+- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
 
 ### 🔌 Consumers (Inbound)

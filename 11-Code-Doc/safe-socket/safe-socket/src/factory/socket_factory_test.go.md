@@ -9,12 +9,18 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `safe-socket/src/factory/socket_factory_test.go`.
+
+> **Essential Process**:
+> Unit tests verifying factory configuration resolution and timeout handling.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|CreateWithConfig]] (function: calls)
-- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|Create]] (function: calls)
+- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|CreateWithConfig]] (function: calls) — *- autoConnect: if true, automatically calls Open() / Listen()*
+- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|Create]] (function: calls) — *An interfaces.Socket which can be used to Send/Receive (Client) or Accept (Server).*
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (same_package)
 - [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
 

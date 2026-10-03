@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `microservice-toolbox/go/pkg/serializers/providers.go`.
+
+> **Essential Process**:
+> Concrete serializer implementations for JSON and MsgPack formats.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
