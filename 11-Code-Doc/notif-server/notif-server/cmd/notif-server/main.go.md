@@ -19,15 +19,7 @@ Automatically generated mirror for `notif-server/cmd/notif-server/main.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
-- [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
-- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
-- [[notif-server/notif-server/src/rest/mfe.js.md|mfe.js]] (imports)
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts an HTTP server for the REST API on the specified address (e.g. "127.0.0.1:1029" or ":1029").*
-- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)
-- [[notif-server/notif-server/src/telegram/manager.go.md|manager.go]] (imports)
+- None detected
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main]] (function: belongs_to)
