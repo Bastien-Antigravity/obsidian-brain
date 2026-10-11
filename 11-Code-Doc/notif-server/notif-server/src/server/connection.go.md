@@ -19,10 +19,14 @@ Automatically generated mirror for `notif-server/src/server/connection.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
+- [[notif-server/notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: calls) — *This helper is exposed for servers or other components using this library.*
 - [[notif-server/notif-server/src/server/connection.go.md|Server.handleConnection]] (method: defines_method)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Close]] (method: calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
+- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

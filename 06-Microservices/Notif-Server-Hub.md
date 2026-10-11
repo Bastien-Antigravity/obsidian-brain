@@ -16,6 +16,9 @@ tags:
 ## 🔗 Knowledge Map
 - **Code Repository**: [📂 notif-server](https://github.com/Bastien-Antigravity/notif-server)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/notif-server/)
+- **CGO Bridge (`libnotif`)**: `cmd/libnotif/main.go` -> `notif/libnotif/` (`libnotif.dylib` / `.so` / `.h`)
+- **Polyglot SDK Bindings**: Python (`notif/python/`), Rust (`notif/rust/`), C++ (`notif/cpp/`), VBA (`notif/vba/`)
+- **Microservice Facades**: `microservice-toolbox` notification packages across Go, Python, Rust, C++, and VBA
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]

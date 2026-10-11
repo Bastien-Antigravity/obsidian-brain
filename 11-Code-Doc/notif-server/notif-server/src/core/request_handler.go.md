@@ -46,5 +46,6 @@ Automatically generated mirror for `notif-server/src/core/request_handler.go`.
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler]] (struct: belongs_to)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler]] (struct: defines_method)
+- [[notif-server/notif-server/src/server/connection.go.md|connection.go]] (calls)
 - [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (calls)
 <!-- SYNC:END -->

@@ -85,6 +85,28 @@ int main(int argc, char** argv) {
 ## 4. The Docker Guard
 All toolbox implementations MUST implement the **Docker Guard**. If `DOCKER_ENV=true` or `.dockerenv` is detected, CLI overrides for `--host` and `--port` are ignored to prevent breaking internal network-aware resolution.
 
+## 5. L1 Resilience, Connectivity & Reconnection Standard
+
+All microservices communicating with sibling daemons or central ecosystem infrastructure MUST implement the **Ecosystem L1 Retry and Resilience Contract** provided by `microservice-toolbox`:
+
+### 5.1 Connection Manager (`conn_manager`)
+- **Critical Strategy (`NewCriticalStrategy(logger)`)**:
+  - `MaxRetries: -1` (Infinite Retries): Reconnection loops run indefinitely until the downstream dependency recovers. **This is a design requirement, not a bug.**
+  - `BaseDelay: 200ms`, `MaxDelay: 10000ms`, `ConnectTimeout: 5000ms`, `Backoff: 2.0`, `Jitter: 0.2`.
+  - **Asynchronous Mode (`ModeNonBlocking`)**: Startup sequences MUST NEVER block indefinitely on downstream dependencies. Establish connections asynchronously so the daemon remains healthy and responsive.
+- **Target Transports**:
+  - `conn_manager.EstablishConnection`: Wraps `safe-socket` framed TCP (`safesocket.Create`).
+  - gRPC Streams: Integrated into `microservice-toolbox/go/pkg/teleremote` (`TeleClient.connectionManager`) with automatic infinite reconnect loop.
+  - NATS / JetStream: Managed via `microservice-toolbox/go/pkg/messaging` (`Connect`) with automated reconnect handlers.
+
+### 5.2 Dynamic Capability Resolution & Docker Guard (`connectivity.Resolver`)
+- **No Hardcoded Addresses**: Always resolve sibling endpoints dynamically using toolbox capability accessors (e.g. `appConfig.GetListenAddr("web_interface")`, `appConfig.GetGRPCListenAddr("tele_remote")`).
+- **Docker Guard Suppression**: `connectivity.Resolver` automatically translates bind addresses to `0.0.0.0` in container environments (`DOCKER_ENV=true`) while preserving native loopback/host bindings in local environments.
+
+### 5.3 Lifecycle Supervision (`lifecycle.Manager`)
+- **LIFO Graceful Shutdown**: Traps OS signals (`SIGINT`, `SIGTERM`) and context cancellations via `lm.Wait(ctx)`.
+- **Registered Cleanup Hooks**: Sockets, gRPC streams, background workers, and persistence stores must be cleanly flushed in reverse order of initialization.
+
 ---
-*Last Updated: 2026-05-08*
-*See also: [[03-Tech-Stack/02-Project-Architecture/Global-Architecture-Rules|Architecture-Patterns]], [[Web-Interface-Integration-Protocol]]*
+*Last Updated: 2026-10-11*
+*See also: [[03-Tech-Stack/02-Project-Architecture/Global-Architecture-Rules|Architecture-Patterns]], [[Web-Interface-Integration-Protocol]], [[OpenMFE-Integration-Protocol]]*

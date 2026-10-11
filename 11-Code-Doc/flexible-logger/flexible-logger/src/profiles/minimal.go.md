@@ -22,7 +22,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|local_notifier.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
-- [[flexible-logger/flexible-logger/src/sink/console.go.md|console.go]] (imports)
+- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/profiles/minimal.go.md|NewMinimalLogger]] (function: belongs_to) — *- Console output (Async)*

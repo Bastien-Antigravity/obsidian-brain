@@ -20,13 +20,17 @@ Automatically generated mirror for `notif-server/src/core/notifier_test.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker pool.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: calls) — *SendRaw sends a raw byte message (serialized).*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.SendMessage]] (method: defines_method)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender.GetLogLevel]] (method: defines_method)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender.GetTag]] (method: defines_method)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender.SendMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.SendMessage]] (method: defines_method)
@@ -39,6 +43,7 @@ Automatically generated mirror for `notif-server/src/core/notifier_test.go`.
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|TestFallbackToTelegramOnSenderFailure]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|TestImplicitRouting]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|TestNotifierMessageFlow]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|TestRawMessageConsumption]] (function: belongs_to)
@@ -48,6 +53,11 @@ Automatically generated mirror for `notif-server/src/core/notifier_test.go`.
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender.SendMessage]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender]] (struct: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|blockingMockSender]] (struct: defines_method)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender.GetLogLevel]] (method: belongs_to)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender.GetTag]] (method: belongs_to)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender.SendMessage]] (method: belongs_to)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender]] (struct: belongs_to)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|failingMockSender]] (struct: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|init]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetLogLevel]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetTag]] (method: belongs_to)

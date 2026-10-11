@@ -28,7 +28,7 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer launches HTTP REST API server*
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance*
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: calls) — *RegisterServices initializes the topology registry slice of managed services*
+- [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|ValidateRegistry]] (function: calls) — *ValidateRegistry checks for missing dependencies and dependency cycles*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogError]] (function: calls) — *LogError writes a formatted error message with watchdog prefix to stderr/logger*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: calls) — *LogInfo writes a formatted message with watchdog prefix to stdout/logger*

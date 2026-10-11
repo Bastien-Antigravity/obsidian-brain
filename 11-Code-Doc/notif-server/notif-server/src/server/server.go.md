@@ -37,6 +37,7 @@ Automatically generated mirror for `notif-server/src/server/server.go`.
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (calls)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (imports)
+- [[notif-server/notif-server/cmd/notif-server/main_test.go.md|main_test.go]] (calls)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (imports)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)

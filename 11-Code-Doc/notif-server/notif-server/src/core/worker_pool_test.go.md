@@ -21,7 +21,7 @@ Automatically generated mirror for `notif-server/src/core/worker_pool_test.go`.
 ### 📦 Dependencies (Outbound)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker pool.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker.*
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|counterMockSender.GetLogLevel]] (method: defines_method)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|counterMockSender.GetTag]] (method: defines_method)

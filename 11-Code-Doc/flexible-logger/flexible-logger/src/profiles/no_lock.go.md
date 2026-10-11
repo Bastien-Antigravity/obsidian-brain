@@ -30,8 +30,9 @@ tags:
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|text_serializer.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
-- [[flexible-logger/flexible-logger/src/sink/console.go.md|console.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/multi.go.md|NewMultiSink]] (function: calls)
+- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|NewRollingFileWriter]] (function: calls) — *NewRollingFileWriter initializes a new RollingFileWriter.*
+- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/writer.go.md|NewWriterSink]] (function: calls)
 
 ### 🔌 Consumers (Inbound)

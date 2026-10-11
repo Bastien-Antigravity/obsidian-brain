@@ -128,55 +128,109 @@ Because the Web Component executes in the client's browser (loaded under the `we
     )
     ```
 
-#### 3. Automatic Non-Blocking Boot Registration
-During initial bootstrap (Phase 5 of service initialization), the microservice must fire a non-blocking POST request to the MFE registry. It must run on a background thread/goroutine to prevent startup locks if the `web-interface` is offline.
-*   **Go Auto-Registration Hook**:
+#### 3. Automatic Non-Blocking Boot Registration (Ecosystem L1 Retry Standard)
+During initial bootstrap (Phase 5 of service initialization), the microservice must fire a non-blocking background registration loop to the MFE registry. It must run on a background thread/goroutine (`ModeNonBlocking`) to prevent startup locks if the `web-interface` is offline or starts later in the orchestration sequence.
+
+> [!IMPORTANT]
+> **Infinite Retries (`MaxRetries: -1`) Contract**:
+> Microservices must NEVER give up registration after a fixed attempt limit (e.g. 5 or 15 attempts). In distributed orchestration and container startup, `web-interface` may boot after dependent microservices or restart during rolling updates. Reconnection loops run indefinitely until the dependency recovers (`MaxRetries: -1`). Dynamic address resolution (`appConfig.GetListenAddr("web_interface")`) MUST be used inside the loop to support runtime discovery and Docker Guard suppression.
+
+*   **Go Auto-Registration Hook (Authoritative Standard)**:
     ```go
+    // Register OpenMFE with web-interface dynamically (non-blocking, infinite self-healing retry)
     go func() {
-        // Fetch addresses from toolbox config
-        regUrl := "http://localhost:5000/api/v1/register" 
-        mfeUrl := "http://localhost:3308/static/mfe.js"
-        
+        mfeUrl := fmt.Sprintf("http://%s/static/js/mfe-loader.js", restAddr)
         payload := fmt.Sprintf(`{
             "name": "config-server",
             "tag": "config-server-mfe",
             "url": "%s",
             "navTitle": "⚙️ Config Server"
         }`, mfeUrl)
-        
-        // Retry loop to handle boot staging
-        for i := 0; i < 5; i++ {
-            resp, err := http.Post(regUrl, "application/json", strings.NewReader(payload))
-            if err == nil {
-                resp.Body.Close()
-                return
+
+        client := &http.Client{Timeout: 3 * time.Second}
+        backoff := 2 * time.Second
+        maxBackoff := 15 * time.Second
+
+        for {
+            webAddr, err := appConfig.GetListenAddr("web_interface")
+            if err == nil && webAddr != "" {
+                regUrl := fmt.Sprintf("http://%s/api/v1/register", webAddr)
+                resp, postErr := client.Post(regUrl, "application/json", strings.NewReader(payload))
+                if postErr == nil {
+                    resp.Body.Close()
+                    if resp.StatusCode >= 200 && resp.StatusCode < 300 {
+                        appLogger.Info("Successfully registered config-server OpenMFE with web-interface at %s", regUrl)
+                        return
+                    }
+                    appLogger.Warning("OpenMFE registration attempt failed with status %s; retrying in %v...", resp.Status, backoff)
+                } else {
+                    appLogger.Warning("OpenMFE registration attempt failed (%v); retrying in %v...", postErr, backoff)
+                }
+            } else {
+                appLogger.Warning("web_interface capability address unresolvable (%v); retrying in %v...", err, backoff)
             }
-            time.Sleep(3 * time.Second)
+
+            time.Sleep(backoff)
+            backoff = time.Duration(float64(backoff) * 1.5)
+            if backoff > maxBackoff {
+                backoff = maxBackoff
+            }
         }
     }()
     ```
-*   **Python Auto-Registration Hook**:
+
+*   **Python Auto-Registration Hook (Authoritative Standard)**:
     ```python
+    import json
     import threading
-    import requests
     import time
-    
-    def register_mfe():
+    import urllib.request
+
+    def register_mfe_with_web_interface(config, logger, my_ip, my_port):
+        time.sleep(2)  # Allow local server to bind
+        
+        web_cap = config.data.get("capabilities", {}).get("web_interface") if config else None
+        if not web_cap or not isinstance(web_cap, dict):
+            logger.error("OpenMFE registration aborted: Missing 'capabilities.web_interface'")
+            return
+
+        web_ip = str(web_cap.get("ip", "127.0.0.1"))
+        web_port = int(web_cap.get("port", 5000))
+        reg_url = f"http://{web_ip}:{web_port}/api/v1/register"
+        mfe_url = f"http://{my_ip}:{my_port}/static/mfe.js"
+
         payload = {
             "name": "market-observer",
             "tag": "market-observer-mfe",
-            "url": "http://localhost:8081/static/mfe.js",
+            "url": mfe_url,
             "navTitle": "📈 Market Observer"
         }
-        for _ in range(5):
-            try:
-                r = requests.post("http://localhost:5000/api/v1/register", json=payload, timeout=3)
-                if r.status_code == 201:
-                    break
-            except Exception:
-                time.sleep(3)
+        req_data = json.dumps(payload).encode("utf-8")
+
+        def do_register():
+            logger.info(f"OpenMFE: Starting auto-registration loop to {reg_url}")
+            backoff = 2.0
+            max_backoff = 15.0
+            while True:
+                try:
+                    req = urllib.request.Request(
+                        reg_url, 
+                        data=req_data, 
+                        headers={"Content-Type": "application/json"},
+                        method="POST"
+                    )
+                    with urllib.request.urlopen(req, timeout=3) as resp:
+                        if 200 <= resp.status < 300:
+                            logger.info(f"OpenMFE: Successfully registered MFE at {reg_url}")
+                            return
+                        logger.warning(f"OpenMFE: Registration failed with status {resp.status}; retrying in {backoff:.1f}s...")
+                except Exception as e:
+                    logger.warning(f"OpenMFE: Registration attempt failed ({e}); retrying in {backoff:.1f}s...")
                 
-    threading.Thread(target=register_mfe, daemon=True).start()
+                time.sleep(backoff)
+                backoff = min(backoff * 1.5, max_backoff)
+
+        threading.Thread(target=do_register, daemon=True).start()
     ```
 
 ### 2.3 The Web Component Standard
