@@ -19,6 +19,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|notifServiceClient.SendNotification]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[notif-server/notif-server/cmd/libnotif/main.go.md|main.go]] (calls)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|NewNotifServiceClient]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|NotifServiceClient]] (interface: belongs_to) — *For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/...*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|NotifServiceServer]] (interface: belongs_to) — *for forward compatibility.*

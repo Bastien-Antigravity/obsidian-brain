@@ -23,7 +23,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/mod
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

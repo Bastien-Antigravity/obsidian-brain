@@ -24,7 +24,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|ManagedConnection.Send]] (method: calls) — *Send data, reconnecting if necessary*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.new]] (method: defines_method)
@@ -74,7 +73,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.update_actions]] (method: belongs_to) — *Replaces all current actions and handlers.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/mod.rs.md|mod.rs]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -33,7 +33,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|download_and_install_nats]] (function: calls)
-- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|find_existing_nats]] (function: calls) — *Check system PATH, workspace watchdog-agent/nats, and standard user paths for nats-server.*
+- [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|find_existing_nats]] (function: calls) — *Check system PATH and workspace directories for nats-server.*
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|setup_nats.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|setup_nats.py]] (same_package)
 

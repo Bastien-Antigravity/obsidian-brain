@@ -30,10 +30,12 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.are_config(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.crypt_secret(&]] (method: defines_method) — *Uses the hardened distributed-config engine for cross-language consistency.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ep_merge(d]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.fault()]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.lidate_unique_ports(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.marshal_local<T]] (method: defines_method) — *Parity with Go's UnmarshalLocal.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.mmon(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.nc_from_bridge(&]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.om_value(d]] (method: defines_method) — *Creates an AppConfig wrapping explicit yaml value data.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.op(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_cli_overrides(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_file_override(&]] (method: defines_method)
@@ -86,10 +88,12 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.are_config(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.crypt_secret(&]] (method: belongs_to) — *Uses the hardened distributed-config engine for cross-language consistency.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ep_merge(d]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.fault()]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.lidate_unique_ports(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.marshal_local<T]] (method: belongs_to) — *Parity with Go's UnmarshalLocal.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.mmon(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.nc_from_bridge(&]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.om_value(d]] (method: belongs_to) — *Creates an AppConfig wrapping explicit yaml value data.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.op(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_cli_overrides(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_file_override(&]] (method: belongs_to)
@@ -115,4 +119,5 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|t_live_cb()]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|t_reg_cb()]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 <!-- SYNC:END -->

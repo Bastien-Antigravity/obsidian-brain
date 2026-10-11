@@ -28,6 +28,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/mod.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/lib.rs.md|lib.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|manager.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/messaging/connector.rs.md|connector.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
 <!-- SYNC:END -->

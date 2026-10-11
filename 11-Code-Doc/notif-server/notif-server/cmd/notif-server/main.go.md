@@ -30,7 +30,7 @@ Automatically generated mirror for `notif-server/cmd/notif-server/main.go`.
 - [[notif-server/notif-server/src/telegram/manager.go.md|manager.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|gramToken(baseURL, ]] (function: belongs_to) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
+- [[notif-server/notif-server/cmd/notif-server/main.go.md|Token(baseURL, toke]] (function: belongs_to) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|ifyTelegramConfig(ap]] (function: belongs_to) — *Fails fast if the token is missing, cannot be decrypted, or fails Telegram API verification.*
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -38,4 +38,5 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/network/grpc_ser
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|NewGRPCServer]] (function: belongs_to) — *NewGRPCServer creates a new gRPC server wrapper with default logging.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server_test.go.md|grpc_server_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server_test.go.md|grpc_server_test.go]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/notification/client_test.go.md|client_test.go]] (calls)
 <!-- SYNC:END -->

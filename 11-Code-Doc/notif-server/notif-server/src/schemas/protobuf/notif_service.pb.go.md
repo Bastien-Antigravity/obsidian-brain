@@ -30,6 +30,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.String]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[notif-server/notif-server/cmd/libnotif/main.go.md|main.go]] (imports)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (imports)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use NotifRequest.ProtoReflect.Descriptor instead.*
@@ -52,9 +53,9 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse]] (struct: defines_method)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_proto_notif_service_proto_init]] (function: belongs_to)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_proto_notif_service_proto_rawDescGZIP]] (function: belongs_to)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_proto_notif_service_proto_rawDesc]] (constant: belongs_to)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_notif_service_proto_init]] (function: belongs_to)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_notif_service_proto_rawDescGZIP]] (function: belongs_to)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_notif_service_proto_rawDesc]] (constant: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|init]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|x]] (struct: belongs_to)
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)

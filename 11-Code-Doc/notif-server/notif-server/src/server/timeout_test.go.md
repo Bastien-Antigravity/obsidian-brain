@@ -19,6 +19,7 @@ Automatically generated mirror for `notif-server/src/server/timeout_test.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[notif-server/notif-server/notif/cpp/NotificationClient.hpp.md|NotificationClient.Send]] (method: calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls)

@@ -19,16 +19,16 @@ Automatically generated mirror for `notif-server/src/core/notifier.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: defines_method)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: defines_method) — *GetActiveNotifiers returns information about all currently active notification senders.*
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.InitDefaultProviders]] (method: defines_method) — *if no dynamic providers have been registered for them.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.LoadNotifSender]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendNotification]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: defines_method)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.addLevelTagLocked]] (method: defines_method) — *Reload compares the new configuration with the current state and hot-swaps*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.LoadNotifSender]] (method: defines_method) — *LoadNotifSender is a wrapper around Reload for backward compatibility.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: defines_method) — *Notify sends a structured notification message.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: defines_method) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: defines_method) — *senders that have changed or were added/removed.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendNotification]] (method: defines_method) — *SendNotification implements proto_msg.NotifServiceServer (gRPC)*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: defines_method) — *SendRaw deserializes a binary Cap'n Proto notification frame and queues it.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: defines_method) — *Stop shuts down the notifier and all active workers.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.addLevelTagLocked]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.startSenderLocked]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.startSenderWorker]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.stopSenderLocked]] (method: defines_method)
@@ -59,22 +59,22 @@ Automatically generated mirror for `notif-server/src/core/notifier.go`.
 - [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (calls)
 - [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: belongs_to) — *NewNotifier creates a new instance of the notification service.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: belongs_to)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: belongs_to) — *GetActiveNotifiers returns information about all currently active notification senders.*
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.InitDefaultProviders]] (method: belongs_to) — *if no dynamic providers have been registered for them.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.LoadNotifSender]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendNotification]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.addLevelTagLocked]] (method: belongs_to) — *Reload compares the new configuration with the current state and hot-swaps*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.LoadNotifSender]] (method: belongs_to) — *LoadNotifSender is a wrapper around Reload for backward compatibility.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: belongs_to) — *Notify sends a structured notification message.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: belongs_to) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: belongs_to) — *senders that have changed or were added/removed.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendNotification]] (method: belongs_to) — *SendNotification implements proto_msg.NotifServiceServer (gRPC)*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.SendRaw]] (method: belongs_to) — *SendRaw deserializes a binary Cap'n Proto notification frame and queues it.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: belongs_to) — *Stop shuts down the notifier and all active workers.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.addLevelTagLocked]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.startSenderLocked]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.startSenderWorker]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.stopSenderLocked]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|NotifierStatus]] (struct: belongs_to) — *NotifierStatus contains basic info about an active provider*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: belongs_to) — *Notifier is the concrete implementation of the notification service.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: defines_method) — *Notifier is the concrete implementation of the notification service.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: belongs_to)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|worker_pool_test.go]] (calls)

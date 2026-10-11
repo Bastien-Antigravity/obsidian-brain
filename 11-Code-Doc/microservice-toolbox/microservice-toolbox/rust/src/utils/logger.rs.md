@@ -20,7 +20,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|ManagedConnection.Send]] (method: calls) — *Send data, reconnecting if necessary*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|UniLog]] (class: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.add_metadata]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.critical]] (method: defines_method)
@@ -61,6 +60,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|manager.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/messaging/connector.rs.md|connector.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/messaging/connector.rs.md|connector.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|helpers.rs]] (calls)

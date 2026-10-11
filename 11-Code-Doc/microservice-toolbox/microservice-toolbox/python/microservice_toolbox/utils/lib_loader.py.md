@@ -30,6 +30,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (imports)
@@ -44,6 +46,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_try_autobuild_library]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to) — *Returns the OS-specific dynamic library file extension.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libnotif]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|resolve_library_path]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -89,6 +89,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/logger/logger.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/connector.go.md|connector.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|grpc_server.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|grpc_server.go]] (imports)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/notification/client.go.md|client.go]] (calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/notification/client.go.md|client.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|client.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|client.go]] (imports)
 <!-- SYNC:END -->
