@@ -19,17 +19,17 @@ It is designed as a **Multi-Mode Engine** to balance between rigorous infrastruc
 
 ## 🕹️ Command & Control
 This Brain is an **Operational Engine**. Use the following scripts to govern the AI Squad:
-- **`python3 08-Base-Scripts/start_squad.py`**: Launches the AI client with an interactive **Mode Selector** (defaults to the `gemini` CLI).
-- **`pip install -r requirements.txt`**: Installs vault-level launcher/client dependencies. `start_squad.py` checks and installs missing packages automatically.
-- **`python3 08-Base-Scripts/switch_mode.py`**: Quick-switch between **Spec-First**, **Labs**, and **Fleet** protocols.
+- **`python3 08-Squad-Agent/main.py squad-agent`**: Launches the AI client with an interactive **Mode Selector** (defaults to the `gemini` CLI).
+- **`pip install -r requirements.txt`**: Installs vault-level launcher/client dependencies. `squad-agent` checks and installs missing packages automatically.
+- **`python3 08-Squad-Agent/switch_mode.py`**: Quick-switch between **Spec-First**, **Labs**, and **Fleet** protocols.
 - **Configuring the Active Client**:
   * **Via Frontmatter**: Define `active_client: antigravity` (or `gemini`/`claude`/`codex`/`deepseek`) inside ****'s YAML header.
   * **Via Environment Variable**: Override or boot directly using:
     ```bash
-    ACTIVE_CLIENT=antigravity python3 08-Base-Scripts/start_squad.py
+    ACTIVE_CLIENT=antigravity python3 08-Squad-Agent/main.py squad-agent
     ```
   * **Compatibility**: `ACTIVE_CLI` still works as an alias for older commands.
-  * **Fallback System**: If your chosen CLI is not available, the squad launcher automatically sweeps through fallbacks (`antigravity`, `gemini`, `claude`, `codex`, `deepseek`) to launch the first available engine. DeepSeek is API-backed through `08-Base-Scripts/clients/API/deepseek_client.py` and requires `DEEPSEEK_API_KEY`.
+  * **Fallback System**: If your chosen CLI is not available, the squad launcher automatically sweeps through fallbacks (`antigravity`, `gemini`, `claude`, `codex`, `deepseek`) to launch the first available engine. DeepSeek is API-backed through `08-Squad-Agent/clients/API/deepseek_client.py` and requires `DEEPSEEK_API_KEY`.
   * **DeepSeek API Setup**: Prefer shell environment variables:
     ```bash
     export DEEPSEEK_API_KEY="sk-..."
@@ -112,7 +112,7 @@ Best for enforcing repo-wide "Rules of Engagement."
 
 ### 2. 🧠 The AI Squad (Custom Subagent Prompts)
 Best for delegating isolated, specialized tasks to an expert persona.
-- **Usage**: Use the configured AI client delegation system (via `08-Base-Scripts/start_squad.py`).
+- **Usage**: Use the configured AI client delegation system (via `python3 08-Squad-Agent/main.py squad-agent`).
 - **Examples**: *"Ask QA to review the tests"* or *"Ask the Architect to check the blueprint."*
 - **Impact**: Uses dedicated subagent definitions in `.gemini/agents/`, `.claude/agents/`, `.codex/agents/`, or `.deepseek/agents/` with built-in drift mitigation (SCAN).
 
@@ -125,7 +125,7 @@ Best for general brainstorming, repo exploration, or "Free-Form" work.
 ## 🤖 Assistant Initialization (MANDATORY)
 Regardless of how you interact with the AI, every session MUST be initialized correctly to maintain context reliability across your repositories.
 
-1. **Start the Engine**: Run `./08-Base-Scripts/start_squad.py` from the vault root.
+1. **Start the Engine**: Run `python3 08-Squad-Agent/main.py squad-agent` from the vault root.
 2. **Restore State**: At the start of every session, you MUST instruct the AI to read the **** file and restore the ****. 
 3. **Save State**: Before closing a session, ensure the AI has updated the **** with a summary of progress. This acts as our "Hard State" context block.
 

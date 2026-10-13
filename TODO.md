@@ -13,7 +13,7 @@ tags:
 
 ## 🏗️ Architecture & Refactoring
 - [x] Consolidate common BDD templates into a centralized `00-AI-Orchestration/Templates/` folder.
-- [x] **Persona Extractor — ENABLED**: Patched and enabled as a background process in `start_squad.py`.
+- [x] **Persona Extractor — ENABLED**: Patched and enabled as a background process in `squad-agent`.
 - [x] **Mode Guardrail**: Added a mandatory "Current Mode" check to the AI-Session-State handshake to ensure the previous mode is "parked."
 - [x] **Knowledge Compression Script**: Implemented an automated way to distill old session logs into fresh patterns to keep the context window clean.
 - [ ] **Ecosystem Logger Fallback & Strict Mode Evolution**:
@@ -24,7 +24,7 @@ tags:
 ## ✅ Completed
 - [x] Initial structure for `02-Business-BDD`. (Now `business-bdd-brain`)
 - [x] Creation of `03-Tech-Stack/06-Role-Wisdom/`. (Now in `tech-stack-brain`)
-- [x] Multi-Mode Switching Framework via `MODE-MANUAL.md` and `start_squad.py`.
+- [x] Multi-Mode Switching Framework via `MODE-MANUAL.md` and `squad-agent`.
 - [x] Fleet Operations Brain (`fleet-operation-brain`) for fleet-wide action logs.
 - [x] Labs Brain (`rapid-prototyping-brain`) for experimental/rapid-proto work.
 - [x] Updated `Daily-AI-Playbook.md` with mode-specific "Rules of Engagement."
@@ -32,4 +32,4 @@ tags:
 - [x] Submodule URL correction (`.gitmodules` → new repo names).
 - [x] Integrated Preflight Check system (`Preflight-Check.py`).
 - [x] Standardized Business Data Models (MarketEvent, OHLCV, Signal) and migrated business services.
-- [x] Repair start_squad.py & Workflow Governance (Mission COMPLETED).
+- [x] Repair squad-agent & Workflow Governance (Mission COMPLETED).

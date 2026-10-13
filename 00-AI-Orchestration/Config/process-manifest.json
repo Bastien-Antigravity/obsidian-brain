@@ -2,11 +2,11 @@
   "processes": [
     {
       "name": "Preflight",
-      "trigger_condition": "start_squad.py start",
+      "trigger_condition": "squad-agent start",
       "health_check_command": "Preflight-Check.py",
       "auto_repair_action": "Auto-run git submodule update, prompt mode sync",
       "alerting_mechanism": "Terminal output, abort block in Mode 3",
-      "associated_file": "08-Base-Scripts/src/auditing/preflight_check.py"
+      "associated_file": "08-Squad-Agent/src/auditing/preflight_check.py"
     },
     {
       "name": "Sentinel Audit",
@@ -14,15 +14,15 @@
       "health_check_command": "Brain-Health-Audit.py",
       "auto_repair_action": "Sovereignty YAML & link auto-fixer",
       "alerting_mechanism": "Terminal error report, blocking sign-off",
-      "associated_file": "08-Base-Scripts/src/auditing/brain_health_audit.py"
+      "associated_file": "08-Squad-Agent/src/auditing/brain_health_audit.py"
     },
     {
       "name": "Skill Compiler",
-      "trigger_condition": "start_squad.py & file watch",
+      "trigger_condition": "squad-agent & file watch",
       "health_check_command": "convert_agents.py check",
       "auto_repair_action": "Re-run convert_agents.py",
       "alerting_mechanism": "Auto-recompile log, terminal warning",
-      "associated_file": "08-Base-Scripts/src/fleet/convert_agents.py"
+      "associated_file": "08-Squad-Agent/src/fleet/convert_agents.py"
     },
     {
       "name": "RAG Indexer",
@@ -40,7 +40,7 @@
       "health_check_command": "Sovereignty quick-overview check",
       "auto_repair_action": "Scaffold missing quick-overview/ folder",
       "alerting_mechanism": "Audit failure report on sign-off",
-      "associated_file": "08-Base-Scripts/src/lib/sovereignty.py"
+      "associated_file": "08-Squad-Agent/src/lib/sovereignty.py"
     },
     {
       "name": "Oracle",
@@ -58,7 +58,7 @@
       "health_check_command": "Sovereignty .aiignore check",
       "auto_repair_action": "Add missing ignore files",
       "alerting_mechanism": "ACM permission denied warning",
-      "associated_file": "08-Base-Scripts/src/lib/sovereignty.py"
+      "associated_file": "08-Squad-Agent/src/lib/sovereignty.py"
     },
     {
       "name": "Modes (1-4)",
@@ -74,7 +74,7 @@
       "health_check_command": "Preflight-Check.py",
       "auto_repair_action": "Verify file presence",
       "alerting_mechanism": "ImportError / Startup Block",
-      "associated_file": "08-Base-Scripts/src/lib/orchestration_lib.py"
+      "associated_file": "08-Squad-Agent/src/lib/orchestration_lib.py"
     }
   ]
 }

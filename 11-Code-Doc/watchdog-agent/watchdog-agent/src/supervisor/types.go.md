@@ -34,7 +34,7 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/types.go`.
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagEngine]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRed]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorReset]] (constant: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorStartSquad]] (constant: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorSquadAgent]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorTeleRemote]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWatchdog]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWebInterface]] (constant: belongs_to)

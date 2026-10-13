@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/seed/__init__.py`.
+
+> **Essential Process**:
+> Seed services package initialization for RAG database export/import utilities.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

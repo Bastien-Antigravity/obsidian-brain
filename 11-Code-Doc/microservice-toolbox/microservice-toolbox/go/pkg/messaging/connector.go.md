@@ -27,4 +27,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/messaging/connec
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/connector.go.md|Connect]] (function: belongs_to) — *and routes NATS lifecycle events to the shared logger.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/connector_test.go.md|connector_test.go]] (calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/connector_test.go.md|connector_test.go]] (same_package)
 <!-- SYNC:END -->

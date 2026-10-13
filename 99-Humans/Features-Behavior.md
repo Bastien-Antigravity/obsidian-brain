@@ -22,7 +22,7 @@ mindmap
         AI Squad & Agents
         Prompts & Rules
       Scripts
-        start_squad
+        squad_agent
         switch_mode
     The 3-Zone Architecture
       Zone 1 Frozen

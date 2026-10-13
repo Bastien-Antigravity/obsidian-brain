@@ -14,7 +14,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ll
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_enrichment_settings]] (function: calls) — *Resolves LLM enrichment configuration with automatic secret decryption.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/llm_client.py.md|LLMClient]] (class: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/llm_client.py.md|llm_client.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/llm/__init__.py.md|__init__.py]] (calls)

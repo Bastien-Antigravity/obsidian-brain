@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|clone_repo]] (function: belongs_to) — *Clones a microservice repository into the sandbox folder's clones directory.*

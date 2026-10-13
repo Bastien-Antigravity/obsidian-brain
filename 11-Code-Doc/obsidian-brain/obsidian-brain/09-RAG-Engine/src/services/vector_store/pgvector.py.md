@@ -33,6 +33,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ve
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|delete_by_source]] (function: belongs_to) — *Removes all vectors belonging to a specific source file.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|get_all]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|query]] (function: belongs_to) — *Performs semantic similarity search using pgvector cosine similarity (<=>).*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|query]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|reset_store]] (function: belongs_to) — *Deletes and re-initializes the entire database.*
 <!-- SYNC:END -->

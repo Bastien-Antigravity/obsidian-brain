@@ -4,7 +4,7 @@
 Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py`.
 
 > **Essential Process**:
-> Database abstraction layer for persistent storage of codebase nodes, edges, and symbol mapping in PostgreSQL. Handles connection pooling, schema management, and CRUD operations.
+> Database abstraction layer for persistent storage of codebase nodes, edges, and symbol mapping in PostgreSQL.
 
 ## 🏗️ Architectural Context
 
@@ -29,6 +29,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|find_symbols]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|get_edges]] (function: belongs_to)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|get_nodes]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|insert_edge]] (function: belongs_to)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|insert_edge]] (function: belongs_to) — *Batch inserts codebase edges using execute_values within a single transaction.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|insert_node]] (function: belongs_to)
 <!-- SYNC:END -->

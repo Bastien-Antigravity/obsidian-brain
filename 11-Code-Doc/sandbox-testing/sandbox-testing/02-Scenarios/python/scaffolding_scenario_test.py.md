@@ -26,10 +26,10 @@ Automatically generated mirror for `sandbox-testing/02-Scenarios/python/scaffold
 - [[sandbox-testing/sandbox-testing/04-Mock-Provider/main.go.md|main]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|BASE_SCRIPTS_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|DOCKER_DEPLOY_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|REPO_CONTROL_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|SANDBOX_DIR]] (constant: belongs_to)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|SQUAD_AGENT_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|TEST_DIR]] (constant: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|TestScaffoldingScenario]] (class: belongs_to) — *Sandbox Scenario Test for Microservice Scaffolding & Ecosystem Coherence.*
 - [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|WORKSPACE_ROOT]] (constant: belongs_to)

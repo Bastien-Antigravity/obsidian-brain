@@ -14,7 +14,7 @@ mode_manual_path: 00-AI-Orchestration/Config/MODE-MANUAL.md
 session_state_path: 00-AI-Orchestration/AI-Session-State.md
 roles_path: 07-Core-KMS/Role-Prompts
 templates_path: 00-AI-Orchestration/Templates
-scripts_path: 08-Base-Scripts
+scripts_path: 08-Squad-Agent
 labs_brain_path: 04-Rapid-Prototyping
 ops_brain_path: 05-Fleet-Operation
 tags:

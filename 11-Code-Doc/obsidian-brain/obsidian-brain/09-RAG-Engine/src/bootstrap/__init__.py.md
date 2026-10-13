@@ -4,13 +4,13 @@
 Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py`.
 
 > **Essential Process**:
-> Root-level environment bootstrapper and singleton manager. Sets up system path, redirects virtualenv execution, calculates thread parameters, configures offline modes, and instantiates the application configuration loader and the UniLog logging engine exactly once. Go CGO runtime setup is aligned to a single master dylib at the very top of imports and executed on the main OS thread (Thread 0) as required on macOS. No try-except fallbacks are used.
+> Root-level environment bootstrapper and singleton manager. Sets up system path, redirects virtualenv execution, calculates thread parameters, configures offline modes, and instantiates the application configuration loader and the UniLog logging engine exactly once.
 
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (imports)

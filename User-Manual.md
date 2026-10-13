@@ -24,7 +24,7 @@ Before you begin, ensure your environment is configured:
    source .venv/bin/activate
    pip install -r requirements.txt
    ```
-   `start_squad.py` also checks these vault-level requirements at startup and installs missing packages into the active virtual environment.
+    `squad-agent` also checks these vault-level requirements at startup and installs missing packages into the active virtual environment.
 2. **Node.js**: Required to run the MCP Filesystem servers.
 3. **Antigravity CLI**: Install via curl:
    ```bash
@@ -48,11 +48,10 @@ This script configures the MCP "Filesystem Bridge" and prepares the subagents.
     source .venv/bin/activate
     
     # Run using the default Antigravity CLI:
-    # Run using the default Antigravity CLI:
-    python3 obsidian-brain/08-Base-Scripts/start_squad.py
+    python3 08-Squad-Agent/main.py squad-agent
 ```
 
-The supported client adapters are centralized in `08-Base-Scripts/clients/registry.py`.
+The supported client adapters are centralized in `08-Squad-Agent/src/clients/registry.py`.
 Antigravity, Gemini, and Codex are the primary native CLI clients supported by this launcher.
 See [[AI-Client-Startup-Guide]] for per-client startup commands.
 
@@ -117,7 +116,7 @@ To keep navigation predictable for both humans and AI, the vault follows this nu
 | **`05-Fleet-Operation`**   | **Zone 3: Fleet**  | Multi-Repo Inventory     |
 | **`06-Microservices`**     | Service Hubs             | Operational Docs         |
 | **`07-Core-KMS`**          | AI Agent Engine          | Agent Prompts (OS)       |
-| **`08-Base-Scripts`**      | Automation               | CLI Scripts              |
+| **`08-Squad-Agent`**       | Automation               | CLI Scripts & Agents     |
 
 ---
 
@@ -127,10 +126,10 @@ The Brain has three distinct "Protocols" that change how the AI works. You can s
 
 ### How to Switch:
 
-1. **At Startup**: The `start_squad.py` script now asks you to select a mode before the CLI begins.
-2. **Anytime**: Run the standalone switcher script:
+1. **At Startup**: The `squad-agent` script asks you to select a mode before the CLI begins.
+2. **Anytime**: Run the mode switcher:
    ```bash
-   python3 08-Base-Scripts/switch_mode.py
+   python3 08-Squad-Agent/main.py switch-mode
    ```
 3. **The "Oracle" Command**: You can also ask the AI to do it: *"Switch to Mode 2 and update the manual."*
 
@@ -224,12 +223,12 @@ If you want to start a **completely new project** (e.g., a Marketing campaign, a
 ### The Scaffolding Command:
 From the root of your current brain, run:
 ```bash
-python3 08-Base-Scripts/scaffold_new_brain.py
+python3 08-Squad-Agent/main.py init-new-brain
 ```
 
 ### What happens?
 1. **Architecture Clone**: All 10 numbered zones (`00-20`) are created in a new folder.
-2. **Intelligence Transfer**: Your entire AI Squad (Role Prompts) and Automation Scripts (start_squad, switch_mode) are copied over.
+2. **Intelligence Transfer**: Your entire AI Squad (Role Prompts) and Automation Scripts (squad-agent, switch-mode) are copied over.
 3. **Business Wipe**: The `02-Business-BDD` and `06-Microservices` folders are left **EMPTY**, ready for your new project's unique logic.
 4. **Auto-Bake**: The script automatically runs the agent conversion so the new CLI is ready to use immediately.
 

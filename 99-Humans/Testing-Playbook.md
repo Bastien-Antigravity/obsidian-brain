@@ -68,10 +68,10 @@ Manages the health of the entire ecosystem.
 - **Sync Validation**: Ensures all repos are on the correct branch (`develop`) and have no "Dark Matter" (untracked files).
 
 ### 🛫 Preflight Checks
-Before any AI session begins, the `start_squad.py` script runs a "Preflight" to verify that:
+Before any AI session begins, the `squad-agent` script runs a "Preflight" to verify that:
 - The `obsidian_vault` MCP server is correctly bound.
 - The environment variables are set.
-- The AI agents are "Freshly Regenerated" (via `convert_agents.py`).
+- The AI agents are "Freshly Regenerated" (via `convert-agents`).
 
 ---
 

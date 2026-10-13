@@ -1,10 +1,10 @@
 ---
-microservice: 08-Base-Scripts
-type: note
+microservice: "{{title}}"
+type: state
 status: active
 tags:
-- '#service/08-Base-Scripts'
-- '#type/note'
+- '#service/{{title}}'
+- '#type/state'
 - '#state/active'
 - '#zone/3-fleet'
 ---

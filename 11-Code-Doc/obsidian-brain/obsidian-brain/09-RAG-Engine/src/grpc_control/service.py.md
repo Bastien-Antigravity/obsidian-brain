@@ -13,7 +13,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/grpc_contro
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/grpc_control/rag_control_pb2_grpc.py.md|RAGControlServiceServicer]] (class: calls) — *Missing associated documentation comment in .proto file.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/grpc_control/rag_control_pb2_grpc.py.md|add_RAGControlServiceServicer_to_server]] (function: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/grpc_control/rag_control_pb2_grpc.py.md|rag_control_pb2_grpc.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)

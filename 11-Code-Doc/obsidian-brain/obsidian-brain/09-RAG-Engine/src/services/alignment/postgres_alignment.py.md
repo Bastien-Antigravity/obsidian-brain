@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py`.
+
+> **Essential Process**:
+> PostgreSQL implementation of the Alignment Service for the RAG engine. Tracks bidirectional links between code and Obsidian notes, and detects documentation drift using hashes.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

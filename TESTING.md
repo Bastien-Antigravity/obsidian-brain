@@ -16,7 +16,7 @@ tags:
 - **Metadata Compliance**: Run the Sentinel audit to verify YAML frontmatter.
 
 ## Script Testing
-- **Squad Launcher**: Run `./08-Base-Scripts/start_squad.py` to verify engine availability.
+- **Squad Launcher**: Run `python3 08-Squad-Agent/main.py squad-agent` to verify engine availability.
 - **RAG Engine**: Test semantic queries via the FastMCP server tools.
 
 ## Rituals

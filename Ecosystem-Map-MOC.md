@@ -93,12 +93,12 @@ Live sprint tracking and standardized templates.
 - [[99-Humans/Domain-Dashboard|🌐 Domain Ontology Matrix]]
 - [[00-AI-Orchestration/Templates/Template-00-Idea-Pitch|📥 Task Inbox (Foundry)]]
 
-## 🛠️ 08 - Base Scripts
-Ecosystem automation scripts.
-- [[08-Base-Scripts/main.py|main.py]] — Unified CLI Entrypoint Router.
-  - Run **Purger**: `python3 08-Base-Scripts/main.py joint-audit-purger`
-  - Run **Squad Launcher**: `python3 08-Base-Scripts/main.py start-squad`
-  - Run **Vault Sentinel**: `python3 08-Base-Scripts/main.py brain-health-audit`
+## 🛠️ 08 - Squad Agent
+Ecosystem automation and AI squad orchestration.
+- [[08-Squad-Agent/main.py|main.py]] — Unified CLI Entrypoint Router.
+  - Run **Purger**: `python3 08-Squad-Agent/main.py joint-audit-purger`
+  - Run **Squad Launcher**: `python3 08-Squad-Agent/main.py squad-agent`
+  - Run **Vault Sentinel**: `python3 08-Squad-Agent/main.py brain-health-audit`
 
 ---
 ## 🧪 Quality & Testing

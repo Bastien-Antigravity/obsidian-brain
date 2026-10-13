@@ -10,7 +10,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls) — *Resolves database connection settings with decrypted credentials and target RAG database.*
@@ -24,31 +24,31 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: calls) — *REST API Handler mapping config and status queries to RAGController.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|register_routes]] (function: calls) — *Registers the REST routes to the FastAPI application mux.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|rest_handler.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|mount_to_app]] (function: calls) — *Mount the SSE transport endpoints on an existing FastAPI application.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|archive.py]] (calls)
 - [[obsidian-brain/obsidian-brain/05-Fleet-Operation/01-Fleet-Action-Plans/archive.py.md|archive.py]] (calls)
 - [[obsidian-brain/obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py.md|archive.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/agent_dispatcher.py.md|agent_dispatcher.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/start_squad.py.md|start_squad.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/core/switch_mode.py.md|switch_mode.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/extraction/persona_extractor.py.md|persona_extractor.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/convert_agents.py.md|convert_agents.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/fleet/fleet_init_update.py.md|fleet_init_update.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lib/sovereignty.py.md|sovereignty.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/install_git_hooks.py.md|install_git_hooks.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_microservice.py.md|scaffold_microservice.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/maintenance_skill.py.md|maintenance_skill.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|agent_dispatcher.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|switch_mode.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/extraction/persona_extractor.py.md|persona_extractor.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/fleet/fleet_init_update.py.md|fleet_init_update.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|sovereignty.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/install_git_hooks.py.md|install_git_hooks.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|scaffold_microservice.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (calls)
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/maintenance_skill.py.md|maintenance_skill.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|synchronizer.py]] (calls)

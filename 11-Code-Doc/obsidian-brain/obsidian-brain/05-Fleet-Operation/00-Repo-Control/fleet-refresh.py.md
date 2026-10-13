@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `obsidian-brain/05-Fleet-Operation/00-Repo-Control/fleet-refresh.py`.
 
 > **Essential Process**:
-> Backward-compatible execution forwarder for fleet-refresh. Delegates to canonical implementation in 08-Base-Scripts.
+> Backward-compatible execution forwarder for fleet-refresh. Delegates to canonical implementation in 08-Squad-Agent.
 
 ## 🏗️ Architectural Context
 

@@ -121,13 +121,13 @@ The intended interaction model is delegation: the human asks the appropriate age
 
 The most important automation entry points are:
 
-- `08-Base-Scripts/start_squad.py`
-- `08-Base-Scripts/switch_mode.py`
-- `08-Base-Scripts/vault-sentinel.py`
+- `08-Squad-Agent/main.py squad-agent`
+- `08-Squad-Agent/main.py switch-mode`
+- `08-Squad-Agent/vault-sentinel.py`
 - `05-Fleet-Operation/00-Repo-Control/fleet-manager.py`
 - `09-RAG-Engine/main.py`
 
-### `start_squad.py`
+### `squad-agent`
 
 This is the main launcher for the AI squad environment. It:
 
@@ -257,7 +257,7 @@ For a human operator:
 2. Check the active mode in `00-AI-Orchestration/Config/MODE-MANUAL.md`.
 3. Read `AI-Session-State.md` before continuing previous work.
 4. Use `99-Humans` for simplified dashboards and explanations.
-5. Use `08-Base-Scripts/start_squad.py` when launching the intended AI squad workflow.
+5. Use `08-Squad-Agent/main.py squad-agent` when launching the intended AI squad workflow.
 6. Use `02-Business-BDD` before changing stable product behavior.
 7. Use `04-Rapid-Prototyping` for experiments.
 8. Use `05-Fleet-Operation` for multi-repo work.

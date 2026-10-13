@@ -24,4 +24,5 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/messaging/config
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/config.go.md|JetStreamConfig]] (struct: belongs_to) — *JetStreamConfig holds specific settings for stream creation and publishing.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/config.go.md|NatsConfig]] (struct: belongs_to) — *NatsConfig holds configuration for the NATS client connection.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/config.go.md|TLSConfig]] (struct: belongs_to) — *TLSConfig holds settings for encrypted wire transport (TLS / mTLS).*
 <!-- SYNC:END -->

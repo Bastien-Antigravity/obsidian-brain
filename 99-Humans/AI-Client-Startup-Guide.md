@@ -16,10 +16,10 @@ This guide explains how to start the AI Squad with Gemini and Codex.
 The main entry point is:
 
 ```bash
-python3 08-Base-Scripts/start_squad.py
+python3 08-Squad-Agent/main.py squad-agent
 ```
 
-Gemini is the default client. The client registry lives in `08-Base-Scripts/clients/registry.py`.
+Gemini is the default client. The client registry lives in `08-Squad-Agent/src/clients/registry.py`.
 
 ## Supported Clients
 
@@ -37,25 +37,19 @@ Run these from the `obsidian-brain` folder.
 Gemini is the default:
 
 ```bash
-python3 08-Base-Scripts/start_squad.py
+python3 08-Squad-Agent/main.py squad-agent
 ```
 
 Equivalent explicit form:
 
 ```bash
-ACTIVE_CLIENT=gemini python3 08-Base-Scripts/start_squad.py
+ACTIVE_CLIENT=gemini python3 08-Squad-Agent/main.py squad-agent
 ```
 
 ### Codex
 
 ```bash
-ACTIVE_CLIENT=codex python3 08-Base-Scripts/start_squad.py
-```
-
-Requires the `codex` CLI to be installed and available in `PATH`.
-
-```bash
-ACTIVE_CLIENT=codex python3 08-Base-Scripts/start_squad.py
+ACTIVE_CLIENT=codex python3 08-Squad-Agent/main.py squad-agent
 ```
 
 Requires the `codex` CLI to be installed and available in `PATH`.
@@ -77,14 +71,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-`start_squad.py` checks these dependencies at startup and installs missing packages into the active virtual environment.
+`squad-agent` checks these dependencies at startup and installs missing packages into the active virtual environment.
 
 ## Agent Personas
 
-Run `08-Base-Scripts/convert_agents.py` to regenerate all client-specific agent files:
+Run `08-Squad-Agent/main.py convert-agents` to regenerate all client-specific agent files:
 
 ```bash
-python3 08-Base-Scripts/convert_agents.py
+python3 08-Squad-Agent/main.py convert-agents
 ```
 
 Generated folders:

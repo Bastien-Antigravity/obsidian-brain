@@ -42,7 +42,7 @@ The lifecycle of an AI agent session inside the vault follows a structured loop,
 
 ```mermaid
 graph TD
-    A[start_squad.py] --> B[Preflight-Check.py]
+    A[squad-agent] --> B[Preflight-Check.py]
     B -- Checks submodules & inventory --> C{Preflight Result}
     C -- RED --> D[Abort Launch]
     C -- GREEN --> E[Load Mode-Manual & Bind RAG Engine MCP]

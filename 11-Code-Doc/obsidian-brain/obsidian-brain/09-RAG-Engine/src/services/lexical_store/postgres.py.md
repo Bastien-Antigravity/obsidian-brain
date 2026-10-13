@@ -32,7 +32,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/le
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|add_documents]] (function: belongs_to) — *Adds or updates lexical entries in Postgres (Upsert).*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|delete_by_source]] (function: belongs_to) — *Removes all lexical entries belonging to a specific source file.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|query]] (function: belongs_to) — *Performs a lexical search query using Postgres Full Text Search (FTS).*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|query]] (function: belongs_to) — *Helper to run queries with the thread-safe connection pool.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|reset_store]] (function: belongs_to) — *Deletes all documents from the store.*
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|set_bulk_mode]] (function: belongs_to) — *Enables or disables bulk ingestion mode.*
 <!-- SYNC:END -->

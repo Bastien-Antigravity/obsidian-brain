@@ -84,7 +84,7 @@ The ecosystem is orchestrated by the **AI Squad**, managed through centralized s
 
 | Tool | Purpose | Key File |
 | :--- | :--- | :--- |
-| **Squad Orchestrator** | Launches the AI CLI with Protocol Modes. | `08-Base-Scripts/start_squad.py` |
+| **Squad Orchestrator** | Launches the AI CLI with Protocol Modes. | `08-Squad-Agent/main.py squad-agent` |
 | **Fleet Commander** | Manages mass-repo commits, syncs, and branches. | `05-Fleet-Operation/00-Repo-Control/fleet-manager.py` |
 | **Strategic Oracle** | Analyzes logs to prevent architectural drift. | `01-Strategic-Nexus/` |
 | **DocMaintainer** | Enforces metadata standards and link health. | `07-Core-KMS/Role-Prompts/05-DocMaintainer/` |
@@ -145,7 +145,7 @@ graph LR
 - **Duty**: Analyzes session logs and deployment history to identify "Architectural Amnesia." It focuses on the **"Why"** behind decisions to prevent recurring debates and reasoning drift.
 
 ### 🛡️ Role 09: Sentinel (Integrity Auditor)
-- **Integration**: Injected during the **Preflight Check** (`start_squad.py`).
+- **Integration**: Injected during the **Preflight Check** (`squad-agent`).
 - **Duty**: Acts as the "Border Control." It runs the `Brain-Health-Audit` to ensure that no mission starts if the KMS is in a state of drift or incoherence.
 
 ### 🧹 Role 05: DocMaintainer (Knowledge Health)

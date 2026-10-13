@@ -197,8 +197,8 @@ These are for rare cases when you need to run something outside an AI session (e
 
 | Command | When to use |
 | :--- | :--- |
-| `python3 08-Base-Scripts/start_squad.py` | **First thing** — launches the AI session with mode selection. |
-| `python3 08-Base-Scripts/scaffold_new_brain.py` | Cloning the architecture for a brand new project. |
+| `python3 08-Squad-Agent/main.py squad-agent` | **First thing** — launches the AI session with mode selection. |
+| `python3 08-Squad-Agent/main.py init-new-brain` | Cloning the architecture for a brand new project. |
 | `python3 vault-sentinel.py` | Quick manual link check (the Sentinel does this automatically). |
 
 ---
@@ -209,7 +209,7 @@ These are for rare cases when you need to run something outside an AI session (e
 | :--- | :--- | :--- |
 | **Running scripts manually** | You type `python3 fleet-manager.py sync` yourself. | Delegate: *"Ask FleetCommander to sync."* The agent handles logging and follow-up automatically. |
 | **Forgetting to save state** | The AI starts fresh tomorrow with no context. | Ask: *"Update AI-Session-State with today's progress."* Or delegate to DocMaintainer. |
-| **Skipping the Preflight** | The Sentinel finds 20+ violations mid-session. | Always launch via `start_squad.py`, which runs the audit automatically. |
+| **Skipping the Preflight** | The Sentinel finds 20+ violations mid-session. | Always launch via `squad-agent`, which runs the audit automatically. |
 | **Deep folder nesting** | Files become unfindable by both human and AI. | Follow the 2-digit numbering system. Max 2 levels deep. |
 | **Orphaned files** | Knowledge exists but is invisible to the graph. | Link every new file from at least one MOC or Hub. |
 | **Tag dilution** | Custom tags that no dashboard queries. | Only use tags from the official `tag_taxonomy.md`. |

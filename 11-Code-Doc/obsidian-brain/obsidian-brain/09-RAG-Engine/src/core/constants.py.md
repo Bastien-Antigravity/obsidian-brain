@@ -10,11 +10,11 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/consta
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Base-Scripts/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|_CORE_DIR]] (constant: calls) — *Resolve RAG engine root relative to this core package file*
+- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|_CORE_DIR]] (constant: calls)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|access_matrix.py]] (imports)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|access_matrix.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
 
 ### 🔌 Consumers (Inbound)
 - [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|is_path_excluded]] (function: belongs_to)
