@@ -1,13 +1,16 @@
 ---
-microservice: obsidian-brain
-type: note
+title: "Architecture Blueprint: Code-Doc Semantic Synchronizer (FEAT-010)"
+type: architecture
 status: active
+microservice: tech-stack-brain
 tags:
-- '#service/obsidian-brain'
-- '#type/note'
+- '#service/tech-stack-brain'
+- '#type/architecture'
 - '#state/active'
-- '#zone/3-fleet'
----# Architecture Blueprint: Code-Doc Semantic Synchronizer (FEAT-010)
+- '#zone/1-frozen'
+---
+
+# Architecture Blueprint: Code-Doc Semantic Synchronizer (FEAT-010)
 
 ## 1. System Overview
 The **Code-Doc Semantic Synchronizer** is a proactive service within the RAG Engine that ensures the Obsidian documentation vault remains in lock-step with the physical codebase. It automates file mirroring, injects architectural context from the semantic graph, and extracts manual @obsidian links from source code.

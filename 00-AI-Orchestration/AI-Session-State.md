@@ -109,7 +109,7 @@ tags:
 - **Synchronized** local file states and formatted test cases outputs.
 
 ## 📡 Final Synchronization Session (2026-05-30)
-- **Consolidated** all executable Python logic into `08-Base-Scripts/`.
+- **Consolidated** all executable Python logic into `08-Squad-Agent/`.
 - **Reorganized** `00-AI-Orchestration` into PascalCase hierarchy (`Config/`, `Governance/`, `Logs/`, `Maintenance/`).
 - **Restored** full content of constitution files (`00-Level-Governance.md`, `AI-Project-DNA.md`, `Knowledge-Strategy.md`) after accidental truncation.
 - **Synchronized** 160+ hardcoded path contracts across scripts, agent prompts, and the Master MOC.

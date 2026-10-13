@@ -7,7 +7,9 @@ tags:
 - '#type/governance'
 - '#state/active'
 - '#zone/3-fleet'
----# 🛰️ Fleet-Commander Rituals (Level 3)
+---
+
+# 🛰️ Fleet-Commander Rituals (Level 3)
 
 These rules are MANDATORY when operating in **Mode 3**.
 

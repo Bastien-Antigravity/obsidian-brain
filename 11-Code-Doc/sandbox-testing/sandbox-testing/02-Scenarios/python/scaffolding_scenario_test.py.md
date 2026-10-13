@@ -4,9 +4,9 @@ workspace: sandbox-testing
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-17 06:24:02.348045
-microservice: 08-Base-Scripts
+microservice: sandbox-testing
 tags:
-- '#service/08-Base-Scripts'
+- '#service/sandbox-testing'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

@@ -4,9 +4,9 @@ workspace: docker-deployment
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-13 19:49:59.557098
-microservice: 08-Base-Scripts
+microservice: docker-deployment
 tags:
-- '#service/08-Base-Scripts'
+- '#service/docker-deployment'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

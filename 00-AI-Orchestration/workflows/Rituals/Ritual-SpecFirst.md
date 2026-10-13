@@ -7,7 +7,9 @@ tags:
 - '#type/governance'
 - '#state/active'
 - '#zone/3-fleet'
----# 🛡️ Spec-First Rituals (Level 1)
+---
+
+# 🛡️ Spec-First Rituals (Level 1)
 
 These rules are MANDATORY when operating in **Mode 1**.
 

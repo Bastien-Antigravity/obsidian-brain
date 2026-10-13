@@ -4,9 +4,9 @@ workspace: config-server
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-17 06:23:59.735106
-microservice: 08-Base-Scripts
+microservice: config-server
 tags:
-- '#service/08-Base-Scripts'
+- '#service/config-server'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

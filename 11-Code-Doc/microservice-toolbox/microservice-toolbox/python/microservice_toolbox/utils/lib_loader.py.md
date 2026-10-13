@@ -4,9 +4,9 @@ workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-18 17:45:41.622353
-microservice: 08-Base-Scripts
+microservice: microservice-toolbox
 tags:
-- '#service/08-Base-Scripts'
+- '#service/microservice-toolbox'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

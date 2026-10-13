@@ -4,9 +4,9 @@ workspace: universal-logger
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-17 19:14:20.932318
-microservice: 08-Base-Scripts
+microservice: universal-logger
 tags:
-- '#service/08-Base-Scripts'
+- '#service/universal-logger'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

@@ -4,9 +4,9 @@ workspace: safe-socket
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-17 19:14:19.606705
-microservice: 08-Base-Scripts
+microservice: safe-socket
 tags:
-- '#service/08-Base-Scripts'
+- '#service/safe-socket'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

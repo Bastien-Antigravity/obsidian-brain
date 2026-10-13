@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: universal-logger
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/universal-logger'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

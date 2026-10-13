@@ -7,5 +7,7 @@ tags:
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'
----# Redirect to 00-AI-Orchestration/AI-Project-DNA.md
+---
+
+# Redirect to 00-AI-Orchestration/AI-Project-DNA.md
 See [[00-AI-Orchestration/AI-Project-DNA]]

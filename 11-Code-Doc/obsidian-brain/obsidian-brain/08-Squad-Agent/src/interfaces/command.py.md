@@ -12,7 +12,7 @@ last_sync: 2026-10-13T02:56:34.790078
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces/command.py`.
 
 > **Essential Process**:
-> Command Interface defining the abstract contract for all executable CLI commands in base scripts.
+> Command Interface defining the abstract contract for all executable CLI commands in Squad Agent.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->

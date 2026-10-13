@@ -26,7 +26,7 @@ tags:
 - **Sentinel Sentinel**: [[Prompt-Sentinel|Sentinel]]
 
 ## 📊 Database Topology (obsidiandb)
-The service stores RAG vectors and codebase structures partitioned into PostgreSQL schemas per-repository workspace (e.g. `01-Strategic-Nexus`, `08-Base-Scripts`, `09-RAG-Engine`). All operations are routed dynamically based on source paths via proxy layers.
+The service stores RAG vectors and codebase structures partitioned into PostgreSQL schemas per-repository workspace (e.g. `01-Strategic-Nexus`, `08-Squad-Agent`, `09-RAG-Engine`). All operations are routed dynamically based on source paths via proxy layers.
 
 ---
 *Last Audit: [[00-AI-Orchestration/AI-Session-State|Restore Session State]]*

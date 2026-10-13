@@ -4,9 +4,9 @@ workspace: notif-server
 type: code-mirror
 status: auto-generated
 last_sync: 2026-09-19 00:02:00.663210
-microservice: 08-Base-Scripts
+microservice: notif-server
 tags:
-- '#service/08-Base-Scripts'
+- '#service/notif-server'
 - '#type/code-mirror'
 - '#state/auto-generated'
 - '#zone/3-fleet'

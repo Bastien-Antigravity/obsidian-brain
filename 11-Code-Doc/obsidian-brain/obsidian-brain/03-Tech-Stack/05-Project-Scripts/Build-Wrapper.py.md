@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: 03-Tech-Stack
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/03-Tech-Stack'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

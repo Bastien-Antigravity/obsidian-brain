@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: 01-Strategic-Nexus
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/01-Strategic-Nexus'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

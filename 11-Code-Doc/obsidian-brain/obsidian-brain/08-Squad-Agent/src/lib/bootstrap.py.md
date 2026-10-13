@@ -12,7 +12,7 @@ last_sync: 2026-10-13T02:56:34.669705
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lib/bootstrap.py`.
 
 > **Essential Process**:
-> Legacy bootstrap wrapper delegating bootstrapping capabilities to microservice-toolbox utils/bootstrap. Ensures zero-code-change backwards compatibility for legacy base scripts.
+> Legacy bootstrap wrapper delegating bootstrapping capabilities to microservice-toolbox utils/bootstrap. Ensures zero-code-change bootstrapping capabilities for squad agent scripts.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->

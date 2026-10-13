@@ -7,7 +7,9 @@ tags:
 - '#type/governance'
 - '#state/active'
 - '#zone/3-fleet'
----# 🌎 Global AI Rituals (Level 0)
+---
+
+# 🌎 Global AI Rituals (Level 0)
 
 These rituals apply to ALL modes and sessions.
 

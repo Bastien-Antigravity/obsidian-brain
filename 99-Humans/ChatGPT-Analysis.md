@@ -65,7 +65,7 @@ The structure follows a numbered knowledge architecture.
 | `06-Microservices` | Operational hub pages for each service |
 | `07-Core-KMS` | Agent prompts, workflows, tag taxonomy, knowledge-management rules |
 | `09-RAG-Engine` | Local semantic search and MCP bridge for AI agents |
-| `08-Base-Scripts` | Automation scripts for squad startup, mode switching, audits, scaffolding |
+| `08-Squad-Agent` | Automation scripts for squad startup, mode switching, audits, scaffolding |
 | `99-Humans` | Human-facing dashboards, explanations, and onboarding material |
 
 There are also Obsidian configuration files under `.obsidian`, AI-agent integration folders such as `.gemini` and `.deepseek`, virtual environments, and Git metadata.
@@ -152,7 +152,7 @@ It keeps the mode manual and session-state protocol aligned.
 
 ### `vault-sentinel.py`
 
-This script audits Markdown files for tag taxonomy and Obsidian link coherence. It uses `08-Base-Scripts/lib/sovereignty.py` and the taxonomy source in `07-Core-KMS/tag_taxonomy.md`.
+This script audits Markdown files for tag taxonomy and Obsidian link coherence. It uses `08-Squad-Agent/src/lib/sovereignty.py` and the taxonomy source in `07-Core-KMS/tag_taxonomy.md`.
 
 It can also repair malformed frontmatter tags when run with `--fix`.
 
@@ -224,9 +224,9 @@ The folder currently contains mostly Markdown and Python outside of virtual envi
 The Git working tree had pre-existing uncommitted changes at the time of this analysis:
 
 - modified `.obsidian/workspace.json`;
-- modified `08-Base-Scripts/convert_agents.py`;
+- modified `08-Squad-Agent/src/fleet/convert_agents.py`;
 - untracked `.deepseek/`;
-- untracked `08-Base-Scripts/clients/API/deepseek_client.py`.
+- untracked `08-Squad-Agent/src/clients/API/deepseek_client.py`.
 
 Those items were not modified by this analysis.
 

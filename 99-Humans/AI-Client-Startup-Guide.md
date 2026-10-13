@@ -102,7 +102,7 @@ Expected RAG tools for native and API-driven clients:
 
 ## About `STATE LOG : MISSING`
 
-This message comes from `08-Base-Scripts/close_mission.py`, not from the client startup itself.
+This message comes from `08-Squad-Agent/main.py close-mission`, not from the client startup itself.
 
 It appears during the sign-off path when there are uncommitted Markdown changes but no changed `AI-Session-State.md` file in the same session payload.
 
