@@ -23,7 +23,7 @@
 	url = https://github.com/Bastien-Antigravity/core-kms-brain.git
 	branch = develop
 [submodule "08-Base-Scripts"]
-	path = 08-Base-Scripts
+	path = 08-Squad-Agent
 	url = https://github.com/Bastien-Antigravity/squad-agent-brain.git
 	branch = develop
 [submodule "09-RAG-Engine"]
