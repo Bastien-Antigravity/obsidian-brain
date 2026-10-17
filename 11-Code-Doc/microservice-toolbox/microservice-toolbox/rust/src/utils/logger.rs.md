@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.rs`.
 
 > **Essential Process**:
-> Standardized logging abstraction implementing the unified ILogger interface.
+> Standardized logging abstraction implementing the unified Logger interface.
 
 ## 🏗️ Architectural Context
 

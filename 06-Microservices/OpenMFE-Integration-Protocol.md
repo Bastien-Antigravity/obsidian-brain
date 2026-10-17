@@ -324,6 +324,82 @@ Define the component's styles utilizing the variables, and provide safe fallback
 }
 ```
 
+### 2.5 Standardized Client-Side Logging & Telemetry (`BastienLogger`)
+To align frontend UI components with the fleet observability standard, all OpenMFE Web Components MUST use the standardized `BastienLogger` utility provided by `web-interface` (`web/static/lib/utils/Logger.js`), accessible globally as `window.BastienLogger`.
+
+#### 1. Ecosystem Log Level Parity
+JavaScript `LogLevel` constants strictly mirror the 12-severity-level enumeration defined in `flexible-logger` and `log-server`:
+- `NOTSET` = 0
+- `DEBUG` = 1
+- `STREAM` = 2
+- `INFO` = 3
+- `LOGON` = 4
+- `LOGOUT` = 5
+- `TRADE` = 6
+- `SCHEDULE` = 7
+- `REPORT` = 8
+- `WARNING` = 9
+- `ERROR` = 10
+- `CRITICAL` = 11
+
+> [!NOTE]
+> **Warning vs. Warn**: The ecosystem canonical level name is **`WARNING`** (Level 9). Browser DevTools naturally use `console.warn()`. `BastienLogger` provides `logger.warn()` solely as a convenience alias pointing to `logger.warning()`, guaranteeing 1:1 parity with the backend Cap'n Proto and wire schemas.
+
+#### 2. OpenMFE Component Usage Example
+Inside any custom element or MFE loader:
+```javascript
+class MyServiceMFE extends HTMLElement {
+    connectedCallback() {
+        // Scoped logger instantiation (falls back gracefully to console if run standalone)
+        this.logger = window.BastienLogger 
+            ? window.BastienLogger.get('my-service-mfe') 
+            : console;
+
+        this.logger.info('MyServiceMFE mounted into DOM');
+    }
+
+    async fetchData() {
+        try {
+            const resp = await fetch('http://localhost:3308/api/v1/data');
+            // ...
+        } catch (err) {
+            this.logger.error('Failed to fetch data from backend', { error: err.message });
+        }
+    }
+}
+```
+
+#### 3. Dual-Sink Routing & Telemetry Architecture
+Client logs are routed through a dual-sink architecture:
+1. **Local Sink (Console)**: Immediate, rich CSS color-coded badges in browser DevTools.
+2. **Remote Telemetry Sink**: Events at or above `ERROR` severity (or configurable `remoteMinLevel`) are asynchronously dispatched to `POST /api/v1/telemetry/log` using `navigator.sendBeacon` (or non-blocking `fetch({ keepalive: true })`).
+
+```mermaid
+sequenceDiagram
+    participant Browser as Browser (OpenMFE Component)
+    participant WI as web-interface (Port 5000)
+    participant UL as universal-logger
+    participant LS as log-server (Port 9020 SafeSocket TCP)
+
+    Browser->>Browser: logger.error("Component failed", { code: 500 })
+    Browser->>Browser: Print styled badge to DevTools
+    Browser->>WI: POST /api/v1/telemetry/log (sendBeacon / fetch)
+    Note over WI: Dynamic router unpacks payload
+    WI->>UL: universal-logger.Error("[my-service-mfe] Component failed")
+    UL->>LS: SafeSocket TCP 4-byte BE framed payload
+    Note over LS: Sequenced & written to logs/_main.log
+```
+
+#### 4. Network Isolation: Why Browsers Cannot Reach `log-server` Directly
+1. **Transport Sandbox**: `log-server` operates on high-speed raw TCP with length-prefixed binary framing (`safe-socket`). Web browsers operate in a sandbox where raw TCP sockets cannot be opened (only HTTP/WebSockets are permitted).
+2. **Docker Guard & Security Segmentation**: Internal microservice daemon ports (such as `9020`) are bound to internal container bridges or localhost loops. Directly exposing backend TCP logging ports to external browsers is a critical security vulnerability. `web-interface` acts as the authorized telemetry gateway.
+
+#### 5. Offline Fallback & Self-Healing Queue
+When a client cannot reach `web-interface` (e.g. offline client, network partition, or `web-interface` restarting):
+- **Zero UI Disruption**: The logger never throws exceptions and never blocks the UI thread.
+- **Bounded Offline Ring Buffer**: Unsent telemetry payloads are saved in memory (`_offlineQueue`, max 50 entries) using FIFO eviction to prevent memory bloat.
+- **Reconnection Drain**: When network connectivity is restored (`window.addEventListener('online')`), the buffered queue is automatically flushed to `web-interface`.
+
 ---
 
 ## 3. How to Test & Verify

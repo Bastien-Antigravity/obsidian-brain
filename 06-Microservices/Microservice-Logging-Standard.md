@@ -20,7 +20,7 @@ This protocol defines the standardized logging behavior, interface contracts, in
 
 ## 1. Core Principles
 
-- **Unified Interface (`ILogger`)**: Every microservice logs through the ecosystem `ILogger` contract (`Debug`, `Info`, `Warning`, `Error`, `Critical`).
+- **Unified Interface (`Logger`)**: Every microservice logs through the ecosystem `Logger` contract (`Debug`, `Info`, `Warning`, `Error`, `Critical`).
 - **Standardized Identity**: Every service identifies itself using its canonical name initialized via `microservice-toolbox`.
 - **Mission Traceability**: All logs propagate an `X-Bastien-Mission-ID` (Trace ID) across service boundaries (HTTP headers, gRPC metadata, NATS message headers).
 - **Zero Secrets in Logs**: NEVER log PII, tokens, or raw credentials. All sensitive configuration parameters must use the `ENC(...)` pattern.
