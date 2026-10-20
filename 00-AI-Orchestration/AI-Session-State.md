@@ -17,6 +17,29 @@ tags:
 > [!IMPORTANT] ASYNCHRONOUS DOCUMENTATION
 > Update associated documentation (**README.md**, **ARCHITECTURE.md**) and relevant **Obsidian Brain** nodes ONLY upon feature completion or sprint closure.
 
+## 📡 Gemini CLI Session: Multi-Brain Sovereignty & Ecosystem Tooling Audit (2026-10-20)
+- **Role**: pythonspecialist / Fleet Architect | Mode: 1 (Execution)
+- **Status**: COMPLETED | Mission-ID: MULTI-BRAIN-SOVEREIGNTY-2026-10-20
+- **Actions**:
+    - **Zero Hardcoded Values Enforcement**: Completely eliminated static host IPs, ports, and brain name defaults across `08-Squad-Agent/src/lib/memory.py`, `08-Squad-Agent/src/agents/docindexer.py`, `08-Squad-Agent/src/agents/base_agent.py`, and `09-RAG-Engine`.
+    - **Ecosystem & Python Tooling Integration**: Leveraged `microservice-toolbox` utilities (`NetworkManager`, `ensure_safe_logger`, `find_vault_root`, `resolve_vault_and_workspace`, dynamic address resolution, dynamic versioning via `get_version`).
+    - **Safe Type Guards**: Implemented string-type checks (`isinstance(..., str)`) across dynamic brain and tenant resolutions, preventing `MagicMock` leaks into PostgreSQL and JSON encoders.
+    - **Multi-Brain State Isolation**: Partitioned `conversation_turns`, `squad_chat_logs`, vector embeddings, lexical BM25 indices, and parent chunks by `brain_id`. Added atomic `delete_by_brain` for clean unmerging and protected authoritative root brain from accidental purging.
+    - **Topic Namespacing & Zero Crosstalk**: Dynamic NATS routing (`bastien-antigravity.{brain_id}.squad.chat`) ensuring containerized/satellite brains communicate without crosstalk.
+    - **Cross-Brain Tag Addressing**: Added compound tag routing (`@{brain_id}:{role}`) in `LocalEventBus` and `DualSquadEventBus`, enabling non-coder satellite domain agents (e.g. `@trader`, `@risk_analyst`) to delegate software engineering tasks to central root coders (`@root:developer`, `@root:architect`) and receive scoped responses via `reply_topic` without crosstalk.
+    - **Documentation & Architecture Standards Synchronization**:
+        - Created formal BDD specification note: `02-Business-BDD/02-Behavior-Specs/squad-agent/FEAT-022-Squad-Agent-Multi-Brain-Lifecycle.md` with full Gherkin scenarios.
+        - Updated `03-Tech-Stack/02-Project-Architecture/13-Multi-Brain-Partitioning-and-Distributed-Squad-Standard.md` with container filesystem boundary invariants, Push-over-HTTP RAG indexing, and compound tag routing.
+        - Synchronized `08-Squad-Agent/AGENTS.md` with `--dest`, `--brain`, and `--brain-id` satellite brain sovereignty guidelines and Discord real-time streaming.
+        - Synchronized `09-RAG-Engine/AGENTS.md` with multi-tenant `brain_id` partitioning and atomic unmerging standards.
+        - Parameterized `08-Squad-Agent/docker-compose.yaml` with `${BRAIN_ID:-root}`, `${SA_PORT}`, and generic volume mounting.
+    - **Scenario Testing**: Created end-to-end sandbox scenario specification `FEAT-022-Squad-Agent-Multi-Brain-Lifecycle.yaml` and implementation `sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py` covering all 6 stages of the multi-brain lifecycle (partitioning, indexing, NATS routing, tool guardrails, QA verification, atomic purge) with 100% pass across 67 squad-agent tests and 90 rag-engine tests.
+- **Deliverables**:
+    - Clean multi-brain partitioning and autonomous plug-and-play container support out-of-the-box.
+    - End-to-end deterministic scenario test `FEAT-022` passing across all 6 stages via `scenario_orchestrator.py`.
+    - Complete, synchronized AI and architecture documentation across all 4 zones.
+    - 100% compliance with ecosystem tooling and Python Sovereignty Mandates.
+
 ## 📡 Gemini CLI Session: Market-Observer Version Update (2026-06-18)
 - **Role**: Orchestrator | Mode: 1 (Execution)
 - **Status**: COMPLETED | Mission-ID: MO-VERSION-UPDATE-2026-06-18

@@ -77,15 +77,15 @@ Object-oriented framework for orchestrating squads of autonomous LLM-driven agen
 - [[10-Agent-Factory/README|Agent Factory Overview]]
 - **Methodology & Guides**:
   - [[10-Agent-Factory/docs/00_Agent_Engineering_MOC|🗺️ Agent Engineering & Evaluation MOC]]
-  - [[10-Agent-Factory/docs/ingenierie_agents|1. Spécifications & Arbitrage Code vs LLM]]
-  - [[10-Agent-Factory/docs/implementation_pratique|2. Implémentation Pratique (Boilerplate)]]
-  - [[10-Agent-Factory/docs/lexique_et_syntaxe|3. Lexique, Syntaxe et Robustesse Lexicale]]
-  - [[10-Agent-Factory/docs/evaluation_rag_et_connaissances|4. Évaluation du RAG et des Connaissances]]
-  - [[10-Agent-Factory/docs/securite_et_gardes_fous|5. Sécurité, Garde-fous et Injections]]
-  - [[10-Agent-Factory/docs/coordination_et_multi_agents|6. Coordination & Systèmes Multi-Agents]]
-  - [[10-Agent-Factory/docs/observabilite_et_reporting|7. Observabilité, Traces et Dérives]]
-  - [[10-Agent-Factory/docs/gestion_des_couts_et_cache|8. Coûts, Cache & Rate-Limiting]]
-  - [[10-Agent-Factory/docs/workflow_et_automatisation|9. Workflow de Développement (TDD) & Makefile]]
+  - [[10-Agent-Factory/docs/agent_engineering|1. Specifications & Code vs LLM Arbitrage]]
+  - [[10-Agent-Factory/docs/practical_implementation|2. Practical Implementation (Boilerplate)]]
+  - [[10-Agent-Factory/docs/lexicon_and_syntax|3. Lexicon, Syntax & Lexical Robustness]]
+  - [[10-Agent-Factory/docs/rag_and_knowledge_evaluation|4. RAG & Knowledge Retrieval Evaluation]]
+  - [[10-Agent-Factory/docs/security_and_guardrails|5. Security, Guardrails & Adversarial Testing]]
+  - [[10-Agent-Factory/docs/coordination_and_multi_agents|6. Coordination & Multi-Agent Systems]]
+  - [[10-Agent-Factory/docs/observability_and_reporting|7. Observability, Traces & Drift]]
+  - [[10-Agent-Factory/docs/cost_management_and_caching|8. Cost Management, Caching & Rate-Limiting]]
+  - [[10-Agent-Factory/docs/workflow_and_automation|9. Development Workflow (TDD) & Makefile]]
 
 ## ⚡ Dashboards & Foundry
 Live sprint tracking and standardized templates.

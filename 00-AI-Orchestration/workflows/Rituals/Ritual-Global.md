@@ -20,7 +20,7 @@ These rituals apply to ALL modes and sessions.
 
 ## 2. AI Handover Protocol (State Machine)
 To prevent context loss when switching roles, use the Inbox files:
-- Update YAML: `status: active` -> `status: pending` and set `role: <next_role>`.
+- Update YAML: `status: active` -> `status: active` and set `role: <next_role>`.
 - The `Agent-Dispatcher.py` script will handle the transition.
 
 ## 3. Closing the Session
