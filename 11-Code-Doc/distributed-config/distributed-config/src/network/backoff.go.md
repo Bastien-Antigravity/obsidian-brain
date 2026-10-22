@@ -24,8 +24,8 @@ Automatically generated mirror for `distributed-config/src/network/backoff.go`.
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: belongs_to) — *GetDelay calculates the delay for the current attempt.*
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff]] (struct: belongs_to) — *GetDelay calculates the delay for the current attempt.*
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff]] (struct: defines_method) — *GetDelay calculates the delay for the current attempt.*
+- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff]] (struct: belongs_to) — *Backoff implements exponential backoff with jitter*
+- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff]] (struct: defines_method) — *Backoff implements exponential backoff with jitter*
 - [[distributed-config/distributed-config/src/network/backoff.go.md|NewBackoff]] (function: belongs_to) — *NewBackoff creates a new backoff strategy using parameters from the config*
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (calls)
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (same_package)

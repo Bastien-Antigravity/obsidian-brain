@@ -44,6 +44,8 @@ tags:
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.getFromElement]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/atoms/MetricBadge.js.md|MetricBadge.updateValue]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warn]] (method: calls)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_BASE_URL]] (constant: calls)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_WSS_URL]] (constant: calls)
 

@@ -65,6 +65,6 @@ Automatically generated mirror for `notif-server/src/rest/rest_handler.go`.
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleSetAlertingConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: belongs_to)
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to) — *Stop gracefully shuts down the HTTP server.*
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method) — *Stop gracefully shuts down the HTTP server.*
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to)
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method)
 <!-- SYNC:END -->

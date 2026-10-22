@@ -45,8 +45,8 @@ Automatically generated mirror for `watchdog-agent/src/rest/rest_handler.go`.
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleStartPostgres]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to) — *StartServer launches HTTP REST API server*
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method) — *StartServer launches HTTP REST API server*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to) — *RESTHandler handles HTTP management requests for watchdog*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method) — *RESTHandler handles HTTP management requests for watchdog*
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|httpControlResponse]] (struct: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|httpRestartRequest]] (struct: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|httpStatusResponse]] (struct: belongs_to)

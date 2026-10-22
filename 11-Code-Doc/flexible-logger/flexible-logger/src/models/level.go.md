@@ -29,8 +29,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/models/level.go.md|LevelStream]] (constant: belongs_to)
 - [[flexible-logger/flexible-logger/src/models/level.go.md|LevelTrade]] (constant: belongs_to)
 - [[flexible-logger/flexible-logger/src/models/level.go.md|LevelWarning]] (constant: belongs_to)
-- [[flexible-logger/flexible-logger/src/models/level.go.md|Level]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/models/level.go.md|Level]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level]] (struct: belongs_to) — *Level defines log levels*
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level]] (struct: defines_method) — *Level defines log levels*
 - [[flexible-logger/flexible-logger/src/models/level.go.md|ParseLevel]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/models/level_test.go.md|level_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/models/level_test.go.md|level_test.go]] (same_package)

@@ -40,8 +40,8 @@ Automatically generated mirror for `notif-server/src/grpc_control/service.go`.
 - [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl.RemoveProvider]] (method: belongs_to) — *RemoveProvider deletes a notification provider*
 - [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl.SendTestNotification]] (method: belongs_to) — *SendTestNotification triggers a test notification through the engine*
 - [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl.SetAlertingConfig]] (method: belongs_to) — *SetAlertingConfig updates a specific setting for a notification platform*
-- [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to) — *GetSupportedTypes returns the list of available notification drivers*
-- [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method) — *GetSupportedTypes returns the list of available notification drivers*
+- [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to)
+- [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method)
 - [[notif-server/notif-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to) — *NewControlService creates a new ControlServiceImpl instance*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)

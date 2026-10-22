@@ -27,11 +27,10 @@ Automatically generated mirror for `web-interface/src/core/controller.go`.
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (imports)
 - [[web-interface/web-interface/src/core/controller.go.md|Controller.CheckDatabase]] (method: belongs_to) — *CheckDatabase checks database availability dynamically by querying the current appConfig.*
 - [[web-interface/web-interface/src/core/controller.go.md|Controller.GetStatus]] (method: belongs_to) — *GetStatus returns metadata about the web-interface runtime.*
-- [[web-interface/web-interface/src/core/controller.go.md|Controller]] (struct: belongs_to) — *CheckDatabase checks database availability dynamically by querying the current appConfig.*
-- [[web-interface/web-interface/src/core/controller.go.md|Controller]] (struct: defines_method) — *CheckDatabase checks database availability dynamically by querying the current appConfig.*
+- [[web-interface/web-interface/src/core/controller.go.md|Controller]] (struct: belongs_to) — *Controller implements the WebController interface.*
+- [[web-interface/web-interface/src/core/controller.go.md|Controller]] (struct: defines_method) — *Controller implements the WebController interface.*
 - [[web-interface/web-interface/src/core/controller.go.md|NewController]] (function: belongs_to) — *NewController creates a new Controller instance with dynamic config support.*
 - [[web-interface/web-interface/src/core/controller.go.md|StatusInfo]] (struct: belongs_to) — *StatusInfo represents the service health and runtime statistics.*
 - [[web-interface/web-interface/src/core/controller.go.md|WebController]] (interface: belongs_to) — *WebController defines the unified interface for web interface management.*
-- [[web-interface/web-interface/src/core/controller.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (imports)
 <!-- SYNC:END -->

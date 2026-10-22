@@ -41,7 +41,7 @@ Automatically generated mirror for `config-server/src/grpc_control/grpc_service.
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.IsRunning]] (method: belongs_to) — *IsRunning returns whether the gRPC server is running*
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.Start]] (method: belongs_to) — *Start starts the gRPC server (Non-blocking)*
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.Stop]] (method: belongs_to) — *Stop gracefully stops the gRPC server*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: belongs_to) — *IsRunning returns whether the gRPC server is running*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: defines_method) — *IsRunning returns whether the gRPC server is running*
+- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: belongs_to)
+- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: defines_method)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|NewGRPCService]] (function: belongs_to) — *NewGRPCService creates a new GRPCService instance*
 <!-- SYNC:END -->

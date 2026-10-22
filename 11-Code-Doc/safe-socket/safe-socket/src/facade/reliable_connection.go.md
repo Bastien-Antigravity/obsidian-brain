@@ -39,8 +39,8 @@ Automatically generated mirror for `safe-socket/src/facade/reliable_connection.g
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection.performRetries]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection.retryLoop]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection.sendAck]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection]] (struct: belongs_to) — *- Deduplication*
+- [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|ReliableConnection]] (struct: defines_method) — *- Deduplication*
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|RudpHeaderSize]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|RudpTypeAck]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|RudpTypeData]] (constant: belongs_to)

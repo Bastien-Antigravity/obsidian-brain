@@ -27,7 +27,11 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
 - [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Close]] (method: calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Critical]] (method: calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Debug]] (method: calls)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Error]] (method: calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Info]] (method: calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/src/router/dynamic.go.md|FleetHealthResponse]] (struct: belongs_to) — *FleetHealthResponse summarizes overall fleet health for UI alerting.*

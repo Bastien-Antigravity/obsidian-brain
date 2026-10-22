@@ -17,6 +17,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|TradedVolumeDashboard.onMessage]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|TradedVolumeDashboard.renderRow]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|WebSocketClient.js]] (calls)

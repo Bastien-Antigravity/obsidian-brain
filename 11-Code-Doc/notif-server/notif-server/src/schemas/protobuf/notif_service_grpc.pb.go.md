@@ -28,8 +28,8 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer.SendNotification]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer.mustEmbedUnimplementedNotifServiceServer]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer.testEmbeddedByValue]] (method: belongs_to)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer]] (struct: belongs_to)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer]] (struct: defines_method)
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer]] (struct: belongs_to) — *pointer dereference when methods are called.*
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnimplementedNotifServiceServer]] (struct: defines_method) — *pointer dereference when methods are called.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|UnsafeNotifServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|_NotifService_SendNotification_Handler]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|_]] (constant: belongs_to) — *Requires gRPC-Go v1.64.0 or later.*

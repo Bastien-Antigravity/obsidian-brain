@@ -22,8 +22,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier.Notify]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier.SetQueue]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier]] (struct: belongs_to) — *LocalNotifier sends notifications to a local channel instead of a network socket.*
+- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier]] (struct: defines_method) — *LocalNotifier sends notifications to a local channel instead of a network socket.*
 - [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|NewLocalNotifier]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/notifier/notifier_test.go.md|notifier_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/notifier/notifier_test.go.md|notifier_test.go]] (same_package)

@@ -29,8 +29,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/lifecycle/manage
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: belongs_to) — *Register adds a named cleanup function to the shutdown sequence.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Wait]] (method: belongs_to) — *then executes all registered cleanups in reverse registration order (LIFO).*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager]] (struct: belongs_to) — *then executes all registered cleanups in reverse registration order (LIFO).*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager]] (struct: defines_method) — *then executes all registered cleanups in reverse registration order (LIFO).*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager]] (struct: belongs_to) — *Manager handles application lifecycle and graceful shutdown.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager]] (struct: defines_method) — *Manager handles application lifecycle and graceful shutdown.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|NewManagerWithLogger]] (function: belongs_to) — *NewManagerWithLogger creates a new lifecycle manager with an explicit logger.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|NewManager]] (function: belongs_to) — *NewManager creates a new lifecycle manager with default logging.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|ShutdownFunc]] (struct: belongs_to) — *ShutdownFunc is a function called during graceful shutdown.*

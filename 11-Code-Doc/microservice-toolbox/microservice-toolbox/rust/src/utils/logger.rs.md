@@ -78,8 +78,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.stream]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.trade]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.warning]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger]] (struct: belongs_to) — *Fallback logger that uses the existing terminal_ui logic.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger]] (struct: defines_method) — *Fallback logger that uses the existing terminal_ui logic.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: belongs_to) — *Logger trait defines the standard interface for structured logging across the toolbox.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.add_metadata]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.critical]] (method: belongs_to)
@@ -94,8 +94,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.stream]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.trade]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.warning]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: belongs_to) — *Wrapper for the compiled universal-logger.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger]] (struct: defines_method) — *Wrapper for the compiled universal-logger.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: belongs_to) — *In strict mode (STRICT_LOGGER=true), panics to prevent microservices from running dark.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_fallback]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|test_ensure_safe_logger_passthrough]] (function: belongs_to)

@@ -52,8 +52,8 @@ Automatically generated mirror for `safe-socket/cmd/test/identity_test.go`.
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport.SetReadDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport.SetWriteDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport.Write]] (method: belongs_to)
-- [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport]] (struct: belongs_to)
-- [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport]] (struct: defines_method)
+- [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport]] (struct: belongs_to) — *Minimal mock for testing wrappers*
+- [[safe-socket/safe-socket/cmd/test/identity_test.go.md|MockTransport]] (struct: defines_method) — *Minimal mock for testing wrappers*
 - [[safe-socket/safe-socket/cmd/test/identity_test.go.md|TestGetIdentity]] (function: belongs_to)
 - [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (calls)
 - [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (same_package)

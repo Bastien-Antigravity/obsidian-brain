@@ -21,6 +21,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.updateOBI]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|C.update]] (method: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.clear]] (method: belongs_to)

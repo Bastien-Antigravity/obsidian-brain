@@ -17,6 +17,8 @@ tags:
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: belongs_to)

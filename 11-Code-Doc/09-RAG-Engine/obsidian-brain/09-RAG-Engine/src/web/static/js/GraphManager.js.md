@@ -1,0 +1,92 @@
+---
+source: obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js
+workspace: 09-RAG-Engine
+type: code-mirror
+status: auto-generated
+last_sync: 2026-10-22T16:53:56.078737
+---
+
+# Mirror: GraphManager.js
+
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js`.
+
+## 🏗️ Architectural Context
+<!-- SYNC:START -->
+### 📦 Dependencies (Outbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.   ]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager. {
+   ]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.) {
+   ]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.EdgeColor(edg]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.Graph2D(graph) ]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.Graph3D(graph) ]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.NodeColor(nod]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.NodeSize(nod]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._getForceGraph3D]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._getForceGraph]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._handleNodeClick]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._handleNodeDoubleClick]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._handleNodeSingleClick]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._resolveFactory]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ate2DGraph(vie]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ate3DGraph(vie]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.expandAncestors]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.hasGraph]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.hoverNode]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ldSubgraph(nod]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ltipHtml(ite]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.lyUiFilters(nod]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.render]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.resetForces]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.updateForces]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/CycleDetector.js.md|CycleDetector.js]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.applyToGraph]] (method: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.js]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.reset]] (method: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/ForceConfig.js.md|ForceConfig.updateDisplay]] (method: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/GraphTheme.js.md|GraphTheme.getCurrent]] (method: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/GraphTheme.js.md|GraphTheme.js]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.isWebGLAvailable]] (method: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.js]] (imports)
+
+### 🔌 Consumers (Inbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|mfe.js]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (same_package)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.   ]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager. {
+   ]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.) {
+   ]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.EdgeColor(edg]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.Graph2D(graph) ]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.Graph3D(graph) ]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.NodeColor(nod]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.NodeSize(nod]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._getForceGraph3D]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._getForceGraph]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._handleNodeClick]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._handleNodeDoubleClick]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._handleNodeSingleClick]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager._resolveFactory]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ate2DGraph(vie]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ate3DGraph(vie]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.expandAncestors]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.hasGraph]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.hoverNode]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ldSubgraph(nod]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.ltipHtml(ite]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.lyUiFilters(nod]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.render]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.resetForces]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.updateForces]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager]] (class: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager]] (class: defines_method)
+<!-- SYNC:END -->
+
+## 🔍 Implementation Details
+(Add manual notes here)

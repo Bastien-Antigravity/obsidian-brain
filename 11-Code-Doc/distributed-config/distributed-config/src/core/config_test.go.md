@@ -20,6 +20,7 @@ Automatically generated mirror for `distributed-config/src/core/config_test.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: calls) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: calls) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: calls)

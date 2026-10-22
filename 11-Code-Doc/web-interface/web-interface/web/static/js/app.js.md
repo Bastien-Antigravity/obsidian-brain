@@ -36,6 +36,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|mfe-loader.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/app.js.md|connectVolumeMechanic]] (function: belongs_to)

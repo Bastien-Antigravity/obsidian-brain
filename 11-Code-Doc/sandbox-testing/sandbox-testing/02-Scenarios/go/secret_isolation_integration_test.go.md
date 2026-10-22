@@ -53,6 +53,8 @@ tags:
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/dynamic_logging_and_alerts_test.go.md|dynamic_logging_and_alerts_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/dynamic_ports_and_config_test.go.md|dynamic_ports_and_config_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/dynamic_ports_and_config_test.go.md|dynamic_ports_and_config_test.go]] (same_package)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ecosystem_tooling_parity_test.go.md|ecosystem_tooling_parity_test.go]] (calls)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ecosystem_tooling_parity_test.go.md|ecosystem_tooling_parity_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/full_pipeline_test.go.md|full_pipeline_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/full_pipeline_test.go.md|full_pipeline_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/log_server_performance_test.go.md|log_server_performance_test.go]] (calls)

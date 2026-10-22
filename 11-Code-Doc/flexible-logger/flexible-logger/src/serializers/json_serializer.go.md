@@ -19,8 +19,8 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (calls)
 - [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|JSONSerializer.Serialize]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|JSONSerializer]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|JSONSerializer]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|JSONSerializer]] (struct: belongs_to) — *JSONSerializer serializes logs to a documented JSON format.*
+- [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|JSONSerializer]] (struct: defines_method) — *JSONSerializer serializes logs to a documented JSON format.*
 - [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|NewJSONSerializer]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/serializers/serializer_test.go.md|serializer_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/serializers/serializer_test.go.md|serializer_test.go]] (same_package)

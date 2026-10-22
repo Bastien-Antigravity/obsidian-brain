@@ -38,15 +38,15 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.GetNotifyCount]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.IsClosed]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.Notify]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier]] (struct: belongs_to) — *MockNotifier for testing*
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier]] (struct: defines_method) — *MockNotifier for testing*
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.GetLastEntry]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.GetWriteCount]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.IsClosed]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.Write]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink]] (struct: belongs_to) — *MockSink for testing*
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink]] (struct: defines_method) — *MockSink for testing*
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_Close]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_ConcurrentStress]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_ErrorCollectsCallerEvenWhenDisabled]] (function: belongs_to)

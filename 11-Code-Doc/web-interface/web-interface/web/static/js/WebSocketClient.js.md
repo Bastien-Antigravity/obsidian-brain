@@ -23,6 +23,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: belongs_to)

@@ -46,6 +46,6 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Error]] (method: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Info]] (method: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Warning]] (method: belongs_to)
-- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger]] (struct: belongs_to)
-- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger]] (struct: defines_method)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger]] (struct: belongs_to) — *mockLogger implements the interfaces.Logger interface*
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger]] (struct: defines_method) — *mockLogger implements the interfaces.Logger interface*
 <!-- SYNC:END -->

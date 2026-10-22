@@ -82,8 +82,8 @@ Automatically generated mirror for `safe-socket/src/facade/socket_client.go`.
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.SetWriteDeadline]] (method: belongs_to) — *SetWriteDeadline sets the deadline for future Write calls.*
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.Write]] (method: belongs_to) — *Write implements the io.Writer interface in logger.*
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient.attemptOpen]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient]] (struct: belongs_to) — *Server-side methods (Listen, Accept) will return errors.*
+- [[safe-socket/safe-socket/src/facade/socket_client.go.md|SocketClient]] (struct: defines_method) — *Server-side methods (Listen, Accept) will return errors.*
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
 <!-- SYNC:END -->

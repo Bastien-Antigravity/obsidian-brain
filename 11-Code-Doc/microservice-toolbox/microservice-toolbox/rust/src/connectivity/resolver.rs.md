@@ -35,8 +35,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/connectivity/r
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.new]] (method: belongs_to) — *Creates a new network resolver.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.resolve_bind_addr]] (method: belongs_to) — *(Docker/K8s) works regardless of what was specified in the configuration.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.resolve_full_bind_addr]] (method: belongs_to) — *using the Docker Guard logic.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver]] (struct: belongs_to) — *Resolver handles environment-aware network address translation.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver]] (struct: defines_method) — *Resolver handles environment-aware network address translation.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|new_resolver]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|test_is_loopback]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|test_resolve_bind_addr_docker_suppression]] (function: belongs_to)

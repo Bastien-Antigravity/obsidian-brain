@@ -90,8 +90,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (calls)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level.String]] (method: belongs_to) — *String returns the enum's constant name.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LevelFromString]] (function: belongs_to) — *or the zero value if there's no such value.*
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level]] (struct: belongs_to) — *String returns the enum's constant name.*
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level]] (struct: defines_method) — *String returns the enum's constant name.*
+- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level]] (struct: belongs_to)
+- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level]] (struct: defines_method)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level_TypeID]] (constant: belongs_to) — *Level_TypeID is the unique identifier for the type Level.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level_critical]] (constant: belongs_to)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|Level_debug]] (constant: belongs_to)
@@ -177,8 +177,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg]] (struct: belongs_to)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg]] (struct: defines_method)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg_Future.Struct]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg_Future]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg_Future]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg_Future]] (struct: belongs_to) — *LoggerMsg_Future is a wrapper for a LoggerMsg promised by a client call.*
+- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg_Future]] (struct: defines_method) — *LoggerMsg_Future is a wrapper for a LoggerMsg promised by a client call.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg_TypeID]] (constant: belongs_to) — *LoggerMsg_TypeID is the unique identifier for the type LoggerMsg.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|NewLevel_List]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|NewLoggerMsg]] (function: belongs_to)

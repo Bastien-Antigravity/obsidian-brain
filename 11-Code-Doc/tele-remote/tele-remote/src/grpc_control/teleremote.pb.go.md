@@ -69,8 +69,8 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand.ProtoReflect]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand.Reset]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand.String]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand]] (struct: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand]] (struct: defines_method)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand]] (struct: belongs_to) — *A command sent from the Telegram Bot to the connected component(s)*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand]] (struct: defines_method) — *A command sent from the Telegram Bot to the connected component(s)*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CLOSE_ALL_POSITIONS]] (constant: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CUSTOM_COMMAND]] (constant: belongs_to) — *Extendable for arbitrarily complex commands*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType.Descriptor]] (method: belongs_to)
@@ -79,8 +79,8 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType.Number]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType.String]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType.Type]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: belongs_to) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: defines_method) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: belongs_to)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: defines_method)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_POWER_OFF]] (constant: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_REFRESH_MENU]] (constant: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_UNKNOWN]] (constant: belongs_to)
@@ -96,8 +96,8 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage.ProtoReflect]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage.Reset]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage.String]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage]] (struct: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage]] (struct: defines_method)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage]] (struct: belongs_to) — *A message sent from the external component/service to the Bot*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage]] (struct: defines_method) — *A message sent from the external component/service to the Bot*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage_Qmsg.isComponentMessage_Payload]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage_Qmsg]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|ComponentMessage_Qmsg]] (struct: defines_method)
@@ -128,7 +128,7 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|Registration.String]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|Registration]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|Registration]] (struct: defines_method)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|_]] (constant: belongs_to) — *Verify that this generated code is sufficiently up-to-date.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|file_teleremote_proto_init]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|file_teleremote_proto_rawDescGZIP]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|file_teleremote_proto_rawDesc]] (constant: belongs_to)

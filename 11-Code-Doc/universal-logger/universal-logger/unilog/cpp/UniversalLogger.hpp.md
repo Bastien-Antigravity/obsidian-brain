@@ -29,7 +29,7 @@ Automatically generated mirror for `universal-logger/unilog/cpp/UniversalLogger.
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetLevel]] (function: calls) — *export UniLog_SetLevel*
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetMetadata]] (function: calls) — *export UniLog_SetMetadata*
 - [[universal-logger/universal-logger/src/cgo_bridge/notif_callback.go.md|UniLog_RegisterNotifCallback]] (function: calls) — *export UniLog_RegisterNotifCallback*
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: defines_method) — *Disable copying to prevent double-close of the handle*
+- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: defines_method)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: defines_method)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: defines_method)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: defines_method)
@@ -53,7 +53,7 @@ Automatically generated mirror for `universal-logger/unilog/cpp/UniversalLogger.
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_INFO]] (macro: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_WARNING]] (macro: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNIVERSAL_LOGGER_HPP]] (macro: belongs_to) — *ifndef UNIVERSAL_LOGGER_HPP*
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: belongs_to) — *Disable copying to prevent double-close of the handle*
+- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: belongs_to)
 - [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: belongs_to)

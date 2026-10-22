@@ -40,8 +40,8 @@ Automatically generated mirror for `safe-socket/src/interfaces/logger.go`.
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Info]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Warning]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger]] (struct: belongs_to) — *NoOpLogger is a silent discard logger conforming to interfaces.Logger.*
+- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger]] (struct: defines_method) — *NoOpLogger is a silent discard logger conforming to interfaces.Logger.*
 - [[safe-socket/safe-socket/src/interfaces/logger_test.go.md|logger_test.go]] (calls)
 - [[safe-socket/safe-socket/src/interfaces/logger_test.go.md|logger_test.go]] (same_package)
 - [[safe-socket/safe-socket/src/transports/oom_test.go.md|oom_test.go]] (calls)

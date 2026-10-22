@@ -53,8 +53,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/notification/c
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient.send_with_attachment]] (method: belongs_to) — *attachment reference, and destination tags.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient.send_with_attachment_sync]] (method: belongs_to) — *Synchronous helper dispatching a notification over blocking libnotif bridge.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient.set_timeout]] (method: belongs_to) — *Sets default RPC dispatch timeout.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient]] (struct: belongs_to) — *notifications directly from Rust microservices to notif-server via libnotif.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient]] (struct: defines_method) — *notifications directly from Rust microservices to notif-server via libnotif.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/ffi.rs.md|ffi.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/ffi.rs.md|ffi.rs]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/mod.rs.md|mod.rs]] (imports)

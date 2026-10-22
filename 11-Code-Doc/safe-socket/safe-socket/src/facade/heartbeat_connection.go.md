@@ -35,8 +35,8 @@ Automatically generated mirror for `safe-socket/src/facade/heartbeat_connection.
 - [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection.SetIdleTimeout]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection.Write]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection.start]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection]] (struct: belongs_to) — *HeartbeatConnection wraps a transport and periodically sends 0-length heartbeats.*
+- [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|HeartbeatConnection]] (struct: defines_method) — *HeartbeatConnection wraps a transport and periodically sends 0-length heartbeats.*
 - [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|NewHeartbeatConnection]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/facade/heartbeat_restart_test.go.md|heartbeat_restart_test.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/heartbeat_restart_test.go.md|heartbeat_restart_test.go]] (same_package)

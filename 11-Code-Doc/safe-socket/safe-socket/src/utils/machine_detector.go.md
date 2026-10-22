@@ -27,8 +27,8 @@ Automatically generated mirror for `safe-socket/src/utils/machine_detector.go`.
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: belongs_to) — *GetMachineDetector returns the singleton MachineDetector instance.*
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: belongs_to) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.refresh]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector]] (struct: belongs_to) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector]] (struct: defines_method) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector]] (struct: belongs_to) — *or requires cross-machine communication.*
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector]] (struct: defines_method) — *or requires cross-machine communication.*
 - [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|machine_detector_test.go]] (calls)
 - [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|machine_detector_test.go]] (same_package)
 <!-- SYNC:END -->

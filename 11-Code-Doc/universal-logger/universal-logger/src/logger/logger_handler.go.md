@@ -67,8 +67,8 @@ tags:
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Unwrap]] (method: belongs_to) — *This is used by internal utilities for high-performance sink access.*
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.Warning]] (method: belongs_to) — *Warning logs a message at Warning level.*
 - [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog.formatMessageWithMetadata]] (method: belongs_to)
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog]] (struct: belongs_to) — *Close closes the underlying logger idempotently and unregisters the GC finalizer.*
-- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog]] (struct: defines_method) — *Close closes the underlying logger idempotently and unregisters the GC finalizer.*
+- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog]] (struct: belongs_to) — *UniLog wraps the flexible-logger library.*
+- [[universal-logger/universal-logger/src/logger/logger_handler.go.md|UniLog]] (struct: defines_method) — *UniLog wraps the flexible-logger library.*
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|logger_handler_test.go]] (calls)
 - [[universal-logger/universal-logger/src/logger/logger_handler_test.go.md|logger_handler_test.go]] (same_package)
 <!-- SYNC:END -->

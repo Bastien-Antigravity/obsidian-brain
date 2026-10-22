@@ -51,8 +51,8 @@ Automatically generated mirror for `notif-server/src/core/controller.go`.
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.RemoveProvider]] (method: belongs_to) — *RemoveProvider deletes a provider section.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotification]] (method: belongs_to) — *SendTestNotification triggers a test notification through the engine and logger.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SetAlertingConfig]] (method: belongs_to) — *SetAlertingConfig updates a specific setting for a notification provider.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller]] (struct: belongs_to) — *GetSupportedTypes returns the list of hardcoded drivers available.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller]] (struct: defines_method) — *GetSupportedTypes returns the list of hardcoded drivers available.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller]] (struct: belongs_to) — *Controller implements the NotifController interface.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller]] (struct: defines_method) — *Controller implements the NotifController interface.*
 - [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: belongs_to) — *NewController creates a new Controller instance.*
 - [[notif-server/notif-server/src/core/controller.go.md|NotifController]] (interface: belongs_to) — *NotifController defines the unified interface for notification management.*
 - [[notif-server/notif-server/src/core/controller.go.md|NotifierInfo]] (struct: belongs_to) — *NotifierInfo provides a summary of an active notifier.*

@@ -27,7 +27,7 @@ Automatically generated mirror for `watchdog-agent/src/telegram/manager.go`.
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|*toolbox_conf]] (function: belongs_to) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: belongs_to) — *RebuildMenu dynamically pulls status updates and registers actions*
-- [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|MenuManager]] (struct: belongs_to) — *RebuildMenu dynamically pulls status updates and registers actions*
-- [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|MenuManager]] (struct: defines_method) — *RebuildMenu dynamically pulls status updates and registers actions*
+- [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|MenuManager]] (struct: belongs_to) — *MenuManager orchestrates the rebuild operations of the Telegram interactive menus.*
+- [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|MenuManager]] (struct: defines_method) — *MenuManager orchestrates the rebuild operations of the Telegram interactive menus.*
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|NewMenuManager]] (function: belongs_to) — *NewMenuManager creates a new MenuManager.*
 <!-- SYNC:END -->

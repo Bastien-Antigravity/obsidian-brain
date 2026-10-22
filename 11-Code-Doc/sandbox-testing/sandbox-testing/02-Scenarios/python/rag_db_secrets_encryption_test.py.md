@@ -23,6 +23,8 @@ Automatically generated mirror for `sandbox-testing/02-Scenarios/python/rag_db_s
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py.md|decrypt_secret]] (function: calls)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py.md|squad_agent_scenario_test.py]] (same_package)
 - [[sandbox-testing/sandbox-testing/03-Orchestration/scenario_orchestrator.py.md|execute]] (function: calls)
 
 ### 🔌 Consumers (Inbound)

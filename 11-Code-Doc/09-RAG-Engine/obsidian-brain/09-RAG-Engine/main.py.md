@@ -19,6 +19,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 ### 📦 Dependencies (Outbound)
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|print_help]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|RAGControllerImpl]] (class: calls) — *Standardized controller implementation for RAG operations.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|build_index]] (function: calls) — *Triggers index rebuild.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|controller.py]] (imports)
@@ -51,6 +52,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/build_inventory.py.md|build_inventory.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|fleet_commander.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_refresh.py.md|fleet_refresh.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|fleet_version.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|scaffold_microservice.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)

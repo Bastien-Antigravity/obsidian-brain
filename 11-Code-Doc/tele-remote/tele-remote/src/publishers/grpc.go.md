@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: calls) — *Deprecated: Use BotCommand_CommandType.Descriptor instead.*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: calls)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|teleremote.pb.go]] (imports)
 - [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|subscriber.go]] (imports)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: defines_method)
@@ -25,8 +25,8 @@ tags:
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher]] (struct: belongs_to)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher]] (struct: defines_method)
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher]] (struct: belongs_to) — *GrpcPublisher wraps a bidirectional gRPC stream and implements interfaces.IPublisher*
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher]] (struct: defines_method) — *GrpcPublisher wraps a bidirectional gRPC stream and implements interfaces.IPublisher*
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|NewGrpcPublisher]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|grpc.go]] (calls)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|grpc.go]] (imports)

@@ -45,8 +45,8 @@ Automatically generated mirror for `notif-server/src/notifiers/gmail.go`.
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|NewGmailSender]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Next]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Start]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: defines_method)
+- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: belongs_to) — *bypassing Go's internal net/smtp Client.tls flag requirement.*
+- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: defines_method) — *bypassing Go's internal net/smtp Client.tls flag requirement.*
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
 <!-- SYNC:END -->

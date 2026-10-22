@@ -26,4 +26,5 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/utils/helpers.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/utils/helpers.go.md|GetHostname]] (function: belongs_to) — *GetHostname returns the system hostname*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/utils/terminal_ui.go.md|terminal_ui.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/utils/terminal_ui.go.md|terminal_ui.go]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|version.go]] (calls)
 <!-- SYNC:END -->

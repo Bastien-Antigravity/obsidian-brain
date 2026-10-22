@@ -20,6 +20,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.onMessage]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderIndicators]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.addRow]] (method: belongs_to)

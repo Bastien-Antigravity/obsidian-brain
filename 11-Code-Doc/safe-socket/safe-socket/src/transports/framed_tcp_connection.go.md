@@ -58,8 +58,8 @@ Automatically generated mirror for `safe-socket/src/transports/framed_tcp_connec
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Write]] (method: belongs_to) — *Write prepends length and writes data.*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.refreshReadDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.refreshWriteDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket]] (struct: belongs_to) — *RemoteAddr returns the remote network address.*
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket]] (struct: defines_method) — *RemoteAddr returns the remote network address.*
+- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket]] (struct: belongs_to) — *It uses a 4-byte BigEndian length header for every write.*
+- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket]] (struct: defines_method) — *It uses a 4-byte BigEndian length header for every write.*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|MaxPayloadSize]] (constant: belongs_to) — *MaxPayloadSize defines the upper limit for incoming frames (default 64MB).*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|NewFramedTCPSocket]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_connection_test.go.md|framed_tcp_connection_test.go]] (calls)

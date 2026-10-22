@@ -42,8 +42,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|notif_logger.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/standard.go.md|standard.go]] (calls)
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer.Serialize]] (method: belongs_to) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: belongs_to) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: defines_method) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: belongs_to) — *CapnpSerializer implements the Serializer interface manually using LoggerMsg schema.*
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer]] (struct: defines_method) — *CapnpSerializer implements the Serializer interface manually using LoggerMsg schema.*
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|NewCapnpSerializer]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|mapLevel]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/serializers/serializer_test.go.md|serializer_test.go]] (calls)

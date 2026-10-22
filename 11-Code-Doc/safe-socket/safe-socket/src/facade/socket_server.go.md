@@ -79,10 +79,10 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetReadDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetWriteDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Write]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: belongs_to) — *SetIdleTimeout updates the internal idle timeout for newly accepted connections.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: defines_method) — *SetIdleTimeout updates the internal idle timeout for newly accepted connections.*
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: belongs_to) — *does not send/receive data directly; the *accepted connection* does.*
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: defines_method) — *does not send/receive data directly; the *accepted connection* does.*
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: belongs_to) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: defines_method) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
 <!-- SYNC:END -->

@@ -67,11 +67,11 @@ tags:
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Tags]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.ToPtr]] (method: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: belongs_to) — *allocated capnp.TextList, preferring placement in s's segment.*
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: defines_method) — *allocated capnp.TextList, preferring placement in s's segment.*
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: belongs_to)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg]] (struct: defines_method)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future.Struct]] (method: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future]] (struct: belongs_to)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future]] (struct: defines_method)
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future]] (struct: belongs_to) — *NotifierMsg_Future is a wrapper for a NotifierMsg promised by a client call.*
+- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_Future]] (struct: defines_method) — *NotifierMsg_Future is a wrapper for a NotifierMsg promised by a client call.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg_TypeID]] (constant: belongs_to) — *NotifierMsg_TypeID is the unique identifier for the type NotifierMsg.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|ReadRootNotifierMsg]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|RegisterSchema]] (function: belongs_to)

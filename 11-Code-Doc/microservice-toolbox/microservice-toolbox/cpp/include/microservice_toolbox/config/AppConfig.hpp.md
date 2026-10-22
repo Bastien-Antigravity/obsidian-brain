@@ -32,6 +32,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetRESTAddr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetRawConfig]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetServiceName]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetVersion]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.LoadLocalOverrides]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.OnLiveConfUpdate]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.OnRegistryUpdate]] (method: defines_method)
@@ -51,6 +52,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetLastError]] (method: calls) — *Get the last error from the underlying engine*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetRESTAddress]] (method: calls) — *Get a REST address for a capability*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|Logger.hpp]] (imports)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|Version.hpp]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.AppConfig]] (method: belongs_to)
@@ -66,6 +68,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetRESTAddr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetRawConfig]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetServiceName]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.GetVersion]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.LoadLocalOverrides]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.OnLiveConfUpdate]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.OnRegistryUpdate]] (method: belongs_to)

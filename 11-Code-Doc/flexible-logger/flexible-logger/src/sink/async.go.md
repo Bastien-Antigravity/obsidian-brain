@@ -35,8 +35,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink.SetOnError]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink.Write]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink.worker]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink]] (struct: belongs_to) — *AsyncSink wraps another sink and writes asynchronously using a buffered channel.*
+- [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink]] (struct: defines_method) — *AsyncSink wraps another sink and writes asynchronously using a buffered channel.*
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|sink_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|sink_test.go]] (same_package)

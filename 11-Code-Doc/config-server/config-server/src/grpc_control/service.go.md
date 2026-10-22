@@ -40,8 +40,8 @@ Automatically generated mirror for `config-server/src/grpc_control/service.go`.
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.PersistConfig]] (method: belongs_to) — *PersistConfig manually triggers a save of the current memory state*
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.ReloadConfig]] (method: belongs_to) — *ReloadConfig reloads configuration from the base YAML*
 - [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl.SetConfig]] (method: belongs_to) — *SetConfig updates a configuration value atomically*
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to) — *GetStatus returns server health and metadata*
-- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method) — *GetStatus returns server health and metadata*
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to)
+- [[config-server/config-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method)
 - [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to) — *NewControlService creates a new ControlServiceImpl instance*
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)

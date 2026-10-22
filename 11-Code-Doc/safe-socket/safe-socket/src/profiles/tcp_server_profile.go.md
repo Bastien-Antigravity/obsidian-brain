@@ -43,13 +43,13 @@ Automatically generated mirror for `safe-socket/src/profiles/tcp_server_profile.
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile.GetName]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile.GetProtocol]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile.GetTransport]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile]] (struct: belongs_to) — *that performs a handshake protocol upon connection.*
+- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpHelloServerProfile]] (struct: defines_method) — *that performs a handshake protocol upon connection.*
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile.GetAddress]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile.GetConnectTimeout]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile.GetName]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile.GetProtocol]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile.GetTransport]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile]] (struct: belongs_to) — *without any handshake protocol.*
+- [[safe-socket/safe-socket/src/profiles/tcp_server_profile.go.md|TcpServerProfile]] (struct: defines_method) — *without any handshake protocol.*
 <!-- SYNC:END -->

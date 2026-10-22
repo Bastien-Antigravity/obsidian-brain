@@ -59,8 +59,8 @@ tags:
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer.SetAlertingConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer.mustEmbedUnimplementedNotifControlServiceServer]] (method: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer.testEmbeddedByValue]] (method: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer]] (struct: belongs_to)
-- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer]] (struct: defines_method)
+- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer]] (struct: belongs_to) — *pointer dereference when methods are called.*
+- [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnimplementedNotifControlServiceServer]] (struct: defines_method) — *pointer dereference when methods are called.*
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|UnsafeNotifControlServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_AddProvider_Handler]] (function: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/notif_server_grpc.pb.go.md|_NotifControlService_GetAlertingConfig_Handler]] (function: belongs_to)

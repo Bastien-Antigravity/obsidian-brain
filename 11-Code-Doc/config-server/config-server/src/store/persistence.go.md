@@ -41,8 +41,8 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 - [[config-server/config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: belongs_to) — *NewPersistenceManager creates a new manager for the given file path.*
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: belongs_to) — *If the file does not exist, it returns an empty ConfigMap and no error.*
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: belongs_to) — *prevent file corruption in case of crashes during the write process.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: belongs_to) — *prevent file corruption in case of crashes during the write process.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: belongs_to) — *PersistenceManager handles saving and loading the configuration from disk.*
+- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method) — *PersistenceManager handles saving and loading the configuration from disk.*
 - [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (calls)
 - [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (same_package)
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)

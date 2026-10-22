@@ -39,6 +39,7 @@ Automatically generated mirror for `docker-deployment/scripts/fleet_guard/guided
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|run_guided_setup]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|set_os_environment_variable]] (function: belongs_to) — *Set variable in current process and guide user to persist in OS environment (shell / registry).*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|update_yaml_field]] (function: belongs_to) — *Safely replace or update a field under a section in a YAML file while preserving comments.*
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|verify_discord_token]] (function: belongs_to) — *Verify Discord bot token against Discord REST API (/users/@me) with resilient SSL fallbacks.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|verify_github_token]] (function: belongs_to) — *Verify GitHub Personal Access Token against GitHub API (/user) with resilient SSL fallbacks.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|verify_telegram_token]] (function: belongs_to) — *Verify Telegram bot token against Telegram Bot API (getMe) with resilient SSL fallbacks.*
 <!-- SYNC:END -->

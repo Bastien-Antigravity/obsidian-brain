@@ -98,8 +98,8 @@ tags:
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg]] (struct: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg]] (struct: defines_method)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future.Struct]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future]] (struct: belongs_to) — *HelloMsg_Future is a wrapper for a HelloMsg promised by a client call.*
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_Future]] (struct: defines_method) — *HelloMsg_Future is a wrapper for a HelloMsg promised by a client call.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg_TypeID]] (constant: belongs_to) — *HelloMsg_TypeID is the unique identifier for the type HelloMsg.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewHelloMsg]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|NewHelloMsg_List]] (function: belongs_to) — *NewHelloMsg creates a new list of HelloMsg.*
@@ -124,8 +124,8 @@ tags:
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope]] (struct: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope]] (struct: defines_method)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future.Struct]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future]] (struct: belongs_to) — *PacketEnvelope_Future is a wrapper for a PacketEnvelope promised by a client call.*
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_Future]] (struct: defines_method) — *PacketEnvelope_Future is a wrapper for a PacketEnvelope promised by a client call.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|PacketEnvelope_TypeID]] (constant: belongs_to) — *PacketEnvelope_TypeID is the unique identifier for the type PacketEnvelope.*
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|ReadRootHelloMsg]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|ReadRootPacketEnvelope]] (function: belongs_to)

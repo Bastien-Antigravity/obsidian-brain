@@ -42,8 +42,8 @@ Automatically generated mirror for `web-interface/src/postgres_browser/postgres_
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.getDatabase]] (method: belongs_to) — *getDatabase resolves connection settings from config and caches/returns the active pool.*
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.resolveTimescaleConfig]] (method: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler.switchDatabase]] (method: belongs_to) — *switchDatabase connects to an alternate database on the same host configuration.*
-- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler]] (struct: belongs_to) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
-- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler]] (struct: defines_method) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
+- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler]] (struct: belongs_to) — *BrowserHandler handles Postgres HTTP browser API operations.*
+- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|BrowserHandler]] (struct: defines_method) — *BrowserHandler handles Postgres HTTP browser API operations.*
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|ColumnInfo]] (struct: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|QueryRequest]] (struct: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|QueryResponse]] (struct: belongs_to)

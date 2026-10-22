@@ -45,11 +45,11 @@ tags:
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: belongs_to) — *Create new log writer with custom config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: belongs_to) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: belongs_to) — *Main writer task implementation*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: belongs_to)
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: defines_method)
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: belongs_to) — *File writer with ordering and rotation*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: defines_method) — *File writer with ordering and rotation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: belongs_to)
-- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: belongs_to)
-- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: defines_method)
+- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: belongs_to) — *Log writer configuration*
+- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: defines_method) — *Log writer configuration*
 - [[log-server/log-server/src/lib.rs.md|lib.rs]] (imports)
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
 <!-- SYNC:END -->

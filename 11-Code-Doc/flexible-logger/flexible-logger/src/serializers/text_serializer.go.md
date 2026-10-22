@@ -37,8 +37,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/serializers/serializer_test.go.md|serializer_test.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|NewTextSerializer]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|TextSerializer.Serialize]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|TextSerializer]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|TextSerializer]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|TextSerializer]] (struct: belongs_to) — *TextSerializer serializes logs to a human-readable text format.*
+- [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|TextSerializer]] (struct: defines_method) — *TextSerializer serializes logs to a human-readable text format.*
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|truncate]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|console.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|console.go]] (imports)

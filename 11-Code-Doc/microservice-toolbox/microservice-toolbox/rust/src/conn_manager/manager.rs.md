@@ -24,10 +24,10 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/m
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.reconnect]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.set_stream]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.write]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection]] (struct: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection]] (struct: calls) — *background reconnections if a network failure is detected during use.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|connection.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|connection.rs]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/errors.rs.md|Error]] (struct: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/errors.rs.md|Error]] (enum: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/errors.rs.md|errors.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/errors.rs.md|errors.rs]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect]] (method: defines_method)
@@ -64,8 +64,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/m
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_performance]] (method: belongs_to) — *Short timeouts, low delay, background reconnection.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_standard]] (method: belongs_to) — *Limited retries, moderate backoff.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_with_all]] (method: belongs_to) — *across the polyglot ecosystem.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager]] (struct: belongs_to) — *Strategies*
-- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager]] (struct: defines_method) — *Strategies*
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager]] (struct: belongs_to) — *- Context-Aware Recovery: Unified error reporting via on_error.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager]] (struct: defines_method) — *- Context-Aware Recovery: Unified error reporting via on_error.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|OptionalHandler]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|new_network_manager]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|new_network_manager_with_all]] (function: belongs_to) — *NOTE: Matches NetworkManager::new_with_all argument count for polyglot parity.*

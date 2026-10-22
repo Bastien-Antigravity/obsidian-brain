@@ -67,11 +67,11 @@ tags:
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.String]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.Tags]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.ToPtr]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg]] (struct: belongs_to) — *allocated capnp.TextList, preferring placement in s's segment.*
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg]] (struct: defines_method) — *allocated capnp.TextList, preferring placement in s's segment.*
+- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg]] (struct: belongs_to)
+- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg]] (struct: defines_method)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg_Future.Struct]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg_Future]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg_Future]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg_Future]] (struct: belongs_to) — *NotifierMsg_Future is a wrapper for a NotifierMsg promised by a client call.*
+- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg_Future]] (struct: defines_method) — *NotifierMsg_Future is a wrapper for a NotifierMsg promised by a client call.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg_TypeID]] (constant: belongs_to) — *NotifierMsg_TypeID is the unique identifier for the type NotifierMsg.*
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|ReadRootNotifierMsg]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|RegisterSchema]] (function: belongs_to)

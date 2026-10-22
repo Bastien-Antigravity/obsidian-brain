@@ -39,8 +39,8 @@ Automatically generated mirror for `safe-socket/src/transports/framed_tcp_server
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener.Accept]] (method: belongs_to) — *Accept waits for and returns the next connection to the listener.*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener.Addr]] (method: belongs_to) — *Addr returns the listener's network address.*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener.Close]] (method: belongs_to) — *Close closes the listener.*
-- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener]] (struct: belongs_to) — *Addr returns the listener's network address.*
-- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener]] (struct: defines_method) — *Addr returns the listener's network address.*
+- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener]] (struct: belongs_to) — *FramedTCPListener implements interfaces.TransportListener.*
+- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|FramedTCPListener]] (struct: defines_method) — *FramedTCPListener implements interfaces.TransportListener.*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|ListenTLS]] (function: belongs_to) — *ListenTLS creates a new TLS-enabled FramedTCPListener.*
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|Listen]] (function: belongs_to) — *Listen creates a new FramedTCPListener.*
 - [[safe-socket/safe-socket/src/transports/heartbeat_test.go.md|heartbeat_test.go]] (calls)

@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `microservice-toolbox/go/pkg/logger/logger.go`.
 
 > **Essential Process**:
-> Standardized logging abstraction implementing the unified ILogger interface.
+> Standardized logging abstraction implementing the unified Logger interface.
 
 ## 🏗️ Architectural Context
 
@@ -65,8 +65,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/logger/logger.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.Stream]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.Trade]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger.Warning]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger]] (struct: belongs_to) — *FmtLogger is a simple logger that prints to stdout, useful for debugging.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|FmtLogger]] (struct: defines_method) — *FmtLogger is a simple logger that prints to stdout, useful for debugging.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|Logger]] (interface: belongs_to) — *a hard dependency on the logging implementation.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.AddMetadata]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Critical]] (method: belongs_to)

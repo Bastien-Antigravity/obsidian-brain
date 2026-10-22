@@ -22,6 +22,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.create]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|CoSEConstants]] (function: belongs_to)

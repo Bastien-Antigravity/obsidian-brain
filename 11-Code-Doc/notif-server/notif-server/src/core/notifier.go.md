@@ -73,8 +73,8 @@ Automatically generated mirror for `notif-server/src/core/notifier.go`.
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.startSenderWorker]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.stopSenderLocked]] (method: belongs_to)
 - [[notif-server/notif-server/src/core/notifier.go.md|NotifierStatus]] (struct: belongs_to) — *NotifierStatus contains basic info about an active provider*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: belongs_to)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: defines_method)
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: belongs_to) — *Notifier is the concrete implementation of the notification service.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier]] (struct: defines_method) — *Notifier is the concrete implementation of the notification service.*
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/worker_pool_test.go.md|worker_pool_test.go]] (calls)

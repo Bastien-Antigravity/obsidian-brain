@@ -29,7 +29,7 @@ Automatically generated mirror for `safe-socket/safesock/cpp/SafeSocket.hpp`.
 - [[safe-socket/safe-socket/cmd/libsafesocket/main.go.md|SafeSocket_Send]] (function: calls) — *export SafeSocket_Send*
 - [[safe-socket/safe-socket/cmd/libsafesocket/main.go.md|SafeSocket_SetDeadline]] (function: calls) — *export SafeSocket_SetDeadline*
 - [[safe-socket/safe-socket/cmd/libsafesocket/main.go.md|SafeSocket_SetIdleTimeout]] (function: calls) — *export SafeSocket_SetIdleTimeout*
-- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.SafeSocket]] (method: defines_method) — *Disable copy*
+- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.SafeSocket]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.accept]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.close]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.getLastError]] (method: defines_method)
@@ -39,7 +39,7 @@ Automatically generated mirror for `safe-socket/safesock/cpp/SafeSocket.hpp`.
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.send]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.set_deadline]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.set_idle_timeout]] (method: defines_method)
-- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.SafeSocketConnection]] (method: defines_method) — *Disable copy*
+- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.SafeSocketConnection]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.close]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.getLastError]] (method: defines_method)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.receive]] (method: defines_method)
@@ -51,7 +51,7 @@ Automatically generated mirror for `safe-socket/safesock/cpp/SafeSocket.hpp`.
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SAFESOCKET_HPP]] (macro: belongs_to) — *ifndef SAFESOCKET_HPP*
-- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.SafeSocket]] (method: belongs_to) — *Disable copy*
+- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.SafeSocket]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.accept]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.close]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.getLastError]] (method: belongs_to)
@@ -61,7 +61,7 @@ Automatically generated mirror for `safe-socket/safesock/cpp/SafeSocket.hpp`.
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.send]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.set_deadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.set_idle_timeout]] (method: belongs_to)
-- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.SafeSocketConnection]] (method: belongs_to) — *Disable copy*
+- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.SafeSocketConnection]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.close]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.getLastError]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.receive]] (method: belongs_to)

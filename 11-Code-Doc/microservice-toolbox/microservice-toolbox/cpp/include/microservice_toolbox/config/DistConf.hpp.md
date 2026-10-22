@@ -21,7 +21,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.ApplyFileOverride]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Decrypt]] (method: defines_method) — *Decrypt a secret*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.DistConfig]] (method: defines_method) — *Disable copy*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.DistConfig]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetAddress]] (method: defines_method) — *Get an address (host:port) for a capability*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetCapability]] (method: defines_method) — *Get a capability configuration as JSON*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: defines_method) — *Get full configuration as JSON*
@@ -48,7 +48,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DISTCONF_HPP]] (macro: belongs_to) — *ifndef DISTCONF_HPP*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.ApplyFileOverride]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Decrypt]] (method: belongs_to) — *Decrypt a secret*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.DistConfig]] (method: belongs_to) — *Disable copy*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.DistConfig]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetAddress]] (method: belongs_to) — *Get an address (host:port) for a capability*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetCapability]] (method: belongs_to) — *Get a capability configuration as JSON*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: belongs_to) — *Get full configuration as JSON*

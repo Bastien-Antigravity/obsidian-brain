@@ -39,8 +39,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NewNotifLogger]] (function: belongs_to) — *NewNotifLogger creates a logger similar to NoLockLogger but with LocalNotifier.*
 - [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.SetLocalNotifQueue]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.Unwrap]] (method: belongs_to) — *Unwrap returns the underlying Logger instance.*
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: belongs_to) — *Unwrap returns the underlying Logger instance.*
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: defines_method) — *Unwrap returns the underlying Logger instance.*
+- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: belongs_to) — *NotifLoggerWrapper wraps LogEngine to expose SetLocalNotifQueue*
+- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: defines_method) — *NotifLoggerWrapper wraps LogEngine to expose SetLocalNotifQueue*
 - [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|ServerCap]] (struct: belongs_to)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (same_package)

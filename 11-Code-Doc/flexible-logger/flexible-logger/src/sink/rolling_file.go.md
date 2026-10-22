@@ -37,8 +37,8 @@ Automatically generated mirror for `flexible-logger/src/sink/rolling_file.go`.
 - [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.Close]] (method: belongs_to) — *Close closes the underlying file handle.*
 - [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.Write]] (method: belongs_to) — *Write writes data to the current file, rotating beforehand if size exceeds maxBytes.*
 - [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.rotate]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter]] (struct: belongs_to) — *Close closes the underlying file handle.*
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter]] (struct: defines_method) — *Close closes the underlying file handle.*
+- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter]] (struct: belongs_to) — *RollingFileWriter implements io.WriteCloser with size-based rotation.*
+- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter]] (struct: defines_method) — *RollingFileWriter implements io.WriteCloser with size-based rotation.*
 - [[flexible-logger/flexible-logger/src/sink/rolling_file_test.go.md|rolling_file_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/rolling_file_test.go.md|rolling_file_test.go]] (same_package)
 <!-- SYNC:END -->

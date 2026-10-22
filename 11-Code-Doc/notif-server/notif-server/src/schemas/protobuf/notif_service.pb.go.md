@@ -52,7 +52,7 @@ tags:
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse.String]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse]] (struct: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifResponse]] (struct: defines_method)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|_]] (constant: belongs_to) — *Verify that runtime/protoimpl is sufficiently up-to-date.*
+- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|_]] (constant: belongs_to) — *Verify that this generated code is sufficiently up-to-date.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_notif_service_proto_init]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_notif_service_proto_rawDescGZIP]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|file_notif_service_proto_rawDesc]] (constant: belongs_to)

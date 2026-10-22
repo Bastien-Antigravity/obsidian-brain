@@ -40,6 +40,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_cli_overrides(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_file_override(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_addr(&]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_bridge_error(l]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_config(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_grpc_listen_addr(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_listen_addr(&]] (method: defines_method)
@@ -48,6 +49,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_rest_addr(&]] (method: defines_method) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_service_name(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_value(&]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_version(&]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ternal_cb(_]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ternal_reg_cb(_]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/merger.rs.md|merger.rs]] (imports)
@@ -98,6 +100,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_cli_overrides(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ply_file_override(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_addr(&]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_bridge_error(l]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_config(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_grpc_listen_addr(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_listen_addr(&]] (method: belongs_to)
@@ -106,6 +109,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_rest_addr(&]] (method: belongs_to) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_service_name(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_value(&]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.t_version(&]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ternal_cb(_]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {.ternal_reg_cb(_]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|pConfig {]] (struct: belongs_to)

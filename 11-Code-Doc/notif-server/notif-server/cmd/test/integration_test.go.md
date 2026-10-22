@@ -72,11 +72,11 @@ Automatically generated mirror for `notif-server/cmd/test/integration_test.go`.
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Stream]] (method: belongs_to)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Trade]] (method: belongs_to)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Warning]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: defines_method)
+- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: belongs_to) — *mockLogger implementation for the integration test*
+- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: defines_method) — *mockLogger implementation for the integration test*
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: belongs_to)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: belongs_to)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: defines_method)
+- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: belongs_to) — *mockSender to verify the final delivery*
+- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: defines_method) — *mockSender to verify the final delivery*
 <!-- SYNC:END -->

@@ -30,7 +30,7 @@ tags:
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.Close]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.Connect]] (method: belongs_to) — *Connect implements the grpc_control.TeleRemoteServiceServer stream loop*
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.StartListen]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber]] (struct: belongs_to)
-- [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber]] (struct: defines_method)
+- [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber]] (struct: belongs_to) — *GrpcSubscriber acts as the Tele-Remote generic gRPC Listener*
+- [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber]] (struct: defines_method) — *GrpcSubscriber acts as the Tele-Remote generic gRPC Listener*
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|NewGrpcSubscriber]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -60,8 +60,8 @@ Automatically generated mirror for `safe-socket/src/transports/shm_connection.go
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|OffsetTailB]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr.Network]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr.String]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr]] (struct: belongs_to) — *ShmAddr implements net.Addr for Shared Memory.*
+- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr]] (struct: defines_method) — *ShmAddr implements net.Addr for Shared Memory.*
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport.Close]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport.LocalAddr]] (method: belongs_to) — *LocalAddr returns the local network address (SHM pseudo-address).*
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport.ReadMessage]] (method: belongs_to) — *ReadMessage for SHM reads exactly one frame.*
@@ -76,8 +76,8 @@ Automatically generated mirror for `safe-socket/src/transports/shm_connection.go
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport.refreshReadDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport.refreshWriteDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport.writeToRing]] (method: belongs_to) — *writeToRing is a helper to handle wrapped writes.*
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport]] (struct: belongs_to) — *RemoteAddr returns the remote network address (SHM pseudo-address).*
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport]] (struct: defines_method) — *RemoteAddr returns the remote network address (SHM pseudo-address).*
+- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport]] (struct: belongs_to) — *ShmTransport implements a Shared Memory Ring Buffer transport.*
+- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmTransport]] (struct: defines_method) — *ShmTransport implements a Shared Memory Ring Buffer transport.*
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|StatusConnected]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|StatusIdle]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_connection.go.md|StatusListening]] (constant: belongs_to)

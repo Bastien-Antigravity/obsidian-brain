@@ -18,7 +18,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|e]] (function: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|i.clone]] (method: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|r]] (function: calls)
+- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|r]] (class: calls)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
 

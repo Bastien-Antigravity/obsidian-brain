@@ -35,6 +35,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/network/grpc_s
 - [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer.add_service]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer.new]] (method: belongs_to) — *Creates a new GrpcServer, resolving the address using Docker Guard logic.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer.start]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer]] (struct: belongs_to) — *GrpcServer is a standardized gRPC server wrapper for the microservice-toolbox.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|GrpcServer]] (struct: defines_method) — *GrpcServer is a standardized gRPC server wrapper for the microservice-toolbox.*
 <!-- SYNC:END -->

@@ -23,6 +23,7 @@ tags:
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/main.rs.md|VERSION]] (constant: belongs_to)
 - [[log-server/log-server/src/main.rs.md|main]] (function: belongs_to)
 - [[log-server/log-server/src/main.rs.md|run_server]] (function: belongs_to) — *Main server execution function*
 <!-- SYNC:END -->

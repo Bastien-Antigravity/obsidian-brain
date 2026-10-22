@@ -25,6 +25,6 @@ Automatically generated mirror for `distributed-config/distconf/python/ffi_valid
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Set]] (function: calls) — *export DistConf_Set*
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/distconf/python/ffi_validation.py.md|LIB_PATH]] (constant: belongs_to)
+- [[distributed-config/distributed-config/distconf/python/ffi_validation.py.md|LIB_PATH]] (constant: belongs_to) — *Path to the shared library*
 - [[distributed-config/distributed-config/distconf/python/ffi_validation.py.md|validate_ffi]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -22,8 +22,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: belongs_to) — *Release decrements the reference count and returns the entry to the pool if 0.*
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: belongs_to) — *Reset clears the LogEntry for reuse.*
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Retain]] (method: belongs_to) — *Must be called when passing the entry to an additional async consumer.*
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry]] (struct: belongs_to) — *Release decrements the reference count and returns the entry to the pool if 0.*
-- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry]] (struct: defines_method) — *Release decrements the reference count and returns the entry to the pool if 0.*
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry]] (struct: belongs_to) — *It is designed to be pooled to reduce allocations.*
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry]] (struct: defines_method) — *It is designed to be pooled to reduce allocations.*
 - [[flexible-logger/flexible-logger/src/models/entry_test.go.md|entry_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/models/entry_test.go.md|entry_test.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (calls)

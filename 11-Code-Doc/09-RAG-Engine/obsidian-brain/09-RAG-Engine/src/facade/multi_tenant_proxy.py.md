@@ -43,7 +43,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/mult
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantParentStoreProxy]] (class: belongs_to) — *Routes parent raw content storage operations to schema-specific PostgresParentStore instances.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantVectorStoreProxy]] (class: belongs_to) — *Routes vector store operations to schema-specific PgVectorStore instances.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|__init__]] (function: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_active_schemas]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_active_schemas]] (function: belongs_to) — *Retrieves all active database schemas with 30s TTL caching.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_db]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_service]] (function: belongs_to)
@@ -78,6 +77,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/mult
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|remove_node]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|reset_registry]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|reset_store]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|resolve_schema_from_id]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|resolve_schema_from_path]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|set_bulk_mode]] (function: belongs_to) — *Propagates bulk ingestion mode across active schema stores.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|store_parent]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|store_parents_batch]] (function: belongs_to)

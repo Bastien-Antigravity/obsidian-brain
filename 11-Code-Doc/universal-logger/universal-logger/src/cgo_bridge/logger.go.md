@@ -18,6 +18,7 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_AddMetadata]] (function: belongs_to) — *export UniLog_AddMetadata*
+- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_Flush]] (function: belongs_to) — *export UniLog_Flush*
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_GetLevel]] (function: belongs_to) — *export UniLog_GetLevel*
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_LogWithMetadata]] (function: belongs_to) — *export UniLog_LogWithMetadata*
 - [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetLevel]] (function: belongs_to) — *export UniLog_SetLevel*

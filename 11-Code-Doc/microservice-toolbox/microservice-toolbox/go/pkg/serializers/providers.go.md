@@ -27,12 +27,12 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/serializers/prov
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|BinSerializer.Marshal]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|BinSerializer.Unmarshal]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|BinSerializer]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|BinSerializer]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|BinSerializer]] (struct: belongs_to) — *BinSerializer implements Serializer using msgpack encoding.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|BinSerializer]] (struct: defines_method) — *BinSerializer implements Serializer using msgpack encoding.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|JSONSerializer.Marshal]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|JSONSerializer.Unmarshal]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|JSONSerializer]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|JSONSerializer]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|JSONSerializer]] (struct: belongs_to) — *JSONSerializer implements Serializer natively over JSON.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|JSONSerializer]] (struct: defines_method) — *JSONSerializer implements Serializer natively over JSON.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|NewBinSerializer]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|NewJSONSerializer]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/serializer_test.go.md|serializer_test.go]] (calls)

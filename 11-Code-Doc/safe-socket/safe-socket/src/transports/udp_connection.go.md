@@ -51,8 +51,8 @@ Automatically generated mirror for `safe-socket/src/transports/udp_connection.go
 - [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket.Write]] (method: belongs_to) — *Messages larger than 64KB will fail.*
 - [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket.refreshReadDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket.refreshWriteDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket]] (struct: belongs_to) — *RemoteAddr returns the remote network address.*
-- [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket]] (struct: defines_method) — *RemoteAddr returns the remote network address.*
+- [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket]] (struct: belongs_to) — *Note: UDP is unreliable and unordered.*
+- [[safe-socket/safe-socket/src/transports/udp_connection.go.md|UdpSocket]] (struct: defines_method) — *Note: UDP is unreliable and unordered.*
 - [[safe-socket/safe-socket/src/transports/udp_server.go.md|udp_server.go]] (calls)
 - [[safe-socket/safe-socket/src/transports/udp_server.go.md|udp_server.go]] (same_package)
 <!-- SYNC:END -->

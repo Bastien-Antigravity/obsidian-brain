@@ -45,20 +45,20 @@ Automatically generated mirror for `microservice-toolbox/rust/src/serializers/pr
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer.marshal]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer.new]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer.unmarshal]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer]] (struct: belongs_to) — *Note: matched with Go's 'BinSerializer' using msgpack.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer]] (struct: defines_method) — *Note: matched with Go's 'BinSerializer' using msgpack.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer.default]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer.marshal]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer.new]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer.unmarshal]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer]] (struct: belongs_to) — *JsonSerializer implements Serializer natively over JSON.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|JsonSerializer]] (struct: defines_method) — *JsonSerializer implements Serializer natively over JSON.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum.marshal]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum.new_bin]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum.new_json]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum.unmarshal]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum]] (enum: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|SerializerEnum]] (enum: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|TestData]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|new_bin_serializer]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|new_json_serializer]] (function: belongs_to)

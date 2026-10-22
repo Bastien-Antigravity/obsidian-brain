@@ -19,7 +19,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls) — *A message sent from the external component/service to the Bot*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/grpc_client/__init__.py.md|__init__.py]] (imports)
@@ -40,7 +40,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|add_action]] (function: belongs_to) — *registers a new action or sub-menu tree*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|close]] (function: belongs_to) — *gracefully stops the client*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|generate_menu_json]] (function: belongs_to) — *returns the structured JSON representation of the action tree*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|push_menu_update]] (function: belongs_to) — *manually triggers the background transmission of the current UI state*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_log]] (function: belongs_to) — *pushes a raw string update to the channel*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_log_tree]] (function: belongs_to) — *pushes a menu tree update to the channel*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_telemetry]] (function: belongs_to) — *streams an arbitrary text message to the Telegram admin chat*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|start]] (function: belongs_to) — *initiates the connection and registration process*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|update_actions]] (function: belongs_to) — *replaces all current actions and handlers*

@@ -45,8 +45,8 @@ Automatically generated mirror for `safe-socket/src/transports/udp_server.go`.
 - [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener.Accept]] (method: belongs_to) — *bound to that sender.*
 - [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener.Addr]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener.Close]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener]] (struct: belongs_to) — *UdpListener implements interfaces.TransportListener for Connectionless UDP.*
+- [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener]] (struct: defines_method) — *UdpListener implements interfaces.TransportListener for Connectionless UDP.*
 - [[safe-socket/safe-socket/src/transports/zombie_test.go.md|zombie_test.go]] (calls)
 - [[safe-socket/safe-socket/src/transports/zombie_test.go.md|zombie_test.go]] (same_package)
 <!-- SYNC:END -->

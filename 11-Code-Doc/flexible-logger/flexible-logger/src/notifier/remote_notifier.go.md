@@ -35,8 +35,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier.Notify]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier.serialize]] (method: belongs_to) — *It uses the locally replicated NotifierMsg schema.*
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier.worker]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier]] (struct: belongs_to) — *It uses the locally replicated NotifierMsg schema.*
-- [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier]] (struct: defines_method) — *It uses the locally replicated NotifierMsg schema.*
+- [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier]] (struct: belongs_to) — *RemoteNotifier sends notifications to a remote govenv NotifServer.*
+- [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier]] (struct: defines_method) — *RemoteNotifier sends notifications to a remote govenv NotifServer.*
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/high_perf.go.md|high_perf.go]] (calls)

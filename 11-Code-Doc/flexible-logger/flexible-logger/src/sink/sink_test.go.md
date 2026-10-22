@@ -32,15 +32,15 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSerializer.Serialize]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSerializer]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSerializer]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSerializer]] (struct: belongs_to) — *MockSerializer for testing*
+- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSerializer]] (struct: defines_method) — *MockSerializer for testing*
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink.GetLastEntry]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink.GetWriteCount]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink.IsClosed]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink.Write]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink]] (struct: belongs_to) — *MockSink for testing*
+- [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|MockSink]] (struct: defines_method) — *MockSink for testing*
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|TestAsyncSink_BufferFull_DropsLog]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|TestAsyncSink_Write]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|TestMultiSink_Close_AllSinksClosed]] (function: belongs_to)

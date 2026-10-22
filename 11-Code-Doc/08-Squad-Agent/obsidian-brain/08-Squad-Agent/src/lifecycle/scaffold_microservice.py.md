@@ -1,5 +1,11 @@
 
 
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py`.
+
+> **Essential Process**:
+> Scaffolds a new Bastien-Antigravity microservice adhering to canonical repository structure, mandatory root files, Docker standards, and BDD specifications.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

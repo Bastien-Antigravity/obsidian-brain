@@ -25,4 +25,5 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/utils/terminal_u
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/utils/terminal_ui.go.md|PrintInternalLog]] (function: belongs_to) — *PrintInternalLog prints a formatted internal log message*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/utils/terminal_ui.go.md|truncate]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|version.go]] (imports)
 <!-- SYNC:END -->

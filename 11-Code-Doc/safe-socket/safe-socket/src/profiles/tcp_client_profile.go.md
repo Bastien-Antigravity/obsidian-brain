@@ -40,13 +40,13 @@ Automatically generated mirror for `safe-socket/src/profiles/tcp_client_profile.
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetName]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetProtocol]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetTransport]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: belongs_to) — *without any handshake protocol.*
+- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: defines_method) — *without any handshake protocol.*
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetAddress]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetConnectTimeout]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetName]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetProtocol]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetTransport]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: belongs_to) — *that performs a handshake protocol upon connection.*
+- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: defines_method) — *that performs a handshake protocol upon connection.*
 <!-- SYNC:END -->

@@ -34,6 +34,6 @@ Automatically generated mirror for `safe-socket/src/transports/shm_server.go`.
 - [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener.Accept]] (method: belongs_to) — *Note: Current implementation is 1-to-1 (Point-to-Point).*
 - [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener.Addr]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener.Close]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener]] (struct: belongs_to) — *ShmListener implements interfaces.TransportListener for Shared Memory.*
+- [[safe-socket/safe-socket/src/transports/shm_server.go.md|ShmListener]] (struct: defines_method) — *ShmListener implements interfaces.TransportListener for Shared Memory.*
 <!-- SYNC:END -->

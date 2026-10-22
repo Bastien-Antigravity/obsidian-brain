@@ -97,8 +97,8 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Stream]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Trade]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Warning]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger]] (struct: belongs_to)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger]] (struct: defines_method)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger]] (struct: belongs_to) — *mockTestLogger captures logs for test assertion*
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger]] (struct: defines_method) — *mockTestLogger captures logs for test assertion*
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (same_package)
 <!-- SYNC:END -->

@@ -36,8 +36,8 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnTelemetry]] (method: belongs_to) — *OnTelemetry handles incoming logs or events by broadcasting them to the admin chat*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Send]] (method: belongs_to) — *Send wraps tb.Context.Send to intercept and log all outgoing responses*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Start]] (method: belongs_to) — *Start begins polling*
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot]] (struct: belongs_to) — *Send wraps tb.Context.Send to intercept and log all outgoing responses*
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot]] (struct: defines_method) — *Send wraps tb.Context.Send to intercept and log all outgoing responses*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot]] (struct: belongs_to) — *Bot holds the telegram connection, config, and state references*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot]] (struct: defines_method) — *Bot holds the telegram connection, config, and state references*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Config]] (struct: belongs_to) — *Config is a simple alias for the toolbox AppConfig in this context*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: belongs_to) — *NewBot registers Telebot settings and initializes memory maps*
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (calls)

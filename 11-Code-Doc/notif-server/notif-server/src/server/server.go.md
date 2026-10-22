@@ -44,8 +44,8 @@ Automatically generated mirror for `notif-server/src/server/server.go`.
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: belongs_to) — *NewServer creates a new Notification Server.*
 - [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: belongs_to) — *Start listens for incoming TCP and gRPC connections.*
 - [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: belongs_to) — *Stop shuts down the server.*
-- [[notif-server/notif-server/src/server/server.go.md|Server]] (struct: belongs_to) — *Start listens for incoming TCP and gRPC connections.*
-- [[notif-server/notif-server/src/server/server.go.md|Server]] (struct: defines_method) — *Start listens for incoming TCP and gRPC connections.*
+- [[notif-server/notif-server/src/server/server.go.md|Server]] (struct: belongs_to)
+- [[notif-server/notif-server/src/server/server.go.md|Server]] (struct: defines_method)
 - [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (same_package)
 - [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (calls)

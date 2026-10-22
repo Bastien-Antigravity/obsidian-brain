@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls)
+- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls) — *Server configuration*
 - [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
@@ -40,6 +40,6 @@ tags:
 - [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.name]] (method: belongs_to) — *Get server name*
 - [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.new]] (method: belongs_to) — *Create new TCP server*
 - [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.run]] (method: belongs_to) — *Run the TCP server*
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer]] (struct: belongs_to)
-- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer]] (struct: defines_method)
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer]] (struct: belongs_to) — *TCP server for Cap'n Proto log messages*
+- [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer]] (struct: defines_method) — *TCP server for Cap'n Proto log messages*
 <!-- SYNC:END -->

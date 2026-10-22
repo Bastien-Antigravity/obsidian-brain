@@ -19,6 +19,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/man
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|Trim]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.reconnect]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|NewManagedConnection]] (function: calls) — *NewManagedConnection creates a new connection wrapper.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|connection.go]] (same_package)
@@ -45,8 +46,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/man
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager.Connect]] (method: belongs_to) — *Connect establishes a connection using the specified mode.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager.EstablishConnection]] (method: belongs_to) — *EstablishConnection attempts a single connection to the resolved address.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager.GetNextDelay]] (method: belongs_to) — *attempt is 0-indexed.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager]] (struct: belongs_to) — *Connect establishes a connection using the specified mode.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager]] (struct: defines_method) — *Connect establishes a connection using the specified mode.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager]] (struct: belongs_to) — *NetworkManager handles reliable connection establishment with retries.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager]] (struct: defines_method) — *NetworkManager handles reliable connection establishment with retries.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewCriticalStrategy]] (function: belongs_to) — *NewCriticalStrategy creates a manager configured for critical services with infinite retries.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewNetworkManagerWithLogger]] (function: belongs_to) — *NewNetworkManagerWithLogger creates a manager with provided retry policies and an explicit logger.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewNetworkManager]] (function: belongs_to) — *NewNetworkManager creates a manager with provided retry policies (durations in milliseconds).*

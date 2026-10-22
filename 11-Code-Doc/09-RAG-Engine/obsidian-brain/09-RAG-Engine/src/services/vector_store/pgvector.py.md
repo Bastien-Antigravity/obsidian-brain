@@ -20,9 +20,11 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ve
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/vector_store.py.md|VectorStore]] (class: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/vector_store.py.md|vector_store.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|metadata.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_pg_pool]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_schema_name]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|pg_pool.py]] (imports)
+- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|debug]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (calls)
@@ -39,6 +41,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ve
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|_write]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|add_documents]] (function: belongs_to) — *Adds or updates embeddings in pgvector (Upsert).*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|delete_by_brain]] (function: belongs_to) — *Deletes all embeddings for a specific brain_id, cleanly unmerging it from the knowledge graph.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|delete_by_source]] (function: belongs_to) — *Removes all vectors belonging to a specific source file.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|get_all]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|get_all_source_paths]] (function: belongs_to) — *Retrieves distinct source file paths stored in the vector collection.*

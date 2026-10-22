@@ -24,7 +24,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls) — *A message sent from the external component/service to the Bot*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.new]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_callback]] (method: defines_method)
@@ -55,8 +55,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_callback]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_input_prompt]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.with_sub_menu]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action]] (struct: belongs_to) — *Action defines a single interactive element in the Telegram UI.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action]] (struct: defines_method) — *Action defines a single interactive element in the Telegram UI.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|BtnDef]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|RowDef]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.actions]] (method: belongs_to) — *Returns a reference to the actions collection.*
@@ -71,8 +71,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.send_telemetry]] (method: belongs_to) — *Streams an arbitrary text telemetry message to the Telegram bot admin chat.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.start]] (method: belongs_to) — *Spawns the background connection manager and command dispatcher.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient.update_actions]] (method: belongs_to) — *Replaces all current actions and handlers.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: belongs_to) — *TeleClient maintains a resilient gRPC connection to tele-remote.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|TeleClient]] (struct: defines_method) — *TeleClient maintains a resilient gRPC connection to tele-remote.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

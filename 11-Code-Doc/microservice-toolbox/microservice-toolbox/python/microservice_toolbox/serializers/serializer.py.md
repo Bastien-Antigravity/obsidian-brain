@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/serializers/serializer.py`.
 
 > **Essential Process**:
-> Defines the abstract interface for serialization providers within the ecosystem. ISerializer manages transforming generic objects to bytes and vice-versa.
+> Defines the abstract interface for serialization providers within the ecosystem. Serializer manages transforming generic objects to bytes and vice-versa.
 
 ## 🏗️ Architectural Context
 
@@ -26,7 +26,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/providers.py.md|providers.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/providers.py.md|providers.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/providers.py.md|providers.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|ISerializer]] (class: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|Serializer]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|marshal]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|unmarshal]] (function: belongs_to)

@@ -32,8 +32,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/con
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.Write]] (method: belongs_to) — *Write sends data over the connection, automatically reconnecting if needed.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.isClosing]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.reconnect]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection]] (struct: belongs_to) — *ManagedConnection wraps a connection and handles automatic reconnection.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection]] (struct: defines_method) — *ManagedConnection wraps a connection and handles automatic reconnection.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|NewManagedConnection]] (function: belongs_to) — *NewManagedConnection creates a new connection wrapper.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (same_package)

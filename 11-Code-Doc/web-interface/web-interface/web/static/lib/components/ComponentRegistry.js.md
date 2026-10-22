@@ -26,6 +26,8 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.getInstance]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.registerAll]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.register]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/html/CV.html.md|CV.html]] (calls)

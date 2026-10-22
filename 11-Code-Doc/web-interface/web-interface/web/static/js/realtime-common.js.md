@@ -69,5 +69,5 @@ tags:
 - [[web-interface/web-interface/web/static/js/ta-indicators.js.md|ta-indicators.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (calls)
 - [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
-- [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|Logger.js]] (calls)
 <!-- SYNC:END -->

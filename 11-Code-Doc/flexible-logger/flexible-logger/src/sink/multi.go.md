@@ -30,8 +30,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/profiles/standard.go.md|standard.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/multi.go.md|MultiSink.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/multi.go.md|MultiSink.Write]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/multi.go.md|MultiSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/multi.go.md|MultiSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/sink/multi.go.md|MultiSink]] (struct: belongs_to) — *It implements the Fan-Out pattern.*
+- [[flexible-logger/flexible-logger/src/sink/multi.go.md|MultiSink]] (struct: defines_method) — *It implements the Fan-Out pattern.*
 - [[flexible-logger/flexible-logger/src/sink/multi.go.md|NewMultiSink]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|sink_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|sink_test.go]] (same_package)

@@ -32,7 +32,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/profiles/standard.go.md|standard.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|ConsoleSink.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|ConsoleSink.Write]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/console.go.md|ConsoleSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/console.go.md|ConsoleSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/sink/console.go.md|ConsoleSink]] (struct: belongs_to) — *ConsoleSink writes to stdout in a human-readable format.*
+- [[flexible-logger/flexible-logger/src/sink/console.go.md|ConsoleSink]] (struct: defines_method) — *ConsoleSink writes to stdout in a human-readable format.*
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: belongs_to)
 <!-- SYNC:END -->

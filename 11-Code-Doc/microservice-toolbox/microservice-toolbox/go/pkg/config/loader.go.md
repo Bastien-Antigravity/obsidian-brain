@@ -31,6 +31,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocal]] (method: defines_method) — *Supports nested lookups using dot notation (e.g., "database.host").*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: defines_method) — *GetRESTAddr returns the address for the REST management interface.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetServiceName]] (method: defines_method) — *GetServiceName returns the standardized program name.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetVersion]] (method: defines_method) — *GetVersion returns the dynamic semantic version of the microservice.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.OnLiveConfUpdate]] (method: defines_method) — *OnLiveConfUpdate registers a callback for live configuration updates.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.OnRegistryUpdate]] (method: defines_method) — *OnRegistryUpdate registers a callback for service registry changes.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.SetLogger]] (method: defines_method) — *SetLogger updates the logger after instantiation.*
@@ -49,6 +50,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: calls) — *production microservices from silently running dark without operational logs.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|logger.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Info]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|Get]] (function: calls) — *It resolves the version on first call and caches the result.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|version.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args_test.go.md|args_test.go]] (calls)
@@ -59,6 +62,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocal]] (method: belongs_to) — *Supports nested lookups using dot notation (e.g., "database.host").*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: belongs_to) — *GetRESTAddr returns the address for the REST management interface.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetServiceName]] (method: belongs_to) — *GetServiceName returns the standardized program name.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetVersion]] (method: belongs_to) — *GetVersion returns the dynamic semantic version of the microservice.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.OnLiveConfUpdate]] (method: belongs_to) — *OnLiveConfUpdate registers a callback for live configuration updates.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.OnRegistryUpdate]] (method: belongs_to) — *OnRegistryUpdate registers a callback for service registry changes.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.SetLogger]] (method: belongs_to) — *SetLogger updates the logger after instantiation.*
@@ -70,13 +74,11 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.applyFileOverride]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.ensurePath]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.loadPublicKey]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig]] (struct: belongs_to) — *AppConfig wraps the distributed-config and provides toolbox enhancements.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig]] (struct: defines_method) — *AppConfig wraps the distributed-config and provides toolbox enhancements.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LoadConfigWithLogger]] (function: belongs_to) — *LoadConfigWithLogger loads the configuration with an explicit logger and layered priority.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LoadConfig]] (function: belongs_to) — *LoadConfig loads the configuration with layered priority.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|endpointKey]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|getIP]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|getPort]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|normalizeIP]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (same_package)

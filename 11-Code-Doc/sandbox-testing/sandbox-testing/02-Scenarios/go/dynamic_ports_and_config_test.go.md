@@ -25,6 +25,8 @@ Automatically generated mirror for `sandbox-testing/02-Scenarios/go/dynamic_port
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/dynamic_ports_and_config_test.go.md|TestScenario_CrossLayerPortDriftAudit]] (function: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/dynamic_ports_and_config_test.go.md|TestScenario_DynamicPortShiftingAndZeroHardcodedFallbacks]] (function: belongs_to)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/dynamic_ports_and_config_test.go.md|resolveWorkspaceRoot]] (function: belongs_to) — *resolveWorkspaceRoot locates the root Bastien-Antigravity directory.*
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ecosystem_tooling_parity_test.go.md|ecosystem_tooling_parity_test.go]] (calls)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/ecosystem_tooling_parity_test.go.md|ecosystem_tooling_parity_test.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

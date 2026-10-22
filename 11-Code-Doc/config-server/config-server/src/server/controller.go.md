@@ -48,8 +48,7 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.ListConfig]] (method: belongs_to) — *ListConfig returns the full current configuration state, merging static base configurations with dynamic overrides.*
 - [[config-server/config-server/src/server/controller.go.md|Server.PersistConfig]] (method: belongs_to) — *PersistConfig manually triggers a save of the configuration state.*
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: belongs_to) — *SetConfig updates a configuration value atomically and broadcasts the change.*
-- [[config-server/config-server/src/server/controller.go.md|Server]] (struct: defines_method) — *GetStatus returns the health status, active client counts, and client names.*
-- [[config-server/config-server/src/server/controller.go.md|init]] (function: belongs_to)
+- [[config-server/config-server/src/server/controller.go.md|Server]] (struct: defines_method) — *GetConfig returns a specific configuration value from the dynamic store.*
 - [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)
 - [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 <!-- SYNC:END -->

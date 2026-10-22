@@ -38,6 +38,8 @@ tags:
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.volume]] (method: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|i.sort]] (method: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warn]] (method: calls)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_BASE_URL]] (constant: calls)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_WSS_URL]] (constant: calls)
 

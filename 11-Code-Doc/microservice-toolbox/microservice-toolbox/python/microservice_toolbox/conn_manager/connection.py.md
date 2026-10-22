@@ -27,8 +27,6 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|get_next_delay]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|manager.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|manager.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/process_lock.py.md|acquire]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/process_lock.py.md|release]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/__init__.py.md|__init__.py]] (imports)

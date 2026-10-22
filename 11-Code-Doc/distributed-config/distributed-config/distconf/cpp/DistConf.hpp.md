@@ -36,7 +36,7 @@ Automatically generated mirror for `distributed-config/distconf/cpp/DistConf.hpp
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Sync]] (function: calls) — *export DistConf_Sync*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_ValidateMandatoryServices]] (function: calls) — *export DistConf_ValidateMandatoryServices*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.Decrypt]] (method: defines_method) — *Decrypt a secret*
-- [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.DistConfig]] (method: defines_method) — *Disable copy*
+- [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.DistConfig]] (method: defines_method)
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetAddress]] (method: defines_method) — *Get an address (host:port) for a capability*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetCapability]] (method: defines_method) — *Get a capability configuration as JSON*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: defines_method) — *Get full configuration as JSON*
@@ -58,7 +58,7 @@ Automatically generated mirror for `distributed-config/distconf/cpp/DistConf.hpp
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DISTCONF_HPP]] (macro: belongs_to) — *ifndef DISTCONF_HPP*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.Decrypt]] (method: belongs_to) — *Decrypt a secret*
-- [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.DistConfig]] (method: belongs_to) — *Disable copy*
+- [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.DistConfig]] (method: belongs_to)
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetAddress]] (method: belongs_to) — *Get an address (host:port) for a capability*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetCapability]] (method: belongs_to) — *Get a capability configuration as JSON*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: belongs_to) — *Get full configuration as JSON*

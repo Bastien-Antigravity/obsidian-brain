@@ -1,0 +1,44 @@
+---
+source: obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py
+workspace: 09-RAG-Engine
+type: code-mirror
+status: auto-generated
+last_sync: 2026-10-22T16:53:56.588148
+---
+
+# Mirror: parent_store.py
+
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py`.
+
+> **Essential Process**:
+> Defines the abstract interface for the parent (raw content) store. Used to retain and retrieve the full text content associated with indexed chunks.
+
+## 🏗️ Architectural Context
+<!-- SYNC:START -->
+### 📦 Dependencies (Outbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/storage.py.md|storage.py]] (imports)
+
+### 🔌 Consumers (Inbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|multi_tenant_proxy.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|multi_tenant_proxy.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|rag_facade.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|ParentStore]] (class: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|delete_by_source]] (function: belongs_to) — *Deletes all data records associated with a source file path.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|get_all_file_hashes]] (function: belongs_to) — *Retrieves all stored file hashes from the database as a dictionary {source_path: file_hash}.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|get_parent]] (function: belongs_to) — *Retrieves the raw content string associated with a specific chunk ID.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|is_file_changed]] (function: belongs_to) — *Checks if a file's hash differs from the stored version (Differential Indexing).*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|store_parent]] (function: belongs_to) — *Persists the full raw content for a given chunk or document ID.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|store_parents_batch]] (function: belongs_to) — *Persists a batch of chunks in a single database transaction.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|update_file_hash]] (function: belongs_to) — *Updates the stored hash for a file after successful indexing.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|postgres.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|postgres.py]] (imports)
+<!-- SYNC:END -->
+
+## 🔍 Implementation Details
+(Add manual notes here)

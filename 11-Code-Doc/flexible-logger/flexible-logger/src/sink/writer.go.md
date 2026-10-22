@@ -36,6 +36,6 @@ tags:
 - [[flexible-logger/flexible-logger/src/sink/writer.go.md|NewWriterSink]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/writer.go.md|WriterSink.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/sink/writer.go.md|WriterSink.Write]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/writer.go.md|WriterSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/sink/writer.go.md|WriterSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/sink/writer.go.md|WriterSink]] (struct: belongs_to) — *WriterSink wraps an io.Writer (like a file or socket).*
+- [[flexible-logger/flexible-logger/src/sink/writer.go.md|WriterSink]] (struct: defines_method) — *WriterSink wraps an io.Writer (like a file or socket).*
 <!-- SYNC:END -->

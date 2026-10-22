@@ -27,8 +27,8 @@ tags:
 - [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer.Stop]] (method: belongs_to)
 - [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer.acceptLoop]] (method: belongs_to)
 - [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer.handleConnection]] (method: belongs_to)
-- [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer]] (struct: belongs_to)
-- [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer]] (struct: defines_method)
+- [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer]] (struct: belongs_to) — *MockServer simulates a remote service using the safe-socket library.*
+- [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|MockServer]] (struct: defines_method) — *MockServer simulates a remote service using the safe-socket library.*
 - [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|NewMockServerOnPort]] (function: belongs_to) — *NewMockServerOnPort creates a MockServer bound to a specific port.*
 - [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|NewMockServer]] (function: belongs_to)
 - [[universal-logger/universal-logger/src/bootstrap/resilience_test.go.md|TestFullEcosystemResilience]] (function: belongs_to)

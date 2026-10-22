@@ -54,7 +54,7 @@ Automatically generated mirror for `safe-socket/src/protocols/hello_protocol.go`
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Encapsulate]] (method: belongs_to) — *Encapsulate wraps the user payload into a PacketEnvelope.*
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Initiate]] (method: belongs_to) — *Initiate executes the handshake sequence or protocol logic (Client).*
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.WaitInitiation]] (method: belongs_to) — *WaitInitiation waits for a HelloMsg from the client and unmarshals it.*
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol]] (struct: belongs_to) — *It also reconstructs a partial HelloMsg for identity verification.*
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol]] (struct: defines_method) — *It also reconstructs a partial HelloMsg for identity verification.*
+- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol]] (struct: belongs_to) — *HelloProtocol implements the "Initiate" logic.*
+- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol]] (struct: defines_method) — *HelloProtocol implements the "Initiate" logic.*
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -17,8 +17,8 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: belongs_to) — *Create new server configuration*
-- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: belongs_to)
-- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: defines_method)
+- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: belongs_to) — *Server configuration*
+- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: defines_method) — *Server configuration*
 - [[log-server/log-server/src/config/config.rs.md|test_config_new]] (function: belongs_to)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)

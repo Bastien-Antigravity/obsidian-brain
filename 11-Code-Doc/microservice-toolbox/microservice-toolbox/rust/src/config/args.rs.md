@@ -24,7 +24,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/args.rs
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|RawArgs]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs.parse_cli_args]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs]] (struct: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs]] (struct: belongs_to) — *internal network-aware resolution in dynamic container environments.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs]] (struct: defines_method) — *internal network-aware resolution in dynamic container environments.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 <!-- SYNC:END -->

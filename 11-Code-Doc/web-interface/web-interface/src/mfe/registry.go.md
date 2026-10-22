@@ -43,8 +43,8 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.save]] (method: belongs_to)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: belongs_to)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: defines_method)
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: belongs_to) — *Registry manages the registration and listing of microfrontend services.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: defines_method) — *Registry manages the registration and listing of microfrontend services.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Service]] (struct: belongs_to) — *Service represents a registered Micro-Frontend service.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registerReq]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (calls)

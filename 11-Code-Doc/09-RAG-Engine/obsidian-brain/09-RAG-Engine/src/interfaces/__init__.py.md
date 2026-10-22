@@ -1,0 +1,38 @@
+---
+source: obsidian-brain/09-RAG-Engine/src/interfaces/__init__.py
+workspace: 09-RAG-Engine
+type: code-mirror
+status: auto-generated
+last_sync: 2026-10-22T16:53:56.524518
+---
+
+# Mirror: __init__.py
+
+## 📝 Description
+Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/__init__.py`.
+
+> **Essential Process**:
+> Package initialization for RAG interfaces. Exports granular abstract base classes for high modularity and swappable implementations.
+
+## 🏗️ Architectural Context
+<!-- SYNC:START -->
+### 📦 Dependencies (Outbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/alignment.py.md|alignment.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/analyzer.py.md|analyzer.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|codebase_db.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/enricher.py.md|enricher.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/graph_db.py.md|graph_db.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/indexing_pipeline.py.md|indexing_pipeline.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/lexical_store.py.md|lexical_store.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/parent_store.py.md|parent_store.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/query_engine.py.md|query_engine.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/storage.py.md|storage.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/vector_store.py.md|vector_store.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/watcher.py.md|watcher.py]] (imports)
+
+### 🔌 Consumers (Inbound)
+- None detected
+<!-- SYNC:END -->
+
+## 🔍 Implementation Details
+(Add manual notes here)

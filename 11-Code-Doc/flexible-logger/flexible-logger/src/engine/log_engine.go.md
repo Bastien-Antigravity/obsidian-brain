@@ -63,8 +63,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Trade]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getEntry]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: belongs_to) — *It orchestrates populating LogEntries and dispatching them to Sinks.*
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: defines_method) — *It orchestrates populating LogEntries and dispatching them to Sinks.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/notifier/notifier_test.go.md|notifier_test.go]] (calls)

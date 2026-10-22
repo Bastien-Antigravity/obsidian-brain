@@ -18,7 +18,7 @@ tags:
 Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py`.
 
 > **Essential Process**:
-> Unified single source of truth for dynamic CGO shared library discovery and loading (libunilog and libdistconf) into Python processes across the Bastien-Antigravity ecosystem.
+> Dynamic shared library loader and CGO bridge initializer for microservice-toolbox. Resolves cross-platform binary paths (.dylib, .so, .dll) across repository layouts, virtualenv site-packages, and fallback search paths with strict ABI typing.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
@@ -42,7 +42,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: belongs_to) — *Generic callback alias for backward compatibility*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CONFIG_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*config_update_cb)(GoUintptr handle, const char* json_data);*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*logger_callback_cb)(const char* json_data);*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to) — *Binds standard DistConf function signatures to a ctypes.CDLL handle safely.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to) — *Binds standard DistConf function signatures to a ctypesCDLL handle safely.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_try_autobuild_library]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to) — *Returns the OS-specific dynamic library file extension.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: belongs_to)

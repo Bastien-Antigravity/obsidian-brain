@@ -45,5 +45,5 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|NetworkManager.ConnectBlocking]] (method: belongs_to) — *NetworkManager implementation of high-level API*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|NetworkManager.ConnectNonBlocking]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|NetworkManager.Connect]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|NetworkManager]] (class: defines_method)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/ManagedConnection.hpp.md|NetworkManager]] (class: defines_method) — *NetworkManager implementation of high-level API*
 <!-- SYNC:END -->

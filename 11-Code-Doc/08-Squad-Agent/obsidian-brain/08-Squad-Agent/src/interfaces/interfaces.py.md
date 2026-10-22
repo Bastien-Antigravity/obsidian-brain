@@ -32,13 +32,18 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|__init__]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|_get_subscribers]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|close]] (function: belongs_to) — *Cleans up resources and disconnects from the transit layer.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|close]] (function: belongs_to) — *Closes connection cleanly.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|connect]] (function: belongs_to) — *Attempts a resilient connection to NATS, failing fast if offline and fallback is disabled.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|connect]] (function: belongs_to) — *Initializes connection to the underlying message bus.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|is_duplicate]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|nats_callback]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|normalize_topic]] (function: belongs_to) — *Normalizes legacy topic names to canonical ecosystem prefix.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|publish]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|publish]] (function: belongs_to) — *Broadcasts a payload JSON dictionary onto a topic channel.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|publish]] (function: belongs_to) — *Routes message broadcast depending on NATS connection state.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|subscribe]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|subscribe]] (function: belongs_to) — *Registers a non-blocking async callback listener for a topic channel.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|subscribe]] (function: belongs_to) — *Subscribes callback to the correct event provider.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

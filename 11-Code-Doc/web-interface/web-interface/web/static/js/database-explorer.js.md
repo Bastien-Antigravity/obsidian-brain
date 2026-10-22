@@ -35,6 +35,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.switchTab]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|_.disabled]] (method: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.displayColumns]] (method: belongs_to)

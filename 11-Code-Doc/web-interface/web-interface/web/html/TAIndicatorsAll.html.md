@@ -15,6 +15,7 @@ tags:
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/web/static/analyst/charts.js.md|volumeChart.volume]] (method: calls)
 - [[web-interface/web-interface/web/static/js/gridstack-all.js.md|i.cloneNode]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_BASE_URL]] (constant: calls)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_WSS_URL]] (constant: calls)
 

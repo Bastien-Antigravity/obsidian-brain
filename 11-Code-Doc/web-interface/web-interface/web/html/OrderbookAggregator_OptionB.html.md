@@ -19,6 +19,8 @@ tags:
 - [[web-interface/web-interface/web/html/TradedVolume.html.md|onmessage]] (function: calls)
 - [[web-interface/web-interface/web/html/TradedVolume.html.md|onopen]] (function: calls)
 - [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: belongs_to) — *Render +/- 20 ticks from the center to fully saturate the layout*

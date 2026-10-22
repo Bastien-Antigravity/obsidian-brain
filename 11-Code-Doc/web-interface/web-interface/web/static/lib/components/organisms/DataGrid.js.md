@@ -18,6 +18,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.renderEmpty]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.render]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.updateState]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (imports)

@@ -56,8 +56,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/teleremote/clien
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.disconnect]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.registerHandlersRecursive]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.sendRegistration]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient]] (struct: belongs_to) — *Close gracefully stops the client*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient]] (struct: defines_method) — *Close gracefully stops the client*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient]] (struct: belongs_to) — *TeleClient maintains a resilient gRPC connection to tele-remote*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient]] (struct: defines_method) — *TeleClient maintains a resilient gRPC connection to tele-remote*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|btnDef]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|rowDef]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client_test.go.md|client_test.go]] (calls)

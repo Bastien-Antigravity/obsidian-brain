@@ -216,8 +216,8 @@ tags:
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Builder]] (struct: belongs_to)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Level.introspect]] (method: belongs_to)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Level.try_from]] (method: belongs_to)
-- [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Level]] (struct: belongs_to)
-- [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Level]] (struct: defines_method)
+- [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Level]] (enum: belongs_to) — *source: api/capnp/loggerMsg/logger.capnp*
+- [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Level]] (enum: defines_method) — *source: api/capnp/loggerMsg/logger.capnp*
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Owned.introspect]] (method: belongs_to)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Owned]] (struct: belongs_to)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Owned]] (struct: defines_method)

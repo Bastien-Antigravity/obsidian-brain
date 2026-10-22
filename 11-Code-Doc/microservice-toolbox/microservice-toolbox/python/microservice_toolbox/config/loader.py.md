@@ -29,6 +29,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls) — *Generic callback alias for backward compatibility*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.py.md|expansion_check.py]] (calls)
@@ -52,13 +53,14 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|common]] (function: belongs_to) — *Provides direct access to the 'common' configuration block.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|decrypt_secret]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|deep_merge]] (function: belongs_to) — *Wrapper around standalone deep_merge for backward compatibility.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|env_expander]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|env_expander]] (function: belongs_to) — *Expand Environment Variables: ${VAR} or ${VAR:default}*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_config]] (function: belongs_to) — *Retrieves a value from the bridge or local data.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_rest_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_service_name]] (function: belongs_to) — *Returns the standardized program name.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_version]] (function: belongs_to) — *Returns the dynamic semantic version of the microservice from VERSION.txt.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config_with_logger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_live_conf_update]] (function: belongs_to) — *Registers a callback for live configuration updates (Dynamic Fleet Config).*
@@ -68,6 +70,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|share_config]] (function: belongs_to) — *Shares service configuration with the ecosystem.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)

@@ -27,8 +27,8 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer.Connect]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer.mustEmbedUnimplementedTeleRemoteServiceServer]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer.testEmbeddedByValue]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer]] (struct: belongs_to)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer]] (struct: defines_method)
+- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer]] (struct: belongs_to) — *pointer dereference when methods are called.*
+- [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnimplementedTeleRemoteServiceServer]] (struct: defines_method) — *pointer dereference when methods are called.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|UnsafeTeleRemoteServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|_TeleRemoteService_Connect_Handler]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote_grpc.pb.go.md|_]] (constant: belongs_to) — *Requires gRPC-Go v1.64.0 or later.*

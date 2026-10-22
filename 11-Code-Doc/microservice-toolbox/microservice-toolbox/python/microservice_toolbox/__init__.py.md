@@ -19,6 +19,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/messaging/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__getattr__]] (function: belongs_to)

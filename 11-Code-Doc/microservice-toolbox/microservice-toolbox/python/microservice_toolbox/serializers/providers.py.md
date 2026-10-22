@@ -13,13 +13,13 @@ tags:
 Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/serializers/providers.py`.
 
 > **Essential Process**:
-> Provides concrete implementations of ISerializer for JSON and Binary (MessagePack) formats. Ensures cross-language compatibility by using standard encoding protocols.
+> Provides concrete implementations of Serializer for JSON and Binary (MessagePack) formats. Ensures cross-language compatibility by using standard encoding protocols.
 
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|ISerializer]] (class: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|Serializer]] (class: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|serializer.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|serializer.py]] (same_package)

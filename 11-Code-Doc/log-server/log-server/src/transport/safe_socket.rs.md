@@ -28,14 +28,14 @@ tags:
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.new]] (method: belongs_to) — *Create new safe socket by splitting a TcpStream*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: belongs_to) — *Split into its component halves*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: belongs_to) — *Receive framed data from socket. Automatically skips 0-length heartbeat frames.*
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader]] (struct: belongs_to)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader]] (struct: defines_method)
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader]] (struct: belongs_to) — *Reader half of a safe socket*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader]] (struct: defines_method) — *Reader half of a safe socket*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.send_data]] (method: belongs_to) — *Send framed data to socket*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.send_heartbeat]] (method: belongs_to) — *Send a 0-length heartbeat frame*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.shutdown]] (method: belongs_to) — *Shutdown the underlying connection*
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter]] (struct: belongs_to)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter]] (struct: defines_method)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket]] (struct: belongs_to)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket]] (struct: defines_method)
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter]] (struct: belongs_to) — *Writer half of a safe socket*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter]] (struct: defines_method) — *Writer half of a safe socket*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket]] (struct: belongs_to) — *Safe TCP socket with message framing*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket]] (struct: defines_method) — *Safe TCP socket with message framing*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|test_heartbeat_skip]] (function: belongs_to)
 <!-- SYNC:END -->

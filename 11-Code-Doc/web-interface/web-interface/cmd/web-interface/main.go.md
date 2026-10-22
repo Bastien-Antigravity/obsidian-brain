@@ -27,7 +27,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Warning]] (method: calls)
 - [[web-interface/web-interface/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance with dynamic config support.*
 - [[web-interface/web-interface/src/core/controller.go.md|controller.go]] (imports)
-- [[web-interface/web-interface/src/fundamental_analysis/fundamental_analysis.go.md|ConnectStockDatabase]] (function: calls) — *ConnectStockDatabase initializes the database connection for financial analysis.*
+- [[web-interface/web-interface/src/fundamental_analysis/fundamental_analysis.go.md|ConnectStockDatabase]] (function: calls) — *the service schema exists.*
 - [[web-interface/web-interface/src/fundamental_analysis/fundamental_analysis.go.md|fundamental_analysis.go]] (imports)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*

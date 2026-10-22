@@ -49,8 +49,8 @@ tags:
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer.SetConfig]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer.mustEmbedUnimplementedConfigControlServiceServer]] (method: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer.testEmbeddedByValue]] (method: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer]] (struct: defines_method)
+- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer]] (struct: belongs_to) — *pointer dereference when methods are called.*
+- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnimplementedConfigControlServiceServer]] (struct: defines_method) — *pointer dereference when methods are called.*
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|UnsafeConfigControlServiceServer]] (interface: belongs_to) — *result in compilation errors.*
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_GetConfig_Handler]] (function: belongs_to)
 - [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|_ConfigControlService_GetStatus_Handler]] (function: belongs_to)

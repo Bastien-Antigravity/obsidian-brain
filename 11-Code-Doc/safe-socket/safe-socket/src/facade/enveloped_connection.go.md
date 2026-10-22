@@ -48,8 +48,8 @@ Automatically generated mirror for `safe-socket/src/facade/enveloped_connection.
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetWriteDeadline]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Write]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: defines_method)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: belongs_to) — *- Decapsulate incoming data (Read Wrapped HelloMsg -> Payload)*
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: defines_method) — *- Decapsulate incoming data (Read Wrapped HelloMsg -> Payload)*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|NewEnvelopedConnection]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (same_package)

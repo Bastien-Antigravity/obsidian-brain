@@ -51,8 +51,8 @@ Automatically generated mirror for `distributed-config/src/network/client.go`.
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: belongs_to) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: belongs_to) — *connect establishes the connection and acts the handshake.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.requestSync]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: belongs_to) — *IsConnected returns true if the client is currently connected.*
-- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: defines_method) — *IsConnected returns true if the client is currently connected.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: belongs_to) — *Client provides an interface to interact with the Config Server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client]] (struct: defines_method) — *Client provides an interface to interact with the Config Server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: belongs_to) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (calls)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (same_package)

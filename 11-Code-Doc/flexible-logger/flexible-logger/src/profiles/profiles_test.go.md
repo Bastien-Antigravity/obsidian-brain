@@ -34,8 +34,8 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|SlowSink.Close]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|SlowSink.Write]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|SlowSink]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|SlowSink]] (struct: defines_method)
+- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|SlowSink]] (struct: belongs_to) — *SlowSink for testing Audit blocking*
+- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|SlowSink]] (struct: defines_method) — *SlowSink for testing Audit blocking*
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|TestAllProfiles]] (function: belongs_to) — *TestAllProfiles verifies that basic standalone profiles boot up and log correctly.*
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|TestAuditLogger_Blocking]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|TestNotifLogger_LocalQueue]] (function: belongs_to)

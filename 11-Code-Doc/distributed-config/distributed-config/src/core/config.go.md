@@ -23,13 +23,14 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: defines_method) — *It looks for "ip" and "port" keys in the capability configuration.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: defines_method) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: defines_method) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: defines_method) — *Requires explicit 'rest_port'.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: defines_method) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: defines_method) — *Returns an empty string if not found.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: defines_method) — *before committing locally.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: defines_method) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getAddr]] (method: defines_method)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.getCapabilityField]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/service_schemas.go.md|LogServerCap.Validate]] (method: calls) — *Validate ensures all mandatory fields are present.*
 - [[distributed-config/distributed-config/src/core/service_schemas.go.md|service_schemas.go]] (same_package)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|logger.go]] (imports)
@@ -40,13 +41,14 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: belongs_to) — *It looks for "ip" and "port" keys in the capability configuration.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: belongs_to) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: belongs_to) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: belongs_to) — *Requires explicit 'rest_port'.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: belongs_to) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: belongs_to) — *Returns an empty string if not found.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: belongs_to) — *before committing locally.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: belongs_to) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getAddr]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.getCapabilityField]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config]] (struct: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|ParseSharePayload]] (function: belongs_to) — *Supports map[string]map[string]string, map[string]string, and map[string]interface{}.*

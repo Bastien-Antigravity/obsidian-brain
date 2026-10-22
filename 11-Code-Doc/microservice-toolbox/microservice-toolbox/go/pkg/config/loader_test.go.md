@@ -21,6 +21,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader_te
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetGRPCListenAddr]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetListenAddr]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: calls) — *GetRESTAddr returns the address for the REST management interface.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LoadConfig]] (function: calls) — *LoadConfig loads the configuration with layered priority.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (imports)

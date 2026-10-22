@@ -41,8 +41,8 @@ Automatically generated mirror for `config-server/src/store/store.go`.
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: belongs_to) — *Callers MUST treat the returned map as immutable.*
 - [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: belongs_to) — *Ensures the store "owns" the data by performing a deep copy.*
 - [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: belongs_to) — *remains untouched (Atomicity/Rollback).*
-- [[config-server/config-server/src/store/store.go.md|Store]] (struct: belongs_to) — *remains untouched (Atomicity/Rollback).*
-- [[config-server/config-server/src/store/store.go.md|Store]] (struct: defines_method) — *remains untouched (Atomicity/Rollback).*
+- [[config-server/config-server/src/store/store.go.md|Store]] (struct: belongs_to) — *extremely fast reads while maintaining atomic, side-effect-free updates.*
+- [[config-server/config-server/src/store/store.go.md|Store]] (struct: defines_method) — *extremely fast reads while maintaining atomic, side-effect-free updates.*
 - [[config-server/config-server/src/store/store_test.go.md|store_test.go]] (calls)
 - [[config-server/config-server/src/store/store_test.go.md|store_test.go]] (same_package)
 <!-- SYNC:END -->
