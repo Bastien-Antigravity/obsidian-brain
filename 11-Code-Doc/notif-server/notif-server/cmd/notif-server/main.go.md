@@ -26,11 +26,13 @@ Automatically generated mirror for `notif-server/cmd/notif-server/main.go`.
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts an HTTP server for the REST API on the specified address (e.g. "127.0.0.1:1029" or ":1029").*
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
+- [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
+- [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)
 - [[notif-server/notif-server/src/telegram/manager.go.md|manager.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|Token(baseURL, toke]] (function: belongs_to) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|ifyTelegramConfig(ap]] (function: belongs_to) — *Fails fast if the token is missing, cannot be decrypted, or fails Telegram API verification.*
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main]] (function: belongs_to)
+- [[notif-server/notif-server/cmd/notif-server/main.go.md|ramToken(baseURL, t]] (function: belongs_to) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
+- [[notif-server/notif-server/cmd/notif-server/main.go.md|verifyTelegramConfig]] (function: belongs_to) — *Fails fast if the token is missing, cannot be decrypted, or fails Telegram API verification.*
 <!-- SYNC:END -->

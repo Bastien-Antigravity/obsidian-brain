@@ -30,6 +30,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/identity.py.md|name]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.hpp]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.back]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.forward]] (method: belongs_to)

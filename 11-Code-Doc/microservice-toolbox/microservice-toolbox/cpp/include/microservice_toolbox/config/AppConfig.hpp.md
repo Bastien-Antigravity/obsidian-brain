@@ -85,6 +85,8 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|MICROSERVICE_TOOLBOX_APP_CONFIG_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_APP_CONFIG_HPP*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.hpp]] (calls)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.hpp]] (imports)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|spec.hpp]] (calls)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|spec.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.cpp.md|expansion_check.cpp]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.cpp.md|expansion_check.cpp]] (imports)
 <!-- SYNC:END -->

@@ -41,5 +41,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/con
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager_test.go.md|manager_test.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/strategies_test.go.md|strategies_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/strategies_test.go.md|strategies_test.go]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec_test.go.md|spec_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/matrix_gen.go.md|matrix_gen.go]] (calls)
 <!-- SYNC:END -->

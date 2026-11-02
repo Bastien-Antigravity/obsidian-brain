@@ -14,7 +14,8 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/utils/lo
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/logger/facade.py.md|UniLog]] (class: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap_microservice]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/utils/logger.py.md|get_logger]] (function: belongs_to) — *———————————————————————————————————————————————————————————————————————————————*

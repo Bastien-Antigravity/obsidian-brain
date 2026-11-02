@@ -25,6 +25,7 @@ tags:
    ]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|lateFilters(dat]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|pEvents() {]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/brain_graph.js.md|t() {]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|tNeighborhood(node) {]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|teStats() {]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|ters() {

@@ -13,21 +13,11 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|C]] (class: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|E]] (class: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|e]] (function: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|i.clone]] (method: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|r]] (class: calls)
-- [[web-interface/web-interface/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
-- [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
+- None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/html/RtTaAnalyst.html.md|RtTaAnalyst.html]] (imports)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/prism.js.md|c]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/prism.js.md|f]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/prism.js.md|i]] (function: belongs_to)
@@ -35,4 +25,6 @@ tags:
 - [[web-interface/web-interface/web/static/js/prism.js.md|o]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/prism.js.md|s]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/prism.js.md|u]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/lib/prism/prism.js.md|prism.js]] (calls)
+- [[web-interface/web-interface/web/templates/home.html.md|home.html]] (calls)
 <!-- SYNC:END -->

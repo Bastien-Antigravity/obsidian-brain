@@ -31,7 +31,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/qu
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/models/result.py.md|MQueryResult]] (class: calls) — *Standardized output for a search query.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/models/result.py.md|result.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
-- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|debug]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)

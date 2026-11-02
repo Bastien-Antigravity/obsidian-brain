@@ -27,6 +27,9 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/__init__.py.md|__init__.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run_preflight]] (function: calls) — *Convenience functional entry point for mode runners.*
+- [[docker-deployment/docker-deployment/scripts/ghcr_cleaner.py.md|ghcr_cleaner.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/ghcr_cleaner.py.md|ghcr_cleaner.py]] (same_package)
+- [[docker-deployment/docker-deployment/scripts/ghcr_cleaner.py.md|run_cleaner]] (function: calls) — *Audit and optionally purge untagged / orphaned container versions.*
 - [[docker-deployment/docker-deployment/scripts/mode_docker.py.md|mode_docker.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/mode_local.py.md|mode_local.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/mode_production.py.md|mode_production.py]] (imports)

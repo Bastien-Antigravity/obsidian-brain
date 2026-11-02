@@ -124,4 +124,5 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|t_reg_cb()]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (imports)
 <!-- SYNC:END -->

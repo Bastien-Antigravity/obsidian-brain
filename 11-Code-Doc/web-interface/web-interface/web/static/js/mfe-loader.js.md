@@ -13,16 +13,10 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|i.find]] (method: calls)
-- [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
-- [[web-interface/web-interface/web/static/js/realtime-common.js.md|onerror]] (function: calls)
-- [[web-interface/web-interface/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/templates/base.html.md|IS_LOGGED_IN]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/static/js/app.js.md|app.js]] (calls)
-- [[web-interface/web-interface/web/static/js/app.js.md|app.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|DISCOVERY_SERVICE_URL]] (constant: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|init]] (function: belongs_to) — *Initialize*

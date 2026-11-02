@@ -17,7 +17,7 @@ This protocol defines how to build, register, and test pluggable, decentralized 
 
 ## 1. High-Level Architecture
 
-The `web-interface` server includes an integrated **MFE Registry** and a client-side **MFE Loader** to mount sub-frontends dynamically without rebuilding the core server.
+The `web-interface` server includes an integrated **MFE Registry** and a client-side **MFE Loader** to mount sub-frontends dynamically into the right `#Sidenav` drawer without rebuilding the core server.
 
 ```mermaid
 sequenceDiagram
@@ -26,14 +26,15 @@ sequenceDiagram
     participant Browser as Browser Client
 
     Note over MS, WI: Step 1: Registration
-    MS->>WI: POST /api/v1/register {name, tag, url, navTitle}
+    MS->>WI: POST /api/v1/register {name, tag, url, navTitle, layer, category, priority, icon, requiresAuth}
+    Note over WI: Persists to mfe_services.json cache
     
     Note over Browser, WI: Step 2: Discovery & Load
     Browser->>WI: Navigates to Dashboard
     WI-->>Browser: Serves base.html + mfe-loader.js
     Browser->>WI: GET /api/v1/services (Query active MFEs)
-    WI-->>Browser: Returns registered services JSON
-    Browser->>Browser: Inject navigation sidebar links
+    WI-->>Browser: Returns registered services JSON (sorted by layer & priority)
+    Browser->>Browser: Injects accordions & links into #Sidenav drawer
 
     Note over Browser, MS: Step 3: Mount & Interaction
     Browser->>Browser: User clicks Link -> Routes to /mfe/{name}
@@ -48,19 +49,41 @@ sequenceDiagram
 ## 2. Integration Specifications
 
 ### 2.1 The Registry Endpoints
-The registry is built directly into the `web-interface` server on **Port 5000** (or the currently configured server port).
+The registry is built directly into the `web-interface` server on **Port 5000** (or dynamically resolved via `appConfig.GetListenAddr("web_interface")`).
 - **POST `/api/v1/register`**: Used by microservices at boot time to publish their frontend configuration.
   ```json
   {
     "name": "config-server",
     "tag": "config-server-mfe",
-    "url": "http://localhost:3308/static/mfe.js",
-    "navTitle": "⚙️ Config Server"
+    "url": "http://localhost:3308/static/js/mfe-loader.js",
+    "navTitle": "⚙️ Config Server",
+    "layer": "L1",
+    "category": "Base Fleet",
+    "priority": 20,
+    "icon": "fa-cogs",
+    "requiresAuth": true
   }
   ```
-- **GET `/api/v1/services`**: Used by the web interface loader to fetch all active frontends.
+- **GET `/api/v1/services`**: Used by the web interface loader (`mfe-loader.js`) to fetch all active frontends organized by layer.
 
-### 2.2 Client-Side Requirements (The Microservice)
+### 2.2 3-Tier Service Taxonomy
+Micro-frontends are partitioned into 3 distinct operational layers:
+1. **L1 - Base Fleet**:
+   - Fundamental daemon services powering the node: `watchdog-agent`, `config-server`, `notif-server`, `obsidian-brain` (RAG Engine).
+   - Displayed under the `BASE FLEET (L1)` accordion in `#Sidenav`.
+2. **L2 - Domain Services**:
+   - Business, pipeline, and market microservices: `market-observer`, `stock-analysis`, `realtime-analysis`.
+   - Displayed under domain-specific accordions in `#Sidenav`.
+3. **L3 - Secure Controls**:
+   - Administrative dashboards, KMS key managers, security audits, and sensitive log monitors (`kms-manager`, `audit-vault`).
+   - Displayed under `SECURE CONTROLS (L3)`.
+
+### 2.3 Cold-Start Persistence (`mfe_services.json`)
+The registry maintains an atomic disk-backed store (`mfe_services.json` via `dbFile` in `src/mfe/registry.go`). When `web-interface` restarts:
+- It immediately loads the cached registration list into memory.
+- All micro-frontend navigation links are visible with **0-second cold start**, even before microservice re-registration loops trigger.
+
+### 2.4 Client-Side Requirements (The Microservice)
 To expose a microfrontend, a sibling microservice must fulfill three strict technical conditions:
 
 #### 1. Serve the Web Component Script (Embedded Standard)
@@ -128,110 +151,94 @@ Because the Web Component executes in the client's browser (loaded under the `we
     )
     ```
 
-#### 3. Automatic Non-Blocking Boot Registration (Ecosystem L1 Retry Standard)
-During initial bootstrap (Phase 5 of service initialization), the microservice must fire a non-blocking background registration loop to the MFE registry. It must run on a background thread/goroutine (`ModeNonBlocking`) to prevent startup locks if the `web-interface` is offline or starts later in the orchestration sequence.
+#### 3. Automatic Non-Blocking Boot Registration (Ecosystem Standard: `microservice-toolbox/spec`)
+During initial bootstrap, microservices register their declarative specification with `web-interface` using the standard `microservice-toolbox/spec` engine. 
 
 > [!IMPORTANT]
-> **Infinite Retries (`MaxRetries: -1`) Contract**:
-> Microservices must NEVER give up registration after a fixed attempt limit (e.g. 5 or 15 attempts). In distributed orchestration and container startup, `web-interface` may boot after dependent microservices or restart during rolling updates. Reconnection loops run indefinitely until the dependency recovers (`MaxRetries: -1`). Dynamic address resolution (`appConfig.GetListenAddr("web_interface")`) MUST be used inside the loop to support runtime discovery and Docker Guard suppression.
+> **Zero Manual Loops & Infinite Resilience Contract (`MaxRetries: -1`)**:
+> Microservices MUST NOT write bespoke HTTP `urllib` or `http.Client` retry loops. All registration MUST leverage `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), or `spec::publish_with_lifecycle` (Rust). The spec engine automatically handles:
+> - Non-blocking execution (`ModeNonBlocking`) to prevent startup deadlocks.
+> - Infinite retry with randomized exponential backoff until `web-interface` is reachable.
+> - Docker Guard address resolution (`0.0.0.0` vs container/host IP).
+> - Dynamic version resolution from `VERSION.txt`.
+> - Strict fail-fast validation of required metadata.
 
-*   **Go Auto-Registration Hook (Authoritative Standard)**:
+*   **Go Auto-Registration Hook (`microservice-toolbox/go/pkg/spec`)**:
     ```go
-    // Register OpenMFE with web-interface dynamically (non-blocking, infinite self-healing retry)
-    go func() {
-        mfeUrl := fmt.Sprintf("http://%s/static/js/mfe-loader.js", restAddr)
-        payload := fmt.Sprintf(`{
-            "name": "config-server",
-            "tag": "config-server-mfe",
-            "url": "%s",
-            "navTitle": "⚙️ Config Server"
-        }`, mfeUrl)
+    import (
+        "fmt"
+        "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/spec"
+    )
 
-        client := &http.Client{Timeout: 3 * time.Second}
-        backoff := 2 * time.Second
-        maxBackoff := 15 * time.Second
-
-        for {
-            webAddr, err := appConfig.GetListenAddr("web_interface")
-            if err == nil && webAddr != "" {
-                regUrl := fmt.Sprintf("http://%s/api/v1/register", webAddr)
-                resp, postErr := client.Post(regUrl, "application/json", strings.NewReader(payload))
-                if postErr == nil {
-                    resp.Body.Close()
-                    if resp.StatusCode >= 200 && resp.StatusCode < 300 {
-                        appLogger.Info("Successfully registered config-server OpenMFE with web-interface at %s", regUrl)
-                        return
-                    }
-                    appLogger.Warning("OpenMFE registration attempt failed with status %s; retrying in %v...", resp.Status, backoff)
-                } else {
-                    appLogger.Warning("OpenMFE registration attempt failed (%v); retrying in %v...", postErr, backoff)
-                }
-            } else {
-                appLogger.Warning("web_interface capability address unresolvable (%v); retrying in %v...", err, backoff)
-            }
-
-            time.Sleep(backoff)
-            backoff = time.Duration(float64(backoff) * 1.5)
-            if backoff > maxBackoff {
-                backoff = maxBackoff
-            }
-        }
-    }()
+    // Register OpenMFE & Service Specification during bootstrap
+    spec.PublishWithLifecycle(appConfig, appLogger, spec.ServiceSpec{
+        Name:        "config-server",
+        Tag:         "config-server-mfe",
+        URL:         fmt.Sprintf("http://127.0.0.1:%s/static/js/mfe-loader.js", restPort),
+        NavTitle:    "⚙️ Config Server",
+        Layer:       "L1",
+        Category:    "Base Fleet",
+        Priority:    20,
+        Icon:        "fa-cogs",
+        Description: "Central configuration repository and real-time distributor.",
+        Protocol:    "TCP Sync / gRPC / REST",
+        Framing:     fmt.Sprintf("Port %s TCP / Port %s REST / Port %s gRPC", tcpPort, restPort, grpcPort),
+        DocLink:     "obsidian-brain/06-Microservices/config-server.md",
+        RequiresAuth: true,
+    })
     ```
 
-*   **Python Auto-Registration Hook (Authoritative Standard)**:
+*   **Python Auto-Registration Hook (`microservice_toolbox.spec`)**:
     ```python
-    import json
-    import threading
-    import time
-    import urllib.request
+    from microservice_toolbox.spec import publish_with_lifecycle, ServiceSpec
 
-    def register_mfe_with_web_interface(config, logger, my_ip, my_port):
-        time.sleep(2)  # Allow local server to bind
-        
-        web_cap = config.data.get("capabilities", {}).get("web_interface") if config else None
-        if not web_cap or not isinstance(web_cap, dict):
-            logger.error("OpenMFE registration aborted: Missing 'capabilities.web_interface'")
-            return
-
-        web_ip = str(web_cap.get("ip", "127.0.0.1"))
-        web_port = int(web_cap.get("port", 5000))
-        reg_url = f"http://{web_ip}:{web_port}/api/v1/register"
-        mfe_url = f"http://{my_ip}:{my_port}/static/mfe.js"
-
-        payload = {
-            "name": "market-observer",
-            "tag": "market-observer-mfe",
-            "url": mfe_url,
-            "navTitle": "📈 Market Observer"
-        }
-        req_data = json.dumps(payload).encode("utf-8")
-
-        def do_register():
-            logger.info(f"OpenMFE: Starting auto-registration loop to {reg_url}")
-            backoff = 2.0
-            max_backoff = 15.0
-            while True:
-                try:
-                    req = urllib.request.Request(
-                        reg_url, 
-                        data=req_data, 
-                        headers={"Content-Type": "application/json"},
-                        method="POST"
-                    )
-                    with urllib.request.urlopen(req, timeout=3) as resp:
-                        if 200 <= resp.status < 300:
-                            logger.info(f"OpenMFE: Successfully registered MFE at {reg_url}")
-                            return
-                        logger.warning(f"OpenMFE: Registration failed with status {resp.status}; retrying in {backoff:.1f}s...")
-                except Exception as e:
-                    logger.warning(f"OpenMFE: Registration attempt failed ({e}); retrying in {backoff:.1f}s...")
-                
-                time.sleep(backoff)
-                backoff = min(backoff * 1.5, max_backoff)
-
-        threading.Thread(target=do_register, daemon=True).start()
+    # Register OpenMFE & Service Specification during bootstrap
+    publish_with_lifecycle(
+        app_config,
+        logger,
+        ServiceSpec(
+            name="market-observer",
+            tag="market-observer-mfe",
+            url=f"http://127.0.0.1:{rest_port}/static/mfe.js",
+            nav_title="📈 Market Observer",
+            layer="L2",
+            category="Trading & Execution",
+            priority=10,
+            icon="fa-line-chart",
+            description="Real-time market data observer and signal ingestion.",
+            protocol="HTTP/1.1 REST",
+            framing=f"Port {rest_port} REST",
+            doc_link="obsidian-brain/06-Microservices/market-observer.md",
+            requires_auth=True,
+        )
+    )
     ```
+
+*   **Rust Auto-Registration Hook (`microservice-toolbox/rust/src/spec.rs`)**:
+    ```rust
+    use microservice_toolbox::spec::{publish_with_lifecycle, ServiceSpec};
+
+    publish_with_lifecycle(
+        &app_config,
+        app_logger.clone(),
+        ServiceSpec {
+            name: "log-server".to_string(),
+            tag: "log-server-mfe".to_string(),
+            url: format!("http://127.0.0.1:{}/static/mfe.js", rest_port),
+            nav_title: "📋 Log Server".to_string(),
+            layer: "L1".to_string(),
+            category: "Base Fleet".to_string(),
+            priority: 30,
+            icon: "fa-terminal".to_string(),
+            description: "High-performance Rust logging daemon.".to_string(),
+            protocol: "SafeSocket TCP / REST".to_string(),
+            framing: format!("Port {} SafeSocket TCP", tcp_port),
+            doc_link: "obsidian-brain/06-Microservices/log-server.md".to_string(),
+            requires_auth: false,
+        },
+    );
+    ```
+
 
 ### 2.3 The Web Component Standard
 The microfrontend bundle must register a standard custom HTML5 element. It receives context variables dynamically from the parent loader via attributes (e.g. `base-url`):
@@ -422,11 +429,17 @@ curl -X POST http://localhost:5000/api/v1/register \
     "name": "mock-service",
     "tag": "mock-mfe",
     "url": "/static/js/ta-indicators.js",
-    "navTitle": "🧪 Mockup Service"
+    "navTitle": "🧪 Mockup Service",
+    "layer": "L2",
+    "category": "Trading & Execution",
+    "priority": 50,
+    "icon": "fa-flask",
+    "requiresAuth": false
   }'
 ```
 
 ### 3. Open the Dashboard
 Open the main `web-interface` (`http://localhost:5000`):
-1. **Dynamic Navigation:** The sidebar under `MicroServices` should automatically render the link **🧪 Mockup Service**.
+1. **Dynamic Navigation:** Open the right `#Sidenav` drawer (gear / services toggle). The accordion under `TRADING & EXECUTION (L2)` automatically renders the link **🧪 Mockup Service** with its `fa-flask` icon.
 2. **Mounting:** Clicking the link loads `/mfe/mock-service`. The loader downloads `ta-indicators.js` and mounts `<mock-mfe>` dynamically inside the page frame.
+3. **Cold-Start Verification:** Stop and restart `web-interface`. The mockup service remains immediately available in the menu via `mfe_services.json` cache without re-registering.

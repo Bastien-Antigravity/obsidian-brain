@@ -61,7 +61,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/rag_
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_load_inventory_and_map_notes]] (function: calls) — *Loads inventory.json and builds a mapping of note stem names to file paths.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/seed_service.py.md|SeedService]] (class: calls) — *Manages exporting and importing sanitized seed data for the RAG Engine.*
-- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|debug]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)

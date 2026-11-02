@@ -43,6 +43,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/mult
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantParentStoreProxy]] (class: belongs_to) — *Routes parent raw content storage operations to schema-specific PostgresParentStore instances.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantVectorStoreProxy]] (class: belongs_to) — *Routes vector store operations to schema-specific PgVectorStore instances.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|__init__]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_create_unified_views]] (function: belongs_to) — *Ensures unified views exist across the database schema.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_active_schemas]] (function: belongs_to) — *Retrieves all active database schemas with 30s TTL caching.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_db]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|_get_service]] (function: belongs_to)

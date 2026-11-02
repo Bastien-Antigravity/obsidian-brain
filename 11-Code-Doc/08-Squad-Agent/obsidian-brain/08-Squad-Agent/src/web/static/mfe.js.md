@@ -48,7 +48,6 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.setupEventListeners]] (method: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.   ]] (method: calls)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/identity.py.md|name]] (function: calls)
-- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|debug]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|       ]] (function: belongs_to)
@@ -84,6 +83,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE]] (class: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|getSquadLogger]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/rust/src/config/loader.rs.md|loader.rs]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|mfe.js]] (calls)
 <!-- SYNC:END -->
 

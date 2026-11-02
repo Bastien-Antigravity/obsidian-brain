@@ -19,8 +19,6 @@ tags:
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.setupResizeListener]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.updateMicroprice]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.updateOBI]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|C.update]] (method: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -32,7 +30,5 @@ tags:
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.updateOBI]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager]] (class: defines_method)
-- [[web-interface/web-interface/web/static/js/app.js.md|app.js]] (calls)
-- [[web-interface/web-interface/web/static/js/app.js.md|app.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/utils/EventBus.js.md|EventBus.js]] (calls)
 <!-- SYNC:END -->

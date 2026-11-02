@@ -38,4 +38,6 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager]] (class: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|MICROSERVICE_TOOLBOX_LIFECYCLE_MANAGER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_LIFECYCLE_MANAGER_HPP*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|spec.hpp]] (calls)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|spec.hpp]] (imports)
 <!-- SYNC:END -->

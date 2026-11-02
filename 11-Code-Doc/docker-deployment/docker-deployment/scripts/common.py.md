@@ -64,6 +64,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|engine.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|guided_wizard.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/guided_wizard.py.md|guided_wizard.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/ghcr_cleaner.py.md|ghcr_cleaner.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (same_package)

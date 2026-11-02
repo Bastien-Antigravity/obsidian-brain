@@ -15,6 +15,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|       ]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/teleremote/client.go.md|TeleClient.disconnect]] (method: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE. if (!text]] (method: defines_method) — *Helper functions*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.Line(terminal, tex]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.View(container) ]] (method: defines_method)

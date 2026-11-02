@@ -62,6 +62,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 - [[microservice-toolbox/microservice-toolbox/rust/src/messaging/connector.rs.md|connector.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|helpers.rs]] (calls)

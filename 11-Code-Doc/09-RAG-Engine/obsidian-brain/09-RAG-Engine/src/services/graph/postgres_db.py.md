@@ -30,6 +30,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/gr
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|HAS_POSTGRES]] (constant: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|PostgresGraphDB]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|__init__]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|_create_unified_views]] (function: belongs_to) — *Ensures unified views exist in the database schema.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|_execute_query]] (function: belongs_to) — *Helper to run queries with the thread-safe connection pool.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|_init_db]] (function: belongs_to) — *Initializes connection pool, tables, indexes, and views in PostgreSQL.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|clear]] (function: belongs_to) — *Clears local KMS nodes and edges.*

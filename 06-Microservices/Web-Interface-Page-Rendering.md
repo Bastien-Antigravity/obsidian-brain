@@ -95,17 +95,31 @@ All colors are defined inside `web/static/lib/tokens/design-tokens.css` (with li
 
 ---
 
-## 4. Layout Grid Specification
+## 4. Layout Grid & Dual-Navigation Specification
 
 All pages must fit cleanly into the overall layout framework without causing overflow or layout shifts.
 
-### 🧱 HTML Template Structure
+### 🧭 Dual-Navigation Layout Model
+1. **Left Sidebar (`#Sidebar`) — Static Knowledge & Content**:
+   - Houses static documentation, market overviews, and analysis articles auto-discovered from `web/pages/<XX-Category>/<YY-PageName>.html`.
+   - Category accordion headers (`.bastien-sidebar__section-heading`), buttons (`.bastien-sidebar__section-btn`), and nested links (`.bastien-sidebar__section-items`) indented `24px` with a vertical tree guide line.
+   - Clears active state dynamically on navigation. Never mutates typography scale.
+2. **Right Sidenav Drawer (`#Sidenav`) — Dynamic OpenMFE Services**:
+   - Houses pluggable microservice tabs (`BASE FLEET (L1)`, `DOMAIN SERVICES (L2)`, `SECURE CONTROLS (L3)`) loaded via `/api/v1/services`.
+
+### 🧱 HTML Template Structure & Autodiscovery Metadata
 To ensure design inheritance, child HTML templates served inside Go routes **MUST NOT** include boilerplate wraps:
 *   ❌ **DO NOT USE**: `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`, or `<header>`.
 *   ❌ **DO NOT DUPLICATE**: Bootstrap CDNs, Font Awesome CDN stylesheets, Google Fonts imports, or global scripts. These are already preloaded in the parent wrapper.
+*   **In-File Page Metadata Comment**: Templates declare their title, subtitle, and FontAwesome 4.7 icon in an HTML comment at line 1:
+    ```html
+    <!-- title: My Page Title | subtitle: Concise page description | icon: fa-chart-line -->
+    ```
+*   **Category Metadata**: Directory folders in `web/pages/` may define a `category.json` (`{ "title": "...", "icon": "...", "order": 1 }`).
 *   Every template must declare its scope inside the `"content"` define block:
 
 ```html
+<!-- title: S&P 500 Stocks | subtitle: Comprehensive fundamental equity tracker | icon: fa-line-chart -->
 {{define "content"}}
 <div class="bastien-container">
     <!-- Page grid row structures -->
@@ -119,7 +133,7 @@ To ensure design inheritance, child HTML templates served inside Go routes **MUS
 ```
 
 ### 🎛️ Page Title Headers
-The main layout `base.html` automatically renders the title and description header segment dynamically.
+The main layout `base.html` automatically renders the title and description header segment dynamically from the autodiscovered metadata.
 *   Child templates **should not** define `<div class="bastien-page-header">` blocks to avoid double headings.
 *   If a template specifically needs to override or remove the title segment, it can define an empty block:
     ```html
@@ -229,6 +243,26 @@ The interface relies on **Font Awesome v4.7** (`fa fa-*`). Always include a mean
 *   `fa-user` / `fa-lock`: Connect/disconnect operations, profile, login pages.
 *   `fa-check-circle` / `fa-times-circle`: Positive connections, errors, operation status.
 *   `fa-database` / `fa-folder-open`: Local files, databases, data logs.
+
+---
+
+## 7. Air-Gapped & 100% Offline Asset Delivery Standard
+
+The Bastien-Antigravity web dashboard is strictly architected for air-gapped, isolated server environments. The web portal must operate completely offline without external internet connectivity.
+
+### 🌐 Zero-CDN Requirement
+*   **No Remote Fonts**: Never link to `fonts.googleapis.com` or `fonts.gstatic.com`. All font weights (`Inter`, `Outfit`, `JetBrains Mono`, `Sacramento`) are downloaded and served locally via `web/static/fonts/` and `web/static/lib/tokens/fonts.css`.
+*   **No Remote Scripts or CSS**: Never load scripts or stylesheets from CDNs (`cdnjs.cloudflare.com`, `cdn.jsdelivr.net`, `cdn.bokeh.org`, etc.). All dependencies (`bokeh`, `cytoscape`, `lightweight-charts`, `bootstrap`, `jquery`, `prism`, `requirejs`) are self-hosted under `/static/js/` or `/static/lib/`.
+*   **Permitted External URLs**: Only user social profiles (GitHub, LinkedIn, mailto) and documentation reference links (`<a href="..." target="_blank">`) in text content are permitted to reference external domains.
+
+---
+
+## 8. Template Hierarchy & Elimination of `web/html/`
+
+All templates in `web-interface` follow strict directory segregation:
+1.  **Application Shell (`web/templates/`)**: Contains base layouts and core daemon views (`base.html`, `modals.html`, `home.html`, `login.html`, `mfe.html`, `PostgresBrowser.html`).
+2.  **Content Partials (`web/pages/<XX-Category>/<YY-PageName>.html`)**: Contains categorized static and analytical pages wrapped in `{{define "content"}}` with YAML metadata frontmatter.
+3.  **Complete Elimination of `web/html/`**: The legacy `web/html/` directory has been completely deleted. Any reference to `web/html/` in code, templates, or scripts is strictly prohibited.
 
 ---
 *Back-links: [[Web-Interface-Hub]], [[Web-Interface-Integration-Protocol]], [[OpenMFE-Integration-Protocol]]*

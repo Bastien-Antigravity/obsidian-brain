@@ -13,8 +13,6 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/base.js.md|base.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/base.js.md|w3_OpenClose]] (function: calls)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.displayColumns]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.displayDatabases]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.displayResults]] (method: defines_method)
@@ -33,9 +31,9 @@ tags:
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.selectTable]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.setupEventListeners]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.switchTab]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|_.disabled]] (method: calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
+- [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.updateUrlParams]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.displayColumns]] (method: belongs_to)
@@ -56,6 +54,8 @@ tags:
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.selectTable]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.setupEventListeners]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.switchTab]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.updateUrlParams]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer]] (class: defines_method)
+- [[web-interface/web-interface/web/static/js/database-explorer.js.md|initDatabaseExplorer]] (function: belongs_to)
 <!-- SYNC:END -->

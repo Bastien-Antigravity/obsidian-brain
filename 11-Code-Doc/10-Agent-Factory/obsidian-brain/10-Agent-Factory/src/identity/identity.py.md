@@ -21,6 +21,8 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/identity
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/flexible-logger@v0.0.1/src/engine/log_engine.go.md|log_engine.go]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/messaging/connector.go.md|connector.go]] (calls)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/agent/agent.py.md|agent.py]] (calls)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/agent/agent.py.md|agent.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/identity/identity.py.md|ImmutableIdentity]] (class: belongs_to) — *Concrete, immutable implementation of `Identity`.*

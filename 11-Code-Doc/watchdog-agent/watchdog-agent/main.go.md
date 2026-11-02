@@ -30,6 +30,7 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: calls) — *RegisterServices initializes the topology registry slice of managed services*
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|ValidateRegistry]] (function: calls) — *ValidateRegistry checks for missing dependencies and dependency cycles*
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|KillAll]] (function: calls) — *KillAll kills all supervised command processes clean*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogError]] (function: calls) — *LogError writes a formatted error message with watchdog prefix to stderr/logger*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: calls) — *LogInfo writes a formatted message with watchdog prefix to stdout/logger*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|MonitorAndSupervise]] (function: calls) — *MonitorAndSupervise is the supervisor runner loop*

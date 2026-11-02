@@ -32,6 +32,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|EnsureSafeLogger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|MICROSERVICE_TOOLBOX_LOGGER_LOGGER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_LOGGER_LOGGER_HPP*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.hpp]] (imports)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|spec.hpp]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

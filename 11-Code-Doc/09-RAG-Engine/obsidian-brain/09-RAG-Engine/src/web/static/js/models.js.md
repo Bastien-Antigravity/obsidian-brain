@@ -14,6 +14,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|x]] (struct: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/models.js.md|CodebaseEdge.isCalls]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/models.js.md|CodebaseEdge.isDefines]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/models.js.md|CodebaseEdge.isImports]] (method: defines_method)

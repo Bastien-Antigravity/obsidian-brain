@@ -14,7 +14,6 @@ Automatically generated mirror for `web-interface/web/static/lib/utils/Logger.js
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger._dispatchRemote]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger._log]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.captureGlobalErrors]] (method: defines_method)
@@ -31,23 +30,12 @@ Automatically generated mirror for `web-interface/web/static/lib/utils/Logger.js
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warning]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/html/CommonToolbox.html.md|CommonToolbox.html]] (calls)
-- [[web-interface/web-interface/web/html/MarketObserver.html.md|MarketObserver.html]] (calls)
-- [[web-interface/web-interface/web/html/OrderbookAggregator_OptionB.html.md|OrderbookAggregator_OptionB.html]] (calls)
-- [[web-interface/web-interface/web/html/RtTaAnalyst.html.md|RtTaAnalyst.html]] (calls)
-- [[web-interface/web-interface/web/html/TAIndicatorsAll.html.md|TAIndicatorsAll.html]] (calls)
-- [[web-interface/web-interface/web/html/TradedVolume.html.md|TradedVolume.html]] (calls)
 - [[web-interface/web-interface/web/static/js/ChartManager.js.md|ChartManager.js]] (calls)
 - [[web-interface/web-interface/web/static/js/DOMRenderer.js.md|DOMRenderer.js]] (calls)
 - [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|WebSocketClient.js]] (calls)
-- [[web-interface/web-interface/web/static/js/app.js.md|app.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|database-explorer.js]] (calls)
-- [[web-interface/web-interface/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
-- [[web-interface/web-interface/web/static/js/market-observer.js.md|market-observer.js]] (calls)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|mfe-loader.js]] (calls)
-- [[web-interface/web-interface/web/static/js/ta-indicators.js.md|ta-indicators.js]] (calls)
-- [[web-interface/web-interface/web/static/js/traded-volume.js.md|traded-volume.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.js]] (calls)
@@ -70,6 +58,7 @@ Automatically generated mirror for `web-interface/web/static/lib/utils/Logger.js
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warning]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger]] (class: defines_method)
+- [[web-interface/web-interface/web/templates/home.html.md|home.html]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

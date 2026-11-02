@@ -24,6 +24,7 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/cmd/strate
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.Close]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|NewDBManager]] (function: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/telegram/telegram_client.go.md|NewTelegramClient]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/lifecycle/manager.go.md|NewManagerWithLogger]] (function: calls) — *NewManagerWithLogger creates a new lifecycle manager with an explicit logger.*
 
 ### 🔌 Consumers (Inbound)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/cmd/strategic-nexus/main.go.md|main]] (function: belongs_to)

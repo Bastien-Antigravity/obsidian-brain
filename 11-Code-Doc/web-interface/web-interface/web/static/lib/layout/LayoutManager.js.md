@@ -13,7 +13,6 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/html/CV.html.md|#sidebar (div)]] (element: calls)
 - [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.bindEvents]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.closeSidebar]] (method: defines_method)
@@ -23,7 +22,6 @@ tags:
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.openSidenav]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.toggleSidebar]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.toggleSidenav]] (method: defines_method)
-- [[web-interface/web-interface/web/templates/base.html.md|IS_LOGGED_IN]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (imports)

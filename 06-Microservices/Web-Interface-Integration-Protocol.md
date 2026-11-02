@@ -81,10 +81,38 @@ The UI design is optimized for a premium, low-fatigue developer experience. Full
     *   `fa-moon-o` / `fa-sun-o`: Theme toggling.
 *   **Dynamic Component Registration**: UI widgets bind interaction dynamically through `data-component="..."` declarations processed by `web/static/lib/bastien-ui.js`. Inline scripting and inline styling are not allowed.
 
-### UI Template Integration
-1.  Add the page HTML to `web/html/{page_name}.html`, defining the layout content block via `{{define "content"}}`.
-2.  Register the endpoint in `src/router/static.go` with `renderer.RenderPage(w, r, "base", "{page_name}", nil, appConfig)` to wrap the page within the dashboard layout frame.
+### Dual-Navigation Architecture
+The web interface segregates user navigation into two dedicated surfaces:
+1. **Left Sidebar (`#Sidebar`) — Static Knowledge & Content**:
+   - Houses documentation articles, guides, and static views auto-discovered from `web/pages/`.
+   - Driven by `src/router/autodiscovery.go`.
+2. **Right Sidenav Drawer (`#Sidenav`) — Dynamic OpenMFE Microservices**:
+   - Houses pluggable microservice interfaces registered at runtime via OpenMFE.
+   - Organized into 3 tiers (`L1 - Base Fleet`, `L2 - Domain Services`, `L3 - Secure Controls`).
+   - Driven by `web/static/js/mfe-loader.js`.
 
+### UI Template Integration & Static Page Autodiscovery
+Static pages and documentation are fully autodiscovered by `src/router/autodiscovery.go` without requiring any manual route registration or Go code changes:
+1. **File Hierarchy**: Place the page template in `web/pages/<XX-Category>/<YY-PageName>.html` (e.g. `web/pages/01-Overview/01-WhoAmI.html`).
+2. **Category Configuration**: Optionally create `category.json` in the category directory:
+   ```json
+   {
+     "title": "01. Overview",
+     "icon": "fa-compass",
+     "order": 10
+   }
+   ```
+3. **In-File Metadata**: Include an HTML frontmatter comment at the top of the file:
+   ```html
+   <!-- title: Who Am I | subtitle: Overview of Bastien's background | icon: fa-user-circle -->
+   {{define "content"}}
+   <div class="bastien-container">
+       <!-- Scoped Page Content -->
+   </div>
+   {{end}}
+   ```
+4. **Automatic Routing**: At boot, `autodiscovery.go` mounts `/page/<category-slug>/<page-slug>` and creates the corresponding collapsible accordion menu items in `#Sidebar`. Legacy aliases (e.g. `/WhoAmI`, `/CV`) are preserved automatically.
+5. **Zero Hardcoded Routes**: Developers and AI agents MUST NOT add hardcoded page routes to `static.go` or static icon/subtitle dictionaries in Go code.
 
 ## 4. Service Discovery Truth
 The `web-interface` MUST be the only service that has an "Overview" of the entire fleet. It uses the `distributed-config` bridge to discover the `capabilities` of every running node and dynamically renders its UI based on what is currently active in the ecosystem.
@@ -103,5 +131,5 @@ The `web-interface` features a dedicated **Configuration Server Manager** admin 
 - **UI View**: `web/html/ConfigBrowser.html` presents status, active fleet clients, and accordion-based editors.
 
 ---
-*Last Updated: 2026-06-19*
-*See also: [[Microservice-Startup-Protocol]], [[OpenMFE-Integration-Protocol]]*
+*Last Updated: 2026-10-27*
+*See also: [[Microservice-Startup-Protocol]], [[OpenMFE-Integration-Protocol]], [[Web-Interface-Page-Rendering]], [[Web-Interface-Hub]]*
