@@ -66,3 +66,30 @@ tags:
 - **Protected Branches**: `main`
 - **Versioning Strategy**: N/A (Continuous updates).
 - **Version Source of Truth**: `VERSION.txt` (Set to `1.0.0` for tracking).
+
+## 🛡️ Non-Negotiable Engineering Directives for AI Coding Assistants
+
+### 1. Zero Production-for-Test Alterations
+- **Principle**: Tests validate production code; production code does NOT bend to accommodate test fixtures.
+- **Rule**: NEVER alter production or business logic to make a failing unit or integration test pass.
+- **Action**: When a test fails due to out-of-date mock behavior, missing protocol handshakes (e.g., `tcp-hello` vs raw `tcp`), uninitialized mock buffers, or race conditions, update the **test fixture or mock**, never the production source.
+
+### 2. Zero Defensive Boilerplate for Static Linters (e.g., `nilaway`)
+- **Principle**: Production code must remain clean, concise, and focused on business value—not cluttered with defensive noise to silence linters.
+- **Rule**: NEVER inject redundant `if x != nil` checks, fake zero-value fallbacks (e.g., `"unknown"`), or dummy structs (e.g., `&net.UDPAddr{}`) to satisfy static analyzers when variables are guaranteed safe by system architecture.
+
+### 3. Exhaustive Architectural Reliance Invariants (Safe-By-Design Contracts)
+Downstream services and application handlers MUST trust upstream framework guarantees and architectural invariants without defensive re-validation:
+- **Configuration Framework (`microservice-toolbox/config`)**:
+  - `AppConfig` and `Config` are validated and populated during initialization. If configuration loading fails, the service fails fast at boot. Downstream handlers can assume configuration structs are non-nil and valid.
+  - Capability endpoints, IPs, and ports are resolved via `GetListenAddr` / `GetGRPCListenAddr` according to strict schema definitions.
+- **Transport & Communication Frameworks (`safe-socket`, `gRPC`, `Cap'n Proto`)**:
+  - **Handshake Validation**: `safe-socket` (`tcp-hello`, Unix domain, SHM) guarantees identity validation and connection viability before passing sockets to application handlers. Handshake metadata is structurally guaranteed.
+  - **Schema Enforcement**: Protobuf and Cap'n Proto schemas strictly govern message formats across the wire. Payloads unpacked by generated decoders are structurally valid.
+  - **Standard Library Contracts**: Trust standard language contracts (e.g., Go's `http.Client.Do` guarantees `resp != nil` when `err == nil`).
+- **Orchestration & Supervision (`watchdog-agent`)**:
+  - The supervisor enforces dependency DAGs: upstream dependencies (`log-server`, `config-server`) are confirmed listening and healthy before dependent services are started.
+  - Reconnections and socket retries are managed by the connection layer (`conn_manager`); application handlers must not duplicate transport reconnection logic.
+
+### 4. Mandatory Manual User Validation Gate
+- **Rule**: NEVER execute `git commit` or apply modifications silently without presenting the exact changes to the human developer for manual review and explicit validation.
