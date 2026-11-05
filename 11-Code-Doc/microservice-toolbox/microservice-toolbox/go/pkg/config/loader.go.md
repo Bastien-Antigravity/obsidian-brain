@@ -28,6 +28,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.DecryptSecret]] (method: defines_method) — *If it is an ENC(...) block but decryption fails, an error is returned.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetGRPCListenAddr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetListenAddr]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocalString]] (method: defines_method) — *Returns an empty string if the key does not exist or is nil.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocal]] (method: defines_method) — *Supports nested lookups using dot notation (e.g., "database.host").*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: defines_method) — *GetRESTAddr returns the address for the REST management interface.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetServiceName]] (method: defines_method) — *GetServiceName returns the standardized program name.*
@@ -59,6 +60,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.DecryptSecret]] (method: belongs_to) — *If it is an ENC(...) block but decryption fails, an error is returned.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetGRPCListenAddr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetListenAddr]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocalString]] (method: belongs_to) — *Returns an empty string if the key does not exist or is nil.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocal]] (method: belongs_to) — *Supports nested lookups using dot notation (e.g., "database.host").*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: belongs_to) — *GetRESTAddr returns the address for the REST management interface.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetServiceName]] (method: belongs_to) — *GetServiceName returns the standardized program name.*

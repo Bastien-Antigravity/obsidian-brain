@@ -35,7 +35,7 @@ Automatically generated mirror for `notif-server/src/core/notifier_test.go`.
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.GetTag]] (method: defines_method)
 - [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.SendMessage]] (method: defines_method)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls)
+- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

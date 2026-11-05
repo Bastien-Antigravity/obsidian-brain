@@ -31,8 +31,8 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/middleware/middleware.go.md|LoggerMiddleware]] (function: calls) — *LoggerMiddleware console output*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|middleware.go]] (imports)
-- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|RegisterPostgresBrowserRoutes]] (function: calls) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
-- [[web-interface/web-interface/src/postgres_browser/postgres_browser.go.md|postgres_browser.go]] (imports)
+- [[web-interface/web-interface/src/postgres_browser/handler.go.md|RegisterPostgresBrowserRoutes]] (function: calls) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
+- [[web-interface/web-interface/src/postgres_browser/handler.go.md|handler.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*

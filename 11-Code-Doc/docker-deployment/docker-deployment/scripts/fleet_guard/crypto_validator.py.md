@@ -3,7 +3,13 @@ source: docker-deployment/scripts/fleet_guard/crypto_validator.py
 workspace: docker-deployment
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-01T01:10:01.868257
+last_sync: 2026-10-01 01:10:01.868257
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: crypto_validator.py
@@ -21,6 +27,8 @@ Automatically generated mirror for `docker-deployment/scripts/fleet_guard/crypto
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/models.py.md|models.py]] (same_package)
 
 ### 🔌 Consumers (Inbound)
+- [[docker-deployment/docker-deployment/modes/local/infra.py.md|infra.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/infra.py.md|infra.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/__init__.py.md|__init__.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/coherence_auditor.py.md|coherence_auditor.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/coherence_auditor.py.md|coherence_auditor.py]] (imports)

@@ -3,7 +3,13 @@ source: docker-deployment/scripts/ghcr_cleaner.py
 workspace: docker-deployment
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-23T13:14:29.516475
+last_sync: 2026-10-23 13:14:29.516475
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: ghcr_cleaner.py

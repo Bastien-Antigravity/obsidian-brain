@@ -3,7 +3,13 @@ source: flexible-logger/src/sink/rolling_file_test.go
 workspace: flexible-logger
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-11T13:58:54.668687
+last_sync: 2026-10-11 13:58:54.668687
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: rolling_file_test.go

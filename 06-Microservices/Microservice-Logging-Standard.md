@@ -107,7 +107,7 @@ func LoggerMiddleware(logger unilog_interfaces.Logger) func(http.Handler) http.H
 			duration := time.Since(start)
 			logger.Info("%s - - [%s] \"%s %s %s\" \"%s\" %v (status: %d)",
 				r.RemoteAddr,
-				time.Now().Format("02/Jan/2006:15:04:05 -0700"),
+				time.Now().UTC().Format("02/Jan/2006:15:04:05 -0700"),
 				r.Method,
 				r.URL.Path,
 				r.Proto,

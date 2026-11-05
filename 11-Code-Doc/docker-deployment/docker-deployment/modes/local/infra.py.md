@@ -26,6 +26,8 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_service_port]] (function: calls) — *Dynamically get listening port for a service, respecting env overrides and native.yaml.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|is_port_listening]] (function: calls) — *Check if a TCP port is actively listening and accepting connections.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|wait_for_port]] (function: calls) — *Poll a TCP port until it begins accepting connections or timeout expires.*
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|crypto_validator.py]] (imports)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|decrypt_rsa]] (function: calls) — *Decrypt an ENC(...) ciphertext string using the RSA private key.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/setup_nats.py.md|ensure_nats_available]] (function: calls)
 

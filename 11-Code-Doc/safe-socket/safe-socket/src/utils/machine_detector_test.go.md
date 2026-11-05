@@ -24,6 +24,8 @@ Automatically generated mirror for `safe-socket/src/utils/machine_detector_test.
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|machine_detector.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
+- [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
 - [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|TestMachineDetector]] (function: belongs_to)
 <!-- SYNC:END -->

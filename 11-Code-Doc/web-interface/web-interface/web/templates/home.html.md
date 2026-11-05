@@ -3,7 +3,13 @@ source: web-interface/web/templates/home.html
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-27T17:17:06.652850
+last_sync: 2026-10-27 17:17:06.652850
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: home.html
@@ -14,41 +20,10 @@ Automatically generated mirror for `web-interface/web/templates/home.html`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/prism.js.md|i]] (function: calls)
-- [[web-interface/web-interface/web/static/js/prism.js.md|l]] (function: calls)
-- [[web-interface/web-interface/web/static/js/prism.js.md|s]] (function: calls)
-- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
+- None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/templates/home.html.md| const tra]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md| {
-    document.qu]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|DEFAULT_NODES]] (constant: belongs_to) — *11 Core Ecosystem Services Initial Positions*
-- [[web-interface/web-interface/web/templates/home.html.md|EXCHANGES]] (constant: belongs_to) — *Authoritative Interservice Message Exchange Definitions (Clickable Messages)*
-- [[web-interface/web-interface/web/templates/home.html.md|MESH_LINKS]] (constant: belongs_to) — *Authoritative Interservice Links & Clickable Message Exchanges*
-- [[web-interface/web-interface/web/templates/home.html.md|PARTICLE_STREAMS]] (constant: belongs_to) — *Particle Streams (Subset of key links for animated moving dots)*
-- [[web-interface/web-interface/web/templates/home.html.md|ation() {
-    const svg]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|document.getElementBy]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|eners() {
-    const svg]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|geId) {
-    const ex ]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|ght() {
-    if (windo]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|iceKey, keepT]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|o) {
-    swit]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|p2, curveOffs]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|r() {
-    const tra]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|t.getElementBy]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|to, btn) {
-   ]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|{
-      const [fl]] (function: belongs_to)
-- [[web-interface/web-interface/web/templates/home.html.md|{
-    nodePosit]] (function: belongs_to)
+- None detected
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

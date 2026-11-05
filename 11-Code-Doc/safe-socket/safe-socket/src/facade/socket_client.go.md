@@ -57,6 +57,9 @@ Automatically generated mirror for `safe-socket/src/facade/socket_client.go`.
 - [[safe-socket/safe-socket/src/transports/shm_client.go.md|ConnectShm]] (function: calls) — *If the file is smaller than TotalSize, it is grown.*
 - [[safe-socket/safe-socket/src/transports/shm_client.go.md|shm_client.go]] (imports)
 - [[safe-socket/safe-socket/src/transports/udp_client.go.md|ConnectUDP]] (function: calls) — *Note: UDP is connectionless. "Dial" just sets the default destination address.*
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
+- [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|machine_detector_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/cmd/test/factory_test.go.md|factory_test.go]] (calls)

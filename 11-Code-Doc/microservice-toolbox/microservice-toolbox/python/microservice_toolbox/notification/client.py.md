@@ -3,7 +3,13 @@ source: microservice-toolbox/python/microservice_toolbox/notification/client.py
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-11T22:43:29.045159
+last_sync: 2026-10-11 22:43:29.045159
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: client.py

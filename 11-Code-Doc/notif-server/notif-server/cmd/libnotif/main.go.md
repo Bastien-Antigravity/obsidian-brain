@@ -3,7 +3,13 @@ source: notif-server/cmd/libnotif/main.go
 workspace: notif-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-11T22:43:29.304811
+last_sync: 2026-10-11 22:43:29.304811
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: main.go
@@ -17,6 +23,8 @@ Automatically generated mirror for `notif-server/cmd/libnotif/main.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[notif-server/notif-server/notif/libnotif/libnotif.h.md|get_c_last_error]] (function: calls)
+- [[notif-server/notif-server/notif/libnotif/libnotif.h.md|set_c_last_error]] (function: calls)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|notif_service.pb.go]] (imports)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|NewNotifServiceClient]] (function: calls)
 

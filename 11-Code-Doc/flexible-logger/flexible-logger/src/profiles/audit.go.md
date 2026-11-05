@@ -40,5 +40,5 @@ tags:
 - [[flexible-logger/flexible-logger/cmd/test-log-server/main.go.md|main.go]] (imports)
 - [[flexible-logger/flexible-logger/cmd/test/main.go.md|main.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|NewAuditLogger]] (function: belongs_to) — *- Notif (Async)*
-- [[flexible-logger/flexible-logger/src/profiles/audit.go.md|ServerCap]] (struct: belongs_to)
+- [[flexible-logger/flexible-logger/src/profiles/audit.go.md|ServerCap]] (struct: belongs_to) — *3. Network (Sync / Blocking)*
 <!-- SYNC:END -->

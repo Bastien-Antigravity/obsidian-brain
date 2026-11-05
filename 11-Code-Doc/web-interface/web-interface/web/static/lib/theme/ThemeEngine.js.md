@@ -19,7 +19,7 @@ Automatically generated mirror for `web-interface/web/static/lib/theme/ThemeEngi
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/theme/ThemeEngine.js.md|ThemeEngine.applyTheme]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/theme/ThemeEngine.js.md|ThemeEngine.init]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/theme/ThemeEngine.js.md|ThemeEngine.toggle]] (method: defines_method)

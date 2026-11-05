@@ -3,7 +3,13 @@ source: obsidian-brain/01-Strategic-Nexus/src/store/db.go
 workspace: 01-Strategic-Nexus
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:55.382182
+last_sync: 2026-10-22 16:53:55.382182
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: db.go
@@ -17,6 +23,7 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/store/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Info]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.Close]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.GetDecisions]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.InitSchema]] (method: defines_method)
@@ -38,6 +45,8 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/store/
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager]] (struct: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|Logger]] (interface: belongs_to)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|NewDBManager]] (function: belongs_to)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db_test.go.md|db_test.go]] (calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db_test.go.md|db_test.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

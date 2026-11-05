@@ -13,8 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
-- [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|EventEmitter.on]] (method: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|BaseComponent.#readDataAttrs]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|BaseComponent._subscribe]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|BaseComponent.mount]] (method: defines_method)
@@ -31,6 +30,8 @@ tags:
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|CV.html]] (calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/market-observer.js.md|market-observer.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (calls)

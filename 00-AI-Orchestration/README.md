@@ -27,7 +27,7 @@ The **00‑AI‑Orchestration** folder is the *entry point* that makes the whole
 
 ### Core Responsibilities of this Layer
 
-1. **Tag taxonomy** – a single source of truth (`tags.yaml`) that all agents read and validate.
+1. **Tag taxonomy** – a single source of truth (`07-Core-KMS/tag_taxonomy.md`) that all agents read and validate.
 2. **YAML front‑matter injection** – every `.md` gets the required metadata (title, created/updated timestamps, tags) via `python3 08-Squad-Agent/main.py ensure-frontmatter`.
 3. **Folder enforcement** – new notes are automatically placed in the correct PARA/Diátaxis location.
 4. **MOC creation** – the **Squad‑Orchestrator** creates or updates the ecosystem MOC at the start of each session.
@@ -48,7 +48,7 @@ The **00‑AI‑Orchestration** folder is the *entry point* that makes the whole
 
 1. **Create a new note** – the orchestrator will automatically:
    - Place it in the correct PARA folder.
-   - Add the right tags from `tags.yaml`.
+   - Add the right tags from `07-Core-KMS/tag_taxonomy.md`.
    - Insert a YAML front‑matter block.
    - Link it into the appropriate MOC.
 2. **Run the maintainer** – `python3 08-Squad-Agent/main.py ensure-frontmatter` can be run manually to re‑apply the rules.

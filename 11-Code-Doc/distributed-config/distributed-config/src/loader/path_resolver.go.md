@@ -23,6 +23,7 @@ Automatically generated mirror for `distributed-config/src/loader/path_resolver.
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/loader/path_resolver.go.md|ResolveConfigPath]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/loader/path_resolver.go.md|collectSearchDirs]] (function: belongs_to) — *binaries discover the repository's canonical standalone.yaml symlink without escaping isolated temp dirs.*
 - [[distributed-config/distributed-config/src/loader/path_resolver.go.md|getCallerDir]] (function: belongs_to) — *This provides an extremely robust anchor for 'go run' where os.Executable is in /tmp/.*
 - [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|path_resolver_test.go]] (calls)
 - [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|path_resolver_test.go]] (same_package)

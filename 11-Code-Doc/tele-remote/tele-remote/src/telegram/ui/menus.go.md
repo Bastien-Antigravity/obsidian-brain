@@ -30,7 +30,7 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|ion(bot *core.]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|nMenu(m *models.]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|r {
-	menuSta]] (function: belongs_to) — *ShowMainMenu displays the dynamic top-level menu*
+	menuSta]] (function: belongs_to) — *B. Emergency Controls + refresh (grouped horizontally on ONE line)*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|seButton(bo]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|seMenuRow(bo]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|th(root *mode]] (function: belongs_to)

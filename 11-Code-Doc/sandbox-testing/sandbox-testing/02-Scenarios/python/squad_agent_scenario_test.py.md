@@ -3,7 +3,13 @@ source: sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py
 workspace: sandbox-testing
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:54:00.714180
+last_sync: 2026-10-22 16:54:00.714180
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: squad_agent_scenario_test.py

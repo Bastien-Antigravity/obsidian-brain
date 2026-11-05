@@ -68,4 +68,5 @@ Automatically generated mirror for `safe-socket/safesock/rust/src/lib.rs`.
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|SocketConfig.default]] (method: belongs_to)
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|SocketConfig]] (struct: belongs_to)
 - [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|SocketConfig]] (struct: defines_method)
+- [[safe-socket/safe-socket/safesock/rust/src/lib.rs.md|get_or_load_library]] (function: belongs_to)
 <!-- SYNC:END -->

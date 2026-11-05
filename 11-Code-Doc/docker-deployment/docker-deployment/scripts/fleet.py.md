@@ -33,9 +33,10 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/mode_docker.py.md|mode_docker.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/mode_local.py.md|mode_local.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/mode_production.py.md|mode_production.py]] (imports)
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_docker]] (function: calls) — *Build Docker container images from local sources.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_docker]] (function: calls) — *Build Docker container images from local sources across all compose modes [DD-01].*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_native]] (function: calls) — *Compile missing or all native binaries, build FFI libraries, and setup Python venvs.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|ensure_fleet_cloned]] (function: calls) — *Check and clone missing ecosystem repositories into WORKSPACE_ROOT.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|install_debloat_tools]] (function: calls) — *Install missing Debloat Sentinel and static analysis tools across Go, Rust, and Python.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_doctor]] (function: calls) — *Verify prerequisites across the toolchain.*
@@ -43,7 +44,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_secrets]] (function: calls) — *Sovereign secret encryption, key security audit, and database credentials management.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_status]] (function: calls) — *Inspect and report ecosystem status.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_all]] (function: calls) — *Terminate all services across Docker and Native.*
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_docker]] (function: calls) — *Stop all Docker containers (compose fleet, local databases, and standalone infra).*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_docker]] (function: calls) — *Stop all Docker containers (compose fleet across modes, local databases, and standalone infra) [DD-01].*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_native]] (function: calls) — *Stop all native processes cleanly with full per-service visibility.*
 
 ### 🔌 Consumers (Inbound)

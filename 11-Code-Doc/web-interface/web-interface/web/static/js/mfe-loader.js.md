@@ -9,17 +9,29 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/web/static/js/mfe-loader.js`.
+
+> **Essential Process**:
+> OpenMFE Micro-Frontend Dynamic Loader and Schema-Driven Shell Coordinator. Populates standardized Bastien-UI shell, binds AI/RAG context assistant, and instantiates decentralized microservice Web Components.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.find]] (method: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
-- [[web-interface/web-interface/web/templates/base.html.md|IS_LOGGED_IN]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|DISCOVERY_SERVICE_URL]] (constant: belongs_to)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|bindTabNavigation]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|closePopover]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|enrichAISection]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|enrichStandardShell]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to) — *Fetch registered MFE services with deduplication*
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|init]] (function: belongs_to) — *Initialize*
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|injectNavigation]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|injectNavigation]] (function: belongs_to) — *Inject MFE navigation links dynamically into the right #Sidenav drawer*
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|loadMFE]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|runRAGQuery]] (function: belongs_to) — *Semantic RAG Query Runner*
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|togglePopover]] (function: belongs_to)
 <!-- SYNC:END -->

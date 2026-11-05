@@ -37,6 +37,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ve
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|_init_db]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|_read]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|_reset]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|_update]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|_write]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|add_documents]] (function: belongs_to) — *Adds or updates embeddings in pgvector (Upsert).*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
@@ -47,6 +48,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ve
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|model]] (function: belongs_to) — *Lazily loads and caches the shared BGE-M3 SentenceTransformer model instance.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|query]] (function: belongs_to) — *Performs semantic similarity search using pgvector cosine similarity (<=>).*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|reset_store]] (function: belongs_to) — *Deletes and re-initializes the entire database.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|update_metadata]] (function: belongs_to) — *Merges metadata updates into existing JSONB metadata for a chunk.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

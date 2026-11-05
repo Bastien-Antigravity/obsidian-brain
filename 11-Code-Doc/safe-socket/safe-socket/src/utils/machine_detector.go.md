@@ -23,6 +23,8 @@ Automatically generated mirror for `safe-socket/src/utils/machine_detector.go`.
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.refresh]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (calls)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: belongs_to) — *GetMachineDetector returns the singleton MachineDetector instance.*
 - [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: belongs_to) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*

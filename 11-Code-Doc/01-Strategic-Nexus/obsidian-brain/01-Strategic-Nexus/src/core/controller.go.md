@@ -3,7 +3,13 @@ source: obsidian-brain/01-Strategic-Nexus/src/core/controller.go
 workspace: 01-Strategic-Nexus
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:55.363863
+last_sync: 2026-10-22 16:53:55.363863
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: controller.go
@@ -20,7 +26,9 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/core/c
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|StrategicController.CreatePersona]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|StrategicController.LogMilestone]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|StrategicController.TriggerEvolution]] (method: defines_method)
-- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|EvolutionPipeline.RunEvolution]] (method: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|controller_test.go]] (same_package)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Info]] (method: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|mockEvolutionPipeline.RunEvolution]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.LogAction]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -39,6 +47,8 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/core/c
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|erns(content string) []] (function: belongs_to)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|ontent string) []] (function: belongs_to)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|string) string ]] (function: belongs_to)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|controller_test.go]] (calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|controller_test.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

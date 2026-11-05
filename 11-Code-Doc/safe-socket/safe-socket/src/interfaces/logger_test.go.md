@@ -3,7 +3,13 @@ source: safe-socket/src/interfaces/logger_test.go
 workspace: safe-socket
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-01T01:10:03.294413
+last_sync: 2026-10-01 01:10:03.294413
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: logger_test.go

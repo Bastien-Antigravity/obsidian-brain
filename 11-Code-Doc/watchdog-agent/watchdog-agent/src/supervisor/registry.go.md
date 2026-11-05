@@ -28,5 +28,7 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/registry.go`.
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: belongs_to) — *RegisterServices initializes the topology registry slice of managed services*
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|ValidateRegistry]] (function: belongs_to) — *ValidateRegistry checks for missing dependencies and dependency cycles*
+- [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|mapBool]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|mapString]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|resolveServiceAddr]] (function: belongs_to)
 <!-- SYNC:END -->

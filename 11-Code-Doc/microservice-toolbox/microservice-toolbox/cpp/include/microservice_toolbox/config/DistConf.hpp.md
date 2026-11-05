@@ -69,7 +69,6 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig]] (class: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec.go.md|spec.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/rust_con.rs.md|rust_con.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/integration/rust_gen.rs.md|rust_gen.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/process_lock.py.md|process_lock.py]] (calls)

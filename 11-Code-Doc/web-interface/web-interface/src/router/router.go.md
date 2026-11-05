@@ -35,8 +35,12 @@ Automatically generated mirror for `web-interface/src/router/router.go`.
 - [[web-interface/web-interface/cmd/web-interface/home_dynamic_test.go.md|home_dynamic_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
+- [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|architecture_hygiene_test.go]] (calls)
+- [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|architecture_hygiene_test.go]] (same_package)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: belongs_to) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
 - [[web-interface/web-interface/src/router/router.go.md|requireAuth]] (function: belongs_to) — *If the user_id session property is missing (0), the request is redirected to the /login endpoint.*
+- [[web-interface/web-interface/src/router/static.go.md|static.go]] (calls)
+- [[web-interface/web-interface/src/router/static.go.md|static.go]] (same_package)
 <!-- SYNC:END -->

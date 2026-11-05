@@ -3,7 +3,13 @@ source: microservice-toolbox/python/microservice_toolbox/spec.py
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-01T13:13:18.046051
+last_sync: 2026-11-01 13:13:18.046051
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: spec.py
@@ -25,12 +31,13 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|ProtocolSpec]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|ServiceSpec]] (class: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_canonical_hub_name]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_background_publisher]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_extract_port]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_format_title]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_worker]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|build_spec_from_config]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish_service_spec]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish_sync]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish_with_lifecycle]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|to_dict]] (function: belongs_to)
 <!-- SYNC:END -->
 

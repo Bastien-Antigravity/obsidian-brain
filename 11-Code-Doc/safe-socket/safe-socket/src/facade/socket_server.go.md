@@ -47,6 +47,8 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetWriteDeadline]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Write]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: defines_method)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: defines_method)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: defines_method)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: calls)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Info]] (method: calls)
@@ -60,6 +62,9 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/transports/shm_client.go.md|shm_client.go]] (imports)
 - [[safe-socket/safe-socket/src/transports/shm_server.go.md|ListenShm]] (function: calls) — *ListenShm creates (or opens) the SHM file and prepares it for a client connection.*
 - [[safe-socket/safe-socket/src/transports/udp_server.go.md|ListenUDP]] (function: calls)
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
+- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
+- [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|machine_detector_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (calls)
@@ -82,6 +87,8 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: belongs_to) — *does not send/receive data directly; the *accepted connection* does.*
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: defines_method) — *does not send/receive data directly; the *accepted connection* does.*
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: belongs_to)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: belongs_to)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: belongs_to) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: defines_method) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)

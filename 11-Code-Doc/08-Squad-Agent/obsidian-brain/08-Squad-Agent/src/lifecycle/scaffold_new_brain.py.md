@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py
 workspace: 08-Squad-Agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-20T19:59:12.317061
+last_sync: 2026-10-20 19:59:12.317061
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: scaffold_new_brain.py

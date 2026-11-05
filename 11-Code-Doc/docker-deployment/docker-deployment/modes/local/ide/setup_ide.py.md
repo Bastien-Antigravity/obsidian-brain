@@ -17,6 +17,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_native_config]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|check_debloat_prerequisites]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
@@ -29,6 +30,7 @@ tags:
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_launch]] (function: belongs_to) — *Generate .vscode/launch.json tailored to OS.*
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_settings]] (function: belongs_to) — *Generate .vscode/settings.json tailored to OS.*
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_tasks]] (function: belongs_to) — *Generate .vscode/tasks.json tailored to OS.*
+- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|get_scan_repositories]] (function: belongs_to) — *Return all repository paths (14 root repos + 9 obsidian-brain submodules) for Git discovery.*
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|get_workspace_folders]] (function: belongs_to) — *Return configured folders for the 14 active workspace repositories.*
 - [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|setup_antigravity_ide]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (calls)

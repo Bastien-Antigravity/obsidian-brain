@@ -3,7 +3,13 @@ source: notif-server/cmd/notif-server/main_test.go
 workspace: notif-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-11T13:58:55.361505
+last_sync: 2026-10-11 13:58:55.361505
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: main_test.go

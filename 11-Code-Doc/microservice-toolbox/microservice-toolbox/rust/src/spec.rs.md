@@ -3,7 +3,13 @@ source: microservice-toolbox/rust/src/spec.rs
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-01T17:12:29.596505
+last_sync: 2026-11-01 17:12:29.596505
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: spec.rs
@@ -22,6 +28,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_rest_addr]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.critical]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.debug]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
@@ -33,12 +40,13 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ProtocolSpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ServiceSpec]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|_extract_port]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|build_spec_from_config]] (function: belongs_to) — *Zero silent fallback or dummy placeholders.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|canonical_hub_name]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|extract_port]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|format_title]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec]] (function: belongs_to) — *FAIL-FAST: Returns error immediately if web_interface or specification validation fails.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish]] (function: belongs_to) — *Dynamic registration alias adhering to fleet standards.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec]] (function: belongs_to) — *FAIL-FAST: Validates web_interface reachability and specification synchronously before spawning.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_internal]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_sync]] (function: belongs_to) — *FAIL-FAST: Returns error immediately if web_interface or specification validation fails.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_with_lifecycle]] (function: belongs_to) — *Dynamic registration with lifecycle integration alias adhering to fleet standards.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -26,7 +26,8 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.ListConfig]] (method: defines_method) — *ListConfig returns the full current configuration state, merging static base configurations with dynamic overrides.*
 - [[config-server/config-server/src/server/controller.go.md|Server.PersistConfig]] (method: defines_method) — *PersistConfig manually triggers a save of the configuration state.*
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: defines_method) — *SetConfig updates a configuration value atomically and broadcasts the change.*
-- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a full configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls) — *GetClientNames returns the names of all currently connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.TriggerSave]] (method: calls) — *TriggerSave marks the state as dirty to trigger background persistence.*

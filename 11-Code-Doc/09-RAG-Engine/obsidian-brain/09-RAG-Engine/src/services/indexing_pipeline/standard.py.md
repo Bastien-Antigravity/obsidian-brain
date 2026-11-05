@@ -62,7 +62,9 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/in
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_resolve_service_for_path]] (function: belongs_to) — *Determines which microservice a file belongs to based on the repository registry.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|build_full_index]] (function: belongs_to) — *Performs a full workspace scan and index rebuild.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|delete_file]] (function: belongs_to) — *Removes all chunks and records associated with a deleted file.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|ensure_batcher]] (function: belongs_to) — *Starts the batch flusher loop if not already running, tracking active concurrent callers.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|process_file]] (function: belongs_to) — *Indexes a single file into the RAG system.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|release_batcher]] (function: belongs_to) — *Decrements the active indexer count and flushes/stops the batcher only when all callers finish.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|worker]] (function: belongs_to)
 <!-- SYNC:END -->
 

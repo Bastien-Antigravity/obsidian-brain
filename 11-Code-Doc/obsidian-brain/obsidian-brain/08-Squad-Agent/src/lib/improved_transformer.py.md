@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py
 workspace: obsidian-brain
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-13T02:56:34.680783
+last_sync: 2026-10-13 02:56:34.680783
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: improved_transformer.py

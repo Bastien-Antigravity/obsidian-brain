@@ -35,6 +35,7 @@ Automatically generated mirror for `safe-socket/safesock/python/safesocket/safes
 - [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|SafeSocketError]] (class: belongs_to) — *Base exception for SafeSocket operations.*
 - [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|SafeSocket]] (class: belongs_to) — *High-level Socket manager for Clients and Servers.*
 - [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|SocketConfig]] (class: belongs_to)
+- [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|__del__]] (function: belongs_to)
 - [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|__enter__]] (function: belongs_to)
 - [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|__exit__]] (function: belongs_to)
 - [[safe-socket/safe-socket/safesock/python/safesocket/safesocket.py.md|__init__]] (function: belongs_to)

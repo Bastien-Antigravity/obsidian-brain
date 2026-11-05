@@ -3,7 +3,13 @@ source: distributed-config/src/utils/logger_test.go
 workspace: distributed-config
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-01T01:10:01.736049
+last_sync: 2026-10-01 01:10:01.736049
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: logger_test.go

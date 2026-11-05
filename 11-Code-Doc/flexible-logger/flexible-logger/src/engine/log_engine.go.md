@@ -30,6 +30,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Stream]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Trade]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getCallerSkip]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getEntry]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.Notify]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.Write]] (method: calls)
@@ -62,6 +63,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Stream]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Trade]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getCallerSkip]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getEntry]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: belongs_to) — *It orchestrates populating LogEntries and dispatching them to Sinks.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: defines_method) — *It orchestrates populating LogEntries and dispatching them to Sinks.*

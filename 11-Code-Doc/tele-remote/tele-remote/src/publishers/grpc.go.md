@@ -19,7 +19,6 @@ tags:
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: defines_method)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: defines_method)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: defines_method)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Send]] (method: calls) — *Send wraps tb.Context.Send to intercept and log all outgoing responses*
 
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: belongs_to)

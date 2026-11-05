@@ -39,6 +39,7 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/docker/run.py.md|run.py]] (calls)
+- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|setup_ide.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/production/run.py.md|run.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
@@ -46,16 +47,18 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|WORKSPACE_REPOSITORIES]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|check_compilation_prerequisites]] (function: belongs_to) — *Check if toolchains required for compilation exist on host and display actionable guidance.*
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_docker]] (function: belongs_to) — *Build Docker container images from local sources.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|check_debloat_prerequisites]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_docker]] (function: belongs_to) — *Build Docker container images from local sources across all compose modes [DD-01].*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_native]] (function: belongs_to) — *Compile missing or all native binaries, build FFI libraries, and setup Python venvs.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|ensure_fleet_cloned]] (function: belongs_to) — *Check and clone missing ecosystem repositories into WORKSPACE_ROOT.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|install_debloat_tools]] (function: belongs_to) — *Install missing Debloat Sentinel and static analysis tools across Go, Rust, and Python.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|load_fleet_inventory]] (function: belongs_to) — *Load ecosystem repositories strictly scoped to the active workspace and execution mode.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_doctor]] (function: belongs_to) — *Verify prerequisites across the toolchain.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_guide]] (function: belongs_to) — *Display native infrastructure setup guide.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_secrets]] (function: belongs_to) — *Sovereign secret encryption, key security audit, and database credentials management.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_status]] (function: belongs_to) — *Inspect and report ecosystem status.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_all]] (function: belongs_to) — *Terminate all services across Docker and Native.*
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_docker]] (function: belongs_to) — *Stop all Docker containers (compose fleet, local databases, and standalone infra).*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_docker]] (function: belongs_to) — *Stop all Docker containers (compose fleet across modes, local databases, and standalone infra) [DD-01].*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_native]] (function: belongs_to) — *Stop all native processes cleanly with full per-service visibility.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|update_native_yaml_secret]] (function: belongs_to) — *Update a secret field in docker-deployment/modes/local/config/native.yaml directly.*
 <!-- SYNC:END -->

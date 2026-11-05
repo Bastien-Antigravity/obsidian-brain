@@ -3,7 +3,13 @@ source: obsidian-brain/07-Core-KMS/Role-Prompts/03-Developer/Squad/Web-UI-Specia
 workspace: obsidian-brain
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-27T17:17:06.605004
+last_sync: 2026-10-27 17:17:06.605004
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: Web-UI-Specialist.md

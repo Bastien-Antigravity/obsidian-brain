@@ -23,7 +23,6 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (calls)
-- [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|cloud_native.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/devel.go.md|devel.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/high_perf.go.md|high_perf.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/minimal.go.md|minimal.go]] (calls)

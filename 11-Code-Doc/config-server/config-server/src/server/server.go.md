@@ -22,10 +22,12 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/server/connection.go.md|Server.handleConnection]] (method: calls)
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (same_package)
-- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: defines_method) — *BroadcastConfig sends a full configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: defines_method) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: defines_method) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: defines_method) — *GetActiveClients returns the current number of connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: defines_method) — *GetClientNames returns the names of all currently connected clients.*
-- [[config-server/config-server/src/server/server.go.md|Server.ReloadConfig]] (method: defines_method) — *ReloadConfig reloads the configuration from the base YAML file.*
+- [[config-server/config-server/src/server/server.go.md|Server.ReloadConfig]] (method: defines_method) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
+- [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: defines_method) — *SetOnUpdate safely registers the callback invoked when configuration state changes.*
 - [[config-server/config-server/src/server/server.go.md|Server.Start]] (method: defines_method) — *Start listens for incoming TCP connections.*
 - [[config-server/config-server/src/server/server.go.md|Server.Stop]] (method: defines_method) — *Stop signals the server to shutdown.*
 - [[config-server/config-server/src/server/server.go.md|Server.TriggerSave]] (method: defines_method) — *TriggerSave marks the state as dirty to trigger background persistence.*
@@ -38,9 +40,11 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
 - [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
+- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
+- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
 - [[config-server/config-server/src/store/store.go.md|Store]] (struct: calls) — *extremely fast reads while maintaining atomic, side-effect-free updates.*
 
 ### 🔌 Consumers (Inbound)
@@ -51,10 +55,12 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (calls)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (same_package)
 - [[config-server/config-server/src/server/server.go.md|NewServer]] (function: belongs_to) — *NewServer creates a new Config Server.*
-- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: belongs_to) — *BroadcastConfig sends a full configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: belongs_to) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: belongs_to) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: belongs_to) — *GetActiveClients returns the current number of connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: belongs_to) — *GetClientNames returns the names of all currently connected clients.*
-- [[config-server/config-server/src/server/server.go.md|Server.ReloadConfig]] (method: belongs_to) — *ReloadConfig reloads the configuration from the base YAML file.*
+- [[config-server/config-server/src/server/server.go.md|Server.ReloadConfig]] (method: belongs_to) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
+- [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: belongs_to) — *SetOnUpdate safely registers the callback invoked when configuration state changes.*
 - [[config-server/config-server/src/server/server.go.md|Server.Start]] (method: belongs_to) — *Start listens for incoming TCP connections.*
 - [[config-server/config-server/src/server/server.go.md|Server.Stop]] (method: belongs_to) — *Stop signals the server to shutdown.*
 - [[config-server/config-server/src/server/server.go.md|Server.TriggerSave]] (method: belongs_to) — *TriggerSave marks the state as dirty to trigger background persistence.*

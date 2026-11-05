@@ -33,6 +33,8 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (calls)
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestOpenMFERegistrationAPIAndFluidLayout]] (function: belongs_to)

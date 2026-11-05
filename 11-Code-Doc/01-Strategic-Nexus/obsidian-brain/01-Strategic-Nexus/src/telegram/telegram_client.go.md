@@ -3,7 +3,13 @@ source: obsidian-brain/01-Strategic-Nexus/src/telegram/telegram_client.go
 workspace: 01-Strategic-Nexus
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:55.373708
+last_sync: 2026-10-22 16:53:55.373708
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: telegram_client.go
@@ -17,6 +23,7 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/telegr
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Info]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/telegram/telegram_client.go.md|TelegramClient.Start]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)

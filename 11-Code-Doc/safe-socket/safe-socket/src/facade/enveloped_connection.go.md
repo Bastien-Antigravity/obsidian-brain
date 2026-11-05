@@ -20,6 +20,7 @@ Automatically generated mirror for `safe-socket/src/facade/enveloped_connection.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: defines_method)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: defines_method) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: defines_method) — *LocalAddr returns the local network address.*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: defines_method) — *ReadMessage implementation for Enveloped Connection*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: defines_method)
@@ -38,7 +39,9 @@ Automatically generated mirror for `safe-socket/src/facade/enveloped_connection.
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: belongs_to)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: belongs_to) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: belongs_to) — *LocalAddr returns the local network address.*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: belongs_to) — *ReadMessage implementation for Enveloped Connection*
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: belongs_to)

@@ -24,6 +24,8 @@ Automatically generated mirror for `web-interface/src/router/static.go`.
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|FindStaticPage]] (function: calls) — *FindStaticPage searches for a static page by its route path or legacy alias.*
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|RenderStaticPage]] (function: calls) — *RenderStaticPage renders an auto-discovered static page with its active category indicators.*
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
+- [[web-interface/web-interface/src/router/router.go.md|requireAuth]] (function: calls) — *If the user_id session property is missing (0), the request is redirected to the /login endpoint.*
+- [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (calls)

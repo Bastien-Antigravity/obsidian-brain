@@ -3,7 +3,13 @@ source: web-interface/src/router/autodiscovery.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-26T17:19:17.698165
+last_sync: 2026-10-26 17:19:17.698165
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: autodiscovery.go
@@ -43,8 +49,6 @@ Automatically generated mirror for `web-interface/src/router/autodiscovery.go`.
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|slugify]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/autodiscovery_test.go.md|autodiscovery_test.go]] (calls)
 - [[web-interface/web-interface/src/router/autodiscovery_test.go.md|autodiscovery_test.go]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (calls)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
 - [[web-interface/web-interface/src/router/static.go.md|static.go]] (calls)

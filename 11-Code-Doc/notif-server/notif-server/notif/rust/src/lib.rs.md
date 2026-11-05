@@ -3,7 +3,13 @@ source: notif-server/notif/rust/src/lib.rs
 workspace: notif-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-11T22:43:29.327716
+last_sync: 2026-10-11 22:43:29.327716
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: lib.rs
@@ -31,6 +37,7 @@ Automatically generated mirror for `notif-server/notif/rust/src/lib.rs`.
 - [[notif-server/notif-server/notif/rust/src/lib.rs.md|NotificationClient.set_timeout]] (method: belongs_to) — *Sets default RPC timeout in seconds.*
 - [[notif-server/notif-server/notif/rust/src/lib.rs.md|NotificationClient]] (struct: belongs_to)
 - [[notif-server/notif-server/notif/rust/src/lib.rs.md|NotificationClient]] (struct: defines_method)
+- [[notif-server/notif-server/notif/rust/src/lib.rs.md|get_or_load_lib]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

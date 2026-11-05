@@ -54,7 +54,7 @@ Automatically generated mirror for `distributed-config/src/strategies/cloud.go`.
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Sync]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy]] (struct: defines_method)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|ConfigServerCap]] (struct: belongs_to) — *3. Server Load*
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|ConfigServerCap]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (same_package)
 <!-- SYNC:END -->

@@ -3,7 +3,13 @@ source: obsidian-brain/06-Microservices/Web-Interface-Integration-Protocol.md
 workspace: obsidian-brain
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-27T17:17:06.608760
+last_sync: 2026-10-27 17:17:06.608760
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: Web-Interface-Integration-Protocol.md

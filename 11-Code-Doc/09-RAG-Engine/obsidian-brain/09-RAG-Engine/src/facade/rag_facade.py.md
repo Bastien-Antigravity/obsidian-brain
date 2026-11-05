@@ -59,6 +59,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/rag_
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|set_stores]] (function: calls) — *Late-bind stores (called by the facade factory after construction).*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_batch_flusher_loop]] (function: calls) — *Background task that aggregates FileResults and flushes them in batches.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_load_inventory_and_map_notes]] (function: calls) — *Loads inventory.json and builds a mapping of note stem names to file paths.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|ensure_batcher]] (function: calls) — *Starts the batch flusher loop if not already running, tracking active concurrent callers.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|release_batcher]] (function: calls) — *Decrements the active indexer count and flushes/stops the batcher only when all callers finish.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/seed_service.py.md|SeedService]] (class: calls) — *Manages exporting and importing sanitized seed data for the RAG Engine.*
 

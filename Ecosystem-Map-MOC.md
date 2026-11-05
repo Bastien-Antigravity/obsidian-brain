@@ -39,11 +39,13 @@ Live documentation and operational hubs for the service fleet.
 - **[[06-Microservices/Docker-Deployment-Hub|🐳 Docker-Deployment Hub]]**
 - **[[06-Microservices/Sandbox-Testing-Hub|🧪 Sandbox-Testing Hub]]**
 
-### 📜 Technical Protocols
+### 📜 Technical Protocols & Standards
 - [[06-Microservices/Microservice-Startup-Protocol|📜 Microservice Startup & CLI Protocol]]
 - [[06-Microservices/Microservice-Logging-Standard|📜 Microservice Logging Standard]]
 - [[06-Microservices/Unified-Control-Protocol|📜 Unified Control Protocol (gRPC/REST)]]
 - [[06-Microservices/Web-Interface-Integration-Protocol|📜 Web Interface Integration Protocol]]
+- [[03-Tech-Stack/02-Project-Architecture/14-Temporal-Integrity-and-UTC-Standard|⏰ Temporal Integrity & UTC Standard]]
+- [[03-Tech-Stack/02-Project-Architecture/15-Safe-By-Design-Invariants|🛡️ Safe-by-Design Invariants Ledger]]
 
 ## 🧠 07 - Core KMS
 Knowledge Management System, Agent Role Prompts, and Workflows.

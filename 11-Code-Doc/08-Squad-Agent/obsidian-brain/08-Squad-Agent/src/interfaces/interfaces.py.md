@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py
 workspace: 08-Squad-Agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-20T15:13:14.818661
+last_sync: 2026-10-20 15:13:14.818661
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: interfaces.py
@@ -44,6 +50,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|subscribe]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|subscribe]] (function: belongs_to) — *Registers a non-blocking async callback listener for a topic channel.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|subscribe]] (function: belongs_to) — *Subscribes callback to the correct event provider.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|unsubscribe]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|unsubscribe]] (function: belongs_to) — *Unsubscribes callback and optional NATS subscriptions cleanly.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -3,7 +3,13 @@ source: obsidian-brain/10-Agent-Factory/src/run_fleet.py
 workspace: 10-Agent-Factory
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:56.629790
+last_sync: 2026-10-22 16:53:56.629790
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: run_fleet.py
@@ -26,6 +32,8 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/run_flee
 ### 🔌 Consumers (Inbound)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|SimpleLogger]] (class: belongs_to) — *Thin wrapper around the standard library logger to satisfy the `Logger` interface.*
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|__init__]] (function: belongs_to)
+- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|critical]] (function: belongs_to)
+- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|debug]] (function: belongs_to)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|error]] (function: belongs_to)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|info]] (function: belongs_to)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/run_fleet.py.md|main]] (function: belongs_to) — *Bootstrap the demo squad and run a single high-level goal.*

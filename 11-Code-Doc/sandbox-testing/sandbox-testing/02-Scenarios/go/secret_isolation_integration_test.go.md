@@ -107,6 +107,8 @@ tags:
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/squad_control_integration_test.go.md|squad_control_integration_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/technical_analysis_test.go.md|technical_analysis_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/technical_analysis_test.go.md|technical_analysis_test.go]] (same_package)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|test_utils.go]] (calls)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|test_utils.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/triple_pipeline_test.go.md|triple_pipeline_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/triple_pipeline_test.go.md|triple_pipeline_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/web_interface_bootstrap_test.go.md|web_interface_bootstrap_test.go]] (calls)

@@ -3,7 +3,13 @@ source: obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go
 workspace: 01-Strategic-Nexus
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:55.369353
+last_sync: 2026-10-22 16:53:55.369353
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: pipeline.go
@@ -17,6 +23,9 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/evolut
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Error]] (method: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Info]] (method: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Warning]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|EvolutionPipeline.EvaluateFitness]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|EvolutionPipeline.MutatePrompt]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|EvolutionPipeline.RunEvolution]] (method: defines_method)
@@ -25,7 +34,6 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/evolut
 
 ### 🔌 Consumers (Inbound)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/cmd/strategic-nexus/main.go.md|main.go]] (calls)
-- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|controller.go]] (calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|DBManager]] (interface: belongs_to)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|EvolutionPipeline.EvaluateFitness]] (method: belongs_to)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|EvolutionPipeline.MutatePrompt]] (method: belongs_to)

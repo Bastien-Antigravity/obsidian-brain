@@ -25,7 +25,7 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/env_loader.go.md|LoadCommonFromEnv]] (function: calls)
-- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls) — *and Test profiles to allow instant "Zero-Config" local bootstrap.*
+- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls) — *Fails fast if the file does not exist (never creates static fallback YAML files).*
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (imports)
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (imports)
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: calls) — *GetConfig fetches configuration from the server.*
@@ -43,7 +43,7 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/strategies/test.go.md|ConfigServerCap]] (struct: belongs_to) — *3. Server Load (Using IP from Bootstrap/Env)*
+- [[distributed-config/distributed-config/src/strategies/test.go.md|ConfigServerCap]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Close]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.GetHandler]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Load]] (method: belongs_to)

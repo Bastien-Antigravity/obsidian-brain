@@ -8,7 +8,7 @@ coding_standards_path: 03-Tech-Stack/03-Project-Coding/00-Coding-Style-Guide.md
 behavior_specs_path: 02-Business-BDD/02-Behavior-Specs
 domain_glossary_path: 02-Business-BDD/01-Domain-Glossary/00-Glossary.md
 master_moc_path: Ecosystem-Map-MOC.md
-tag_taxonomy_path: 00-AI-Orchestration/Config/tags.yaml
+tag_taxonomy_path: 07-Core-KMS/tag_taxonomy.md
 process_manifest_path: 00-AI-Orchestration/Config/process-manifest.json
 mode_manual_path: 00-AI-Orchestration/Config/MODE-MANUAL.md
 session_state_path: 00-AI-Orchestration/AI-Session-State.md
@@ -31,6 +31,6 @@ AI agents MUST read this file at initialization to resolve the location of gover
 
 ## 🗺️ Key Mappings
 - **Registry**: [[00-AI-Orchestration/Config/process-manifest.json|Process Manifest]]
-- **Taxonomy**: [[00-AI-Orchestration/Config/tags.yaml|Global Tag Taxonomy]]
+- **Taxonomy**: [[07-Core-KMS/tag_taxonomy|Global Tag Taxonomy]]
 - **Protocol**: [[00-AI-Orchestration/Config/MODE-MANUAL|MODE-MANUAL]]
 - **State**: [[00-AI-Orchestration/AI-Session-State|AI Session State]]

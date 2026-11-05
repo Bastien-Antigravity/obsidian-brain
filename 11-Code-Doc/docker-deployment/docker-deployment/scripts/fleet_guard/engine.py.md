@@ -3,7 +3,13 @@ source: docker-deployment/scripts/fleet_guard/engine.py
 workspace: docker-deployment
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-01T01:10:01.857233
+last_sync: 2026-10-01 01:10:01.857233
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: engine.py

@@ -21,7 +21,6 @@ tags:
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.shutdown]] (method: defines_method) — *Shutdown the underlying connection*
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/main.rs.md|main.rs]] (calls)
 - [[log-server/log-server/src/servers/tcp_server.rs.md|tcp_server.rs]] (calls)
 - [[log-server/log-server/src/servers/tcp_server.rs.md|tcp_server.rs]] (imports)
 - [[log-server/log-server/src/transport/safe_socket.rs.md|MAX_MESSAGE_SIZE]] (constant: belongs_to) — *Maximum allowed message size (10MB) to prevent OOM attacks.*

@@ -29,7 +29,6 @@ tags:
 - [[flexible-logger/flexible-logger/src/serializers/json_serializer.go.md|NewJSONSerializer]] (function: calls)
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|text_serializer.go]] (imports)
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
-- [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/multi.go.md|NewMultiSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|NewRollingFileWriter]] (function: calls) — *NewRollingFileWriter initializes a new RollingFileWriter.*
 - [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (imports)
@@ -37,5 +36,5 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|NewCloudLogger]] (function: belongs_to) — *- Notif (Async)*
-- [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|ServerCap]] (struct: belongs_to)
+- [[flexible-logger/flexible-logger/src/profiles/cloud_native.go.md|ServerCap]] (struct: belongs_to) — *3. Network (Async Capnp)*
 <!-- SYNC:END -->

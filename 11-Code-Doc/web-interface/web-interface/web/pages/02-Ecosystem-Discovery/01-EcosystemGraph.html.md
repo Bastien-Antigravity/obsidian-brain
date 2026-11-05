@@ -3,7 +3,13 @@ source: web-interface/web/pages/02-Ecosystem-Discovery/01-EcosystemGraph.html
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-31T21:42:35.194332
+last_sync: 2026-10-31 21:42:35.194332
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: 01-EcosystemGraph.html
@@ -32,7 +38,6 @@ Automatically generated mirror for `web-interface/web/pages/02-Ecosystem-Discove
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/01-EcosystemGraph.html.md|#toggle-labels (input)]] (element: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/01-EcosystemGraph.html.md|#toggle-missing (input)]] (element: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/01-EcosystemGraph.html.md|#toggle-orphans (input)]] (element: belongs_to)
-- [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py
 workspace: 08-Squad-Agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-20T18:09:59.717411
+last_sync: 2026-10-20 18:09:59.717411
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: rest_handler.py

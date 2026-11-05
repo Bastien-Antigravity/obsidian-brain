@@ -3,7 +3,13 @@ source: microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hp
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:59.227384
+last_sync: 2026-10-22 16:53:59.227384
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: Version.hpp

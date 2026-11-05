@@ -3,7 +3,13 @@ source: web-interface/web/static/lib/prism/prism-module.js
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-28T14:10:33.387661
+last_sync: 2026-10-28 14:10:33.387661
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: prism-module.js

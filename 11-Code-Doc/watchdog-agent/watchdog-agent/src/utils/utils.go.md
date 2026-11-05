@@ -31,5 +31,5 @@ Automatically generated mirror for `watchdog-agent/src/utils/utils.go`.
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|IsLocalIP]] (function: belongs_to) — *IsLocalIP is an alias for IsLocal*
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|IsLocal]] (function: belongs_to) — *IsLocal checks if an IP belongs to the local machine*
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|IsOccupantFleetService]] (function: belongs_to) — *IsOccupantFleetService checks if the process listening on a port is a base/fleet service.*
-- [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|KillProcessOnPort]] (function: belongs_to) — *KillProcessOnPort forcefully terminates any process listening on a port*
+- [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|KillProcessOnPort]] (function: belongs_to) — *KillProcessOnPort forcefully terminates any process listening on a port [WD-01]*
 <!-- SYNC:END -->

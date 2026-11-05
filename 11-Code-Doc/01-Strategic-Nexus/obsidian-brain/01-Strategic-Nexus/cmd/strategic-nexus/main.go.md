@@ -3,7 +3,13 @@ source: obsidian-brain/01-Strategic-Nexus/cmd/strategic-nexus/main.go
 workspace: 01-Strategic-Nexus
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-22T16:53:55.358881
+last_sync: 2026-10-22 16:53:55.358881
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: main.go
@@ -18,12 +24,16 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/cmd/strate
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|NewStrategicController]] (function: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Error]] (method: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Info]] (method: calls)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Warning]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/evolution/pipeline.go.md|NewEvolutionPipeline]] (function: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/rest/mfe_client.go.md|MFEClient.Stop]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/rest/mfe_client.go.md|NewMFEClient]] (function: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.Close]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|NewDBManager]] (function: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/telegram/telegram_client.go.md|NewTelegramClient]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetCapability]] (method: calls) — *Get a capability configuration as JSON*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/lifecycle/manager.go.md|NewManagerWithLogger]] (function: calls) — *NewManagerWithLogger creates a new lifecycle manager with an explicit logger.*
 
 ### 🔌 Consumers (Inbound)

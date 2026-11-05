@@ -29,6 +29,7 @@ Automatically generated mirror for `web-interface/src/router/router_test.go`.
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Warning]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (imports)
 - [[web-interface/web-interface/cmd/web-interface/home_dynamic_test.go.md|home_dynamic_test.go]] (imports)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (imports)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (imports)

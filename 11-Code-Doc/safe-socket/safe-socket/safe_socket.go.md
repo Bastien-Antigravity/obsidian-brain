@@ -19,6 +19,7 @@ Automatically generated mirror for `safe-socket/safe_socket.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: calls) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
 - [[safe-socket/safe-socket/src/factory/socket_factory_test.go.md|socket_factory_test.go]] (imports)
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)

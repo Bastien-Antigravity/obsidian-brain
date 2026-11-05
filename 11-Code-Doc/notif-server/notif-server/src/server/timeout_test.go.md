@@ -22,7 +22,7 @@ Automatically generated mirror for `notif-server/src/server/timeout_test.go`.
 - [[notif-server/notif-server/notif/cpp/NotificationClient.hpp.md|NotificationClient.Send]] (method: calls)
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
 - [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls)
+- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
 - [[notif-server/notif-server/src/interfaces/notifier.go.md|notifier.go]] (imports)
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
 - [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*

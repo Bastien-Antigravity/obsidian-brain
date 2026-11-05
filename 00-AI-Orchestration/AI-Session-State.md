@@ -3,7 +3,7 @@ microservice: ecosystem-core
 type: governance
 status: active
 Mission-ID: Command-Center-Consolidation
-active-protocol: "[[MODE-MANUAL#Mode-1]]"
+active-protocol: '[[MODE-MANUAL#Mode-1]]'
 tags:
 - '#zone/0-orchestration'
 - '#service/ecosystem-core'
@@ -275,3 +275,13 @@ tags:
     - Improved `sovereignty.py` validation logic.
     - Updated `tag_taxonomy.md` and related specs.
     - 0-error Brain health report.
+
+## 📡 Gemini CLI Session: KMS Taxonomy & Safe-by-Design Migration (2026-11-05)
+- **Role**: Architect / DebloatSentinel / Sentinel | Mode: 1 (Execution)
+- **Status**: COMPLETED | Mission-ID: KMS-TAXONOMY-MIGRATION-2026-11-05
+- **Actions**:
+    - **Taxonomy Consolidation**: Verified and unified `tags.yaml` into `07-Core-KMS/tag_taxonomy.md` (added `#domain/security`, `#domain/storage`, `#domain/ddd`, `#ai/task`). Removed obsolete `tags.yaml`.
+    - **Safe-by-Design Invariant Relocation**: Migrated `Safe-By-Design-Invariants.md` from `07-Core-KMS/` to canonical `03-Tech-Stack/02-Project-Architecture/15-Safe-By-Design-Invariants.md` to preserve the 100% stateless nature of `07-Core-KMS`.
+    - **Tooling & Prompt Synchronization**: Updated `debloatsentinel.py`, `debloat_audit.py`, `Prompt-Debloat-Sentinel.md`, and `SKILL.md` to target the new architecture standard path.
+    - **Architecture & Ecosystem Indexing**: Updated `Global-Architecture-Rules.md` (Rule 10), `Project-Variables.md`, and `Ecosystem-Map-MOC.md`.
+    - **Verification**: Verified 100% coherence across all 22 squad agent skills (`check-coherence`) and 0 new errors in `brain_health_audit`.

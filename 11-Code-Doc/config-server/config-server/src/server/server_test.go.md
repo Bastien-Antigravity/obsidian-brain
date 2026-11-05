@@ -3,7 +3,13 @@ source: config-server/src/server/server_test.go
 workspace: config-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-01T01:10:01.512901
+last_sync: 2026-10-01 01:10:01.512901
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: server_test.go
@@ -23,7 +29,10 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: calls) — *SetConfig updates a configuration value atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (same_package)
 - [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate safely registers the callback invoked when configuration state changes.*
 - [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list.*
 - [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list only if it's the same instance.*
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
@@ -44,8 +53,11 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_AddAndRemoveListener]] (function: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|TestServer_BroadcastFullRefreshOnDelete]] (function: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|TestServer_ConcurrentOnUpdateAndBroadcast]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_GetConfig_StoreOnly]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_GetStatus]] (function: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|TestServer_SuperseededListenerClosesMailbox]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|createTestServer]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Critical]] (method: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Debug]] (method: belongs_to)

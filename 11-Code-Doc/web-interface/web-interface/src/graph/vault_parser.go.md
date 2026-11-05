@@ -3,7 +3,13 @@ source: web-interface/src/graph/vault_parser.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-10-27T17:45:57.372407
+last_sync: 2026-10-27 17:45:57.372407
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: vault_parser.go
@@ -32,7 +38,6 @@ Automatically generated mirror for `web-interface/src/graph/vault_parser.go`.
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|generateID]] (function: belongs_to)
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (calls)
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

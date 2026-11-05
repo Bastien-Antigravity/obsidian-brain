@@ -13,7 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#sidebar (div)]] (element: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.bindEvents]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.closeSidebar]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.closeSidenav]] (method: defines_method)
@@ -22,6 +24,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.openSidenav]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.toggleSidebar]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.toggleSidenav]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warn]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (imports)
@@ -35,4 +38,5 @@ tags:
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.toggleSidenav]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager]] (class: defines_method)
+- [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|toggleSidenav]] (function: belongs_to)
 <!-- SYNC:END -->

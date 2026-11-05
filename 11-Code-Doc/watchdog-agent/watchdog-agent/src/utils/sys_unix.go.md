@@ -22,7 +22,7 @@ Automatically generated mirror for `watchdog-agent/src/utils/sys_unix.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/src/utils/sys_unix.go.md|KillProcessGroupByID]] (function: belongs_to) — *KillProcessGroupByID forcefully terminates a process group using its PID*
-- [[watchdog-agent/watchdog-agent/src/utils/sys_unix.go.md|KillProcessGroup]] (function: belongs_to) — *KillProcessGroup forcefully terminates a process and all of its subprocesses (process group)*
+- [[watchdog-agent/watchdog-agent/src/utils/sys_unix.go.md|KillProcessGroupByID]] (function: belongs_to) — *KillProcessGroupByID terminates a process group using its PID, trying SIGTERM before SIGKILL*
+- [[watchdog-agent/watchdog-agent/src/utils/sys_unix.go.md|KillProcessGroup]] (function: belongs_to) — *attempting graceful SIGTERM first before sending SIGKILL [WD-04].*
 - [[watchdog-agent/watchdog-agent/src/utils/sys_unix.go.md|SetSysProcAttrGroup]] (function: belongs_to) — *SetSysProcAttrGroup sets the process group attributes for Unix-like systems*
 <!-- SYNC:END -->
