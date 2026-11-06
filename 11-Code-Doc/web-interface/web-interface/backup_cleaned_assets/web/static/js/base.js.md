@@ -35,6 +35,8 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.toggleSidebar]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.toggleSidenav]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.toggleTheme]] (method: defines_method)
+- [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|#avatarSidebar (img)]] (element: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|#avatarTop (img)]] (element: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.closeSidebar]] (method: belongs_to)

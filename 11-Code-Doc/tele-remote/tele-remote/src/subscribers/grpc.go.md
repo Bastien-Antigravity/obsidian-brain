@@ -21,8 +21,8 @@ tags:
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.Close]] (method: defines_method)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.Connect]] (method: defines_method) — *Connect implements the grpc_control.TeleRemoteServiceServer stream loop*
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.StartListen]] (method: defines_method)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnDisconnect]] (method: calls)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnTelemetry]] (method: calls)
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnDisconnect]] (method: calls) — *OnDisconnect cleans up a component's state when it loses connection*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnTelemetry]] (method: calls) — *OnTelemetry handles incoming logs or events by broadcasting them to the admin chat*
 
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (calls)

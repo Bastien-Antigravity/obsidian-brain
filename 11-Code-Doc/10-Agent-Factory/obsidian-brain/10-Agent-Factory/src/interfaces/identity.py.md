@@ -32,6 +32,7 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/interfac
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HtmlObjectVisualizer.js.md|HtmlObjectVisualizer.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/SessionManager.js.md|SessionManager.js]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/visualizer-worker.js.md|visualizer-worker.js]] (calls)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/__init__.py.md|__init__.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/identity.py.md|Identity]] (class: belongs_to) — *Contract for an immutable persona.*

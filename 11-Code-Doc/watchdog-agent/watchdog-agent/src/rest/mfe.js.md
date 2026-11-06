@@ -9,39 +9,46 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `watchdog-agent/src/rest/mfe.js`.
+
+> **Essential Process**:
+> OpenMFE web component for watchdog-agent, encapsulating supervisor status, managed processes telemetry, restart actions, and database initialization.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.apeAttribute(va]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.apeHTML(va]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.connectedCallback]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.dAll() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.dEvents() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.dStatus() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.disconnectedCallback]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.playServices() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.playStatus() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.renderSkeleton]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.rtPostgres() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.tartAll() ]] (method: defines_method)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.tartService(na]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.artPostgres()]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.bindEvents]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.cacheDom]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.capeAttribute(v]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.capeHTML(v]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.displayStatus]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.loadAll]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.loadStatus]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.onMount]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.render]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.splayServices()]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.startAll()]] (method: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.startService(n]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.apeAttribute(va]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.apeHTML(va]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.connectedCallback]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.dAll() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.dEvents() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.dStatus() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.disconnectedCallback]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.playServices() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.playStatus() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.renderSkeleton]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.rtPostgres() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.tartAll() ]] (method: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.tartService(na]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.artPostgres()]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.bindEvents]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.cacheDom]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.capeAttribute(v]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.capeHTML(v]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.displayStatus]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.loadAll]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.loadStatus]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.onMount]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.render]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.splayServices()]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.startAll()]] (method: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE.startService(n]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE]] (class: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|WatchdogAgentMFE]] (class: defines_method)
+- [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|ias e]] (class: belongs_to)
 <!-- SYNC:END -->

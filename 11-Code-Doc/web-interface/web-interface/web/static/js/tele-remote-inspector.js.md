@@ -29,6 +29,7 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
  .tructor(bas]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.
         /]] (method: defines_method)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.       t]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext. {
         i]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.Polling() {]] (method: defines_method)
@@ -36,8 +37,7 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
      ]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ab) {
       ]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ectedCallback() {]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.erShell() {]] (method: defines_method)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.er() {]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ers(clients) {
   ]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.isAutoPoll = ]] (method: defines_method)
@@ -45,11 +45,9 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
    ]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.nus) {
     ]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.onnectedCallback() {]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.tPolling() {]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.tructor() {]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ts() {
-        t]] (method: defines_method)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.unt() {]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel.formatLatency]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel.rmatTimestamp(i]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel.tizeText(str]] (method: defines_method)
@@ -65,6 +63,7 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
  ]] (class: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.
         /]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.       t]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext. {
         i]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.Polling() {]] (method: belongs_to)
@@ -72,8 +71,7 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
      ]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ab) {
       ]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ectedCallback() {]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.erShell() {]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.er() {]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ers(clients) {
   ]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.isAutoPoll = ]] (method: belongs_to)
@@ -81,11 +79,9 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
    ]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.nus) {
     ]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.onnectedCallback() {]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.tPolling() {]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.tructor() {]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.ts() {
-        t]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext.unt() {]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|RemoteInspectorMFE ext]] (class: defines_method)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel.formatLatency]] (method: belongs_to)
@@ -93,7 +89,7 @@ Automatically generated mirror for `web-interface/web/static/js/tele-remote-insp
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel.tizeText(str]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|TeleRemoteMetricsModel]] (class: defines_method)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|ent extends TeleR]] (class: belongs_to)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|cls {]] (class: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

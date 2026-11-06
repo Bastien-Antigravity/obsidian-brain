@@ -38,6 +38,9 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|_respond]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|_send]] (function: belongs_to) — *Route a JSON-RPC message to the active SSE client stream.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|_tools_list_result]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_call]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_history]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_tools]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|decorator]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|delete_endpoint]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|emit]] (function: belongs_to)
@@ -56,6 +59,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (same_package)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|server.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

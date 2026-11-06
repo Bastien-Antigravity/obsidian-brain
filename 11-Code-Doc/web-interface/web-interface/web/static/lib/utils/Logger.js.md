@@ -62,6 +62,7 @@ Automatically generated mirror for `web-interface/web/static/lib/utils/Logger.js
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (calls)
+- [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/utils/EventBus.js.md|EventBus.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/utils/EventBus.js.md|EventBus.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger._dispatchRemote]] (method: belongs_to)

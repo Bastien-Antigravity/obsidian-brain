@@ -62,4 +62,5 @@ tags:
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer]] (class: defines_method)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|initDatabaseExplorer]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (calls)
 <!-- SYNC:END -->

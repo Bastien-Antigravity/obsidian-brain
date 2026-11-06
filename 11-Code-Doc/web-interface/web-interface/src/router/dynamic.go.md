@@ -43,12 +43,13 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/router/dynamic.go.md|MCPCallRecord]] (struct: belongs_to) — *MCPCallRecord captures request and response metadata for the live FastMCP inspector.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: belongs_to) — *RegisterDynamicRoutes binds all API, Stock query, and OpenMFE dynamic routes.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: belongs_to) — *SetMFERegistry associates the active MFE registry instance with the router.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|box_config.AppConfig)]] (function: belongs_to) — *resolveFastMCPBaseURL resolves the root HTTP base URL of the FastMCP daemon directly from config.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|fig) ServiceRegistry]] (function: belongs_to) — *Adheres strictly to the principle that microservices own and return their own information.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|g
 		capab]] (struct: belongs_to)
 - [[web-interface/web-interface/src/router/dynamic.go.md|g *toolbox_config.AppConfig,]] (function: belongs_to) — *- Secondary Fallback: Alternate endpoint if distinct*
 - [[web-interface/web-interface/src/router/dynamic.go.md|ientInfo s]] (struct: belongs_to)
-- [[web-interface/web-interface/src/router/dynamic.go.md|ig.AppConfig)]] (function: belongs_to) — *resolveMCPURL resolves the authoritative FastMCP HTTP/SSE endpoint for RAG Engine dynamically.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|ig.AppConfig)]] (function: belongs_to) — *resolveMCPURL resolves the authoritative FastMCP HTTP/SSE endpoint for RAG Engine directly from config.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|n:"type"`        //]] (struct: belongs_to) — *ServiceProtocolSpec describes an individual network port/protocol of a service.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|ne       bool      ]] (struct: belongs_to) — *FleetHealthResponse summarizes overall fleet health for UI alerting.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|nuItem s]] (struct: belongs_to)

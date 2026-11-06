@@ -50,8 +50,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderLayout]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderVisualizerView]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.switchTab]] (method: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE]] (class: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE]] (class: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE]] (class: belongs_to) — *use strict';*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE]] (class: defines_method) — *use strict';*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|earch = async]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|loadScript]] (function: belongs_to) — *Helper functions*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|loadStylesheet]] (function: belongs_to)

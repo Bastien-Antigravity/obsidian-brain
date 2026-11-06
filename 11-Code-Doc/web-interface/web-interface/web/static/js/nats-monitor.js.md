@@ -31,26 +31,25 @@ Automatically generated mirror for `web-interface/web/static/js/nats-monitor.js`
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.
        ]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.       if ]] (method: defines_method)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.     thi]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE. {
         if (!th]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE. {
         if (!v]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.() {
-        thi]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.Poll = false)]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.connectedCallback]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.disconnectedCallback]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.e) {
     ]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.le() {
         if ]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.renderShell]] (method: defines_method)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.onMount]] (method: defines_method)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.render]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.startPolling]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.stopPolling]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager.computeRates]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager.fetchStats]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.bindEvents]] (method: calls)
-- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.cacheDomElements]] (method: calls)
+- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.cacheDom]] (method: calls)
+- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.onUnmount]] (method: calls)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (same_package)
 
 ### 🔌 Consumers (Inbound)
@@ -63,20 +62,18 @@ Automatically generated mirror for `web-interface/web/static/js/nats-monitor.js`
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.
        ]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.       if ]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.     thi]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE. {
         if (!th]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE. {
         if (!v]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.() {
-        thi]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.Poll = false)]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.connectedCallback]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.disconnectedCallback]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.e) {
     ]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.le() {
         if ]] (method: belongs_to)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.renderShell]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.onMount]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.render]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.startPolling]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.stopPolling]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE]] (class: belongs_to)
@@ -85,6 +82,7 @@ Automatically generated mirror for `web-interface/web/static/js/nats-monitor.js`
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager.fetchStats]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager]] (class: defines_method)
+- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|lemen]] (class: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -28,7 +28,9 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/molecules/MetricCard.js.md|MetricCard.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (imports)
+- [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|prism-module.js]] (imports)
+- [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/theme/ThemeEngine.js.md|ThemeEngine.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/utils/EventBus.js.md|EventBus.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.captureGlobalErrors]] (method: calls)
@@ -44,4 +46,5 @@ tags:
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|BastienUIClass.start]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|BastienUIClass]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|BastienUIClass]] (class: defines_method)
+- [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (calls)
 <!-- SYNC:END -->

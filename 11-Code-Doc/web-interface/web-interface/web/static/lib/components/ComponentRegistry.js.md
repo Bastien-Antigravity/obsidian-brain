@@ -53,4 +53,5 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry]] (class: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Card.js.md|Card.js]] (calls)
+- [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (calls)
 <!-- SYNC:END -->

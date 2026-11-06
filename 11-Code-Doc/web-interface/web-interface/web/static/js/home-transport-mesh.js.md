@@ -35,11 +35,13 @@ Automatically generated mirror for `web-interface/web/static/js/home-transport-m
     document.qu]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|DEFAULT_NODES]] (constant: belongs_to) — *11 Core Ecosystem Services Initial Positions*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|EXCHANGES]] (constant: belongs_to) — *Authoritative Interservice Message Exchange Definitions (Clickable Messages)*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|InspectorType ]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|MESH_LINKS]] (constant: belongs_to) — *Authoritative Interservice Links & Clickable Message Exchanges*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|PARTICLE_STREAMS]] (constant: belongs_to) — *Particle Streams (Subset of key links for animated moving dots)*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ation() {
     const svg]] (function: belongs_to) — *Animation Toggle*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|document.getElementBy]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|document.hidden) ]] (function: belongs_to) — *Live Fleet Status Poller & Dynamic Microservice Discovery*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|eners() {
     const svg]] (function: belongs_to) — *Node Dragging Engine (like CodebaseVisualizer & easyDoc)*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ers() {
@@ -48,18 +50,18 @@ Automatically generated mirror for `web-interface/web/static/js/home-transport-m
     const ex ]] (function: belongs_to) — *Open Inspector for a Clicked Message Exchange*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ght() {
     if (windo]] (function: belongs_to) — *Inspector Functions (Service Nodes & Clickable Messages)*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|h();
+    ren]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|iceKey, keepT]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ndow.__fleetPol]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|o) {
     swit]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|p2, curveOffs]] (function: belongs_to) — *Calculate Curved Path & Midpoint between two nodes*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|r() {
     const tra]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|t btn = document.]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|t.getElementBy]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|to, btn) {
    ]] (function: belongs_to) — *Protocol Filter*
-- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|{
-      const [fl]] (function: belongs_to) — *Live Fleet Status Poller & Dynamic Microservice Discovery*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|{
     nodePosit]] (function: belongs_to) — *Reset Node Layout to Default Architectural Positions*
 <!-- SYNC:END -->

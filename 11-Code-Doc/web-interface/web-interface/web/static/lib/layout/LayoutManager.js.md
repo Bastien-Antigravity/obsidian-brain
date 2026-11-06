@@ -16,6 +16,7 @@ tags:
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#sidebar (div)]] (element: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|#avatarTop (img)]] (element: calls)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.bindEvents]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.closeSidebar]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.closeSidenav]] (method: defines_method)
@@ -38,5 +39,4 @@ tags:
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.toggleSidenav]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager]] (class: defines_method)
-- [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|toggleSidenav]] (function: belongs_to)
 <!-- SYNC:END -->

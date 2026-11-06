@@ -20,6 +20,7 @@ tags:
     docum]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|Graph(dat]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|Info(node) {]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/brain_graph.js.md|adAndInitGraph()]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|deColor(t]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|hlights() {
    ]] (function: belongs_to)
