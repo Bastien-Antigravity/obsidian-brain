@@ -23,7 +23,6 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/temp
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|base.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|#OverlayNav (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|#OverlaySide (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|#Sidebar (nav)]] (element: belongs_to)
@@ -52,7 +51,6 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/temp
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|SITE_WSS_URL]] (constant: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|pollFleetStatus]] (function: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/base.html.md|updateClock]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -49,6 +49,8 @@ Automatically generated mirror for `web-interface/src/router/autodiscovery.go`.
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|slugify]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/autodiscovery_test.go.md|autodiscovery_test.go]] (calls)
 - [[web-interface/web-interface/src/router/autodiscovery_test.go.md|autodiscovery_test.go]] (same_package)
+- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
+- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (calls)
 - [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
 - [[web-interface/web-interface/src/router/static.go.md|static.go]] (calls)

@@ -23,11 +23,11 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/rest/m
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller.go.md|StrategicController.ProcessCommand]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Error]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go.md|dummyLogger.Info]] (method: calls)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/rest/mfe_client.go.md|MFEClient.Start]] (method: defines_method)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/src/rest/mfe_client.go.md|MFEClient.Stop]] (method: defines_method)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Set]] (method: calls) — *Set a configuration value*
 
 ### 🔌 Consumers (Inbound)
 - [[01-Strategic-Nexus/obsidian-brain/01-Strategic-Nexus/cmd/strategic-nexus/main.go.md|main.go]] (calls)

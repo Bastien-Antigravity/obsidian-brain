@@ -58,4 +58,6 @@ Automatically generated mirror for `safe-socket/src/facade/enveloped_connection.
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (same_package)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (calls)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
 <!-- SYNC:END -->

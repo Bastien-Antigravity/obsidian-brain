@@ -31,6 +31,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.setupEventListeners]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.showLogModal]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.updateStatus]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Formatter.js.md|Formatter.date]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|BrainGraph.html]] (calls)
@@ -71,7 +72,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|ta-indicators.js]] (same_package)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
+- [[web-interface/web-interface/web/static/js/brain_graph.js.md|brain_graph.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|mfe-loader.js]] (calls)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|nats-monitor.js]] (calls)

@@ -66,6 +66,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/in
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|process_file]] (function: belongs_to) — *Indexes a single file into the RAG system.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|release_batcher]] (function: belongs_to) — *Decrements the active indexer count and flushes/stops the batcher only when all callers finish.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|worker]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

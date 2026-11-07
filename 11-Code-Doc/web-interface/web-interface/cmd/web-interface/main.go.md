@@ -27,19 +27,23 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/src/core/controller.go.md|controller.go]] (imports)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: calls) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: calls) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
+- [[web-interface/web-interface/src/middleware/middleware.go.md|CSRFMiddleware]] (function: calls) — *CSRFMiddleware Protection*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|LoggerMiddleware]] (function: calls) — *LoggerMiddleware console output*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|middleware.go]] (imports)
 - [[web-interface/web-interface/src/postgres_browser/handler.go.md|RegisterPostgresBrowserRoutes]] (function: calls) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
 - [[web-interface/web-interface/src/postgres_browser/handler.go.md|handler.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
+- [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
-- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (imports)
 - [[web-interface/web-interface/src/server/facade.go.md|NewServerFacade]] (function: calls)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade.Start]] (method: calls)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade.Stop]] (method: calls)
 - [[web-interface/web-interface/src/server/facade.go.md|facade.go]] (imports)
+- [[web-interface/web-interface/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, registers callbacks, and hooks into lifecycle*
 - [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

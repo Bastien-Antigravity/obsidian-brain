@@ -20,8 +20,6 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lib/pg_poo
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/config/loader.py.md|decrypt_secret]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)

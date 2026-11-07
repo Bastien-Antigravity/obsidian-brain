@@ -16,6 +16,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/molecules/MetricCard.js.md|MetricCard.mount]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/molecules/MetricCard.js.md|MetricCard.render]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/molecules/MetricCard.js.md|MetricCard.updateMetric]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.addClass]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (imports)

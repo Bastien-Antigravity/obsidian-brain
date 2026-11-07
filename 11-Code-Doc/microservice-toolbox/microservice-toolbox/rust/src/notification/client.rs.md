@@ -23,8 +23,9 @@ Automatically generated mirror for `microservice-toolbox/rust/src/notification/c
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|ffi.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient.close]] (method: defines_method) — *Closes active notification client.*

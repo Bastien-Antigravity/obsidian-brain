@@ -25,7 +25,6 @@ Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/lab_mana
 ### 📦 Dependencies (Outbound)
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|lab_manager.py]] (imports)
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|main]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap_microservice]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - None detected

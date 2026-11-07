@@ -32,5 +32,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/args_test
 - [[microservice-toolbox/microservice-toolbox/go/pkg/notification/client_test.go.md|client_test.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec.go.md|spec.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec_test.go.md|spec_test.go]] (imports)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|wiretap.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/integration/expansion_check.go.md|expansion_check.go]] (imports)
 <!-- SYNC:END -->

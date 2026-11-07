@@ -27,6 +27,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/connectivity/res
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|NewResolver]] (function: belongs_to) — *NewResolver creates a new network resolver.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveBindAddr]] (method: belongs_to) — *(Docker/K8s) works regardless of what was specified in the configuration.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveFullBindAddr]] (method: belongs_to) — *using the Docker Guard logic.*

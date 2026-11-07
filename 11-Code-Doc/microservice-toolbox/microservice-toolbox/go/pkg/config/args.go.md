@@ -30,4 +30,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/args.go`.
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args_test.go.md|args_test.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (same_package)
 <!-- SYNC:END -->

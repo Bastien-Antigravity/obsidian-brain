@@ -528,12 +528,14 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|realtime-common.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/home.html.md|home.html]] (calls)
+- [[web-interface/web-interface/web/static/js/brain_graph.js.md|brain_graph.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|database-explorer.js]] (calls)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|home-transport-mesh.js]] (calls)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|mfe-loader.js]] (calls)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
+- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|tele-remote-inspector.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/prism/prism.js.md|prism.js]] (calls)
 <!-- SYNC:END -->
 

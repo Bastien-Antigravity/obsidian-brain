@@ -35,6 +35,7 @@ Automatically generated mirror for `config-server/cmd/config-server/main.go`.
 - [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 - [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
+- [[config-server/config-server/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Critical]] (method: calls)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Error]] (method: calls)

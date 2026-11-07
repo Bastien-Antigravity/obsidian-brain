@@ -65,6 +65,7 @@ tags:
 - [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|enveloped_connection.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|handshake_connection.go]] (imports)
+- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
 - [[safe-socket/safe-socket/src/interfaces/protocol.go.md|protocol.go]] (imports)
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (calls)
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)

@@ -84,4 +84,5 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|normalizeIP]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|wiretap.go]] (calls)
 <!-- SYNC:END -->

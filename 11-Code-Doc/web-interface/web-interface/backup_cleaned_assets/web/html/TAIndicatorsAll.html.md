@@ -22,6 +22,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|volumeChart.volume]] (method: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.cloneNode]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Formatter.js.md|Formatter.date]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)

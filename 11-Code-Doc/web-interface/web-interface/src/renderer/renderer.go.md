@@ -19,7 +19,7 @@ Automatically generated mirror for `web-interface/src/renderer/renderer.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (imports)

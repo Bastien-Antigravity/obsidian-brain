@@ -47,6 +47,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/logger/logger.go
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (imports)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (imports)

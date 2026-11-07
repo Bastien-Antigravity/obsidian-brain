@@ -124,6 +124,9 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/websocket.js.md|websocket.js]] (imports)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.find]] (method: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.setData]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Formatter.js.md|Formatter.date]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/utils/Formatter.js.md|Formatter.time]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/MarketObserver.html.md|MarketObserver.html]] (calls)

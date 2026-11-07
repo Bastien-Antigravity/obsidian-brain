@@ -21,6 +21,7 @@ Automatically generated mirror for `web-interface/src/core/controller.go`.
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/core/controller.go.md|Controller.CheckDatabase]] (method: defines_method) — *CheckDatabase checks database availability dynamically by querying the current appConfig.*
 - [[web-interface/web-interface/src/core/controller.go.md|Controller.GetStatus]] (method: defines_method) — *GetStatus returns metadata about the web-interface runtime.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
@@ -32,5 +33,6 @@ Automatically generated mirror for `web-interface/src/core/controller.go`.
 - [[web-interface/web-interface/src/core/controller.go.md|NewController]] (function: belongs_to) — *NewController creates a new Controller instance with dynamic config support.*
 - [[web-interface/web-interface/src/core/controller.go.md|StatusInfo]] (struct: belongs_to) — *StatusInfo represents the service health and runtime statistics.*
 - [[web-interface/web-interface/src/core/controller.go.md|WebController]] (interface: belongs_to) — *WebController defines the unified interface for web interface management.*
+- [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (calls)
 - [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (imports)
 <!-- SYNC:END -->

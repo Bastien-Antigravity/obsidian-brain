@@ -25,7 +25,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/models.py.md|GraphData]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/models.py.md|Node]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/models.py.md|SymbolDefinition]] (class: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

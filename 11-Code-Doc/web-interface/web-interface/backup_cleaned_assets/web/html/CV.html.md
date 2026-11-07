@@ -21,12 +21,12 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.cloneNode]] (method: calls)
-- [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.create]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#outline (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#page-container (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#pf1 (div)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#pf2 (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|#sidebar (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|Page]] (function: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/CV.html.md|Viewer]] (function: belongs_to)

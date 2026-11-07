@@ -36,7 +36,6 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/fleet/clos
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|is_ignored_by_firewall]] (function: calls) — *Checks if a path is ignored by context firewalls (.aiignore etc) or carries the #ai/ignore tag.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|log_error]] (function: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|sovereignty.py]] (imports)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap_microservice]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)

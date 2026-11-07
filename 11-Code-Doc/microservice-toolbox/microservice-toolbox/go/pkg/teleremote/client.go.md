@@ -39,6 +39,12 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/teleremote/clien
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|TeleClient.sendRegistration]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|teleremote.pb.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote_grpc.pb.go.md|NewTeleRemoteServiceClient]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/grpc_wrapper.go.md|ClientDialOptions]] (function: calls) — *WireTap Unary and Stream client interceptors pre-configured.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|GetLocalService]] (function: calls) — *GetLocalService atomically reads the canonical service identifier for this process.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|IsEnabled]] (function: calls) — *Zero mutexes are used.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|RecordEvent]] (function: calls) — *if and only if the atomic switch is enabled.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|SetLocalService]] (function: calls) — *SetLocalService atomically sets the canonical service identifier for this process.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap_test.go.md|wiretap_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|Action]] (struct: belongs_to) — *Action defines a single interactive element in the Telegram UI*

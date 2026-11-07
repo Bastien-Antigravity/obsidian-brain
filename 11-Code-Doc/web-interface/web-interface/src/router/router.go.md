@@ -32,6 +32,7 @@ Automatically generated mirror for `web-interface/src/router/router.go`.
 - [[web-interface/web-interface/src/router/static.go.md|static.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/home_dynamic_test.go.md|home_dynamic_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)

@@ -32,8 +32,6 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/integration/expansion_check.py.md|expansion_check.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/integration/expansion_check.rs.md|expansion_check.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|AppConfig]] (class: belongs_to)
@@ -71,13 +69,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|spec.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/test_logger.py.md|test_logger.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/test_logger.py.md|test_logger.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)
 <!-- SYNC:END -->

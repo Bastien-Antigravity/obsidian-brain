@@ -18,8 +18,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/process_lock.py.md|acquire]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/process_lock.py.md|release]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/models.py.md|models.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/parsers/cpp_parser.py.md|CppParser]] (class: calls)

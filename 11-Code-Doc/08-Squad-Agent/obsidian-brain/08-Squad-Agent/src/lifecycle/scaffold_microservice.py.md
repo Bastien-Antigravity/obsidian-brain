@@ -20,6 +20,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lifecycle/
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|create_file]] (function: belongs_to) — *Creates a file with parent directory creation, respecting dry-run mode.*

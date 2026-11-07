@@ -36,6 +36,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|resolve_library_path]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/wiretap.py.md|configure_from_config]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/wiretap.py.md|wiretap.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)

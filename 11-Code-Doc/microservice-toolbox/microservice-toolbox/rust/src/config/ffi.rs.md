@@ -25,6 +25,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/ffi.rs`
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|DistConfLib]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|get_lib]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|to_rust_string]] (function: belongs_to) — ** After calling this function, `c_ptr` must not be used again.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 <!-- SYNC:END -->

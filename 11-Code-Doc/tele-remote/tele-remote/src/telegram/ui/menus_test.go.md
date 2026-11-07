@@ -15,6 +15,8 @@ tags:
 ### 📦 Dependencies (Outbound)
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls) — *NewBot registers Telebot settings and initializes memory maps*
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (imports)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|OnComponentConnected]] (function: calls) — *OnComponentConnected is triggered when a client connects via gRPC or NATS*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|menus.go]] (same_package)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Critical]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Debug]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Error]] (method: defines_method)
@@ -28,6 +30,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (calls)
 - [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (imports)
+- [[tele-remote/tele-remote/src/telegram/routes/routes.go.md|routes.go]] (calls)
 - [[tele-remote/tele-remote/src/telegram/routes/routes.go.md|routes.go]] (imports)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|menus.go]] (calls)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|menus.go]] (same_package)

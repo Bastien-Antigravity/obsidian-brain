@@ -20,17 +20,25 @@ Automatically generated mirror for `config-server/src/telegram/manager.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
+- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: defines_method) — *RebuildMenu dynamically pulls the configuration map and registers it with the TeleClient.*
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (same_package)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockController.DeleteConfig]] (method: calls)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockController.ListConfig]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockController.PersistConfig]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockController.ReloadConfig]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockController.SetConfig]] (method: calls)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/telegram/manager.go.md|*toolbox_conf]] (function: belongs_to) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
+- [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
 - [[config-server/config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: belongs_to) — *RebuildMenu dynamically pulls the configuration map and registers it with the TeleClient.*
 - [[config-server/config-server/src/telegram/manager.go.md|MenuManager]] (struct: belongs_to) — *MenuManager orchestrates the rebuild operations of the Telegram interactive menus.*
 - [[config-server/config-server/src/telegram/manager.go.md|MenuManager]] (struct: defines_method) — *MenuManager orchestrates the rebuild operations of the Telegram interactive menus.*
 - [[config-server/config-server/src/telegram/manager.go.md|NewMenuManager]] (function: belongs_to) — *NewMenuManager creates a new MenuManager.*
+- [[config-server/config-server/src/telegram/manager.go.md|SetupTelegram]] (function: belongs_to) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (calls)
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (same_package)
 <!-- SYNC:END -->

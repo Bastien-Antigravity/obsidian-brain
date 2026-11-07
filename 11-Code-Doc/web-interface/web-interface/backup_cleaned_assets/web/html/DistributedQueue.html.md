@@ -20,7 +20,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightAll]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - None detected

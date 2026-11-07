@@ -17,7 +17,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand_CommandType.Number]] (method: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|tool]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getProperties]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getRequired]] (method: defines_method)
@@ -38,6 +38,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/identity.py.md|name]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|Alias]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getProperties]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getRequired]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|MCPToolModel]] (class: belongs_to)
@@ -60,7 +61,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.selectTool]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE]] (class: defines_method)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/rag-mcp-inspector.js.md|ias e]] (class: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

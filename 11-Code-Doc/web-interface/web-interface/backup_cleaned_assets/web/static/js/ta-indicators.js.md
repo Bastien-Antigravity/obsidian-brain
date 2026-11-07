@@ -27,6 +27,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.onMessage]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderIndicators]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/Formatter.js.md|Formatter.date]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)

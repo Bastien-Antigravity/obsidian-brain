@@ -26,10 +26,12 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Info]] (method: defines_method)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Warning]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
+- [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (imports)
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
-- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (calls)

@@ -19,8 +19,8 @@ Automatically generated mirror for `microservice-toolbox/rust/examples/test_logg
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config_with_logger]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_network_manager_with_logger]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|load_config_with_logger]] (function: calls) — *Semantic helper to match Go LoadConfigWithLogger().*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/mod.rs.md|mod.rs]] (imports)

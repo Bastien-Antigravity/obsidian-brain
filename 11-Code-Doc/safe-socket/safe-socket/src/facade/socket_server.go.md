@@ -49,6 +49,8 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: defines_method)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|NewTelemetryConnection]] (function: calls) — *NewTelemetryConnection wraps a TransportConnection in a lock-free switchable telemetry decorator.*
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: calls)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Info]] (method: calls)
@@ -58,6 +60,7 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.WaitInitiation]] (method: calls) — *WaitInitiation waits for a HelloMsg from the client and unmarshals it.*
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: calls)
 - [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
+- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromName]] (method: calls)
 - [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|ListenTLS]] (function: calls) — *ListenTLS creates a new TLS-enabled FramedTCPListener.*
 - [[safe-socket/safe-socket/src/transports/shm_client.go.md|shm_client.go]] (imports)
 - [[safe-socket/safe-socket/src/transports/shm_server.go.md|ListenShm]] (function: calls) — *ListenShm creates (or opens) the SHM file and prepares it for a client connection.*

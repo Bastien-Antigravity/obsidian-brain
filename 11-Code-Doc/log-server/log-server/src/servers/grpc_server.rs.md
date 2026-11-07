@@ -16,6 +16,7 @@ tags:
 - [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls) — *Server configuration*
 - [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|handle_grpc_message]] (function: calls) — *Handle gRPC log message*
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/models/log_entry.rs.md|LogEntry]] (struct: calls) — *Internal log request wrapper for internal use*
 - [[log-server/log-server/src/models/log_entry.rs.md|log_entry.rs]] (imports)

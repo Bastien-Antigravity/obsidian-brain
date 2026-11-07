@@ -33,6 +33,8 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/src/post
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|BrowserHandler.getDatabase]] (method: defines_method) — *getDatabase resolves connection settings from config and caches/returns the active pool.*
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|BrowserHandler.resolveTimescaleConfig]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|BrowserHandler.switchDatabase]] (method: defines_method) — *switchDatabase connects to an alternate database on the same host configuration.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/web-interface/src/middleware/middleware.go.md|CorsMiddleware]] (function: calls) — *CorsMiddleware allows cross-origin requests*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|middleware.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
@@ -51,11 +53,11 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/src/post
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|ColumnInfo]] (struct: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|QueryRequest]] (struct: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|QueryResponse]] (struct: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|RegisterPostgresBrowserRoutes]] (function: belongs_to) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|TableData]] (struct: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|TableInfo]] (struct: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|TimescaleDBCap]] (struct: belongs_to) — *TimescaleDBCap matches the timescale_db capability structure*
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|TimescaleStatsResponse]] (struct: belongs_to) — *TimescaleStatsResponse defines the statistical overview of TimescaleDB hypertables, chunks, and activity.*
-- [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|gisterPostgresBrowserRoutes(m]] (function: belongs_to) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

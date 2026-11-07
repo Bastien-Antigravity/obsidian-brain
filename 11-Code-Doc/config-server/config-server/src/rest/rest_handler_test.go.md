@@ -100,4 +100,5 @@ Automatically generated mirror for `config-server/src/rest/rest_handler_test.go`
 - [[config-server/config-server/src/server/connection.go.md|connection.go]] (calls)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (calls)
+- [[config-server/config-server/src/telegram/manager.go.md|manager.go]] (calls)
 <!-- SYNC:END -->

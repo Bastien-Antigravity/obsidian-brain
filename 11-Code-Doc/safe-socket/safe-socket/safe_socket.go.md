@@ -36,6 +36,14 @@ Automatically generated mirror for `safe-socket/safe_socket.go`.
 - [[safe-socket/safe-socket/safe_socket.go.md|CreateWithConfig]] (function: belongs_to) — *Use this to set Deadlines or other advanced config options.*
 - [[safe-socket/safe-socket/safe_socket.go.md|Create]] (function: belongs_to) — *- autoConnect: if true, immediately calls Open() / Listen()*
 - [[safe-socket/safe-socket/safe_socket.go.md|GetIdentity]] (function: belongs_to) — *It traverses through Heartbeat, Handshake, or Envelope wrappers to find the HelloMsg.*
+- [[safe-socket/safe-socket/safe_socket.go.md|IsTelemetryEnabled]] (function: belongs_to) — *IsTelemetryEnabled atomically returns whether real-time connection tracking is active.*
+- [[safe-socket/safe-socket/safe_socket.go.md|SetTelemetryEnabled]] (function: belongs_to) — *SetTelemetryEnabled atomically enables or disables real-time connection tracking across safe-socket.*
+- [[safe-socket/safe-socket/safe_socket.go.md|SetTelemetryHook]] (function: belongs_to) — *SetTelemetryHook atomically registers or clears the non-blocking telemetry callback.*
+- [[safe-socket/safe-socket/safe_socket.go.md|TelemetryEventAccept]] (constant: belongs_to)
+- [[safe-socket/safe-socket/safe_socket.go.md|TelemetryEventConnect]] (constant: belongs_to)
+- [[safe-socket/safe-socket/safe_socket.go.md|TelemetryEventDisconnect]] (constant: belongs_to)
+- [[safe-socket/safe-socket/safe_socket.go.md|TelemetryEventRead]] (constant: belongs_to)
+- [[safe-socket/safe-socket/safe_socket.go.md|TelemetryEventWrite]] (constant: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|TransportFramedTCP]] (constant: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|TransportSHM]] (constant: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|TransportUDP]] (constant: belongs_to)

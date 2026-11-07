@@ -15,7 +15,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|transform]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|x]] (struct: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (same_package)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.selectNode]] (method: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.js]] (same_package)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.push]] (method: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HtmlObjectVisualizer.js.md|HtmlObjectVisualizer._renderTree]] (method: defines_method)

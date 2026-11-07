@@ -18,6 +18,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/consta
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/access_matrix.py.md|access_matrix.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 

@@ -16,6 +16,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|BaseComponent._subscribe]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|BaseComponent.onThemeChange]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Card.js.md|Card.mount]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.addClass]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|bastien-ui.js]] (imports)

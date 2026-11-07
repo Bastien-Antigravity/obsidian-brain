@@ -15,15 +15,18 @@ Automatically generated mirror for `web-interface/src/router/spec_exchange_test.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: calls) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
+- [[web-interface/web-interface/src/router/dynamic.go.md|BuildServiceRegistry]] (function: calls) — *Adheres strictly to the principle that microservices own and return their own information.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
+- [[web-interface/web-interface/src/router/mesh_topology.go.md|BuildMeshTopology]] (function: calls) — *- Tier 3: Real-Time WireTap Telemetry (wiretap.Snapshot()) & External Clients (EXT)*
+- [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (imports)
-- [[web-interface/web-interface/cmd/web-interface/home_dynamic_test.go.md|home_dynamic_test.go]] (imports)
-- [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (imports)
-- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (imports)
+- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|TestSpecExchangeDynamicConfigOverride_BaseEcosystemServices]] (function: belongs_to) — *with ZERO hardcoded static literals.*
 - [[web-interface/web-interface/src/router/spec_exchange_test.go.md|TestSpecExchangeEndToEnd_RegistrationAvailabilityAndUsage]] (function: belongs_to) — *and authoritative exchange links) with ZERO hardcoded fallbacks or overrides.*
-- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|stSpecExchangeDynamicConfigOverride_BaseEcosystemServices(t]] (function: belongs_to) — *with ZERO hardcoded static literals.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

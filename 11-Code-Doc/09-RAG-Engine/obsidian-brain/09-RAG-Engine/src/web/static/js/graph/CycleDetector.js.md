@@ -19,6 +19,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/CycleDetector.js.md|CycleDetector.analyze]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.js]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/CycleDetector.js.md|CycleDetector.analyze]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/CycleDetector.js.md|CycleDetector]] (class: belongs_to) — *src/web/static/js/graph/CycleDetector.js*

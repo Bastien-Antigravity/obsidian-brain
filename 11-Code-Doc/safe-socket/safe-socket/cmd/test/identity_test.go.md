@@ -33,6 +33,7 @@ Automatically generated mirror for `safe-socket/cmd/test/identity_test.go`.
 - [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|NewHandshakeConnection]] (function: calls)
 - [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|NewHeartbeatConnection]] (function: calls)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|NewTelemetryConnection]] (function: calls) — *NewTelemetryConnection wraps a TransportConnection in a lock-free switchable telemetry decorator.*
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
 - [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
 

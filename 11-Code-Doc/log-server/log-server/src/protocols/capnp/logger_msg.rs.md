@@ -133,6 +133,7 @@ tags:
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|u16.from]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)

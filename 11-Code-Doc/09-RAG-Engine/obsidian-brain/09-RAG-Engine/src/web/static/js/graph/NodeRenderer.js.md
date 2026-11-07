@@ -14,12 +14,13 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer._ensureRoundRect]] (method: defines_method)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.aw2DNode(n]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.create3DObject]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.createLabelSprite]] (method: defines_method)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.eate3DObject(n]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.disposeCache]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.draw2DNode]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.isWebGLAvailable]] (method: defines_method)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.sposeCache()]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (calls)
@@ -28,11 +29,11 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/SessionManager.js.md|SessionManager.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/SessionManager.js.md|SessionManager.js]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer._ensureRoundRect]] (method: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.aw2DNode(n]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.create3DObject]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.createLabelSprite]] (method: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.eate3DObject(n]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.disposeCache]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.draw2DNode]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.isWebGLAvailable]] (method: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer.sposeCache()]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/graph/NodeRenderer.js.md|NodeRenderer]] (class: defines_method)
 <!-- SYNC:END -->

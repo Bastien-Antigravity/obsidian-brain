@@ -35,6 +35,7 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: calls) — *LogInfo writes a formatted message with watchdog prefix to stdout/logger*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|MonitorAndSupervise]] (function: calls) — *MonitorAndSupervise is the supervisor runner loop*
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|types.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|manager.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|AcquireLock]] (function: calls) — *AcquireLock opens and locks the lock file exclusively on Windows using CreateFile.*
 - [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|lock_windows.go]] (imports)

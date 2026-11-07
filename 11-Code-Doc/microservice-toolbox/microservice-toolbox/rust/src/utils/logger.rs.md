@@ -52,6 +52,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|manager.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|manager.rs]] (imports)

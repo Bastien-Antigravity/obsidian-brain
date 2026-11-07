@@ -14,7 +14,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|x]] (struct: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/models.js.md|CodebaseEdge.isCalls]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/models.js.md|CodebaseEdge.isDefines]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/models.js.md|CodebaseEdge.isImports]] (method: defines_method)
@@ -29,6 +28,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/CodebaseVisualizer.js.md|CodebaseVisualizer.js]] (same_package)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.js]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/GraphManager.js.md|GraphManager.js]] (same_package)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.js]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HistoryManager.js.md|HistoryManager.js]] (same_package)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/SessionManager.js.md|SessionManager.js]] (calls)

@@ -23,7 +23,7 @@ Automatically generated mirror for `obsidian-brain/05-Fleet-Operation/02-Deploym
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[05-Fleet-Operation/obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py.md|DefaultLogger]] (class: belongs_to)

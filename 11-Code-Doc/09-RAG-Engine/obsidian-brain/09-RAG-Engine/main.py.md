@@ -18,9 +18,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|print_help]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/mcp_ai_config.py.md|safe_load_and_repair_json]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/process_lock.py.md|prevent_double_start]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|RAGControllerImpl]] (class: calls) — *Standardized controller implementation for RAG operations.*
@@ -63,10 +60,10 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_init_facade_threadsafe]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_run_server]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_safe_stop_enricher]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_target]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|run]] (function: belongs_to) — *Dispatch execution based on parsed CLI arguments.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/config/args.py.md|args.py]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

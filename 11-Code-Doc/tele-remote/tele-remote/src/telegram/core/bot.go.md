@@ -42,5 +42,7 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: belongs_to) — *NewBot registers Telebot settings and initializes memory maps*
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (calls)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (same_package)
+- [[tele-remote/tele-remote/src/telegram/routes/routes.go.md|routes.go]] (calls)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|menus.go]] (calls)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|menus_test.go]] (calls)
 <!-- SYNC:END -->

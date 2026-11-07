@@ -66,5 +66,6 @@ Automatically generated mirror for `notif-server/src/core/controller.go`.
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)
 - [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (imports)
 - [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (imports)
+- [[notif-server/notif-server/src/telegram/manager.go.md|manager.go]] (calls)
 - [[notif-server/notif-server/src/telegram/manager.go.md|manager.go]] (imports)
 <!-- SYNC:END -->

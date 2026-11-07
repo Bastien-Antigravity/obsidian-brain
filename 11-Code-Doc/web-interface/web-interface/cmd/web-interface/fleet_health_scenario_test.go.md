@@ -26,14 +26,16 @@ Automatically generated mirror for `web-interface/cmd/web-interface/fleet_health
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Close]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: calls) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
+- [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*
-- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (imports)
+- [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|FleetHealthRAGMultiCandidateFallback(t *testing.]] (function: belongs_to) — *3. When both are closed: reports primary address as offline (never 'unresolved').*
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|TestScenarioFleetHealthAllServicesOnline]] (function: belongs_to) — *detects all services and reports all_online: true.*
-- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|enarioFleetHealthWatchdogAgentDown(t *te]] (function: belongs_to) — *4. All other 10 base services (including RAG MCP Server and RAG Dashboard) remain ONLINE.*
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|TestScenarioFleetHealthRAGMultiCandidateFallback]] (function: belongs_to) — *3. When both are closed: reports primary address as offline (never 'unresolved').*
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|TestScenarioFleetHealthWatchdogAgentDown]] (function: belongs_to) — *4. All other 10 base services (including RAG MCP Server and RAG Dashboard) remain ONLINE.*
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|spawnMockListener]] (function: belongs_to) — *helper to spawn a local TCP listener on an ephemeral port.*
 <!-- SYNC:END -->
 

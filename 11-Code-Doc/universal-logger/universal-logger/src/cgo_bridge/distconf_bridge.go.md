@@ -13,6 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[universal-logger/universal-logger/libunilog/libunilog.h.md|get_last_error]] (function: calls)
+- [[universal-logger/universal-logger/libunilog/libunilog.h.md|get_last_error_code]] (function: calls)
 - [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
 - [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|sanitizeFFIString]] (function: calls) — *sanitizeFFIString cleans C strings coming across the frontier*
 

@@ -26,7 +26,11 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#cy (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#filter-microservice (select)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#filter-type (select)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#info-connections (span)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#info-label (h4)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#info-micro (span)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#info-status (span)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#info-tags (div)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#info-type (span)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#layout-select (select)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#loading-overlay (div)]] (element: belongs_to)
@@ -38,6 +42,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#toggle-labels (input)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#toggle-missing (input)]] (element: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|#toggle-orphans (input)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/BrainGraph.html.md|openInIDE]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

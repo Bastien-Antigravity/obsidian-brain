@@ -33,6 +33,8 @@ Automatically generated mirror for `safe-socket/src/interfaces/transport.go`.
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (imports)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|telemetry_wrapper_test.go]] (imports)
 - [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
 - [[safe-socket/safe-socket/src/interfaces/logger_test.go.md|logger_test.go]] (imports)
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|TransportConnection]] (interface: belongs_to) — *- For Servers: This interface is returned by the Listener.Accept() method.*

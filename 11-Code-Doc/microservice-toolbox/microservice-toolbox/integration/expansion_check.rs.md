@@ -13,8 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|load_config]] (function: calls) — *Initializes a configuration loader following the Microservice Toolbox 'Hierarchy of Truth'.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
 

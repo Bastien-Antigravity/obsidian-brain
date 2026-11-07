@@ -33,8 +33,11 @@ The `web-interface` follows the **Facade Pattern**, where HTTP handlers orchestr
 - `src/mfe/registry.go`: OpenMFE dynamic micro-frontend registration registry, 3-tier taxonomy normalization, and atomic persistence.
 - `mfe_services.json`: Persistent disk cache (`dbFile` in `registry.go`) ensuring 0-second cold-start recovery for registered microfrontends upon restart.
 - `src/renderer/renderer.go`: Go template rendering engine with session data and dynamic URL resolution.
-- `src/router/`: Route registration (`autodiscovery.go`, `static.go`, `dynamic.go`, `router.go`).
+- `src/router/`: Route registration (`autodiscovery.go`, `static.go`, `dynamic.go`, `base_ecosystem.go`, `mesh_topology.go`, `router.go`).
   - `autodiscovery.go`: Scans `web/pages/` to automatically mount hierarchical static pages (`/page/<category-slug>/<page-slug>`) and build left `#Sidebar` accordion trees.
+  - `base_ecosystem.go`: Strictly defines the 11 Standard Base Microservices (`L1–L3`), foundational links, particle streams, protocol catalog, and baseline segregated channels.
+  - `mesh_topology.go`: 3-Tier Mesh Topology Engine combining the 11 base services, OpenMFE-registered microservices (`> L3` / `L4+`), and real-time `wiretap.Snapshot()` telemetry to dynamically synthesize nodes (including `EXT` external gateways/MCP clients), links, particle streams, and segregated channels.
+  - `dynamic.go`: HTTP API handlers (`/api/v1/topology/mesh`, `/api/v1/topology/wiretap/ingest`, `/api/v1/topology/wiretap/toggle`, `/api/v1/services/status`) and `BuildServiceRegistry`.
 - `src/middleware/middleware.go`: Standardized middlewares (request logging, CORS, session auth, CSRF).
 - `src/postgres_browser/postgres_browser.go`: Postgres metadata explorer and SQL query execution engine.
 - `src/fundamental_analysis/fundamental_analysis.go`: Equities financial indicator and valuation metrics reader.

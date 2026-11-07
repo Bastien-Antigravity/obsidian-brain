@@ -38,6 +38,7 @@ Automatically generated mirror for `web-interface/src/graph/vault_parser.go`.
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|generateID]] (function: belongs_to)
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (calls)
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (same_package)
+- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

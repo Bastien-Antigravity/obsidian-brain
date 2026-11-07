@@ -30,4 +30,5 @@ Automatically generated mirror for `web-interface/src/server/facade.go`.
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade.Stop]] (method: belongs_to)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade]] (struct: belongs_to)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade]] (struct: defines_method)
+- [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (calls)
 <!-- SYNC:END -->

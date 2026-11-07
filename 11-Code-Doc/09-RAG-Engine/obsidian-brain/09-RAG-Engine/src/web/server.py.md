@@ -18,8 +18,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/process_lock.py.md|acquire]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/process_lock.py.md|release]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls) — *Resolves database connection settings with decrypted credentials and target RAG database.*
@@ -38,9 +36,31 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|mount_to_app]] (function: calls) — *Mount the SSE transport endpoints on an existing FastAPI application.*
 
 ### 🔌 Consumers (Inbound)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/utils/process_lock.py.md|process_lock.py]] (calls)
+- [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|archive.py]] (calls)
+- [[05-Fleet-Operation/obsidian-brain/05-Fleet-Operation/01-Fleet-Action-Plans/archive.py.md|archive.py]] (calls)
+- [[05-Fleet-Operation/obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py.md|archive.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|agent_dispatcher.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|switch_mode.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/extraction/persona_extractor.py.md|persona_extractor.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_init_update.py.md|fleet_init_update.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|sovereignty.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/install_git_hooks.py.md|install_git_hooks.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|scaffold_microservice.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/maintenance_skill.py.md|maintenance_skill.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|synchronizer.py]] (calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/seed_service.py.md|seed_service.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|InterceptHandler]] (class: belongs_to) — *Custom logging handler that intercepts standard library logs and routes them to our UniLogger.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|SafeQueueWriter]] (class: belongs_to) — *Thread-safe stdout redirector that prevents recursion and strips log prefixes for the UI.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to) — *Mount static files at / using absolute path*

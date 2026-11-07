@@ -66,8 +66,8 @@ The registry is built directly into the `web-interface` server on **Port 5000** 
   ```
 - **GET `/api/v1/services`**: Used by the web interface loader (`mfe-loader.js`) to fetch all active frontends organized by layer.
 
-### 2.2 3-Tier Service Taxonomy
-Micro-frontends are partitioned into 3 distinct operational layers:
+### 2.2 Multi-Tier Service Taxonomy & 3-Tier Mesh Topology (`L1–L3`, `> L3`, `EXT`)
+Micro-frontends and mesh topology nodes are partitioned into distinct operational tiers:
 1. **L1 - Base Fleet**:
    - Fundamental daemon services powering the node: `watchdog-agent`, `config-server`, `notif-server`, `obsidian-brain` (RAG Engine).
    - Displayed under the `BASE FLEET (L1)` accordion in `#Sidenav`.
@@ -77,6 +77,10 @@ Micro-frontends are partitioned into 3 distinct operational layers:
 3. **L3 - Secure Controls**:
    - Administrative dashboards, KMS key managers, security audits, and sensitive log monitors (`kms-manager`, `audit-vault`).
    - Displayed under `SECURE CONTROLS (L3)`.
+4. **> L3 (`L4+`) - Dynamic & Future Microservices**:
+   - Newly scaffolded or higher-tier microservices registered via `spec.PublishWithLifecycle` or discovered live via `microservice-toolbox/wiretap`. Dynamically synthesized on the Transport Mesh Canvas by `web-interface/src/router/mesh_topology.go` without modifying `base_ecosystem.go`.
+5. **EXT - External Clients & Cloud Gateways**:
+   - External IDE clients (e.g., `antigravity_ide` via MCP JSON-RPC/SSE) and external APIs (`telegram_cloud` via HTTPS Bot API) observed in real time via WireTap (`EdgeReport`).
 
 ### 2.3 Cold-Start Persistence (`mfe_services.json`)
 The registry maintains an atomic disk-backed store (`mfe_services.json` via `dbFile` in `src/mfe/registry.go`). When `web-interface` restarts:

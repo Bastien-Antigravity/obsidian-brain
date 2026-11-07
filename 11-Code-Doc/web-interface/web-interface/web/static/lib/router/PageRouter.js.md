@@ -16,6 +16,8 @@ Automatically generated mirror for `web-interface/web/static/lib/router/PageRout
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/WebSocketClient.js.md|EventEmitter.emit]] (method: calls)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|initDatabaseExplorer]] (function: calls)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|cleanupHomePage]] (function: calls)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|initHomePage]] (function: calls)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|loadMFE]] (function: calls)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|BastienUIClass.highlightCode]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.autoInit]] (method: calls)

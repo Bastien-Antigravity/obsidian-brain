@@ -28,6 +28,8 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|r]] (class: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
+- [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightAll]] (function: calls)
+- [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightElement]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/RtTaAnalyst.html.md|RtTaAnalyst.html]] (imports)
@@ -40,7 +42,6 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|o]] (function: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|s]] (function: belongs_to)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|u]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -28,6 +28,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ChartManager.js.md|ChartManager.updateOBI]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|C.update]] (method: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
+- [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.setData]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)

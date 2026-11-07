@@ -24,6 +24,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/grpc_client/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/grpc_client/teleremote_pb2_grpc.py.md|TeleRemoteServiceStub]] (class: calls) — *Missing associated documentation comment in .proto file.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/wiretap.py.md|wiretap.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/__init__.py.md|__init__.py]] (imports)

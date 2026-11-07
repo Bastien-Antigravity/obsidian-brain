@@ -24,6 +24,9 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/messaging/connec
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Error]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Info]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Warning]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/nats_wrapper.go.md|RecordNATSConnect]] (function: calls) — *RecordNATSConnect records a live NATS broker connection event if WireTap is enabled.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/nats_wrapper.go.md|RecordNATSDisconnect]] (function: calls) — *RecordNATSDisconnect records a NATS broker disconnect event if WireTap is enabled.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap_test.go.md|wiretap_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/messaging/connector.go.md|Connect]] (function: belongs_to) — *and routes NATS lifecycle events to the shared logger.*

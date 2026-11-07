@@ -19,6 +19,7 @@ Automatically generated mirror for `web-interface/src/router/static.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPage]] (function: calls) — *RenderPage parses templates and executes them using context-resolved configuration parameters.*
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|FindStaticPage]] (function: calls) — *FindStaticPage searches for a static page by its route path or legacy alias.*

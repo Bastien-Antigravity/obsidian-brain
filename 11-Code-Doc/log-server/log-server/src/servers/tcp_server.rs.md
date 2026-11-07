@@ -16,6 +16,8 @@ tags:
 - [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls) — *Server configuration*
 - [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|handle_tcp_message]] (function: calls) — *Handle incoming TCP client connection*
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|identify_client_from_handshake]] (function: calls) — *without needing to manually link or re-generate safe-socket schemas in Rust.*
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/models/log_packet.rs.md|LogPacket]] (struct: calls) — *A packet containing a sequence number and the log entry*
 - [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (imports)

@@ -24,6 +24,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/html/WhereAreYou.html.md|#band (div)]] (element: belongs_to)
+- [[web-interface/web-interface/backup_cleaned_assets/web/html/WhereAreYou.html.md|activateMenu]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

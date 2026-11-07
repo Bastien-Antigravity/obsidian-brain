@@ -19,6 +19,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/c
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.drop]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.close]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.new]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.reconnect]] (method: defines_method)

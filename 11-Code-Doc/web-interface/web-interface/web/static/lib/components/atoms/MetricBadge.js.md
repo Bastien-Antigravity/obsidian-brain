@@ -16,6 +16,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/atoms/MetricBadge.js.md|MetricBadge.mount]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/atoms/MetricBadge.js.md|MetricBadge.renderValue]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/atoms/MetricBadge.js.md|MetricBadge.updateValue]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.addClass]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/market-observer.js.md|market-observer.js]] (calls)

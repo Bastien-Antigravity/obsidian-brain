@@ -23,6 +23,8 @@ Automatically generated mirror for `notif-server/cmd/notif-server/main_test.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (same_package)
+- [[notif-server/notif-server/cmd/notif-server/main.go.md|verifyTelegramToken]] (function: calls) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
 
 ### 🔌 Consumers (Inbound)

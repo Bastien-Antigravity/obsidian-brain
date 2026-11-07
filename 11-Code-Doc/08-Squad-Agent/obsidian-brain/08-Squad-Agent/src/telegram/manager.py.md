@@ -28,10 +28,6 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/telegram/m
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|run_subcommand_async]] (function: calls) — *Triggers a subcommand in a non-blocking background task.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|MODES]] (constant: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|switch_mode.py]] (imports)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/teleremote/client.py.md|push_menu_update]] (function: calls) — *manually triggers the background transmission of the current UI state*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/teleremote/client.py.md|send_telemetry]] (function: calls) — *streams an arbitrary text message to the Telegram admin chat*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/pkg/mod/github.com/!bastien-!antigravity/microservice-toolbox@v0.0.1/python/microservice_toolbox/teleremote/client.py.md|update_actions]] (function: calls) — *replaces all current actions and handlers*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -48,6 +44,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/telegram/m
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/telegram/manager.py.md|push]] (function: belongs_to) — *Trigger background transmission of the updated UI menu state*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/telegram/manager.py.md|rebuild_menu]] (function: belongs_to) — *Pulls status, modes, and commands to rebuild the Telegram menu.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/telegram/manager.py.md|start_tc]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|mfe.js]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

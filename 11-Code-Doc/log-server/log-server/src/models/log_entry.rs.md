@@ -16,6 +16,7 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (imports)
