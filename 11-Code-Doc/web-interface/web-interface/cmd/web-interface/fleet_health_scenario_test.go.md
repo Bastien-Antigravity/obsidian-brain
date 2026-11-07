@@ -26,10 +26,9 @@ Automatically generated mirror for `web-interface/cmd/web-interface/fleet_health
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Close]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: calls) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*
-- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (imports)
+- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|FleetHealthRAGMultiCandidateFallback(t *testing.]] (function: belongs_to) — *3. When both are closed: reports primary address as offline (never 'unresolved').*

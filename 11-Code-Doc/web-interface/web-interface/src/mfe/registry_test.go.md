@@ -20,7 +20,6 @@ Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (same_package)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Close]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Critical]] (method: defines_method)

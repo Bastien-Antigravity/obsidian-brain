@@ -29,6 +29,9 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|CanvasSpec]] (class: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|DependencySpec]] (class: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|HealthSpec]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|ProtocolSpec]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|ServiceSpec]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_background_publisher]] (function: belongs_to)

@@ -71,6 +71,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|ta-indicators.js]] (same_package)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
+- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|mfe-loader.js]] (calls)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|nats-monitor.js]] (calls)

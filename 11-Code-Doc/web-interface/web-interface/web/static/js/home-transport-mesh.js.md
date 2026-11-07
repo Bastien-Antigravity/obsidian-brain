@@ -30,20 +30,25 @@ Automatically generated mirror for `web-interface/web/static/js/home-transport-m
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|    if (!topoData]] (function: belongs_to) — *Ingest Authoritative Server Mesh Topology (Phase 2 Server-Hydrated Graph)*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md| const tra]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md| {
     document.qu]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|BASE_MESH_LINKS]] (constant: belongs_to) — *Authoritative Interservice Links & Clickable Message Exchanges (Base Fleet)*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|BASE_PARTICLE_STREAMS]] (constant: belongs_to) — *Particle Streams (Subset of key links for animated moving dots)*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|DEFAULT_NODES]] (constant: belongs_to) — *11 Core Ecosystem Services Initial Positions*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|DYNAMIC_SLOT_CANDIDATES]] (constant: belongs_to) — *Canonical candidate slots for dynamic microservices (avoiding overlap with 11 base nodes)*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|EXCHANGES]] (constant: belongs_to) — *Authoritative Interservice Message Exchange Definitions (Clickable Messages)*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|InspectorType ]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|MESH_LINKS]] (constant: belongs_to) — *Authoritative Interservice Links & Clickable Message Exchanges*
-- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|PARTICLE_STREAMS]] (constant: belongs_to) — *Particle Streams (Subset of key links for animated moving dots)*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|addLink]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ation() {
     const svg]] (function: belongs_to) — *Animation Toggle*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|calculateDynamicNodePosition]] (function: belongs_to) — *Calculate non-colliding coordinates for dynamically discovered microservices*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|document.getElementBy]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|document.hidden) ]] (function: belongs_to) — *Live Fleet Status Poller & Dynamic Microservice Discovery*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|eners() {
     const svg]] (function: belongs_to) — *Node Dragging Engine (like CodebaseVisualizer & easyDoc)*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ensureDynamicServiceLinks]] (function: belongs_to) — *plus any declared dependencies for dynamically discovered microservices.*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ers() {
     const con]] (function: belongs_to) — *Dynamic Protocol Filter Button Renderer*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|geId) {
