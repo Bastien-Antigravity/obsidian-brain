@@ -39,6 +39,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/build_inventory.py.md|build_inventory.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/checkpoint.py.md|checkpoint.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/close_mission.py.md|close_mission.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|fleet_commander.py]] (calls)

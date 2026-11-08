@@ -20,6 +20,7 @@ tags:
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|p]] (function: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|w]] (class: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|y]] (class: calls)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|x]] (struct: calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|CoSEConstants]] (function: calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|CoSELayout]] (function: calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|CoSENode]] (function: calls)

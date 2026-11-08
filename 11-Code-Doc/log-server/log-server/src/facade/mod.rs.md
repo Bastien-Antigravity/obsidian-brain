@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/facade/mod.rs`.
+
+> **Essential Process**:
+> Facade module namespace for high-level log server orchestration and file writer components.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

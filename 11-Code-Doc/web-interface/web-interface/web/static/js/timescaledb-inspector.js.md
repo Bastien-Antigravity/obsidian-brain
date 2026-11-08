@@ -23,8 +23,8 @@ Automatically generated mirror for `web-interface/web/static/js/timescaledb-insp
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.onUnmount]] (method: calls)
-- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (same_package)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|LogServerInspectorMFE.onUnmount]] (method: calls)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|log-server-inspector.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/timescaledb-inspector.js.md|TimescaleDBInspectorMFE.bindEvents]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/timescaledb-inspector.js.md|TimescaleDBInspectorMFE.cacheDom]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/timescaledb-inspector.js.md|TimescaleDBInspectorMFE.loadTelemetry]] (method: defines_method)

@@ -35,6 +35,7 @@ Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/src/lab_
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|load_inventory]] (function: belongs_to) — *Attempts to load the repository inventory from Level 05.*
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|main]] (function: belongs_to)
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|print_help]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/checkpoint.py.md|checkpoint.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)
 <!-- SYNC:END -->
 

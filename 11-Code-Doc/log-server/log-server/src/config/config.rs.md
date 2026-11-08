@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/config/config.rs`.
+
+> **Essential Process**:
+> ! Log server configuration structure holding host, TCP socket port, and gRPC port. ! ! DATA FLOW: ! 1. CLI / Environment / standalone.yaml -> Config::new() ! 2. Config injected into TCP and gRPC Server components ! ! KEY PARAMETERS: ! - name: Service name (default "log_server"). ! - host: Network bind address (default 0.0.0.0). ! - port: TCP socket port (default 9020). ! - grpc_port: gRPC bridge port (default 9021). / Server configuration [derive(Clone)] pub struct Config { pub name: String, pub host: String, pub port: u16, pub grpc_port: u16, }
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

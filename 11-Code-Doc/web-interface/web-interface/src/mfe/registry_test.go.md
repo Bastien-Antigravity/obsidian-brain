@@ -20,6 +20,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: calls) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
@@ -34,6 +35,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (calls)
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (same_package)
+- [[web-interface/web-interface/src/mfe/registry_test.go.md|TestLogServerMFERegistrationAndFoundationalDefaults]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryDeduplicationAndLayerSorting]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryRegisterAndListHandlers]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryRejectsInvalidRegistration]] (function: belongs_to)

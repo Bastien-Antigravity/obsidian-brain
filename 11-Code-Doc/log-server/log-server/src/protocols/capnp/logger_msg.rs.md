@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/protocols/capnp/logger_msg.rs`.
+
+> **Essential Process**:
+> Generated Cap'n Proto Rust bindings for LoggerMsg wire protocol.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -135,6 +141,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
+- [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|::capnp::dynamic_value::Builder<'a>.from]] (method: belongs_to)

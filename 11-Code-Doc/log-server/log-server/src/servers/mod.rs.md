@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/servers/mod.rs`.
+
+> **Essential Process**:
+> Network communication servers module. Exposes TCP socket (Cap'n Proto) and gRPC bridge (Tonic/HTTP2) services.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

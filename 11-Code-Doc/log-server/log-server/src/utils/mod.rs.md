@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/utils/mod.rs`.
+
+> **Essential Process**:
+> Utilities module namespace for logging formatters, helpers, and terminal UI.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -25,6 +25,7 @@ Automatically generated mirror for `web-interface/web/static/js/rag-mcp-inspecto
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|_.disabled]] (method: calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.find]] (method: calls)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Number]] (method: calls)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getProperties]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getRequired]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|MCPTrafficManager.executeTool]] (method: defines_method)
@@ -48,8 +49,6 @@ Automatically generated mirror for `web-interface/web/static/js/rag-mcp-inspecto
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warn]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|nats-monitor.js]] (calls)
-- [[web-interface/web-interface/web/static/js/nats-monitor.js.md|nats-monitor.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|Alias]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getProperties]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|MCPToolModel.getRequired]] (method: belongs_to)
@@ -73,10 +72,6 @@ Automatically generated mirror for `web-interface/web/static/js/rag-mcp-inspecto
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.selectTool]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE]] (class: defines_method)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|tele-remote-inspector.js]] (calls)
-- [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|tele-remote-inspector.js]] (same_package)
-- [[web-interface/web-interface/web/static/js/timescaledb-inspector.js.md|timescaledb-inspector.js]] (calls)
-- [[web-interface/web-interface/web/static/js/timescaledb-inspector.js.md|timescaledb-inspector.js]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

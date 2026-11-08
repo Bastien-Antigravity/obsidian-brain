@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/protocols/mod.rs`.
+
+> **Essential Process**:
+> Protocols module namespace for serialized messaging definitions.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -42,6 +42,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ChartManager.js.md|ChartManager]] (class: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (same_package)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|log-server-inspector.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/utils/EventBus.js.md|EventBus.js]] (calls)
 <!-- SYNC:END -->
 

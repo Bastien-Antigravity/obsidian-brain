@@ -39,3 +39,9 @@ tags:
 *   **Decision**: Enforce a **500ms timeout** on missing sequences. If the missing sequence doesn't arrive within this window, the server forces progress to the next available sequence.
 *   **Rationale**: Service availability is prioritized over perfect sequential integrity. A blocked writer stops the entire fleet from logging (back-pressure).
 *   **Consequence**: Small gaps in logs are possible under high packet loss, but service uptime is guaranteed.
+
+### ADR-002: Pure gRPC HTTP/2 Streaming for Real-Time Fleet Observability
+*   **Context**: The web-interface requires live log inspection and recent history for the browser console. Embedding an HTTP REST server in `log-server` introduced unwanted web dependencies (`axum`), port fragmentation (`9022`), and dual-protocol responsibilities.
+*   **Decision**: Implement native gRPC server streaming (`rpc StreamLogs(StreamLogsRequest) returns (stream LogRequest)`) and buffered history queries (`rpc GetTailLogs(TailLogsRequest) returns (TailLogsResponse)`) on existing gRPC port `9021`. Ingestion events are pushed directly to an in-memory `LogRingBuffer` (5,000 capacity) and a Tokio broadcast channel. `web-interface` acts as the single web gateway, bridging gRPC to Server-Sent Events (SSE).
+*   **Rationale**: Preserves single responsibility, purges all web dependencies from the Rust daemon, and guarantees sub-millisecond streaming latency with zero polling and zero disk I/O bottlenecks.
+*   **Consequence**: Standard binary protocol across the fleet; `web-interface` manages all HTTP/browser-facing transport.

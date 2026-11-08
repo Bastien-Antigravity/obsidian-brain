@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/models/mod.rs`.
+
+> **Essential Process**:
+> Data models module namespace defining LogEntry and LogPacket primitives.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -18,6 +24,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (imports)
+- [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
 - [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (imports)
 - [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (imports)

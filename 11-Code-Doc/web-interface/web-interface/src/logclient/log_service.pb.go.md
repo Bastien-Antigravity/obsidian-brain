@@ -1,0 +1,172 @@
+---
+source: web-interface/src/logclient/log_service.pb.go
+workspace: web-interface
+type: code-mirror
+status: auto-generated
+last_sync: 2026-11-07T23:19:47.776240
+---
+
+# Mirror: log_service.pb.go
+
+## 📝 Description
+Automatically generated mirror for `web-interface/src/logclient/log_service.pb.go`.
+
+## 🏗️ Architectural Context
+<!-- SYNC:START -->
+### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Descriptor]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.EnumDescriptor]] (method: defines_method) — *Deprecated: Use Level.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Enum]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Number]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.String]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Type]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.Descriptor]] (method: defines_method) — *Deprecated: Use LogRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetFilename]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetFunctionName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetHostname]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetLevel]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetLineNumber]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetLoggerName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetModule]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetPathName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetProcessId]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetProcessName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetServiceName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetStackTrace]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetThreadId]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetThreadName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetTimestamp]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.String]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.Descriptor]] (method: defines_method) — *Deprecated: Use LogResponse.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.GetSuccess]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.String]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.Descriptor]] (method: defines_method) — *Deprecated: Use StreamLogsRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.GetMinLevel]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.GetServiceName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.String]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.Descriptor]] (method: defines_method) — *Deprecated: Use TailLogsRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.GetLimit]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.GetMinLevel]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.GetServiceName]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.String]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.Descriptor]] (method: defines_method) — *Deprecated: Use TailLogsResponse.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.GetCount]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.GetLogs]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.GetTotalIngested]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.String]] (method: defines_method)
+
+### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
+- [[web-interface/web-interface/backup_cleaned_assets/web/templates/home.html.md|home.html]] (calls)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Descriptor]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.EnumDescriptor]] (method: belongs_to) — *Deprecated: Use Level.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Enum]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Number]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Type]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level]] (struct: belongs_to) — *Level enum - note: protobuf enums start at 0*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level]] (struct: defines_method) — *Level enum - note: protobuf enums start at 0*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_CRITICAL]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_DEBUG]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_ERROR]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_INFO]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_LOGON]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_LOGOUT]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_NOTSET]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_REPORT]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_SCHEDULE]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_STREAM]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_TRADE]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level_WARNING]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use LogRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetFilename]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetFunctionName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetHostname]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetLevel]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetLineNumber]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetLoggerName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetModule]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetPathName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetProcessId]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetProcessName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetServiceName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetStackTrace]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetThreadId]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetThreadName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.GetTimestamp]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogRequest]] (struct: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use LogResponse.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.GetSuccess]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|LogResponse]] (struct: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use StreamLogsRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.GetMinLevel]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.GetServiceName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|StreamLogsRequest]] (struct: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use TailLogsRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.GetLimit]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.GetMinLevel]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.GetServiceName]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsRequest]] (struct: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use TailLogsResponse.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.GetCount]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.GetLogs]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.GetTotalIngested]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|TailLogsResponse]] (struct: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|_]] (constant: belongs_to) — *Verify that this generated code is sufficiently up-to-date.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|file_log_service_proto_init]] (function: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|file_log_service_proto_rawDescGZIP]] (function: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|file_log_service_proto_rawDesc]] (constant: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|init]] (function: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|x]] (struct: belongs_to)
+- [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
+- [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|home-transport-mesh.js]] (calls)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|log-server-inspector.js]] (calls)
+- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
+<!-- SYNC:END -->
+
+## 🔍 Implementation Details
+(Add manual notes here)

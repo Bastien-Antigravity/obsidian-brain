@@ -33,6 +33,7 @@ Automatically generated mirror for `web-interface/web/static/lib/mfe/BastienMFEE
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger]] (class: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|log-server-inspector.js]] (calls)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|nats-monitor.js]] (calls)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
 - [[web-interface/web-interface/web/static/js/tele-remote-inspector.js.md|tele-remote-inspector.js]] (calls)

@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/utils/terminal_ui.rs`.
+
+> **Essential Process**:
+> Terminal UI formatting, ANSI color palettes, and internal log-server self-logging.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

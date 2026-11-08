@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
+
+> **Essential Process**:
+> ! Asynchronous ordered file writer and rotation coordinator. Buffers incoming ! packets into a sequence BTreeMap, flushes batches to _main.log, handles size-based ! rotation, and feeds the in-memory circular ring buffer. ! ! DATA FLOW: ! 1. LogPacket stream from MPSC channel ! 2. BTreeMap reordering buffer sorted by atomic sequence ! 3. LogRingBuffer insertion and async disk batch write ! 4. Background console task queuing (non-blocking) ! ! KEY PARAMETERS: ! - max_file_bytes: 10MB per log chunk before rotation. ! - backup_count: Number of historical rotated log files preserved (default 10). ! - gap_timeout_ms: Timeout threshold to advance sequence on missing packets (500ms). use crate::core::log_formatter::format_log_message; use crate::models::log_packet::LogPacket; use crate::models::log_entry::LogEntry; use std::collections::BTreeMap; use std::path::PathBuf; use tokio::{ fs::{self, File, OpenOptions}, io::AsyncWriteExt, sync::mpsc, time::{sleep, Duration}, }; / Log writer configuration [derive(Clone)] pub struct WriterConfig { pub initial_batch_size: usize, pub buffer_size: usize, pub max_retries: usize, pub retry_delay_ms: u64, pub max_file_bytes: u64, pub backup_count: usize, pub gap_timeout_ms: u64, }
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,9 +22,11 @@ tags:
 - [[log-server/log-server/src/core/log_formatter.rs.md|format_log_message]] (function: calls) — *Unified log message formatting - used by both protocols*
 - [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (imports)
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
+- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: calls) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
+- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer]] (struct: calls) — *Thread-safe in-memory circular ring buffer with real-time broadcast*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.new]] (method: defines_method) — *Create new log writer with default config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: defines_method) — *Rotate log files*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: defines_method) — *Start the writer task*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: defines_method) — *Start the writer task with in-memory ring buffer support*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: defines_method) — *Create new log writer with custom config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: defines_method) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: defines_method) — *Main writer task implementation*
@@ -36,12 +44,13 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (imports)
+- [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (same_package)
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.new]] (method: belongs_to) — *Create new log writer with default config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: belongs_to) — *Rotate log files*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: belongs_to) — *Start the writer task*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: belongs_to) — *Start the writer task with in-memory ring buffer support*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: belongs_to) — *Create new log writer with custom config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: belongs_to) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: belongs_to) — *Main writer task implementation*

@@ -24,6 +24,8 @@ Automatically generated mirror for `web-interface/web/static/js/nats-monitor.js`
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|LogServerInspectorMFE.onUnmount]] (method: calls)
+- [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|log-server-inspector.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMetricsModel.calculateRate]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMetricsModel.formatBytes]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMetricsModel.formatNumber]] (method: defines_method)
@@ -42,8 +44,6 @@ Automatically generated mirror for `web-interface/web/static/js/nats-monitor.js`
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSMonitorMFE.updateUI]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager.computeRates]] (method: defines_method)
 - [[web-interface/web-interface/web/static/js/nats-monitor.js.md|NATSStreamManager.fetchStats]] (method: defines_method)
-- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.onUnmount]] (method: calls)
-- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (same_package)
 - [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement.clearPollTimers]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement.registerPoll]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement]] (class: calls)

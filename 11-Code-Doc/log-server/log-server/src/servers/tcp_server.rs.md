@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/servers/tcp_server.rs`.
+
+> **Essential Process**:
+> ! High-throughput TCP server handling SafeSocket-framed Cap'n Proto log streams ! from universal-logger instances across the microservice ecosystem. ! ! DATA FLOW: ! 1. TCP Stream -> SafeSocket framing -> Cap'n Proto deserialization ! 2. LogEntry + Sequence Counter -> LogPacket -> writer_tx ! ! KEY PARAMETERS: ! - host / port: Socket bind address (default 0.0.0.0:9020). ! - writer_tx: Channel to async file writer task. ! - sequence_counter: Atomic sequence tracking for global ordering. use crate::models::log_packet::LogPacket; use std::sync::atomic::AtomicU64; use std::sync::Arc; use tokio::net::{TcpListener, TcpStream}; use tokio::sync::mpsc; use tokio::time::{timeout, Duration}; use crate::config::config::Config; use crate::core::protocol_handlers::{handle_tcp_message, identify_client_from_handshake}; use crate::line_str; use crate::transport::safe_socket::SafeSocket; use crate::utils::terminal_ui::print_internal_log; / TCP server for Cap'n Proto log messages pub struct TcpServer { config: Config, }
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

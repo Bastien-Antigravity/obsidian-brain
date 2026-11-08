@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/transport/mod.rs`.
+
+> **Essential Process**:
+> Transport communication layer module for framed TCP sockets.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

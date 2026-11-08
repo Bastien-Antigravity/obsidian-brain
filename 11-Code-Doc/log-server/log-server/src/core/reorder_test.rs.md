@@ -9,11 +9,19 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/core/reorder_test.rs`.
+
+> **Essential Process**:
+> Regression tests for sequence reordering, gap detection, and timeout recovery.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *Start the writer task*
+- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: calls) — *Create new ring buffer with given capacity and internal broadcast channel*
+- [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (same_package)
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *Start the writer task with in-memory ring buffer support*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: calls) — *Create new log writer with custom config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: calls) — *Log writer configuration*

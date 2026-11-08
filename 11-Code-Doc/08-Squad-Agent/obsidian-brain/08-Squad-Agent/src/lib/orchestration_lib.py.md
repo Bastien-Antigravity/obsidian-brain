@@ -57,6 +57,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lib/orches
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/extraction/persona_extractor.py.md|persona_extractor.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/build_inventory.py.md|build_inventory.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/build_inventory.py.md|build_inventory.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/checkpoint.py.md|checkpoint.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/checkpoint.py.md|checkpoint.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/close_mission.py.md|close_mission.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/close_mission.py.md|close_mission.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (calls)

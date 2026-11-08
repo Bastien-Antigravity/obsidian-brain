@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/protocols/capnp/mod.rs`.
+
+> **Essential Process**:
+> Cap'n Proto messaging schema module namespace.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

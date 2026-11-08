@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/models/log_packet.rs`.
+
+> **Essential Process**:
+> Internal sequenced log packet wrapping a LogEntry with a global monotonic sequence.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

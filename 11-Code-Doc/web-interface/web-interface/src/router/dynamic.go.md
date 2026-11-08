@@ -22,6 +22,8 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|GetVaultGraph]] (function: calls) — *GetVaultGraph returns the parsed knowledge graph, serving from cache if valid.*
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|ResolveVaultPath]] (function: calls) — *ResolveVaultPath discovers the active obsidian-brain vault directory on the host filesystem.*
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (imports)
+- [[web-interface/web-interface/src/logclient/log_service_grpc.pb.go.md|logBridgeClient.GetTailLogs]] (method: calls)
+- [[web-interface/web-interface/src/logclient/log_service_grpc.pb.go.md|log_service_grpc.pb.go]] (imports)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
@@ -29,6 +31,10 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|slugify]] (function: calls)
+- [[web-interface/web-interface/src/router/log_bridge.go.md|getLogBridgeClient]] (function: calls) — *getLogBridgeClient resolves or reuses the singleton gRPC connection to log-server.*
+- [[web-interface/web-interface/src/router/log_bridge.go.md|handleGetTailLogs]] (function: calls) — *handleGetTailLogs queries recent buffered logs from log-server ring buffer via gRPC*
+- [[web-interface/web-interface/src/router/log_bridge.go.md|handleStreamLogsSSE]] (function: calls) — *handleStreamLogsSSE streams incoming fleet logs in real-time over HTTP Server-Sent Events (SSE).*
+- [[web-interface/web-interface/src/router/log_bridge.go.md|log_bridge.go]] (same_package)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|BuildMeshTopology]] (function: calls) — *- Tier 3: Real-Time WireTap Telemetry (wiretap.Snapshot()) & External Clients (EXT)*
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (same_package)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|normalizeTopologyNodeID]] (function: calls)

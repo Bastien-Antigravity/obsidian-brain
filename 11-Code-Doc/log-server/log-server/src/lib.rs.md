@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/lib.rs`.
+
+> **Essential Process**:
+> Log Server library root crate. Defines module boundaries, public facades, and core exports for centralized Cap'n Proto TCP and tonic gRPC services.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->

@@ -87,6 +87,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|architecture_hygiene_test.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (imports)
+- [[web-interface/web-interface/src/router/log_bridge.go.md|log_bridge.go]] (calls)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (calls)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (imports)
 - [[web-interface/web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (calls)

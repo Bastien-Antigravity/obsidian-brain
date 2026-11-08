@@ -22,5 +22,5 @@ Automatically generated mirror for `log-server/build.rs`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/build.rs.md|main]] (function: belongs_to)
+- [[log-server/log-server/build.rs.md|main]] (function: belongs_to) — *! - APP_VERSION: Injected cargo rustc environment variable.*
 <!-- SYNC:END -->

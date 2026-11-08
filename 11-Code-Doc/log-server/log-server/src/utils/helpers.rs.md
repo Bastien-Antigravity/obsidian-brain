@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `log-server/src/utils/helpers.rs`.
+
+> **Essential Process**:
+> ! Common utility helper functions for hostname discovery, folder creation, ! string truncation, sequence extraction, and timestamps. ! ! DATA FLOW: ! 1. OS environment -> helper utilities ! 2. Helpers used across core, servers, and transport components ! ! KEY PARAMETERS: ! - get_hostname: Cached system hostname lookup via OnceLock. ! - truncate: String truncation with unicode-safe boundaries. ! - line_str!: Macro to stringify source line numbers. use std::path::PathBuf; use std::process::Command; use std::sync::OnceLock;
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
