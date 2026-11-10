@@ -22,6 +22,7 @@ Automatically generated mirror for `config-server/src/rest/rest_handler.go`.
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method) — *Handler returns the REST API handler with route registration and CORS wrapping.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: defines_method) — *RegisterRoutes registers the REST routes to the provided mux*
+- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: defines_method) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: defines_method) — *Stop gracefully shuts down the HTTP server.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleGetConfig]] (method: defines_method)
@@ -44,9 +45,12 @@ Automatically generated mirror for `config-server/src/rest/rest_handler.go`.
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
+- [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (calls)
+- [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (same_package)
 - [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: belongs_to) — *NewRESTHandler creates a new RESTHandler instance*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to) — *Handler returns the REST API handler with route registration and CORS wrapping.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: belongs_to) — *RegisterRoutes registers the REST routes to the provided mux*
+- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: belongs_to) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: belongs_to) — *Stop gracefully shuts down the HTTP server.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleGetConfig]] (method: belongs_to)

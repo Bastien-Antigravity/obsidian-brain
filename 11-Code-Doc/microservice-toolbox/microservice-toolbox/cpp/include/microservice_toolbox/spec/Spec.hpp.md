@@ -32,6 +32,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager.Register]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/lifecycle/LifecycleManager.hpp.md|LifecycleManager.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/logger/Logger.hpp.md|Logger.hpp]] (imports)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/contracts.hpp.md|contracts.hpp]] (imports)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|ProtocolSpec.ToJson]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|ProtocolSpec.toJson]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/spec/spec.hpp.md|ServiceSpec.ToJson]] (method: defines_method)

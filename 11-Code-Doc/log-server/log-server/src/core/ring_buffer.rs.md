@@ -29,6 +29,8 @@ Automatically generated mirror for `log-server/src/core/ring_buffer.rs`.
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/core/contracts.rs.md|contracts.rs]] (calls)
+- [[log-server/log-server/src/core/contracts.rs.md|contracts.rs]] (same_package)
 - [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (calls)
 - [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (same_package)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)

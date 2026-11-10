@@ -23,6 +23,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/server
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|build_squad_agent_contracts]] (function: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|contracts.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|SquadRESTHandler]] (class: calls) — *REST API Handler exposing squad controller capabilities.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|register_routes]] (function: calls) — *Registers the REST routes to the FastAPI application.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|rest_handler.py]] (imports)

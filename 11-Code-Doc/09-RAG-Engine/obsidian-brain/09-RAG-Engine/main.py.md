@@ -39,6 +39,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|stop_watcher]] (function: calls) — *Stops background file monitoring.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/grpc_control/service.py.md|service.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/grpc_control/service.py.md|start_grpc_server]] (function: calls) — *Initializes and starts the asynchronous RAG Control gRPC server.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|build_rag_mcp_contracts]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/telegram/manager.py.md|SetupTelegram]] (function: calls) — *Initializes dynamic Tele-Remote client, binds updates, and registers exit handlers.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/telegram/manager.py.md|manager.py]] (imports)

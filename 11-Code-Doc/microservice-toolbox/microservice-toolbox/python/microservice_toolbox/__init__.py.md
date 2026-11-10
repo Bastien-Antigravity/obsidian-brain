@@ -14,6 +14,7 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|contracts.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|manager.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/messaging/__init__.py.md|__init__.py]] (imports)

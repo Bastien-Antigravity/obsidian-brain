@@ -13,6 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[tele-remote/tele-remote/cmd/tele-remote/contracts.go.md|buildTeleRemoteContracts]] (function: calls)
+- [[tele-remote/tele-remote/cmd/tele-remote/contracts.go.md|contracts.go]] (same_package)
 - [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|subscriber.go]] (imports)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|GrpcSubscriber.StartListen]] (method: calls)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|NewGrpcSubscriber]] (function: calls)

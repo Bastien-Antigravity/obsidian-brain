@@ -43,6 +43,7 @@ Automatically generated mirror for `notif-server/src/grpc_control/service.go`.
 - [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: belongs_to)
 - [[notif-server/notif-server/src/grpc_control/service.go.md|ControlServiceImpl]] (struct: defines_method)
 - [[notif-server/notif-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to) — *NewControlService creates a new ControlServiceImpl instance*
+- [[notif-server/notif-server/src/rest/contracts.go.md|contracts.go]] (imports)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (calls)

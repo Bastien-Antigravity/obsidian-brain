@@ -23,6 +23,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|controller.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: calls) — *Factory to construct and return a singleton RAGFacade instance.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|build_rag_mcp_contracts]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: calls) — *REST API Handler mapping config and status queries to RAGController.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|register_routes]] (function: calls) — *Registers the REST routes to the FastAPI application mux.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|rest_handler.py]] (imports)
@@ -35,6 +37,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 ### 🔌 Consumers (Inbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|FastMCP]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|UniLogHandler]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|__init__]] (function: belongs_to)
@@ -46,6 +49,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|_send]] (function: belongs_to) — *Route a JSON-RPC message to the active SSE client stream.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|_tools_list_result]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_call]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_contracts]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_history]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|api_mcp_tools]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|decorator]] (function: belongs_to)

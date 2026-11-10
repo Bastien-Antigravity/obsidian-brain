@@ -48,6 +48,8 @@ Automatically generated mirror for `web-interface/src/postgres_browser/connectio
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Warning]] (method: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger]] (struct: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger]] (struct: defines_method)
+- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (calls)
+- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/explorer.go.md|explorer.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/explorer.go.md|explorer.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/handler.go.md|handler.go]] (calls)

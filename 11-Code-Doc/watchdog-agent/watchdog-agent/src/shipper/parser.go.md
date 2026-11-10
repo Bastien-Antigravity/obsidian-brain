@@ -20,7 +20,12 @@ Automatically generated mirror for `watchdog-agent/src/shipper/parser.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- None detected
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParseLogLine]] (function: belongs_to) — *ParseLogLine attempts to parse a standardized log line. Returns (log, true) if level >= ERROR.*
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParsedErrorLog]] (struct: belongs_to) — *ParsedErrorLog represents a structured error event ready for TimescaleDB storage.*
+- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|parser_test.go]] (calls)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|parser_test.go]] (same_package)
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|shipper.go]] (calls)
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|shipper.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

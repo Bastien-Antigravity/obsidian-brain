@@ -30,6 +30,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement]] (class: calls)
+- [[web-interface/web-interface/web/static/lib/mfe/OpenMFEContracts.js.md|OpenMFEContracts.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightAll]] (function: calls)
 - [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightElement]] (function: calls)
 - [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|prism-module.js]] (imports)

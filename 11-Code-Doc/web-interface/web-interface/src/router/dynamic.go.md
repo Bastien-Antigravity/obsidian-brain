@@ -27,11 +27,16 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
+- [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPageWithMetadata]] (function: calls) — *RenderPageWithMetadata renders a page with category, title, subtitle, icon, and navigation categories.*
 - [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPage]] (function: calls) — *RenderPage parses templates and executes them using context-resolved configuration parameters.*
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|slugify]] (function: calls)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (same_package)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|handleGetNatsContracts]] (function: calls)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|handleGetTeleRemoteContracts]] (function: calls)
 - [[web-interface/web-interface/src/router/log_bridge.go.md|getLogBridgeClient]] (function: calls) — *getLogBridgeClient resolves or reuses the singleton gRPC connection to log-server.*
+- [[web-interface/web-interface/src/router/log_bridge.go.md|handleGetLogContracts]] (function: calls) — *falling back only to log-server's own published ServiceSpec in the MFE registry if gRPC is unavailable.*
 - [[web-interface/web-interface/src/router/log_bridge.go.md|handleGetTailLogs]] (function: calls) — *handleGetTailLogs queries recent buffered logs from log-server ring buffer via gRPC*
 - [[web-interface/web-interface/src/router/log_bridge.go.md|handleStreamLogsSSE]] (function: calls) — *handleStreamLogsSSE streams incoming fleet logs in real-time over HTTP Server-Sent Events (SSE).*
 - [[web-interface/web-interface/src/router/log_bridge.go.md|log_bridge.go]] (same_package)
@@ -52,6 +57,9 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/home_dynamic_test.go.md|home_dynamic_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (same_package)
 - [[web-interface/web-interface/src/router/dynamic.go.md|BuildServiceRegistry]] (function: belongs_to) — *Adheres strictly to the principle that microservices own and return their own information.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|FleetHealthResponse]] (struct: belongs_to) — *FleetHealthResponse summarizes overall fleet health for UI alerting.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|GetMFERegistry]] (function: belongs_to) — *GetMFERegistry returns the active MFE registry instance, if set.*
@@ -72,6 +80,7 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveAuthoritativeEndpoint]] (function: belongs_to) — *- Secondary Fallback: Alternate endpoint if distinct*
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveFastMCPBaseURL]] (function: belongs_to) — *resolveFastMCPBaseURL resolves the root HTTP base URL of the FastMCP daemon directly from config.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveMCPURL]] (function: belongs_to) — *resolveMCPURL resolves the authoritative FastMCP HTTP/SSE endpoint for RAG Engine directly from config.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|resolveMFEHeaderMetadata]] (function: belongs_to) — *from the OpenMFE registry for the page header, falling back cleanly to the route slug.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|targetSvc]] (struct: belongs_to)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (calls)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (same_package)

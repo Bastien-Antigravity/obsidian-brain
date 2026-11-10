@@ -21,13 +21,24 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/config/heal.go.md|HealSymlinks]] (function: calls) — *HealSymlinks heals ecosystem configuration symlinks pointing to the central standalone.yaml*
 - [[watchdog-agent/watchdog-agent/src/config/heal.go.md|heal.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/config/options.go.md|ResolveRuntimeOptions]] (function: calls) — *the authoritative execution capabilities of the watchdog-agent.*
 - [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|StartNATSControlPlane]] (function: calls) — *StartNATSControlPlane connects to the NATS event bus and publishes node heartbeats*
 - [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|control_plane.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from watchdog-agent sources.*
 - [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|mfe.js]] (imports)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer launches HTTP REST API server*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Critical]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Info]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Warning]] (method: calls)
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance*
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/shipper/checkpoint.go.md|checkpoint.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|ResolveDBConfigWithAppConfig]] (function: calls) — *3. Resilient ecosystem fallback defaults.*
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.Start]] (method: calls) — *Start launches the continuous log shipper background loop.*
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|NewLogShipper]] (function: calls) — *NewLogShipper initializes the shipper with state persistence.*
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: calls) — *RegisterServices initializes the topology registry slice of managed services*
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|ValidateRegistry]] (function: calls) — *ValidateRegistry checks for missing dependencies and dependency cycles*
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|KillAll]] (function: calls) — *KillAll kills all supervised command processes clean*
@@ -44,5 +55,6 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|IsLocal]] (function: calls) — *IsLocal checks if an IP belongs to the local machine*
 
 ### 🔌 Consumers (Inbound)
+- [[watchdog-agent/watchdog-agent/main.go.md|dirExists]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/main.go.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

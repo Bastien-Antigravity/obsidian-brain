@@ -40,10 +40,14 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractOperation]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractPeer]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ExchangeContract]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ProtocolSpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ServiceSpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|_extract_port]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|build_spec_from_config]] (function: belongs_to) — *Zero silent fallback or dummy placeholders.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_zero_i32]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish]] (function: belongs_to) — *Dynamic registration alias adhering to fleet standards.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec]] (function: belongs_to) — *FAIL-FAST: Validates web_interface reachability and specification synchronously before spawning.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_internal]] (function: belongs_to)

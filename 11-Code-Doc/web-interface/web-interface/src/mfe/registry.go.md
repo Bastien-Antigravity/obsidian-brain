@@ -30,6 +30,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: defines_method) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: defines_method) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleGetContracts]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: defines_method)
@@ -69,6 +70,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: belongs_to) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: belongs_to) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleGetContracts]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: belongs_to)
@@ -81,10 +83,14 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|registerReq]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (same_package)
+- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/explorer.go.md|explorer.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/timescale_stats.go.md|timescale_stats.go]] (calls)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (calls)
 - [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|architecture_hygiene_test.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (imports)
 - [[web-interface/web-interface/src/router/log_bridge.go.md|log_bridge.go]] (calls)

@@ -27,6 +27,9 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/rest/rest_
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|list_commands]] (function: calls) — *Returns a list of available subcommands and their descriptions.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|publish_user_message]] (function: calls) — *Saves a user message and publishes it to EventBus to trigger agents.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|build_squad_agent_contracts]] (function: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|contracts.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|contracts.py]] (same_package)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -36,6 +39,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/rest/rest_
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_active_mode]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_chat_history]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_commands]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_contracts]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_github_user]] (function: belongs_to) — *Returns the configured GitHub user handle or default organization.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_status]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|is_github_configured]] (function: belongs_to) — *Verifies if a valid GitHub personal access token is configured in environment or capability config.*

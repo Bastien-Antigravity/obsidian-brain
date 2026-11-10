@@ -33,6 +33,7 @@ tags:
 - [[notif-server/notif-server/cmd/libnotif/main.go.md|main.go]] (imports)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (imports)
+- [[notif-server/notif-server/src/rest/contracts.go.md|contracts.go]] (imports)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use NotifRequest.ProtoReflect.Descriptor instead.*
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetAttachment]] (method: belongs_to)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|NotifRequest.GetLevel]] (method: belongs_to)

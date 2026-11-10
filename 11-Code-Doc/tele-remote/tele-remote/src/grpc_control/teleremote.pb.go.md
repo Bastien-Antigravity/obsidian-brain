@@ -61,6 +61,7 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|Registration.String]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[tele-remote/tele-remote/cmd/tele-remote/contracts.go.md|contracts.go]] (imports)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand.Descriptor]] (method: belongs_to) — *Deprecated: Use BotCommand.ProtoReflect.Descriptor instead.*
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand.GetCommandType]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand.GetCustomPayload]] (method: belongs_to)

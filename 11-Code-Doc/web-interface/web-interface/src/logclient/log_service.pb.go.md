@@ -14,6 +14,22 @@ Automatically generated mirror for `web-interface/src/logclient/log_service.pb.g
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.Descriptor]] (method: defines_method) — *Deprecated: Use ContractsRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.String]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.Descriptor]] (method: defines_method) — *Deprecated: Use ContractsResponse.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetContractsJson]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetExhaustive]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetReliable]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetService]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetSource]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.ProtoMessage]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.ProtoReflect]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.Reset]] (method: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.String]] (method: defines_method)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Descriptor]] (method: defines_method)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.EnumDescriptor]] (method: defines_method) — *Deprecated: Use Level.Descriptor instead.*
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Enum]] (method: defines_method)
@@ -75,6 +91,26 @@ Automatically generated mirror for `web-interface/src/logclient/log_service.pb.g
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/home.html.md|home.html]] (calls)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use ContractsRequest.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest]] (struct: defines_method)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.Descriptor]] (method: belongs_to) — *Deprecated: Use ContractsResponse.ProtoReflect.Descriptor instead.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetContractsJson]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetExhaustive]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetReliable]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetService]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetSource]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.ProtoMessage]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.ProtoReflect]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.Reset]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.String]] (method: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse]] (struct: belongs_to)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse]] (struct: defines_method)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Descriptor]] (method: belongs_to)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.EnumDescriptor]] (method: belongs_to) — *Deprecated: Use Level.Descriptor instead.*
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Enum]] (method: belongs_to)

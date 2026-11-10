@@ -18,7 +18,6 @@ Automatically generated mirror for `web-interface/web/static/lib/router/PageRout
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|initDatabaseExplorer]] (function: calls)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|cleanupHomePage]] (function: calls)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|initHomePage]] (function: calls)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|loadMFE]] (function: calls)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|BastienUIClass.highlightCode]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.autoInit]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.bindLinkInterception]] (method: defines_method)

@@ -36,6 +36,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (calls)
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (same_package)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestLogServerMFERegistrationAndFoundationalDefaults]] (function: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryContractsEndpoint]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryDeduplicationAndLayerSorting]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryRegisterAndListHandlers]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryRejectsInvalidRegistration]] (function: belongs_to)

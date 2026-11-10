@@ -21,8 +21,8 @@ Every microservice MUST follow this sequence during the `main()` initialization 
 2.  **Phase 2: Local Overrides**: If in `standalone` or `test` profile, re-apply the local YAML file as a hard override to ensure developer-intent parity.
 3.  **Phase 3: CLI Arguments**: Apply command-line flags. **CLI always wins.**
 4.  **Phase 4: Remote Sync**: If the bridge is active, synchronize with the global configuration state (Service Discovery).
-5.  **Phase 5: OpenMFE Auto-Registration & Real-Time WireTap Telemetry**:
-    - All microservices register their declarative `ServiceSpec` via `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), or `spec::publish_with_lifecycle` (Rust) in a non-blocking background loop (`MaxRetries: -1`) to `web-interface` (see [[OpenMFE-Integration-Protocol]]).
+5.  **Phase 5: OpenMFE Auto-Registration, Exchange Contracts & Real-Time WireTap Telemetry**:
+    - All microservices register their declarative `ServiceSpec` + `Contracts` (`ExchangeContract[]`) via `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), `spec::publish_with_lifecycle` (Rust), or `SpecPublisher::PublishWithLifecycle` (C++, with `contracts.h` for C ABI) in a non-blocking background loop (`MaxRetries: -1`) to `web-interface` (see [[OpenMFE-Integration-Protocol]]). HTTP-capable services also expose `GET /api/v1/contracts`.
     - `BootstrapService` (Go) and `init_microservice` / `configure_from_config` (Python) automatically initialize the lock-free **WireTap** transport telemetry engine (`microservice-toolbox/go/pkg/wiretap`, `microservice_toolbox/wiretap.py`), binding `safe-socket`, gRPC (`teleremote`, `notification`, `network`), and NATS (`messaging`) to stream live `EdgeReport`s and segregated logical channels to `web-interface`.
 
 ### 1.1 Level 3 Hybrid Logic (Standalone vs. Connected)

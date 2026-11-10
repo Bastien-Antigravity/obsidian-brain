@@ -26,8 +26,8 @@ Automatically generated mirror for `web-interface/web/static/js/mfe-loader.js`.
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|bindGlobalPopoverDismissers]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|bindTabNavigation]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|closePopover]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|enrichAISection]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|enrichStandardShell]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to) — *Fetch registered MFE services with deduplication*
@@ -36,6 +36,5 @@ Automatically generated mirror for `web-interface/web/static/js/mfe-loader.js`.
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|loadMFE]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|norm]] (function: belongs_to) — *Resilient service resolution: match exact name, navTitle, tag, or alphanumeric normalized equivalent*
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|runRAGQuery]] (function: belongs_to) — *Semantic RAG Query Runner*
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|togglePopover]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (calls)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|setSpecsPopoverOpen]] (function: belongs_to)
 <!-- SYNC:END -->

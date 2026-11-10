@@ -17,12 +17,16 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/rest/rest_h
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|build_rag_engine_contracts]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (same_package)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: belongs_to) — *REST API Handler mapping config and status queries to RAGController.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|get_config]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|get_contracts]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|get_status]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|index_document]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|list_config]] (function: belongs_to)

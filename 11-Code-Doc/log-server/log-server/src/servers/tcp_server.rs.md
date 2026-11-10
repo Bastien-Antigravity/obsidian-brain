@@ -35,7 +35,7 @@ Automatically generated mirror for `log-server/src/servers/tcp_server.rs`.
 - [[log-server/log-server/src/servers/tcp_server.rs.md|TcpServer.run]] (method: defines_method) — *Run the TCP server*
 - [[log-server/log-server/src/transport/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: calls) — *Split into its component halves*
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: calls) — *Receive framed data from socket. Automatically skips 0-length heartbeat frames.*
+- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: calls) — *Receive framed data from socket. Returns empty BytesMut on 0-length heartbeat frames.*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.send_heartbeat]] (method: calls) — *Send a 0-length heartbeat frame*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|safe_socket.rs]] (imports)
 - [[log-server/log-server/src/utils/mod.rs.md|mod.rs]] (imports)

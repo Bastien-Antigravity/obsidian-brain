@@ -29,6 +29,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|query]] (function: calls) — *Queries the RAG engine across partitions and returns serializable results.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|build_rag_engine_contracts]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: calls) — *REST API Handler mapping config and status queries to RAGController.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|register_routes]] (function: calls) — *Registers the REST routes to the FastAPI application mux.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|rest_handler.py]] (imports)
@@ -73,6 +75,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|event_generator]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|flush]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|get_config]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|get_rag_engine_contracts]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|get_rag_stats]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|index_directory_api]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|open_in_ide]] (function: belongs_to)

@@ -30,22 +30,23 @@ The `web-interface` follows the **Facade Pattern**, where HTTP handlers orchestr
 - `cmd/web-interface/main.go`: Application bootstrap and lifecycle wiring via `microservice-toolbox`.
 - `src/server/facade.go`: Central facade orchestrating HTTP server startup, timeouts, and graceful shutdown.
 - `src/core/controller.go`: System status info, uptime telemetry, and database connectivity health checks.
-- `src/mfe/registry.go`: OpenMFE dynamic micro-frontend registration registry, 3-tier taxonomy normalization, and atomic persistence.
+- `src/mfe/registry.go`: OpenMFE dynamic micro-frontend registration registry, 3-tier taxonomy normalization, `Contracts` persistence (`GET /api/v1/contracts?service=...`), and atomic `mfe_services.json` storage.
 - `mfe_services.json`: Persistent disk cache (`dbFile` in `registry.go`) ensuring 0-second cold-start recovery for registered microfrontends upon restart.
 - `src/renderer/renderer.go`: Go template rendering engine with session data and dynamic URL resolution.
-- `src/router/`: Route registration (`autodiscovery.go`, `static.go`, `dynamic.go`, `base_ecosystem.go`, `mesh_topology.go`, `router.go`).
+- `src/router/`: Route registration (`autodiscovery.go`, `static.go`, `dynamic.go`, `base_ecosystem.go`, `mesh_topology.go`, `log_bridge.go`, `contracts_bridges.go`, `router.go`).
   - `autodiscovery.go`: Scans `web/pages/` to automatically mount hierarchical static pages (`/page/<category-slug>/<page-slug>`) and build left `#Sidebar` accordion trees.
   - `base_ecosystem.go`: Strictly defines the 11 Standard Base Microservices (`L1–L3`), foundational links, particle streams, protocol catalog, and baseline segregated channels.
   - `mesh_topology.go`: 3-Tier Mesh Topology Engine combining the 11 base services, OpenMFE-registered microservices (`> L3` / `L4+`), and real-time `wiretap.Snapshot()` telemetry to dynamically synthesize nodes (including `EXT` external gateways/MCP clients), links, particle streams, and segregated channels.
-  - `dynamic.go`: HTTP API handlers (`/api/v1/topology/mesh`, `/api/v1/topology/wiretap/ingest`, `/api/v1/topology/wiretap/toggle`, `/api/v1/services/status`) and `BuildServiceRegistry`.
+  - `dynamic.go` & `contracts_bridges.go`: HTTP API handlers (`/api/v1/topology/mesh`, `/api/v1/topology/wiretap/ingest`, `/api/v1/topology/wiretap/toggle`, `/api/v1/services/status`, `/api/v1/nats/contracts`, `/api/v1/tele-remote/contracts`, `/api/v1/timescale/contracts`) and `BuildServiceRegistry`.
+  - `log_bridge.go`: Bridges `log-server` gRPC streams and `GetExchangeContracts` (`/api/v1/system/logs/contracts`).
 - `src/middleware/middleware.go`: Standardized middlewares (request logging, CORS, session auth, CSRF).
-- `src/postgres_browser/postgres_browser.go`: Postgres metadata explorer and SQL query execution engine.
+- `src/postgres_browser/`: Postgres metadata explorer, SQL query execution engine, and live `timescale_db` schema introspection (`contracts.go`).
 - `src/fundamental_analysis/fundamental_analysis.go`: Equities financial indicator and valuation metrics reader.
 - `src/telegram/manager.go`: Dynamic interactive menu bridge connecting to `tele-remote`.
 - `web/`: UI layer:
   - `web/pages/<XX-Category>/<YY-PageName>.html`: Autodiscovered static pages with `category.json` and frontmatter comments.
-  - `web/templates/`: Core app shell templates (`base.html`, `login.html`).
-  - `web/static/lib/`: Modern Bastien UI architecture (`tokens/`, `theme/`, `layout/`, `components/`).
+  - `web/templates/`: Core app shell templates (`base.html`, `login.html`, `mfe.html`, `PostgresBrowser.html`). `/static/` is served with `Cache-Control: no-cache, must-revalidate` (`cmd/web-interface/main.go`).
+  - `web/static/lib/`: Modern Bastien UI architecture (`tokens/`, `theme/`, `layout/`, `components/`, `mfe/BastienMFEElement.js`, `mfe/OpenMFEContracts.js`).
 
 ### 🧭 Dual-Navigation Architecture
 - **Left Sidebar (`#Sidebar`) — Static Knowledge & Content**:

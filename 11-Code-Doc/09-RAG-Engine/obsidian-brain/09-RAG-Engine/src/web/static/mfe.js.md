@@ -25,7 +25,9 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.disconnectedCallback]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.escapeHtml]] (method: defines_method) — *Helper functions*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.initThemeSync]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.loadContracts]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderConfigView]] (method: defines_method)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderContractTab]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderLayout]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderReloadView]] (method: defines_method)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderSearchView]] (method: defines_method)
@@ -43,7 +45,9 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/static/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.disconnectedCallback]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.escapeHtml]] (method: belongs_to) — *Helper functions*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.initThemeSync]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.loadContracts]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderConfigView]] (method: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderContractTab]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderLayout]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderReloadView]] (method: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/mfe.js.md|ObsidianBrainMFE.renderSearchView]] (method: belongs_to)

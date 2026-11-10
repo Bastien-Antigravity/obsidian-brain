@@ -19,6 +19,9 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/supervisor.go`
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Info]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.Start]] (method: calls) — *Start launches the continuous log shipper background loop.*
 - [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|LaunchPostgresAttempt]] (function: calls) — *if it is not already running. It returns true if successful or if it was already running.*
 - [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|postgres_launcher.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|lock_windows.go]] (imports)

@@ -26,6 +26,7 @@ Automatically generated mirror for `watchdog-agent/src/core/controller.go`.
 - [[watchdog-agent/watchdog-agent/src/core/controller.go.md|WatchdogController]] (interface: belongs_to) — *WatchdogController defines status and control interfaces for watchdog-agent*
 - [[watchdog-agent/watchdog-agent/src/core/controller.go.md|WatchdogStatusInfo]] (struct: belongs_to) — *WatchdogStatusInfo represents the overall watchdog telemetry*
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|manager.go]] (imports)
 <!-- SYNC:END -->

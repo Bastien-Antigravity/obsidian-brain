@@ -21,6 +21,7 @@ Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 ### 📦 Dependencies (Outbound)
 - [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls) — *Server configuration*
 - [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
+- [[log-server/log-server/src/core/contracts.rs.md|spawn_web_interface_registration]] (function: calls) — *Non-blocking 30s heartbeat registering log-server's authoritative contracts with web-interface.*
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: defines_method) — *Create new log server instance*

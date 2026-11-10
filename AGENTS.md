@@ -32,7 +32,7 @@ tags:
 python3 08-Squad-Agent/main.py preflight-check
 
 # Scaffold a new microservice
-python3 08-Squad-Agent/main.py scaffold-microservice --name <name> --lang <go|python|rust>
+python3 08-Squad-Agent/main.py scaffold-microservice --name <name> --lang <go|python|rust|cpp>
 
 # Query knowledge base & AST via RAG
 python3 09-RAG-Engine/main.py query "<topic>"

@@ -19,20 +19,12 @@ Automatically generated mirror for `notif-server/src/rest/rest_handler.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.AddProvider]] (method: calls) — *AddProvider initializes a new provider section with default template.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetAlertingConfig]] (method: calls) — *GetAlertingConfig returns a deep copy of the current internal configuration of notification providers.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: calls) — *GetStatus returns server health and metadata.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetSupportedTypes]] (method: calls) — *GetSupportedTypes returns the list of hardcoded drivers available.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.ListNotifiers]] (method: calls) — *ListNotifiers returns the list of configured notifiers.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.ReloadConfig]] (method: calls) — *ReloadConfig triggers a manual reload of the configuration.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.RemoveProvider]] (method: calls) — *RemoveProvider deletes a provider section.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotification]] (method: calls) — *SendTestNotification triggers a test notification through the engine and logger.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.SetAlertingConfig]] (method: calls) — *SetAlertingConfig updates a specific setting for a notification provider.*
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
 - [[notif-server/notif-server/src/grpc_control/service.go.md|NewControlService]] (function: calls) — *NewControlService creates a new ControlServiceImpl instance*
 - [[notif-server/notif-server/src/grpc_control/service.go.md|service.go]] (imports)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method) — *Handler returns the REST API handler with route registration and CORS wrapping.*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: defines_method) — *RegisterRoutes registers the REST routes to the provided mux*
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: defines_method) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServerPort]] (method: defines_method) — *StartServerPort is a convenience helper that accepts an integer port.*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method) — *StartServer starts an HTTP server for the REST API on the specified address (e.g. "127.0.0.1:1029" or ":1029").*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: defines_method) — *Stop gracefully shuts down the HTTP server.*
@@ -46,12 +38,27 @@ Automatically generated mirror for `notif-server/src/rest/rest_handler.go`.
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleSetAlertingConfig]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: defines_method)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.AddProvider]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetAlertingConfig]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetStatus]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetSupportedTypes]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ListNotifiers]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ReloadConfig]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.RemoveProvider]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.SendTestNotification]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.SetAlertingConfig]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifLogger.Error]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifLogger.Info]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (calls)
+- [[notif-server/notif-server/src/rest/contracts.go.md|contracts.go]] (calls)
+- [[notif-server/notif-server/src/rest/contracts.go.md|contracts.go]] (same_package)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: belongs_to) — *NewRESTHandler creates a new RESTHandler instance*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to) — *Handler returns the REST API handler with route registration and CORS wrapping.*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: belongs_to) — *RegisterRoutes registers the REST routes to the provided mux*
+- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: belongs_to) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServerPort]] (method: belongs_to) — *StartServerPort is a convenience helper that accepts an integer port.*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to) — *StartServer starts an HTTP server for the REST API on the specified address (e.g. "127.0.0.1:1029" or ":1029").*
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: belongs_to) — *Stop gracefully shuts down the HTTP server.*
@@ -67,4 +74,6 @@ Automatically generated mirror for `notif-server/src/rest/rest_handler.go`.
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
 <!-- SYNC:END -->

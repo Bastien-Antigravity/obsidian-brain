@@ -23,11 +23,14 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lifecycle/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_to_pascal_case]] (function: belongs_to) — *Converts a kebab/snake identifier into PascalCase.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|create_file]] (function: belongs_to) — *Creates a file with parent directory creation, respecting dry-run mode.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|create_symlink]] (function: belongs_to) — *Creates a symbolic link, respecting dry-run mode.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_bdd_spec]] (function: belongs_to) — *Generates the initial BDD behavior specification note in 02-Business-BDD.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_common_files]] (function: belongs_to) — *Generates files mandatory across all languages: Dockerfile, compose, AGENTS.md, etc.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_cpp_scaffold]] (function: belongs_to) — *Generates a C++17 microservice skeleton wired to microservice-toolbox/cpp spec & contracts.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_go_scaffold]] (function: belongs_to) — *Generates the Go microservice skeleton and source files.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_openmfe_component_js]] (function: belongs_to) — *Generates a standardized BastienMFEElement Web Component with dynamic Exchange Contract tabs.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_python_scaffold]] (function: belongs_to) — *Generates the Python microservice skeleton and architecture folders.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_rust_scaffold]] (function: belongs_to) — *Generates the Rust microservice skeleton and source files.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|main]] (function: belongs_to)

@@ -22,6 +22,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/telegram/manager.py.md|push]] (function: calls) — *Trigger background transmission of the updated UI menu state*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.appendChatMessage]] (method: defines_method)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.bindSquadTabs]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.connectedCallback]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.disconnectedCallback]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.handleUserSend]] (method: defines_method)
@@ -29,6 +30,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadAll]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadChatHistory]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadCommands]] (method: defines_method)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadContracts]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadStatus]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.printTerminalLine]] (method: defines_method)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.removeThinkingIndicator]] (method: defines_method)
@@ -49,6 +51,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.appendChatMessage]] (method: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.bindSquadTabs]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.connectedCallback]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.disconnectedCallback]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.handleUserSend]] (method: belongs_to)
@@ -56,6 +59,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadAll]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadChatHistory]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadCommands]] (method: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadContracts]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.loadStatus]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.printTerminalLine]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.removeThinkingIndicator]] (method: belongs_to)

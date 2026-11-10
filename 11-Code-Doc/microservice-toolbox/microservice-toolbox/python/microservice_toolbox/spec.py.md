@@ -23,7 +23,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|contracts.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)

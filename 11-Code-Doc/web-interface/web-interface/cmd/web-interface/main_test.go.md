@@ -26,11 +26,15 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Info]] (method: defines_method)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Warning]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: calls) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: calls) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
 - [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (imports)
+- [[web-interface/web-interface/src/router/dynamic.go.md|GetMFERegistry]] (function: calls) — *GetMFERegistry returns the active MFE registry instance, if set.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
 
 ### 🔌 Consumers (Inbound)
@@ -38,6 +42,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|fleet_health_scenario_test.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (same_package)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestMFEShellHeaderAndHeroStructure]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestOpenMFERegistrationAPIAndFluidLayout]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestSetupRoutesAndRendering]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestSetupRoutesMFERouting]] (function: belongs_to)

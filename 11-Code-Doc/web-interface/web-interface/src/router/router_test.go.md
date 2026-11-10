@@ -31,6 +31,8 @@ Automatically generated mirror for `web-interface/src/router/router_test.go`.
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (calls)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (same_package)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 - [[web-interface/web-interface/src/router/log_bridge.go.md|log_bridge.go]] (calls)

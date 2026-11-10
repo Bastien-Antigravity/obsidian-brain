@@ -29,6 +29,7 @@ Automatically generated mirror for `notif-server/src/rest/mfe.js`.
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.escapeHTML]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadAlertingConfig]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadAll]] (method: defines_method)
+- [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadContracts]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadNotifiers]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadStatus]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadSupportedTypes]] (method: defines_method)
@@ -39,6 +40,7 @@ Automatically generated mirror for `notif-server/src/rest/mfe.js`.
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.stringifyValue]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.submitAddProvider]] (method: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.submitEditConfig]] (method: defines_method)
+- [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.switchTab]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (imports)
@@ -53,6 +55,7 @@ Automatically generated mirror for `notif-server/src/rest/mfe.js`.
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.escapeHTML]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadAlertingConfig]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadAll]] (method: belongs_to)
+- [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadContracts]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadNotifiers]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadStatus]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.loadSupportedTypes]] (method: belongs_to)
@@ -63,6 +66,7 @@ Automatically generated mirror for `notif-server/src/rest/mfe.js`.
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.stringifyValue]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.submitAddProvider]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.submitEditConfig]] (method: belongs_to)
+- [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE.switchTab]] (method: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE]] (class: belongs_to)
 - [[notif-server/notif-server/src/rest/mfe.js.md|NotifServerMFE]] (class: defines_method)
 - [[notif-server/notif-server/src/rest/mfe.js.md|triggerEdit]] (function: belongs_to) — *Bind inline edit clicks and pencil buttons*

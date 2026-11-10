@@ -61,6 +61,7 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration.String]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/spec/contracts.go.md|contracts.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|client.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.Descriptor]] (method: belongs_to) — *Deprecated: Use BotCommand.ProtoReflect.Descriptor instead.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|BotCommand.GetCommandType]] (method: belongs_to)

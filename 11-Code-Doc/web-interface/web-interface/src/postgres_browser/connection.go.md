@@ -43,6 +43,8 @@ Automatically generated mirror for `web-interface/src/postgres_browser/connectio
 - [[web-interface/web-interface/src/postgres_browser/connection.go.md|DBConfig]] (struct: defines_method) — *DBConfig encapsulates resolved, validated PostgreSQL/TimescaleDB connection parameters.*
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
+- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (calls)
+- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/explorer.go.md|explorer.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/explorer.go.md|explorer.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/handler.go.md|handler.go]] (calls)

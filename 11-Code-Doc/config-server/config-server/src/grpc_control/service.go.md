@@ -45,4 +45,5 @@ Automatically generated mirror for `config-server/src/grpc_control/service.go`.
 - [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: belongs_to) — *NewControlService creates a new ControlServiceImpl instance*
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
+- [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (imports)
 <!-- SYNC:END -->

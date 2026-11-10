@@ -16,7 +16,7 @@ tags:
 ## 🔗 Knowledge Map
 - **Code Repository**: [📂 log-server](https://github.com/Bastien-Antigravity/log-server)
 - **Behavior Specs**: [📜 BDD Specifications](02-Business-BDD/02-Behavior-Specs/log-server/)
-- **Protocols**: log-server/capnp/logger.capnp
+- **Protocols**: `src/schema/capnp/logger.capnp`, `src/schema/proto/log_service.proto` (includes `LogBridge.GetExchangeContracts`), and `src/core/contracts.rs`
 
 ## 🛠️ Squad Assignment
 - **Lead Developer**: [[07-Core-KMS/Role-Prompts/03-Developer/Prompt-Lead-Developer|Lead-Dev]]
@@ -45,3 +45,7 @@ tags:
 *   **Decision**: Implement native gRPC server streaming (`rpc StreamLogs(StreamLogsRequest) returns (stream LogRequest)`) and buffered history queries (`rpc GetTailLogs(TailLogsRequest) returns (TailLogsResponse)`) on existing gRPC port `9021`. Ingestion events are pushed directly to an in-memory `LogRingBuffer` (5,000 capacity) and a Tokio broadcast channel. `web-interface` acts as the single web gateway, bridging gRPC to Server-Sent Events (SSE).
 *   **Rationale**: Preserves single responsibility, purges all web dependencies from the Rust daemon, and guarantees sub-millisecond streaming latency with zero polling and zero disk I/O bottlenecks.
 *   **Consequence**: Standard binary protocol across the fleet; `web-interface` manages all HTTP/browser-facing transport.
+
+### ADR-003: Microservice-Sourced Exchange Contracts & OpenMFE Registry Heartbeat
+*   **Context**: OpenMFE `<log-server-inspector>` previously hardcoded `.proto` and `.capnp` schema snippets in `web-interface`.
+*   **Decision**: `log-server` embeds `src/schema/proto/log_service.proto` and `src/schema/capnp/logger.capnp` natively (`src/core/contracts.rs`), serves them over `LogBridge.GetExchangeContracts` (`grpc_server.rs`), and sends an async background `POST /api/v1/register` heartbeat (`src/facade/log_server.rs`) attaching `contracts[]` to `web-interface`. `web-interface` proxies gRPC first and falls back only to `mfe.Registry` on `/api/v1/system/logs/contracts`.

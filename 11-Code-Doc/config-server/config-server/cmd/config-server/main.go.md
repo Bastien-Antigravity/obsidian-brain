@@ -21,8 +21,10 @@ Automatically generated mirror for `config-server/cmd/config-server/main.go`.
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/grpc_control/grpc_service.go.md|NewGRPCService]] (function: calls) — *NewGRPCService creates a new GRPCService instance*
 - [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (imports)
+- [[config-server/config-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from live config-server sources.*
 - [[config-server/config-server/src/rest/mfe.js.md|mfe.js]] (imports)
 - [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
+- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)

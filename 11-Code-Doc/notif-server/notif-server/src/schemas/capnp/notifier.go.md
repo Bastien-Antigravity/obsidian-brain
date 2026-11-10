@@ -41,6 +41,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (imports)
+- [[notif-server/notif-server/src/rest/contracts.go.md|contracts.go]] (imports)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewNotifierMsg]] (function: belongs_to)
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewNotifierMsg_List]] (function: belongs_to) — *NewNotifierMsg creates a new list of NotifierMsg.*
 - [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewRootNotifierMsg]] (function: belongs_to)

@@ -29,6 +29,7 @@ Automatically generated mirror for `config-server/src/store/store.go`.
 - [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (calls)
 - [[config-server/config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (calls)
 - [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (calls)
+- [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (calls)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (calls)

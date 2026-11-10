@@ -20,9 +20,10 @@ Automatically generated mirror for `watchdog-agent/src/telegram/manager.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/core/controller.go.md|controller.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.GetStatus]] (method: calls) — *GetStatus retrieves the status metadata of all supervised services*
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartAll]] (method: calls) — *RestartAll kills all running processes so they all restart sequentially*
-- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.RestartService]] (method: calls) — *RestartService forcefully terminates the process group of a service to let it auto-restart*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Info]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Warning]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.Start]] (method: calls) — *Start launches the continuous log shipper background loop.*
 - [[watchdog-agent/watchdog-agent/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: defines_method) — *RebuildMenu dynamically pulls status updates and registers actions*
 
 ### 🔌 Consumers (Inbound)
