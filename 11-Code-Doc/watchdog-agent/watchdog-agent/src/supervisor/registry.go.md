@@ -19,7 +19,7 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/registry.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|FindServiceByName]] (function: calls) — *FindServiceByName retrieves a registered service pointer by name*
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|FindServiceByName]] (function: calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|supervisor.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|lock_windows.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|FindPythonCmd]] (function: calls) — *FindPythonCmd locates python3 or python command in virtual environment or system fallback*

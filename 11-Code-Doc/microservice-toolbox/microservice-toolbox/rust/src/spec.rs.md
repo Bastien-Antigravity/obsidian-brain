@@ -18,7 +18,7 @@ tags:
 Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 
 > **Essential Process**:
-> ! Standardizes self-describing microservice specifications and dynamic ! registration with web-interface across the Bastien-Antigravity fleet for Rust. ! Auto-resolves runtime listen/REST addresses, dynamic semver, active ! profile, and documentation links from AppConfig. ! ! FAIL-FAST PRINCIPLE: ! Zero silent fallbacks, zero default values, and zero dummy placeholders. ! Microservices must explicitly declare their own specification metadata ! (name, tag, layer, category, description, doc_link, protocol, framing). ! Configuration addresses (including web_interface) must resolve strictly; ! missing capabilities, missing ports, or missing metadata FAIL FAST immediately. ! ! DATA FLOW: ! 1. Microservice ServiceSpec + Capability Name -> Dynamic AppConfig Lookups ! 2. Strict Fail-Fast Validation of all required fields & dynamic endpoints ! 3. POST to /api/v1/register with exponential backoff and randomized jitter ! ! KEY PARAMETERS: ! - app_config: Active AppConfig for capability host/port/version resolution. ! - logger: Universal Logger for status logging and retry diagnostics. ! - capability: Capability key in AppConfig e.g. "config_server". ! - base: Microservice-provided ServiceSpec containing domain metadata. use crate::config::loader::AppConfig; use crate::utils::logger::Logger; use serde::{Deserialize, Serialize}; use std::collections::HashMap; use std::sync::Arc; use std::time::Duration; use tokio::io::{AsyncReadExt, AsyncWriteExt}; use tokio::net::TcpStream;
+> ! Standardizes self-describing microservice specifications, Exchange Contracts, ! IDL schema extractors, and dynamic registration with web-interface for Rust. ! Auto-resolves runtime listen/REST addresses, dynamic semver, host node, ! and documentation links from AppConfig. ! ! FAIL-FAST PRINCIPLE: ! Zero silent fallbacks, zero default values, and zero dummy placeholders. ! Microservices must explicitly declare their own specification metadata ! (name, tag, layer, category, description, doc_link, protocol, framing). ! Configuration addresses (including web_interface) must resolve strictly; ! missing capabilities, missing ports, or missing metadata FAIL FAST immediately. ! ! DATA FLOW: ! 1. Microservice ServiceSpec + Capability Name -> Dynamic AppConfig Lookups ! 2. Strict Fail-Fast Validation of all required fields & dynamic endpoints ! 3. POST to /api/v1/register with exponential backoff and randomized jitter ! ! KEY PARAMETERS: ! - app_config: Active AppConfig for capability host/port/version resolution. ! - logger: Universal Logger for status logging and retry diagnostics. ! - capability: Capability key in AppConfig e.g. "config_server". ! - base: Microservice-provided ServiceSpec containing domain metadata. use crate::config::loader::AppConfig; use crate::utils::logger::Logger; use chrono::SecondsFormat; use rand::Rng; use regex::Regex; use serde::{Deserialize, Serialize}; use std::collections::HashMap; use std::path::Path; use std::sync::Arc; use std::time::Duration; use tokio::io::{AsyncReadExt, AsyncWriteExt}; use tokio::net::TcpStream;
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
@@ -30,29 +30,53 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: calls) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ServiceSpec.default]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.critical]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.debug]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.warning]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: calls) — *Logger trait defines the standard interface for structured logging across the toolbox.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.new]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/rust/src/lib.rs.md|lib.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|CanvasSpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractOperation]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractPeer]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractsEnvelope]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|DependencySpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ExchangeContract]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|HealthSpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ProtocolSpec]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ServiceSpec.default]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ServiceSpec]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ServiceSpec]] (struct: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|_extract_port]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|build_contracts_envelope]] (function: belongs_to) — *Alias matching Python's `build_contracts_envelope`.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|build_spec_from_config]] (function: belongs_to) — *Zero silent fallback or dummy placeholders.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|compact_capnp_lines]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|current_hostname]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|delay_with_jitter]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|display_address]] (function: belongs_to) — *Normalizes wildcard or shorthand bind addresses into displayable addresses.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|extract_brace_body]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|extract_capnp_operations]] (function: belongs_to) — *Parses enum and struct declarations from raw .capnp IDL text.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|extract_proto_operations]] (function: belongs_to) — *Parses protobuf service and RPC declarations from raw .proto IDL text.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_default_health]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_empty_canvas]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_zero_f64]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_zero_i32]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|new_contracts_envelope]] (function: belongs_to) — *Wraps microservice-owned contracts with UTC generation metadata.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish]] (function: belongs_to) — *Dynamic registration alias adhering to fleet standards.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec]] (function: belongs_to) — *FAIL-FAST: Validates web_interface reachability and specification synchronously before spawning.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_internal]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_sync]] (function: belongs_to) — *FAIL-FAST: Returns error immediately if web_interface or specification validation fails.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_with_lifecycle]] (function: belongs_to) — *Dynamic registration with lifecycle integration alias adhering to fleet standards.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|read_schema_file]] (function: belongs_to) — *Reads an embedded or disk schema file cleanly, returning empty string when missing.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|resolve_contract_port]] (function: belongs_to) — *Extracts the TCP/UDP port integer from a host:port string.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|send_register_post]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

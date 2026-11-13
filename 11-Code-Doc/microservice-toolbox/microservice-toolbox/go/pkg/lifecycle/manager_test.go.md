@@ -19,7 +19,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/lifecycle/manage
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: calls) — *Register adds a named cleanup function to the shutdown sequence.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.ExecuteCleanups]] (method: calls) — *ExecuteCleanups runs all registered cleanup hooks in LIFO order and drains the hook list.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: calls) — *Register adds a named cleanup function to the shutdown sequence safely under mutex.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Wait]] (method: calls) — *then executes all registered cleanups in reverse registration order (LIFO).*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|NewManager]] (function: calls) — *NewManager creates a new lifecycle manager with default logging.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|manager.go]] (same_package)

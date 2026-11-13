@@ -20,7 +20,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/serializers/pr
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/business/helpers.go.md|Serialize]] (function: calls) — *Serialize converts a business object into a JSON byte array.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|BinSerializer.default]] (method: defines_method)

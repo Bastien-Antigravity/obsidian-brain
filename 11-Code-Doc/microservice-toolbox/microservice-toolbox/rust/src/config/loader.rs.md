@@ -138,4 +138,5 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/wiretap/mod.rs.md|mod.rs]] (calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/wiretap/mod.rs.md|mod.rs]] (imports)
 <!-- SYNC:END -->

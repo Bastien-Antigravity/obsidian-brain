@@ -24,6 +24,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|contracts.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|encode]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
@@ -35,6 +36,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_background_publisher]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_extract_port]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|build_spec_from_config]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|from_dict]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish_service_spec]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish_sync]] (function: belongs_to)

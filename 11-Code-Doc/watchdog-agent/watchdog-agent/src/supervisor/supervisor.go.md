@@ -21,7 +21,7 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/supervisor.go`
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Info]] (method: calls)
-- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.Start]] (method: calls) — *Start launches the continuous log shipper background loop.*
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.Start]] (method: calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|LaunchPostgresAttempt]] (function: calls) — *if it is not already running. It returns true if successful or if it was already running.*
 - [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|postgres_launcher.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/utils/lock_windows.go.md|lock_windows.go]] (imports)
@@ -37,14 +37,14 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/supervisor.go`
 - [[watchdog-agent/watchdog-agent/src/supervisor/postgres_launcher.go.md|postgres_launcher.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|registry.go]] (calls)
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|registry.go]] (same_package)
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|BuildService]] (function: belongs_to) — *BuildService executes the compilation step for a service*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|FindServiceByName]] (function: belongs_to) — *FindServiceByName retrieves a registered service pointer by name*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|IsPortListening]] (function: belongs_to) — *IsPortListening checks if TCP port listens*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|KillAll]] (function: belongs_to) — *KillAll kills all supervised command processes clean*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogError]] (function: belongs_to) — *LogError writes a formatted error message with watchdog prefix to stderr/logger*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: belongs_to) — *LogInfo writes a formatted message with watchdog prefix to stdout/logger*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|MonitorAndSupervise]] (function: belongs_to) — *MonitorAndSupervise is the supervisor runner loop*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|PipeOutput]] (function: belongs_to) — *PipeOutput routes logs from subprocess stdout/stderr with service prefixes*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|RegisterCmd]] (function: belongs_to) — *RegisterCmd adds a command to the active list*
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|UnregisterCmd]] (function: belongs_to) — *UnregisterCmd removes a command from the active list*
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|BuildService]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|FindServiceByName]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|IsPortListening]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|KillAll]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogError]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|MonitorAndSupervise]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|PipeOutput]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|RegisterCmd]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|UnregisterCmd]] (function: belongs_to)
 <!-- SYNC:END -->

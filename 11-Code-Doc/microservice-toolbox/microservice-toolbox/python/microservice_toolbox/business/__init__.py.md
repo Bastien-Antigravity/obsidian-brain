@@ -17,5 +17,5 @@ tags:
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/models.py.md|models.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- None detected
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
 <!-- SYNC:END -->

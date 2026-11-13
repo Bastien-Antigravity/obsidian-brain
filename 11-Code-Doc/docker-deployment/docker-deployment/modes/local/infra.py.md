@@ -33,8 +33,8 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/local/__init__.py.md|__init__.py]] (imports)
-- [[docker-deployment/docker-deployment/modes/local/infra.py.md|LOCAL_DIR]] (constant: belongs_to) — *Locate directories*
-- [[docker-deployment/docker-deployment/modes/local/infra.py.md|MODES_DIR]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/modes/local/infra.py.md|LOCAL_DIR]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/modes/local/infra.py.md|MODES_DIR]] (constant: belongs_to) — *Locate directories*
 - [[docker-deployment/docker-deployment/modes/local/infra.py.md|SCRIPTS_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/infra.py.md|check_infrastructure_ports]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/modes/local/infra.py.md|ensure_infrastructure_local]] (function: belongs_to)

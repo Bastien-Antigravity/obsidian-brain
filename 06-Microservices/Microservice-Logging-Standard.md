@@ -31,13 +31,22 @@ This protocol defines the standardized logging behavior, interface contracts, in
 
 ## 2. Standard Log Levels & Domain Guidelines
 
-| Level | Severity | Usage Scope & Guidelines | Example |
+> [!IMPORTANT] Canonical Source of Truth (`flexible-logger/src/models/level.go`)
+> Only the 12 enum values in `flexible-logger/src/models/level.go` (`LevelNotSet = 0` plus active levels `1..11`) exist in the ecosystem (`universal-logger`, `log-server`, `microservice-toolbox`, and `watchdog-agent`). Aliases like `WARN`, `CRIT`, `TRACE`, `NOTICE`, `ALERT`, `EMERG`, `FATAL`, or `PANIC` do NOT exist.
+
+| Level | Severity (`uint8`) | Usage Scope & Guidelines | Example |
 | :--- | :---: | :--- | :--- |
-| **DEBUG** | 1 | Detailed diagnostic data, raw payloads (sanitized), loop iterations. | `Evaluating ticker BTCUSDT depth ladder` |
-| **INFO** | 2 | Milestones, successful operations, worker lifecycle events. | `Starting web-interface under profile: native` |
-| **WARNING** | 3 | Retries, fallback address resolutions, CSRF token rejections, auth failures. | `Falling back to default listen address 127.0.0.1:5000` |
-| **ERROR** | 4 | Recoverable faults, DB connection drops, query failures, external API timeouts. | `Database query execution failed: %v` |
-| **CRITICAL**| 5 | Fatal failures, inability to bind network port, unrecoverable state corruption. | `Failed to bind TCP listener on port 5000: %v` |
+| **DEBUG** | `1` | Detailed diagnostic data, raw payloads (sanitized), loop iterations. | `Evaluating ticker BTCUSDT depth ladder` |
+| **STREAM** | `2` | High-frequency market data / continuous frame ingestion telemetry. | `Subscribed NATS tick stream BTCUSDT` |
+| **INFO** | `3` | Milestones, successful operations, worker lifecycle events. | `Starting web-interface under profile: native` |
+| **LOGON** | `4` | Session authentication / exchange or client handshake establishment. | `Authenticated WebSocket session user=admin` |
+| **LOGOUT** | `5` | Clean session termination / teardown milestones. | `Closed FIX session on operator request` |
+| **TRADE** | `6` | Order lifecycle, execution fills, strategy signal transitions. | `Filled limit order BUY 1.5 BTC @ 64500` |
+| **SCHEDULE** | `7` | Scheduled task triggers, periodic batch jobs, cron ticks. | `Triggered daily TimescaleDB retention sweep` |
+| **REPORT** | `8` | Analytical summaries, compliance reports, telemetry digests. | `Published end-of-day PnL ledger digest` |
+| **WARNING** | `9` | Retries, transient reconnects, CSRF token rejections, non-fatal auth failures. | `Retrying upstream MFE registration (attempt 2/5)` |
+| **ERROR** | `10` | Recoverable faults, DB connection drops, query failures, external API timeouts (`shipper` persisted). | `Database query execution failed: %v` |
+| **CRITICAL** | `11` | Fatal failures, inability to bind configured network port, unrecoverable state corruption (`shipper` persisted). | `Failed to bind TCP listener on configured address %s: %v` |
 
 ---
 

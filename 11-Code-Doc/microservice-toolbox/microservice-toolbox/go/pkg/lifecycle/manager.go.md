@@ -19,15 +19,18 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/lifecycle/manage
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: defines_method) — *Register adds a named cleanup function to the shutdown sequence.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.ExecuteCleanups]] (method: defines_method) — *ExecuteCleanups runs all registered cleanup hooks in LIFO order and drains the hook list.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: defines_method) — *Register adds a named cleanup function to the shutdown sequence safely under mutex.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Wait]] (method: defines_method) — *then executes all registered cleanups in reverse registration order (LIFO).*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: calls) — *production microservices from silently running dark without operational logs.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|logger.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Error]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Info]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|GRPCServer.Stop]] (method: calls) — *Stop performs a graceful shutdown.*
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: belongs_to) — *Register adds a named cleanup function to the shutdown sequence.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.ExecuteCleanups]] (method: belongs_to) — *ExecuteCleanups runs all registered cleanup hooks in LIFO order and drains the hook list.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: belongs_to) — *Register adds a named cleanup function to the shutdown sequence safely under mutex.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Wait]] (method: belongs_to) — *then executes all registered cleanups in reverse registration order (LIFO).*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager]] (struct: belongs_to) — *Manager handles application lifecycle and graceful shutdown.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager]] (struct: defines_method) — *Manager handles application lifecycle and graceful shutdown.*

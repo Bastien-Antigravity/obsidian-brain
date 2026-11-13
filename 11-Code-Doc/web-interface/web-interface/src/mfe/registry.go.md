@@ -1,13 +1,4 @@
----
-microservice: web-interface
-type: note
-status: active
-tags:
-- '#service/web-interface'
-- '#type/note'
-- '#state/active'
-- '#zone/3-fleet'
----
+
 
 ## 📝 Description
 Automatically generated mirror for `web-interface/src/mfe/registry.go`.
@@ -23,6 +14,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|HealthSpec.UnmarshalJSON]] (method: defines_method) — *UnmarshalJSON supports both camelCase (timeoutMs) and snake_case (timeout_ms).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: defines_method) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: defines_method) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.HandleGetContracts]] (method: defines_method) — *HandleGetContracts serves the ContractsEnvelope JSON published for a registered microservice.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: defines_method) — *6. RegisteredAt timestamp*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: defines_method) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: defines_method) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
@@ -30,7 +22,6 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: defines_method) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: defines_method) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleGetContracts]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: defines_method)
@@ -63,6 +54,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: belongs_to) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: belongs_to) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: belongs_to) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.HandleGetContracts]] (method: belongs_to) — *HandleGetContracts serves the ContractsEnvelope JSON published for a registered microservice.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: belongs_to) — *6. RegisteredAt timestamp*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: belongs_to) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: belongs_to) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
@@ -70,7 +62,6 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: belongs_to) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: belongs_to) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleGetContracts]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: belongs_to)

@@ -20,7 +20,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/bootstrap/bootst
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args_test.go.md|args_test.go]] (imports)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|ConfigureFromConfig]] (function: calls) — *and starts the background reporter loop.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap_test.go.md|wiretap_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

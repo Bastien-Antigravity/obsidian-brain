@@ -159,51 +159,48 @@ Because the Web Component executes in the client's browser (loaded under the `we
 During initial bootstrap, microservices register their declarative specification with `web-interface` using the standard `microservice-toolbox/spec` engine. 
 
 > [!IMPORTANT]
-> **Zero Manual Loops & Infinite Resilience Contract (`MaxRetries: -1`)**:
-> Microservices MUST NOT write bespoke HTTP `urllib` or `http.Client` retry loops. All registration MUST leverage `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), or `spec::publish_with_lifecycle` (Rust). The spec engine automatically handles:
-> - Non-blocking execution (`ModeNonBlocking`) to prevent startup deadlocks.
-> - Infinite retry with randomized exponential backoff until `web-interface` is reachable.
-> - Docker Guard address resolution (`0.0.0.0` vs container/host IP).
-> - Dynamic version resolution from `VERSION.txt`.
-> - Strict fail-fast validation of required metadata.
+> **Zero Manual Loops, Auto-Enrichment & Infinite Resilience Contract (`MaxRetries: -1`)**:
+> Microservices MUST NOT write bespoke HTTP `urllib` / `http.Client` retry loops, manually read `VERSION.txt` or `os.Hostname()`, or hand-roll `.proto`/`.capnp`/FastAPI parsers. All registration MUST leverage `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), `spec::publish_with_lifecycle` (Rust), or `SpecPublisher::PublishWithLifecycle` (C++17, plus `contracts.h` for C11). Via `BuildSpecFromConfig`, the `spec` engine automatically handles:
+> - Non-blocking execution (`ModeNonBlocking`) + lifecycle cleanup hook via `LifecycleManager` (`lm`).
+> - Infinite retry with randomized exponential backoff + jitter until `web-interface` is reachable.
+> - Automatic derivation from `AppConfig`: `URL` (from `rest_addr` / `listen_addr`), `%s` port substitution in `Framing`, `DataStructure` (`version` via `appConfig.GetVersion()` / `get_version()`, `capability`, `ports`, `node`), `NavRoute`, `Canvas`, and `Health` probes.
+> - Strict fail-fast cold-path validation of required metadata and `web_interface` capability (zero silent fallbacks or hot-path clutter).
 
 *   **Go Auto-Registration Hook (`microservice-toolbox/go/pkg/spec`)**:
     ```go
-    import (
-        "fmt"
-        "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/spec"
-    )
+    import "github.com/Bastien-Antigravity/microservice-toolbox/go/pkg/spec"
 
-    // Register OpenMFE & Service Specification during bootstrap
-    spec.PublishWithLifecycle(appConfig, appLogger, spec.ServiceSpec{
-        Name:        "config-server",
-        Tag:         "config-server-mfe",
-        URL:         fmt.Sprintf("http://127.0.0.1:%s/static/js/mfe-loader.js", restPort),
-        NavTitle:    "⚙️ Config Server",
-        Layer:       "L1",
-        Category:    "Base Fleet",
-        Priority:    20,
-        Icon:        "fa-cogs",
-        Description: "Central configuration repository and real-time distributor.",
-        Protocol:    "TCP Sync / gRPC / REST",
-        Framing:     fmt.Sprintf("Port %s TCP / Port %s REST / Port %s gRPC", tcpPort, restPort, grpcPort),
-        DocLink:     "obsidian-brain/06-Microservices/config-server.md",
+    // PublishWithLifecycle runs BuildSpecFromConfig automatically (URL, Framing %s ports, Version, Node, Health)
+    _ = spec.PublishWithLifecycle(appConfig, appLogger, lm, "config_server", spec.ServiceSpec{
+        Name:         "Config Server",
+        Tag:          "config-server-mfe",
+        URL:          fmt.Sprintf("http://%s/static/js/mfe-loader.js", restAddr), // or omit to auto-derive http://<restAddr>
+        NavTitle:     "⚙️ Config Server",
+        Layer:        "L1",
+        Category:     "Base Fleet",
+        Priority:     20,
+        Icon:         "fa-cogs",
+        Description:  "Central configuration repository and real-time distributor.",
+        Protocol:     "TCP Sync / gRPC / REST",
+        Framing:      "Port %s TCP / Port %s REST / Port %s gRPC",
+        DocLink:      "obsidian-brain/06-Microservices/config-server.md",
+        Contracts:    exchangeContracts, // built with spec.ExtractProtoTextOperations / ExtractCapnpOperations / RenderProtoIDL
         RequiresAuth: true,
     })
     ```
 
-*   **Python Auto-Registration Hook (`microservice_toolbox.spec`)**:
+*   **Python Auto-Registration Hook (`microservice_toolbox.spec` & `contracts`)**:
     ```python
     from microservice_toolbox.spec import publish_with_lifecycle, ServiceSpec
 
-    # Register OpenMFE & Service Specification during bootstrap
     publish_with_lifecycle(
         app_config,
         logger,
-        ServiceSpec(
-            name="market-observer",
+        lm,
+        "market_observer",
+        spec=ServiceSpec(
+            name="Market Observer",
             tag="market-observer-mfe",
-            url=f"http://127.0.0.1:{rest_port}/static/mfe.js",
             nav_title="📈 Market Observer",
             layer="L2",
             category="Trading & Execution",
@@ -211,10 +208,11 @@ During initial bootstrap, microservices register their declarative specification
             icon="fa-line-chart",
             description="Real-time market data observer and signal ingestion.",
             protocol="HTTP/1.1 REST",
-            framing=f"Port {rest_port} REST",
+            framing="Port %s REST",
             doc_link="obsidian-brain/06-Microservices/market-observer.md",
+            contracts=exchange_contracts,  # built via extract_fastapi_operations / extract_proto_operations
             requires_auth=True,
-        )
+        ),
     )
     ```
 
@@ -225,10 +223,11 @@ During initial bootstrap, microservices register their declarative specification
     publish_with_lifecycle(
         &app_config,
         app_logger.clone(),
+        Some(&lm),
+        "log_server",
         ServiceSpec {
-            name: "log-server".to_string(),
+            name: "Log Server".to_string(),
             tag: "log-server-mfe".to_string(),
-            url: format!("http://127.0.0.1:{}/static/mfe.js", rest_port),
             nav_title: "📋 Log Server".to_string(),
             layer: "L1".to_string(),
             category: "Base Fleet".to_string(),
@@ -236,11 +235,13 @@ During initial bootstrap, microservices register their declarative specification
             icon: "fa-terminal".to_string(),
             description: "High-performance Rust logging daemon.".to_string(),
             protocol: "SafeSocket TCP / REST".to_string(),
-            framing: format!("Port {} SafeSocket TCP", tcp_port),
+            framing: "Port %s SafeSocket TCP".to_string(),
             doc_link: "obsidian-brain/06-Microservices/log-server.md".to_string(),
+            contracts: exchange_contracts, // built via microservice_toolbox::contracts
             requires_auth: false,
+            ..Default::default()
         },
-    );
+    )?;
     ```
 
 
@@ -403,7 +404,7 @@ sequenceDiagram
 
 #### 4. Network Isolation: Why Browsers Cannot Reach `log-server` Directly
 1. **Transport Sandbox**: `log-server` operates on high-speed raw TCP with length-prefixed binary framing (`safe-socket`). Web browsers operate in a sandbox where raw TCP sockets cannot be opened (only HTTP/WebSockets are permitted).
-2. **Docker Guard & Security Segmentation**: Internal microservice daemon ports (such as `9020`) are bound to internal container bridges or localhost loops. Directly exposing backend TCP logging ports to external browsers is a critical security vulnerability. `web-interface` acts as the authorized telemetry gateway.
+2. **Network & Security Segmentation**: Internal microservice daemon ports (such as `9020`) bind exclusively to internal container bridges or localhost interfaces configured via `AppConfig`. Directly exposing backend TCP logging ports to external browsers is a critical security vulnerability. `web-interface` acts as the authorized telemetry gateway.
 
 #### 5. Offline Fallback & Self-Healing Queue
 When a client cannot reach `web-interface` (e.g. offline client, network partition, or `web-interface` restarting):

@@ -19,6 +19,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/terminal
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/helpers.rs.md|helpers.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|get_hostname]] (function: calls) — *Get system hostname (cached)*
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|helpers.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|helpers.rs]] (same_package)

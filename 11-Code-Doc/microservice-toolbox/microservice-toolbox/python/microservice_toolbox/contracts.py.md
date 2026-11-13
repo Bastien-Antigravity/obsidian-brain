@@ -23,11 +23,17 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|ContractOperation]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|ContractPeer]] (class: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|ContractsEnvelope]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|ExchangeContract]] (class: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|_compact_capnp_lines]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|_extract_brace_body]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|build_contracts_envelope]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|display_address]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|extract_capnp_operations]] (function: belongs_to) — *Parses enum and struct declarations from raw .capnp IDL text.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|extract_fastapi_operations]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|extract_proto_operations]] (function: belongs_to) — *Parses protobuf service and rpc declarations from raw .proto IDL text.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|from_dict]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|new_contracts_envelope]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|read_schema_file]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|resolve_contract_port]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/contracts.py.md|to_dict]] (function: belongs_to)

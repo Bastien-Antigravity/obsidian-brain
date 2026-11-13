@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `watchdog-agent/src/control/control_plane.go`.
 
 > **Essential Process**:
-> NATS control plane telemetry publisher for watchdog-agent. Publishes periodic node heartbeats, health statuses, and dynamic supervised process states over the ecosystem NATS messaging bus.
+> NATS control plane client and telemetry publisher for watchdog-agent. Connects asynchronously with exponential backoff, publishes periodic node heartbeats, and exposes lock-free Publish for real-time fleet incidents.
 
 ## 🏗️ Architectural Context
 
@@ -28,6 +28,6 @@ Automatically generated mirror for `watchdog-agent/src/control/control_plane.go`
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|NodeStatus]] (struct: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|ServiceStatus]] (struct: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|StartNATSControlPlane]] (function: belongs_to) — *StartNATSControlPlane connects to the NATS event bus and publishes node heartbeats*
+- [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|StartNATSControlPlane]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|collectServicesStatus]] (function: belongs_to)
 <!-- SYNC:END -->

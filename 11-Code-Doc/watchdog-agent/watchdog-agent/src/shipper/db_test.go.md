@@ -14,8 +14,8 @@ Automatically generated mirror for `watchdog-agent/src/shipper/db_test.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|DBConfig.DSN]] (method: calls) — *DSN returns the formatted PostgreSQL connection string.*
-- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|ResolveDBConfigWithAppConfig]] (function: calls) — *3. Resilient ecosystem fallback defaults.*
+- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|DBConfig.DSN]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|ResolveDBConfigWithAppConfig]] (function: calls) — *targeting Option B (base ecosystem 'obsidiandb') and fails fast on missing values.*
 - [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|db.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

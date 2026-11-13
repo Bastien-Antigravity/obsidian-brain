@@ -19,6 +19,8 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|buildMainHTTPHandler]] (function: calls) — *buildMainHTTPHandler wires the split public/protected HTTP handler used in production and integration tests.*
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Close]] (method: defines_method)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Critical]] (method: defines_method)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Debug]] (method: defines_method)
@@ -44,6 +46,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestMFEShellHeaderAndHeroStructure]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestOpenMFERegistrationAPIAndFluidLayout]] (function: belongs_to)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestProductionSplitMuxContractsAndAuth]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestSetupRoutesAndRendering]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestSetupRoutesMFERouting]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestStaticJSEndpoints]] (function: belongs_to)

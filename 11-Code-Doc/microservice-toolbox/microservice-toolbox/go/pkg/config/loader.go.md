@@ -46,12 +46,11 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.loadPublicKey]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/merger.go.md|DeepMerge]] (function: calls) — *If a key exists in both and the source is not a map, the source value overwrites the destination.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/merger.go.md|merger.go]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|NewResolver]] (function: calls) — *NewResolver creates a new network resolver.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: calls) — *production microservices from silently running dark without operational logs.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|logger.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Info]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|Get]] (function: calls) — *It resolves the version on first call and caches the result.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|Get]] (function: calls) — *It resolves the version on first call, caches the result, and panics fail-fast if unresolved.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|version.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

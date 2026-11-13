@@ -22,8 +22,8 @@ Every microservice MUST follow this sequence during the `main()` initialization 
 3.  **Phase 3: CLI Arguments**: Apply command-line flags. **CLI always wins.**
 4.  **Phase 4: Remote Sync**: If the bridge is active, synchronize with the global configuration state (Service Discovery).
 5.  **Phase 5: OpenMFE Auto-Registration, Exchange Contracts & Real-Time WireTap Telemetry**:
-    - All microservices register their declarative `ServiceSpec` + `Contracts` (`ExchangeContract[]`) via `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), `spec::publish_with_lifecycle` (Rust), or `SpecPublisher::PublishWithLifecycle` (C++, with `contracts.h` for C ABI) in a non-blocking background loop (`MaxRetries: -1`) to `web-interface` (see [[OpenMFE-Integration-Protocol]]). HTTP-capable services also expose `GET /api/v1/contracts`.
-    - `BootstrapService` (Go) and `init_microservice` / `configure_from_config` (Python) automatically initialize the lock-free **WireTap** transport telemetry engine (`microservice-toolbox/go/pkg/wiretap`, `microservice_toolbox/wiretap.py`), binding `safe-socket`, gRPC (`teleremote`, `notification`, `network`), and NATS (`messaging`) to stream live `EdgeReport`s and segregated logical channels to `web-interface`.
+    - All microservices resolve version via `appConfig.GetVersion()` / `app_config.get_version()` and register their declarative `ServiceSpec` + `Contracts` (`ExchangeContract[]`) via `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), `spec::publish_with_lifecycle` (Rust), or `SpecPublisher::PublishWithLifecycle` (C++, with `contracts.h` for C ABI) in a non-blocking background loop (`MaxRetries: -1`) to `web-interface` (see [[OpenMFE-Integration-Protocol]]). `BuildSpecFromConfig` automatically enriches `URL`, `%s` ports in `Framing`, `DataStructure` (`version` from `appConfig.GetVersion()`, `capability`, `ports`, `node`), `NavRoute`, `Canvas`, and `Health`; HTTP-capable services also expose `GET /api/v1/contracts`.
+    - `BootstrapService` (Go) and `init_microservice` / `configure_from_config` (Python) automatically initialize the lock-free **WireTap** transport telemetry engine (mirrored across Go, Python, Rust `src/wiretap/mod.rs`, and C++17 `wiretap/WireTap.hpp`), binding `safe-socket`, gRPC (`teleremote`, `notification`, `network`), and NATS (`messaging`) to stream live `EdgeReport`s and segregated logical channels to `web-interface`.
 
 ### 1.1 Level 3 Hybrid Logic (Standalone vs. Connected)
 For Level 3 services (Analysis/Observation), an additional logic gate is required during Phase 2:
@@ -55,32 +55,33 @@ The following flags are mandatory and handled automatically by the toolbox:
 ### 🐹 Go
 ```go
 func main() {
-    // Toolbox handles --profile and standard flags automatically
-    appConfig, err := config.LoadConfig("standalone", nil) 
-    // Access custom flags via appConfig.Args.Extra["my-flag"]
+    appConfig, log := bootstrap.BootstrapService("my-service")
+    defer log.Close()
+    ver := appConfig.GetVersion() // Dedicated AppConfig method (VERSION.txt only)
 }
 ```
 
 ### 🦀 Rust
 ```rust
-fn main() {
+fn main() -> Result<(), Box<dyn std::error::Error>> {
     let ac = AppConfig::load_config("standalone", None)?;
-    // Access custom flags via ac.cli_args.extras
+    let ver = ac.get_version(); // Dedicated AppConfig method (VERSION.txt only)
+    Ok(())
 }
 ```
 
 ### 🐍 Python
 ```python
 def main():
-    ac = load_config("standalone")
-    # Access custom flags via ac.args.extras
+    ac, log, lm = init_microservice(__file__, app_name="my_service")
+    ver = ac.get_version()  # Dedicated AppConfig method (VERSION.txt only)
 ```
 
-### 🧊 C++
+### 🧊 C++17
 ```cpp
 int main(int argc, char** argv) {
     auto ac = LoadConfig("standalone", argc, argv);
-    // Access custom flags via ac->GetArgs().extras
+    std::string ver = ac->GetVersion(); // Dedicated AppConfig method (VERSION.txt only)
 }
 ```
 
@@ -101,9 +102,9 @@ All microservices communicating with sibling daemons or central ecosystem infras
   - gRPC Streams: Integrated into `microservice-toolbox/go/pkg/teleremote` (`TeleClient.connectionManager`) with automatic infinite reconnect loop.
   - NATS / JetStream: Managed via `microservice-toolbox/go/pkg/messaging` (`Connect`) with automated reconnect handlers.
 
-### 5.2 Dynamic Capability Resolution & Docker Guard (`connectivity.Resolver`)
-- **No Hardcoded Addresses**: Always resolve sibling endpoints dynamically using toolbox capability accessors (e.g. `appConfig.GetListenAddr("web_interface")`, `appConfig.GetGRPCListenAddr("tele_remote")`).
-- **Docker Guard Suppression**: `connectivity.Resolver` automatically translates bind addresses to `0.0.0.0` in container environments (`DOCKER_ENV=true`) while preserving native loopback/host bindings in local environments.
+### 5.2 Config-Verbatim Capability Resolution (`connectivity.Resolver` & CLI Docker Guard)
+- **No Hardcoded Addresses & Trust `AppConfig`**: Always resolve sibling endpoints directly from pre-validated `AppConfig` string getters (`appConfig.GetListenAddr("web_interface")`, `appConfig.GetGRPCListenAddr("tele_remote")`), failing fast if empty or unconfigured (zero silent fallback).
+- **Verbatim Binding (`connectivity.Resolver`)**: `connectivity.Resolver` preserves configured `AppConfig` IP, hostname, and port values **verbatim** in both Native and Docker environments (never rewriting them to `0.0.0.0`), while CLI Docker Guard (`config`) suppresses CLI `--host`/`--port`/`--grpc_host`/`--grpc_port` overrides inside containers.
 
 ### 5.3 Lifecycle Supervision (`lifecycle.Manager`)
 - **LIFO Graceful Shutdown**: Traps OS signals (`SIGINT`, `SIGTERM`) and context cancellations via `lm.Wait(ctx)`.

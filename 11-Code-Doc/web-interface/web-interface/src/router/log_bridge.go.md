@@ -28,6 +28,8 @@ Automatically generated mirror for `web-interface/src/router/log_bridge.go`.
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (same_package)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 - [[web-interface/web-interface/src/router/log_bridge.go.md|formatLevelString]] (function: belongs_to) — *formatLevelString converts numeric protobuf enum to string representation*

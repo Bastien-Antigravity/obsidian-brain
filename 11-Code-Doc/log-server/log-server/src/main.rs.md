@@ -20,7 +20,7 @@ Automatically generated mirror for `log-server/src/main.rs`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: calls) — *Create new log server instance*
-- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: calls) — *Run the log server with all components*
+- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
 - [[log-server/log-server/src/facade/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/utils/mod.rs.md|mod.rs]] (imports)

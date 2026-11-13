@@ -22,11 +22,13 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Close]] (method: calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Critical]] (method: calls)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Error]] (method: calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Info]] (method: calls)
 - [[web-interface/web-interface/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance with dynamic config support.*
 - [[web-interface/web-interface/src/core/controller.go.md|controller.go]] (imports)
 - [[web-interface/web-interface/src/mfe/registry.go.md|NewRegistry]] (function: calls) — *NewRegistry instantiates a new Registry, loading existing services from disk.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: calls) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.HandleGetContracts]] (method: calls) — *HandleGetContracts serves the ContractsEnvelope JSON published for a registered microservice.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: calls) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
@@ -47,5 +49,9 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/src/telegram/manager.go.md|manager.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|buildMainHTTPHandler]] (function: belongs_to) — *buildMainHTTPHandler wires the split public/protected HTTP handler used in production and integration tests.*
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|isLoopbackCaller]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 <!-- SYNC:END -->

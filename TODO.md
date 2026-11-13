@@ -24,34 +24,28 @@ tags:
 ## 📡 Autonomous Fleet Error Shipping & Real-Time Auto-Repair
 
 ### 📊 Global Synthesis of Current Functionality
-An asynchronous, zero-loss operational observability and real-time self-healing pipeline has been engineered across `watchdog-agent`, TimescaleDB, and `squad-agent`:
-- **Log Harvesting**: Multi-file tailer scans native workspaces (`*/logs/*.log`) or Docker volumes (`/var/log/fleet/*.log`).
-- **Zero-Allocation Parser**: Fixed-width 8-column parser extracting errors (`level >= ERROR`) with regex fallback.
-- **Durable Checkpointing**: Thread-safe cursor management in `.shipper_offsets.json` with file truncation and inode rotation detection.
-- **TimescaleDB Hypertable**: Partitioned `fleet_error_logs` storage with automatic DDL startup verification (`EnsureSchema`).
-- **Resilient Offset Freeze**: Database outage handling where offsets remain frozen during downtime and replay without data loss.
-- **Orchestrator Decoupling**: Modular operational switches (`--mode=shipper`, `--supervise=false`) ensuring zero conflict with Docker daemon.
-- **Real-Time SRE Triage**: Event dispatching over NATS (`bastien-antigravity.fleet.incident`) with a 60s signature-based throttler to trigger **Role 15: Fleet Healer & Auto-Repair Sentinel** (`Prompt-Fleet-AutoRepair.md`).
+An asynchronous, zero-loss operational observability and real-time self-healing pipeline has been engineered across `watchdog-agent`, `obsidiandb` (TimescaleDB + pgvector), and `08-Squad-Agent`:
+- **Per-Service Log Harvesting & Volume Isolation**: Tails native `*/logs/*.log` (filtering forwarded client rows out of `_main.log`) or Docker `fleet-logs:/var/log/fleet/<service>/<service>.log` while keeping `log-server` isolated on `log-server-logs:/var/log/log-server`.
+- **Dual Text + Cloud JSON Parser**: Parses standard 8-column text lines and `flexible-logger` `JSONSerializer` cloud logs with UTF-8 / NUL-byte poison-pill sanitization, restricted strictly to `ERROR` (`10`) and `CRITICAL` (`11`).
+- **Durable Checkpointing**: Thread-safe cursor management in `.shipper_offsets.json` with file truncation, inode rotation detection, and missing-file pruning.
+- **Option B TimescaleDB Schema (`watchdog_agent`)**: Partitioned `watchdog_agent.fleet_error_logs` and `watchdog_agent.fleet_incidents` inside `obsidiandb` with startup DDL verification (`EnsureSchema` & `ensure_fleet_error_schema`) plus `docker-deployment` extension & `pgdata` layout audits.
+- **Resilient Offset Freeze & Backoff**: Offsets freeze during DB outages with `conn_manager.NewCriticalStrategy` exponential backoff and replay idempotently via `event_hash`.
+- **Real-Time AutoRepair Coordinator (`08-Squad-Agent/src/agents/autorepair.py`)**: Brain-partitioned NATS subscriber (`<prefix>[.<brain>].fleet.incident`), signature coalescing, 3-strike circuit breaker, isolated `/tmp` `git worktree` verification, dirty-worktree guard, REST/Telegram 1-click approval, and on-the-fly Enable/Disable toggle.
 
 ### 🛡️ Deepening Roadmap (Hardening, Behavior, Architecture & Testing)
 - [ ] **Hardening & Resilience**:
-  - Implement `.shipper_offsets.json` state compaction (purge deleted log file keys).
-  - Add binary garbage and non-UTF8 sanitization to protect database transactions from malformed log input.
-  - Tune TimescaleDB client pool with statement timeouts and jittered exponential reconnection backoff.
+  - [x] Implemented `.shipper_offsets.json` state pruning, UTF-8/NUL sanitization, `conn_manager` DB backoff, diff safety bounds (`validate_proposed_diff`), and dirty-worktree blocking.
+  - [ ] Tune PostgreSQL `statement_timeout` & run stress chaos tests under continuous log rotation.
 - [ ] **Behavior & Functionality Definition**:
-  - Define canonical cross-language log severity mapping (Go, Rust, Python, C++).
-  - Implement moving-average error burst detection and anomaly tagging (>10 errors/min).
-  - Configure automated chunk drop retention policies on TimescaleDB (`INTERVAL '30 days'`).
-  - Implement NATS incident acknowledgment and resolution status synchronization with `squad-agent`.
+  - [x] Cross-language canonical 12-level severity + Cloud JSON ingestion + AutoRepair runtime toggle (`GET/POST /api/v1/squad/autorepair/*`) & Telegram menu controls.
+  - [ ] Implement moving-average error burst detection (`BURST` tagging >10 errors/min) and automated TimescaleDB retention policy (`INTERVAL '30 days'`).
 - [ ] **Architecture & Multi-Node Topology**:
-  - Specify mutual TLS (mTLS) configuration for remote containerized log shippers connecting across public networks.
-  - Author BDD specification `FEAT-010-Autonomous-Error-Log-Shipping.md` in `02-Business-BDD`.
-  - Extend OpenMFE dashboard in `web-interface` to stream real-time errors and display auto-repair remediation logs.
+  - [ ] Specify mutual TLS (mTLS) configuration for remote containerized log shippers connecting across public networks.
+  - [ ] Author BDD specification `FEAT-010-Autonomous-Error-Log-Shipping.md` in `02-Business-BDD`.
+  - [ ] Extend OpenMFE dashboard in `web-interface` to stream real-time errors and display auto-repair remediation logs.
 - [ ] **Testing & Verification Matrix**:
-  - High-throughput micro-benchmarks (`BenchmarkParseLogLine`) verifying 0 heap allocations under 100k lines/sec.
-  - Automated chaos test simulating database network partitions mid-batch to guarantee zero data loss and offset freezing.
-  - Multi-service end-to-end integration test with live PostgreSQL/TimescaleDB container.
-  - Mock NATS drill simulating auto-repair agent responses to verify incident payload contracts.
+  - [x] Unit test suites passing across `watchdog-agent/src/shipper`, `flexible-logger/src/helpers`, `log-server`, `docker-deployment/scripts/tests`, and `08-Squad-Agent/tests/test_autorepair.py`.
+  - [ ] Add high-throughput Go benchmarks (`BenchmarkParseLogLine`), DB network-partition chaos tests, and live containerized `timescale-db` end-to-end integration tests.
 
 ## ✅ Completed
 - [x] Initial structure for `02-Business-BDD`. (Now `business-bdd-brain`)

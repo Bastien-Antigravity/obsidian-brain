@@ -15,7 +15,7 @@ Automatically generated mirror for `watchdog-agent/src/shipper/parser_test.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParseLogLine]] (function: calls) — *ParseLogLine attempts to parse a standardized log line. Returns (log, true) if level >= ERROR.*
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParseLogLine]] (function: calls) — *Returns (log, true) strictly for canonical ERROR (10) and CRITICAL (11) entries.*
 - [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|parser.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

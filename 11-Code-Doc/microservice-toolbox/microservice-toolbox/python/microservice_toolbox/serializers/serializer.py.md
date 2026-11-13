@@ -30,6 +30,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|marshal]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|unmarshal]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/helpers.rs.md|helpers.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/serializers/serializer.rs.md|serializer.rs]] (calls)

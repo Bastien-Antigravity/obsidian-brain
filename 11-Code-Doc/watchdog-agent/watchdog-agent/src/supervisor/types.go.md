@@ -32,11 +32,11 @@ Automatically generated mirror for `watchdog-agent/src/supervisor/types.go`.
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorNotifServer]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagDashboard]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRagEngine]] (constant: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRed]] (constant: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorRed]] (constant: belongs_to) — *ANSI Color codes for prefixed service logging*
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorReset]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorSquadAgent]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorTeleRemote]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWatchdog]] (constant: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|ColorWebInterface]] (constant: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|Service]] (struct: belongs_to) — *Service represents a managed service configurations*
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|Service]] (struct: belongs_to)
 <!-- SYNC:END -->

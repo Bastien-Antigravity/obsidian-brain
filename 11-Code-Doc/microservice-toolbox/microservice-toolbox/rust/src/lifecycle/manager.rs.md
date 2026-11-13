@@ -24,7 +24,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/lifecycle/mana
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.execute_cleanups]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.new]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: defines_method) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.request_shutdown]] (method: defines_method) — *Wakes `wait()` programmatically to run cleanups.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.wait]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.error]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
@@ -42,11 +43,13 @@ Automatically generated mirror for `microservice-toolbox/rust/src/lifecycle/mana
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.execute_cleanups]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.new]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: belongs_to) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.request_shutdown]] (method: belongs_to) — *Wakes `wait()` programmatically to run cleanups.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.wait]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager]] (struct: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|new_manager]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|new_manager_with_logger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)
 <!-- SYNC:END -->

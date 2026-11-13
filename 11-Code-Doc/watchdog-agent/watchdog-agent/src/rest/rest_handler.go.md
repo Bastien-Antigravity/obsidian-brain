@@ -20,10 +20,10 @@ Automatically generated mirror for `watchdog-agent/src/rest/rest_handler.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/core/controller.go.md|controller.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method) — *Handler returns HTTP multiplexer wrapped in CORS*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: defines_method) — *RegisterRoutes registers the REST routes to the provided mux*
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: defines_method) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method) — *StartServer launches HTTP REST API server*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleRestartAll]] (method: defines_method)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleRestartService]] (method: defines_method)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleStartPostgres]] (method: defines_method)
@@ -43,10 +43,10 @@ Automatically generated mirror for `watchdog-agent/src/rest/rest_handler.go`.
 - [[watchdog-agent/watchdog-agent/src/rest/contracts.go.md|contracts.go]] (calls)
 - [[watchdog-agent/watchdog-agent/src/rest/contracts.go.md|contracts.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|NewRESTHandler]] (function: belongs_to) — *NewRESTHandler creates a new RESTHandler instance*
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to) — *Handler returns HTTP multiplexer wrapped in CORS*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: belongs_to) — *RegisterRoutes registers the REST routes to the provided mux*
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: belongs_to) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to) — *StartServer launches HTTP REST API server*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleRestartAll]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleRestartService]] (method: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.handleStartPostgres]] (method: belongs_to)

@@ -39,6 +39,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/business/models.
 - [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|SignalType]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|Signal]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|Trade]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|TypeControl]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|TypeHeartbeat]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|TypeOrderBookSnapshot]] (constant: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/business/models.go.md|TypeOrderBookUpdate]] (constant: belongs_to)

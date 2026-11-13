@@ -26,10 +26,11 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|LifecycleManager]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|__init__]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|_execute_cleanups]] (function: belongs_to) — *Execute cleanups in reverse order (LIFO).*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|execute_cleanups]] (function: belongs_to) — *Executes registered cleanups in reverse order (LIFO) and drains the hook list.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|new_manager]] (function: belongs_to) — *Creates a new lifecycle manager with default logging.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|new_manager_with_logger]] (function: belongs_to) — *Creates a new lifecycle manager with an explicit logger.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|register]] (function: belongs_to) — *Adds a cleanup function to the list.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|register]] (function: belongs_to) — *Adds a cleanup function to the shutdown list safely under lock.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|request_shutdown]] (function: belongs_to) — *Signals Wait() to wake up and execute registered cleanups.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|signal_handler]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|wait]] (function: belongs_to) — *Blocks until a SIGINT or SIGTERM is received, then executes cleanups.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/lifecycle/manager.py.md|wait]] (function: belongs_to) — *Blocks until SIGINT, SIGTERM, or request_shutdown(), then executes cleanups.*
 <!-- SYNC:END -->

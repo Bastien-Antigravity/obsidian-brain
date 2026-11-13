@@ -13,29 +13,31 @@ tags:
 Automatically generated mirror for `microservice-toolbox/go/pkg/connectivity/resolver.go`.
 
 > **Essential Process**:
-> Resolves capability network addresses and applies Docker Guard suppression rules.
+> Resolves configured capability network addresses strictly from AppConfig inputs.
 
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|Trim]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveBindAddr]] (method: defines_method) — *(Docker/K8s) works regardless of what was specified in the configuration.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveFullBindAddr]] (method: defines_method) — *using the Docker Guard logic.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.getPrimaryInterfaceIP]] (method: defines_method) — *Keep as utility for potential client-side discovery.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.isLoopback]] (method: defines_method) — *isLoopback checks if the IP is in the 127.0.0.0/8 range.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.GetPrimaryInterfaceIP]] (method: defines_method) — *GetPrimaryInterfaceIP finds the first non-loopback IPv4 interface address.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.IsDockerEnv]] (method: defines_method) — *IsDockerEnv returns whether the resolver detected or was configured for a Docker environment.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.IsLoopback]] (method: defines_method) — *IsLoopback checks if the IP or hostname refers to a loopback address.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveBindAddr]] (method: defines_method) — *ResolveBindAddr validates and returns the configured IP without substituting any hardcoded default.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveFullBindAddr]] (method: defines_method) — *ResolveFullBindAddr validates and returns a configured "host:port", "[ipv6]:port", or bare host string.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.getPrimaryInterfaceIP]] (method: defines_method) — *getPrimaryInterfaceIP delegates to GetPrimaryInterfaceIP for internal compatibility.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.isLoopback]] (method: defines_method) — *isLoopback delegates to IsLoopback for package-internal compatibility.*
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|NewResolver]] (function: belongs_to) — *NewResolver creates a new network resolver.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveBindAddr]] (method: belongs_to) — *(Docker/K8s) works regardless of what was specified in the configuration.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveFullBindAddr]] (method: belongs_to) — *using the Docker Guard logic.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.getPrimaryInterfaceIP]] (method: belongs_to) — *Keep as utility for potential client-side discovery.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.isLoopback]] (method: belongs_to) — *isLoopback checks if the IP is in the 127.0.0.0/8 range.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver]] (struct: belongs_to) — *Resolver handles environment-aware network address translation.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver]] (struct: defines_method) — *Resolver handles environment-aware network address translation.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.GetPrimaryInterfaceIP]] (method: belongs_to) — *GetPrimaryInterfaceIP finds the first non-loopback IPv4 interface address.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.IsDockerEnv]] (method: belongs_to) — *IsDockerEnv returns whether the resolver detected or was configured for a Docker environment.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.IsLoopback]] (method: belongs_to) — *IsLoopback checks if the IP or hostname refers to a loopback address.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveBindAddr]] (method: belongs_to) — *ResolveBindAddr validates and returns the configured IP without substituting any hardcoded default.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveFullBindAddr]] (method: belongs_to) — *ResolveFullBindAddr validates and returns a configured "host:port", "[ipv6]:port", or bare host string.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.getPrimaryInterfaceIP]] (method: belongs_to) — *getPrimaryInterfaceIP delegates to GetPrimaryInterfaceIP for internal compatibility.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.isLoopback]] (method: belongs_to) — *isLoopback delegates to IsLoopback for package-internal compatibility.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver]] (struct: belongs_to) — *Resolver handles network address resolution strictly from configuration.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver]] (struct: defines_method) — *Resolver handles network address resolution strictly from configuration.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|grpc_server.go]] (calls)
 <!-- SYNC:END -->

@@ -19,8 +19,9 @@ Automatically generated mirror for `microservice-toolbox/rust/src/business/mod.r
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/helpers.rs.md|helpers.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|models.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- None detected
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/helpers.rs.md|helpers.rs]] (imports)
 <!-- SYNC:END -->

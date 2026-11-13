@@ -25,7 +25,7 @@ Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: defines_method) — *Create new log server instance*
-- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: defines_method) — *Run the log server with all components*
+- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: defines_method)
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *Start the writer task with in-memory ring buffer support*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: calls) — *File writer with ordering and rotation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
@@ -43,7 +43,7 @@ Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: belongs_to) — *Create new log server instance*
-- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: belongs_to) — *Run the log server with all components*
+- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: belongs_to)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer]] (struct: belongs_to) — *Main log server orchestrator*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer]] (struct: defines_method) — *Main log server orchestrator*
 - [[log-server/log-server/src/lib.rs.md|lib.rs]] (imports)

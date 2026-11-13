@@ -19,8 +19,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/network/grpc_ser
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|NewResolver]] (function: calls) — *NewResolver creates a new network resolver.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|Resolver.ResolveFullBindAddr]] (method: calls) — *using the Docker Guard logic.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: calls) — *production microservices from silently running dark without operational logs.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|logger.go]] (imports)
@@ -32,6 +30,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/network/grpc_ser
 - [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap_test.go.md|wiretap_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|manager.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|GRPCServer.Start]] (method: belongs_to) — *Start begins listening and serving.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|GRPCServer.Stop]] (method: belongs_to) — *Stop performs a graceful shutdown.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|GRPCServer]] (struct: belongs_to) — *GRPCServer is a standardized wrapper for gRPC servers in the toolbox.*

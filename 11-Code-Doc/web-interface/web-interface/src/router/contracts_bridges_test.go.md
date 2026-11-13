@@ -22,10 +22,15 @@ Automatically generated mirror for `web-interface/src/router/contracts_bridges_t
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/router/contracts_bridges.go.md|buildNatsContractsFromIntrospection]] (function: calls)
 - [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (same_package)
+- [[web-interface/web-interface/src/router/contracts_bridges.go.md|handleGetNatsContracts]] (function: calls)
 - [[web-interface/web-interface/src/router/contracts_bridges.go.md|handleGetTeleRemoteContracts]] (function: calls)
+- [[web-interface/web-interface/src/router/log_bridge.go.md|handleGetLogContracts]] (function: calls) — *falling back only to log-server's own published ServiceSpec in the MFE registry if gRPC is unavailable.*
+- [[web-interface/web-interface/src/router/log_bridge.go.md|log_bridge.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestBuildNatsContractsFromIntrospection]] (function: belongs_to)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestLogContractsFailClosedWithoutConfig]] (function: belongs_to)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestNatsContractsFailClosedWithoutConfig]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestTeleRemoteContractsFromRegistry]] (function: belongs_to)
 <!-- SYNC:END -->
 

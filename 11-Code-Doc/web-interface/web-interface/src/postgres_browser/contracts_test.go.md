@@ -17,10 +17,12 @@ Automatically generated mirror for `web-interface/src/postgres_browser/contracts
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|BrowserHandler.GetTimescaleContracts]] (method: calls) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
 - [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/contracts.go.md|synthesizeTimescaleEnvelope]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/src/postgres_browser/contracts_test.go.md|TestGetTimescaleContractsFailClosedWhenUnconfigured]] (function: belongs_to)
 - [[web-interface/web-interface/src/postgres_browser/contracts_test.go.md|TestSynthesizeTimescaleEnvelope]] (function: belongs_to)
 <!-- SYNC:END -->
 

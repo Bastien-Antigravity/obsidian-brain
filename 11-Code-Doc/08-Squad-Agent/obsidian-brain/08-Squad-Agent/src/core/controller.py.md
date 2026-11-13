@@ -46,7 +46,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/contr
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/clients/discord_client.py.md|discord_client.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|CommandController]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|__init__]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|_load_version]] (function: belongs_to) — *Loads version dynamically from microservice-toolbox / VERSION.txt.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|_load_version]] (function: belongs_to) — *Loads version dynamically from AppConfig / VERSION.txt (fail-fast).*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|_setup_memory]] (function: belongs_to) — *Sets up the dynamic dual-layer memory layers.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|_setup_notification_client]] (function: belongs_to) — *Dynamically initializes NotificationClient from microservice-toolbox.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|_task]] (function: belongs_to)

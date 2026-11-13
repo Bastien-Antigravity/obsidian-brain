@@ -34,7 +34,6 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader_te
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|loader.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/merger.go.md|DeepMerge]] (function: calls) — *If a key exists in both and the source is not a map, the source value overwrites the destination.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/merger.go.md|merger.go]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver.go.md|NewResolver]] (function: calls) — *NewResolver creates a new network resolver.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|EnsureSafeLogger]] (function: calls) — *production microservices from silently running dark without operational logs.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|logger.go]] (imports)

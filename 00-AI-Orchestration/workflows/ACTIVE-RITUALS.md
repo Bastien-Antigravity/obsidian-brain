@@ -100,6 +100,8 @@ To prevent "Architectural Amnesia" where the same discarded ideas are re-debated
 - **Static Loading Law**: Binaries must be statically linked to avoid shared object hell in Docker environments.
 - **The Super-Bridge**: Consolidated shared infrastructure (Logger + Config) into a single FFI boundary to prevent runtime panics.
 - **Unified Logger and Config Parity**: All python services and scripts MUST use the `UniLog` and `AppConfig` modules from the `microservice-toolbox` package by default. Never fallback to standard Python logging or config libraries in production code. Dynamic library paths must be aligned at boot to prevent double Go runtime initialization on macOS.
+- **Cold-Path Fail-Fast & Trust `AppConfig` (Zero Hot-Path Bloat)**: Validate configuration, `VERSION.txt`, and required parameters once at boot/ingress and fail fast on missing values. Downstream consumers and hot paths MUST trust pre-validated `AppConfig` string values verbatim (checking optionality only on truly optional params) with zero silent `"0.0.1"` / `"127.0.0.1"` / `"0.0.0.0"` fallbacks and zero runtime `APP_VERSION` / `SERVICE_VERSION` overrides.
+- **Canonical Log Levels (`flexible-logger`)**: Only the 12 enum levels in `flexible-logger/src/models/level.go` (`NOTSET=0` .. `WARNING=9`, `ERROR=10`, `CRITICAL=11`) exist ecosystem-wide; only `ERROR` and `CRITICAL` qualify for error persistence in `watchdog-agent`.
 
 ## 🚀 Operational Patterns
 - **Spec-First Enforcement**: Zero coding starts without an approved BDD spec.

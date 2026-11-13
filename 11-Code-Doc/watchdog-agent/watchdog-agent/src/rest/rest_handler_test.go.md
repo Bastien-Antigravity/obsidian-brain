@@ -16,7 +16,7 @@ Automatically generated mirror for `watchdog-agent/src/rest/rest_handler_test.go
 ### 📦 Dependencies (Outbound)
 - [[watchdog-agent/watchdog-agent/src/core/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: calls) — *Handler returns HTTP multiplexer wrapped in CORS*
+- [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: calls)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogControl.GetStatus]] (method: defines_method)
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogControl.RestartAll]] (method: defines_method)

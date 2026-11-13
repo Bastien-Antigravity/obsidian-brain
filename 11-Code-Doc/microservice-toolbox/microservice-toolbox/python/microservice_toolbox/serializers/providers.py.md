@@ -23,6 +23,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|serializer.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|serializer.py]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|decode]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|encode]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/__init__.py.md|__init__.py]] (imports)
