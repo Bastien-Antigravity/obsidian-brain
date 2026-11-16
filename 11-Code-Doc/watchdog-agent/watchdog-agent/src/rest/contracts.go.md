@@ -25,6 +25,8 @@ Automatically generated mirror for `watchdog-agent/src/rest/contracts.go`.
 - [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/shipper/checkpoint.go.md|checkpoint.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|ResolveBrainID]] (function: calls) — *documented in Multi-Brain Partitioning Standard: AppConfig -> env -> obsidian-brain.*
+- [[watchdog-agent/watchdog-agent/src/shipper/incident.go.md|ResolveIncidentSubject]] (function: calls) — *ResolveIncidentSubject builds the canonical NATS topic partitioned per brain_id.*
 
 ### 🔌 Consumers (Inbound)
 - [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (calls)

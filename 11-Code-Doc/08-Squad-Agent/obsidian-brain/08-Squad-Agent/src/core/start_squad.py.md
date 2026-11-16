@@ -25,6 +25,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/start
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/architect.py.md|ArchitectAgent]] (class: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/architect.py.md|architect.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|AutoRepairCoordinator]] (class: calls) — *Real-time Watchdog incident consumer and capability-aware Tiered Auto-Repair coordinator.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|autorepair.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|CodeIndexerAgent]] (class: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|codeindexer.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/debloatsentinel.py.md|DebloatSentinelAgent]] (class: calls)
@@ -64,6 +66,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/start
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (same_package)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|dispatch_alert_sync]] (function: calls) — *Synchronously dispatches operational alerts to notif-server via NotificationClient.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|get_active_mode]] (function: calls) — *Reads active mode from the orchestration manual.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|refresh_telegram_menu]] (function: calls) — *Triggers a live Telegram inline menu rebuild when fleet incidents change.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/mission_help.py.md|mission_help.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|switch_mode.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (imports)

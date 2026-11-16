@@ -74,9 +74,10 @@ Local sovereign semantic search and real-time knowledge watcher.
   - `get_brain_stats()` — Fetch active database volume and indexing status.
   - `find_similar_files(filepath: str)` — Semantic similarity relationship lookup.
 
-## 🤖 10 - Agent Factory
-Object-oriented framework for orchestrating squads of autonomous LLM-driven agents.
+## 🤖 10 - Agent Factory (Reference OOP Blueprints)
+Reference object-oriented patterns and evaluation methodology for multi-agent systems (production agent runtime lives in `08-Squad-Agent`).
 - [[10-Agent-Factory/README|Agent Factory Overview]]
+- [[00-AI-Orchestration/Ecosystem-AI-Governance-Synthesis|🏛️ Ecosystem AI Governance Synthesis & Unification Blueprint]]
 - **Methodology & Guides**:
   - [[10-Agent-Factory/docs/00_Agent_Engineering_MOC|🗺️ Agent Engineering & Evaluation MOC]]
   - [[10-Agent-Factory/docs/agent_engineering|1. Specifications & Code vs LLM Arbitrage]]

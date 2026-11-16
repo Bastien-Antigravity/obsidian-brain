@@ -26,13 +26,14 @@ tags:
 - [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (calls)
 - [[docker-deployment/docker-deployment/modes/production/run.py.md|run.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|Colors]] (class: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|DEPLOY_DIR]] (constant: belongs_to) — *Find deploy directory containing docker-compose.yaml*
+- [[docker-deployment/docker-deployment/scripts/common.py.md|DEPLOY_DIR]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|EXE_EXT]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_LINUX]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|IS_WINDOWS]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|SCRIPT_PATH]] (constant: belongs_to) — *Workspace & Directory Paths*
+- [[docker-deployment/docker-deployment/scripts/common.py.md|SCRIPT_PATH]] (constant: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|audit_timescale_container_volume]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|encrypt_secret_rsa]] (function: belongs_to) — *Encrypt a secret string using the external RSA public key.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: belongs_to) — *Ensure RSA 2048-bit keys exist, respecting BASTIEN_PRIVATE_KEY_PATH, /etc/bastien/, or ~/.bastien/keys/.*

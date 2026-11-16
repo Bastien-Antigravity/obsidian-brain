@@ -55,6 +55,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/in
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_batch_flusher_loop]] (function: belongs_to) — *Background task that aggregates FileResults and flushes them in batches.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_enrich_one]] (function: belongs_to) — *1. Enrich (in parallel, leveraging LLMEnricher's internal semaphore)*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_ensure_loop_primitives]] (function: belongs_to) — *Rebinds asyncio Queue and Lock if the pipeline is invoked on a new/different event loop.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_flush_batch]] (function: belongs_to) — *Atomically enriches and stores a batch of files.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_get_supported_extensions]] (function: belongs_to) — *Returns set of normalized file extensions (e.g. {'.py', '.md', '.txt'}) supported by pipeline & analyzers.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|_lazy_init_graph_helpers]] (function: belongs_to) — *Lazy loads inventory.json and maps note stems if not already loaded.*

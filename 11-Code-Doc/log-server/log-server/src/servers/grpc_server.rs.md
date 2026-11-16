@@ -71,4 +71,6 @@ Automatically generated mirror for `log-server/src/servers/grpc_server.rs`.
 - [[log-server/log-server/src/servers/grpc_server.rs.md|ProtoLogRequest.from]] (method: belongs_to)
 - [[log-server/log-server/src/servers/grpc_server.rs.md|ProtoLogRequest]] (struct: defines_method) — *Conversion from internal type to protobuf*
 - [[log-server/log-server/src/servers/grpc_server.rs.md|parse_level]] (function: belongs_to) — *Parse string log level or integer into numeric level*
+- [[log-server/log-server/src/servers/grpc_server.rs.md|test_parse_level_names_and_numbers]] (function: belongs_to)
+- [[log-server/log-server/src/servers/grpc_server.rs.md|test_proto_to_internal_log_entry_roundtrip]] (function: belongs_to)
 <!-- SYNC:END -->

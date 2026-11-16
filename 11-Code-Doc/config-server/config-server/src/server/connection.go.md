@@ -23,8 +23,8 @@ Automatically generated mirror for `config-server/src/server/connection.go`.
 - [[config-server/config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls) — *It may also trigger a broadcast and persistence via the provided callbacks.*
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/server/connection.go.md|Server.handleConnection]] (method: defines_method)
-- [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list.*
-- [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list only if it's the same instance.*
+- [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
+- [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)

@@ -35,6 +35,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.toggleSidebar]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.toggleSidenav]] (method: defines_method)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.toggleTheme]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal]] (class: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/base.js.md|BaseUIController.closeSidebar]] (method: belongs_to)

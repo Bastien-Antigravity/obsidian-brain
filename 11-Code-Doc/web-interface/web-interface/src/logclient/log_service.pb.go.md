@@ -197,6 +197,8 @@ Automatically generated mirror for `web-interface/src/logclient/log_service.pb.g
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|file_log_service_proto_rawDesc]] (constant: belongs_to)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|x]] (struct: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (calls)
+- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|home-transport-mesh.js]] (calls)

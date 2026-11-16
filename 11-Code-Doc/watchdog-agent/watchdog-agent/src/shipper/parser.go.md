@@ -20,8 +20,14 @@ Automatically generated mirror for `watchdog-agent/src/shipper/parser.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ComputeEventHash]] (function: belongs_to) — *brain, file path, byte offset, and timestamp so crash replays are idempotent.*
 - [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParseLogLine]] (function: belongs_to) — *Returns (log, true) strictly for canonical ERROR (10) and CRITICAL (11) entries.*
 - [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParsedErrorLog]] (struct: belongs_to) — *ParsedErrorLog represents a structured error event ready for TimescaleDB storage.*
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|extractStackTrace]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|parseCanonicalLevel]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|parseJSONLogLine]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|parseLogTimestamp]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|sanitizeLogText]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|parser_test.go]] (calls)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|parser_test.go]] (same_package)
 - [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|shipper.go]] (calls)

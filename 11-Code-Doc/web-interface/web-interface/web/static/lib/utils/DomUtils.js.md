@@ -45,6 +45,7 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/atoms/StatusIndicator.js.md|StatusIndicator.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Card.js.md|Card.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/components/molecules/MetricCard.js.md|MetricCard.js]] (calls)
+- [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.addClass]] (method: belongs_to)

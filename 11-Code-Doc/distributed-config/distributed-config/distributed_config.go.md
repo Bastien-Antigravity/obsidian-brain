@@ -32,6 +32,8 @@ Automatically generated mirror for `distributed-config/distributed_config.go`.
 - [[distributed-config/distributed-config/distributed_config.go.md|ProcessConfigSecrets]] (function: belongs_to) — *ProcessConfigSecrets is a helper that decrypts all ENC(...) blocks in a raw byte slice.*
 - [[distributed-config/distributed-config/distributed_config.go.md|ProcessNode]] (function: belongs_to) — *ProcessNode is a helper that expands environment variables in a YAML node.*
 - [[distributed-config/distributed-config/distributed_config.go.md|ResolveConfigPath]] (function: belongs_to) — *ResolveConfigPath returns the absolute path to the configuration file based on platform search rules.*
+- [[distributed-config/distributed-config/distributed_config_test.go.md|distributed_config_test.go]] (calls)
+- [[distributed-config/distributed-config/distributed_config_test.go.md|distributed_config_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
 - [[distributed-config/distributed-config/src/cgo_bridge/security.go.md|security.go]] (imports)
 <!-- SYNC:END -->

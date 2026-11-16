@@ -83,8 +83,8 @@ python3 08-Squad-Agent/main.py convert-agents
 
 Generated folders:
 
-- `.gemini/agents/`
-- `.codex/agents/`
+- `obsidian-brain/.agents/skills/<role>/SKILL.md`
+- `.agents/skills/` (workspace root symlink for Antigravity IDE discovery)
 
 ## RAG And MCP
 

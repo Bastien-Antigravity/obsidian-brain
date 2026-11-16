@@ -19,7 +19,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs.parse_cli_args]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/args.rs.md|ToolboxArgs]] (struct: calls) — *internal network-aware resolution in dynamic container environments.*
@@ -44,6 +43,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: defines_method) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_service_name]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: defines_method)
@@ -59,6 +59,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.set_logger]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.set_value]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.share_config]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync_from_bridge]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.unmarshal_local]] (method: defines_method) — *Parity with Go's UnmarshalLocal.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.validate_unique_ports]] (method: defines_method)
@@ -93,6 +94,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: belongs_to) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_service_name]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: belongs_to)
@@ -108,6 +110,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.set_logger]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.set_value]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.share_config]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync_from_bridge]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.unmarshal_local]] (method: belongs_to) — *Parity with Go's UnmarshalLocal.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.validate_unique_ports]] (method: belongs_to)
@@ -133,6 +136,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|test_unmarshal_local]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|connection.rs]] (calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|manager.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)

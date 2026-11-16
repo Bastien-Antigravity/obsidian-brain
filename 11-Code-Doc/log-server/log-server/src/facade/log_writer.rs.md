@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 
 > **Essential Process**:
-> ! Asynchronous ordered file writer and rotation coordinator. Buffers incoming ! packets into a sequence BTreeMap, flushes batches to _main.log, handles size-based ! rotation, and feeds the in-memory circular ring buffer. ! ! DATA FLOW: ! 1. LogPacket stream from MPSC channel ! 2. BTreeMap reordering buffer sorted by atomic sequence ! 3. LogRingBuffer insertion and async disk batch write ! 4. Background console task queuing (non-blocking) ! ! KEY PARAMETERS: ! - max_file_bytes: 10MB per log chunk before rotation. ! - backup_count: Number of historical rotated log files preserved (default 10). ! - gap_timeout_ms: Timeout threshold to advance sequence on missing packets (500ms). use crate::core::log_formatter::format_log_message; use crate::models::log_packet::LogPacket; use crate::models::log_entry::LogEntry; use std::collections::BTreeMap; use std::path::PathBuf; use tokio::{ fs::{self, File, OpenOptions}, io::AsyncWriteExt, sync::mpsc, time::{sleep, Duration}, }; / Log writer configuration [derive(Clone)] pub struct WriterConfig { pub initial_batch_size: usize, pub buffer_size: usize, pub max_retries: usize, pub retry_delay_ms: u64, pub max_file_bytes: u64, pub backup_count: usize, pub gap_timeout_ms: u64, }
+> ! Asynchronous ordered file writer and rotation coordinator. Buffers incoming ! packets into a sequence BTreeMap, flushes batches to _main.log, handles size-based ! rotation, and feeds the in-memory circular ring buffer. ! ! DATA FLOW: ! 1. LogPacket stream from MPSC channel ! 2. BTreeMap reordering buffer sorted by atomic sequence ! 3. LogRingBuffer insertion and async disk batch write ! 4. Background console task queuing (non-blocking) ! ! KEY PARAMETERS: ! - max_file_bytes: 10MB per log chunk before rotation. ! - backup_count: Number of historical rotated log files preserved (default 10). ! - gap_timeout_ms: Timeout threshold to advance sequence on missing packets (500ms). use crate::core::log_formatter::format_log_message; use crate::models::log_entry::LogEntry; use crate::models::log_packet::LogPacket; use crate::utils::helpers::{get_hostname, get_utc_timestamp}; use std::collections::BTreeMap; use std::path::PathBuf; use tokio::{ fs::{self, File, OpenOptions}, io::AsyncWriteExt, sync::mpsc, time::{sleep, Duration}, }; / Log writer configuration [derive(Clone)] pub struct WriterConfig { pub initial_batch_size: usize, pub buffer_size: usize, pub max_retries: usize, pub retry_delay_ms: u64, pub max_file_bytes: u64, pub backup_count: usize, pub gap_timeout_ms: u64, }
 
 ## 🏗️ Architectural Context
 
@@ -28,6 +28,7 @@ Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: defines_method) — *Rotate log files*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: defines_method) — *Start the writer task with in-memory ring buffer support*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: defines_method) — *Create new log writer with custom config*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: defines_method) — *Create new log writer with custom config and explicit file path*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: defines_method) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: defines_method) — *Main writer task implementation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: defines_method)
@@ -39,7 +40,11 @@ Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 - [[log-server/log-server/src/models/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
 - [[log-server/log-server/src/utils/helpers.rs.md|create_log_folder]] (function: calls) — *Create log folder if not exists*
-- [[log-server/log-server/src/utils/helpers.rs.md|get_exec_parent_dir]] (function: calls) — *Get executable parent directory*
+- [[log-server/log-server/src/utils/helpers.rs.md|get_hostname]] (function: calls) — *Get system hostname (cached)*
+- [[log-server/log-server/src/utils/helpers.rs.md|get_utc_timestamp]] (function: calls) — *Get current UTC timestamp as string*
+- [[log-server/log-server/src/utils/helpers.rs.md|helpers.rs]] (imports)
+- [[log-server/log-server/src/utils/helpers.rs.md|resolve_log_dir]] (function: calls) — *Resolve target log directory: LOG_DIR env var -> /var/log/log-server (Docker) -> <exec_parent>/logs.*
+- [[log-server/log-server/src/utils/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
@@ -52,6 +57,7 @@ Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: belongs_to) — *Rotate log files*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: belongs_to) — *Start the writer task with in-memory ring buffer support*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: belongs_to) — *Create new log writer with custom config*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: belongs_to) — *Create new log writer with custom config and explicit file path*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: belongs_to) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: belongs_to) — *Main writer task implementation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: belongs_to) — *File writer with ordering and rotation*
@@ -59,6 +65,8 @@ Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: belongs_to)
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: belongs_to) — *Log writer configuration*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: defines_method) — *Log writer configuration*
+- [[log-server/log-server/src/facade/log_writer.rs.md|test_rotate_files_cascading_and_pruning]] (function: belongs_to)
+- [[log-server/log-server/src/facade/log_writer.rs.md|test_rotate_files_zero_backups]] (function: belongs_to)
 - [[log-server/log-server/src/lib.rs.md|lib.rs]] (imports)
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
 <!-- SYNC:END -->

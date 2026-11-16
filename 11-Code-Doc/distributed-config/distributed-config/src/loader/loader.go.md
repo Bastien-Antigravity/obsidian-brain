@@ -24,7 +24,6 @@ Automatically generated mirror for `distributed-config/src/loader/loader.go`.
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/loader/loader.go.md|EnsureFileExists]] (function: belongs_to) — *EnsureFileExists checks if a file exists. If it doesn't, it creates it using the provided payload.*
 - [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFileSafe]] (function: belongs_to) — *config tags like CF_IP/CF_PORT are provided via ENV variables.*
 - [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: belongs_to) — *Fails fast if the file does not exist (never creates static fallback YAML files).*
 - [[distributed-config/distributed-config/src/loader/loader.go.md|LoadYAML]] (function: belongs_to) — *consistent string-typing (except for booleans) natively on the node tree.*

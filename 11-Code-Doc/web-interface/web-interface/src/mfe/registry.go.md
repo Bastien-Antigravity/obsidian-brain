@@ -10,6 +10,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry.go.md|CanvasSpec.UnmarshalJSON]] (method: defines_method) — *UnmarshalJSON supports both camelCase (preferredX) and snake_case (preferred_x).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|HealthSpec.UnmarshalJSON]] (method: defines_method) — *UnmarshalJSON supports both camelCase (timeoutMs) and snake_case (timeout_ms).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: defines_method) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
@@ -19,7 +20,9 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: defines_method) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: defines_method) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: defines_method) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAppConfig]] (method: defines_method) — *SetAppConfig stores the active AppConfig reference for dynamic capability and mode enrichment.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: defines_method) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichRuntimeMeta]] (method: defines_method) — *3. Fallback -> "native" (local)*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: defines_method) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: defines_method)
@@ -47,6 +50,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|CanvasSpec.UnmarshalJSON]] (method: belongs_to) — *UnmarshalJSON supports both camelCase (preferredX) and snake_case (preferred_x).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|CanvasSpec]] (struct: belongs_to) — *CanvasSpec declares presentation attributes for the transport SVG mesh canvas and UI tiers.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|CanvasSpec]] (struct: defines_method) — *CanvasSpec declares presentation attributes for the transport SVG mesh canvas and UI tiers.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|CustomTab]] (struct: belongs_to) — *CustomTab allows microservices to declare supplementary runtime tabs beyond the standard 5 panels.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Dependency]] (struct: belongs_to) — *Dependency represents a declared downstream dependency of a microservice.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|HealthSpec.UnmarshalJSON]] (method: belongs_to) — *UnmarshalJSON supports both camelCase (timeoutMs) and snake_case (timeout_ms).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|HealthSpec]] (struct: belongs_to) — *HealthSpec standardizes declarative health check and reachability probes.*
@@ -59,7 +63,9 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: belongs_to) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: belongs_to) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: belongs_to) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAppConfig]] (method: belongs_to) — *SetAppConfig stores the active AppConfig reference for dynamic capability and mode enrichment.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: belongs_to) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichRuntimeMeta]] (method: belongs_to) — *3. Fallback -> "native" (local)*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: belongs_to) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: belongs_to)

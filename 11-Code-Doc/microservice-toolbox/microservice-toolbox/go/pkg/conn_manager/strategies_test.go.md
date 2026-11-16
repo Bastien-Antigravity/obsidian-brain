@@ -21,9 +21,9 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/str
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|ManagedConnection.Close]] (method: calls) — *Close terminates the connection and stops the reconnection loop.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/connection.go.md|connection.go]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager.Connect]] (method: calls) — *Connect establishes a connection using the specified mode.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NetworkManager.Connect]] (method: calls) — *Connect establishes a connection using raw parameters (backwards compatibility).*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewCriticalStrategy]] (function: calls) — *NewCriticalStrategy creates a manager configured for critical services with infinite retries.*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewNetworkManager]] (function: calls) — *NewNetworkManager creates a manager with provided retry policies (durations in milliseconds).*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewNetworkManagerWithPolicy]] (function: calls) — *NewNetworkManagerWithPolicy creates a manager with explicit retry policies (durations in milliseconds).*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewPerformanceStrategy]] (function: calls) — *NewPerformanceStrategy creates a manager for high-performance services with background reconnection.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|NewStandardStrategy]] (function: calls) — *NewStandardStrategy creates a manager for standard services with limited retries.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (same_package)

@@ -19,7 +19,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/err
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/NetworkManager.hpp.md|NetworkManager.New]] (method: calls) — *Unified Factory Method combining AppConfig and Logger in one function with pointers*
 
 ### 🔌 Consumers (Inbound)
 - None detected

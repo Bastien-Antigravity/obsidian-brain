@@ -14,10 +14,15 @@ Automatically generated mirror for `watchdog-agent/src/server/controller_test.go
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.GetStatus]] (method: calls) — *GetStatus retrieves the status metadata of all supervised services*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.PauseService]] (method: calls) — *PauseService suspends auto-restart supervision for a service and terminates any running process*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|Controller.ResumeService]] (method: calls) — *ResumeService re-enables supervision for a service, clears crash history, and allows supervisor to relaunch*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance*
+- [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (same_package)
+- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|types.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- None detected
+- [[watchdog-agent/watchdog-agent/src/server/controller_test.go.md|TestController_PauseAndResumeService]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

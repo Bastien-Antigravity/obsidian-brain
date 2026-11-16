@@ -22,6 +22,7 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|GetVaultGraph]] (function: calls) — *GetVaultGraph returns the parsed knowledge graph, serving from cache if valid.*
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|ResolveVaultPath]] (function: calls) — *ResolveVaultPath discovers the active obsidian-brain vault directory on the host filesystem.*
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (imports)
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: calls)
 - [[web-interface/web-interface/src/logclient/log_service_grpc.pb.go.md|logBridgeClient.GetTailLogs]] (method: calls)
 - [[web-interface/web-interface/src/logclient/log_service_grpc.pb.go.md|log_service_grpc.pb.go]] (imports)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
@@ -60,11 +61,15 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
 - [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (calls)
 - [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (same_package)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (same_package)
+- [[web-interface/web-interface/src/router/dynamic.go.md|BuildServiceAIContext]] (function: belongs_to) — *live runtime config, AI-Init.md, and AGENTS.md.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|BuildServiceRegistry]] (function: belongs_to) — *Adheres strictly to the principle that microservices own and return their own information.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|FleetHealthResponse]] (struct: belongs_to) — *FleetHealthResponse summarizes overall fleet health for UI alerting.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|GetMFERegistry]] (function: belongs_to) — *GetMFERegistry returns the active MFE registry instance, if set.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|MCPCallRecord]] (struct: belongs_to) — *MCPCallRecord captures request and response metadata for the live FastMCP inspector.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|RegisterDynamicRoutes]] (function: belongs_to) — *RegisterDynamicRoutes binds all API, Stock query, and OpenMFE dynamic routes.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|ServiceAIContextResponse]] (struct: belongs_to) — *ServiceAIContextResponse standardizes authoritative AI initialization context.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|ServiceHealthStatus]] (struct: belongs_to) — *ServiceHealthStatus holds individual service reachability state.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|ServiceProtocolSpec]] (struct: belongs_to) — *ServiceProtocolSpec describes an individual network port/protocol of a service.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|ServiceRegistryEntry]] (struct: belongs_to) — *ServiceRegistryEntry represents the complete dynamic and mechanical metadata for a microservice.*
@@ -72,6 +77,10 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: belongs_to) — *SetMFERegistry associates the active MFE registry instance with the router.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|checkFleetServicesHealth]] (function: belongs_to) — *Discovers targets dynamically from appConfig capabilities and OpenMFE registrations without hardcoded slices.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|clientInfo]] (struct: belongs_to)
+- [[web-interface/web-interface/src/router/dynamic.go.md|extractMandatoryPrompt]] (function: belongs_to) — *extractMandatoryPrompt parses the mandatory prompt block from AI-Init.md.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|extractSectionFromMarkdown]] (function: belongs_to) — *extractSectionFromMarkdown extracts a named markdown section (e.g. ## Service Mission...).*
+- [[web-interface/web-interface/src/router/dynamic.go.md|findRepoPath]] (function: belongs_to) — *findRepoPath matches a service name to a local repository folder.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|findWorkspaceRoot]] (function: belongs_to) — *findWorkspaceRoot searches upwards from current directory for AI-CONTEXT.md or obsidian-brain.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|formatCapabilityTitle]] (function: belongs_to) — *formatCapabilityTitle converts capability keys like "config_server" to "Config Server".*
 - [[web-interface/web-interface/src/router/dynamic.go.md|getSubCapabilityAddr]] (function: belongs_to) — *getSubCapabilityAddr extracts host:port for a nested capability block (e.g. capabilities.rag_engine.mcp).*
 - [[web-interface/web-interface/src/router/dynamic.go.md|menuItem]] (struct: belongs_to)

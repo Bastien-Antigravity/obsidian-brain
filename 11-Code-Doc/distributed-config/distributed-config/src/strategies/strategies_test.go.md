@@ -30,4 +30,5 @@ Automatically generated mirror for `distributed-config/src/strategies/strategies
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_Production]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_Staging]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestStandaloneStrategy]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestTestStrategy]] (function: belongs_to)
 <!-- SYNC:END -->

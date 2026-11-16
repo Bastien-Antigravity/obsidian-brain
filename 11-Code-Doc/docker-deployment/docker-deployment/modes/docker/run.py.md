@@ -14,6 +14,7 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|audit_timescale_container_volume]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: calls) — *Ensure RSA 2048-bit keys exist, respecting BASTIEN_PRIVATE_KEY_PATH, /etc/bastien/, or ~/.bastien/keys/.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_loopback_alias]] (function: calls) — *Verify or attempt to configure 127.0.0.2 loopback alias.*

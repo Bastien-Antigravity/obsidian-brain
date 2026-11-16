@@ -19,11 +19,13 @@ Automatically generated mirror for `watchdog-agent/src/shipper/parser_test.go`.
 - [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|parser.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_CloudJSONFormat]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_CriticalSeverity]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_FallbackRegex]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_FixedFormat]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_IgnoreInfoAndWarning]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_InvalidTimestampFallback]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_IgnoreInfoAndWarningAndMentionedError]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_RejectsInvalidTimestamp]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_SanitizesPoisonPillUTF8AndNUL]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_ShortLineWithKeyword]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_StackTraceMetadata]] (function: belongs_to)
 <!-- SYNC:END -->

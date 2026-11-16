@@ -1,13 +1,4 @@
----
-microservice: microservice-toolbox
-type: note
-status: active
-tags:
-- '#service/microservice-toolbox'
-- '#type/note'
-- '#state/active'
-- '#zone/3-fleet'
----
+
 
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py`.
@@ -20,6 +11,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|ManagedConnection]] (class: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|_current_endpoint]] (function: calls) — *Returns the active Endpoint, refreshing from AppConfig if bound to a capability.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|connection.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|connection.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|reconnect]] (function: calls)
@@ -38,12 +30,14 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|__init__]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|connect]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|connect_blocking]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|connect_capability]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|connect_non_blocking]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|connect_with_retry]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|establish_connection]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|get_next_delay]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_critical_strategy]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_network_manager]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_network_manager_with_config]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_network_manager_with_logger]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_performance_strategy]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|new_standard_strategy]] (function: belongs_to)

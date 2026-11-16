@@ -19,7 +19,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/logger.r
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|UniLog]] (class: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.add_metadata]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.critical]] (method: defines_method)

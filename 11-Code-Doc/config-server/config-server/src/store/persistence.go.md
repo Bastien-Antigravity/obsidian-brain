@@ -45,5 +45,7 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method) — *PersistenceManager handles saving and loading the configuration from disk.*
 - [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (calls)
 - [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (same_package)
+- [[config-server/config-server/src/store/store.go.md|store.go]] (calls)
+- [[config-server/config-server/src/store/store.go.md|store.go]] (same_package)
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
 <!-- SYNC:END -->

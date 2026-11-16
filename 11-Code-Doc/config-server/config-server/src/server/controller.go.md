@@ -28,8 +28,8 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: defines_method) — *SetConfig updates a configuration value atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
-- [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients.*
-- [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls) — *GetClientNames returns the names of all currently connected clients.*
+- [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients lock-free.*
+- [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls) — *GetClientNames returns the names of all currently connected clients lock-free.*
 - [[config-server/config-server/src/server/server.go.md|Server.TriggerSave]] (method: calls) — *TriggerSave marks the state as dirty to trigger background persistence.*
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Debug]] (method: calls)
@@ -38,7 +38,7 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls) — *Helper to deep copy the map (used for COW updates)*
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *remains untouched (Atomicity/Rollback).*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *Implementation: Copy-On-Write + atomic pointer swap.*
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)

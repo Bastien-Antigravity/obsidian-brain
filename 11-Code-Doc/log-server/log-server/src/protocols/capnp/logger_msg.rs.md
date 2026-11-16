@@ -140,6 +140,7 @@ Automatically generated mirror for `log-server/src/protocols/capnp/logger_msg.rs
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
+- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)

@@ -23,7 +23,7 @@ Automatically generated mirror for `config-server/src/core/request_handler.go`.
 - [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (imports)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *remains untouched (Atomicity/Rollback).*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *Implementation: Copy-On-Write + atomic pointer swap.*
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/src/core/request_handler.go.md|ProcessRequest]] (function: belongs_to) — *It may also trigger a broadcast and persistence via the provided callbacks.*

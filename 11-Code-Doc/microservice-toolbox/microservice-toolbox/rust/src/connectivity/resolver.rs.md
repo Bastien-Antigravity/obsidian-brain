@@ -19,7 +19,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/connectivity/r
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.default]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.get_primary_interface_ip]] (method: defines_method) — *Finds the first non-loopback IPv4 address for the local hostname without hardcoded probe IPs.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.is_docker_env]] (method: defines_method) — *Returns whether the resolver detected a Docker container environment.*

@@ -27,7 +27,6 @@ Automatically generated mirror for `distributed-config/src/secret/crypto.go`.
 - [[distributed-config/distributed-config/distributed_config.go.md|distributed_config.go]] (imports)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|Decrypt]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|Encrypt]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/secret/crypto.go.md|GenerateRSAKeypair]] (function: belongs_to) — *GenerateRSAKeypair generates a new RSA keypair and returns both keys in PEM format.*
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|ProcessConfigSecrets]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|getPrivateKey]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto_test.go.md|crypto_test.go]] (calls)

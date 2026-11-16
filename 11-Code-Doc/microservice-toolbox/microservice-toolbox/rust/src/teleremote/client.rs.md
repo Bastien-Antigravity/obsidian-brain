@@ -23,7 +23,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/teleremote/cli
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|ComponentMessage]] (struct: calls) — *A message sent from the external component/service to the Bot*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/grpc_client/teleremote.pb.go.md|Registration]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|Action.new]] (method: defines_method)

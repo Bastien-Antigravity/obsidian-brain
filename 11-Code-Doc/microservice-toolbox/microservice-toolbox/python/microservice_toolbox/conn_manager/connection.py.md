@@ -30,10 +30,14 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|Endpoint]] (class: belongs_to) — *Immutable destination coordinates holding pre-formatted Address.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|ManagedConnection]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|__init__]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|_current_endpoint]] (function: belongs_to) — *Returns the active Endpoint, refreshing from AppConfig if bound to a capability.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|close]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|get_endpoint]] (function: belongs_to) — *Returns current target coordinates.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|reconnect]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|update_endpoint]] (function: belongs_to) — *Atomically updates the connection target coordinates.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/connection.py.md|write]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|manager.py]] (calls)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/conn_manager/manager.py.md|manager.py]] (imports)

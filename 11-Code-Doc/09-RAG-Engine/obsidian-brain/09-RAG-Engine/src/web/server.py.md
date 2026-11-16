@@ -41,6 +41,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[04-Rapid-Prototyping/obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|archive.py]] (calls)
 - [[05-Fleet-Operation/obsidian-brain/05-Fleet-Operation/01-Fleet-Action-Plans/archive.py.md|archive.py]] (calls)
 - [[05-Fleet-Operation/obsidian-brain/05-Fleet-Operation/02-Deployment-Logs/archive.py.md|archive.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|autorepair.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (calls)

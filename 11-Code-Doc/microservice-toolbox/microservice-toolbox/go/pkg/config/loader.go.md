@@ -23,6 +23,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetAddress]] (method: calls) — *Get an address (host:port) for a capability*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetGRPCAddress]] (method: calls) — *Get a gRPC address for a capability*
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.GetRESTAddress]] (method: calls) — *Get a REST address for a capability*
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/NetworkManager.hpp.md|NetworkManager.New]] (method: calls) — *Unified Factory Method combining AppConfig and Logger in one function with pointers*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|AppConfig.ParseCLIArgs]] (method: calls) — *It implements a "Docker Guard": if DOCKER_ENV=true, --host and --port are ignored.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|args.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.DecryptSecret]] (method: defines_method) — *If it is an ENC(...) block but decryption fails, an error is returned.*
@@ -51,6 +52,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|logger.go]] (imports)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/logger/logger.go.md|noOpLogger.Info]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|Get]] (function: calls) — *It resolves the version on first call, caches the result, and panics fail-fast if unresolved.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|Set]] (function: calls) — *Fails fast on empty input.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/version/version.go.md|version.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

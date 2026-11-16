@@ -25,10 +25,10 @@ Automatically generated mirror for `config-server/src/store/store_test.go`.
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls) — *Helper to deep copy the map (used for COW updates)*
 - [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
-- [[config-server/config-server/src/store/store.go.md|Store.GetSection]] (method: calls) — *GetSection returns a copy of a specific section.*
+- [[config-server/config-server/src/store/store.go.md|Store.GetSection]] (method: calls) — *GetSection returns a copy of a specific section lock-free.*
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 - [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
-- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *remains untouched (Atomicity/Rollback).*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *Implementation: Copy-On-Write + atomic pointer swap.*
 - [[config-server/config-server/src/store/store.go.md|store.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

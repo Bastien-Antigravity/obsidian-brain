@@ -26,6 +26,8 @@ tags:
 - [[web-interface/web-interface/web/static/lib/components/molecules/Accordion.js.md|Accordion.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Card.js.md|Card.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/components/molecules/MetricCard.js.md|MetricCard.js]] (imports)
+- [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.initDeclarative]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/components/organisms/DataGrid.js.md|DataGrid.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/layout/LayoutManager.js.md|LayoutManager.js]] (imports)
 - [[web-interface/web-interface/web/static/lib/mfe/BastienMFEElement.js.md|BastienMFEElement.js]] (imports)

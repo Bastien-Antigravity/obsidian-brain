@@ -21,6 +21,7 @@ Automatically generated mirror for `docker-deployment/modes/production/run.py`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[docker-deployment/docker-deployment/scripts/common.py.md|audit_timescale_container_volume]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: calls) — *Ensure RSA 2048-bit keys exist, respecting BASTIEN_PRIVATE_KEY_PATH, /etc/bastien/, or ~/.bastien/keys/.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: calls) — *Ensure required secret env vars are set, generating temporary placeholders if missing.*

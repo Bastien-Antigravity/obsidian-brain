@@ -22,7 +22,9 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/config/heal.go.md|HealSymlinks]] (function: calls) — *HealSymlinks heals ecosystem configuration symlinks pointing to the central standalone.yaml*
 - [[watchdog-agent/watchdog-agent/src/config/heal.go.md|heal.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/config/options.go.md|ResolveRuntimeOptions]] (function: calls) — *the authoritative execution capabilities of the watchdog-agent.*
-- [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|StartNATSControlPlane]] (function: calls)
+- [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|BusClient.Start]] (method: calls) — *publishes periodic node heartbeats until ctx is canceled.*
+- [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|BusClient.SubjectPrefix]] (method: calls) — *SubjectPrefix returns the resolved NATS subject prefix.*
+- [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|NewBusClient]] (function: calls) — *NewBusClient resolves NATS configuration from validated AppConfig on cold startup.*
 - [[watchdog-agent/watchdog-agent/src/control/control_plane.go.md|control_plane.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from watchdog-agent sources.*
 - [[watchdog-agent/watchdog-agent/src/rest/mfe.js.md|mfe.js]] (imports)
@@ -36,8 +38,10 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance*
 - [[watchdog-agent/watchdog-agent/src/server/controller.go.md|controller.go]] (imports)
 - [[watchdog-agent/watchdog-agent/src/shipper/checkpoint.go.md|checkpoint.go]] (imports)
+- [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|ResolveBrainID]] (function: calls) — *documented in Multi-Brain Partitioning Standard: AppConfig -> env -> obsidian-brain.*
 - [[watchdog-agent/watchdog-agent/src/shipper/db.go.md|ResolveDBConfigWithAppConfig]] (function: calls) — *targeting Option B (base ecosystem 'obsidiandb') and fails fast on missing values.*
-- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.Start]] (method: calls)
+- [[watchdog-agent/watchdog-agent/src/shipper/incident.go.md|NewNatsIncidentPublisher]] (function: calls) — *NewNatsIncidentPublisher constructs a brain-aware NATS-backed incident publisher.*
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|LogShipper.ScanDir]] (method: calls) — *ScanDir returns the resolved external log scan directory (empty if scanning workspace RootDir).*
 - [[watchdog-agent/watchdog-agent/src/shipper/shipper.go.md|NewLogShipper]] (function: calls) — *NewLogShipper initializes the shipper with persistent cursor state.*
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|RegisterServices]] (function: calls) — *RegisterServices initializes the topology registry slice of managed services*
 - [[watchdog-agent/watchdog-agent/src/supervisor/registry.go.md|ValidateRegistry]] (function: calls) — *ValidateRegistry checks for missing dependencies and dependency cycles*
@@ -55,6 +59,5 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|IsLocal]] (function: calls) — *IsLocal checks if an IP belongs to the local machine*
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/main.go.md|dirExists]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/main.go.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

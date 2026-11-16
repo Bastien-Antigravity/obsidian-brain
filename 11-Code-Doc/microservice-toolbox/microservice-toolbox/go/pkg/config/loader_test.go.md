@@ -19,6 +19,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader_te
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/conn_manager/NetworkManager.hpp.md|NetworkManager.New]] (method: calls) — *Unified Factory Method combining AppConfig and Logger in one function with pointers*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|AppConfig.ParseCLIArgs]] (method: calls) — *It implements a "Docker Guard": if DOCKER_ENV=true, --host and --port are ignored.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|args.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.DecryptSecret]] (method: calls) — *If it is an ENC(...) block but decryption fails, an error is returned.*

@@ -43,7 +43,6 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/strategies/test.go.md|ConfigServerCap]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Close]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.GetHandler]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Load]] (method: belongs_to)

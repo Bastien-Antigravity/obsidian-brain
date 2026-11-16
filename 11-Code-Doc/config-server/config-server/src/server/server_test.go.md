@@ -31,10 +31,10 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
-- [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients.*
-- [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate safely registers the callback invoked when configuration state changes.*
-- [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list.*
-- [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list only if it's the same instance.*
+- [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients lock-free.*
+- [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
+- [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
+- [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Critical]] (method: defines_method)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Debug]] (method: defines_method)

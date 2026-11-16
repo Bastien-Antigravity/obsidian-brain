@@ -17,7 +17,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/contro
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -28,7 +27,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/contro
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|RAGControllerImpl]] (class: belongs_to) — *Standardized controller implementation for RAG operations.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|StatusInfo]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|__init__]] (function: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|_load_version]] (function: belongs_to) — *Loads version dynamically from AppConfig / single source of truth.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|_load_version]] (function: belongs_to) — *Loads version dynamically from AppConfig / VERSION.txt (fail-fast).*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|build_index]] (function: belongs_to) — *Triggers index rebuild.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|delete_by_brain]] (function: belongs_to) — *Purges an entire brain partition atomically.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_brain_stats]] (function: belongs_to) — *Calculates stats respecting active squad firewalls.*

@@ -19,8 +19,13 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/m
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/DistConf.hpp.md|DistConfig.Sync]] (method: calls) — *Synchronize with the Config Server*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|OnErrorHandler]] (struct: calls) — *msg: a descriptive message providing additional context.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|from_str]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.from_value]] (method: calls) — *Creates an AppConfig wrapping explicit yaml value data.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.current_endpoint]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.get_endpoint]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.new_with_endpoint]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.reconnect]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.set_stream]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.write]] (method: calls)
@@ -32,15 +37,18 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/m
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/errors.rs.md|errors.rs]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_blocking]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_capability]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_non_blocking]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_with_retry]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.establish_connection]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.establish_connection_raw]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.get_next_delay]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_critical]] (method: defines_method) — *Infinite retries, aggressive backoff.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_performance]] (method: defines_method) — *Short timeouts, low delay, background reconnection.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_standard]] (method: defines_method) — *Limited retries, moderate backoff.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_with_all]] (method: defines_method) — *across the polyglot ecosystem.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_with_config]] (method: defines_method) — *NewWithConfig creates a manager configured with AppConfig capability resolution.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: calls) — *Logger trait defines the standard interface for structured logging across the toolbox.*
@@ -55,20 +63,25 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/m
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|ConnectionMode]] (enum: belongs_to) — *ConnectionMode defines how the manager handles the initial connection.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_blocking]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_capability]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_non_blocking]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.connect_with_retry]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.establish_connection]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.establish_connection_raw]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.get_next_delay]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_critical]] (method: belongs_to) — *Infinite retries, aggressive backoff.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_performance]] (method: belongs_to) — *Short timeouts, low delay, background reconnection.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_standard]] (method: belongs_to) — *Limited retries, moderate backoff.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_with_all]] (method: belongs_to) — *across the polyglot ecosystem.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager.new_with_config]] (method: belongs_to) — *NewWithConfig creates a manager configured with AppConfig capability resolution.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager]] (struct: belongs_to) — *- Context-Aware Recovery: Unified error reporting via on_error.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|NetworkManager]] (struct: defines_method) — *- Context-Aware Recovery: Unified error reporting via on_error.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|OptionalHandler]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|new_network_manager]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|new_network_manager_with_all]] (function: belongs_to) — *NOTE: Matches NetworkManager::new_with_all argument count for polyglot parity.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|new_network_manager_with_config]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|test_connect_capability_resolution]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|test_connect_non_blocking_returns_immediately]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|test_managed_connection_reconnect_max_retries]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|test_on_error_unified_hook]] (function: belongs_to)
