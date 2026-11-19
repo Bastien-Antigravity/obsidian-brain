@@ -27,10 +27,16 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/cod
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|CodeIndexerAgent]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|__init__]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|_fetch]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|_resolve_rag_rest_url]] (function: belongs_to) — *Resolves RAG Engine REST address dynamically from AppConfig (Zero Silent Fallback).*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|execute_tool]] (function: belongs_to) — *Dispatches CodeIndexer AST symbol search and dependency graph tools via RAG REST API.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|get_file_dependency_graph]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|search_code_symbols]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
 <!-- SYNC:END -->
