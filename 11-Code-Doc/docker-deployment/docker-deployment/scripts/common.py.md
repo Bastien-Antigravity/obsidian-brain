@@ -38,7 +38,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: belongs_to) — *Ensure RSA 2048-bit keys exist, respecting BASTIEN_PRIVATE_KEY_PATH, /etc/bastien/, or ~/.bastien/keys/.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_loopback_alias]] (function: belongs_to) — *Verify or attempt to configure 127.0.0.2 loopback alias.*
-- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: belongs_to) — *Ensure required secret env vars are set, generating temporary placeholders if missing.*
+- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|flush_stdin]] (function: belongs_to) — *Flush pending input characters from console and sys.stdin buffer.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|generate_placeholder_secret]] (function: belongs_to) — *Generate a random placeholder secret string.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_compose_cmd]] (function: belongs_to)

@@ -51,7 +51,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|buildMainHTTPHandler]] (function: belongs_to) — *buildMainHTTPHandler wires the split public/protected HTTP handler used in production and integration tests.*
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|isLoopbackCaller]] (function: belongs_to)
-- [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to)
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to) — *ESSENTIAL PROCESS:*
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 <!-- SYNC:END -->

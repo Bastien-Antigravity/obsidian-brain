@@ -32,6 +32,8 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/contro
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|delete_by_brain]] (function: belongs_to) — *Purges an entire brain partition atomically.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_brain_stats]] (function: belongs_to) — *Calculates stats respecting active squad firewalls.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_config]] (function: belongs_to) — *Retrieves a configuration value from the configuration loader.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_drifted_documents]] (function: belongs_to) — *Retrieves drifted code-to-documentation alignment links.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_file_dependencies]] (function: belongs_to) — *Returns inbound consumers and outbound dependencies for a target source file.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|get_status]] (function: belongs_to) — *Checks RAG Engine layer health, checking each store component.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|index_directory]] (function: belongs_to) — *Indexes directory/microservice repository.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|index_document_content]] (function: belongs_to) — *Indexes document content directly into a brain partition.*
@@ -39,8 +41,10 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/contro
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|list_config]] (function: belongs_to) — *Returns the entire active configuration map.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|query]] (function: belongs_to) — *Queries the RAG engine across partitions and returns serializable results.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|reset_index]] (function: belongs_to) — *Resets all database layers.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|search_symbols]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|set_config]] (function: belongs_to) — *Sets a configuration value via Go DistConf bridge.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|sync_docs]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|rest_handler.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|fastmcp.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|fastmcp.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|server.py]] (calls)

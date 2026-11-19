@@ -44,7 +44,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|autorepair.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|agent_dispatcher.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|switch_mode.py]] (calls)
@@ -66,7 +65,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/seed_service.py.md|seed_service.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|InterceptHandler]] (class: belongs_to) — *Custom logging handler that intercepts standard library logs and routes them to our UniLogger.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|SafeQueueWriter]] (class: belongs_to) — *Thread-safe stdout redirector that prevents recursion and strips log prefixes for the UI.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to) — *Mount static files at / using absolute path*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_register_mfe_with_web_interface]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_setup_uvicorn_logging]] (function: belongs_to) — *Reconfigures Uvicorn logging to use our standardized UniLogger via a Handler.*

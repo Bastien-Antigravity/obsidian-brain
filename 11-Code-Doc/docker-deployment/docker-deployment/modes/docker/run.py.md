@@ -18,7 +18,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_keys_exist]] (function: calls) — *Ensure RSA 2048-bit keys exist, respecting BASTIEN_PRIVATE_KEY_PATH, /etc/bastien/, or ~/.bastien/keys/.*
 - [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_loopback_alias]] (function: calls) — *Verify or attempt to configure 127.0.0.2 loopback alias.*
-- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: calls) — *Ensure required secret env vars are set, generating temporary placeholders if missing.*
+- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_placeholders]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_compose_cmd]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_env]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)

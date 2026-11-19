@@ -53,7 +53,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|common]] (function: belongs_to) — *Provides direct access to the 'common' configuration block.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|decrypt_secret]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|deep_merge]] (function: belongs_to) — *Wrapper around standalone deep_merge for backward compatibility.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|env_expander]] (function: belongs_to) — *Expand Environment Variables: ${VAR} or ${VAR:default}*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|env_expander]] (function: belongs_to) — *Expand Environment Variables: ${VAR}, ${VAR:default}, or ${VAR:-default}*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_capability]] (function: belongs_to) — *Returns the dictionary for a named capability from the 'capabilities' section.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_config]] (function: belongs_to) — *Retrieves a value from the bridge or local data.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: belongs_to)
@@ -69,7 +69,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_update]] (function: belongs_to) — *Deprecated: Use on_live_conf_update(). Semantic alias for backward compatibility.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: belongs_to) — *Updates the logger after instantiation.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|share_config]] (function: belongs_to) — *Shares service configuration with the ecosystem.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Synchronizes configuration state with the remote Config Server via the bridge.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Pulls the full configuration state from the Go bridge into self.data.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*

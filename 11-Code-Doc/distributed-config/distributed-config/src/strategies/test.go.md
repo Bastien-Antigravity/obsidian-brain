@@ -36,12 +36,12 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: calls) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
 - [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: calls) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Close]] (method: defines_method)
-- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeysWithOCC]] (method: defines_method) — *DeleteKeysWithOCC sends key deletion request to the server with OCC validation.*
-- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeys]] (method: defines_method) — *DeleteKeys sends key deletion request to the server.*
+- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeysWithOCC]] (method: defines_method)
+- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeys]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.GetHandler]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Load]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Name]] (method: defines_method)
-- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.SetWithOCC]] (method: defines_method) — *SetWithOCC pushes updates with an expected version to validate OCC.*
+- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.SetWithOCC]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Set]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Sync]] (method: defines_method)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
@@ -49,12 +49,12 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Close]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeysWithOCC]] (method: belongs_to) — *DeleteKeysWithOCC sends key deletion request to the server with OCC validation.*
-- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeys]] (method: belongs_to) — *DeleteKeys sends key deletion request to the server.*
+- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeysWithOCC]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.DeleteKeys]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.GetHandler]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Load]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Name]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.SetWithOCC]] (method: belongs_to) — *SetWithOCC pushes updates with an expected version to validate OCC.*
+- [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.SetWithOCC]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Set]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy.Sync]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|TestStrategy]] (struct: belongs_to)

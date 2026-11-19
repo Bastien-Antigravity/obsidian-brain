@@ -26,7 +26,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|index_directory]] (function: calls) — *Indexes directory/microservice repository.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|index_file]] (function: calls) — *Indexes a single file.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|reset_index]] (function: calls) — *Resets all database layers.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|sync_docs]] (function: calls) — *Syncs codebase documentation mirrors.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|sync_docs]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|start_visualizer]] (function: calls) — *Helper to start visualizer.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (imports)
@@ -66,7 +66,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_safe_stop_enricher]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_target]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|run]] (function: belongs_to) — *Dispatch execution based on parsed CLI arguments.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|run]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details
