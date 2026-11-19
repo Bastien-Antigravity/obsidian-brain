@@ -47,6 +47,8 @@ Automatically generated mirror for `log-server/src/core/ring_buffer.rs`.
 - [[log-server/log-server/src/core/ring_buffer.rs.md|test_ring_buffer_broadcast]] (function: belongs_to)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|test_ring_buffer_capacity_and_fifo]] (function: belongs_to)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|test_ring_buffer_filters]] (function: belongs_to)
+- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
+- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (same_package)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
 - [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (calls)

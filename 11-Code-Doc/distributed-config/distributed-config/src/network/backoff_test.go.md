@@ -24,6 +24,7 @@ Automatically generated mirror for `distributed-config/src/network/backoff_test.
 - [[distributed-config/distributed-config/src/network/backoff.go.md|backoff.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
+- [[distributed-config/distributed-config/distributed_config.go.md|distributed_config.go]] (imports)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (imports)
 - [[distributed-config/distributed-config/src/interfaces/config_strategy.go.md|config_strategy.go]] (imports)
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|TestBackoff_GetDelay]] (function: belongs_to)

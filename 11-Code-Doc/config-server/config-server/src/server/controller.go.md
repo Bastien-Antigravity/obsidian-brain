@@ -23,8 +23,10 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: defines_method) — *DeleteConfig deletes a configuration key atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/controller.go.md|Server.GetConfig]] (method: defines_method) — *GetConfig returns a specific configuration value from the dynamic store.*
 - [[config-server/config-server/src/server/controller.go.md|Server.GetStatus]] (method: defines_method) — *GetStatus returns the health status, active client counts, and client names.*
+- [[config-server/config-server/src/server/controller.go.md|Server.GetStoreVersion]] (method: defines_method) — *GetStoreVersion returns the current monotonic configuration version.*
 - [[config-server/config-server/src/server/controller.go.md|Server.ListConfig]] (method: defines_method) — *ListConfig returns the full current configuration state, merging static base configurations with dynamic overrides.*
 - [[config-server/config-server/src/server/controller.go.md|Server.PersistConfig]] (method: defines_method) — *PersistConfig manually triggers a save of the configuration state.*
+- [[config-server/config-server/src/server/controller.go.md|Server.SetConfigWithOCC]] (method: defines_method) — *SetConfigWithOCC updates a configuration value atomically with OCC verification, commits to persistence, and broadcasts.*
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: defines_method) — *SetConfig updates a configuration value atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
@@ -38,7 +40,8 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls) — *Helper to deep copy the map (used for COW updates)*
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *Implementation: Copy-On-Write + atomic pointer swap.*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomicWithOCC]] (method: calls) — *UpdateAtomicWithOCC applies a modification function only if the current version matches expectedVersion (or expectedV...*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateSection]] (method: calls) — *cloning only the target section while structurally sharing all other sections.*
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)
@@ -46,8 +49,10 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: belongs_to) — *DeleteConfig deletes a configuration key atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/controller.go.md|Server.GetConfig]] (method: belongs_to) — *GetConfig returns a specific configuration value from the dynamic store.*
 - [[config-server/config-server/src/server/controller.go.md|Server.GetStatus]] (method: belongs_to) — *GetStatus returns the health status, active client counts, and client names.*
+- [[config-server/config-server/src/server/controller.go.md|Server.GetStoreVersion]] (method: belongs_to) — *GetStoreVersion returns the current monotonic configuration version.*
 - [[config-server/config-server/src/server/controller.go.md|Server.ListConfig]] (method: belongs_to) — *ListConfig returns the full current configuration state, merging static base configurations with dynamic overrides.*
 - [[config-server/config-server/src/server/controller.go.md|Server.PersistConfig]] (method: belongs_to) — *PersistConfig manually triggers a save of the configuration state.*
+- [[config-server/config-server/src/server/controller.go.md|Server.SetConfigWithOCC]] (method: belongs_to) — *SetConfigWithOCC updates a configuration value atomically with OCC verification, commits to persistence, and broadcasts.*
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: belongs_to) — *SetConfig updates a configuration value atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/controller.go.md|Server]] (struct: defines_method) — *GetConfig returns a specific configuration value from the dynamic store.*
 - [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)

@@ -21,14 +21,17 @@ Automatically generated mirror for `notif-server/src/core/controller.go`.
 ### 📦 Dependencies (Outbound)
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.AddProvider]] (method: defines_method) — *AddProvider initializes a new provider section with default template.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetAlertingConfig]] (method: defines_method) — *GetAlertingConfig returns a deep copy of the current internal configuration of notification providers.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: defines_method) — *GetStatus returns server health and metadata.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: defines_method) — *GetStatus returns server health and real-time delivery/backpressure telemetry.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetSupportedTypes]] (method: defines_method) — *GetSupportedTypes returns the list of hardcoded drivers available.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.ListNotifiers]] (method: defines_method) — *ListNotifiers returns the list of configured notifiers.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.ListNotifiers]] (method: defines_method) — *ListNotifiers returns the list of configured notifiers with live health telemetry.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.ReloadConfig]] (method: defines_method) — *ReloadConfig triggers a manual reload of the configuration.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.RemoveProvider]] (method: defines_method) — *RemoveProvider deletes a provider section.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotificationToTag]] (method: defines_method) — *SendTestNotificationToTag triggers a test notification exclusively targeting a single active provider tag.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotification]] (method: defines_method) — *SendTestNotification triggers a test notification through the engine and logger.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SetAlertingConfig]] (method: defines_method) — *SetAlertingConfig updates a specific setting for a notification provider.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: calls) — *GetActiveNotifiers returns information about all currently active notification senders.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: calls) — *GetActiveNotifiers returns dynamic health and telemetry about all active notification senders.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetDroppedIngestionCount]] (method: calls) — *GetDroppedIngestionCount returns the total number of notifications dropped because NotifChan was full.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetIngestionQueueDepth]] (method: calls) — *GetIngestionQueueDepth returns the current number of pending notifications in NotifChan.*
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Reload]] (method: calls) — *senders that have changed or were added/removed.*
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
@@ -44,21 +47,26 @@ Automatically generated mirror for `notif-server/src/core/controller.go`.
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (imports)
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.AddProvider]] (method: belongs_to) — *AddProvider initializes a new provider section with default template.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetAlertingConfig]] (method: belongs_to) — *GetAlertingConfig returns a deep copy of the current internal configuration of notification providers.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: belongs_to) — *GetStatus returns server health and metadata.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: belongs_to) — *GetStatus returns server health and real-time delivery/backpressure telemetry.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetSupportedTypes]] (method: belongs_to) — *GetSupportedTypes returns the list of hardcoded drivers available.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.ListNotifiers]] (method: belongs_to) — *ListNotifiers returns the list of configured notifiers.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.ListNotifiers]] (method: belongs_to) — *ListNotifiers returns the list of configured notifiers with live health telemetry.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.ReloadConfig]] (method: belongs_to) — *ReloadConfig triggers a manual reload of the configuration.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.RemoveProvider]] (method: belongs_to) — *RemoveProvider deletes a provider section.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotificationToTag]] (method: belongs_to) — *SendTestNotificationToTag triggers a test notification exclusively targeting a single active provider tag.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SendTestNotification]] (method: belongs_to) — *SendTestNotification triggers a test notification through the engine and logger.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.SetAlertingConfig]] (method: belongs_to) — *SetAlertingConfig updates a specific setting for a notification provider.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller]] (struct: belongs_to) — *Controller implements the NotifController interface.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller]] (struct: defines_method) — *Controller implements the NotifController interface.*
 - [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: belongs_to) — *NewController creates a new Controller instance.*
 - [[notif-server/notif-server/src/core/controller.go.md|NotifController]] (interface: belongs_to) — *NotifController defines the unified interface for notification management.*
-- [[notif-server/notif-server/src/core/controller.go.md|NotifierInfo]] (struct: belongs_to) — *NotifierInfo provides a summary of an active notifier.*
+- [[notif-server/notif-server/src/core/controller.go.md|NotifierInfo]] (struct: belongs_to) — *NotifierInfo provides a summary of an active notifier including real-time health metrics.*
 - [[notif-server/notif-server/src/core/controller.go.md|cloneConfig]] (function: belongs_to)
 - [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (calls)
 - [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (same_package)
+- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
+- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
 - [[notif-server/notif-server/src/grpc_control/service.go.md|service.go]] (imports)
 - [[notif-server/notif-server/src/rest/contracts.go.md|contracts.go]] (imports)
 - [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)

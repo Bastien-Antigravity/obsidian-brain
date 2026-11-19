@@ -24,7 +24,7 @@ Automatically generated mirror for `web-interface/src/router/autodiscovery.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPageWithMetadata]] (function: calls) — *RenderPageWithMetadata renders a page with category, title, subtitle, icon, and navigation categories.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
+- [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (imports)
 - [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Close]] (method: calls)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Error]] (method: calls)

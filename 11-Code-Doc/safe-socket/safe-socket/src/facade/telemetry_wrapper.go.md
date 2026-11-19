@@ -12,7 +12,7 @@ last_sync: 2026-11-07T14:41:19.468328
 Automatically generated mirror for `safe-socket/src/facade/telemetry_wrapper.go`.
 
 > **Essential Process**:
-> Provides a distinct, lock-free atomic switchable telemetry wrapper for safe-socket TransportConnections to track real-time inter-service connections and segregated frame channels (data frames vs heartbeats) with zero overhead when disabled.
+> Provides a distinct, lock-free atomic switchable telemetry wrapper for safe-socket TransportConnections to track real-time inter-service connections and segregated frame channels (data frames vs heartbeats vs control frames) with zero overhead when disabled and non-blocking, panic-safe dispatch.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
@@ -33,6 +33,8 @@ Automatically generated mirror for `safe-socket/src/facade/telemetry_wrapper.go`
 - [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (same_package)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|DroppedTelemetryEvents]] (function: belongs_to) — *DroppedTelemetryEvents returns the total count of telemetry events dropped due to queue saturation.*
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|FlushTelemetry]] (function: belongs_to) — *or until the timeout expires. Returns true if the queue was drained within timeout.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|IsTelemetryEnabled]] (function: belongs_to) — *IsTelemetryEnabled atomically returns whether real-time connection tracking is active.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|NewTelemetryConnection]] (function: belongs_to) — *NewTelemetryConnection wraps a TransportConnection in a lock-free switchable telemetry decorator.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|SetTelemetryEnabled]] (function: belongs_to) — *SetTelemetryEnabled atomically enables or disables real-time connection tracking.*
@@ -52,7 +54,15 @@ Automatically generated mirror for `safe-socket/src/facade/telemetry_wrapper.go`
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|TelemetryEventWrite]] (constant: belongs_to)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|TelemetryEvent]] (struct: belongs_to) — *TelemetryEvent represents a single observed connection or segregated frame event.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|TelemetryHookFunc]] (struct: belongs_to) — *TelemetryHookFunc is the non-blocking callback invoked when telemetry is enabled.*
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|WrapConnectionWithTelemetry]] (function: belongs_to) — *If telemetry is enabled, it decorates conn with a TelemetryConnection.*
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|defaultTelemetryQueueSize]] (constant: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|detectChannel]] (function: belongs_to) — *detectChannel classifies payload into segregated channels without mutating wire format.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|emitTelemetryEvent]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|ensureTelemetryWorker]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|init]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|safeInvokeHook]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetryWorker]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|wrapConnectionWithTelemetry]] (function: belongs_to) — *wrapConnectionWithTelemetry is an internal alias matching the AGENTS.md rule naming.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|telemetry_wrapper_test.go]] (calls)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|telemetry_wrapper_test.go]] (same_package)
 <!-- SYNC:END -->

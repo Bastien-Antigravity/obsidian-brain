@@ -27,6 +27,7 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: defines_method) — *GetActiveClients returns the current number of connected clients lock-free.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: defines_method) — *GetClientNames returns the names of all currently connected clients lock-free.*
 - [[config-server/config-server/src/server/server.go.md|Server.ReloadConfig]] (method: defines_method) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
+- [[config-server/config-server/src/server/server.go.md|Server.SaveSync]] (method: defines_method) — *SaveSync immediately commits the current store state to disk synchronously, clearing dirty status.*
 - [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: defines_method) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
 - [[config-server/config-server/src/server/server.go.md|Server.Start]] (method: defines_method) — *Start listens for incoming TCP connections.*
 - [[config-server/config-server/src/server/server.go.md|Server.Stop]] (method: defines_method) — *Stop signals the server to shutdown.*
@@ -60,6 +61,7 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: belongs_to) — *GetActiveClients returns the current number of connected clients lock-free.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: belongs_to) — *GetClientNames returns the names of all currently connected clients lock-free.*
 - [[config-server/config-server/src/server/server.go.md|Server.ReloadConfig]] (method: belongs_to) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
+- [[config-server/config-server/src/server/server.go.md|Server.SaveSync]] (method: belongs_to) — *SaveSync immediately commits the current store state to disk synchronously, clearing dirty status.*
 - [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: belongs_to) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
 - [[config-server/config-server/src/server/server.go.md|Server.Start]] (method: belongs_to) — *Start listens for incoming TCP connections.*
 - [[config-server/config-server/src/server/server.go.md|Server.Stop]] (method: belongs_to) — *Stop signals the server to shutdown.*

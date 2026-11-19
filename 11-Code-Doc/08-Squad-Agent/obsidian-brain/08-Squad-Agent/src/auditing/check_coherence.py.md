@@ -38,11 +38,11 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/c
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|CoherenceAuditor]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|ROLES]] (constant: belongs_to) — *Precedence matching mapping*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|audit]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|fix_mismatch]] (function: belongs_to) — *Auto-resolves prompt-skill mismatches by copying/formatting source prompt.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|fix_mismatch]] (function: belongs_to) — *Auto-resolves prompt-skill mismatches using the canonical builder from convert_agents.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|main]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|run_coherence_check]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|strip_frontmatter]] (function: belongs_to) — *Removes the YAML frontmatter block from markdown content.*
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|strip_sandbox_headers]] (function: belongs_to) — *Removes attention restoration and state management rules added to skills.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|strip_sandbox_headers]] (function: belongs_to) — *Removes attention restoration, complexity gate, and state management rules added to skills.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

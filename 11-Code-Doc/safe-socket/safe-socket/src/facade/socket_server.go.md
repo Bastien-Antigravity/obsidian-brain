@@ -29,6 +29,7 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|reliable_connection.go]] (same_package)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetAddress]] (method: calls)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetConnectTimeout]] (method: calls)
+- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetName]] (method: calls)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetProtocol]] (method: calls)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetTransport]] (method: calls)
 - [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (same_package)
@@ -49,7 +50,7 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|NewTelemetryConnection]] (function: calls) — *NewTelemetryConnection wraps a TransportConnection in a lock-free switchable telemetry decorator.*
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|WrapConnectionWithTelemetry]] (function: calls) — *If telemetry is enabled, it decorates conn with a TelemetryConnection.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
 - [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: calls)

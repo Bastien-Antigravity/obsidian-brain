@@ -28,6 +28,8 @@ Automatically generated mirror for `notif-server/src/server/timeout_test.go`.
 - [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
 - [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
 - [[notif-server/notif-server/src/server/server.go.md|server.go]] (same_package)
+- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.getLogs]] (method: calls)
+- [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/server/timeout_test.go.md|TestIdleTimeoutFix]] (function: belongs_to)

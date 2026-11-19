@@ -19,17 +19,24 @@ Automatically generated mirror for `distributed-config/src/facade/config_facade.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Delete]] (method: calls) — *If keys slice is empty, removes the entire section.*
 - [[distributed-config/distributed-config/src/core/config.go.md|ParseSharePayload]] (function: calls) — *Supports map[string]map[string]string, map[string]string, and map[string]interface{}.*
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/core/defaults.go.md|NewDefaultConfig]] (function: calls)
 - [[distributed-config/distributed-config/src/core/merger.go.md|DeepMerge]] (function: calls) — *Entries in source override entries in target.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.ApplyFileOverride]] (method: defines_method)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Close]] (method: defines_method)
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.DeleteKey]] (method: defines_method) — *DeleteKey removes a single key from a section.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.DeleteKeysWithOCC]] (method: defines_method) — *Returns ErrVersionConflict if expectedVersion does not match server version.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.DeleteKeys]] (method: defines_method) — *DeleteKeys removes specified section keys from live configuration and syncs to server.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.GetVersion]] (method: defines_method) — *GetVersion returns the last seen server configuration version.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.OnLiveConfUpdate]] (method: defines_method)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.OnRegistryUpdate]] (method: defines_method)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Reload]] (method: defines_method) — *Reload manually re-triggers the configuration loading from its primary source (e.g., file).*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.SetSingle]] (method: defines_method) — *SetSingle is a helper for updating a single configuration value.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.SetWithOCC]] (method: defines_method) — *Returns ErrVersionConflict if expectedVersion does not match server version.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Set]] (method: defines_method)
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.ShareConfigWithOCC]] (method: defines_method) — *ShareConfigWithOCC converts payload and updates configuration with optimistic concurrency control.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.ShareConfig]] (method: defines_method)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Sync]] (method: defines_method)
 - [[distributed-config/distributed-config/src/factory/config_factory.go.md|NewStrategy]] (function: calls)
@@ -37,6 +44,7 @@ Automatically generated mirror for `distributed-config/src/facade/config_facade.
 - [[distributed-config/distributed-config/src/interfaces/config_strategy.go.md|config_strategy.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (imports)
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (imports)
+- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: calls)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
@@ -48,11 +56,17 @@ Automatically generated mirror for `distributed-config/src/facade/config_facade.
 - [[distributed-config/distributed-config/distributed_config.go.md|distributed_config.go]] (calls)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.ApplyFileOverride]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Close]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.DeleteKey]] (method: belongs_to) — *DeleteKey removes a single key from a section.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.DeleteKeysWithOCC]] (method: belongs_to) — *Returns ErrVersionConflict if expectedVersion does not match server version.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.DeleteKeys]] (method: belongs_to) — *DeleteKeys removes specified section keys from live configuration and syncs to server.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.GetVersion]] (method: belongs_to) — *GetVersion returns the last seen server configuration version.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.OnLiveConfUpdate]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.OnRegistryUpdate]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Reload]] (method: belongs_to) — *Reload manually re-triggers the configuration loading from its primary source (e.g., file).*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.SetSingle]] (method: belongs_to) — *SetSingle is a helper for updating a single configuration value.*
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.SetWithOCC]] (method: belongs_to) — *Returns ErrVersionConflict if expectedVersion does not match server version.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Set]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.ShareConfigWithOCC]] (method: belongs_to) — *ShareConfigWithOCC converts payload and updates configuration with optimistic concurrency control.*
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.ShareConfig]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config.Sync]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|Config]] (struct: belongs_to)

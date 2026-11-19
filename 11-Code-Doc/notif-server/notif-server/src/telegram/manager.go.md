@@ -21,7 +21,7 @@ Automatically generated mirror for `notif-server/src/telegram/manager.go`.
 ### 📦 Dependencies (Outbound)
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.AddProvider]] (method: calls) — *AddProvider initializes a new provider section with default template.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetAlertingConfig]] (method: calls) — *GetAlertingConfig returns a deep copy of the current internal configuration of notification providers.*
-- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: calls) — *GetStatus returns server health and metadata.*
+- [[notif-server/notif-server/src/core/controller.go.md|Controller.GetStatus]] (method: calls) — *GetStatus returns server health and real-time delivery/backpressure telemetry.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.GetSupportedTypes]] (method: calls) — *GetSupportedTypes returns the list of hardcoded drivers available.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.ReloadConfig]] (method: calls) — *ReloadConfig triggers a manual reload of the configuration.*
 - [[notif-server/notif-server/src/core/controller.go.md|Controller.RemoveProvider]] (method: calls) — *RemoveProvider deletes a provider section.*

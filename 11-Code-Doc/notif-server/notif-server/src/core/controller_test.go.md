@@ -31,10 +31,13 @@ Automatically generated mirror for `notif-server/src/core/controller_test.go`.
 - [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
 - [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: calls) — *GetActiveNotifiers returns information about all currently active notification senders.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.GetActiveNotifiers]] (method: calls) — *GetActiveNotifiers returns dynamic health and telemetry about all active notification senders.*
 - [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: calls) — *Stop shuts down the notifier and all active workers.*
+- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Stop]] (method: calls) — *It is fully idempotent and safe to call multiple times.*
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.getLastMsg]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|mockSender.isCalled]] (method: calls)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/test_logger_test.go.md|testNotifierLogger.Error]] (method: calls)
 - [[notif-server/notif-server/src/core/test_logger_test.go.md|test_logger_test.go]] (same_package)
 

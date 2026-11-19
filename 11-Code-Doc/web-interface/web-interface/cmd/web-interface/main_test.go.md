@@ -33,7 +33,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: calls) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
-- [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
+- [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (imports)
 - [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|GetMFERegistry]] (function: calls) — *GetMFERegistry returns the active MFE registry instance, if set.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*

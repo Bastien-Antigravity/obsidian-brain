@@ -54,14 +54,15 @@ tags:
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd.Type]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_Cmd]] (struct: defines_method)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_DELETE_SYNC]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_ERROR]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_FULL_REFRESH]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_GET_SYNC]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|ConfigMsg_PUT_SYNC]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|_]] (constant: belongs_to) — *Verify that this generated code is sufficiently up-to-date.*
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_src_schemas_config_proto_init]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_src_schemas_config_proto_rawDescGZIP]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_src_schemas_config_proto_rawDesc]] (constant: belongs_to)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_config_proto_init]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_config_proto_rawDescGZIP]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_config_proto_rawDesc]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|init]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|x]] (struct: belongs_to)
 <!-- SYNC:END -->

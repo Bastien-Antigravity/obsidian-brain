@@ -20,12 +20,13 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Apply]] (method: defines_method) — *Use this in conjunction with PreviewSet to avoid redundant calculations.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Delete]] (method: defines_method) — *If keys slice is empty, removes the entire section.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: defines_method) — *It looks for "ip" and "port" keys in the capability configuration.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: defines_method) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: defines_method) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: defines_method) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: defines_method) — *Returns an empty string if not found.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: defines_method) — *before committing locally.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: defines_method) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: defines_method) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: defines_method)
@@ -38,12 +39,13 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|CommonConfig]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Apply]] (method: belongs_to) — *Use this in conjunction with PreviewSet to avoid redundant calculations.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Delete]] (method: belongs_to) — *If keys slice is empty, removes the entire section.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: belongs_to) — *It looks for "ip" and "port" keys in the capability configuration.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: belongs_to) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: belongs_to) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: belongs_to) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: belongs_to) — *Returns an empty string if not found.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: belongs_to) — *before committing locally.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: belongs_to) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: belongs_to) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: belongs_to)
@@ -64,6 +66,7 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/validator_test.go.md|validator_test.go]] (imports)
 - [[distributed-config/distributed-config/src/network/backoff.go.md|backoff.go]] (imports)
+- [[distributed-config/distributed-config/src/network/client.go.md|client.go]] (calls)
 - [[distributed-config/distributed-config/src/network/client.go.md|client.go]] (imports)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (imports)
 - [[distributed-config/distributed-config/src/network/network_test.go.md|network_test.go]] (calls)
@@ -74,6 +77,7 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/network/sync_logic_test.go.md|sync_logic_test.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (imports)
+- [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (imports)

@@ -67,6 +67,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/start
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|dispatch_alert_sync]] (function: calls) — *Synchronously dispatches operational alerts to notif-server via NotificationClient.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|get_active_mode]] (function: calls) — *Reads active mode from the orchestration manual.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|refresh_telegram_menu]] (function: calls) — *Triggers a live Telegram inline menu rebuild when fleet incidents change.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|register_background_task]] (function: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|start_and_supervise_agents]] (function: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/mission_help.py.md|mission_help.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/switch_mode.py.md|switch_mode.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (imports)

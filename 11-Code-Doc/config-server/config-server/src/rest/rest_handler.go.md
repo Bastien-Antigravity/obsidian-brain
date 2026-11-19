@@ -34,13 +34,15 @@ Automatically generated mirror for `config-server/src/rest/rest_handler.go`.
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: defines_method)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetConfig]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetStatus]] (method: calls)
+- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetStoreVersion]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.ListConfig]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.PersistConfig]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.ReloadConfig]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.SetConfig]] (method: calls)
+- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.SetConfigWithOCC]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Error]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Info]] (method: calls)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
+- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 
 ### 🔌 Consumers (Inbound)

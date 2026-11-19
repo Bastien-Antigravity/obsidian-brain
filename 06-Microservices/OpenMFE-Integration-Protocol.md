@@ -48,23 +48,33 @@ sequenceDiagram
 
 ## 2. Integration Specifications
 
-### 2.1 The Registry Endpoints
+### 2.1 The Registry Endpoints & Invariants
 The registry is built directly into the `web-interface` server on **Port 5000** (or dynamically resolved via `appConfig.GetListenAddr("web_interface")`).
-- **POST `/api/v1/register`**: Used by microservices at boot time to publish their frontend configuration.
+- **POST `/api/v1/register`**: Used by microservices at boot time to publish their frontend configuration and optional dynamic custom tabs.
   ```json
   {
     "name": "config-server",
     "tag": "config-server-mfe",
-    "url": "http://localhost:3308/static/js/mfe-loader.js",
+    "url": "http://127.0.0.1:3308/static/js/mfe-loader.js",
     "navTitle": "⚙️ Config Server",
     "layer": "L1",
     "category": "Base Fleet",
     "priority": 20,
     "icon": "fa-cogs",
-    "requiresAuth": true
+    "requiresAuth": true,
+    "customTabs": [
+      {
+        "id": "backups",
+        "title": "Snapshots & Backups",
+        "icon": "fa-archive",
+        "tag": "config-server-snapshots"
+      }
+    ]
   }
   ```
-- **GET `/api/v1/services`**: Used by the web interface loader (`mfe-loader.js`) to fetch all active frontends organized by layer.
+- **Strict Invariant: Zero `localhost` Acceptance**:
+  The registry strictly rejects `"localhost"` in registration URLs with **HTTP 400 Bad Request**. Microservices MUST provide a numeric IP (`127.0.0.1`), a Docker container DNS name, or a relative path (`/static/...`).
+- **GET `/api/v1/services`**: Used by the web interface loader (`mfe-loader.js`) to fetch all active frontends organized by layer, including enriched runtime metadata and `customTabs`.
 
 ### 2.2 Multi-Tier Service Taxonomy & 3-Tier Mesh Topology (`L1–L3`, `> L3`, `EXT`)
 Micro-frontends and mesh topology nodes are partitioned into distinct operational tiers:
@@ -125,7 +135,7 @@ To prevent runtime filesystem path lookup issues in containerized (Docker) or mu
     ```
 
 #### 2. Support CORS (Cross-Origin Resource Sharing)
-Because the Web Component executes in the client's browser (loaded under the `web-interface` domain, e.g., `localhost:5000`), browser security will block direct API queries to your microservice (running on a different port, e.g., `localhost:3308`) unless CORS headers are explicitly sent.
+Because the Web Component executes in the client's browser (loaded under the `web-interface` domain, e.g., `http://127.0.0.1:5000`), browser security will block direct API queries to your microservice (running on a different port, e.g., `http://127.0.0.1:3308`) unless CORS headers are explicitly sent.
 *   **Go (CORS Middleware)**:
     ```go
     func CorsMiddleware(next http.Handler) http.Handler {
@@ -358,21 +368,18 @@ JavaScript `LogLevel` constants strictly mirror the 12-severity-level enumeratio
 > **Warning vs. Warn**: The ecosystem canonical level name is **`WARNING`** (Level 9). Browser DevTools naturally use `console.warn()`. `BastienLogger` provides `logger.warn()` solely as a convenience alias pointing to `logger.warning()`, guaranteeing 1:1 parity with the backend Cap'n Proto and wire schemas.
 
 #### 2. OpenMFE Component Usage Example
-Inside any custom element or MFE loader:
+Inside any custom element extending `BastienMFEElement`:
 ```javascript
-class MyServiceMFE extends HTMLElement {
+class MyServiceMFE extends window.BastienMFEElement {
     connectedCallback() {
-        // Scoped logger instantiation (falls back gracefully to console if run standalone)
-        this.logger = window.BastienLogger 
-            ? window.BastienLogger.get('my-service-mfe') 
-            : console;
-
+        super.connectedCallback();
         this.logger.info('MyServiceMFE mounted into DOM');
     }
 
     async fetchData() {
         try {
-            const resp = await fetch('http://localhost:3308/api/v1/data');
+            // Use this.baseUrl or relative paths - never hardcode localhost or IP
+            const resp = await fetch(this.apiUrl('/api/v1/data'));
             // ...
         } catch (err) {
             this.logger.error('Failed to fetch data from backend', { error: err.message });
@@ -404,13 +411,53 @@ sequenceDiagram
 
 #### 4. Network Isolation: Why Browsers Cannot Reach `log-server` Directly
 1. **Transport Sandbox**: `log-server` operates on high-speed raw TCP with length-prefixed binary framing (`safe-socket`). Web browsers operate in a sandbox where raw TCP sockets cannot be opened (only HTTP/WebSockets are permitted).
-2. **Network & Security Segmentation**: Internal microservice daemon ports (such as `9020`) bind exclusively to internal container bridges or localhost interfaces configured via `AppConfig`. Directly exposing backend TCP logging ports to external browsers is a critical security vulnerability. `web-interface` acts as the authorized telemetry gateway.
+2. **Network & Security Segmentation**: Internal microservice daemon ports (such as `9020`) bind exclusively to internal container bridges or explicit loopback interfaces (`127.0.0.1`) configured via `AppConfig`. Directly exposing backend TCP logging ports to external browsers is a critical security vulnerability. `web-interface` acts as the authorized telemetry gateway.
 
 #### 5. Offline Fallback & Self-Healing Queue
 When a client cannot reach `web-interface` (e.g. offline client, network partition, or `web-interface` restarting):
 - **Zero UI Disruption**: The logger never throws exceptions and never blocks the UI thread.
 - **Bounded Offline Ring Buffer**: Unsent telemetry payloads are saved in memory (`_offlineQueue`, max 50 entries) using FIFO eviction to prevent memory bloat.
 - **Reconnection Drain**: When network connectivity is restored (`window.addEventListener('online')`), the buffered queue is automatically flushed to `web-interface`.
+
+### 2.4 Two-Tier Separation Architecture (Universal Shell + Dynamic Custom Tab Ingress)
+To eliminate boilerplate and ensure uniform observability across all microservices, OpenMFE adopts a **Two-Tier Architecture**:
+
+```mermaid
+flowchart TD
+    subgraph TIER1["Tier 1: Universal Shell (Standard Framework)"]
+        Shell["web/templates/mfe.html"]
+        SpecModal["_spec_modal.html (Single-Column Spec Modal)"]
+        PanelAI["_panel_ai.html (Obsidian / Sentinel Context)"]
+        T1["Tab 1: Live Inspector (#panel-live)"]
+        T2["Tab 2: WireTap Flow (#panel-flow)"]
+        T3["Tab 3: SDK & Code Snippets (#panel-sdk)"]
+        T4["Tab 4: AI & Runbook (#panel-ai)"]
+    end
+
+    subgraph TIER2["Tier 2: Dynamic Custom Tab Ingress (Service-Specific)"]
+        CustomTabs["Registered customTabs / dataStructure.custom_tabs"]
+        Loader["mfe-loader.js: mountDynamicCustomTabs()"]
+        CustomBtn[".mfe-tab-btn--custom"]
+        CustomPanel[".mfe-tab-panel--custom"]
+        CustomWC["<service-custom-element>"]
+    end
+
+    Shell --> SpecModal
+    Shell --> PanelAI
+    CustomTabs --> Loader
+    Loader --> CustomBtn
+    Loader --> CustomPanel
+    CustomPanel --> CustomWC
+```
+
+1. **Tier 1 — Universal Shell**:
+   - `web/templates/mfe.html` renders the canonical host shell with four standardized tabs.
+   - Compiled with sub-template partials `_spec_modal.html` (single-column popover showing active IP, port, mode) and `_panel_ai.html` (Obsidian runbook integration).
+   - Zero silent fallback: missing network parameters display `—` or `Unspecified` instead of fabricated `"127.0.0.1"` fallbacks.
+2. **Tier 2 — Dynamic Custom Tab Ingress**:
+   - When a microservice requires bespoke management views (e.g. `timescale_analytics` needing a "Hypertables" tab), it registers them via `customTabs: [{ id, title, icon, tag, content }]`.
+   - `mfe-loader.js` runs `mountDynamicCustomTabs(service)` to dynamically append `.mfe-tab-btn--custom` into `#mfe-tab-list` and `.mfe-tab-panel--custom` into `#mfe-shell-root`.
+   - Lifecycle is fully managed: navigating between services completely tears down previous custom tabs, preventing memory leaks or DOM pollution.
 
 ---
 
@@ -428,7 +475,7 @@ go run ./cmd/web-interface
 ### 2. Register a Mockup Service
 Simulate a microservice startup by registering a mockup metadata node:
 ```bash
-curl -X POST http://localhost:5000/api/v1/register \
+curl -X POST http://127.0.0.1:5000/api/v1/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "mock-service",
@@ -439,12 +486,20 @@ curl -X POST http://localhost:5000/api/v1/register \
     "category": "Trading & Execution",
     "priority": 50,
     "icon": "fa-flask",
-    "requiresAuth": false
+    "requiresAuth": false,
+    "customTabs": [
+      {
+        "id": "diagnostics",
+        "title": "Deep Diagnostics",
+        "icon": "fa-stethoscope",
+        "tag": "mock-diagnostics-view"
+      }
+    ]
   }'
 ```
 
 ### 3. Open the Dashboard
-Open the main `web-interface` (`http://localhost:5000`):
+Open the main `web-interface` (`http://127.0.0.1:5000`):
 1. **Dynamic Navigation:** Open the right `#Sidenav` drawer (gear / services toggle). The accordion under `TRADING & EXECUTION (L2)` automatically renders the link **🧪 Mockup Service** with its `fa-flask` icon.
-2. **Mounting:** Clicking the link loads `/mfe/mock-service`. The loader downloads `ta-indicators.js` and mounts `<mock-mfe>` dynamically inside the page frame.
+2. **Mounting:** Clicking the link loads `/mfe/mock-service`. The loader downloads `ta-indicators.js` and mounts `<mock-mfe>` dynamically inside the page frame, while dynamically injecting the **Deep Diagnostics** custom tab.
 3. **Cold-Start Verification:** Stop and restart `web-interface`. The mockup service remains immediately available in the menu via `mfe_services.json` cache without re-registering.

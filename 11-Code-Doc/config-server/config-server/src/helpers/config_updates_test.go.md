@@ -23,7 +23,7 @@ Automatically generated mirror for `config-server/src/helpers/config_updates_tes
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: calls)
+- [[config-server/config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: calls) — *It also supports key deletions via the "__DELETED__" sentinel value.*
 - [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (same_package)
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 

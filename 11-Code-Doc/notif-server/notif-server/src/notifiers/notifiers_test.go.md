@@ -1,18 +1,4 @@
----
-source: notif-server/src/notifiers/notifiers_test.go
-workspace: notif-server
-type: code-mirror
-status: auto-generated
-last_sync: 2026-09-19 00:02:00.663210
-microservice: notif-server
-tags:
-- '#service/notif-server'
-- '#type/code-mirror'
-- '#state/auto-generated'
-- '#zone/3-fleet'
----
 
-# Mirror: notifiers_test.go
 
 ## 📝 Description
 Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go`.
@@ -21,9 +7,10 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 > Unit tests for notification sender implementations (Matrix, Discord, Telegram, Gmail). Validates optional configuration handling, seamless TAG fallback, and Logger integration.
 
 ## 🏗️ Architectural Context
+
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/notifiers/discord.go.md|NewDiscordSender]] (function: calls) — *unconfigured and returns (nil, nil) without failing.*
+- [[notif-server/notif-server/src/notifiers/discord.go.md|NewDiscordSender]] (function: calls) — *or (nil, error) if decryption fails.*
 - [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.buildEmail]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|NewGmailSender]] (function: calls)
@@ -31,7 +18,8 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetLogLevel]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.GetTag]] (method: calls)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.SendMessage]] (method: calls)
-- [[notif-server/notif-server/src/notifiers/matrix.go.md|NewMatrixSender]] (function: calls) — *unconfigured and returns (nil, nil) without failing.*
+- [[notif-server/notif-server/src/notifiers/matrix.go.md|MatrixSender.redactError]] (method: calls) — *redactError strips the webhook URL and any other secrets from transport errors via the standard sanitizer.*
+- [[notif-server/notif-server/src/notifiers/matrix.go.md|NewMatrixSender]] (function: calls) — *or (nil, error) if decryption fails.*
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|matrix.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.AddMetadata]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: defines_method)
@@ -55,8 +43,7 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Stream]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Trade]] (method: defines_method)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Warning]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/telegram.go.md|NewTelegramSender]] (function: calls) — *is considered unconfigured and returns (nil, nil) without failing.*
-- [[notif-server/notif-server/src/notifiers/telegram.go.md|TelegramSender.redactError]] (method: calls) — *redactError strips plain bot token from error messages to prevent credential leaks in logs [NS-4].*
+- [[notif-server/notif-server/src/notifiers/telegram.go.md|NewTelegramSender]] (function: calls) — *or (nil, error) if decryption fails.*
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (same_package)
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
 
@@ -67,18 +54,24 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/notifiers/gmail.go.md|gmail.go]] (same_package)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|matrix.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/matrix.go.md|matrix.go]] (same_package)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestConcurrentProviderCredentialCachingRace]] (function: belongs_to)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestDiscordAndMatrixRedactWebhookURLFromErrors]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestDiscordOnDemandDecryption]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestDiscordOptionalConfig]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestDiscordSendMessageMock]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestExplicitParameterValidation]] (function: belongs_to)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestGmailAttachmentDirectoryBoundary]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestGmailAttachmentSanitization]] (function: belongs_to)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestGmailHeaderCRLFInjectionSanitization]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestGmailOptionalConfig]] (function: belongs_to)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestGmailSMTPDecryptionFailurePropagates]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestMatrixOptionalConfig]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestMatrixSendMessageMock]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestTelegramOnDemandDecryption]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestTelegramOptionalConfig]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestTelegramRedactError]] (function: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|TestTelegramSendMessageMock]] (function: belongs_to)
+- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|concurrency]] (constant: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.AddMetadata]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: belongs_to)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Critical]] (method: belongs_to)
@@ -106,6 +99,3 @@ Automatically generated mirror for `notif-server/src/notifiers/notifiers_test.go
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (same_package)
 <!-- SYNC:END -->
-
-## 🔍 Implementation Details
-(Add manual notes here)

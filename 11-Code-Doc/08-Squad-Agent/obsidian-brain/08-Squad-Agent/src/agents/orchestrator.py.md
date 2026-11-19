@@ -28,6 +28,9 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/orc
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/oracle.py.md|oracle.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/task_decomposer.py.md|TaskDecomposer]] (class: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/task_decomposer.py.md|format_execution_plan]] (function: calls) — *Formats the decomposition result as an actionable markdown directive for the LLM context.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/task_decomposer.py.md|task_decomposer.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -35,6 +38,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/orc
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|__init__]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|_record_strategic_milestone_impl]] (function: belongs_to) — *Records an epic/mission milestone in PostgreSQL and broadcasts over NATS.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|db_insert]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|evaluate_and_split_task]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|execute_tool]] (function: belongs_to) — *Dynamic tool execution handler for Orchestrator.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)

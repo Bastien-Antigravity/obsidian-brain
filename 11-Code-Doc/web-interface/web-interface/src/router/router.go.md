@@ -19,7 +19,7 @@ Automatically generated mirror for `web-interface/src/router/router.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
+- [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (imports)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|GetStaticCategories]] (function: calls) — *GetStaticCategories returns a thread-safe deep copy of all discovered static categories.*
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|InitAutoDiscovery]] (function: calls) — *InitAutoDiscovery scans the filesystem for static pages and compiles the navigation catalog.*
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|RegisterAutoDiscoveryRoutes]] (function: calls) — *RegisterAutoDiscoveryRoutes binds static page discovery routes, alias redirects, and API.*

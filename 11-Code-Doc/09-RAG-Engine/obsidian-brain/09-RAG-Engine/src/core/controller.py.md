@@ -40,7 +40,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/core/contro
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|query]] (function: belongs_to) — *Queries the RAG engine across partitions and returns serializable results.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|reset_index]] (function: belongs_to) — *Resets all database layers.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|set_config]] (function: belongs_to) — *Sets a configuration value via Go DistConf bridge.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|sync_docs]] (function: belongs_to) — *Syncs codebase documentation mirrors.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|sync_docs]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|fastmcp.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|fastmcp.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|server.py]] (calls)

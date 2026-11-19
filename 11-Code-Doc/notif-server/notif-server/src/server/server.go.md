@@ -30,6 +30,7 @@ Automatically generated mirror for `notif-server/src/server/server.go`.
 - [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: defines_method) — *Start listens for incoming TCP and gRPC connections.*
 - [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: defines_method) — *Stop shuts down the server.*
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Close]] (method: calls)
+- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Debug]] (method: calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
 - [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (same_package)
@@ -40,6 +41,7 @@ Automatically generated mirror for `notif-server/src/server/server.go`.
 - [[notif-server/notif-server/cmd/notif-server/main_test.go.md|main_test.go]] (calls)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (imports)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
 - [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)
 - [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: belongs_to) — *NewServer creates a new Notification Server.*
 - [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: belongs_to) — *Start listens for incoming TCP and gRPC connections.*

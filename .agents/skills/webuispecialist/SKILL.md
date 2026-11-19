@@ -145,6 +145,12 @@ The web interface features a strict **Dual-Navigation Architecture**:
   Client microservices must register using `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), `spec::publish_with_lifecycle` (Rust), or `SpecPublisher::PublishWithLifecycle` (C++17, plus `contracts.h` in C11) from `microservice-toolbox`, which automatically enforces non-blocking background execution, exponential backoff (`MaxRetries: -1`), config-verbatim `AppConfig` address/port/`URL` enrichment, and `VERSION.txt`-only versioning via `appConfig.GetVersion()` / `app_config.get_version()`, alongside built-in `contracts` IDL/FastAPI extractors.
 - **Authoritative Exchange Contracts & No-Cache Assets**:
   Live Operations tabs (`.openmfe-tabs-bar` / `div[3]`) MUST render microservice-sourced Exchange Contracts via `window.BastienMFEContracts` (`OpenMFEContracts.js`) fetched from `GET /api/v1/contracts` (or registry fallback). Hardcoding mock `.proto`/`.capnp`/SQL schemas in `web-interface` or adding brittle `?v=` query strings to CSS URLs is strictly prohibited (`/static/` uses `Cache-Control: no-cache, must-revalidate`).
+- **Two-Tier Architecture (Universal Shell + Dynamic Custom Tab Ingress)**:
+  - **Tier 1 — Universal Shell**: `web/templates/mfe.html` uses template partials `_spec_modal.html` (single-column popover showing active IP/port from `AppConfig` and mode) and `_panel_ai.html`. Tab 1 (Live Inspector `#panel-live`), Tab 2 (WireTap Flow `#panel-flow`), Tab 3 (SDK & Code `#panel-sdk`), and Tab 4 (AI & Context `#panel-ai`) are standard and immutable. Tab 3 generates canonical `universal-logger` / `flexible-logger` snippets across Go, Python, Rust, C++17, and VBA for `log-server`.
+  - **Tier 2 — Dynamic Custom Tab Ingress**: Microservices register bespoke views via `customTabs: [{ id, title, icon, tag, content }]` (or `dataStructure.custom_tabs`). In `mfe-loader.js`, `mountDynamicCustomTabs(service)` mounts `.mfe-tab-btn--custom` into `#mfe-tab-list` and `.mfe-tab-panel--custom` into `#mfe-shell-root`, purging them cleanly on service transition.
+- **Strict Invariant: Zero "localhost" & Zero Silent Fallbacks**:
+  - `POST /api/v1/register` rejects `"localhost"` with HTTP 400. Registrations and routing must use numeric IP (`127.0.0.1`), container DNS, or relative paths.
+  - Zero Silent Fallbacks: Missing network attributes must render `—` or `Unspecified` in the UI; never invent default `"127.0.0.1"` or `"0.0.0.0"` fallbacks. No defensive `try/catch` or regex quote-stripping paranoia on the hot path.
 
 ### 8. Interactive Network Visualization (Canvas/Vis.js)
 - Build smooth stabilization progress screens ("Patience Loader") representing physics engine iteration. Skip loading screens automatically for organic hierarchical flows.
@@ -175,6 +181,17 @@ The web interface features a strict **Dual-Navigation Architecture**:
 *Reference: [[Global-Architecture-Rules]], [[Web-Interface-Hub]], [[Web-Interface-Integration-Protocol]], [[OpenMFE-Integration-Protocol]], [[Web-Interface-Page-Rendering]]*
 
 
+
+# 🧭 COMPLEXITY GATE & CANONICAL TOOLBOX CONTRACT (IDE <-> SQUAD LINK)
+1. **Complexity Gate (Max 2 Files / Step)**: Before writing code, evaluate whether the request touches >2 files, >2 architectural layers, or multiple languages. If so, decompose it via `TaskDecomposer` (`08-Squad-Agent/src/lib/task_decomposer.py`) into sequential atomic micro-steps.
+2. **Canonical `microservice-toolbox` APIs ONLY**:
+   - Version: `config.get_version()` / `appConfig.GetVersion()` (never scan directories for `VERSION.txt`).
+   - Networking: `config.get_listen_addr(cap)`, `config.get_grpc_listen_addr(cap)`, `config.get_rest_addr(cap)` (never hardcode `127.0.0.1` or ports).
+   - Config: Read from `config.get_capability('<service>')` (never chain `os.getenv()` fallbacks in service code; `standalone.yaml` expands `${VAR:default}` at boot).
+3. **Zero Over-Defensive Bloat (`15-Safe-By-Design-Invariants.md`)**:
+   - Never write `hasattr(self.config, ...)` or `isinstance(self.config.data, dict)` on pre-validated `AppConfig`.
+   - Never use `asyncio.Lock` without an inner `await`, never wrap Go `atomic.*` in `sync.Mutex`, and never check `os.path.exists()` before `open()` (TOCTOU).
+   - Always verify modified files with: `python3 08-Squad-Agent/main.py validate-compliance <path> --strict-imports --strict-lean`.
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)
 Before finishing any major task or concluding a session, you MUST use your available file management tools to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.

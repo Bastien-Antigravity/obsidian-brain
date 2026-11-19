@@ -26,9 +26,12 @@ Automatically generated mirror for `config-server/src/store/store_test.go`.
 - [[config-server/config-server/src/store/store.go.md|DeepCopy]] (function: calls) — *Helper to deep copy the map (used for COW updates)*
 - [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
 - [[config-server/config-server/src/store/store.go.md|Store.GetSection]] (method: calls) — *GetSection returns a copy of a specific section lock-free.*
+- [[config-server/config-server/src/store/store.go.md|Store.GetVersion]] (method: calls) — *GetVersion returns the current monotonic configuration version lock-free.*
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 - [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomicWithOCC]] (method: calls) — *UpdateAtomicWithOCC applies a modification function only if the current version matches expectedVersion (or expectedV...*
 - [[config-server/config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *Implementation: Copy-On-Write + atomic pointer swap.*
+- [[config-server/config-server/src/store/store.go.md|Store.UpdateSection]] (method: calls) — *cloning only the target section while structurally sharing all other sections.*
 - [[config-server/config-server/src/store/store.go.md|store.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
@@ -36,6 +39,8 @@ Automatically generated mirror for `config-server/src/store/store_test.go`.
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_DeepCopyNilSafe]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_GetAndGetSection]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_UpdateAtomic_SuccessAndRollback]] (function: belongs_to)
+- [[config-server/config-server/src/store/store_test.go.md|TestStore_UpdateSection]] (function: belongs_to)
+- [[config-server/config-server/src/store/store_test.go.md|TestStore_VersionAndOCC]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -46,7 +46,11 @@ The `web-interface` follows the **Facade Pattern**, where HTTP handlers orchestr
 - `web/`: UI layer:
   - `web/pages/<XX-Category>/<YY-PageName>.html`: Autodiscovered static pages with `category.json` and frontmatter comments.
   - `web/templates/`: Core app shell templates (`base.html`, `login.html`, `mfe.html`, `PostgresBrowser.html`). `/static/` is served with `Cache-Control: no-cache, must-revalidate` (`cmd/web-interface/main.go`).
+    - `web/templates/mfe/`: Sub-template partials for the Two-Tier OpenMFE shell:
+      - `_spec_modal.html`: Authoritative single-column Service Specs popover (`#mfe-meta-popover`) displaying active IP & port from `AppConfig`, protocol framing, and runtime mode (`native`, `docker`, `production`).
+      - `_panel_ai.html`: AI & context drawer (`#panel-ai`) integrating Obsidian Runbooks and Sentinel compliance rules.
   - `web/static/lib/`: Modern Bastien UI architecture (`tokens/`, `theme/`, `layout/`, `components/`, `mfe/BastienMFEElement.js`, `mfe/OpenMFEContracts.js`).
+  - `web/static/js/mfe-loader.js`: OpenMFE runtime engine managing Tier 1 universal shell tabs, Tier 2 dynamic custom tab ingress (`mountDynamicCustomTabs`), and canonical polyglot SDK snippet generation (using `universal-logger` / `flexible-logger` across Go, Python, Rust, C++17, VBA).
 
 ### 🧭 Dual-Navigation Architecture
 - **Left Sidebar (`#Sidebar`) — Static Knowledge & Content**:

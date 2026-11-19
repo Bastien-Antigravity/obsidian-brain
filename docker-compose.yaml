@@ -17,15 +17,18 @@ services:
       - teleremote-network
     labels: [ com.centurylinklabs.watchtower.enable=true ]
 
-  agent-factory:
+  squad-agent:
     build:
-      context: ./10-Agent-Factory
+      context: ./08-Squad-Agent
       dockerfile: Dockerfile
-    image: ghcr.io/bastien-antigravity/oop-agent-factory:${TAG:-latest}
-    container_name: agent-factory
+    image: ghcr.io/bastien-antigravity/squad-agent-brain:${TAG:-latest}
+    container_name: squad-agent
     restart: unless-stopped
+    ports:
+      - "${SA_PORT:-8085}:8085"
+      - "${SA_GRPC_PORT:-8087}:8087"
     volumes:
-      # Mount this folder to allow Agent Factory to read/write outputs in the workspace
+      # Mount this folder to allow Squad Agent to read/write outputs in the workspace
       - .:/app/obsidian-brain
     depends_on:
       - rag-engine

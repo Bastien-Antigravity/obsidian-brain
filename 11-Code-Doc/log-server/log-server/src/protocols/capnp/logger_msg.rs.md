@@ -143,6 +143,7 @@ Automatically generated mirror for `log-server/src/protocols/capnp/logger_msg.rs
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (calls)
+- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|::capnp::dynamic_value::Builder<'a>.from]] (method: belongs_to)

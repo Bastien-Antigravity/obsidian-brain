@@ -22,7 +22,7 @@ Automatically generated mirror for `log-server/src/core/reorder_test.rs`.
 - [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: calls) — *Retrieve the most recent entries up to `limit`, with optional filters*
 - [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: calls) — *Create new ring buffer with given capacity and internal broadcast channel*
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (same_package)
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *Start the writer task with in-memory ring buffer support*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: calls) — *Create new log writer with custom config and explicit file path*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: calls) — *Log writer configuration*

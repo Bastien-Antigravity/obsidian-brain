@@ -41,6 +41,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/fleet/flee
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|FleetCommander]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|__init__]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_audit_worktree_safety]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_load_inventory]] (function: belongs_to) — *Loads repository paths from inventory.json and populates compliance exclusions.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_log]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_resolve_active_workspaces]] (function: belongs_to)

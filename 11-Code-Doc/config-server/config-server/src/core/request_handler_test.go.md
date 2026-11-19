@@ -31,9 +31,12 @@ Automatically generated mirror for `config-server/src/core/request_handler_test.
 - [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
 
 ### 🔌 Consumers (Inbound)
+- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_DeleteSync]] (function: belongs_to)
 - [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_GetSyncAndFullRefresh]] (function: belongs_to)
 - [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_MalformedProtobuf]] (function: belongs_to)
 - [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_InvalidJSON]] (function: belongs_to)
+- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_OCC]] (function: belongs_to)
+- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_SentinelDeletion]] (function: belongs_to)
 - [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_Success]] (function: belongs_to)
 - [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_UnknownCommand]] (function: belongs_to)
 <!-- SYNC:END -->

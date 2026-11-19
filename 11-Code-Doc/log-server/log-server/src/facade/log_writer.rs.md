@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 
 > **Essential Process**:
-> ! Asynchronous ordered file writer and rotation coordinator. Buffers incoming ! packets into a sequence BTreeMap, flushes batches to _main.log, handles size-based ! rotation, and feeds the in-memory circular ring buffer. ! ! DATA FLOW: ! 1. LogPacket stream from MPSC channel ! 2. BTreeMap reordering buffer sorted by atomic sequence ! 3. LogRingBuffer insertion and async disk batch write ! 4. Background console task queuing (non-blocking) ! ! KEY PARAMETERS: ! - max_file_bytes: 10MB per log chunk before rotation. ! - backup_count: Number of historical rotated log files preserved (default 10). ! - gap_timeout_ms: Timeout threshold to advance sequence on missing packets (500ms). use crate::core::log_formatter::format_log_message; use crate::models::log_entry::LogEntry; use crate::models::log_packet::LogPacket; use crate::utils::helpers::{get_hostname, get_utc_timestamp}; use std::collections::BTreeMap; use std::path::PathBuf; use tokio::{ fs::{self, File, OpenOptions}, io::AsyncWriteExt, sync::mpsc, time::{sleep, Duration}, }; / Log writer configuration [derive(Clone)] pub struct WriterConfig { pub initial_batch_size: usize, pub buffer_size: usize, pub max_retries: usize, pub retry_delay_ms: u64, pub max_file_bytes: u64, pub backup_count: usize, pub gap_timeout_ms: u64, }
+> ! Asynchronous ordered file writer and rotation coordinator. Buffers incoming ! packets into a sequence BTreeMap, flushes batches to _main.log, handles size-based ! rotation, and feeds the in-memory circular ring buffer. ! ! DATA FLOW: ! 1. LogPacket stream from MPSC channel ! 2. BTreeMap reordering buffer sorted by atomic sequence ! 3. LogRingBuffer insertion and async disk batch write ! 4. Background console task queuing (non-blocking) ! ! KEY PARAMETERS: ! - max_file_bytes: 10MB per log chunk before rotation. ! - backup_count: Number of historical rotated log files preserved (default 10). ! - gap_timeout_ms: Timeout threshold to advance sequence on missing packets (500ms). use crate::core::log_formatter::format_log_message; use crate::core::transactional_writer::TransactionalFileWriter; use crate::models::log_entry::LogEntry; use crate::models::log_packet::LogPacket; use crate::utils::helpers::{get_hostname, get_utc_timestamp}; use std::collections::BTreeMap; use std::path::PathBuf; use tokio::{ sync::mpsc, time::Duration, }; / Log writer configuration [derive(Clone)] pub struct WriterConfig { pub initial_batch_size: usize, pub buffer_size: usize, pub max_retries: usize, pub retry_delay_ms: u64, pub max_file_bytes: u64, pub backup_count: usize, pub gap_timeout_ms: u64, }
 
 ## 🏗️ Architectural Context
 
@@ -22,14 +22,18 @@ Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 - [[log-server/log-server/src/core/log_formatter.rs.md|format_log_message]] (function: calls) — *Unified log message formatting - used by both protocols*
 - [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (imports)
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
+- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: calls) — *Retrieve the most recent entries up to `limit`, with optional filters*
 - [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: calls) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
 - [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer]] (struct: calls) — *Thread-safe in-memory circular ring buffer with real-time broadcast*
+- [[log-server/log-server/src/core/transactional_writer.rs.md|TransactionalFileWriter.check_and_rotate]] (method: calls) — *Check if rotation threshold is met and perform cascading rotation*
+- [[log-server/log-server/src/core/transactional_writer.rs.md|TransactionalFileWriter.flush]] (method: calls) — *Flush the active file to disk*
+- [[log-server/log-server/src/core/transactional_writer.rs.md|TransactionalFileWriter.write_batch]] (method: calls) — *- Tier 3: Poisoned handle recovery (close and reopen) if rollback fails.*
+- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.new]] (method: defines_method) — *Create new log writer with default config*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: defines_method) — *Rotate log files*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: defines_method) — *Start the writer task with in-memory ring buffer support*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: defines_method) — *Rotate log files (delegates to TransactionalFileWriter)*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: defines_method) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: defines_method) — *Create new log writer with custom config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: defines_method) — *Create new log writer with custom config and explicit file path*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: defines_method) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: defines_method) — *Main writer task implementation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: defines_method)
 - [[log-server/log-server/src/models/log_entry.rs.md|LEVEL_STRINGS]] (constant: calls) — *Human-readable log level strings*
@@ -54,19 +58,20 @@ Automatically generated mirror for `log-server/src/facade/log_writer.rs`.
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (same_package)
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.new]] (method: belongs_to) — *Create new log writer with default config*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: belongs_to) — *Rotate log files*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: belongs_to) — *Start the writer task with in-memory ring buffer support*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.rotate_files]] (method: belongs_to) — *Rotate log files (delegates to TransactionalFileWriter)*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: belongs_to) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config]] (method: belongs_to) — *Create new log writer with custom config*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: belongs_to) — *Create new log writer with custom config and explicit file path*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.write_batch]] (method: belongs_to) — *Write batch with retry logic*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.writer_task]] (method: belongs_to) — *Main writer task implementation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: belongs_to) — *File writer with ordering and rotation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: defines_method) — *File writer with ordering and rotation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: belongs_to)
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: belongs_to) — *Log writer configuration*
 - [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: defines_method) — *Log writer configuration*
+- [[log-server/log-server/src/facade/log_writer.rs.md|notify_disk_failure]] (function: belongs_to) — *Broadcast and record a fatal unrecoverable disk failure*
 - [[log-server/log-server/src/facade/log_writer.rs.md|test_rotate_files_cascading_and_pruning]] (function: belongs_to)
 - [[log-server/log-server/src/facade/log_writer.rs.md|test_rotate_files_zero_backups]] (function: belongs_to)
+- [[log-server/log-server/src/facade/log_writer.rs.md|test_writer_task_fatal_disk_failure_pushes_critical_and_terminates]] (function: belongs_to)
 - [[log-server/log-server/src/lib.rs.md|lib.rs]] (imports)
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
 <!-- SYNC:END -->

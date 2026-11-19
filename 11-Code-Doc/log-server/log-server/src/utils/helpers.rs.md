@@ -23,6 +23,7 @@ Automatically generated mirror for `log-server/src/utils/helpers.rs`.
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (imports)
+- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)

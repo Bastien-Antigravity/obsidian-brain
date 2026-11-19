@@ -14,11 +14,13 @@ Automatically generated mirror for `safe-socket/src/facade/telemetry_wrapper_tes
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|FlushTelemetry]] (function: calls) — *or until the timeout expires. Returns true if the queue was drained within timeout.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|IsTelemetryEnabled]] (function: calls) — *IsTelemetryEnabled atomically returns whether real-time connection tracking is active.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|NewTelemetryConnection]] (function: calls) — *NewTelemetryConnection wraps a TransportConnection in a lock-free switchable telemetry decorator.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|SetTelemetryEnabled]] (function: calls) — *SetTelemetryEnabled atomically enables or disables real-time connection tracking.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|SetTelemetryHook]] (function: calls) — *SetTelemetryHook atomically registers or clears the telemetry callback hook.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|TelemetryConnection.Stats]] (method: calls) — *Stats returns the current atomic counters for bytes and frames on this connection.*
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|WrapConnectionWithTelemetry]] (function: calls) — *If telemetry is enabled, it decorates conn with a TelemetryConnection.*
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|mockTransportConn.Close]] (method: defines_method)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|mockTransportConn.LocalAddr]] (method: defines_method)
@@ -33,7 +35,11 @@ Automatically generated mirror for `safe-socket/src/facade/telemetry_wrapper_tes
 - [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|TestSegregatedChannelExtraction]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|TestTelemetryNonBlockingSlowHook]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|TestTelemetryPanicResilience]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|TestTelemetryWrapperAtomicSwitchAndSegregation]] (function: belongs_to)
+- [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|TestZeroOverheadWhenDisabled]] (function: belongs_to)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|mockTransportConn.Close]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|mockTransportConn.LocalAddr]] (method: belongs_to)
 - [[safe-socket/safe-socket/src/facade/telemetry_wrapper_test.go.md|mockTransportConn.ReadMessage]] (method: belongs_to)

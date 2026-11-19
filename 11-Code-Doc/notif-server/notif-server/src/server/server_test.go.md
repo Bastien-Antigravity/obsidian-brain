@@ -43,6 +43,7 @@ Automatically generated mirror for `notif-server/src/server/server_test.go`.
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Stream]] (method: defines_method)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Trade]] (method: defines_method)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Warning]] (method: defines_method)
+- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.getLogs]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/src/server/connection.go.md|connection.go]] (calls)
@@ -68,6 +69,9 @@ Automatically generated mirror for `notif-server/src/server/server_test.go`.
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Stream]] (method: belongs_to)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Trade]] (method: belongs_to)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Warning]] (method: belongs_to)
+- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.getLogs]] (method: belongs_to)
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger]] (struct: belongs_to) — *mockLogger implements the underlying logger interface for UniLog*
 - [[notif-server/notif-server/src/server/server_test.go.md|mockLogger]] (struct: defines_method) — *mockLogger implements the underlying logger interface for UniLog*
+- [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (calls)
+- [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (same_package)
 <!-- SYNC:END -->

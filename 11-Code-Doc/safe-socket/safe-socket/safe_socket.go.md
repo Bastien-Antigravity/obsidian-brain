@@ -35,6 +35,8 @@ Automatically generated mirror for `safe-socket/safe_socket.go`.
 - [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (imports)
 - [[safe-socket/safe-socket/safe_socket.go.md|CreateWithConfig]] (function: belongs_to) — *Use this to set Deadlines or other advanced config options.*
 - [[safe-socket/safe-socket/safe_socket.go.md|Create]] (function: belongs_to) — *- autoConnect: if true, immediately calls Open() / Listen()*
+- [[safe-socket/safe-socket/safe_socket.go.md|DroppedTelemetryEvents]] (function: belongs_to) — *DroppedTelemetryEvents returns the count of dropped events due to buffer saturation.*
+- [[safe-socket/safe-socket/safe_socket.go.md|FlushTelemetry]] (function: belongs_to) — *FlushTelemetry waits for all queued telemetry events to be dispatched or timeout.*
 - [[safe-socket/safe-socket/safe_socket.go.md|GetIdentity]] (function: belongs_to) — *It traverses through Heartbeat, Handshake, or Envelope wrappers to find the HelloMsg.*
 - [[safe-socket/safe-socket/safe_socket.go.md|IsTelemetryEnabled]] (function: belongs_to) — *IsTelemetryEnabled atomically returns whether real-time connection tracking is active.*
 - [[safe-socket/safe-socket/safe_socket.go.md|SetTelemetryEnabled]] (function: belongs_to) — *SetTelemetryEnabled atomically enables or disables real-time connection tracking across safe-socket.*
@@ -47,5 +49,6 @@ Automatically generated mirror for `safe-socket/safe_socket.go`.
 - [[safe-socket/safe-socket/safe_socket.go.md|TransportFramedTCP]] (constant: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|TransportSHM]] (constant: belongs_to)
 - [[safe-socket/safe-socket/safe_socket.go.md|TransportUDP]] (constant: belongs_to)
+- [[safe-socket/safe-socket/safe_socket.go.md|WrapConnectionWithTelemetry]] (function: belongs_to) — *or wraps it with TelemetryConnection if telemetry is enabled.*
 - [[safe-socket/safe-socket/src/cgo_bridge/socket.go.md|socket.go]] (imports)
 <!-- SYNC:END -->

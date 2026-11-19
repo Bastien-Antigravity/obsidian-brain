@@ -45,6 +45,7 @@ Automatically generated mirror for `notif-server/src/rest/rest_handler.go`.
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ListNotifiers]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ReloadConfig]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.RemoveProvider]] (method: calls)
+- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.SendTestNotificationToTag]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.SendTestNotification]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.SetAlertingConfig]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifLogger.Error]] (method: calls)

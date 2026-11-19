@@ -31,6 +31,7 @@ Automatically generated mirror for `log-server/src/core/contracts.rs`.
 - [[log-server/log-server/src/core/contracts.rs.md|display_host]] (function: belongs_to)
 - [[log-server/log-server/src/core/contracts.rs.md|spawn_web_interface_registration]] (function: belongs_to) — *Non-blocking 30s heartbeat registering log-server's authoritative contracts with web-interface.*
 - [[log-server/log-server/src/core/contracts.rs.md|test_build_exchange_contracts_embeds_real_schemas]] (function: belongs_to)
+- [[log-server/log-server/src/core/contracts.rs.md|test_display_host_normalization]] (function: belongs_to)
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
 - [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (calls)
 - [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (imports)

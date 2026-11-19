@@ -26,12 +26,14 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: calls) — *DeleteConfig deletes a configuration key atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/controller.go.md|Server.GetConfig]] (method: calls) — *GetConfig returns a specific configuration value from the dynamic store.*
 - [[config-server/config-server/src/server/controller.go.md|Server.GetStatus]] (method: calls) — *GetStatus returns the health status, active client counts, and client names.*
+- [[config-server/config-server/src/server/controller.go.md|Server.SetConfigWithOCC]] (method: calls) — *SetConfigWithOCC updates a configuration value atomically with OCC verification, commits to persistence, and broadcasts.*
 - [[config-server/config-server/src/server/controller.go.md|Server.SetConfig]] (method: calls) — *SetConfig updates a configuration value atomically and broadcasts the change.*
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (same_package)
 - [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients lock-free.*
+- [[config-server/config-server/src/server/server.go.md|Server.SaveSync]] (method: calls) — *SaveSync immediately commits the current store state to disk synchronously, clearing dirty status.*
 - [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
 - [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
 - [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
@@ -42,6 +44,7 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: defines_method)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: defines_method)
 - [[config-server/config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
+- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
 - [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
 
@@ -57,6 +60,8 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_ConcurrentOnUpdateAndBroadcast]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_GetConfig_StoreOnly]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_GetStatus]] (function: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|TestServer_OverflowElevatesToFullRefresh]] (function: belongs_to)
+- [[config-server/config-server/src/server/server_test.go.md|TestServer_SaveSyncAndVersionIncrement]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|TestServer_SuperseededListenerClosesMailbox]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|createTestServer]] (function: belongs_to)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Critical]] (method: belongs_to)

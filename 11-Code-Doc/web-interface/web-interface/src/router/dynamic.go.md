@@ -30,7 +30,7 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPageWithMetadata]] (function: calls) — *RenderPageWithMetadata renders a page with category, title, subtitle, icon, and navigation categories.*
 - [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPage]] (function: calls) — *RenderPage parses templates and executes them using context-resolved configuration parameters.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (imports)
+- [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (imports)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
 - [[web-interface/web-interface/src/router/autodiscovery.go.md|slugify]] (function: calls)
 - [[web-interface/web-interface/src/router/contracts_bridges.go.md|contracts_bridges.go]] (same_package)

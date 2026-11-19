@@ -18,7 +18,7 @@ tags:
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/maintenance/maintenance_skill.py`.
 
 > **Essential Process**:
-> Performs routine maintenance tasks across the ecosystem, specifically purging stale AI-Session-State.md files to prevent context bloat.
+> Performs routine maintenance tasks across the ecosystem, specifically compacting stale AI-Session-State.md files in-place to prevent context bloat without deleting mandatory repository governance files.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->

@@ -117,19 +117,28 @@ Static pages and documentation are fully autodiscovered by `src/router/autodisco
 ## 4. Service Discovery Truth
 The `web-interface` MUST be the only service that has an "Overview" of the entire fleet. It uses the `distributed-config` bridge to discover the `capabilities` of every running node and dynamically renders its UI based on what is currently active in the ecosystem.
 
-## 5. Config Server Management Integration
-The `web-interface` features a dedicated **Configuration Server Manager** admin dashboard that acts as the central client for `config-server` remote functionalities.
+## 5. Config Server Management Integration (OpenMFE `<config-server-mfe>`)
+The `web-interface` manages `config-server` through the OpenMFE component `<config-server-mfe>` dynamically registered at boot time (`POST /api/v1/register`).
 
 ### Architecture
-- **gRPC Target**: Connects to the shadow gRPC sync port of `config-server` (default `127.0.0.1:3307`).
-- **Client implementation**: `src/config_browser/client.go` encapsulates the gRPC `ConfigControlServiceClient` methods mapping to the `ConfigController` interface definitions.
-- **Controller and Handlers**: `src/config_browser/controller.go` handles route binding and requests:
-  - `GET /ConfigBrowser`: Renders the main config browser admin page.
-  - `POST /api/v1/config_browser/set`: Updates/inserts an override parameter in memory.
-  - `POST /api/v1/config_browser/reload`: Resets memory state and reloads configuration from the base YAML baseline.
-  - `POST /api/v1/config_browser/persist`: Commits current overrides to disk.
-- **UI View**: `web/html/ConfigBrowser.html` presents status, active fleet clients, and accordion-based editors.
+- **Shadow gRPC Sync Port**: Dynamically resolved via `appConfig.GetGRPCListenAddr("config_server")` or `capabilities.config_server.grpc_port` (default `127.0.0.1:3307`).
+- **OpenMFE View**: Served at `/mfe/config-server` inside the universal shell (`web/templates/mfe.html`), allowing fleet operators to inspect active nodes, apply live runtime overrides, and trigger schema reloads without modifying template files.
+- **Zero `web/html/` Files**: In accordance with Ecosystem Invariants, all legacy `web/html/` directories are deleted and strictly prohibited.
+
+## 6. Two-Tier OpenMFE Shell & Strict Invariants
+1. **Tier 1 (Universal Shell)**:
+   - Hosted at `web/templates/mfe.html` and decomposed into modular sub-template partials under `web/templates/mfe/*.html` (`_spec_modal.html`, `_panel_ai.html`).
+   - Standard tabs are immutable: Live Inspector (`#panel-live`), WireTap Message Flow (`#panel-flow`), SDK & Polyglot Code Snippets (`#panel-sdk`), AI & Runbook Context (`#panel-ai`).
+   - `#mfe-meta-popover` provides a single-column diagnostic modal displaying live IP & port, transport framing, profile, and runtime mode (`native`, `docker`, or `production`).
+2. **Tier 2 (Dynamic Custom Tab Ingress)**:
+   - Microservices register custom domain tabs via `customTabs: [{ id, title, icon, tag, content }]` (or `dataStructure.custom_tabs`).
+   - `mfe-loader.js` mounts `.mfe-tab-btn--custom` into `#mfe-tab-list` and `.mfe-tab-panel--custom` into `#mfe-shell-root` on-demand, purging them cleanly on service navigation.
+3. **Strict Prohibition of "localhost"**:
+   - `POST /api/v1/register` rejects URLs containing `"localhost"` with HTTP 400.
+   - All client connections, network definitions, and test fixtures must use explicit loopback (`127.0.0.1`), container DNS, or relative routes (`/static/...`).
+4. **Zero Silent Fallback**:
+   - Never default missing network attributes to `"127.0.0.1"`, `"0.0.0.0"`, or `"0.0.1"`. Missing values must render `—` or `Unspecified`.
 
 ---
-*Last Updated: 2026-10-27*
+*Last Updated: 2026-11-16*
 *See also: [[Microservice-Startup-Protocol]], [[OpenMFE-Integration-Protocol]], [[Web-Interface-Page-Rendering]], [[Web-Interface-Hub]]*

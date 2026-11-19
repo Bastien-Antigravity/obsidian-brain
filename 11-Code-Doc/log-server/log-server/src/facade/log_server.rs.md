@@ -26,7 +26,7 @@ Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: defines_method) — *Create new log server instance*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: defines_method) — *Run the log server with all components*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *Start the writer task with in-memory ring buffer support*
+- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: calls) — *File writer with ordering and rotation*
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (same_package)

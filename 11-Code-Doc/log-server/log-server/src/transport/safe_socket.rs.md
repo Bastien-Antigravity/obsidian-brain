@@ -19,6 +19,7 @@ Automatically generated mirror for `log-server/src/transport/safe_socket.rs`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[log-server/log-server/src/core/transactional_writer.rs.md|TransactionalFileWriter.flush]] (method: calls) — *Flush the active file to disk*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.new]] (method: defines_method) — *Create new safe socket by splitting a TcpStream*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: defines_method) — *Split into its component halves*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: defines_method) — *Receive framed data from socket. Returns empty BytesMut on 0-length heartbeat frames.*

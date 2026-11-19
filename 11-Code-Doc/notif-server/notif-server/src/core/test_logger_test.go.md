@@ -53,6 +53,8 @@ Automatically generated mirror for `notif-server/src/core/test_logger_test.go`.
 - [[notif-server/notif-server/src/core/controller_test.go.md|controller_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
 - [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
+- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (calls)
 - [[notif-server/notif-server/src/core/request_handler.go.md|request_handler.go]] (same_package)
 - [[notif-server/notif-server/src/core/test_logger_test.go.md|testNotifierLogger.AddMetadata]] (method: belongs_to)

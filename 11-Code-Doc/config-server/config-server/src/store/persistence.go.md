@@ -32,6 +32,7 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
 - [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (imports)
 - [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (imports)
+- [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
