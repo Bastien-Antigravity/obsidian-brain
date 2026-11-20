@@ -20,16 +20,19 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: defines_method) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: defines_method) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: defines_method) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAllowedPublicHost]] (method: defines_method) — *(such as local.web_interface.public_url) so MFE script URLs served from that host are permitted.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAppConfig]] (method: defines_method) — *SetAppConfig stores the active AppConfig reference for dynamic capability and mode enrichment.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: defines_method) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichRuntimeMeta]] (method: defines_method) — *3. Fallback -> "native" (local)*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: defines_method) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.getAllowedPublicHosts]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.saveLocked]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.save]] (method: defines_method)
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.setAllowedPublicHostLocked]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Error]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Info]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Warning]] (method: calls)
@@ -63,19 +66,25 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: belongs_to) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: belongs_to) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: belongs_to) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAllowedPublicHost]] (method: belongs_to) — *(such as local.web_interface.public_url) so MFE script URLs served from that host are permitted.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAppConfig]] (method: belongs_to) — *SetAppConfig stores the active AppConfig reference for dynamic capability and mode enrichment.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Unregister]] (method: belongs_to) — *Unregister removes a service from the registry by name or tag, persisting changes immediately.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichRuntimeMeta]] (method: belongs_to) — *3. Fallback -> "native" (local)*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.enrichServiceDefaults]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.ensureFoundationalServicesLocked]] (method: belongs_to) — *ensureFoundationalServicesLocked guarantees baseline infrastructure daemons exist using appConfig.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.getAllowedPublicHosts]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleList]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.handleRegister]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.load]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.saveLocked]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.save]] (method: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.setAllowedPublicHostLocked]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: belongs_to) — *Registry manages the registration and listing of microfrontend services.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: defines_method) — *Registry manages the registration and listing of microfrontend services.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Service]] (struct: belongs_to) — *Service represents a registered Micro-Frontend service with layer taxonomy.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|extractAllowedHost]] (function: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry.go.md|isValidDNSLabel]] (function: belongs_to) — *isValidDNSLabel checks whether host is a single-label Docker service DNS name ([a-z0-9-], non-numeric).*
+- [[web-interface/web-interface/src/mfe/registry.go.md|isValidScriptURL]] (function: belongs_to) — *isValidScriptURL validates MFE script bundle URLs against XSS/SSRF, metadata endpoints, and localhost invariants.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|parsePriority]] (function: belongs_to) — *Supports integer, float64, numeric string, or order alias; defaults to 100 if missing or invalid.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registerReq]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (calls)
@@ -95,6 +104,8 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (imports)
 - [[web-interface/web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (calls)
 - [[web-interface/web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (imports)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (calls)
+- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (imports)
 - [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (calls)
 - [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (imports)
 - [[web-interface/web-interface/src/router/static.go.md|static.go]] (calls)

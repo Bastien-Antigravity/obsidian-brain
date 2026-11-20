@@ -25,7 +25,6 @@ Automatically generated mirror for `distributed-config/cmd/libdistconf/main.go`.
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls) — *New is a Go-native wrapper for DistConf_New.*
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
 - [[distributed-config/distributed-config/src/cgo_bridge/validation.go.md|IsValid]] (function: calls) — *IsValid is a Go-native wrapper for checking handle validity.*
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_ApplyFileOverride]] (function: belongs_to) — *export DistConf_ApplyFileOverride*

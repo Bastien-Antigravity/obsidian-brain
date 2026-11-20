@@ -35,7 +35,6 @@ Automatically generated mirror for `distributed-config/src/network/network_test.
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|NewConfigHandler]] (function: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|proto_handler.go]] (same_package)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/network/network_test.go.md|TestNetworkProtoHandler]] (function: belongs_to)

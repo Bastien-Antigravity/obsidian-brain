@@ -26,7 +26,6 @@ Automatically generated mirror for `distributed-config/src/core/config_test.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (same_package)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_Concurrency]] (function: belongs_to)

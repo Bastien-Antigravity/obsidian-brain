@@ -31,6 +31,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.HandleGetContracts]] (method: calls) — *HandleGetContracts serves the ContractsEnvelope JSON published for a registered microservice.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Register]] (method: calls) — *Register adds or updates a microfrontend service in the registry with automatic deduplication.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAllowedPublicHost]] (method: calls) — *(such as local.web_interface.public_url) so MFE script URLs served from that host are permitted.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
 - [[web-interface/web-interface/src/middleware/middleware.go.md|CSRFMiddleware]] (function: calls) — *CSRFMiddleware Protection*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|LoggerMiddleware]] (function: calls) — *LoggerMiddleware console output*
@@ -51,7 +52,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|buildMainHTTPHandler]] (function: belongs_to) — *buildMainHTTPHandler wires the split public/protected HTTP handler used in production and integration tests.*
 - [[web-interface/web-interface/cmd/web-interface/main.go.md|isLoopbackCaller]] (function: belongs_to)
-- [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to) — *ESSENTIAL PROCESS:*
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|main]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (same_package)
 <!-- SYNC:END -->

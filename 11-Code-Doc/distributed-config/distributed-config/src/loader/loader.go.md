@@ -21,7 +21,6 @@ Automatically generated mirror for `distributed-config/src/loader/loader.go`.
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/core/merger.go.md|DeepMerge]] (function: calls) — *Entries in source override entries in target.*
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFileSafe]] (function: belongs_to) — *config tags like CF_IP/CF_PORT are provided via ENV variables.*

@@ -29,6 +29,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/controller.py.md|query]] (function: calls) — *Queries the RAG engine across partitions and returns serializable results.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/server.py.md|server.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: calls) — *Factory to construct and return a singleton RAGFacade instance.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|build_rag_engine_contracts]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/contracts.py.md|contracts.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|RAGRESTHandler]] (class: calls) — *REST API Handler mapping config and status queries to RAGController.*
@@ -52,7 +53,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_init_update.py.md|fleet_init_update.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|sovereignty.py]] (calls)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/install_git_hooks.py.md|install_git_hooks.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|scaffold_microservice.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)
@@ -65,7 +65,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/web/server.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/seed/seed_service.py.md|seed_service.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|InterceptHandler]] (class: belongs_to) — *Custom logging handler that intercepts standard library logs and routes them to our UniLogger.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|SafeQueueWriter]] (class: belongs_to) — *Thread-safe stdout redirector that prevents recursion and strips log prefixes for the UI.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_STATIC_DIR]] (constant: belongs_to) — *Mount static files at / using absolute path*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_register_mfe_with_web_interface]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|_setup_uvicorn_logging]] (function: belongs_to) — *Reconfigures Uvicorn logging to use our standardized UniLogger via a Handler.*

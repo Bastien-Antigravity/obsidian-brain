@@ -31,6 +31,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_edges_batch]] (function: belongs_to) — *Batch inserts multiple codebase edges.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_node]] (function: belongs_to) — *Inserts or updates a codebase node.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/codebase_db.py.md|insert_nodes_batch]] (function: belongs_to) — *Batch inserts multiple codebase nodes.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|postgres_db.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/code_engine/postgres_db.py.md|postgres_db.py]] (imports)
 <!-- SYNC:END -->
 

@@ -29,6 +29,8 @@ Automatically generated mirror for `log-server/src/main.rs`.
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/main.rs.md|VERSION]] (constant: belongs_to)
+- [[log-server/log-server/src/main.rs.md|config_file_exists]] (function: belongs_to) — *Checks whether a profile configuration file exists in standard lookup locations.*
 - [[log-server/log-server/src/main.rs.md|main]] (function: belongs_to)
+- [[log-server/log-server/src/main.rs.md|resolve_config_profile]] (function: belongs_to) — *Resolves the configuration profile based on runtime environment (Docker vs local).*
 - [[log-server/log-server/src/main.rs.md|run_server]] (function: belongs_to) — *Main server execution function*
 <!-- SYNC:END -->

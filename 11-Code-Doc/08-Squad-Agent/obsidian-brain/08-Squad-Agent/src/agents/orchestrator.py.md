@@ -18,7 +18,7 @@ tags:
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py`.
 
 > **Essential Process**:
-> Orchestrator agent daemon responsible for decomposing user goals, delegating tasks to specific agents, and reporting progress.
+> Orchestrator agent daemon responsible for decomposing user goals, delegating tasks to specific agents, and preserving cross-brain task_context across @developer and @qa handoffs.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
@@ -36,7 +36,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/orc
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|OrchestratorAgent]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|__init__]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|_record_strategic_milestone_impl]] (function: belongs_to) — *Records an epic/mission milestone in PostgreSQL and broadcasts over NATS.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|_compile_active_instruction]] (function: belongs_to) — *Extends active system instruction with explicit cross-brain delegation directives.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|_record_strategic_milestone_impl]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|db_insert]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|evaluate_and_split_task]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/orchestrator.py.md|execute_tool]] (function: belongs_to) — *Dynamic tool execution handler for Orchestrator.*

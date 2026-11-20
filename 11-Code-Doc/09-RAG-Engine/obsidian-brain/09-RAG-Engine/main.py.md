@@ -58,6 +58,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_refresh.py.md|fleet_refresh.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|fleet_version.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/init_new_brain.py.md|init_new_brain.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|scaffold_microservice.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (calls)
@@ -66,7 +67,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_safe_stop_enricher]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|_target]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: belongs_to)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|run]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|run]] (function: belongs_to) — *Dispatch execution based on parsed CLI arguments.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

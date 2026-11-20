@@ -75,7 +75,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/contr
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|list_incidents]] (function: belongs_to) — *Lists recent fleet incidents tracked by AutoRepairCoordinator or TimescaleDB.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|main]] (function: belongs_to) — *Entry point for mock verification command run.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|process_message]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|publish_user_message]] (function: belongs_to) — *Saves a user message and publishes it to EventBus to trigger agents.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|publish_user_message]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|refresh_telegram_menu]] (function: belongs_to) — *Triggers a live Telegram inline menu rebuild when fleet incidents change.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|register_background_task]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|reject_incident]] (function: belongs_to) — *Marks an AutoRepair incident proposal as rejected.*

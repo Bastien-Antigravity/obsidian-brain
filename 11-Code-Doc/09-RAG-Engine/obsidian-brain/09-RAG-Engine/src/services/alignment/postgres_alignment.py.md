@@ -33,6 +33,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/al
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|PostgresAlignmentService]] (class: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|_compute_hash]] (function: belongs_to) — *Computes a SHA-256 hash of the given text.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|_delete]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|_execute_query]] (function: belongs_to) — *Helper to run queries with the thread-safe connection pool.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|_init_db]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|_lookup_cross_schema_parent]] (function: belongs_to)
@@ -43,6 +44,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/al
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|_write_drifts]] (function: belongs_to) — *Persist current drifts to the documentation_drift_registry table in Postgres (MVCC-safe DELETE + INSERT)*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|check_alignment]] (function: belongs_to) — *Compares the current code content against the hash stored to detect drift.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|delete_by_brain]] (function: belongs_to) — *Removes alignment links belonging to a specific brain partition.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|get_all_drifted]] (function: belongs_to) — *Returns a list of all documentation notes that are currently out of sync with code.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|get_dead_links]] (function: belongs_to) — *Identifies links where the code chunk ID no longer exists in the system.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|get_drift_details]] (function: belongs_to) — *Returns details needed for a rewrite: current hash vs stored hash and linked docs.*

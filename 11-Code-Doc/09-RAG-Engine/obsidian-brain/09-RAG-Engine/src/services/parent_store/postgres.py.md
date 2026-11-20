@@ -40,7 +40,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/pa
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|_update]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|_write]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|delete_by_brain]] (function: belongs_to) — *Removes all parent records belonging to a specific brain partition.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|delete_by_brain]] (function: belongs_to) — *Removes all parent and file_hashes records belonging to a specific brain partition.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|delete_by_source]] (function: belongs_to) — *Deletes all parent content associated with a source path in PostgreSQL.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|get_all_file_hashes]] (function: belongs_to) — *Retrieves all stored file hashes from the database as a dictionary {source_path: file_hash}.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|get_parent]] (function: belongs_to) — *Retrieves the raw content for a specific chunk ID from PostgreSQL.*

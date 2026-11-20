@@ -20,6 +20,10 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/rag_
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|GLOBAL_EXCLUDES]] (constant: calls) — *Sync with RAG Engine's GLOBAL_EXCLUDES*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|is_path_excluded]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|get_workspace_registry]] (function: calls) — *Returns the process-wide WorkspaceRegistry singleton.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_brain_for_path]] (function: calls) — *Resolves the owning brain_id for an absolute filesystem path via deepest prefix match.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_workspace_root]] (function: calls) — *Resolves the workspace root directory for the given brain_id (defaults to primary).*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|workspace_registry.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|add_documents]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|check_alignment]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|clear]] (function: calls)
@@ -73,9 +77,11 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/rag_
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|RAGFacade]] (class: belongs_to) — *Main entry point and orchestrator for the RAG engine.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|_hydrate_chunk]] (function: belongs_to) — *Internal helper for concurrent hydration.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|_sem_process]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|_should_sync_code_mirror]] (function: belongs_to) — *Returns True only for source code files outside 11-Code-Doc mirror directories.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|analyzer]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|build_index]] (function: belongs_to) — *Builds full index asynchronously.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|delete_by_brain]] (function: belongs_to) — *Atomic unmerge/purge of all embeddings, lexical entries, and parent records for a brain partition.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|delete_by_brain]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|delete_file]] (function: belongs_to) — *Orchestrates real-time removal of deleted file records asynchronously.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|enrich_now]] (function: belongs_to) — *Triggers an immediate enrichment pass on all pending chunks.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|enrich_pending_records]] (function: belongs_to) — *Standalone run to enrich pending/unenriched records loaded from database.*
@@ -86,6 +92,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/rag_
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|index_directory]] (function: belongs_to) — *Walks and indexes a specific directory or microservice repository path.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|index_document_content]] (function: belongs_to) — *Ingests and embeds a document directly into the specified brain partition.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|index_file]] (function: belongs_to) — *Orchestrates file processing asynchronously.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|index_workspace]] (function: belongs_to) — *Walks and indexes all supported files in a registered domain workspace.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|is_database_empty]] (function: belongs_to) — *Checks whether database has 0 indexed records.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|lexical_store]] (function: belongs_to) — *Provides direct access to lexical store (delegates to query_engine or pipeline).*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|query]] (function: belongs_to) — *Hybrid search with context hydration asynchronously.*
@@ -95,8 +102,9 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/rag_
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|start_watcher]] (function: belongs_to) — *Starts background file monitoring.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|stop_enricher_loop]] (function: belongs_to) — *Stops the background LLM enrichment loop gracefully.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|stop_watcher]] (function: belongs_to) — *Stops background file monitoring.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|sync_docs]] (function: belongs_to) — *Orchestrates the synchronization of code-derived documentation.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|sync_docs]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|workspaces_root]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/rest/rest_handler.py.md|rest_handler.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (calls)
 <!-- SYNC:END -->
 

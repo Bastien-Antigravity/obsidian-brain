@@ -38,30 +38,36 @@ Automatically generated mirror for `distributed-config/src/strategies/cloud.go`.
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: calls) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
 - [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: calls) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Close]] (method: defines_method)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeysWithOCC]] (method: defines_method)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeys]] (method: defines_method)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeysWithOCC]] (method: defines_method) — *DeleteKeysWithOCC sends key deletion request to the server with OCC validation.*
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeys]] (method: defines_method) — *DeleteKeys sends key deletion request to the server.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.GetHandler]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Load]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Name]] (method: defines_method)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.SetWithOCC]] (method: defines_method)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.SetWithOCC]] (method: defines_method) — *SetWithOCC pushes updates with an expected version to validate OCC.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Set]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Sync]] (method: defines_method)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (same_package)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Error]] (method: calls)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Info]] (method: calls)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/factory/config_factory.go.md|config_factory.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Close]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeysWithOCC]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeys]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeysWithOCC]] (method: belongs_to) — *DeleteKeysWithOCC sends key deletion request to the server with OCC validation.*
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeys]] (method: belongs_to) — *DeleteKeys sends key deletion request to the server.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.GetHandler]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Load]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Name]] (method: belongs_to)
-- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.SetWithOCC]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.SetWithOCC]] (method: belongs_to) — *SetWithOCC pushes updates with an expected version to validate OCC.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Set]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Sync]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy]] (struct: defines_method)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|isWildcardBindIP]] (function: belongs_to) — *overwrite peer-routable DNS addresses in config-server's shared LiveConfig store.*
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|syncCapabilitiesToLiveConfig]] (function: belongs_to) — *into a map[string]map[string]string delta and merges them into cfg.LiveConfig via cfg.Set.*
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (same_package)
+- [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (calls)
+- [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (same_package)
 <!-- SYNC:END -->

@@ -26,6 +26,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: calls) — *Resolves the REST Management address for a capability.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_version]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)

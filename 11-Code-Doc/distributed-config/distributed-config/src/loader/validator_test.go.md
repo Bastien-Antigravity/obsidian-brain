@@ -24,7 +24,6 @@ Automatically generated mirror for `distributed-config/src/loader/validator_test
 - [[distributed-config/distributed-config/src/loader/validator.go.md|CheckTestIPs]] (function: calls)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|ValidateCommonConfig]] (function: calls)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (same_package)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/loader/validator_test.go.md|TestValidator]] (function: belongs_to)

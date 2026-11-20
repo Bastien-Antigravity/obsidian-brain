@@ -65,4 +65,5 @@ tags:
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|file_config_proto_rawDesc]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|init]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|x]] (struct: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (imports)
 <!-- SYNC:END -->

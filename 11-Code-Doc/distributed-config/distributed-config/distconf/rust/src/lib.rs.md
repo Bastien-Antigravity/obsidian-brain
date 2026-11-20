@@ -34,7 +34,6 @@ Automatically generated mirror for `distributed-config/distconf/rust/src/lib.rs`
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DistConfig.share_config]] (method: defines_method)
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DistConfig.sync]] (method: defines_method)
 - [[distributed-config/distributed-config/distconf/rust/src/lib.rs.md|DistConfig.validate_mandatory_services]] (method: defines_method)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/distconf/rust/build.rs.md|build.rs]] (calls)

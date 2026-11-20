@@ -69,7 +69,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_update]] (function: belongs_to) — *Deprecated: Use on_live_conf_update(). Semantic alias for backward compatibility.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: belongs_to) — *Updates the logger after instantiation.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|share_config]] (function: belongs_to) — *Shares service configuration with the ecosystem.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Pulls the full configuration state from the Go bridge into self.data.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Synchronizes configuration state with the remote Config Server via the bridge.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*

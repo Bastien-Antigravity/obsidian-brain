@@ -38,6 +38,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lib/pg_poo
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|resolve_schema_name]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|upsert_fleet_incident]] (function: belongs_to) — *Persists or updates an AutoRepair triage incident record in PostgreSQL.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

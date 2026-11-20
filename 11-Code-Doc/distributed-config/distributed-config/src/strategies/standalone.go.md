@@ -34,7 +34,8 @@ Automatically generated mirror for `distributed-config/src/strategies/standalone
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|StandaloneStrategy.SetWithOCC]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|StandaloneStrategy.Set]] (method: defines_method)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|StandaloneStrategy.Sync]] (method: defines_method)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (same_package)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Info]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|StandaloneStrategy.Close]] (method: belongs_to)

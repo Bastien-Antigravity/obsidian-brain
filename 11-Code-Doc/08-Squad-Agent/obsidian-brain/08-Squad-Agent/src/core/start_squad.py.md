@@ -27,6 +27,10 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/start
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/architect.py.md|architect.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|AutoRepairCoordinator]] (class: calls) — *Real-time Watchdog incident consumer and capability-aware Tiered Auto-Repair coordinator.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|autorepair.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|discover_registered_domain_workspaces]] (function: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|slugify_role_name]] (function: calls) — *Normalizes a prompt stem or role label into a canonical lowercase slug.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|CodeIndexerAgent]] (class: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/codeindexer.py.md|codeindexer.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/debloatsentinel.py.md|DebloatSentinelAgent]] (class: calls)
@@ -94,12 +98,14 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/start
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|C_RED]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|C_RESET]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|EXCLUSIONS]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|_CORE_SQUAD_ROLES]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|_check_single_repo]] (function: belongs_to) — *Worker function for parallel git status checks.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|_strip_frontmatter]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|archive_strat_files]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|check_environment]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|check_rag_attached]] (function: belongs_to) — *Returns True if the 09-RAG-Engine exists and a valid server entrypoint is available.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|check_session_health]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|discover_domain_agents]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|ensure_background_services]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|generate_active_rituals]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|get_vault_python]] (function: belongs_to) — *Return the vault virtualenv Python when available, otherwise current Python.*

@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `universal-logger/unilog/python/setup.py`.
 
 > **Essential Process**:
-> Package packaging and distribution setup script for the unilog Python client library.
+> Package setup and distribution script for the unilog Python client library.
 
 ## 🏗️ Architectural Context
 

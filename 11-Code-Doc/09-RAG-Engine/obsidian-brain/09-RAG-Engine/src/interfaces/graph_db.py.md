@@ -33,6 +33,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/interfaces/
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/graph_db.py.md|remove_edges_by_source_or_type]] (function: belongs_to) — *Removes KMS edges by source and optional type.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/graph_db.py.md|remove_node]] (function: belongs_to) — *Removes a KMS node and its connected edges.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/interfaces/graph_db.py.md|traverse_neighborhood]] (function: belongs_to) — *Finds all nodes and edges within max_depth of seed_ids.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|postgres_db.py]] (calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|postgres_db.py]] (imports)
 <!-- SYNC:END -->
 

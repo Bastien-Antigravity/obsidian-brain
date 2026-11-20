@@ -50,6 +50,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/web/static
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/identity.py.md|name]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SatelliteSquadAgentMFE]] (class: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.appendChatMessage]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.bindSquadTabs]] (method: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/web/static/mfe.js.md|SquadAgentMFE.connectedCallback]] (method: belongs_to)

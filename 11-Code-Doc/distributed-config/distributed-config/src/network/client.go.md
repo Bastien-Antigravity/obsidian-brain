@@ -48,9 +48,6 @@ Automatically generated mirror for `distributed-config/src/network/client.go`.
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|NewConfigHandler]] (function: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|proto_handler.go]] (same_package)
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Info]] (method: calls)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: belongs_to) — *Close closes the connection and stops the background listener.*

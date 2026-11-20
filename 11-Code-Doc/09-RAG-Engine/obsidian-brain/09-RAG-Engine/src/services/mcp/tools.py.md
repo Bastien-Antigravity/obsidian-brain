@@ -21,6 +21,11 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|is_path_excluded]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|get_workspace_registry]] (function: calls) — *Returns the process-wide WorkspaceRegistry singleton.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_codedoc_root]] (function: calls) — *Resolves the 11-Code-Doc mirror directory for the given brain_id.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_vault_root]] (function: calls) — *Resolves the Obsidian vault root directory for the given brain_id (defaults to primary).*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_workspace_root]] (function: calls) — *Resolves the workspace root directory for the given brain_id (defaults to primary).*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|workspace_registry.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: calls) — *Factory to construct and return a singleton RAGFacade instance.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|enrich_now]] (function: calls) — *Triggers an immediate enrichment pass on all pending chunks.*
@@ -77,11 +82,11 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/mc
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|list_workspace_directory]] (function: belongs_to) — *List contents of a directory with security enforcement. Supports recursive lists (depth parameter) and regex/glob mat...*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|query_brain]] (function: belongs_to) — *Search the knowledge base for relevant context. Supports verbosity overrides ('full', 'signatures') and optional brai...*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|query_ecosystem_graph]] (function: belongs_to) — *Search the ecosystem knowledge graph. Performs hybrid vector search to find seed nodes, traverses neighborhood to dep...*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|query_strategic_decisions]] (function: belongs_to) — *Retrieve active architectural decisions, Anti-Backlog constraints, or strategic patterns from the database. Provide a...*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|read_workspace_file]] (function: belongs_to) — *Read a file in the workspace, with optional start/end line boundaries (1-indexed). Output is prefixed with line numbe...*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|query_strategic_decisions]] (function: belongs_to)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|read_workspace_file]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|register_documentation_link]] (function: belongs_to) — *Registers a link between a code chunk and a doc note.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|reset_and_rebuild_index]] (function: belongs_to) — *Clears all stores and rebuilds the full workspace index.*
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|resolve_documentation_drift]] (function: belongs_to) — *Resolves documentation drift by writing updated content and re-aligning hashes.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|resolve_documentation_drift]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|search_code]] (function: belongs_to) — *Perform a high-speed keyword or regex search across files in the workspace (ripgrep-like), respecting ACM permissions...*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|search_symbols]] (function: belongs_to) — *Search for code symbols (functions, classes, methods) in the codebase graph matching a query.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|sort_key]] (function: belongs_to) — *Sort results by source_path, then start_line*

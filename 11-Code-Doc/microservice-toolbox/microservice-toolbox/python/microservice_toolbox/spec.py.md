@@ -35,6 +35,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|ServiceSpec]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_background_publisher]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_extract_port]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|_resolve_capability_str]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|build_spec_from_config]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|from_dict]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/spec.py.md|publish]] (function: belongs_to)

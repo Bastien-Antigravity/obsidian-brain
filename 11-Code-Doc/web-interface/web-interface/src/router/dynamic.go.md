@@ -19,8 +19,12 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/graph/vault_parser.go.md|GetVaultGraphForBrain]] (function: calls) — *GetVaultGraphForBrain returns the parsed knowledge graph for the specified brain ID.*
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|GetVaultGraph]] (function: calls) — *GetVaultGraph returns the parsed knowledge graph, serving from cache if valid.*
+- [[web-interface/web-interface/src/graph/vault_parser.go.md|ListAvailableVaults]] (function: calls) — *and optional workspaces.yaml.*
+- [[web-interface/web-interface/src/graph/vault_parser.go.md|LoadPersistedWorkspaces]] (function: calls) — *or <primaryVault>/09-RAG-Engine/workspaces.yaml using yaml.v3.*
 - [[web-interface/web-interface/src/graph/vault_parser.go.md|ResolveVaultPath]] (function: calls) — *ResolveVaultPath discovers the active obsidian-brain vault directory on the host filesystem.*
+- [[web-interface/web-interface/src/graph/vault_parser.go.md|SplitExtraWorkspaces]] (function: calls) — *'brain_id=' prefixes and returning cleaned filesystem paths.*
 - [[web-interface/web-interface/src/graph/vault_parser_test.go.md|vault_parser_test.go]] (imports)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: calls)
 - [[web-interface/web-interface/src/logclient/log_service_grpc.pb.go.md|logBridgeClient.GetTailLogs]] (method: calls)
@@ -77,19 +81,23 @@ Automatically generated mirror for `web-interface/src/router/dynamic.go`.
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: belongs_to) — *SetMFERegistry associates the active MFE registry instance with the router.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|checkFleetServicesHealth]] (function: belongs_to) — *Discovers targets dynamically from appConfig capabilities and OpenMFE registrations without hardcoded slices.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|clientInfo]] (struct: belongs_to)
+- [[web-interface/web-interface/src/router/dynamic.go.md|dockerProbeCandidates]] (function: belongs_to) — *it prefers the sibling container DNS name and host.docker.internal so container loopback is avoided.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|extractMandatoryPrompt]] (function: belongs_to) — *extractMandatoryPrompt parses the mandatory prompt block from AI-Init.md.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|extractSectionFromMarkdown]] (function: belongs_to) — *extractSectionFromMarkdown extracts a named markdown section (e.g. ## Service Mission...).*
-- [[web-interface/web-interface/src/router/dynamic.go.md|findRepoPath]] (function: belongs_to) — *findRepoPath matches a service name to a local repository folder.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|findRepoPath]] (function: belongs_to) — *workspace and any mounted multi-brain extra workspace directories.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|findWorkspaceRoot]] (function: belongs_to) — *findWorkspaceRoot searches upwards from current directory for AI-CONTEXT.md or obsidian-brain.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|formatCapabilityTitle]] (function: belongs_to) — *formatCapabilityTitle converts capability keys like "config_server" to "Config Server".*
 - [[web-interface/web-interface/src/router/dynamic.go.md|getSubCapabilityAddr]] (function: belongs_to) — *getSubCapabilityAddr extracts host:port for a nested capability block (e.g. capabilities.rag_engine.mcp).*
 - [[web-interface/web-interface/src/router/dynamic.go.md|menuItem]] (struct: belongs_to)
 - [[web-interface/web-interface/src/router/dynamic.go.md|normalizeCapKey]] (function: belongs_to) — *normalizeCapKey normalizes capability identifiers to canonical snake_case capability keys.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|probeServiceTCP]] (function: belongs_to) — *probeServiceTCP checks TCP reachability for addr while preserving browser-facing URLs.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|recordMCPCall]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveAuthoritativeEndpoint]] (function: belongs_to) — *- Secondary Fallback: Alternate endpoint if distinct*
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveFastMCPBaseURL]] (function: belongs_to) — *resolveFastMCPBaseURL resolves the root HTTP base URL of the FastMCP daemon directly from config.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveMCPURL]] (function: belongs_to) — *resolveMCPURL resolves the authoritative FastMCP HTTP/SSE endpoint for RAG Engine directly from config.*
 - [[web-interface/web-interface/src/router/dynamic.go.md|resolveMFEHeaderMetadata]] (function: belongs_to) — *from the OpenMFE registry for the page header, falling back cleanly to the route slug.*
+- [[web-interface/web-interface/src/router/dynamic.go.md|searchExtraWorkspacesRepo]] (function: belongs_to)
+- [[web-interface/web-interface/src/router/dynamic.go.md|searchWorkspaceRootRepo]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/dynamic.go.md|targetSvc]] (struct: belongs_to)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (calls)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (same_package)

@@ -28,7 +28,6 @@ Automatically generated mirror for `distributed-config/src/cgo_bridge/bridge_tes
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
 - [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetCapability]] (function: calls) — *GetCapability is a Go-native wrapper for DistConf_GetCapability.*
 - [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|networking.go]] (same_package)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|noOpLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_ExpandedName]] (function: belongs_to)
