@@ -33,7 +33,6 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/fleet/flee
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|get_report]] (function: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|sovereignty.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/sovereignty.py.md|validate_isolation_zone]] (function: calls) — *Checks for the presence and structure of the isolation zone.*
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|run]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
@@ -47,6 +46,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/fleet/flee
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_resolve_active_workspaces]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_run_command]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_step]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|_validate_tag_matches_version]] (function: belongs_to) — *Validates that self.tag matches VERSION.txt (v<semver>) when VERSION.txt exists.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|audit_docs]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|audit_isolation_zone]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_commander.py.md|execute_fleet_push]] (function: belongs_to) — *Main execution loop for mass git operations with Sovereignty compliance audits.*

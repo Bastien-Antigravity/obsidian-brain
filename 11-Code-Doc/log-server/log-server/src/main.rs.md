@@ -13,13 +13,17 @@ tags:
 Automatically generated mirror for `log-server/src/main.rs`.
 
 > **Essential Process**:
-> ! Log Server main executable entry point. Bootstraps the distributed runtime, ! resolves network addresses via microservice-toolbox, and initializes TCP ! and gRPC logging daemons. ! ! DATA FLOW: ! 1. Runtime environment -> resolve_config_profile() -> load_config(profile) ! 2. LogServer::new() -> LogServer::run() ! ! KEY PARAMETERS: ! - production.yaml / standalone.yaml: Listen host, TCP port (9020), gRPC port (9021). ! - APP_VERSION: Injected compilation semver from build.rs. use log_server::facade::log_server::LogServer; use log_server::line_str; use log_server::utils::terminal_ui::print_internal_log; pub const VERSION: &str = env!("APP_VERSION"); fn main() { let profile = resolve_config_profile(); let ac = match microservice_toolbox::config::load_config(profile) { Ok(ac) => ac, Err(e) => { eprintln!("Error loading configuration: {}", e); std::process::exit(1); } }; let name = ac.cli_args.name.as_deref().unwrap_or("log_server"); let identity = name.to_string(); let default_host = ac.cli_args.host.as_deref().unwrap_or("0.0.0.0"); let default_port = ac.cli_args.port.unwrap_or(9020); let listen_addr = ac .get_listen_addr(name) .unwrap_or_else(|_| format!("{}:{}", default_host, default_port)); print_internal_log( "INFO", &identity, "main.rs", "main", line_str!(), &format!("starting log server (version {}) with profile: {}", VERSION, ac.profile), ); let default_grpc_host = ac.cli_args.grpc_host.as_deref().unwrap_or(default_host); let default_grpc_port = ac.cli_args.grpc_port.unwrap_or(default_port + 1); let grpc_listen_addr = ac .get_grpc_listen_addr(name) .unwrap_or_else(|_| format!("{}:{}", default_grpc_host, default_grpc_port)); let enable_grpc = true; Safely parse host and port from listen_addr [LS-5] let (host, port) = match listen_addr.rsplit_once(':') { Some((h, p)) => ( if h.is_empty() { default_host } else { h }, p.parse::<u16>().unwrap_or(default_port), ), None => (default_host, default_port), }; Safely parse grpc_port from grpc_listen_addr [LS-5] let grpc_port = match grpc_listen_addr.rsplit_once(':') { Some((_, p)) => p.parse::<u16>().unwrap_or(default_grpc_port), None => default_grpc_port, }; if enable_grpc { print_internal_log( "INFO", &identity, "main.rs", "main", line_str!(), "Log Bridge enabled", ); } Run the server if let Err(e) = run_server(&identity, host, port, grpc_port, enable_grpc) { print_internal_log( "ERROR", &identity, "main.rs", "main", line_str!(), &format!("server starting failed - {e}"), ); std::process::exit(1); } }
+> ! Log Server main executable entry point. Bootstraps the distributed runtime, ! resolves network addresses via microservice-toolbox, and initializes TCP ! and gRPC logging daemons. ! ! DATA FLOW: ! 1. Runtime environment -> resolve_config_profile() -> load_config(profile) ! 2. LogServer::new() -> LogServer::run() ! ! KEY PARAMETERS: ! - production.yaml / standalone.yaml: Listen host/port (TCP) and grpc_ip/grpc_port (gRPC). ! - CONFIG_PROFILE / DOCKER_ENV: Active configuration profile selection. use std::sync::Arc; use microservice_toolbox::config::loader::AppConfig; use log_server::config::config::Config; use log_server::facade::log_server::LogServer; use log_server::line_str; use log_server::utils::terminal_ui::print_internal_log; pub const VERSION: &str = env!("APP_VERSION");
 
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: calls) — *Create new log server instance*
+- [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: calls) — *Create new server configuration*
+- [[log-server/log-server/src/config/config.rs.md|Config.with_grpc_host]] (method: calls) — *Override the gRPC bind host verbatim*
+- [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls) — *Server configuration*
+- [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
+- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new_with_config]] (method: calls) — *Create new log server instance from a full `Config` and optional active `AppConfig`*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: calls) — *Run the log server with all components*
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
 - [[log-server/log-server/src/facade/mod.rs.md|mod.rs]] (imports)
@@ -28,9 +32,16 @@ Automatically generated mirror for `log-server/src/main.rs`.
 - [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/main.rs.md|Endpoint]] (struct: belongs_to)
+- [[log-server/log-server/src/main.rs.md|ServiceEndpoints]] (struct: belongs_to)
 - [[log-server/log-server/src/main.rs.md|VERSION]] (constant: belongs_to)
 - [[log-server/log-server/src/main.rs.md|config_file_exists]] (function: belongs_to) — *Checks whether a profile configuration file exists in standard lookup locations.*
 - [[log-server/log-server/src/main.rs.md|main]] (function: belongs_to)
-- [[log-server/log-server/src/main.rs.md|resolve_config_profile]] (function: belongs_to) — *Resolves the configuration profile based on runtime environment (Docker vs local).*
+- [[log-server/log-server/src/main.rs.md|parse_host_port]] (function: belongs_to) — *Parse a `host:port` (or `[ipv6]:port`) endpoint string verbatim without silent fallbacks.*
+- [[log-server/log-server/src/main.rs.md|resolve_config_profile]] (function: belongs_to) — *Resolves the configuration profile based on `CONFIG_PROFILE` or runtime environment (`DOCKER_ENV=true`).*
+- [[log-server/log-server/src/main.rs.md|resolve_service_addrs]] (function: belongs_to) — *Resolve TCP and gRPC endpoints verbatim from `AppConfig`.*
 - [[log-server/log-server/src/main.rs.md|run_server]] (function: belongs_to) — *Main server execution function*
+- [[log-server/log-server/src/main.rs.md|test_parse_host_port_preserves_host_verbatim]] (function: belongs_to)
+- [[log-server/log-server/src/main.rs.md|test_resolve_service_addrs_fails_fast_when_missing]] (function: belongs_to)
+- [[log-server/log-server/src/main.rs.md|test_resolve_service_addrs_preserves_distinct_grpc_host]] (function: belongs_to)
 <!-- SYNC:END -->

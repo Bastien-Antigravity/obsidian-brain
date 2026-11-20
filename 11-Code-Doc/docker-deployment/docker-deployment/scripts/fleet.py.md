@@ -34,7 +34,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/mode_local.py.md|mode_local.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/mode_production.py.md|mode_production.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_docker]] (function: calls) — *Build Docker container images from local sources across all compose modes [DD-01].*
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_native]] (function: calls) — *Compile missing or all native binaries, build FFI libraries, and setup Python venvs.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_native]] (function: calls) — *Compile native binaries incrementally (or clean rebuild when force=True), build FFI libraries, and setup Python venvs.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|ensure_fleet_cloned]] (function: calls) — *Check and clone missing ecosystem repositories into WORKSPACE_ROOT.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|install_debloat_tools]] (function: calls) — *Install missing Debloat Sentinel and static analysis tools across Go, Rust, and Python.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|operations.py]] (imports)

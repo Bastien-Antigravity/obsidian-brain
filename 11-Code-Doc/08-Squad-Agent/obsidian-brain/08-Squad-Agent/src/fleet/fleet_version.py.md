@@ -42,7 +42,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/fleet/flee
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|SEMVER_REGEX]] (constant: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|get_repo_git_tag]] (function: belongs_to) — *Returns the latest Git tag for the repository, or 'none'.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|get_repo_git_tag]] (function: belongs_to) — *Returns the latest semver Git tag (v*) for the repository, or 'none'.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|increment_semver]] (function: belongs_to) — *Computes the next semver string based on bump type.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|inspect_repo_version]] (function: belongs_to) — *Inspects VERSION.txt and AI-Project-DNA.md within a repository directory.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|main]] (function: belongs_to)

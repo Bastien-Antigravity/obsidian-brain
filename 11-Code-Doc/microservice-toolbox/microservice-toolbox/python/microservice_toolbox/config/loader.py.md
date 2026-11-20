@@ -59,6 +59,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_public_ip]] (function: belongs_to) — *Returns the configured public IP from common.public_ip.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_rest_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_service_name]] (function: belongs_to) — *Returns the standardized program name.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_version]] (function: belongs_to) — *Returns the dynamic semantic version of the microservice from VERSION.txt.*

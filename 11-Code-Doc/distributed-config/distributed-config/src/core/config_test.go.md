@@ -19,6 +19,8 @@ Automatically generated mirror for `distributed-config/src/core/config_test.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: calls) — *It looks for "ip" and "port" keys in the capability configuration.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: calls) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: calls) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: calls) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
@@ -33,6 +35,7 @@ Automatically generated mirror for `distributed-config/src/core/config_test.go`.
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ShadowPort]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ShareConfig]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ValidateMandatoryServices]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_WildcardBindPreservedOverLiveConfig]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|iterations]] (constant: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|workers]] (constant: belongs_to)
 <!-- SYNC:END -->

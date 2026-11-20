@@ -21,6 +21,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/in
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_rag_setting]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|has_meaningful_codedoc_notes]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|get_workspace_registry]] (function: calls) — *Returns the process-wide WorkspaceRegistry singleton.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_brain_for_path]] (function: calls) — *Resolves the owning brain_id for an absolute filesystem path via deepest prefix match.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_workspace_root]] (function: calls) — *Resolves the workspace root directory for the given brain_id (defaults to primary).*

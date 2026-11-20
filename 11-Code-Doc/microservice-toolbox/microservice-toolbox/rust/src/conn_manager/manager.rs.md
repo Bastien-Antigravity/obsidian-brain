@@ -22,7 +22,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/m
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|OnErrorHandler]] (struct: calls) — *msg: a descriptive message providing additional context.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|from_str]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.from_value]] (method: calls) — *Creates an AppConfig wrapping explicit yaml value data.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.current_endpoint]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.get_endpoint]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|ManagedConnection.new_with_endpoint]] (method: calls)

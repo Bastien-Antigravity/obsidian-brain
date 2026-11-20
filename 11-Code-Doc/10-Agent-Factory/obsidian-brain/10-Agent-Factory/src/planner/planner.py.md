@@ -27,7 +27,6 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/planner/
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|info]] (function: calls)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|interfaces.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/planner.py.md|Planner]] (class: calls) — *Orchestrator that decides which `Skill` to invoke.*
-- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/memory/memory.py.md|retrieve]] (function: calls) — *Retrieves history. For simplicity, returns the entire active buffer.*
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/utils/utils.py.md|utils.py]] (imports)
 
 ### 🔌 Consumers (Inbound)

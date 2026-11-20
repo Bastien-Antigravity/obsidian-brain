@@ -25,6 +25,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 ### 📦 Dependencies (Outbound)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: calls) — *Resolves the REST Management address for a capability.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_version]] (method: calls)
@@ -66,6 +67,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|extract_capnp_operations]] (function: belongs_to) — *Parses enum and struct declarations from raw .capnp IDL text.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|extract_proto_operations]] (function: belongs_to) — *Parses protobuf service and RPC declarations from raw .proto IDL text.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_default_health]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_docker_internal_host]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_empty_canvas]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_zero_f64]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|is_zero_i32]] (function: belongs_to)
@@ -77,6 +79,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|publish_with_lifecycle]] (function: belongs_to) — *Dynamic registration with lifecycle integration alias adhering to fleet standards.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|read_schema_file]] (function: belongs_to) — *Reads an embedded or disk schema file cleanly, returning empty string when missing.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|resolve_contract_port]] (function: belongs_to) — *Extracts the TCP/UDP port integer from a host:port string.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|resolve_mfe_url]] (function: belongs_to) — *host from HOST_IP or app_config.get_public_ip() when DOCKER_ENV=true.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|send_register_post]] (function: belongs_to)
 <!-- SYNC:END -->
 

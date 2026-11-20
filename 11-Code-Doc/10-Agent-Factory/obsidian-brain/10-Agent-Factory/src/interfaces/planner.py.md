@@ -23,7 +23,7 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/interfac
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/memory_store.py.md|memory_store.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/__init__.py.md|__init__.py]] (imports)

@@ -59,5 +59,8 @@ Automatically generated mirror for `watchdog-agent/main.go`.
 - [[watchdog-agent/watchdog-agent/src/utils/utils.go.md|IsLocal]] (function: calls) — *IsLocal checks if an IP belongs to the local machine*
 
 ### 🔌 Consumers (Inbound)
+- [[watchdog-agent/watchdog-agent/main.go.md|buildMFEURL]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/main.go.md|main]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/main_test.go.md|main_test.go]] (calls)
+- [[watchdog-agent/watchdog-agent/main_test.go.md|main_test.go]] (same_package)
 <!-- SYNC:END -->

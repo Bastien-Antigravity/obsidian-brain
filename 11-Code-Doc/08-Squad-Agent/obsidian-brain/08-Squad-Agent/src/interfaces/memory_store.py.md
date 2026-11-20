@@ -34,7 +34,6 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|clear]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|retrieve]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|memory.py]] (calls)
-- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/memory/memory.py.md|memory.py]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

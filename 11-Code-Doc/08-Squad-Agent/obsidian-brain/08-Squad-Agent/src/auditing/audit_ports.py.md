@@ -35,10 +35,16 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/a
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|ALLOWED_PORT_ALIAS_PAIRS]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|PORT_KEYS]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|_collect_yaml_audit_targets]] (function: belongs_to) — *Collects all YAML configuration slices to audit for drift and port collisions.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_compose_ports]] (function: belongs_to) — *Loads port bindings and env defaults from docker-compose.yaml.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|check_intra_service_port_uniqueness]] (function: belongs_to) — *Verifies all declared ports within each capability block are mutually distinct.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|extract_capability_ports]] (function: belongs_to) — *Extracts all declared numeric ports from a single capability block.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_compose_ports]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_registry_ports]] (function: belongs_to) — *Loads services from service-registry.json.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_ssot_capabilities]] (function: belongs_to) — *Loads authoritative port mappings from native.yaml.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_yaml_capabilities]] (function: belongs_to) — *Loads port mappings from capabilities and top-level service blocks in a YAML file.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|main]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|parse_env_default]] (function: belongs_to) — *Extracts numeric port default from '${VAR:DEFAULT}', '${VAR:-DEFAULT}' or raw int/str.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)

@@ -24,7 +24,7 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run_preflight]] (function: calls) — *Convenience functional entry point for mode runners.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|run_status]] (function: calls) — *Inspect and report ecosystem status.*
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_all]] (function: calls) — *Terminate all services across Docker and Native.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_docker]] (function: calls) — *Stop all Docker containers (compose fleet across modes, local databases, and standalone infra) [DD-01].*
 
 ### 🔌 Consumers (Inbound)
 - [[docker-deployment/docker-deployment/modes/docker/run.py.md|DOCKER_MODE_DIR]] (constant: belongs_to)

@@ -32,6 +32,8 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getAddr]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getCapabilityField]] (method: defines_method)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.getListenHostField]] (method: defines_method)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.getStaticCapabilityField]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/service_schemas.go.md|LogServerCap.Validate]] (method: calls) — *Validate ensures all mandatory fields are present.*
 - [[distributed-config/distributed-config/src/core/service_schemas.go.md|service_schemas.go]] (same_package)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|logger.go]] (imports)
@@ -51,9 +53,12 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getAddr]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getCapabilityField]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.getListenHostField]] (method: belongs_to)
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.getStaticCapabilityField]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config]] (struct: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|ParseSharePayload]] (function: belongs_to) — *Supports map[string]map[string]string, map[string]string, and map[string]interface{}.*
+- [[distributed-config/distributed-config/src/core/config.go.md|isWildcardBindIP]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|config_test.go]] (calls)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|config_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (calls)

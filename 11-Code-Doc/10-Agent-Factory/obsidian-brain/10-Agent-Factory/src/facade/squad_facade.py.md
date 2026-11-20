@@ -29,7 +29,6 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/facade/s
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/factory/factory.py.md|create_from_file]] (function: calls) — *Read a JSON config file, instantiate the Agent and return it.*
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/factory/factory.py.md|factory.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/__init__.py.md|__init__.py]] (imports)
-- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/memory/memory.py.md|add]] (function: calls) — *Appends a new turn to the short-term buffer.*
 
 ### 🔌 Consumers (Inbound)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/facade/squad_facade.py.md|SquadFacade]] (class: belongs_to) — *Facade for managing and orchestrating a squad of agents.*

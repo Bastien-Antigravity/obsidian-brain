@@ -31,4 +31,5 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: defines_method)
 - [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|args.go]] (calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec.go.md|spec.go]] (calls)
 <!-- SYNC:END -->

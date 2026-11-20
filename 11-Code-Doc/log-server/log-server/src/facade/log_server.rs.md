@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 
 > **Essential Process**:
-> ! Main log server orchestrator coordinating TCP socket (Cap'n Proto) and ! high-throughput gRPC (HTTP/2) with ordered asynchronous file writing, ! rotation, and real-time broadcast streaming. ! ! DATA FLOW: ! 1. TCP/gRPC clients -> writer_tx / sequence_counter ! 2. WriterTask flushes ordered batches to files and updates LogRingBuffer ! 3. gRPC StreamLogs -> ring_buffer broadcast -> real-time HTTP/2 stream ! ! KEY PARAMETERS: ! - name: Microservice identity ("log_server"). ! - host / port: TCP socket binding (default 0.0.0.0:9020). ! - grpc_port: gRPC bridge endpoint (default 9021). use std::sync::Arc; use crate::config::config::Config; use crate::core::ring_buffer::LogRingBuffer; use crate::facade::log_writer::LogWriter; use crate::line_str; use crate::servers::grpc_server::LogBridgeGateway; use crate::servers::tcp_server::TcpServer; use crate::utils::terminal_ui::print_internal_log; / Main log server orchestrator pub struct LogServer { name: String, config: Config, writer: Arc<LogWriter>, enable_grpc: bool, }
+> ! Main log server orchestrator coordinating TCP socket (Cap'n Proto) and ! high-throughput gRPC (HTTP/2) with ordered asynchronous file writing, ! rotation, and real-time broadcast streaming. ! ! DATA FLOW: ! 1. TCP/gRPC clients -> writer_tx / sequence_counter ! 2. WriterTask flushes ordered batches to files and updates LogRingBuffer ! 3. gRPC StreamLogs -> ring_buffer broadcast -> real-time HTTP/2 stream ! ! KEY PARAMETERS: ! - name: Microservice identity ("log_server"). ! - host / port: TCP socket binding (default 0.0.0.0:9020). ! - grpc_port: gRPC bridge endpoint (default 9021). use microservice_toolbox::config::loader::AppConfig; use std::sync::Arc; use crate::config::config::Config; use crate::core::ring_buffer::LogRingBuffer; use crate::facade::log_writer::LogWriter; use crate::line_str; use crate::servers::grpc_server::LogBridgeGateway; use crate::servers::tcp_server::TcpServer; use crate::utils::terminal_ui::print_internal_log; / Main log server orchestrator pub struct LogServer { name: String, config: Config, writer: Arc<LogWriter>, enable_grpc: bool, app_config: Option<Arc<AppConfig>>, }
 
 ## 🏗️ Architectural Context
 
@@ -25,6 +25,7 @@ Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 - [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (imports)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: defines_method) — *Create new log server instance*
+- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new_with_config]] (method: defines_method) — *Create new log server instance from a full `Config` and optional active `AppConfig`*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: defines_method) — *Run the log server with all components*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
 - [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter]] (struct: calls) — *File writer with ordering and rotation*
@@ -44,6 +45,7 @@ Automatically generated mirror for `log-server/src/facade/log_server.rs`.
 
 ### 🔌 Consumers (Inbound)
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new]] (method: belongs_to) — *Create new log server instance*
+- [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new_with_config]] (method: belongs_to) — *Create new log server instance from a full `Config` and optional active `AppConfig`*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: belongs_to) — *Run the log server with all components*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer]] (struct: belongs_to) — *Main log server orchestrator*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer]] (struct: defines_method) — *Main log server orchestrator*

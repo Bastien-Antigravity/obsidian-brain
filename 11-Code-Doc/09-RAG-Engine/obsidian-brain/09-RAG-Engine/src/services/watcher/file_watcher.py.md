@@ -21,6 +21,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/wa
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_watch_settings]] (function: calls) — *Resolves filesystem watcher configuration.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|has_meaningful_codedoc_notes]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|get_workspace_registry]] (function: calls) — *Returns the process-wide WorkspaceRegistry singleton.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|list_workspaces]] (function: calls) — *Returns all registered workspaces serialized as string path dictionaries.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/workspace_registry.py.md|resolve_brain_for_path]] (function: calls) — *Resolves the owning brain_id for an absolute filesystem path via deepest prefix match.*
@@ -38,17 +39,21 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/wa
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|UnifiedWatcher]] (class: belongs_to) — *Observer-based file watcher that monitors all registered workspaces.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|__init__]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_accepts_brain_id]] (function: belongs_to) — *Checks whether a callback explicitly declares a 'brain_id' keyword parameter.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_codedoc_file_has_notes]] (function: belongs_to) — *Checks whether an 11-Code-Doc mirror file has manual Implementation Details notes.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_debounced_runner]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_handle_delete_event]] (function: belongs_to) — *Filters and dispatches file deletion events to the delete callback.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_handle_event]] (function: belongs_to) — *Filters and dispatches file system events to the callback with 500ms debouncing.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_invoke_sync_callback]] (function: belongs_to)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|_resolve_event_context]] (function: belongs_to) — *Resolves owning brain_id and workspace-relative path parts for a filesystem event.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|is_codedoc_suppressed]] (function: belongs_to) — *Returns True while 11-Code-Doc filesystem event suppression is active.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|on_created]] (function: belongs_to) — *Triggered when a file is created.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|on_deleted]] (function: belongs_to) — *Triggered when a file is deleted.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|on_modified]] (function: belongs_to) — *Triggered when a file is modified.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|on_moved]] (function: belongs_to) — *Triggered when a file is moved or renamed.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|resume_codedoc_events]] (function: belongs_to) — *Decrements active-sync suppression refcount for 11-Code-Doc filesystem events.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|start]] (function: belongs_to) — *Starts the background file watch loop across all registered workspaces.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|stop]] (function: belongs_to) — *Stops the background file watch loop.*
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|suppress_codedoc_events]] (function: belongs_to) — *Increments active-sync suppression refcount for 11-Code-Doc filesystem events.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|unwatch_workspace]] (function: belongs_to) — *Detaches the watchdog observer for a domain workspace.*
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|watch_workspace]] (function: belongs_to) — *Schedules a recursive watchdog observer on the given workspace root.*
 <!-- SYNC:END -->

@@ -22,6 +22,7 @@ Automatically generated mirror for `obsidian-brain/10-Agent-Factory/src/interfac
 ### 📦 Dependencies (Outbound)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/identity.py.md|identity.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/interfaces.py.md|interfaces.py]] (imports)
+- [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/memory_store.py.md|memory_store.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/planner.py.md|planner.py]] (imports)
 - [[10-Agent-Factory/obsidian-brain/10-Agent-Factory/src/interfaces/skill.py.md|skill.py]] (imports)
 

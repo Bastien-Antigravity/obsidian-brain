@@ -18,12 +18,12 @@ tags:
 Automatically generated mirror for `obsidian-brain/03-Tech-Stack/05-Project-Scripts/Build-Wrapper.py`.
 
 > **Essential Process**:
-> Modular build wrapper that detects the programming language of a repository and runs the appropriate build or test command.
+> Modular build wrapper that detects the programming language of a repository and runs the appropriate build, test, or lint command.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[03-Tech-Stack/obsidian-brain/03-Tech-Stack/05-Project-Scripts/Build-Wrapper.py.md|detect_and_run]] (function: belongs_to)
