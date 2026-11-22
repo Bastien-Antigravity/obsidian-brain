@@ -53,10 +53,12 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/v
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|__init__]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_cross_os_top_level_imports]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_dockerenv_prohibited]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_go_mod]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_file]] (function: belongs_to) — *Audits a single source file and returns a list of detected violations.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_path]] (function: belongs_to) — *Audits a path (file or recursive directory).*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_python_imports]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_staged]] (function: belongs_to) — *Audits git staged files in the current repository / workspace.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|fix_go_mod]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|format_report]] (function: belongs_to) — *Formats violations list into human and agent readable report.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|main]] (function: belongs_to) — *CLI runner for standalone audit execution.*
 <!-- SYNC:END -->

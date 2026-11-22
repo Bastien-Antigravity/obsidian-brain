@@ -27,6 +27,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lifecycle/
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_is_core_workspace]] (function: belongs_to) — *Returns True when target_dir resides inside the local core Bastien-Antigravity workspace.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_is_external_domain_workspace]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_is_valid_workspace]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_register_in_go_work]] (function: belongs_to) — *Ensures a newly scaffolded Go microservice is registered in the workspace go.work file.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_resolve_brain_name]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|_to_pascal_case]] (function: belongs_to) — *Converts a kebab/snake identifier into PascalCase.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|create_file]] (function: belongs_to) — *Creates a file with parent directory creation, respecting dry-run mode.*
