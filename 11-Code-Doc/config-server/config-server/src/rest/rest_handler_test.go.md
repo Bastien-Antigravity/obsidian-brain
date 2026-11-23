@@ -58,8 +58,6 @@ Automatically generated mirror for `config-server/src/rest/rest_handler_test.go`
 - [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|grpc_service.go]] (calls)
 - [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (calls)
 - [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (same_package)
 - [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (calls)
@@ -105,8 +103,4 @@ Automatically generated mirror for `config-server/src/rest/rest_handler_test.go`
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger]] (struct: belongs_to)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger]] (struct: defines_method)
 - [[config-server/config-server/src/rest/rest_handler_test.go.md|newTestHandler]] (function: belongs_to)
-- [[config-server/config-server/src/server/connection.go.md|connection.go]] (calls)
-- [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (calls)
-- [[config-server/config-server/src/telegram/manager.go.md|manager.go]] (calls)
 <!-- SYNC:END -->

@@ -22,8 +22,11 @@ Automatically generated mirror for `distributed-config/src/strategies/strategies
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (imports)
+- [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: calls) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Close]] (method: calls)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.DeleteKeys]] (method: calls) — *DeleteKeys sends key deletion request to the server and waits for ACK before deleting locally.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Load]] (method: calls)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Set]] (method: calls)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Sync]] (method: calls)
@@ -47,12 +50,14 @@ Automatically generated mirror for `distributed-config/src/strategies/strategies
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_Production]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_SetAndDeleteWaitForServerAck]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_SkipsWildcardBindIPsOnLoadAndSync]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_Staging]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestCloudStrategy_SyncsCapabilitiesToLiveConfigAndServer]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestStandaloneStrategy]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestSyncCapabilitiesToLiveConfig_SkipsWildcardBindIPs]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|TestTestStrategy]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|safesocketClientForTest]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Critical]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Debug]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Error]] (method: belongs_to)

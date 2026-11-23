@@ -31,7 +31,7 @@ Automatically generated mirror for `config-server/src/server/controller.go`.
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
 - [[config-server/config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
 - [[config-server/config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients lock-free.*
-- [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls) — *GetClientNames returns the names of all currently connected clients lock-free.*
+- [[config-server/config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls) — *GetClientNames returns the names of all currently connected clients lock-free in sorted order.*
 - [[config-server/config-server/src/server/server.go.md|Server.TriggerSave]] (method: calls) — *TriggerSave marks the state as dirty to trigger background persistence.*
 - [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
 - [[config-server/config-server/src/server/server_test.go.md|mockLogger.Debug]] (method: calls)

@@ -102,6 +102,7 @@ Develop flexible, type-hinted, high-performance wrappers, integration scripts, a
   - Direct parsing of `standalone.yaml` via `yaml.safe_load` (must use `microservice_toolbox` / `distributed-config`).
   - Ad-hoc scanning loops or `"0.0.1"` fallbacks for `VERSION.txt` (must call `app_config.get_version()`).
   - Hardcoded ports/IPs or silent fallback values (must use dynamic capability resolution and fail fast).
+  - Local editable/filesystem paths (`-e ../...`, `../...`, `/Users/...`, or `file://`) in `requirements*.txt` or `pyproject.toml` (`PYTHON_LOCAL_PATH_POLLUTION`). Always commit canonical `git+https://github.com/Bastien-Antigravity/...` URLs in Python manifests and rely on `bootstrap_microservice` + `.venv` `_bastien_workspace.pth` for local workspace SDK resolution.
 
 ---
 

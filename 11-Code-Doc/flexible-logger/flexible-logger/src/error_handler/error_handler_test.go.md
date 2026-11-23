@@ -15,6 +15,7 @@ tags:
 ### 📦 Dependencies (Outbound)
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: calls) — *It formats the error as a LogEntry to maintain consistency.*
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|fallback_logger.go]] (same_package)
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/error_handler/error_handler_test.go.md|TestReportInternalError_WritesToStderr]] (function: belongs_to)

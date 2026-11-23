@@ -115,6 +115,7 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
   - Unbootstrapped service entrypoints (daemon `main()` must start with `toolbox_bootstrap.BootstrapService(...)`).
   - Direct parsing of `standalone.yaml` via `yaml.Unmarshal` (must use `toolbox_config.LoadConfig`).
   - Hardcoded ports/IPs or silent fallback values (must use dynamic capability resolution e.g. `appConfig.GetListenAddr(...)` and fail fast).
+  - Local filesystem `replace => ../...` or `/...` directives in `go.mod` (`GO_LOCAL_REPLACE_POLLUTION`). Always commit canonical `github.com/Bastien-Antigravity/...` imports in `go.mod` and rely on workspace root `go.work` for local multi-repo resolution.
 
 ## 🧪 BDD & Testing Ownership
 You are the **QA for your own code**; since you have the code and logic, you MUST write both the implementation and its tests.

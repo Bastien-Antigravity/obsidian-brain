@@ -13,6 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: calls)
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|TextSerializer.Serialize]] (method: defines_method)
 

@@ -15,8 +15,8 @@ tags:
 ### 📦 Dependencies (Outbound)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/docker_portability_and_slices_test.go.md|docker_portability_and_slices_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/docker_portability_and_slices_test.go.md|resolveDockerDeploymentDir]] (function: calls) — *resolveDockerDeploymentDir finds the docker-deployment directory relative to this test file.*
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|scenarioMockLogger.Close]] (method: calls)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|secret_isolation_integration_test.go]] (same_package)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|logger_resilience_and_alerts_test.go]] (same_package)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|mockScenarioNotifier.Close]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/nats_and_fleet_control_test.go.md|TestScenario_ConfigExplicitHierarchy]] (function: belongs_to) — *directory contains explicit, self-documenting subdirectories and backward-compatible symlinks.*

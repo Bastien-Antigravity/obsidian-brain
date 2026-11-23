@@ -44,7 +44,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lib.rs.md|lib.rs]] (imports)
+- [[microservice-toolbox/microservice-toolbox/rust/src/contracts.rs.md|contracts.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|CanvasSpec]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractOperation]] (struct: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|ContractPeer]] (struct: belongs_to)

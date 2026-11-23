@@ -16,6 +16,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Debug]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Error]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Info]] (method: calls)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Log]] (method: calls)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetCallerSkip]] (method: calls) — *SetCallerSkip sets the number of stack frames to skip.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|log_engine.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.Close]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.GetLastMsg]] (method: defines_method)
@@ -27,6 +29,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.GetWriteCount]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.IsClosed]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.Write]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: calls) — *Release decrements the reference count and returns the entry to the pool if 0.*
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
@@ -49,11 +52,15 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink]] (struct: defines_method) — *MockSink for testing*
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_Close]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_ConcurrentStress]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_DirectLogVsHelper_IdenticalCallerAttribution]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_ErrorCollectsCallerEvenWhenDisabled]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_Levels]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_MetadataFallback]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_NotifierError_DoesNotBlockSink]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_Sampling]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|TestLogEngine_SetCallerSkip_WrapperAttribution]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|emitLogAndHelperFromSameFunction]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|sampleWrapperFacade]] (function: belongs_to) — *sampleWrapperFacade simulates a facade library (like universal-logger) that wraps LogEngine.*
 - [[flexible-logger/flexible-logger/src/factory/factory_test.go.md|factory_test.go]] (imports)
 - [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (imports)

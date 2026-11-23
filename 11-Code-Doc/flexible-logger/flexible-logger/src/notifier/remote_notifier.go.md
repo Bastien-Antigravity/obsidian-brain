@@ -13,6 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetLevel]] (method: calls) — *SetLevel sets the current log level.*
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|ReportInternalError]] (function: calls) — *It formats the error as a LogEntry to maintain consistency.*
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|fallback_logger.go]] (imports)
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
@@ -20,12 +21,6 @@ tags:
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier.Notify]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier.serialize]] (method: defines_method) — *It uses the locally replicated NotifierMsg schema.*
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|RemoteNotifier.worker]] (method: defines_method)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NewRootNotifierMsg]] (function: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.NewTags]] (method: calls) — *allocated capnp.TextList, preferring placement in s's segment.*
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.SetAttachment]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.SetLevel]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|NotifierMsg.SetMessage_]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/notifier/notifier.go.md|notifier.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/notifier/notifier_test.go.md|notifier_test.go]] (calls)

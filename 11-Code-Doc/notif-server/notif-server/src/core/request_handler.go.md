@@ -23,16 +23,6 @@ Automatically generated mirror for `notif-server/src/core/request_handler.go`.
 - [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: defines_method) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
 - [[notif-server/notif-server/src/core/test_logger_test.go.md|testNotifierLogger.SetLevel]] (method: calls)
 - [[notif-server/notif-server/src/core/test_logger_test.go.md|test_logger_test.go]] (same_package)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NewRootNotifierMsg]] (function: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Attachment]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Level]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Message_]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetAttachment]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetMessage_]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.SetTags]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|NotifierMsg.Tags]] (method: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|ReadRootNotifierMsg]] (function: calls)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|notifier.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)

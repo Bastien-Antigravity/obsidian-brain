@@ -139,6 +139,7 @@ Automatically generated mirror for `log-server/src/protocols/capnp/logger_msg.rs
 - [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|u16.from]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/config/config.rs.md|config.rs]] (calls)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
 - [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 - [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)

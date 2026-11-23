@@ -13,25 +13,8 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.SetLevel]] (method: calls) — *SetLevel sets the current log level.*
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetFilename]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetFunctionName]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetHostname]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetLevel]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetLineNumber]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetLoggerName]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetMessage_]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetModule]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetPathName]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetProcessId]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetProcessName]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetServiceName]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetStackTrace]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetThreadId]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetThreadName]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.SetTimestamp]] (method: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|NewRootLoggerMsg]] (function: calls)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|logger.go]] (imports)
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|CapnpSerializer.Serialize]] (method: defines_method) — *Serialize converts LogEntry to bytes using LoggerMsg Cap'n Proto schema.*
 
 ### 🔌 Consumers (Inbound)

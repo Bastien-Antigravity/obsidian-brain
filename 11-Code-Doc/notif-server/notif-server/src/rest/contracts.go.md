@@ -27,7 +27,6 @@ Automatically generated mirror for `notif-server/src/rest/contracts.go`.
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ListNotifiers]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifLogger.Error]] (method: calls)
 - [[notif-server/notif-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
-- [[notif-server/notif-server/src/schemas/capnp/notifier.go.md|notifier.go]] (imports)
 - [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|notif_service.pb.go]] (imports)
 
 ### 🔌 Consumers (Inbound)

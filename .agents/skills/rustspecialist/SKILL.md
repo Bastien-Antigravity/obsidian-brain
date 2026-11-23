@@ -98,6 +98,7 @@ Implement zero-cost abstractions, memory-safe, and high-performance network tran
   - Hardcoded version strings or fallback `VERSION.txt` readers (must call `app_config.get_version()`).
   - Direct reading of raw YAML config files bypassing `distributed-config` / `microservice-toolbox`.
   - Hardcoded ports or silent fallback IPs (must bind dynamically to ports specified in configuration and fail fast).
+  - Local `path = "../..."`, `/...`, or local `[patch]` overrides in `Cargo.toml` (`RUST_LOCAL_PATH_POLLUTION`). Always commit canonical `git = "https://github.com/Bastien-Antigravity/..."` dependencies in `Cargo.toml` and rely on workspace root `.cargo/config.toml` `paths = [...]` for local crate resolution.
 
 ## 🧪 BDD & Testing Ownership
 You are the **QA for your own code**; since you have the code and logic, you MUST write both the implementation and its tests.

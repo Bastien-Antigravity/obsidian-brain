@@ -38,6 +38,7 @@ Automatically generated mirror for `config-server/src/store/store_test.go`.
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_ConcurrentStress]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_DeepCopyNilSafe]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_GetAndGetSection]] (function: belongs_to)
+- [[config-server/config-server/src/store/store_test.go.md|TestStore_UpdateAtomicWithOCC_OwnsCommittedMap]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_UpdateAtomic_SuccessAndRollback]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_UpdateSection]] (function: belongs_to)
 - [[config-server/config-server/src/store/store_test.go.md|TestStore_VersionAndOCC]] (function: belongs_to)

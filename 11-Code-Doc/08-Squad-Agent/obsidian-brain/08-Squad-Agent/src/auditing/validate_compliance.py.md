@@ -18,7 +18,7 @@ tags:
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py`.
 
 > **Essential Process**:
-> Mechanical Code Compliance and Architectural Invariant Auditor. Scans source code files across the Bastien-Antigravity fleet to verify strict adherence to: 1. Triple-Block Header Standard (ESSENTIAL PROCESS, DATA FLOW, KEY PARAMETERS) 2. Section Divider Standard (// --------- or # ---------) 3. Dynamic Port Invariant (No hardcoded canonical ports in production code) 4. Production Cleanliness Invariant (No test mocks, EnsureSafeLogger, or nil fallbacks in bin source) 5. Dynamic Host Invariant (No hardcoded 127.0.0.1 / localhost in capability connection logic) 6. Ecosystem Tooling Invariant (Entrypoints must use BootstrapService / bootstrap_microservice) 7. Observability Invariant (Zero bare print/println in production code) 8. Path Sovereignty Invariant (Zero legacy manual sys.path climbing) 9. SSoT Configuration Invariant (No direct parsing of standalone.yaml) 10. Dynamic Versioning Invariant (No manual directory loops for VERSION.txt)
+> Mechanical Code Compliance and Architectural Invariant Auditor. Scans source code files across the Bastien-Antigravity fleet to verify strict adherence to: 1. Triple-Block Header Standard (ESSENTIAL PROCESS, DATA FLOW, KEY PARAMETERS) 2. Section Divider Standard (// --------- or # ---------) 3. Dynamic Port Invariant (No hardcoded canonical ports in production code) 4. Production Cleanliness Invariant (No test mocks, EnsureSafeLogger, or nil fallbacks in bin source) 5. Dynamic Host Invariant (No hardcoded 127.0.0.1 / localhost in capability connection logic) 6. Ecosystem Tooling Invariant (Entrypoints must use BootstrapService / bootstrap_microservice) 7. Observability Invariant (Zero bare print/println in production code) 8. Path Sovereignty Invariant (Zero legacy manual sys.path climbing) 9. SSoT Configuration Invariant (No direct parsing of standalone.yaml) 10. Dynamic Versioning Invariant (No manual directory loops for VERSION.txt) 11. Platform Schema SSoT Invariant (logger.capnp & notifier.capnp exclusively in microservice-toolbox; no legacy local schema imports) 12. Polyglot Local-First Workspace Resolution (Zero local filesystem path overrides in go.mod, Cargo.toml, pyproject.toml, or requirements*.txt)
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
@@ -31,11 +31,9 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/v
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|is_internal_module]] (function: calls) — *Returns True if the import targets an internal project/ecosystem local module.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|make_camel_alias]] (function: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|transform_path]] (function: calls)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|run]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/static/js/HtmlObjectVisualizer.js.md|walk]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (calls)
@@ -54,9 +52,12 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/v
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_cross_os_top_level_imports]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_dockerenv_prohibited]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_go_mod]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_is_external_local_path]] (function: belongs_to) — *Returns True if a manifest path escapes the repository root or uses an absolute/Windows path.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_cargo_toml]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_file]] (function: belongs_to) — *Audits a single source file and returns a list of detected violations.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_path]] (function: belongs_to) — *Audits a path (file or recursive directory).*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_python_imports]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_python_manifest]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_staged]] (function: belongs_to) — *Audits git staged files in the current repository / workspace.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|fix_go_mod]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|format_report]] (function: belongs_to) — *Formats violations list into human and agent readable report.*

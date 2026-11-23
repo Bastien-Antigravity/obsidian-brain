@@ -22,9 +22,11 @@ Automatically generated mirror for `distributed-config/src/secret/crypto_test.go
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|Decrypt]] (function: calls)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|Encrypt]] (function: calls)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|ProcessConfigSecrets]] (function: calls)
+- [[distributed-config/distributed-config/src/secret/crypto.go.md|ResetKeyCache]] (function: calls) — *ResetKeyCache clears the in-memory memoized RSA private key.*
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|crypto.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/secret/crypto_test.go.md|TestEncryptionRoundTrip]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto_test.go.md|TestProcessConfigSecrets]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/secret/crypto_test.go.md|TestProcessConfigSecrets_FailFastAndCaching]] (function: belongs_to)
 <!-- SYNC:END -->

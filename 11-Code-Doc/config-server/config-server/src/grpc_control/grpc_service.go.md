@@ -32,7 +32,6 @@ Automatically generated mirror for `config-server/src/grpc_control/grpc_service.
 - [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Info]] (method: calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Warning]] (method: calls)
 - [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
 

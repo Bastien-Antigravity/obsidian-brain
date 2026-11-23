@@ -19,6 +19,7 @@ tags:
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|log_engine.go]] (calls)
+- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Release]] (method: belongs_to) — *Release decrements the reference count and returns the entry to the pool if 0.*
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: belongs_to) — *Reset clears the LogEntry for reuse.*
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Retain]] (method: belongs_to) — *Must be called when passing the entry to an additional async consumer.*

@@ -13,9 +13,13 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls) — *NewBot registers Telebot settings and initializes memory maps*
+- [[tele-remote/tele-remote/src/models/ui_types.go.md|ui_types.go]] (imports)
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnDisconnect]] (method: calls) — *preventing a late disconnect from an older stream from deleting a newly reconnected session.*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls) — *NewBot registers Telebot settings, initializes memory maps, and starts the background telemetry worker.*
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (imports)
-- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|OnComponentConnected]] (function: calls) — *OnComponentConnected is triggered when a client connects via gRPC or NATS*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|HandleDynamicText]] (function: calls) — *HandleDynamicText routes text messages from Reply buttons and user prompts back to actions.*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|OnComponentConnected]] (function: calls) — *never wipe out an existing valid component session.*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|RequestEmergencyConfirmation]] (function: calls) — *RequestEmergencyConfirmation initiates a 2-step confirmation workflow for CmdPowerOff or CmdStop.*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|menus.go]] (same_package)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Critical]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Debug]] (method: defines_method)
@@ -25,6 +29,11 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher.Close]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher.PublishCommand]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher.RequestRefresh]] (method: defines_method)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Chat]] (method: defines_method)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Message]] (method: defines_method)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Send]] (method: defines_method)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Sender]] (method: defines_method)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Text]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|mockTelegramServer.Close]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
@@ -47,8 +56,20 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher]] (struct: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestBot_MenuRegistration]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestOnComponentConnected_MalformedJSONPreservesExistingMenu]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestOnDisconnect_StaleStreamDoesNotDeleteNewSession]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestPendingInput_RoutesToOriginatingClientAndIsolatesUsers]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestTwoStepConfirmation_EmergencyCommands]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Chat]] (method: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Message]] (method: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Send]] (method: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Sender]] (method: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Text]] (method: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext]] (struct: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext]] (struct: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|mockTelegramServer.Close]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|mockTelegramServer]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|mockTelegramServer]] (struct: defines_method)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|newFakeUIContext]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|newMockTelegramServer]] (function: belongs_to)
 <!-- SYNC:END -->

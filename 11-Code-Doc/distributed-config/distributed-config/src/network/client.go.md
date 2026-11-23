@@ -26,13 +26,13 @@ Automatically generated mirror for `distributed-config/src/network/client.go`.
 - [[distributed-config/distributed-config/src/network/backoff.go.md|backoff.go]] (same_package)
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: defines_method) — *Close closes the connection and stops the background listener.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.DeleteKeysWithOCC]] (method: defines_method) — *Returns ErrVersionConflict if the server version does not match expectedVersion.*
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.DeleteKeys]] (method: defines_method) — *DeleteKeys sends a deletion request for specific section keys to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.DeleteKeys]] (method: defines_method) — *DeleteKeys sends a deletion request for specific section keys to the server and waits for ACK.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.FullRefresh]] (method: defines_method) — *FullRefresh explicitly requests the full configuration from the server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: defines_method) — *GetConfig fetches configuration from the server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.GetVersion]] (method: defines_method) — *GetVersion returns the last seen server configuration version.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.IsConnected]] (method: defines_method) — *IsConnected returns true if the client is currently connected.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMapWithOCC]] (method: defines_method) — *Returns ErrVersionConflict if the server version does not match expectedVersion.*
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: defines_method) — *UpdateConfigMap sends a specific configuration map to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: defines_method) — *UpdateConfigMap sends a specific configuration map to the server and waits for ACK.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfig]] (method: defines_method) — *UpdateConfig sends the entire current live configuration to the server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: defines_method) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: defines_method) — *connect establishes the connection and acts the handshake.*
@@ -52,13 +52,13 @@ Automatically generated mirror for `distributed-config/src/network/client.go`.
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Close]] (method: belongs_to) — *Close closes the connection and stops the background listener.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.DeleteKeysWithOCC]] (method: belongs_to) — *Returns ErrVersionConflict if the server version does not match expectedVersion.*
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.DeleteKeys]] (method: belongs_to) — *DeleteKeys sends a deletion request for specific section keys to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.DeleteKeys]] (method: belongs_to) — *DeleteKeys sends a deletion request for specific section keys to the server and waits for ACK.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.FullRefresh]] (method: belongs_to) — *FullRefresh explicitly requests the full configuration from the server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: belongs_to) — *GetConfig fetches configuration from the server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.GetVersion]] (method: belongs_to) — *GetVersion returns the last seen server configuration version.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.IsConnected]] (method: belongs_to) — *IsConnected returns true if the client is currently connected.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMapWithOCC]] (method: belongs_to) — *Returns ErrVersionConflict if the server version does not match expectedVersion.*
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: belongs_to) — *UpdateConfigMap sends a specific configuration map to the server.*
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfigMap]] (method: belongs_to) — *UpdateConfigMap sends a specific configuration map to the server and waits for ACK.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.UpdateConfig]] (method: belongs_to) — *UpdateConfig sends the entire current live configuration to the server.*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: belongs_to) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.connect]] (method: belongs_to) — *connect establishes the connection and acts the handshake.*
@@ -70,5 +70,6 @@ Automatically generated mirror for `distributed-config/src/network/client.go`.
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (calls)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (calls)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (calls)
 <!-- SYNC:END -->

@@ -19,7 +19,7 @@ Automatically generated mirror for `log-server/src/transport/safe_socket.rs`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/core/transactional_writer.rs.md|TransactionalFileWriter.flush]] (method: calls) — *Flush the active file to disk*
+- [[log-server/log-server/src/core/transactional_writer.rs.md|TransactionalFileWriter.flush]] (method: calls) — *Flush the active file to disk, optionally executing hardware durability commit (fsync/fdatasync).*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.new]] (method: defines_method) — *Create new safe socket by splitting a TcpStream*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: defines_method) — *Split into its component halves*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketReader.receive_data]] (method: defines_method) — *Receive framed data from socket. Returns empty BytesMut on 0-length heartbeat frames.*
@@ -28,6 +28,7 @@ Automatically generated mirror for `log-server/src/transport/safe_socket.rs`.
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocketWriter.shutdown]] (method: defines_method) — *Shutdown the underlying connection*
 
 ### 🔌 Consumers (Inbound)
+- [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
 - [[log-server/log-server/src/servers/tcp_server.rs.md|tcp_server.rs]] (calls)
 - [[log-server/log-server/src/servers/tcp_server.rs.md|tcp_server.rs]] (imports)
 - [[log-server/log-server/src/transport/safe_socket.rs.md|MAX_MESSAGE_SIZE]] (constant: belongs_to) — *Maximum allowed message size (10MB) to prevent OOM attacks.*
@@ -44,6 +45,7 @@ Automatically generated mirror for `log-server/src/transport/safe_socket.rs`.
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket]] (struct: belongs_to) — *Safe TCP socket with message framing*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket]] (struct: defines_method) — *Safe TCP socket with message framing*
 - [[log-server/log-server/src/transport/safe_socket.rs.md|test_heartbeat_skip]] (function: belongs_to)
+- [[log-server/log-server/src/transport/safe_socket.rs.md|test_outgoing_oversized_message_rejected]] (function: belongs_to)
 - [[log-server/log-server/src/transport/safe_socket.rs.md|test_oversized_message_rejected]] (function: belongs_to)
 - [[log-server/log-server/src/transport/safe_socket.rs.md|test_unexpected_eof_mid_message]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -25,6 +25,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|NewRemoteNotifier]] (function: calls)
 - [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|NewCapnpSerializer]] (function: calls)
 - [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|text_serializer.go]] (imports)
+- [[flexible-logger/flexible-logger/src/sink/async.go.md|AsyncSink.SetDropNotifier]] (method: calls) — *SetDropNotifier attaches a Notifier (e.g., RemoteNotifier / Telegram) to receive throttled buffer saturation alerts.*
 - [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
 - [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (imports)

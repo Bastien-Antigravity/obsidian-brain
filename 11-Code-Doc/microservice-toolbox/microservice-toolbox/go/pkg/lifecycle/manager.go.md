@@ -29,6 +29,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/lifecycle/manage
 - [[microservice-toolbox/microservice-toolbox/go/pkg/network/grpc_server.go.md|GRPCServer.Stop]] (method: calls) — *Stop performs a graceful shutdown.*
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|DefaultHookTimeout]] (constant: belongs_to) — *DefaultHookTimeout is the default maximum duration allowed for a single cleanup hook.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.ExecuteCleanups]] (method: belongs_to) — *ExecuteCleanups runs all registered cleanup hooks in LIFO order and drains the hook list.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Register]] (method: belongs_to) — *Register adds a named cleanup function to the shutdown sequence safely under mutex.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|Manager.Wait]] (method: belongs_to) — *then executes all registered cleanups in reverse registration order (LIFO).*

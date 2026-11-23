@@ -19,7 +19,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/utils/helpers.go
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[microservice-toolbox/microservice-toolbox/go/pkg/schemas/logger/logger.go.md|LoggerMsg.Hostname]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/utils/helpers.go.md|GetBaseDir]] (function: belongs_to) — *if running via 'go run'. It provides a stable anchor for logs and config files.*

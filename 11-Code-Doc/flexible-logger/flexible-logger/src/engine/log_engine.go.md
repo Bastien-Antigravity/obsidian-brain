@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `flexible-logger/src/engine/log_engine.go`.
+
+> **Essential Process**:
+> Core logging engine coordinating log entry acquisition, dynamic metadata sampling, filtering, and sink dispatch.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -32,6 +38,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getCallerSkip]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getEntry]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getProcessIDStr]] (method: defines_method)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.logInternal]] (method: defines_method)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockNotifier.Notify]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|MockSink.Write]] (method: calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (same_package)
@@ -39,6 +47,8 @@ tags:
 - [[flexible-logger/flexible-logger/src/error_handler/fallback_logger.go.md|fallback_logger.go]] (imports)
 - [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
 - [[flexible-logger/flexible-logger/src/models/entry.go.md|LogEntry.Reset]] (method: calls) — *Reset clears the LogEntry for reuse.*
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: calls)
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level]] (struct: calls) — *Level defines log levels*
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
@@ -65,12 +75,16 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Warning]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getCallerSkip]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getEntry]] (method: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.getProcessIDStr]] (method: belongs_to)
+- [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.logInternal]] (method: belongs_to)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: belongs_to) — *It orchestrates populating LogEntries and dispatching them to Sinks.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine]] (struct: defines_method) — *It orchestrates populating LogEntries and dispatching them to Sinks.*
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (same_package)
 - [[flexible-logger/flexible-logger/src/notifier/notifier_test.go.md|notifier_test.go]] (calls)
+- [[flexible-logger/flexible-logger/src/notifier/remote_notifier.go.md|remote_notifier.go]] (calls)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (calls)
+- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|capn_serializer.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/multi.go.md|multi.go]] (calls)
 - [[flexible-logger/flexible-logger/src/sink/sink_test.go.md|sink_test.go]] (calls)
 <!-- SYNC:END -->

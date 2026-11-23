@@ -120,6 +120,8 @@ You must evaluate and classify the error into one of 4 Operational Tiers:
    ```
 4. **Minimal Blast Radius**:
    Never restart or reconfigure unrelated sibling services while addressing an incident for service $A$.
+5. **Polyglot Local-First Workspace Resolution (Zero Manifest Path Pollution)**:
+   Auto-repair patches MUST NEVER introduce local filesystem dependency overrides into build manifests (`replace => ../...` in `go.mod`, `path = "../..."` or local `[patch]` in `Cargo.toml`, `-e ../...` or `file://` in `requirements*.txt`/`pyproject.toml`, or unconditional `add_subdirectory(../...)` / `/Users/...` in `CMakeLists.txt`). Local workspace compilation uses `go.work`, `.cargo/config.toml` `paths`, `bootstrap_microservice` + `_bastien_workspace.pth`, and CMake `FETCHCONTENT_SOURCE_DIR_*` with GitHub `FetchContent` fallback.
 
 
 

@@ -31,5 +31,6 @@ Automatically generated mirror for `distributed-config/src/network/backoff_test.
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|TestBackoff_Jitter]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (imports)
+- [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (imports)
 <!-- SYNC:END -->

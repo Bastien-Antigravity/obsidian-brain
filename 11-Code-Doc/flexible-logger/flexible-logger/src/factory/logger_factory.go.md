@@ -16,7 +16,6 @@ tags:
 - [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (imports)
 - [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
 - [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
-- [[flexible-logger/flexible-logger/src/schemas/capnp/logger/logger.go.md|LoggerMsg.Hostname]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/src/factory/factory_test.go.md|factory_test.go]] (calls)

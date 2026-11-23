@@ -12,7 +12,7 @@ last_sync: 2026-11-10T13:21:51.380906
 Automatically generated mirror for `log-server/src/core/contracts.rs`.
 
 > **Essential Process**:
-> ! Constructs exhaustive, compile-time embedded Exchange Contracts directly ! from log-server schemas (log_service.proto, logger.capnp, and SafeSocket framing) ! and publishes ServiceSpec metadata to web-interface. ! ! DATA FLOW: ! 1. Active AppConfig + Config -> build_exchange_contracts_value() / resolve_web_interface_addr() ! 2. spawn_web_interface_registration() -> HTTP POST /api/v1/register -> web-interface ! ! KEY PARAMETERS: ! - config: Runtime TCP/gRPC host and port configuration. ! - ring_capacity: In-memory LogRingBuffer capacity reported in ServiceSpec. ! - app_config: Active pre-loaded AppConfig for web_interface service discovery. use microservice_toolbox::config::loader::AppConfig; use serde_json::{json, Value}; use std::time::Duration; use tokio::io::{AsyncReadExt, AsyncWriteExt}; use tokio::net::TcpStream; use crate::config::config::Config; pub const LOG_SERVICE_PROTO: &str = include_str!("../schema/proto/log_service.proto"); pub const LOGGER_CAPNP_SCHEMA: &str = include_str!("../schema/capnp/logger.capnp");
+> ! Constructs exhaustive, compile-time embedded Exchange Contracts directly ! from log-server schemas (log_service.proto, logger.capnp, and SafeSocket framing) ! and publishes ServiceSpec metadata to web-interface. ! ! DATA FLOW: ! 1. Active AppConfig + Config -> build_exchange_contracts_value() / resolve_web_interface_addr() ! 2. spawn_web_interface_registration() -> HTTP POST /api/v1/register -> web-interface ! ! KEY PARAMETERS: ! - config: Runtime TCP/gRPC host and port configuration. ! - ring_capacity: In-memory LogRingBuffer capacity reported in ServiceSpec. ! - app_config: Active pre-loaded AppConfig for web_interface service discovery. use microservice_toolbox::config::loader::AppConfig; pub use microservice_toolbox::contracts::LOGGER_CAPNP_SCHEMA; use microservice_toolbox::contracts::extract_capnp_operations; use serde_json::{json, Value}; use std::time::Duration; use tokio::io::{AsyncReadExt, AsyncWriteExt}; use tokio::net::TcpStream; use crate::config::config::Config; pub const LOG_SERVICE_PROTO: &str = include_str!("../schema/proto/log_service.proto");
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
@@ -24,7 +24,6 @@ Automatically generated mirror for `log-server/src/core/contracts.rs`.
 - [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/core/contracts.rs.md|LOGGER_CAPNP_SCHEMA]] (constant: belongs_to)
 - [[log-server/log-server/src/core/contracts.rs.md|LOG_SERVICE_PROTO]] (constant: belongs_to)
 - [[log-server/log-server/src/core/contracts.rs.md|build_exchange_contracts_json]] (function: belongs_to) — *Build JSON string of exchange contracts for gRPC GetExchangeContracts.*
 - [[log-server/log-server/src/core/contracts.rs.md|build_exchange_contracts_value]] (function: belongs_to) — *Build exhaustive list of log-server exchange contracts anchored to runtime config & real schema files.*

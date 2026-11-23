@@ -21,8 +21,10 @@ Automatically generated mirror for `log-server/src/main.rs`.
 ### 📦 Dependencies (Outbound)
 - [[log-server/log-server/src/config/config.rs.md|Config.new]] (method: calls) — *Create new server configuration*
 - [[log-server/log-server/src/config/config.rs.md|Config.with_grpc_host]] (method: calls) — *Override the gRPC bind host verbatim*
+- [[log-server/log-server/src/config/config.rs.md|Config.with_sync_on_flush]] (method: calls) — *Configure hardware durability barrier (fsync)*
 - [[log-server/log-server/src/config/config.rs.md|Config]] (struct: calls) — *Server configuration*
 - [[log-server/log-server/src/config/config.rs.md|config.rs]] (imports)
+- [[log-server/log-server/src/config/config.rs.md|parse_fsync_config]] (function: calls) — *Helper to parse fsync durability setting from AppConfig or environment*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.new_with_config]] (method: calls) — *Create new log server instance from a full `Config` and optional active `AppConfig`*
 - [[log-server/log-server/src/facade/log_server.rs.md|LogServer.run]] (method: calls) — *Run the log server with all components*
 - [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)

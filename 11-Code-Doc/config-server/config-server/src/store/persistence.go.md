@@ -19,7 +19,6 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: defines_method) — *If the file does not exist, it returns an empty ConfigMap and no error.*
 - [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: defines_method) — *prevent file corruption in case of crashes during the write process.*
 

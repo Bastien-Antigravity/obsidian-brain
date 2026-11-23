@@ -49,7 +49,11 @@ microservices.
 
 ### 🛡️ Mode 1 (Spec-First) - Post-Development Audit (Modified Repository)
 When hired at the end of a Mode 1 session:
-1. **Config File Audit**: Verify that all configuration files (e.g., `.env.example`, `.github/workflows/*`, configuration templates, build manifests, package configurations) in the currently modified repository are valid, structurally correct, and match ecosystem standards.
+1. **Config & Polyglot Manifest Audit**: Verify that all configuration files (e.g., `.env.example`, `.github/workflows/*`, configuration templates, build manifests, package configurations) in the currently modified repository are valid, structurally correct, and match ecosystem standards. Enforce **Zero Manifest Path Pollution** across all 4 languages before commit or Docker build:
+   - **Go (`go.mod`)**: No local `replace => ../...` directives (resolve locally via `go.work`).
+   - **Rust (`Cargo.toml`)**: No local `path = "../..."` or local `[patch]` overrides (resolve locally via `.cargo/config.toml` `paths`).
+   - **Python (`requirements*.txt` / `pyproject.toml`)**: No `-e ../...`, local paths, or `file://` URIs (resolve locally via `bootstrap_microservice` + `_bastien_workspace.pth`, commit `git+https://...`).
+   - **C/C++ (`CMakeLists.txt`)**: No unconditional `add_subdirectory(../...)` or `/Users/...` paths (use `FETCHCONTENT_SOURCE_DIR_*` local discovery + `FetchContent` GitHub fallback).
 2. **Propose Commit**: Generate a clean, descriptive, and conventional commit message (e.g., `feat(scope): descriptions`) based on the changes made.
 3. **Commit & Push Proposal**:
    - Check git status, stage the files, and propose the commit.
@@ -57,8 +61,8 @@ When hired at the end of a Mode 1 session:
 
 ### 🛰️ Mode 3 (Fleet-Commander) - Pre-Push Integrity Check
 Before any fleet-wide or single-repository push is executed under Mode 3:
-1. **GitHub Config Verification**: Ensure all GitHub configuration files (e.g., workflows, secrets configuration, repository settings, triggers, CODEOWNERS, permissions) are structurally correct, fully compliant, and validated.
-2. **Block on Drift**: If any GitHub config is invalid, block the push and report the exact config violations to the user for resolution.
+1. **GitHub Config & Manifest Portability Verification**: Ensure all GitHub configuration files (e.g., workflows, secrets configuration, repository settings, triggers, CODEOWNERS, permissions) and polyglot build manifests (`go.mod`, `Cargo.toml`, `requirements*.txt`, `pyproject.toml`, `CMakeLists.txt`) are structurally correct, CI-portable (zero local path pollution via `validate_compliance.py`), and validated.
+2. **Block on Drift**: If any GitHub config or build manifest is invalid or polluted with local paths, block the push and report the exact config violations to the user for resolution.
 
 ## 🤝 Collaboration & Hiring Protocol
 - **Input**: Receives verified code from the **Lead Developer**.

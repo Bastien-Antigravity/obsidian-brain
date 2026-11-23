@@ -26,6 +26,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/lifecycle/manage
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|manager.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager_test.go.md|TestManager_HookTimeout_ContinuesLIFOExecution]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager_test.go.md|TestManager_Lifecycle]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec.go.md|spec.go]] (imports)
 <!-- SYNC:END -->

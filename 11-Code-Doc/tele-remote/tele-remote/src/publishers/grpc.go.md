@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `tele-remote/src/publishers/grpc.go`.
+
+> **Essential Process**:
+> Wraps an active bidirectional gRPC server stream into a thread-safe IPublisher that respects caller context cancellation and deadlines before sending.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,18 +22,17 @@ tags:
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|BotCommand_CommandType]] (struct: calls)
 - [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|teleremote.pb.go]] (imports)
 - [[tele-remote/tele-remote/src/interfaces/subscriber.go.md|subscriber.go]] (imports)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: defines_method)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: defines_method)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: defines_method)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Send]] (method: calls) — *Send wraps tb.Context.Send to intercept and log all outgoing responses*
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: defines_method) — *Close satisfies interfaces.IPublisher.*
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: defines_method) — *PublishCommand sends a command to the connected microservice if the context has not expired.*
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: defines_method) — *RequestRefresh asks the connected microservice to push a fresh menu definition.*
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: belongs_to)
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: belongs_to)
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.Close]] (method: belongs_to) — *Close satisfies interfaces.IPublisher.*
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.PublishCommand]] (method: belongs_to) — *PublishCommand sends a command to the connected microservice if the context has not expired.*
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher.RequestRefresh]] (method: belongs_to) — *RequestRefresh asks the connected microservice to push a fresh menu definition.*
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher]] (struct: belongs_to) — *GrpcPublisher wraps a bidirectional gRPC stream and implements interfaces.IPublisher*
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|GrpcPublisher]] (struct: defines_method) — *GrpcPublisher wraps a bidirectional gRPC stream and implements interfaces.IPublisher*
-- [[tele-remote/tele-remote/src/publishers/grpc.go.md|NewGrpcPublisher]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/publishers/grpc.go.md|NewGrpcPublisher]] (function: belongs_to) — *NewGrpcPublisher creates a thread-safe gRPC stream publisher.*
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|grpc.go]] (calls)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|grpc.go]] (imports)
 <!-- SYNC:END -->

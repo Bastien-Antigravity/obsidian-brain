@@ -26,7 +26,6 @@ Automatically generated mirror for `config-server/cmd/config-server/main.go`.
 - [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
 - [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
 - [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
 - [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*

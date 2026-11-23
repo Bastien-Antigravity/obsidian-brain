@@ -28,7 +28,10 @@ Automatically generated mirror for `distributed-config/src/secret/crypto.go`.
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|Decrypt]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|Encrypt]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|ProcessConfigSecrets]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/secret/crypto.go.md|ResetKeyCache]] (function: belongs_to) — *ResetKeyCache clears the in-memory memoized RSA private key.*
+- [[distributed-config/distributed-config/src/secret/crypto.go.md|decryptWithKey]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto.go.md|getPrivateKey]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/secret/crypto.go.md|parsePrivateKeyPEM]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/secret/crypto_test.go.md|crypto_test.go]] (calls)
 - [[distributed-config/distributed-config/src/secret/crypto_test.go.md|crypto_test.go]] (same_package)
 <!-- SYNC:END -->

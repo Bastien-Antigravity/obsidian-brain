@@ -60,6 +60,10 @@ Implement deterministic, ultra-low latency core libraries and shared objects (`.
 - **Zero Ad-Hoc File Scanning**: Hardcoding version numbers or writing ad-hoc file reading loops in C++ source is strictly prohibited (`HARDCODED_VERSION_VIOLATION`).
 - **Standard Tools First (C++17 & C11)**: Use `AppConfig` (`LoadConfig`, `GetVersion`, `GetListenAddr`/`GetGRPCListenAddr`/`GetRESTAddr`, `DecryptSecret`), `SpecPublisher::PublishWithLifecycle` + `contracts.hpp` (`ExchangeContract`, `ExtractProtoTextOperations`, `ExtractCapnpOperations`) or pure C11 `contracts.h` (`mt_contracts_envelope_to_json`), `wiretap::ConfigureFromConfig`, `NotificationClient::FromConfig`, `connectivity::Resolver`, `LifecycleManager`, and `business::WrapMarketEvent` (`Base64Encode`/`Serialize`/`Deserialize`).
 
+### 7. Mandatory Local-First CMake Workspace Resolution & Anti-Pattern Prohibition
+- **Local-First `FETCHCONTENT_SOURCE_DIR_*` + GitHub `FetchContent` Fallback**: Service `CMakeLists.txt` files MUST declare GitHub `FetchContent_Declare(... GIT_REPOSITORY ...)` fallback and probe `$ENV{BASTIEN_CORE_ROOT}`, `$ENV{BASTIEN_WORKSPACE_ROOT}`, and parent workspace directories before `FetchContent_MakeAvailable` to set `FETCHCONTENT_SOURCE_DIR_MICROSERVICE_TOOLBOX`, auto-discover sibling `*-toolbox/cpp/CMakeLists.txt` via `FETCHCONTENT_SOURCE_DIR_<UPPER_NAME>`, and add local `libdistconf`/`libunilog`/`libnotif` `HINTS`.
+- **Strictly Prohibited**: Unconditional `add_subdirectory(../...)`, `add_subdirectory(/...)`, or hardcoded `/Users/...` include paths without `FetchContent` GitHub fallback (`CPP_LOCAL_PATH_POLLUTION`), which break standalone CI and Docker builds.
+
 ## 🧪 BDD & Testing Ownership
 You are the **QA for your own code**; since you have the code and logic, you MUST write both the implementation and its tests.
 - **Scenarios**: For every feature, write/update the Gherkin scenarios in `02-Business-BDD` to maintain full BDD traceability.

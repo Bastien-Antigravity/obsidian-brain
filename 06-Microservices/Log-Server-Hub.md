@@ -34,11 +34,11 @@ tags:
 
 ## 🏗️ Architecture Decision Records (ADR)
 
-### ADR-001: Liveness over Completeness (Gap Timeout)
-*   **Context**: Out-of-order delivery via TCP/UDP can cause sequence gaps in the BTreeMap buffer.
-*   **Decision**: Enforce a **500ms timeout** on missing sequences. If the missing sequence doesn't arrive within this window, the server forces progress to the next available sequence.
-*   **Rationale**: Service availability is prioritized over perfect sequential integrity. A blocked writer stops the entire fleet from logging (back-pressure).
-*   **Consequence**: Small gaps in logs are possible under high packet loss, but service uptime is guaranteed.
+### ADR-001: Evolution to Single-Authority FIFO Sequencing
+*   **Context**: Out-of-order pre-channel sequence assignment caused sequence gaps and BTreeMap stall intervals.
+*   **Decision**: Adopted Single-Authority FIFO Sequencing within `LogWriter::writer_task`. Sequence IDs are assigned monotonically on channel dequeue, and bursts are drained greedily via `rx.try_recv()`.
+*   **Rationale**: Eliminates artificial gap timeouts and multi-producer race conditions while ensuring exact 1-to-1 order parity between disk files and the in-memory `LogRingBuffer`.
+*   **Consequence**: Zero artificial gap skips, predictable low-latency persistence, and deterministic clean shutdown draining.
 
 ### ADR-002: Pure gRPC HTTP/2 Streaming for Real-Time Fleet Observability
 *   **Context**: The web-interface requires live log inspection and recent history for the browser console. Embedding an HTTP REST server in `log-server` introduced unwanted web dependencies (`axum`), port fragmentation (`9022`), and dual-protocol responsibilities.

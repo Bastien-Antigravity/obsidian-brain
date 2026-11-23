@@ -20,7 +20,6 @@ Automatically generated mirror for `config-server/src/telegram/manager.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Close]] (method: calls)
 - [[config-server/config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: defines_method) — *RebuildMenu dynamically pulls the configuration map and registers it with the TeleClient.*
 - [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (same_package)
 - [[config-server/config-server/src/telegram/manager_test.go.md|mockController.DeleteConfig]] (method: calls)

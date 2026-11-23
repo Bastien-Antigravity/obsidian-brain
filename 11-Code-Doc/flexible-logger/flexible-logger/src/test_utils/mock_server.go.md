@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|connection_test.go]] (calls)

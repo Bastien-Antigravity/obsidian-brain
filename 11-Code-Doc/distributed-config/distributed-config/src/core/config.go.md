@@ -19,7 +19,7 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Apply]] (method: defines_method) — *Use this in conjunction with PreviewSet to avoid redundant calculations.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Apply]] (method: defines_method) — *Serialized by writeMu so concurrent updates do not race.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Delete]] (method: defines_method) — *If keys slice is empty, removes the entire section.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: defines_method) — *It looks for "ip" and "port" keys in the capability configuration.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: defines_method) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
@@ -27,7 +27,8 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: defines_method) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: defines_method) — *Returns an empty string if not found.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: defines_method) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: defines_method) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.ReplaceLive]] (method: defines_method) — *ReplaceLive atomically replaces the entire live configuration snapshot under writeMu.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: defines_method) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: defines_method)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getAddr]] (method: defines_method)
@@ -40,7 +41,7 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|CommonConfig]] (struct: belongs_to)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Apply]] (method: belongs_to) — *Use this in conjunction with PreviewSet to avoid redundant calculations.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Apply]] (method: belongs_to) — *Serialized by writeMu so concurrent updates do not race.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Delete]] (method: belongs_to) — *If keys slice is empty, removes the entire section.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetAddress]] (method: belongs_to) — *It looks for "ip" and "port" keys in the capability configuration.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: belongs_to) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
@@ -48,7 +49,8 @@ Automatically generated mirror for `distributed-config/src/core/config.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: belongs_to) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: belongs_to) — *Returns an empty string if not found.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: belongs_to) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: belongs_to) — *Performs a thread-safe atomic swap (Read-Copy-Update).*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.ReplaceLive]] (method: belongs_to) — *ReplaceLive atomically replaces the entire live configuration snapshot under writeMu.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: belongs_to) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.getAddr]] (method: belongs_to)
