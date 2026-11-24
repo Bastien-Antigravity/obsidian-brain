@@ -21,6 +21,7 @@ Automatically generated mirror for `tele-remote/src/telegram/core/rate_limiter_t
 ### 🔌 Consumers (Inbound)
 - [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_BurstAllowedThenThrottled]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_IndependentConversations]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_MaxTrackedClientsEviction]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_NilSafe]] (function: belongs_to)
 <!-- SYNC:END -->
 

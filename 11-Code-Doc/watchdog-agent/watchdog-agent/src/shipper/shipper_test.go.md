@@ -36,6 +36,7 @@ Automatically generated mirror for `watchdog-agent/src/shipper/shipper_test.go`.
 - [[watchdog-agent/watchdog-agent/src/shipper/shipper_test.go.md|TestShipper_TailSingleFile_BoundedBatchChunking]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/shipper_test.go.md|TestShipper_TailSingleFile_SkipsIncompleteEOFLine]] (function: belongs_to)
 - [[watchdog-agent/watchdog-agent/src/shipper/shipper_test.go.md|testDummyDBConfig]] (function: belongs_to)
+- [[watchdog-agent/watchdog-agent/src/shipper/shipper_test.go.md|testLogger]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

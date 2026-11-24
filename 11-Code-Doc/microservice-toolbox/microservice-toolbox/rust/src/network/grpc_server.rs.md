@@ -19,6 +19,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/network/grpc_s
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/network/tls.go.md|DynamicTransportCredentials.Clone]] (method: calls) — *Clone returns a copy of DynamicTransportCredentials sharing the active policy snapshot.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|from_str]] (function: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/connectivity/resolver.rs.md|Resolver.resolve_full_bind_addr]] (method: calls) — *Validates and returns a configured "host:port", "[ipv6]:port", or bare host string.*

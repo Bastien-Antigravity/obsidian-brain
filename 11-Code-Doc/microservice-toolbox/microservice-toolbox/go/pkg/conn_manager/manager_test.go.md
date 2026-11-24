@@ -39,6 +39,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/conn_manager/man
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager.go.md|manager.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager_test.go.md|trackingWriteCloser.Close]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager_test.go.md|trackingWriteCloser.Write]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/network/tls.go.md|peekedConn.Read]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/conn_manager/manager_test.go.md|TestConnectNonBlocking]] (function: belongs_to)

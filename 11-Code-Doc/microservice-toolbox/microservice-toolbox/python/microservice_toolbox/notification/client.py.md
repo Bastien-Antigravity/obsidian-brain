@@ -35,6 +35,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|NotificationClient]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|__init__]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|_dispatch_c_call]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|_handle_dispatch_result]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|close]] (function: belongs_to) — *Closes active notification client.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|close_sync]] (function: belongs_to) — *Closes notification client immediately.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|from_config]] (function: belongs_to)

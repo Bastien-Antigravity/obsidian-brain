@@ -14,6 +14,7 @@ tags:
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|LogEngine.Info]] (method: calls)
+- [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: calls)
 - [[flexible-logger/flexible-logger/src/profiles/audit.go.md|audit.go]] (imports)
 - [[flexible-logger/flexible-logger/src/profiles/high_perf.go.md|NewHighPerfLogger]] (function: calls) — *- Notif (Async)*
 - [[flexible-logger/flexible-logger/src/profiles/no_lock.go.md|NewNoLockLogger]] (function: calls) — *- Notif (Async)*
@@ -23,4 +24,6 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|BenchmarkLogServerThroughput]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|TestLogServerConnection]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|probeLoopbackB]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|probeLoopback]] (function: belongs_to) — *in the test execution environment without polluting any test listener's backlog.*
 <!-- SYNC:END -->

@@ -30,6 +30,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetGRPCListenAddr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetListenAddr]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocalString]] (method: defines_method) — *Returns an empty string if the key does not exist or is nil.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocalTLSConfig]] (method: defines_method) — *Precedence: local.<serviceKey>.tls (exact, then '-'/'_' normalized) -> local.tls.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocal]] (method: defines_method) — *Supports nested lookups using dot notation (e.g., "database.host").*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetPublicIP]] (method: defines_method) — *GetPublicIP returns the configured public IP from common.public_ip.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: defines_method) — *GetRESTAddr returns the address for the REST management interface.*
@@ -46,6 +47,8 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.applyFileOverride]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.ensurePath]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.loadPublicKey]] (method: defines_method)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LocalTLSConfig.ShouldVerifyClient]] (method: defines_method) — *Defaults to true whenever CAFile is configured and VerifyClient is not explicitly set to false.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LocalTLSConfig.isEmpty]] (method: defines_method)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/merger.go.md|DeepMerge]] (function: calls) — *If a key exists in both and the source is not a map, the source value overwrites the destination.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/merger.go.md|merger.go]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/connectivity/resolver_test.go.md|resolver_test.go]] (imports)
@@ -63,6 +66,7 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetGRPCListenAddr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetListenAddr]] (method: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocalString]] (method: belongs_to) — *Returns an empty string if the key does not exist or is nil.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocalTLSConfig]] (method: belongs_to) — *Precedence: local.<serviceKey>.tls (exact, then '-'/'_' normalized) -> local.tls.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetLocal]] (method: belongs_to) — *Supports nested lookups using dot notation (e.g., "database.host").*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetPublicIP]] (method: belongs_to) — *GetPublicIP returns the configured public IP from common.public_ip.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig.GetRESTAddr]] (method: belongs_to) — *GetRESTAddr returns the address for the REST management interface.*
@@ -83,9 +87,18 @@ Automatically generated mirror for `microservice-toolbox/go/pkg/config/loader.go
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|AppConfig]] (struct: defines_method) — *AppConfig wraps the distributed-config and provides toolbox enhancements.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LoadConfigWithLogger]] (function: belongs_to) — *LoadConfigWithLogger loads the configuration with an explicit logger and layered priority.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LoadConfig]] (function: belongs_to) — *LoadConfig loads the configuration with layered priority.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LocalTLSConfig.ShouldVerifyClient]] (method: belongs_to) — *Defaults to true whenever CAFile is configured and VerifyClient is not explicitly set to false.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LocalTLSConfig.isEmpty]] (method: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LocalTLSConfig]] (struct: belongs_to) — *LocalTLSConfig holds non-shared, service-private X.509 TLS/mTLS file paths from the local: section.*
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|LocalTLSConfig]] (struct: defines_method) — *LocalTLSConfig holds non-shared, service-private X.509 TLS/mTLS file paths from the local: section.*
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|endpointKey]] (struct: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|extractLocalTLSConfig]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|extractLocalTLSFromMap]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|extractTrimmedString]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader.go.md|normalizeIP]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/config/loader_test.go.md|loader_test.go]] (same_package)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/network/tls.go.md|tls.go]] (calls)
+- [[microservice-toolbox/microservice-toolbox/go/pkg/teleremote/client.go.md|client.go]] (calls)
 - [[microservice-toolbox/microservice-toolbox/go/pkg/wiretap/wiretap.go.md|wiretap.go]] (calls)
 <!-- SYNC:END -->

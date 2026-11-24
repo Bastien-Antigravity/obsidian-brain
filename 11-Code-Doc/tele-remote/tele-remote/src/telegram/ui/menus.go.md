@@ -40,17 +40,26 @@ Automatically generated mirror for `tele-remote/src/telegram/ui/menus.go`.
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|RenderMenu]] (function: belongs_to) — *RenderMenu builds and displays a CommandMenu as a Reply Keyboard.*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|RequestEmergencyConfirmation]] (function: belongs_to) — *RequestEmergencyConfirmation initiates a 2-step confirmation workflow for CmdPowerOff or CmdStop.*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|ShowMainMenu]] (function: belongs_to) — *ShowMainMenu displays the dynamic top-level menu.*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|broadcastTarget]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|clonePath]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|commandTimeout]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|defaultComponentPriority]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|emergencyConfirmTTL]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|emergencyTimeout]] (constant: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|executeButtonAction]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|executeEmergencyBroadcast]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|extractNumericOrder]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|findButtonInMenu]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|getConvKey]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|getMenuByPath]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|interactiveTimeout]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|maxMenuDepth]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|maxMenuJSONBytes]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|normalizeOrder]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|parseButton]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|parseMenuRow]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|pendingInputTTL]] (constant: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|renderResolvedMenu]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|sortByOrder]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|menus_test.go]] (calls)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|menus_test.go]] (same_package)
 <!-- SYNC:END -->

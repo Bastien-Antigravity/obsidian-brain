@@ -46,7 +46,14 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|WORKSPACE_REPOSITORIES]] (constant: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_add_if_dir]] (function: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_detect_go_version]] (function: belongs_to) — *Detect Go toolchain version from existing go.work or active 'go' binary.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_discover_workspace_python_sdks]] (function: belongs_to) — *Dynamically discover all local Python SDK directories present inside workspace_root.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|_ffi_needs_rebuild]] (function: belongs_to) — *Return True if a CGO shared library is missing, forced, or older than its Go sources.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_is_rust_library_crate]] (function: belongs_to) — *Return True if crate_dir contains a Cargo.toml defining a Rust library crate.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_sync_cargo_config]] (function: belongs_to) — *Discover local Rust library crates on disk and synchronize .cargo/config.toml paths.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_sync_go_work]] (function: belongs_to) — *Discover local Go modules on disk and synchronize root go.work (missing modules fall back to GitHub).*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|_write_venv_workspace_pth]] (function: belongs_to) — *Write _bastien_workspace.pth inside site-packages of venv_dir for local-first SDK resolution.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|check_compilation_prerequisites]] (function: belongs_to) — *Check if toolchains required for compilation exist on host and display actionable guidance.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|check_debloat_prerequisites]] (function: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|compile_docker]] (function: belongs_to) — *Build Docker container images from local sources across all compose modes [DD-01].*
@@ -61,5 +68,6 @@ tags:
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_all]] (function: belongs_to) — *Terminate all services across Docker and Native.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_docker]] (function: belongs_to) — *Stop all Docker containers (compose fleet across modes, local databases, and standalone infra) [DD-01].*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|stop_native]] (function: belongs_to) — *Stop all native processes cleanly with full per-service visibility.*
+- [[docker-deployment/docker-deployment/scripts/operations.py.md|sync_workspace_local_resolvers]] (function: belongs_to) — *Synchronize workspace-local Go (go.work), Rust (.cargo/config.toml), and Python (.pth) resolvers.*
 - [[docker-deployment/docker-deployment/scripts/operations.py.md|update_native_yaml_secret]] (function: belongs_to) — *Update a secret field in docker-deployment/modes/local/config/native.yaml directly.*
 <!-- SYNC:END -->

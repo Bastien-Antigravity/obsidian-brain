@@ -16,6 +16,7 @@ tags:
 - [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
+- [[flexible-logger/flexible-logger/cmd/test-log-server/connection_test.go.md|connection_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/engine/log_engine.go.md|log_engine.go]] (calls)
 - [[flexible-logger/flexible-logger/src/error_handler/error_handler_test.go.md|error_handler_test.go]] (calls)
 - [[flexible-logger/flexible-logger/src/models/level.go.md|Level.String]] (method: belongs_to)

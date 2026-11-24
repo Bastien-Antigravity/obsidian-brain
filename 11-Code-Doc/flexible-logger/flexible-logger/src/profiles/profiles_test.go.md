@@ -45,5 +45,6 @@ tags:
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|TestAuditLogger_MissingConfig_WarnsAndDoesNotPanic]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|TestNotifLogger_LocalQueue]] (function: belongs_to)
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|TestProfile_AppNamePropagation]] (function: belongs_to)
+- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|probeLoopback]] (function: belongs_to) — *in the test execution environment without polluting any test listener's backlog.*
 - [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|startTestServer]] (function: belongs_to) — *tested using "Integration Tests" with a local mock server.*
 <!-- SYNC:END -->

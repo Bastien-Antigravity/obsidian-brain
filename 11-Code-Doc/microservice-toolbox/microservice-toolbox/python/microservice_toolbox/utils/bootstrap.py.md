@@ -26,6 +26,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|WORKSPACE_PYTHON_SDK_RELPATHS]] (constant: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|_add_candidate]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|_find_nearest_venv]] (function: belongs_to) — *Walk up from the start directory until a directory containing .venv is found.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap_microservice]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|ensure_import_paths]] (function: belongs_to) — *Ensure the script directory and vault root are available on sys.path.*

@@ -51,6 +51,7 @@ Automatically generated mirror for `docker-deployment/scripts/fleet_guard/models
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/models.py.md|PortAudit]] (class: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/models.py.md|PreflightOptions]] (class: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/models.py.md|RepoAudit]] (class: belongs_to)
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/models.py.md|TLSAudit]] (class: belongs_to)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/param_inspector.py.md|param_inspector.py]] (calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/param_inspector.py.md|param_inspector.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/param_inspector.py.md|param_inspector.py]] (same_package)

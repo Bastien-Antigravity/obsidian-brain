@@ -28,6 +28,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|LogLevel]] (class: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/models.py.md|from_str]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/manager.rs.md|manager.rs]] (calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/network/grpc_server.rs.md|grpc_server.rs]] (calls)
 <!-- SYNC:END -->

@@ -48,6 +48,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/main.py`.
 ### 🔌 Consumers (Inbound)
 - [[03-Tech-Stack/obsidian-brain/03-Tech-Stack/05-Project-Scripts/Build-Wrapper.py.md|Build-Wrapper.py]] (calls)
 - [[03-Tech-Stack/obsidian-brain/03-Tech-Stack/05-Project-Scripts/Multi-Repo-Validator.py.md|Multi-Repo-Validator.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|audit_secret_leakage.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/check_coherence.py.md|check_coherence.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|debloat_audit.py]] (calls)

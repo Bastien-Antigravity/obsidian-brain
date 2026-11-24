@@ -139,4 +139,5 @@ tags:
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|grpc.go]] (calls)
 - [[tele-remote/tele-remote/src/publishers/grpc.go.md|grpc.go]] (imports)
 - [[tele-remote/tele-remote/src/subscribers/grpc.go.md|grpc.go]] (imports)
+- [[tele-remote/tele-remote/src/subscribers/grpc_test.go.md|grpc_test.go]] (imports)
 <!-- SYNC:END -->

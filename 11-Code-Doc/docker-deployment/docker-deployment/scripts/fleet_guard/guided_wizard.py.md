@@ -22,12 +22,15 @@ Automatically generated mirror for `docker-deployment/scripts/fleet_guard/guided
 ### 📦 Dependencies (Outbound)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|common.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/common.py.md|flush_stdin]] (function: calls) — *Flush pending input characters from console and sys.stdin buffer.*
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|audit_tls_certs]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|crypto_validator.py]] (imports)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|crypto_validator.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|encrypt_rsa]] (function: calls) — *Encrypt a secret string with RSA public key into ENC(...) format.*
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|generate_fleet_tls_certs]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|generate_rsa_keypair]] (function: calls) — *Generate sovereign RSA 2048-bit keypair strictly outside Git.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|is_git_tracked_or_unsafe]] (function: calls) — *Ensure cryptographic keys are strictly outside workspace and outside any Git repository.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|resolve_keys_paths]] (function: calls) — *Resolve active private and public key paths respecting precedence.*
+- [[docker-deployment/docker-deployment/scripts/fleet_guard/crypto_validator.py.md|resolve_tls_dir]] (function: calls) — *Resolve active Fleet TLS certificate directory strictly outside Git.*
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|engine.py]] (same_package)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 - [[docker-deployment/docker-deployment/scripts/fleet_guard/link_healer.py.md|heal_all_ecosystem_links]] (function: calls) — *Repair all standalone.yaml and inventory.json links across the workspace.*

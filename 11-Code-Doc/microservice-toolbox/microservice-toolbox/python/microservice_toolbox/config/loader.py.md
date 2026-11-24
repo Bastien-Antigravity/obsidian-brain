@@ -22,6 +22,10 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|parse_cli_args]] (function: calls)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|extract_local_tls_config]] (function: calls) — *Normalizes a raw dict or LocalTLSConfig instance into a trimmed LocalTLSConfig.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|is_empty]] (function: calls) — *Returns True when all path fields are empty and verify_client is unset.*
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (imports)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (same_package)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/merger.py.md|merger.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|get_base_dir]] (function: calls)
@@ -59,6 +63,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local]] (function: belongs_to)
+- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local_tls_config]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_public_ip]] (function: belongs_to) — *Returns the configured public IP from common.public_ip.*
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_rest_addr]] (function: belongs_to)
 - [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_service_name]] (function: belongs_to) — *Returns the standardized program name.*

@@ -36,6 +36,7 @@ Automatically generated mirror for `web-interface/cmd/web-interface/fleet_health
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|TestScenarioFleetHealthAllServicesOnline]] (function: belongs_to) — *detects all services and reports all_online: true.*
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|TestScenarioFleetHealthRAGMultiCandidateFallback]] (function: belongs_to) — *3. When both are closed: reports primary address as offline (never 'unresolved').*
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|TestScenarioFleetHealthWatchdogAgentDown]] (function: belongs_to) — *4. All other 10 base services (including RAG MCP Server and RAG Dashboard) remain ONLINE.*
+- [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|loadIsolatedFleetTestConfig]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/fleet_health_scenario_test.go.md|spawnMockListener]] (function: belongs_to) — *helper to spawn a local TCP listener on an ephemeral port.*
 <!-- SYNC:END -->
 

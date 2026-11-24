@@ -13,11 +13,13 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.AuthMiddleware]] (method: calls) — *AuthMiddleware silently drops any Telegram update from an unauthorized ChatID/Sender without replying.*
-- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Broadcast]] (method: calls) — *Broadcast sends a plain text message to all pre-configured ChatIDs.*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.AuthMiddleware]] (method: calls) — *AuthMiddleware rejects any Telegram update from an unauthorized ChatID/Sender.*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.Broadcast]] (method: calls) — *Broadcast sends a plain text message to all pre-configured ChatIDs in parallel, chunking long payloads.*
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.LoggingMiddleware]] (method: calls) — *LoggingMiddleware intercepts all incoming messages for auditing.*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|Bot.OnTelemetry]] (method: calls) — *OnTelemetry enqueues incoming logs or events non-blockingly for asynchronous delivery to the admin chat.*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|NewBot]] (function: calls) — *NewBot registers Telebot settings, initializes memory maps, and starts the background telemetry worker.*
 - [[tele-remote/tele-remote/src/telegram/core/bot.go.md|bot.go]] (same_package)
+- [[tele-remote/tele-remote/src/telegram/core/bot.go.md|splitTelegramMessage]] (function: calls) — *preferring newline boundaries in the second half of each window.*
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|MockLogger.Critical]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|MockLogger.Debug]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|MockLogger.Error]] (method: defines_method)
@@ -56,8 +58,10 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|MockPublisher]] (struct: defines_method)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|TestBot_AuthMiddlewareRejectsUnauthorizedChatID]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|TestBot_Broadcast]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|TestBot_LoggingMiddlewareRedactsPendingInput]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|TestBot_OnTelemetryNonBlocking]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|TestBot_RateLimitMiddleware]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|TestSplitTelegramMessage_ChunksLongMessages]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|fakeContext.Callback]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|fakeContext.Chat]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|fakeContext.Message]] (method: belongs_to)

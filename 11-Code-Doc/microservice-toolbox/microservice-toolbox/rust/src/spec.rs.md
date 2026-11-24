@@ -30,6 +30,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_version]] (method: calls)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: calls)
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|LocalTLSConfig.is_empty]] (method: calls) — *Returns true when all fields are unset/empty.*
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/mod.rs.md|mod.rs]] (imports)
 - [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: calls) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*

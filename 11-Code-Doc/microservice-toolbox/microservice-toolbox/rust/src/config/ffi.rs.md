@@ -19,7 +19,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/ffi.rs`
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|LocalTLSConfig.is_empty]] (method: calls) — *Returns true when all fields are unset/empty.*
+- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|DistConfLib]] (struct: belongs_to)

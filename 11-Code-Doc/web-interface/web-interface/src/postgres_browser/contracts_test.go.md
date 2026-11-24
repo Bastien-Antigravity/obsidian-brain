@@ -17,6 +17,8 @@ Automatically generated mirror for `web-interface/src/postgres_browser/contracts
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
+- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
+- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|loadIsolatedPostgresBrowserConfig]] (function: calls)
 - [[web-interface/web-interface/src/postgres_browser/contracts.go.md|BrowserHandler.GetTimescaleContracts]] (method: calls) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
 - [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/contracts.go.md|synthesizeTimescaleEnvelope]] (function: calls)

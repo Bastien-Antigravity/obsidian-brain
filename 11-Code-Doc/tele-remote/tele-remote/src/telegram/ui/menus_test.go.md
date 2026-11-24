@@ -19,7 +19,10 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/core/bot_test.go.md|bot_test.go]] (imports)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|HandleDynamicText]] (function: calls) — *HandleDynamicText routes text messages from Reply buttons and user prompts back to actions.*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|OnComponentConnected]] (function: calls) — *never wipe out an existing valid component session.*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|RenderMenu]] (function: calls) — *RenderMenu builds and displays a CommandMenu as a Reply Keyboard.*
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|RequestEmergencyConfirmation]] (function: calls) — *RequestEmergencyConfirmation initiates a 2-step confirmation workflow for CmdPowerOff or CmdStop.*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|ShowMainMenu]] (function: calls) — *ShowMainMenu displays the dynamic top-level menu.*
+- [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|getMenuByPath]] (function: calls)
 - [[tele-remote/tele-remote/src/telegram/ui/menus.go.md|menus.go]] (same_package)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Critical]] (method: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockLogger.Debug]] (method: defines_method)
@@ -56,9 +59,15 @@ tags:
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher]] (struct: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|MockPublisher]] (struct: defines_method)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestBot_MenuRegistration]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestEmergencyBroadcast_PartialFailureReporting]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestMenu_RowAndButtonOrderingWithDuplicateTolerance]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestOnComponentConnected_MalformedJSONPreservesExistingMenu]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestOnComponentConnected_RejectsOversizedAndDeepMenus]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestOnComponentConnected_SameClientIDInvalidatesPendingInput]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestOnDisconnect_StaleStreamDoesNotDeleteNewSession]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestPendingInput_RoutesToOriginatingClientAndIsolatesUsers]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestShowMainMenu_DeterministicAlphabeticalOrder]] (function: belongs_to)
+- [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestShowMainMenu_OpenMFEPriorityAndDuplicateOrderTolerance]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|TestTwoStepConfirmation_EmergencyCommands]] (function: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Chat]] (method: belongs_to)
 - [[tele-remote/tele-remote/src/telegram/ui/menus_test.go.md|fakeUIContext.Message]] (method: belongs_to)
