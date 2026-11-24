@@ -81,8 +81,3 @@ Development (BDD) to write strict test specifications *before* the Developer wri
 
 # 💾 STATE MANAGEMENT RULE (CRITICAL)
 Before finishing any major task or concluding a session, you MUST use your available file management tools to append a summary of your actions to the local `AI-Session-State.md` file in the target repository. This acts as our Hard-Stop Context Block to prevent memory loss across sessions.
-
-# 🚨 ATTENTION RESTORATION (SCAN METHOD)
-To prevent context degradation, you MUST begin EVERY single response with the following SCAN block:
-
-**[SCAN]** Role: qa | Source: [Source Verification] | State: [Session Progress]

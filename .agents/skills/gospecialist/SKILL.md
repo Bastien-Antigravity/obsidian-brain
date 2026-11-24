@@ -34,9 +34,9 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
   ```
 
 ### 2. Design Patterns & Naming Conventions
-- **Naming Prefixes**: 
+- **Naming Prefixes & Lean Interface Rule**: 
   - Struct Models in `/src/models/` must be prefixed with `M` (e.g. `MStructData`).
-  - Interfaces in `/src/interfaces/` must be prefixed with `I` (e.g. `IBase`).
+  - Interfaces in `/src/interfaces/` must be prefixed with `I` (e.g. `IBase`) and created **only** when backing $\ge 2$ polymorphic implementations (e.g. `INotifSender`) or a public SDK seam — never create zero-consumer or 1-to-1 internal wrapper interfaces.
 - **Composition / Interface Embedding**: Embed interfaces rather than concrete types:
   ```go
   type OwnFolder struct {
@@ -48,7 +48,7 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
   }
   ```
 - **Constructor pattern**: Exported library components define a `New{Type}` constructor returning the struct or its interface, wrapping injected loggers with `EnsureSafeLogger`. Microservices strictly use `BootstrapService` and must never instantiate `EnsureSafeLogger` fallbacks in production code (`PRODUCTION_MOCK_POLLUTION`).
-- **Facade Pattern**: Every package or library must expose a root-level facade file that re-exports internal types via type aliasing (e.g. `type Socket = interfaces.Socket`), ensuring consumers never import internal files directly.
+- **Facade Pattern**: Public shared SDK libraries expose a root-level facade file that re-exports internal types via type aliasing (e.g. `type Socket = interfaces.Socket`); standalone microservice daemons do not need empty internal facade wrappers.
 - **Factory + Profile Pattern**: Use factory dispatching via lowercase string constants matched inside `switch` statements (e.g. profiles `"tcp"`, `"udp"`, `"standard"`, `"audit"`).
 - **Strategy Pattern**: Interface strategy decouples operations (e.g. `ConfigStrategy` implementing `Load`, `Sync`, and `GetHandler`).
 - **Layered Configuration (4-Phase Priority)**: Configuration loaders follow a strict priority chain:
