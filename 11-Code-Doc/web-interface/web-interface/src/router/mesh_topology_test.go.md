@@ -3,7 +3,13 @@ source: web-interface/src/router/mesh_topology_test.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T11:06:52.531145
+last_sync: 2026-11-07 11:06:52.531145
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: mesh_topology_test.go

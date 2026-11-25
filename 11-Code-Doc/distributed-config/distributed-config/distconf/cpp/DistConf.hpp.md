@@ -27,6 +27,7 @@ Automatically generated mirror for `distributed-config/distconf/cpp/DistConf.hpp
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetFullConfig]] (function: calls) — *export DistConf_GetFullConfig*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetGRPCAddress]] (function: calls) — *export DistConf_GetGRPCAddress*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetLastError]] (function: calls) — *export DistConf_GetLastError*
+- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetRESTAddress]] (function: calls) — *export DistConf_GetRESTAddress*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Get]] (function: calls) — *export DistConf_Get*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_New]] (function: calls) — *export DistConf_New*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_OnLiveConfUpdate]] (function: calls) — *export DistConf_OnLiveConfUpdate*
@@ -42,6 +43,7 @@ Automatically generated mirror for `distributed-config/distconf/cpp/DistConf.hpp
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: defines_method) — *Get full configuration as JSON*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetGRPCAddress]] (method: defines_method) — *Get a gRPC address for a capability*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetLastError]] (method: defines_method) — *Get the last error from the underlying engine*
+- [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetRESTAddress]] (method: defines_method) — *Get a REST address for a capability*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetRegistryMutex]] (method: defines_method)
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetRegistry]] (method: defines_method) — *Meyer's Singleton for header-only static registry without C++17 inline variables*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.Get]] (method: defines_method) — *Get a configuration value*
@@ -64,6 +66,7 @@ Automatically generated mirror for `distributed-config/distconf/cpp/DistConf.hpp
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetFullConfig]] (method: belongs_to) — *Get full configuration as JSON*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetGRPCAddress]] (method: belongs_to) — *Get a gRPC address for a capability*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetLastError]] (method: belongs_to) — *Get the last error from the underlying engine*
+- [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetRESTAddress]] (method: belongs_to) — *Get a REST address for a capability*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetRegistryMutex]] (method: belongs_to)
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.GetRegistry]] (method: belongs_to) — *Meyer's Singleton for header-only static registry without C++17 inline variables*
 - [[distributed-config/distributed-config/distconf/cpp/DistConf.hpp.md|DistConfig.Get]] (method: belongs_to) — *Get a configuration value*

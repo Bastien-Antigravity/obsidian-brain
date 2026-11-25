@@ -49,6 +49,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/p
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_ecosystem_tooling_parity]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_essential_files]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_ghcr_and_test_isolation]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_hardening_tests_docs_and_benchmarks]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_inventory_portability]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_manifest_elements]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_mode_consistency]] (function: belongs_to)

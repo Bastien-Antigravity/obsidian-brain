@@ -3,7 +3,13 @@ source: notif-server/src/sanitizer/sanitizer.go
 workspace: notif-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-18T03:39:57.316134
+last_sync: 2026-11-18 03:39:57.316134
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: sanitizer.go

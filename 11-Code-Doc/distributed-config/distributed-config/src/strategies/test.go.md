@@ -25,6 +25,7 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/env_loader.go.md|LoadCommonFromEnv]] (function: calls)
 - [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls) — *Fails fast if the file does not exist (never creates static fallback YAML files).*
+- [[distributed-config/distributed-config/src/loader/validator.go.md|CheckTestIPs]] (function: calls)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (imports)
 - [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (imports)
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.GetConfig]] (method: calls) — *GetConfig fetches configuration from the server.*
@@ -33,6 +34,7 @@ Automatically generated mirror for `distributed-config/src/strategies/test.go`.
 - [[distributed-config/distributed-config/src/network/client.go.md|Client.Watch]] (method: calls) — *Watch starts a background goroutine to handle asynchronous updates (BROADCASTs).*
 - [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: calls) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (same_package)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|hydrateCapabilitiesFromLiveConfig]] (function: calls) — *from LiveConfig into cfg.Capabilities before the local YAML override pass.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|syncCapabilitiesToLiveConfig]] (function: calls) — *into a map[string]map[string]string delta and merges them into cfg.LiveConfig via cfg.Set.*
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategyTestLogger.Info]] (method: calls)

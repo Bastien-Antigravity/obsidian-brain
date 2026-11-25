@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/fleet/checkpoint.py
 workspace: obsidian-brain
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T22:30:46.783775
+last_sync: 2026-11-07 22:30:46.783775
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: checkpoint.py

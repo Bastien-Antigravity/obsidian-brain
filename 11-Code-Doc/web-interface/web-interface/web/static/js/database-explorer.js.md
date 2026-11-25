@@ -37,6 +37,7 @@ tags:
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.updateUrlParams]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
+- [[web-interface/web-interface/web/templates/base.html.md|CSRF_TOKEN]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/database-explorer.js.md|DatabaseExplorer.displayColumns]] (method: belongs_to)

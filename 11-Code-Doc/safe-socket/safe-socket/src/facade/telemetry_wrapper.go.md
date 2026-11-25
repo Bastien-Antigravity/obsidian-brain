@@ -3,7 +3,13 @@ source: safe-socket/src/facade/telemetry_wrapper.go
 workspace: safe-socket
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T14:41:19.468328
+last_sync: 2026-11-07 14:41:19.468328
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: telemetry_wrapper.go

@@ -3,7 +3,13 @@ source: microservice-toolbox/cpp/include/microservice_toolbox/spec/contracts.h
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-10T18:04:36.354431
+last_sync: 2026-11-10 18:04:36.354431
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: contracts.h

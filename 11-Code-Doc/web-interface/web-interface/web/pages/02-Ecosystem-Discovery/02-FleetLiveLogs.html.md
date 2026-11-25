@@ -3,7 +3,13 @@ source: web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T22:54:19.830788
+last_sync: 2026-11-07 22:54:19.830788
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: 02-FleetLiveLogs.html
@@ -34,6 +40,7 @@ Automatically generated mirror for `web-interface/web/pages/02-Ecosystem-Discove
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|#toggle-autoscroll (input)]] (element: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|#toggle-realtime (input)]] (element: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|LEVEL_NAMES]] (constant: belongs_to)
+- [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|cleanupFleetLiveLogs]] (function: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|connectStream]] (function: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|debounce]] (function: belongs_to)
 - [[web-interface/web-interface/web/pages/02-Ecosystem-Discovery/02-FleetLiveLogs.html.md|escapeHtml]] (function: belongs_to)

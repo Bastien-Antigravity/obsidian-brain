@@ -29,6 +29,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|DualSquadEventBus]] (class: belongs_to)

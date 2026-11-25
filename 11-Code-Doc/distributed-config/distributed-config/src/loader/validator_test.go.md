@@ -22,7 +22,6 @@ Automatically generated mirror for `distributed-config/src/loader/validator_test
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|CheckProductionIPs]] (function: calls)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|CheckTestIPs]] (function: calls)
-- [[distributed-config/distributed-config/src/loader/validator.go.md|ValidateCommonConfig]] (function: calls)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)

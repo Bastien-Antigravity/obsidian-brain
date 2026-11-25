@@ -55,6 +55,7 @@ Automatically generated mirror for `web-interface/src/router/router_test.go`.
 - [[web-interface/web-interface/src/router/router_test.go.md|TestSystemLogsEndpoints]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/router_test.go.md|TestTelemetryLogEndpoint]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/router_test.go.md|TestToolboxStatusEndpoint]] (function: belongs_to)
+- [[web-interface/web-interface/src/router/router_test.go.md|fixture]] (constant: belongs_to)
 - [[web-interface/web-interface/src/router/router_test.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/router_test.go.md|logRecord]] (struct: belongs_to)
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Close]] (method: belongs_to)

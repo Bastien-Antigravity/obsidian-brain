@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py
 workspace: 08-Squad-Agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-05T22:31:59.693718
+last_sync: 2026-11-05 22:31:59.693718
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: debloat_audit.py
@@ -50,6 +56,9 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/d
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|visit_If]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|visit_ImportFrom]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|visit_Import]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (same_package)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|validate_compliance.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|validate_compliance.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|validate_compliance.py]] (same_package)

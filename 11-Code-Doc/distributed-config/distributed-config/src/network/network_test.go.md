@@ -24,6 +24,8 @@ Automatically generated mirror for `distributed-config/src/network/network_test.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: calls) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/distributed-config/src/network/client.go.md|Client.GetVersion]] (method: calls) — *GetVersion returns the last seen server configuration version.*
+- [[distributed-config/distributed-config/src/network/client.go.md|client.go]] (same_package)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: calls)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoingWithVersion]] (method: calls)

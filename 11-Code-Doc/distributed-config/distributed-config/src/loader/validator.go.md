@@ -26,11 +26,11 @@ Automatically generated mirror for `distributed-config/src/loader/validator.go`.
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|CheckProductionIPs]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/loader/validator.go.md|CheckTestIPs]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/loader/validator.go.md|ValidateCommonConfig]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/loader/validator_test.go.md|validator_test.go]] (calls)
 - [[distributed-config/distributed-config/src/loader/validator_test.go.md|validator_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (imports)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (imports)
+- [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (imports)
 <!-- SYNC:END -->

@@ -25,6 +25,7 @@ tags:
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|COLORS]] (constant: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|applyFilters]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/brain_graph.js.md|bindOnce]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|doFit]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|hideNodeInfo]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|highlightNeighborhood]] (function: belongs_to)

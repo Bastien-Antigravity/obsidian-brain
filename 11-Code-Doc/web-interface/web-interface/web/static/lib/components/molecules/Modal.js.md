@@ -3,7 +3,13 @@ source: web-interface/web/static/lib/components/molecules/Modal.js
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-15T22:30:18.322904
+last_sync: 2026-11-15 22:30:18.322904
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: Modal.js
@@ -23,6 +29,7 @@ Automatically generated mirror for `web-interface/web/static/lib/components/mole
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.mount]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.open]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.toggle]] (method: defines_method)
+- [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.unmount]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/utils/DomUtils.js.md|DomUtils.addClass]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
@@ -37,6 +44,7 @@ Automatically generated mirror for `web-interface/web/static/lib/components/mole
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.mount]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.open]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.toggle]] (method: belongs_to)
+- [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal.unmount]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/lib/components/molecules/Modal.js.md|Modal]] (class: defines_method)
 <!-- SYNC:END -->

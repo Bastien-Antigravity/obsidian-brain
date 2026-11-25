@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Squad-Agent
+type: note
+status: active
+tags:
+- '#service/08-Squad-Agent'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 📝 Description
 Automatically generated mirror for `microservice-toolbox/rust/src/conn_manager/connection.rs`.

@@ -21,6 +21,7 @@ Automatically generated mirror for `web-interface/src/core/controller.go`.
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/core/controller.go.md|Controller.CheckDatabase]] (method: defines_method) — *CheckDatabase checks database availability dynamically by querying the current appConfig.*
 - [[web-interface/web-interface/src/core/controller.go.md|Controller.GetStatus]] (method: defines_method) — *GetStatus returns metadata about the web-interface runtime.*
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 
 ### 🔌 Consumers (Inbound)

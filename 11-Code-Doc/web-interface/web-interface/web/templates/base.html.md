@@ -1,12 +1,24 @@
-
+---
+microservice: 08-Squad-Agent
+type: note
+status: active
+tags:
+- '#service/08-Squad-Agent'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|Level.Number]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/web/static/js/database-explorer.js.md|database-explorer.js]] (calls)
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|home-transport-mesh.js]] (calls)
+- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
 - [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.js]] (calls)
 - [[web-interface/web-interface/web/templates/base.html.md|#OverlayNav (div)]] (element: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|#OverlaySide (div)]] (element: belongs_to)
@@ -45,6 +57,7 @@
 - [[web-interface/web-interface/web/templates/base.html.md|IS_LOGGED_IN]] (constant: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_BASE_URL]] (constant: belongs_to)
 - [[web-interface/web-interface/web/templates/base.html.md|SITE_WSS_URL]] (constant: belongs_to)
-- [[web-interface/web-interface/web/templates/base.html.md|pollFleetStatus]] (function: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|escapeHtml]] (function: belongs_to)
+- [[web-interface/web-interface/web/templates/base.html.md|pollFleetStatus]] (function: belongs_to) — *Synchronously apply theme from localStorage to prevent screen flashing*
 - [[web-interface/web-interface/web/templates/base.html.md|updateClock]] (function: belongs_to)
 <!-- SYNC:END -->

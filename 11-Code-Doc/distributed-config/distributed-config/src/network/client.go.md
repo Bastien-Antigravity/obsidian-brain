@@ -69,6 +69,8 @@ Automatically generated mirror for `distributed-config/src/network/client.go`.
 - [[distributed-config/distributed-config/src/network/client.go.md|NewClient]] (function: belongs_to) — *NewClient creates a new Config Client and connects to the server.*
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (calls)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (same_package)
+- [[distributed-config/distributed-config/src/network/network_test.go.md|network_test.go]] (calls)
+- [[distributed-config/distributed-config/src/network/network_test.go.md|network_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (calls)

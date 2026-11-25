@@ -3,7 +3,13 @@ source: web-interface/src/router/base_ecosystem.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T14:41:21.244114
+last_sync: 2026-11-07 14:41:21.244114
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: base_ecosystem.go

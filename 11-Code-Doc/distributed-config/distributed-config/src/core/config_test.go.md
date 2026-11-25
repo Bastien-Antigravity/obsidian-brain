@@ -24,16 +24,22 @@ Automatically generated mirror for `distributed-config/src/core/config_test.go`.
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: calls) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetGRPCAddress]] (method: calls) — *Requires explicit 'grpc_port' (and 'grpc_ip' falling back to 'ip').*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.GetRESTAddress]] (method: calls) — *Requires explicit 'rest_port' (and 'rest_ip' falling back to 'ip').*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetVersion]] (method: calls) — *GetVersion returns the last applied configuration revision.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.ResolveCapability]] (method: calls) — *Precedence: dotted LiveConfig ("capabilities.<cap>.<k>") > direct LiveConfig ("<cap>.<k>") > static YAML.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.SetVersion]] (method: calls) — *SetVersion atomically updates the tracked configuration revision.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ShareConfig]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ValidateMandatoryServices]] (method: calls)
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (same_package)
+- [[distributed-config/distributed-config/src/core/defaults.go.md|NewDefaultConfig]] (function: calls)
+- [[distributed-config/distributed-config/src/core/defaults.go.md|defaults.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_Concurrency]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ConcurrentWritersNoLostUpdates]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_DynamicCapabilityGetAddress]] (function: belongs_to)
+- [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ResolveCapabilityAndVersion]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_SetAndGet]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ShadowPort]] (function: belongs_to)
 - [[distributed-config/distributed-config/src/core/config_test.go.md|TestConfig_ShareConfig]] (function: belongs_to)

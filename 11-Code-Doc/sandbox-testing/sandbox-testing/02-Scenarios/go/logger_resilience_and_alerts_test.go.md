@@ -3,7 +3,13 @@ source: sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go
 workspace: sandbox-testing
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-23T01:29:29.026298
+last_sync: 2026-11-23 01:29:29.026298
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: logger_resilience_and_alerts_test.go

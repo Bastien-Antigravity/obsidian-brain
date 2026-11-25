@@ -9,11 +9,17 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `web-interface/src/middleware/middleware.go`.
+
+> **Essential Process**:
+> HTTP middleware pipeline for request logging, session authentication enforcement, and CSRF protection on web-interface routes.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/backup_cleaned_assets/src/postgres_browser/postgres_browser.go.md|postgres_browser.go]] (calls)

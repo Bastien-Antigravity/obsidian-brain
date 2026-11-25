@@ -52,6 +52,8 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main_test.go
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestSetupRoutesAndRendering]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestSetupRoutesMFERouting]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|TestStaticJSEndpoints]] (function: belongs_to)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|ensureStandaloneTestConfig]] (function: belongs_to)
+- [[web-interface/web-interface/cmd/web-interface/main_test.go.md|fixture]] (constant: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Close]] (method: belongs_to)
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|mockLogger.Critical]] (method: belongs_to)

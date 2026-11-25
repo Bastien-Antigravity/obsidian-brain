@@ -38,6 +38,8 @@ Automatically generated mirror for `web-interface/src/router/router.go`.
 - [[web-interface/web-interface/cmd/web-interface/main_test.go.md|main_test.go]] (calls)
 - [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|architecture_hygiene_test.go]] (calls)
 - [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|architecture_hygiene_test.go]] (same_package)
+- [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (calls)
+- [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (same_package)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)

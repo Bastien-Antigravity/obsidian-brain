@@ -20,6 +20,8 @@ Automatically generated mirror for `distributed-config/cmd/libdistconf/main.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/distconf/libdistconf/libdistconf.h.md|call_config_update_cb]] (function: calls) — *Helper to safely execute a C callback from Go*
+- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|get_last_error]] (function: calls)
+- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|get_last_error_code]] (function: calls)
 - [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|set_last_error]] (function: calls)
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|Close]] (function: calls) — *Close is a Go-native wrapper for DistConf_Close.*
 - [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls) — *New is a Go-native wrapper for DistConf_New.*

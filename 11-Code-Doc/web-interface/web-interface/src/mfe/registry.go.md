@@ -1,4 +1,13 @@
-
+---
+microservice: 08-Squad-Agent
+type: note
+status: active
+tags:
+- '#service/08-Squad-Agent'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---
 
 ## 📝 Description
 Automatically generated mirror for `web-interface/src/mfe/registry.go`.
@@ -33,6 +42,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.saveLocked]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.save]] (method: defines_method)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.setAllowedPublicHostLocked]] (method: defines_method)
+- [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Close]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Error]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Info]] (method: calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Warning]] (method: calls)
@@ -82,6 +92,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: belongs_to) — *Registry manages the registration and listing of microfrontend services.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry]] (struct: defines_method) — *Registry manages the registration and listing of microfrontend services.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Service]] (struct: belongs_to) — *Service represents a registered Micro-Frontend service with layer taxonomy.*
+- [[web-interface/web-interface/src/mfe/registry.go.md|computeSpecHash]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|extractAllowedHost]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|isValidDNSLabel]] (function: belongs_to) — *isValidDNSLabel checks whether host is a single-label Docker service DNS name ([a-z0-9-], non-numeric).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|isValidScriptURL]] (function: belongs_to) — *isValidScriptURL validates MFE script bundle URLs against XSS/SSRF, metadata endpoints, and localhost invariants.*
@@ -89,6 +100,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|registerReq]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (calls)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|registry_test.go]] (same_package)
+- [[web-interface/web-interface/src/middleware/middleware.go.md|middleware.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/contracts.go.md|contracts.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/explorer.go.md|explorer.go]] (calls)
 - [[web-interface/web-interface/src/postgres_browser/timescale_stats.go.md|timescale_stats.go]] (calls)

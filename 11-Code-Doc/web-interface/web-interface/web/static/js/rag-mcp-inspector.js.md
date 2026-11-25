@@ -51,6 +51,7 @@ Automatically generated mirror for `web-interface/web/static/js/rag-mcp-inspecto
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warn]] (method: calls)
+- [[web-interface/web-interface/web/templates/base.html.md|CSRF_TOKEN]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|Alias]] (class: belongs_to)
@@ -78,6 +79,7 @@ Automatically generated mirror for `web-interface/web/static/js/rag-mcp-inspecto
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE.switchTab]] (method: belongs_to)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE]] (class: belongs_to)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|RAGMCPInspectorMFE]] (class: defines_method)
+- [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|escapeHtml]] (function: belongs_to) — *use strict';*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

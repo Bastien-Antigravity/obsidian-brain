@@ -3,7 +3,13 @@ source: microservice-toolbox/cpp/include/microservice_toolbox/wiretap/WireTap.hp
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T21:45:23.615824
+last_sync: 2026-11-07 21:45:23.615824
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: WireTap.hpp

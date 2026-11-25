@@ -30,6 +30,8 @@ Automatically generated mirror for `distributed-config/src/loader/loader.go`.
 - [[distributed-config/distributed-config/src/loader/loader.go.md|loadPublicKey]] (function: belongs_to) — *loadPublicKey attempts to find and load public.pem into Common.PublicKey*
 - [[distributed-config/distributed-config/src/loader/loader_test.go.md|loader_test.go]] (calls)
 - [[distributed-config/distributed-config/src/loader/loader_test.go.md|loader_test.go]] (same_package)
+- [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|path_resolver_test.go]] (calls)
+- [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|path_resolver_test.go]] (same_package)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|cloud.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/standalone.go.md|standalone.go]] (calls)
 - [[distributed-config/distributed-config/src/strategies/test.go.md|test.go]] (calls)

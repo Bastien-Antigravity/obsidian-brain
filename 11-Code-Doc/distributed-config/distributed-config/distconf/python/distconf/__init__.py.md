@@ -28,6 +28,7 @@ Automatically generated mirror for `distributed-config/distconf/python/distconf/
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetGRPCAddress]] (function: calls) — *export DistConf_GetGRPCAddress*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetLastErrorCode]] (function: calls) — *export DistConf_GetLastErrorCode*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetLastError]] (function: calls) — *export DistConf_GetLastError*
+- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_GetRESTAddress]] (function: calls) — *export DistConf_GetRESTAddress*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Get]] (function: calls) — *export DistConf_Get*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_New]] (function: calls) — *export DistConf_New*
 - [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_OnLiveConfUpdate]] (function: calls) — *export DistConf_OnLiveConfUpdate*
@@ -61,6 +62,7 @@ Automatically generated mirror for `distributed-config/distconf/python/distconf/
 - [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|get_capability]] (function: belongs_to)
 - [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|get_full_config]] (function: belongs_to)
 - [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|get_grpc_address]] (function: belongs_to)
+- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|get_rest_address]] (function: belongs_to)
 - [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|on_live_conf_update]] (function: belongs_to)
 - [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|on_registry_update]] (function: belongs_to)
 - [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|set]] (function: belongs_to)

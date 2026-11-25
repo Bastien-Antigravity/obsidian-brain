@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py
 workspace: 08-Squad-Agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-24T04:57:51.704524
+last_sync: 2026-11-24 04:57:51.704524
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: audit_secret_leakage.py

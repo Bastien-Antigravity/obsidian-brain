@@ -3,7 +3,13 @@ source: watchdog-agent/src/rest/rest_handler_test.go
 workspace: watchdog-agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-10T13:21:53.836992
+last_sync: 2026-11-10 13:21:53.836992
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: rest_handler_test.go

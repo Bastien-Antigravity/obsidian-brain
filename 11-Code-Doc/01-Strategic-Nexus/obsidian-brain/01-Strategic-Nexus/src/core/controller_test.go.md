@@ -3,7 +3,13 @@ source: obsidian-brain/01-Strategic-Nexus/src/core/controller_test.go
 workspace: 01-Strategic-Nexus
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-05T22:31:57.219486
+last_sync: 2026-11-05 22:31:57.219486
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: controller_test.go

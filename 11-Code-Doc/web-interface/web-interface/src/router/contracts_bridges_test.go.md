@@ -3,7 +3,13 @@ source: web-interface/src/router/contracts_bridges_test.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-10T13:21:54.647120
+last_sync: 2026-11-10 13:21:54.647120
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: contracts_bridges_test.go
@@ -38,6 +44,7 @@ Automatically generated mirror for `web-interface/src/router/contracts_bridges_t
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestNatsContractsFailClosedWithoutConfig]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestServiceAIContextEndpoint]] (function: belongs_to)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|TestTeleRemoteContractsFromRegistry]] (function: belongs_to)
+- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|setupIsolatedLogServerDocs]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

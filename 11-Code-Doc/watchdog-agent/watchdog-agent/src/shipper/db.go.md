@@ -3,7 +3,13 @@ source: watchdog-agent/src/shipper/db.go
 workspace: watchdog-agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-08T15:50:57.977007
+last_sync: 2026-11-08 15:50:57.977007
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: db.go

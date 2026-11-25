@@ -3,7 +3,13 @@ source: log-server/src/core/ring_buffer.rs
 workspace: log-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T22:45:07.606039
+last_sync: 2026-11-07 22:45:07.606039
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: ring_buffer.rs

@@ -3,7 +3,13 @@ source: watchdog-agent/src/shipper/incident.go
 workspace: watchdog-agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-09T16:48:55.308665
+last_sync: 2026-11-09 16:48:55.308665
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: incident.go

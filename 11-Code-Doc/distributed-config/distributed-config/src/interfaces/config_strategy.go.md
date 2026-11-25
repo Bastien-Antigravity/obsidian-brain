@@ -25,7 +25,5 @@ Automatically generated mirror for `distributed-config/src/interfaces/config_str
 ### 🔌 Consumers (Inbound)
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (imports)
 - [[distributed-config/distributed-config/src/factory/config_factory.go.md|config_factory.go]] (imports)
-- [[distributed-config/distributed-config/src/interfaces/config_strategy.go.md|ConfigStrategyDeleter]] (interface: belongs_to) — *ConfigStrategyDeleter is an optional extension interface for strategies supporting explicit key deletions.*
-- [[distributed-config/distributed-config/src/interfaces/config_strategy.go.md|ConfigStrategyOCC]] (interface: belongs_to) — *ConfigStrategyOCC is an optional extension interface for strategies supporting Optimistic Concurrency Control.*
 - [[distributed-config/distributed-config/src/interfaces/config_strategy.go.md|ConfigStrategy]] (interface: belongs_to)
 <!-- SYNC:END -->

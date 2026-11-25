@@ -3,7 +3,13 @@ source: log-server/src/core/transactional_writer.rs
 workspace: log-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-16T15:52:37.150955
+last_sync: 2026-11-16 15:52:37.150955
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: transactional_writer.rs

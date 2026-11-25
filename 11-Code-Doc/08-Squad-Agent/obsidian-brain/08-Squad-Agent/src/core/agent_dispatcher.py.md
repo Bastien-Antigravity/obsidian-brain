@@ -34,6 +34,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/core/agent
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|OBSIDIAN_DIR]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|ROLE_MAP]] (constant: belongs_to) — *Role to Prompt Filename Mapping (21 Ecosystem Squad Personas)*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|ROLE_PROMPT_SOURCES]] (constant: belongs_to) — *Source of Truth Precedence*

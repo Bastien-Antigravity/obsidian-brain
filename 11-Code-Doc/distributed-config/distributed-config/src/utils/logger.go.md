@@ -37,6 +37,8 @@ Automatically generated mirror for `distributed-config/src/utils/logger.go`.
 - [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (imports)
 - [[distributed-config/distributed-config/src/loader/loader_test.go.md|loader_test.go]] (calls)
 - [[distributed-config/distributed-config/src/loader/loader_test.go.md|loader_test.go]] (imports)
+- [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|path_resolver_test.go]] (calls)
+- [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|path_resolver_test.go]] (imports)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (calls)
 - [[distributed-config/distributed-config/src/network/network_resilience_test.go.md|network_resilience_test.go]] (imports)
 - [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: belongs_to) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*

@@ -3,7 +3,13 @@ source: distributed-config/cmd/config-tool/tlsgen_test.go
 workspace: distributed-config
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-23T20:26:00.776578
+last_sync: 2026-11-23 20:26:00.776578
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: tlsgen_test.go

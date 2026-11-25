@@ -27,7 +27,7 @@ flowchart TD
 
 ## 2. Core Pillars Applied Across the Ecosystem
 
-1. **Invariant #7 in Root `AGENTS.md` & `AI-CONTEXT.md` (Language-Specific Import, Header & Visual Formatting Invariants)**:
+1. **Invariant `#7` in Root `AGENTS.md` & `AI-CONTEXT.md` (Language-Specific Import, Header & Visual Formatting Invariants)**:
    - **Python ("Bastien" Granular Functional Import & camelCase Aliasing Rule)**:
      - Every `.py` file starts with `#!/usr/bin/env python`, `# coding:utf-8`, Triple-Block docstring (`ESSENTIAL PROCESS`, `DATA FLOW`, `KEY PARAMETERS`), and 1 blank line.
      - **Zero Whole-Module Imports**: Never write `import os`, `import sys`, `import re`, `import json`, `import time`, `import subprocess`, etc. outside the entrypoint `bootstrap_microservice` block.

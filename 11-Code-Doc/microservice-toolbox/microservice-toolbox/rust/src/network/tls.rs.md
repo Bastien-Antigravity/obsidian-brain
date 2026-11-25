@@ -3,7 +3,13 @@ source: microservice-toolbox/rust/src/network/tls.rs
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-23T20:26:01.904041
+last_sync: 2026-11-23 20:26:01.904041
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: tls.rs

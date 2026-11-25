@@ -29,6 +29,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/bootstrap/
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/main.py.md|main.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/bootstrap/__init__.py.md|_OFFLINE_CLI_COMMANDS]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/clients/discord_client.py.md|discord_client.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)

@@ -30,12 +30,14 @@ Automatically generated mirror for `web-interface/web/static/js/mfe-loader.js`.
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|brain_graph.js]] (calls)
 - [[web-interface/web-interface/web/static/js/brain_graph.js.md|brain_graph.js]] (same_package)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|BRAIN_STORAGE_KEY]] (constant: belongs_to) — *Global registry cache & shell event state*
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|SERVICES_CACHE_TTL_MS]] (constant: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|bindGlobalPopoverDismissers]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|bindTabNavigation]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|enrichAISection]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|enrichStandardShell]] (function: belongs_to)
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|escapeHtml]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchBrains]] (function: belongs_to)
-- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to) — *Fetch registered MFE services with deduplication*
+- [[web-interface/web-interface/web/static/js/mfe-loader.js.md|fetchServices]] (function: belongs_to) — *Fetch registered MFE services with deduplication and TTL cache refresh*
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|filterServicesByBrain]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|generatePolyglotSnippets]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/mfe-loader.js.md|getSelectedBrain]] (function: belongs_to)

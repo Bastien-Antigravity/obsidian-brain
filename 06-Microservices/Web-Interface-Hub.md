@@ -30,9 +30,9 @@ The `web-interface` follows the **Facade Pattern**, where HTTP handlers orchestr
 - `cmd/web-interface/main.go`: Application bootstrap and lifecycle wiring via `microservice-toolbox`.
 - `src/server/facade.go`: Central facade orchestrating HTTP server startup, timeouts, and graceful shutdown.
 - `src/core/controller.go`: System status info, uptime telemetry, and database connectivity health checks.
-- `src/mfe/registry.go`: OpenMFE dynamic micro-frontend registration registry, 3-tier taxonomy normalization, `Contracts` persistence (`GET /api/v1/contracts?service=...`), and atomic `mfe_services.json` storage.
-- `mfe_services.json`: Persistent disk cache (`dbFile` in `registry.go`) ensuring 0-second cold-start recovery for registered microfrontends upon restart.
-- `src/renderer/renderer.go`: Go template rendering engine with session data and dynamic URL resolution.
+- `src/mfe/registry.go`: OpenMFE dynamic micro-frontend registration registry, 3-tier taxonomy normalization, `SpecHash` diff-only `fsync` + atomic `os.Rename` persistence to `mfe_services.json`, `LastSeenAt` heartbeat liveness tracking, `ETag` (`304 Not Modified`) + `?summary=true` discovery on `GET /api/v1/services`, and `Contracts` persistence (`GET /api/v1/contracts?service=...`).
+- `mfe_services.json`: Persistent disk cache (`dbFile` in `registry.go`) ensuring 0-second cold-start recovery for registered microfrontends upon restart without redundant disk writes on unchanged 30s heartbeats.
+- `src/renderer/renderer.go`: Go template rendering engine with `ModTime`-validated `*template.Template` AST caching, session data, `appConfig.GetVersion()` resolution, and dynamic URL resolution.
 - `src/router/`: Route registration (`autodiscovery.go`, `static.go`, `dynamic.go`, `base_ecosystem.go`, `mesh_topology.go`, `log_bridge.go`, `contracts_bridges.go`, `router.go`).
   - `autodiscovery.go`: Scans `web/pages/` to automatically mount hierarchical static pages (`/page/<category-slug>/<page-slug>`) and build left `#Sidebar` accordion trees.
   - `base_ecosystem.go`: Strictly defines the 11 Standard Base Microservices (`L1–L3`), foundational links, particle streams, protocol catalog, and baseline segregated channels.

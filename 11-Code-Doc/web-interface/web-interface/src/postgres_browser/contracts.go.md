@@ -3,7 +3,13 @@ source: web-interface/src/postgres_browser/contracts.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-10T13:21:54.555635
+last_sync: 2026-11-10 13:21:54.555635
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: contracts.go
@@ -19,7 +25,7 @@ Automatically generated mirror for `web-interface/src/postgres_browser/contracts
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.resolveDBConfig]] (method: calls) — *resolveDBConfig dynamically extracts pre-validated connection parameters from AppConfig.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase connects to an alternate database on the same host configuration.*
+- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
 - [[web-interface/web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)

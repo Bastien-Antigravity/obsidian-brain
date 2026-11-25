@@ -3,7 +3,13 @@ source: web-interface/web/templates/mfe/_panel_ai.html
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-16T14:17:16.473153
+last_sync: 2026-11-16 14:17:16.473153
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: _panel_ai.html

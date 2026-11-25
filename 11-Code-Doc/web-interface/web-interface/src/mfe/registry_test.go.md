@@ -23,6 +23,7 @@ Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.EnsureFoundationalServices]] (method: calls) — *have complete self-describing manifests loaded into the registry using dynamic parameters from appConfig.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
+- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterExtended]] (method: calls) — *RegisterExtended registers a microservice with full extended metadata fields.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.RegisterHandlers]] (method: calls) — *RegisterHandlers binds the MFE endpoints to the HTTP ServeMux.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.SetAllowedPublicHost]] (method: calls) — *(such as local.web_interface.public_url) so MFE script URLs served from that host are permitted.*
 - [[web-interface/web-interface/src/mfe/registry.go.md|isValidScriptURL]] (function: calls) — *isValidScriptURL validates MFE script bundle URLs against XSS/SSRF, metadata endpoints, and localhost invariants.*
@@ -45,6 +46,9 @@ Automatically generated mirror for `web-interface/src/mfe/registry_test.go`.
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryDeduplicationAndLayerSorting]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryRegisterAndListHandlers]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistryRejectsInvalidRegistration]] (function: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry_test.go.md|TestRegistrySpecHashETagAndSummaryMode]] (function: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry_test.go.md|fixture]] (constant: belongs_to)
+- [[web-interface/web-interface/src/mfe/registry_test.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Close]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Critical]] (method: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry_test.go.md|mockLogger.Debug]] (method: belongs_to)

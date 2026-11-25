@@ -3,7 +3,13 @@ source: web-interface/src/router/spec_exchange_test.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T12:21:44.820555
+last_sync: 2026-11-07 12:21:44.820555
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: spec_exchange_test.go

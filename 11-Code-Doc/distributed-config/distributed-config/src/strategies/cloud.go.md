@@ -61,6 +61,7 @@ Automatically generated mirror for `distributed-config/src/strategies/cloud.go`.
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy.Sync]] (method: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy]] (struct: belongs_to)
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|CloudStrategy]] (struct: defines_method)
+- [[distributed-config/distributed-config/src/strategies/cloud.go.md|hydrateCapabilitiesFromLiveConfig]] (function: belongs_to) — *from LiveConfig into cfg.Capabilities before the local YAML override pass.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|isWildcardBindIP]] (function: belongs_to) — *overwrite peer-routable DNS addresses in config-server's shared LiveConfig store.*
 - [[distributed-config/distributed-config/src/strategies/cloud.go.md|syncCapabilitiesToLiveConfig]] (function: belongs_to) — *into a map[string]map[string]string delta and merges them into cfg.LiveConfig via cfg.Set.*
 - [[distributed-config/distributed-config/src/strategies/strategies_test.go.md|strategies_test.go]] (calls)

@@ -3,7 +3,13 @@ source: tele-remote/src/telegram/core/rate_limiter.go
 workspace: tele-remote
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-23T01:29:29.496165
+last_sync: 2026-11-23 01:29:29.496165
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: rate_limiter.go

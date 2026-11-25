@@ -3,7 +3,13 @@ source: web-interface/src/logclient/log_service.pb.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T23:19:47.776240
+last_sync: 2026-11-07 23:19:47.776240
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: log_service.pb.go
@@ -91,6 +97,7 @@ Automatically generated mirror for `web-interface/src/logclient/log_service.pb.g
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
 - [[web-interface/web-interface/backup_cleaned_assets/web/templates/home.html.md|home.html]] (calls)
+- [[web-interface/web-interface/src/core/controller.go.md|controller.go]] (calls)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.Descriptor]] (method: belongs_to) — *Deprecated: Use ContractsRequest.ProtoReflect.Descriptor instead.*
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.ProtoMessage]] (method: belongs_to)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsRequest.ProtoReflect]] (method: belongs_to)
@@ -198,12 +205,15 @@ Automatically generated mirror for `web-interface/src/logclient/log_service.pb.g
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|init]] (function: belongs_to)
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|x]] (struct: belongs_to)
 - [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (calls)
+- [[web-interface/web-interface/src/renderer/renderer.go.md|renderer.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/web/static/js/cose-base.js.md|cose-base.js]] (calls)
 - [[web-interface/web-interface/web/static/js/cytoscape-cose-bilkent.js.md|cytoscape-cose-bilkent.js]] (calls)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|home-transport-mesh.js]] (calls)
 - [[web-interface/web-interface/web/static/js/log-server-inspector.js.md|log-server-inspector.js]] (calls)
 - [[web-interface/web-interface/web/static/js/rag-mcp-inspector.js.md|rag-mcp-inspector.js]] (calls)
+- [[web-interface/web-interface/web/static/js/timescaledb-inspector.js.md|timescaledb-inspector.js]] (calls)
+- [[web-interface/web-interface/web/templates/base.html.md|base.html]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

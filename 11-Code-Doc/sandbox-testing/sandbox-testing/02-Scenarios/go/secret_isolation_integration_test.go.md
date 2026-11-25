@@ -57,6 +57,8 @@ tags:
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/ontime_concurrency_test.go.md|ontime_concurrency_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/protocol_adversarial_test.go.md|protocol_adversarial_test.go]] (calls)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/protocol_adversarial_test.go.md|protocol_adversarial_test.go]] (same_package)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/protocol_golden_fixture_test.go.md|protocol_golden_fixture_test.go]] (calls)
+- [[sandbox-testing/sandbox-testing/02-Scenarios/go/protocol_golden_fixture_test.go.md|protocol_golden_fixture_test.go]] (same_package)
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|TestScenario_ZeroKnowledgeSecretsIntegration]] (function: belongs_to) — *audit ensuring zero-knowledge boundaries, per-service key isolation, and non-shared configs.*
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|generateTestKeyPair]] (function: belongs_to) — *generateTestKeyPair creates an in-memory RSA key pair encoded as PEM strings.*
 - [[sandbox-testing/sandbox-testing/02-Scenarios/go/secret_isolation_integration_test.go.md|scenarioMockLogger.AddMetadata]] (method: belongs_to)

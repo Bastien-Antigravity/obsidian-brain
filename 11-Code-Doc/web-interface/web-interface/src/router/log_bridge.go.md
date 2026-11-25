@@ -3,7 +3,13 @@ source: web-interface/src/router/log_bridge.go
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-07T23:21:55.557024
+last_sync: 2026-11-07 23:21:55.557024
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: log_bridge.go
@@ -28,10 +34,12 @@ Automatically generated mirror for `web-interface/src/router/log_bridge.go`.
 - [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
+- [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
 - [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (same_package)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
 - [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
+- [[web-interface/web-interface/src/router/log_bridge.go.md|CloseLogBridge]] (function: belongs_to) — *CloseLogBridge closes the active gRPC log bridge connection on service shutdown.*
 - [[web-interface/web-interface/src/router/log_bridge.go.md|formatLevelString]] (function: belongs_to) — *formatLevelString converts numeric protobuf enum to string representation*
 - [[web-interface/web-interface/src/router/log_bridge.go.md|getLogBridgeClient]] (function: belongs_to) — *getLogBridgeClient resolves or reuses the singleton gRPC connection to log-server.*
 - [[web-interface/web-interface/src/router/log_bridge.go.md|handleGetLogContracts]] (function: belongs_to) — *falling back only to log-server's own published ServiceSpec in the MFE registry if gRPC is unavailable.*

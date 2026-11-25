@@ -3,7 +3,13 @@ source: web-interface/web/static/js/log-server-inspector.js
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-08T13:49:04.201087
+last_sync: 2026-11-08 13:49:04.201087
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: log-server-inspector.js

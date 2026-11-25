@@ -3,7 +3,13 @@ source: log-server/src/core/contracts.rs
 workspace: log-server
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-10T13:21:51.380906
+last_sync: 2026-11-10 13:21:51.380906
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: contracts.rs

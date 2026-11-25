@@ -20,6 +20,7 @@ Automatically generated mirror for `distributed-config/src/network/proto_handler
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.ReplaceLive]] (method: calls) — *ReplaceLive atomically replaces the entire live configuration snapshot under writeMu.*
+- [[distributed-config/distributed-config/src/core/config.go.md|Config.SetVersion]] (method: calls) — *SetVersion atomically updates the tracked configuration revision.*
 - [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
 - [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: defines_method)

@@ -92,10 +92,12 @@ Micro-frontends and mesh topology nodes are partitioned into distinct operationa
 5. **EXT - External Clients & Cloud Gateways**:
    - External IDE clients (e.g., `antigravity_ide` via MCP JSON-RPC/SSE) and external APIs (`telegram_cloud` via HTTPS Bot API) observed in real time via WireTap (`EdgeReport`).
 
-### 2.3 Cold-Start Persistence (`mfe_services.json`)
-The registry maintains an atomic disk-backed store (`mfe_services.json` via `dbFile` in `src/mfe/registry.go`). When `web-interface` restarts:
-- It immediately loads the cached registration list into memory.
-- All micro-frontend navigation links are visible with **0-second cold start**, even before microservice re-registration loops trigger.
+### 2.3 Cold-Start Persistence (`mfe_services.json`), `SpecHash` & ETag Caching
+The registry maintains an atomic disk-backed store (`mfe_services.json` via `dbFile` in `src/mfe/registry.go`):
+- **0-Second Cold Start**: When `web-interface` restarts, it immediately loads the cached registration list into memory so all micro-frontend navigation links are visible before microservice re-registration loops trigger.
+- **`SpecHash` Diff-Only `fsync` Persistence**: `RegisterExtended` computes a deterministic SHA-256 `specHash` over static service metadata and tracks `lastSeenAt` separately from `registeredAt`. On 30-second heartbeats (`POST /api/v1/register`), if `specHash` is unchanged, `lastSeenAt` is updated in memory and `registeredAt` is preserved **without rewriting `mfe_services.json` to disk**. When a spec changes, `saveLocked()` strips duplicate `dataStructure.contracts`, sorts services deterministically by `name`, writes to `.tmp`, calls `f.Sync()` (`fsync`), and atomically renames to `mfe_services.json`.
+- **HTTP `ETag` (`304 Not Modified`) & `?summary=true`**: `GET /api/v1/services` emits an `ETag` derived from registered `specHash` values and supports `?summary=true` (omitting heavy `contracts` and `sourceCode` fields for lightweight polling).
+- **Content-Versioned Script Loading (`?v=`)**: `mfe-loader.js` loads Web Component bundles with `?v=<specHash|version>` (instead of per-request `?t=Date.now()` cache-busting) so browsers cache immutable MFE scripts across partial navigations and invalidate immediately when a service's spec hash or version changes.
 
 ### 2.4 Client-Side Requirements (The Microservice)
 To expose a microfrontend, a sibling microservice must fulfill three strict technical conditions:

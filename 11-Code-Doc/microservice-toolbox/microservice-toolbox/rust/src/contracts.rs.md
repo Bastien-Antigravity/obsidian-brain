@@ -3,7 +3,13 @@ source: microservice-toolbox/rust/src/contracts.rs
 workspace: microservice-toolbox
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-23T01:29:28.226070
+last_sync: 2026-11-23 01:29:28.226070
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: contracts.rs

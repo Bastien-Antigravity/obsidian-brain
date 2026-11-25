@@ -3,7 +3,13 @@ source: tele-remote/src/subscribers/grpc_test.go
 workspace: tele-remote
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-23T20:26:03.005419
+last_sync: 2026-11-23 20:26:03.005419
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: grpc_test.go

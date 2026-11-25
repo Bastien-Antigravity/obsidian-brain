@@ -36,11 +36,13 @@ Automatically generated mirror for `web-interface/cmd/web-interface/main.go`.
 - [[web-interface/web-interface/src/middleware/middleware.go.md|CSRFMiddleware]] (function: calls) — *CSRFMiddleware Protection*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|LoggerMiddleware]] (function: calls) — *LoggerMiddleware console output*
 - [[web-interface/web-interface/src/middleware/middleware.go.md|middleware.go]] (imports)
+- [[web-interface/web-interface/src/postgres_browser/connection.go.md|CloseAllPools]] (function: calls) — *CloseAllPools closes all cached PostgreSQL connection pools during graceful shutdown.*
 - [[web-interface/web-interface/src/postgres_browser/handler.go.md|RegisterPostgresBrowserRoutes]] (function: calls) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
 - [[web-interface/web-interface/src/postgres_browser/handler.go.md|handler.go]] (imports)
 - [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (imports)
 - [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (imports)
 - [[web-interface/web-interface/src/router/dynamic.go.md|SetMFERegistry]] (function: calls) — *SetMFERegistry associates the active MFE registry instance with the router.*
+- [[web-interface/web-interface/src/router/log_bridge.go.md|CloseLogBridge]] (function: calls) — *CloseLogBridge closes the active gRPC log bridge connection on service shutdown.*
 - [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
 - [[web-interface/web-interface/src/server/facade.go.md|NewServerFacade]] (function: calls)
 - [[web-interface/web-interface/src/server/facade.go.md|ServerFacade.Start]] (method: calls)

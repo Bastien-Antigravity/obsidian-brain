@@ -3,7 +3,13 @@ source: obsidian-brain/08-Squad-Agent/src/agents/debloatsentinel.py
 workspace: 08-Squad-Agent
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-05T22:31:58.915318
+last_sync: 2026-11-05 22:31:58.915318
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: debloatsentinel.py
@@ -18,6 +24,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/deb
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_resolve_active_workspace_root]] (function: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|debloat_audit.py]] (imports)

@@ -35,19 +35,30 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/bas
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/task_decomposer.py.md|task_decomposer.py]] (imports)
 - [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/architect.py.md|architect.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/architect.py.md|architect.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/architect.py.md|architect.py]] (same_package)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_BLOCKED_IN_WORKTREE_TOOLS]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_BLOCKED_WORKSPACE_ROOTS]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_LIST_EXCLUDED_DIRS]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_MAX_LISTED_FILES]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_MUTATING_TOOL_NAMES]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_PROTECTED_SANDBOX_FILENAMES]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_READ_ONLY_ROLES]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_RESERVED_PRIMARY_BRAINS]] (constant: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_SANDBOX_SHELL_META_CHARS]] (constant: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|__init__]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_audit_written_file]] (function: belongs_to) — *Runs ComplianceAuditor on newly written/edited source files and formats feedback.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_compile_active_instruction]] (function: belongs_to) — *Compiles system instruction with dynamic task_context details when active.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_execute_sandboxed_command]] (function: belongs_to) — *Executes strictly allowlisted test/check binaries with shell=False inside the worktree jail.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_fetch_history]] (function: belongs_to) — *Queries postgres squad_chat_logs for history turns.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_fold_generic_code]] (function: belongs_to) — *Folds braced language function bodies (JS/TS/Go/Rust/C++).*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_fold_python_code]] (function: belongs_to) — *Folds python function/class bodies to show only signatures and docstrings.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_get_effective_tools]] (function: belongs_to) — *Returns active LLM tools filtered by read_only or worktree_sandbox_mode policy.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_get_squad_capability]] (function: belongs_to) — *Reads squad_agent capability settings from AppConfig data or accessor.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_infer_domain_vault_path]] (function: belongs_to) — *Infers the Obsidian vault root inside a registered domain workspace.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_init_genai_client]] (function: belongs_to) — *Initialises or updates the Google GenAI Client with active credentials.*
@@ -61,11 +72,16 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/bas
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_resolve_active_workspace_root]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_run_mock_think_and_respond]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_save_log]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|_validate_mutation_target]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|db_insert]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|db_query]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|discover_registered_domain_workspaces]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|edit_workspace_file]] (function: belongs_to)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|enable_readonly_mode]] (function: belongs_to) — *Enforces strict read-only tool permissions on this agent instance.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|enable_worktree_sandbox_mode]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|execute_shell_command]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|execute_tool]] (function: belongs_to) — *Dynamic tool execution handler.*
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|list_workspace_files]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|msg_cb]] (function: belongs_to)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|on_chat_message]] (function: belongs_to) — *Callback invoked when a new message arrives in the room.*
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|query_rag_engine]] (function: belongs_to)
@@ -117,6 +133,8 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/bas
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/sentinel.py.md|sentinel.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/sentinel.py.md|sentinel.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/sentinel.py.md|sentinel.py]] (same_package)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (calls)
+- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|agent_dispatcher.py]] (calls)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/agent_dispatcher.py.md|agent_dispatcher.py]] (imports)
 - [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)

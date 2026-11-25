@@ -25,7 +25,7 @@ Automatically generated mirror for `web-interface/src/postgres_browser/explorer.
 ### 📦 Dependencies (Outbound)
 - [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 - [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.getDatabase]] (method: calls) — *getDatabase resolves connection settings from config and caches/returns the active pool.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase connects to an alternate database on the same host configuration.*
+- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
 - [[web-interface/web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
 - [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)

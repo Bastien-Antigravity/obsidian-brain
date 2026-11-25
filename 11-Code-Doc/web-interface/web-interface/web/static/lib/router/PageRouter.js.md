@@ -3,7 +3,13 @@ source: web-interface/web/static/lib/router/PageRouter.js
 workspace: web-interface
 type: code-mirror
 status: auto-generated
-last_sync: 2026-11-06T08:39:41.530083
+last_sync: 2026-11-06 08:39:41.530083
+microservice: 08-Squad-Agent
+tags:
+- '#service/08-Squad-Agent'
+- '#type/code-mirror'
+- '#state/auto-generated'
+- '#zone/3-fleet'
 ---
 
 # Mirror: PageRouter.js
@@ -20,6 +26,7 @@ Automatically generated mirror for `web-interface/web/static/lib/router/PageRout
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|initHomePage]] (function: calls)
 - [[web-interface/web-interface/web/static/lib/bastien-ui.js.md|BastienUIClass.highlightCode]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.autoInit]] (method: calls)
+- [[web-interface/web-interface/web/static/lib/components/ComponentRegistry.js.md|ComponentRegistry.destroyIn]] (method: calls)
 - [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.bindLinkInterception]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.bindPopState]] (method: defines_method)
 - [[web-interface/web-interface/web/static/lib/router/PageRouter.js.md|PageRouter.cleanScriptSrc]] (method: defines_method)

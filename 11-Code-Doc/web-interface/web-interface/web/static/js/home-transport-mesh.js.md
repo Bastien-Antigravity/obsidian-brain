@@ -28,6 +28,7 @@ Automatically generated mirror for `web-interface/web/static/js/home-transport-m
 - [[web-interface/web-interface/src/logclient/log_service.pb.go.md|x]] (struct: calls)
 - [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightElement]] (function: calls)
 - [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.warn]] (method: calls)
+- [[web-interface/web-interface/web/templates/base.html.md|CSRF_TOKEN]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
 - [[web-interface/web-interface/src/router/mesh_topology.go.md|mesh_topology.go]] (calls)
@@ -47,6 +48,7 @@ Automatically generated mirror for `web-interface/web/static/js/home-transport-m
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|cleanupHomePage]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|closeInspector]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|ensureDynamicServiceLinks]] (function: belongs_to) — *plus any declared dependencies for dynamically discovered microservices.*
+- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|escapeHtml]] (function: belongs_to)
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|filterProtocol]] (function: belongs_to) — *Protocol Filter*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|getPathAndMid]] (function: belongs_to) — *Calculate Curved Path & Midpoint between two nodes*
 - [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|getProtoColor]] (function: belongs_to)
