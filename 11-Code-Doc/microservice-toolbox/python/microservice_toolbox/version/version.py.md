@@ -26,12 +26,12 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/version.py.md|_THIS_FILE]] (constant: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/version.py.md|get_version]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/version.py.md|reset_version]] (function: belongs_to) — *Clears the cached version so the next get_version() will re-resolve.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/version.py.md|resolve_version]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/version.py.md|set_version]] (function: belongs_to) — *Explicitly sets the cached version (primarily for testing). Rejects empty values.*
+- [[microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/version/version.py.md|_THIS_FILE]] (constant: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/version/version.py.md|get_version]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/version/version.py.md|reset_version]] (function: belongs_to) — *Clears the cached version so the next get_version() will re-resolve.*
+- [[microservice-toolbox/python/microservice_toolbox/version/version.py.md|resolve_version]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/version/version.py.md|set_version]] (function: belongs_to) — *Explicitly sets the cached version (primarily for testing). Rejects empty values.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

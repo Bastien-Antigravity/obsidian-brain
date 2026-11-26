@@ -23,8 +23,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/network/grpc_server.py.md|grpc_server.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/network/tls.py.md|tls.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/network/grpc_server.py.md|grpc_server.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/network/tls.py.md|tls.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

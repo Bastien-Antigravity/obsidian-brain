@@ -23,7 +23,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/grpc_client/notif_service_pb2.py.md|DESCRIPTOR]] (constant: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/notification/grpc_client/notif_service_pb2.py.md|DESCRIPTOR]] (constant: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

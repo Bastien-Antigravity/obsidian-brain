@@ -19,10 +19,10 @@ Automatically generated mirror for `distributed-config/src/cgo_bridge/security.g
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/distributed_config.go.md|distributed_config.go]] (imports)
-- [[distributed-config/distributed-config/src/cgo_bridge/sanitizer.go.md|sanitizeString]] (function: calls) — *that might have leaked through the FFI boundary.*
-- [[distributed-config/distributed-config/src/cgo_bridge/sanitizer.go.md|sanitizer.go]] (same_package)
+- [[distributed-config/distributed_config.go.md|distributed_config.go]] (imports)
+- [[distributed-config/src/cgo_bridge/sanitizer.go.md|sanitizeString]] (function: calls) — *that might have leaked through the FFI boundary.*
+- [[distributed-config/src/cgo_bridge/sanitizer.go.md|sanitizer.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/cgo_bridge/security.go.md|Decrypt]] (function: belongs_to) — *Decrypt is a Go-native wrapper for distributed_config.Decrypt.*
+- [[distributed-config/src/cgo_bridge/security.go.md|Decrypt]] (function: belongs_to) — *Decrypt is a Go-native wrapper for distributed_config.Decrypt.*
 <!-- SYNC:END -->

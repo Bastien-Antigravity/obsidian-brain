@@ -17,7 +17,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/co
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|db_config.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|db_config.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

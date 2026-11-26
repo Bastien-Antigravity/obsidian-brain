@@ -19,68 +19,68 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|parse_cli_args]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|extract_local_tls_config]] (function: calls) — *Normalizes a raw dict or LocalTLSConfig instance into a trimmed LocalTLSConfig.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|is_empty]] (function: calls) — *Returns True when all path fields are empty and verify_client is unset.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/merger.py.md|merger.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|get_base_dir]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|helpers.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls) — *Generic callback alias for backward compatibility*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|decode]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|encode]] (function: calls)
+- [[microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (same_package)
+- [[microservice-toolbox/python/microservice_toolbox/config/args.py.md|parse_cli_args]] (function: calls)
+- [[microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|extract_local_tls_config]] (function: calls) — *Normalizes a raw dict or LocalTLSConfig instance into a trimmed LocalTLSConfig.*
+- [[microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|is_empty]] (function: calls) — *Returns True when all path fields are empty and verify_client is unset.*
+- [[microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (same_package)
+- [[microservice-toolbox/python/microservice_toolbox/config/merger.py.md|merger.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|get_base_dir]] (function: calls)
+- [[microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|helpers.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls) — *Generic callback alias for backward compatibility*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
+- [[microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/rust/src/business/models.rs.md|decode]] (function: calls)
+- [[microservice-toolbox/rust/src/business/models.rs.md|encode]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|AppConfig]] (class: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|__del__]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|__init__]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_apply_cli_overrides]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_apply_file_override]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_bridge_cb]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_check_and_add]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_get_addr]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_load_from_file]] (function: belongs_to) — *Full merge of all file data into self.data*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_load_public_key]] (function: belongs_to) — *Finds and loads public.pem into self.data['common']['public_key'].*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_normalize_ip]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_read_and_expand_yaml]] (function: belongs_to) — *Helper to read YAML file with environment variable expansion.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_sync_from_bridge]] (function: belongs_to) — *Pulls the full configuration state from the Go bridge into self.data.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|close]] (function: belongs_to) — *Releases the underlying DistConf handle.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|common]] (function: belongs_to) — *Provides direct access to the 'common' configuration block.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|decrypt_secret]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|deep_merge]] (function: belongs_to) — *Wrapper around standalone deep_merge for backward compatibility.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|env_expander]] (function: belongs_to) — *Expand Environment Variables: ${VAR}, ${VAR:default}, or ${VAR:-default}*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_capability]] (function: belongs_to) — *Returns the dictionary for a named capability from the 'capabilities' section.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_config]] (function: belongs_to) — *Retrieves a value from the bridge or local data.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local_tls_config]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_public_ip]] (function: belongs_to) — *Returns the configured public IP from common.public_ip.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_rest_addr]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_service_name]] (function: belongs_to) — *Returns the standardized program name.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_version]] (function: belongs_to) — *Returns the dynamic semantic version of the microservice from VERSION.txt.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config_with_logger]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_live_conf_update]] (function: belongs_to) — *Registers a callback for live configuration updates (Dynamic Fleet Config).*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_registry_update]] (function: belongs_to) — *Registers a callback for service registry changes (Service Discovery).*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_update]] (function: belongs_to) — *Deprecated: Use on_live_conf_update(). Semantic alias for backward compatibility.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: belongs_to) — *Updates the logger after instantiation.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|share_config]] (function: belongs_to) — *Shares service configuration with the ecosystem.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Synchronizes configuration state with the remote Config Server via the bridge.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/test_logger.py.md|test_logger.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/test_logger.py.md|test_logger.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|AppConfig]] (class: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|__del__]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|__init__]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_apply_cli_overrides]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_apply_file_override]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_bridge_cb]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_check_and_add]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_get_addr]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_load_from_file]] (function: belongs_to) — *Full merge of all file data into self.data*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_load_public_key]] (function: belongs_to) — *Finds and loads public.pem into self.data['common']['public_key'].*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_normalize_ip]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_read_and_expand_yaml]] (function: belongs_to) — *Helper to read YAML file with environment variable expansion.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|_sync_from_bridge]] (function: belongs_to) — *Pulls the full configuration state from the Go bridge into self.data.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|close]] (function: belongs_to) — *Releases the underlying DistConf handle.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|common]] (function: belongs_to) — *Provides direct access to the 'common' configuration block.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|decrypt_secret]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|deep_merge]] (function: belongs_to) — *Wrapper around standalone deep_merge for backward compatibility.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|env_expander]] (function: belongs_to) — *Expand Environment Variables: ${VAR}, ${VAR:default}, or ${VAR:-default}*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_capability]] (function: belongs_to) — *Returns the dictionary for a named capability from the 'capabilities' section.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_config]] (function: belongs_to) — *Retrieves a value from the bridge or local data.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_grpc_listen_addr]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_listen_addr]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_local_tls_config]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_public_ip]] (function: belongs_to) — *Returns the configured public IP from common.public_ip.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_rest_addr]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_service_name]] (function: belongs_to) — *Returns the standardized program name.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|get_version]] (function: belongs_to) — *Returns the dynamic semantic version of the microservice from VERSION.txt.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|load_config_with_logger]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_live_conf_update]] (function: belongs_to) — *Registers a callback for live configuration updates (Dynamic Fleet Config).*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_registry_update]] (function: belongs_to) — *Registers a callback for service registry changes (Service Discovery).*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_update]] (function: belongs_to) — *Deprecated: Use on_live_conf_update(). Semantic alias for backward compatibility.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: belongs_to) — *Updates the logger after instantiation.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|share_config]] (function: belongs_to) — *Shares service configuration with the ecosystem.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Synchronizes configuration state with the remote Config Server via the bridge.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*
+- [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
+- [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
+- [[microservice-toolbox/python/test_logger.py.md|test_logger.py]] (calls)
+- [[microservice-toolbox/python/test_logger.py.md|test_logger.py]] (imports)
 <!-- SYNC:END -->

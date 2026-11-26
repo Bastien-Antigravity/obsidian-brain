@@ -22,5 +22,5 @@ Automatically generated mirror for `watchdog-agent/src/utils/lock_unix.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/src/utils/lock_unix.go.md|AcquireLock]] (function: belongs_to) — *AcquireLock opens and locks the lock file exclusively on Unix-like systems.*
+- [[watchdog-agent/src/utils/lock_unix.go.md|AcquireLock]] (function: belongs_to) — *AcquireLock opens and locks the lock file exclusively on Unix-like systems.*
 <!-- SYNC:END -->

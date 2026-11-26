@@ -23,11 +23,11 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/version/version.py.md|version.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/version/version.py.md|version.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

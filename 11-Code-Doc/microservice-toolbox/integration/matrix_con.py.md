@@ -16,5 +16,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/integration/matrix_con.py.md|main]] (function: belongs_to)
+- [[microservice-toolbox/integration/matrix_con.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

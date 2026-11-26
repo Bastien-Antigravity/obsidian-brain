@@ -20,13 +20,13 @@ Automatically generated mirror for `flexible-logger/src/sink/rolling_file_test.g
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|NewRollingFileWriter]] (function: calls) — *NewRollingFileWriter initializes a new RollingFileWriter.*
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.Close]] (method: calls) — *Close closes the underlying file handle.*
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.Write]] (method: calls) — *Write writes data to the current file, rotating beforehand if size exceeds maxBytes.*
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (same_package)
+- [[flexible-logger/src/sink/rolling_file.go.md|NewRollingFileWriter]] (function: calls) — *NewRollingFileWriter initializes a new RollingFileWriter.*
+- [[flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.Close]] (method: calls) — *Close closes the underlying file handle.*
+- [[flexible-logger/src/sink/rolling_file.go.md|RollingFileWriter.Write]] (method: calls) — *Write writes data to the current file, rotating beforehand if size exceeds maxBytes.*
+- [[flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[flexible-logger/flexible-logger/src/sink/rolling_file_test.go.md|TestRollingFileWriter_Rotation]] (function: belongs_to)
+- [[flexible-logger/src/sink/rolling_file_test.go.md|TestRollingFileWriter_Rotation]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

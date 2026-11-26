@@ -19,28 +19,28 @@ Automatically generated mirror for `config-server/src/grpc_control/grpc_service.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.String]] (method: calls)
-- [[config-server/config-server/src/grpc_control/config_server.pb.go.md|config_server.pb.go]] (same_package)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|RegisterConfigControlServiceServer]] (function: calls)
-- [[config-server/config-server/src/grpc_control/config_server_grpc.pb.go.md|config_server_grpc.pb.go]] (same_package)
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.IsRunning]] (method: defines_method) — *IsRunning returns whether the gRPC server is running*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.Start]] (method: defines_method) — *Start starts the gRPC server (Non-blocking)*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.Stop]] (method: defines_method) — *Stop gracefully stops the gRPC server*
-- [[config-server/config-server/src/grpc_control/service.go.md|NewControlService]] (function: calls) — *NewControlService creates a new ControlServiceImpl instance*
-- [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (same_package)
-- [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Error]] (method: calls)
-- [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Info]] (method: calls)
-- [[config-server/config-server/src/grpc_control/service_test.go.md|mockLogger.Warning]] (method: calls)
-- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
-- [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
+- [[config-server/src/grpc_control/config_server.pb.go.md|ControlResponse.String]] (method: calls)
+- [[config-server/src/grpc_control/config_server.pb.go.md|config_server.pb.go]] (same_package)
+- [[config-server/src/grpc_control/config_server_grpc.pb.go.md|RegisterConfigControlServiceServer]] (function: calls)
+- [[config-server/src/grpc_control/config_server_grpc.pb.go.md|config_server_grpc.pb.go]] (same_package)
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService.IsRunning]] (method: defines_method) — *IsRunning returns whether the gRPC server is running*
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService.Start]] (method: defines_method) — *Start starts the gRPC server (Non-blocking)*
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService.Stop]] (method: defines_method) — *Stop gracefully stops the gRPC server*
+- [[config-server/src/grpc_control/service.go.md|NewControlService]] (function: calls) — *NewControlService creates a new ControlServiceImpl instance*
+- [[config-server/src/grpc_control/service.go.md|service.go]] (same_package)
+- [[config-server/src/grpc_control/service_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/src/grpc_control/service_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/src/grpc_control/service_test.go.md|mockLogger.Warning]] (method: calls)
+- [[config-server/src/grpc_control/service_test.go.md|service_test.go]] (same_package)
+- [[config-server/src/server/controller.go.md|controller.go]] (imports)
+- [[config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.IsRunning]] (method: belongs_to) — *IsRunning returns whether the gRPC server is running*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.Start]] (method: belongs_to) — *Start starts the gRPC server (Non-blocking)*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService.Stop]] (method: belongs_to) — *Stop gracefully stops the gRPC server*
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: belongs_to)
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: defines_method)
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|NewGRPCService]] (function: belongs_to) — *NewGRPCService creates a new GRPCService instance*
+- [[config-server/cmd/config-server/main.go.md|main.go]] (calls)
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService.IsRunning]] (method: belongs_to) — *IsRunning returns whether the gRPC server is running*
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService.Start]] (method: belongs_to) — *Start starts the gRPC server (Non-blocking)*
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService.Stop]] (method: belongs_to) — *Stop gracefully stops the gRPC server*
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: belongs_to)
+- [[config-server/src/grpc_control/grpc_service.go.md|GRPCService]] (struct: defines_method)
+- [[config-server/src/grpc_control/grpc_service.go.md|NewGRPCService]] (function: belongs_to) — *NewGRPCService creates a new GRPCService instance*
 <!-- SYNC:END -->

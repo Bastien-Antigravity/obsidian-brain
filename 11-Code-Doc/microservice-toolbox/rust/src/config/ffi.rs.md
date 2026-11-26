@@ -19,16 +19,16 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/ffi.rs`
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|LocalTLSConfig.is_empty]] (method: calls) — *Returns true when all fields are unset/empty.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (same_package)
+- [[microservice-toolbox/rust/src/config/loader.rs.md|LocalTLSConfig.is_empty]] (method: calls) — *Returns true when all fields are unset/empty.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|DistConfLib]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|get_lib]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|resolve_libdistconf_path]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/ffi.rs.md|to_rust_string]] (function: belongs_to) — ** After calling this function, `c_ptr` must not be used again.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
+- [[microservice-toolbox/rust/src/config/ffi.rs.md|DistConfLib]] (struct: belongs_to)
+- [[microservice-toolbox/rust/src/config/ffi.rs.md|get_lib]] (function: belongs_to)
+- [[microservice-toolbox/rust/src/config/ffi.rs.md|resolve_libdistconf_path]] (function: belongs_to)
+- [[microservice-toolbox/rust/src/config/ffi.rs.md|to_rust_string]] (function: belongs_to) — ** After calling this function, `c_ptr` must not be used again.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (calls)
+- [[microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
+- [[microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (same_package)
+- [[microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (imports)
 <!-- SYNC:END -->

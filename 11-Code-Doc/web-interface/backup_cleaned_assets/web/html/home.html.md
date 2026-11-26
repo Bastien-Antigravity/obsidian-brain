@@ -23,9 +23,9 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/home.html.md|#homePassword (input)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/home.html.md|#homeUsername (input)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/home.html.md|#video-background (video)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/home.html.md|#homePassword (input)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/home.html.md|#homeUsername (input)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/home.html.md|#video-background (video)]] (element: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

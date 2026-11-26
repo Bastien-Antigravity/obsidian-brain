@@ -18,24 +18,26 @@ tags:
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py`.
 
 > **Essential Process**:
-> Scaffolds a new Bastien-Antigravity microservice adhering to canonical repository structure, mandatory root files, Docker standards, and BDD specifications.
+> CLI entrypoint and orchestration facade for scaffolding Bastien-Antigravity microservices, delegating language-specific code generation to modular single-concern generators under src.lifecycle.scaffolder.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/common.py.md|_is_external_domain_workspace]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/common.py.md|generate_bdd_spec]] (function: calls) — *Generates the initial BDD behavior specification note in 02-Business-BDD and service spec in 06-Microservices.*
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/common.py.md|generate_common_files]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/common.py.md|register_sandbox_service]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/common.py.md|resolve_workspace_root]] (function: calls) — *Resolves the active workspace root dynamically without hardcoded folder names.*
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/cpp_generator.py.md|generate_cpp_scaffold]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/go_generator.py.md|generate_go_scaffold]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/python_generator.py.md|generate_python_scaffold]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffolder/rust_generator.py.md|generate_rust_scaffold]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/models/build_spec.py.md|allocate_domain_port]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/models/build_spec.py.md|build_spec.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|create_file]] (function: belongs_to) — *Creates a file with parent directory creation, respecting dry-run mode.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|create_symlink]] (function: belongs_to) — *Creates a symbolic link, respecting dry-run mode.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_bdd_spec]] (function: belongs_to) — *Generates the initial BDD behavior specification note in 02-Business-BDD.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_common_files]] (function: belongs_to) — *Generates files mandatory across all languages: Dockerfile, compose, AGENTS.md, etc.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_go_scaffold]] (function: belongs_to) — *Generates the Go microservice skeleton and source files.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_python_scaffold]] (function: belongs_to) — *Generates the Python microservice skeleton and architecture folders.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|generate_rust_scaffold]] (function: belongs_to) — *Generates the Rust microservice skeleton and source files.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|resolve_workspace_root]] (function: belongs_to) — *Resolves the Bastien-Antigravity workspace root dynamically.*
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_microservice.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

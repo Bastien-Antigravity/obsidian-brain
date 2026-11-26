@@ -19,14 +19,14 @@ Automatically generated mirror for `distributed-config/distconf/python/examples/
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|DistConfig]] (class: calls)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|__init__.py]] (imports)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|close]] (function: calls)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|decrypt]] (function: calls)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|get]] (function: calls)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|set]] (function: calls)
-- [[distributed-config/distributed-config/distconf/python/distconf/__init__.py.md|validate_mandatory_services]] (function: calls)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|DistConfig]] (class: calls)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|__init__.py]] (imports)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|close]] (function: calls)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|decrypt]] (function: calls)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|get]] (function: calls)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|set]] (function: calls)
+- [[distributed-config/distconf/python/distconf/__init__.py.md|validate_mandatory_services]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/distconf/python/examples/basic_usage.py.md|main]] (function: belongs_to)
+- [[distributed-config/distconf/python/examples/basic_usage.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

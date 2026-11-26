@@ -23,7 +23,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/EasyMindMap.html.md|#band (div)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/EasyMindMap.html.md|#band (div)]] (element: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

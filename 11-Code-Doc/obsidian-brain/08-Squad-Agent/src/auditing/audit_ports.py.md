@@ -23,28 +23,30 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/a
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|VAULT_ROOT]] (constant: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|WORKSPACE_ROOT]] (constant: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/bootstrap.py.md|bootstrap.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|get_logger]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|VAULT_ROOT]] (constant: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|get_logger]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_compose_ports]] (function: belongs_to) — *Loads port bindings and env defaults from docker-compose.yaml.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_registry_ports]] (function: belongs_to) — *Loads services from service-registry.json.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_ssot_capabilities]] (function: belongs_to) — *Loads authoritative port mappings from native.yaml.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|parse_env_default]] (function: belongs_to) — *Extracts numeric port default from '${VAR:DEFAULT}', '${VAR:-DEFAULT}' or raw int/str.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|ALLOWED_PORT_ALIAS_PAIRS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|PORT_KEYS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|_collect_yaml_audit_targets]] (function: belongs_to) — *Collects all YAML configuration slices to audit for drift and port collisions.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|check_intra_service_port_uniqueness]] (function: belongs_to) — *Verifies all declared ports within each capability block are mutually distinct.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|extract_capability_ports]] (function: belongs_to) — *Extracts all declared numeric ports from a single capability block.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_compose_ports]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_registry_ports]] (function: belongs_to) — *Loads services from service-registry.json.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_ssot_capabilities]] (function: belongs_to) — *Loads authoritative port mappings from native.yaml.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|load_yaml_capabilities]] (function: belongs_to) — *Loads port mappings from capabilities and top-level service blocks in a YAML file.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|parse_env_default]] (function: belongs_to) — *Extracts numeric port default from '${VAR:DEFAULT}', '${VAR:-DEFAULT}' or raw int/str.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

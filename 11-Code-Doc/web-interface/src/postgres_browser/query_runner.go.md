@@ -23,16 +23,16 @@ Automatically generated mirror for `web-interface/src/postgres_browser/query_run
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Error]] (method: calls)
-- [[web-interface/web-interface/src/postgres_browser/query_runner.go.md|BrowserHandler.ExecuteQuery]] (method: defines_method) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
+- [[web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
+- [[web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)
+- [[web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Error]] (method: calls)
+- [[web-interface/src/postgres_browser/query_runner.go.md|BrowserHandler.ExecuteQuery]] (method: defines_method) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/postgres_browser/query_runner.go.md|BrowserHandler.ExecuteQuery]] (method: belongs_to) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
-- [[web-interface/web-interface/src/postgres_browser/query_runner.go.md|BrowserHandler]] (struct: defines_method) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
+- [[web-interface/src/postgres_browser/query_runner.go.md|BrowserHandler.ExecuteQuery]] (method: belongs_to) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
+- [[web-interface/src/postgres_browser/query_runner.go.md|BrowserHandler]] (struct: defines_method) — *ExecuteQuery runs a custom read-only SQL SELECT statement.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

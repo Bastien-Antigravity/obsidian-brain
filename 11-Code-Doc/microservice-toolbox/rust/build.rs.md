@@ -26,7 +26,7 @@ Automatically generated mirror for `microservice-toolbox/rust/build.rs`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/build.rs.md|main]] (function: belongs_to)
+- [[microservice-toolbox/rust/build.rs.md|main]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

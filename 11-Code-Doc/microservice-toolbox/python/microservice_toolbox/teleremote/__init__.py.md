@@ -13,7 +13,7 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|client.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|client.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

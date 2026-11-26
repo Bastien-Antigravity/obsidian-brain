@@ -19,23 +19,23 @@ Automatically generated mirror for `notif-server/src/core/request_handler.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapDeSerialize]] (method: defines_method)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: defines_method) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
-- [[notif-server/notif-server/src/core/test_logger_test.go.md|testNotifierLogger.SetLevel]] (method: calls)
-- [[notif-server/notif-server/src/core/test_logger_test.go.md|test_logger_test.go]] (same_package)
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapDeSerialize]] (method: defines_method)
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: defines_method) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
+- [[notif-server/src/core/test_logger_test.go.md|testNotifierLogger.SetLevel]] (method: calls)
+- [[notif-server/src/core/test_logger_test.go.md|test_logger_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
-- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
-- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
-- [[notif-server/notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
-- [[notif-server/notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: belongs_to) — *This helper is exposed for servers or other components using this library.*
-- [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: belongs_to)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapDeSerialize]] (method: belongs_to)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: belongs_to) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler]] (struct: belongs_to)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler]] (struct: defines_method)
-- [[notif-server/notif-server/src/server/connection.go.md|connection.go]] (calls)
-- [[notif-server/notif-server/src/server/timeout_test.go.md|timeout_test.go]] (calls)
+- [[notif-server/cmd/test/integration_test.go.md|integration_test.go]] (calls)
+- [[notif-server/src/core/notifier.go.md|notifier.go]] (calls)
+- [[notif-server/src/core/notifier.go.md|notifier.go]] (same_package)
+- [[notif-server/src/core/notifier_test.go.md|notifier_test.go]] (calls)
+- [[notif-server/src/core/notifier_test.go.md|notifier_test.go]] (same_package)
+- [[notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: belongs_to) — *This helper is exposed for servers or other components using this library.*
+- [[notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: belongs_to)
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapDeSerialize]] (method: belongs_to)
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: belongs_to) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler]] (struct: belongs_to)
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler]] (struct: defines_method)
+- [[notif-server/src/server/connection.go.md|connection.go]] (calls)
+- [[notif-server/src/server/timeout_test.go.md|timeout_test.go]] (calls)
 <!-- SYNC:END -->

@@ -23,40 +23,40 @@ Automatically generated mirror for `web-interface/src/router/mesh_topology.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
-- [[web-interface/web-interface/src/mfe/registry.go.md|registry.go]] (imports)
-- [[web-interface/web-interface/src/router/base_ecosystem.go.md|baseProtocolCatalog]] (function: calls)
-- [[web-interface/web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (same_package)
-- [[web-interface/web-interface/src/router/base_ecosystem.go.md|defaultSegregatedChannelsForLink]] (function: calls)
-- [[web-interface/web-interface/src/router/base_ecosystem.go.md|newBaseEcosystemNodes]] (function: calls) — *newBaseEcosystemNodes returns a fresh map of the 11 foundational L1-L3 nodes.*
-- [[web-interface/web-interface/src/router/dynamic.go.md|GetMFERegistry]] (function: calls) — *GetMFERegistry returns the active MFE registry instance, if set.*
-- [[web-interface/web-interface/src/router/dynamic.go.md|checkFleetServicesHealth]] (function: calls) — *Discovers targets dynamically from appConfig capabilities and OpenMFE registrations without hardcoded slices.*
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|formatCapabilityTitle]] (function: calls) — *formatCapabilityTitle converts capability keys like "config_server" to "Config Server".*
-- [[web-interface/web-interface/src/router/dynamic.go.md|resolveAuthoritativeEndpoint]] (function: calls) — *- Secondary Fallback: Alternate endpoint if distinct*
-- [[web-interface/web-interface/web/static/js/home-transport-mesh.js.md|addLink]] (function: calls)
+- [[web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
+- [[web-interface/src/mfe/registry.go.md|registry.go]] (imports)
+- [[web-interface/src/router/base_ecosystem.go.md|baseProtocolCatalog]] (function: calls)
+- [[web-interface/src/router/base_ecosystem.go.md|base_ecosystem.go]] (same_package)
+- [[web-interface/src/router/base_ecosystem.go.md|defaultSegregatedChannelsForLink]] (function: calls)
+- [[web-interface/src/router/base_ecosystem.go.md|newBaseEcosystemNodes]] (function: calls) — *newBaseEcosystemNodes returns a fresh map of the 11 foundational L1-L3 nodes.*
+- [[web-interface/src/router/dynamic.go.md|GetMFERegistry]] (function: calls) — *GetMFERegistry returns the active MFE registry instance, if set.*
+- [[web-interface/src/router/dynamic.go.md|checkFleetServicesHealth]] (function: calls) — *Discovers targets dynamically from appConfig capabilities and OpenMFE registrations without hardcoded slices.*
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
+- [[web-interface/src/router/dynamic.go.md|formatCapabilityTitle]] (function: calls) — *formatCapabilityTitle converts capability keys like "config_server" to "Config Server".*
+- [[web-interface/src/router/dynamic.go.md|resolveAuthoritativeEndpoint]] (function: calls) — *- Secondary Fallback: Alternate endpoint if distinct*
+- [[web-interface/web/static/js/home-transport-mesh.js.md|addLink]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|BuildMeshTopology]] (function: belongs_to) — *- Tier 3: Real-Time WireTap Telemetry (wiretap.Snapshot()) & External Clients (EXT)*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|MeshTopologyLink]] (struct: belongs_to) — *MeshTopologyLink represents an authoritative interservice wire / connection in the mesh.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|MeshTopologyNode]] (struct: belongs_to) — *MeshTopologyNode represents an active ecosystem service or external node in the SVG mesh.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|MeshTopologyParticleStream]] (struct: belongs_to) — *MeshTopologyParticleStream represents an animated particle telemetry stream along a mesh link.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|MeshTopologyProtocol]] (struct: belongs_to) — *MeshTopologyProtocol describes a communication protocol filter and active wire count.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|MeshTopologyResponse]] (struct: belongs_to) — *MeshTopologyResponse holds the full serialized topology payload.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|calculateDynamicMeshNodePosition]] (function: belongs_to)
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|ensureWireTapNodeExists]] (function: belongs_to) — *that has not been registered yet.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|ingestBaseEcosystemTier]] (function: belongs_to) — *ingestBaseEcosystemTier resolves dynamic ports and live health for the 11 standard base services.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|ingestDynamicAndFutureMicroservicesTier]] (function: belongs_to) — *microservices (> L3, L2, L4+) from the OpenMFE specification registry.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|ingestWireTapRealTimeTelemetry]] (function: belongs_to) — *3. Enrich existing links with real-time frame/byte counters and segregated information channels.*
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|meshSlotCoord]] (struct: belongs_to)
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|normalizeTopologyNodeID]] (function: belongs_to)
-- [[web-interface/web-interface/src/router/mesh_topology.go.md|resolveWireTapEdgeMetadata]] (function: belongs_to) — *badge label, inspector exchange ID, and particle color.*
-- [[web-interface/web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (calls)
-- [[web-interface/web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (same_package)
-- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (calls)
-- [[web-interface/web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (same_package)
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
+- [[web-interface/src/router/mesh_topology.go.md|BuildMeshTopology]] (function: belongs_to) — *- Tier 3: Real-Time WireTap Telemetry (wiretap.Snapshot()) & External Clients (EXT)*
+- [[web-interface/src/router/mesh_topology.go.md|MeshTopologyLink]] (struct: belongs_to) — *MeshTopologyLink represents an authoritative interservice wire / connection in the mesh.*
+- [[web-interface/src/router/mesh_topology.go.md|MeshTopologyNode]] (struct: belongs_to) — *MeshTopologyNode represents an active ecosystem service or external node in the SVG mesh.*
+- [[web-interface/src/router/mesh_topology.go.md|MeshTopologyParticleStream]] (struct: belongs_to) — *MeshTopologyParticleStream represents an animated particle telemetry stream along a mesh link.*
+- [[web-interface/src/router/mesh_topology.go.md|MeshTopologyProtocol]] (struct: belongs_to) — *MeshTopologyProtocol describes a communication protocol filter and active wire count.*
+- [[web-interface/src/router/mesh_topology.go.md|MeshTopologyResponse]] (struct: belongs_to) — *MeshTopologyResponse holds the full serialized topology payload.*
+- [[web-interface/src/router/mesh_topology.go.md|calculateDynamicMeshNodePosition]] (function: belongs_to)
+- [[web-interface/src/router/mesh_topology.go.md|ensureWireTapNodeExists]] (function: belongs_to) — *that has not been registered yet.*
+- [[web-interface/src/router/mesh_topology.go.md|ingestBaseEcosystemTier]] (function: belongs_to) — *ingestBaseEcosystemTier resolves dynamic ports and live health for the 11 standard base services.*
+- [[web-interface/src/router/mesh_topology.go.md|ingestDynamicAndFutureMicroservicesTier]] (function: belongs_to) — *microservices (> L3, L2, L4+) from the OpenMFE specification registry.*
+- [[web-interface/src/router/mesh_topology.go.md|ingestWireTapRealTimeTelemetry]] (function: belongs_to) — *3. Enrich existing links with real-time frame/byte counters and segregated information channels.*
+- [[web-interface/src/router/mesh_topology.go.md|meshSlotCoord]] (struct: belongs_to)
+- [[web-interface/src/router/mesh_topology.go.md|normalizeTopologyNodeID]] (function: belongs_to)
+- [[web-interface/src/router/mesh_topology.go.md|resolveWireTapEdgeMetadata]] (function: belongs_to) — *badge label, inspector exchange ID, and particle color.*
+- [[web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (calls)
+- [[web-interface/src/router/mesh_topology_test.go.md|mesh_topology_test.go]] (same_package)
+- [[web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (calls)
+- [[web-interface/src/router/spec_exchange_test.go.md|spec_exchange_test.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

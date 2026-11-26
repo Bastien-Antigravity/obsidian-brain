@@ -20,20 +20,20 @@ Automatically generated mirror for `watchdog-agent/src/shipper/parser_test.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[watchdog-agent/watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|ParseLogLine]] (function: calls) — *Returns (log, true) strictly for canonical ERROR (10) and CRITICAL (11) entries.*
-- [[watchdog-agent/watchdog-agent/src/shipper/parser.go.md|parser.go]] (same_package)
+- [[watchdog-agent/src/rest/rest_handler_test.go.md|mockWatchdogLogger.Error]] (method: calls)
+- [[watchdog-agent/src/shipper/parser.go.md|ParseLogLine]] (function: calls) — *Returns (log, true) strictly for canonical ERROR (10) and CRITICAL (11) entries.*
+- [[watchdog-agent/src/shipper/parser.go.md|parser.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_CloudJSONFormat]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_CriticalSeverity]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_FallbackRegex]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_FixedFormat]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_IgnoreInfoAndWarningAndMentionedError]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_RejectsInvalidTimestamp]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_SanitizesPoisonPillUTF8AndNUL]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_ShortLineWithKeyword]] (function: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_StackTraceMetadata]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_CloudJSONFormat]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_CriticalSeverity]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_FallbackRegex]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_FixedFormat]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_IgnoreInfoAndWarningAndMentionedError]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_RejectsInvalidTimestamp]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_SanitizesPoisonPillUTF8AndNUL]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_ShortLineWithKeyword]] (function: belongs_to)
+- [[watchdog-agent/src/shipper/parser_test.go.md|TestParseLogLine_StackTraceMetadata]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

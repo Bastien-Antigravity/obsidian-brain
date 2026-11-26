@@ -20,22 +20,22 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: calls) — *Render +/- 20 ticks from the center to fully saturate the layout*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: defines_method)
-- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
-- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/html/OrderbookAggregator_OptionB.html.md|ROW_COUNT_HALF]] (constant: calls) — *Render +/- 20 ticks from the center to fully saturate the layout*
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: defines_method)
+- [[web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.get]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer]] (class: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer]] (class: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|checkArr]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (same_package)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.detectTickSize]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.render]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer.setVolumeMap]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer]] (class: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|DOMRenderer]] (class: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/DOMRenderer.js.md|checkArr]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/app.js.md|app.js]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

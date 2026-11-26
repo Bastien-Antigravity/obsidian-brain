@@ -22,13 +22,13 @@ Automatically generated mirror for `safe-socket/src/interfaces/profile.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|ProtocolHello]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|ProtocolNone]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|ProtocolType]] (struct: belongs_to) — *ProtocolType defines the application-level handshake or startup protocol.*
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|SocketProfile]] (interface: belongs_to) — *SocketProfile defines the behavior for a connection strategy.*
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|TransportFramedTCP]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|TransportShm]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|TransportTLS]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|TransportType]] (struct: belongs_to) — *TransportType defines the underlying transport mechanism.*
-- [[safe-socket/safe-socket/src/interfaces/profile.go.md|TransportUDP]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/profile.go.md|ProtocolHello]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/profile.go.md|ProtocolNone]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/profile.go.md|ProtocolType]] (struct: belongs_to) — *ProtocolType defines the application-level handshake or startup protocol.*
+- [[safe-socket/src/interfaces/profile.go.md|SocketProfile]] (interface: belongs_to) — *SocketProfile defines the behavior for a connection strategy.*
+- [[safe-socket/src/interfaces/profile.go.md|TransportFramedTCP]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/profile.go.md|TransportShm]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/profile.go.md|TransportTLS]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/profile.go.md|TransportType]] (struct: belongs_to) — *TransportType defines the underlying transport mechanism.*
+- [[safe-socket/src/interfaces/profile.go.md|TransportUDP]] (constant: belongs_to)
 <!-- SYNC:END -->

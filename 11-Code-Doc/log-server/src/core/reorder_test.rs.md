@@ -19,31 +19,31 @@ Automatically generated mirror for `log-server/src/core/reorder_test.rs`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/core/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|handle_grpc_message]] (function: calls) — *Handle gRPC log message*
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (same_package)
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: calls) — *Retrieve the most recent entries up to `limit`, with optional filters*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: calls) — *Create new ring buffer with given capacity and internal broadcast channel*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: calls) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (same_package)
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
-- [[log-server/log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: calls) — *Create new log writer with custom config and explicit file path*
-- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: calls)
-- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: calls) — *Log writer configuration*
-- [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
-- [[log-server/log-server/src/facade/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/models/log_entry.rs.md|LogEntry]] (struct: calls) — *Internal log request wrapper for internal use*
-- [[log-server/log-server/src/models/log_entry.rs.md|log_entry.rs]] (imports)
-- [[log-server/log-server/src/models/log_packet.rs.md|LogPacket]] (struct: calls) — *A packet containing a sequence number and the log entry*
-- [[log-server/log-server/src/models/log_packet.rs.md|log_packet.rs]] (imports)
-- [[log-server/log-server/src/models/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
-- [[log-server/log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: calls) — *Split into its component halves*
+- [[log-server/src/core/mod.rs.md|mod.rs]] (imports)
+- [[log-server/src/core/protocol_handlers.rs.md|handle_grpc_message]] (function: calls) — *Handle gRPC log message*
+- [[log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
+- [[log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (same_package)
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: calls) — *Retrieve the most recent entries up to `limit`, with optional filters*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: calls) — *Create new ring buffer with given capacity and internal broadcast channel*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: calls) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
+- [[log-server/src/core/ring_buffer.rs.md|ring_buffer.rs]] (same_package)
+- [[log-server/src/facade/log_writer.rs.md|LogWriter.start_writer_task]] (method: calls) — *and the background task JoinHandle for lifecycle supervision and fail-fast termination.*
+- [[log-server/src/facade/log_writer.rs.md|LogWriter.with_config_and_path]] (method: calls) — *Create new log writer with custom config and explicit file path*
+- [[log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: calls)
+- [[log-server/src/facade/log_writer.rs.md|WriterConfig]] (struct: calls) — *Log writer configuration*
+- [[log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
+- [[log-server/src/facade/mod.rs.md|mod.rs]] (imports)
+- [[log-server/src/models/log_entry.rs.md|LogEntry]] (struct: calls) — *Internal log request wrapper for internal use*
+- [[log-server/src/models/log_entry.rs.md|log_entry.rs]] (imports)
+- [[log-server/src/models/log_packet.rs.md|LogPacket]] (struct: calls) — *A packet containing a sequence number and the log entry*
+- [[log-server/src/models/log_packet.rs.md|log_packet.rs]] (imports)
+- [[log-server/src/models/mod.rs.md|mod.rs]] (imports)
+- [[log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
+- [[log-server/src/transport/safe_socket.rs.md|SafeSocket.split]] (method: calls) — *Split into its component halves*
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/core/reorder_test.rs.md|test_clean_shutdown_drains_all_pending_messages_without_hanging]] (function: belongs_to)
-- [[log-server/log-server/src/core/reorder_test.rs.md|test_concurrent_producers_1000_messages_strict_fifo_and_identical_disk_ring_order]] (function: belongs_to)
-- [[log-server/log-server/src/core/reorder_test.rs.md|test_single_authority_fifo_ordering_ignores_caller_sequence_drift]] (function: belongs_to)
-- [[log-server/log-server/src/core/reorder_test.rs.md|unique_test_log_path]] (function: belongs_to)
+- [[log-server/src/core/reorder_test.rs.md|test_clean_shutdown_drains_all_pending_messages_without_hanging]] (function: belongs_to)
+- [[log-server/src/core/reorder_test.rs.md|test_concurrent_producers_1000_messages_strict_fifo_and_identical_disk_ring_order]] (function: belongs_to)
+- [[log-server/src/core/reorder_test.rs.md|test_single_authority_fifo_ordering_ignores_caller_sequence_drift]] (function: belongs_to)
+- [[log-server/src/core/reorder_test.rs.md|unique_test_log_path]] (function: belongs_to)
 <!-- SYNC:END -->

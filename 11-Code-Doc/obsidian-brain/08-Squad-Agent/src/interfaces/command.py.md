@@ -26,11 +26,11 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/fleet/map_feats.py.md|map_feats.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/command.py.md|Command]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/command.py.md|execute]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/fleet/map_feats.py.md|map_feats.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/command.py.md|Command]] (class: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/command.py.md|execute]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

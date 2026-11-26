@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/args.py.md|args.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/local_tls.py.md|local_tls.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

@@ -26,7 +26,7 @@ Automatically generated mirror for `obsidian-brain/05-Fleet-Operation/00-Repo-Co
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[05-Fleet-Operation/obsidian-brain/05-Fleet-Operation/00-Repo-Control/fleet-version.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/05-Fleet-Operation/00-Repo-Control/fleet-version.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

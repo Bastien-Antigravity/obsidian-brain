@@ -19,36 +19,36 @@ Automatically generated mirror for `microservice-toolbox/rust/src/lifecycle/mana
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/lifecycle/manager.go.md|ShutdownFunc]] (struct: calls) — *ShutdownFunc is a function called during graceful shutdown.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.execute_cleanups]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.new]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: defines_method) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.request_shutdown]] (method: defines_method) — *Wakes `wait()` programmatically to run cleanups.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.wait]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.error]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: calls) — *Logger trait defines the standard interface for structured logging across the toolbox.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), panics to prevent microservices from running dark.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/go/pkg/lifecycle/manager.go.md|ShutdownFunc]] (struct: calls) — *ShutdownFunc is a function called during graceful shutdown.*
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.execute_cleanups]] (method: defines_method)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.new]] (method: defines_method)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register]] (method: defines_method)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: defines_method) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.request_shutdown]] (method: defines_method) — *Wakes `wait()` programmatically to run cleanups.*
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.wait]] (method: defines_method)
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.error]] (method: calls)
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|DefaultLogger.info]] (method: calls)
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|Logger]] (trait: calls) — *Logger trait defines the standard interface for structured logging across the toolbox.*
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|ensure_safe_logger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), panics to prevent microservices from running dark.*
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (imports)
+- [[microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/connection.rs.md|connection.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/conn_manager/mod.rs.md|mod.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|CleanupEntry]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.execute_cleanups]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.new]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: belongs_to) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.request_shutdown]] (method: belongs_to) — *Wakes `wait()` programmatically to run cleanups.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.wait]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager]] (struct: defines_method)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|new_manager]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|new_manager_with_logger]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/mod.rs.md|mod.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)
+- [[microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (calls)
+- [[microservice-toolbox/rust/examples/test_logger.rs.md|test_logger.rs]] (imports)
+- [[microservice-toolbox/rust/src/conn_manager/connection.rs.md|connection.rs]] (imports)
+- [[microservice-toolbox/rust/src/conn_manager/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|CleanupEntry]] (struct: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.execute_cleanups]] (method: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.new]] (method: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register]] (method: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.register_background]] (method: belongs_to) — *Synchronously registers an async cleanup hook with zero race against immediate shutdown.*
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.request_shutdown]] (method: belongs_to) — *Wakes `wait()` programmatically to run cleanups.*
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager.wait]] (method: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager]] (struct: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|LifecycleManager]] (struct: defines_method)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|new_manager]] (function: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|new_manager_with_logger]] (function: belongs_to)
+- [[microservice-toolbox/rust/src/lifecycle/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (calls)
 <!-- SYNC:END -->

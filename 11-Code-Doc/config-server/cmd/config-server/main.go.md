@@ -19,30 +19,30 @@ Automatically generated mirror for `config-server/cmd/config-server/main.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/grpc_control/grpc_service.go.md|NewGRPCService]] (function: calls) — *NewGRPCService creates a new GRPCService instance*
-- [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (imports)
-- [[config-server/config-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from live config-server sources.*
-- [[config-server/config-server/src/rest/mfe.js.md|mfe.js]] (imports)
-- [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
-- [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
-- [[config-server/config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
-- [[config-server/config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
-- [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
-- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
-- [[config-server/config-server/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
-- [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
-- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Critical]] (method: calls)
-- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Error]] (method: calls)
-- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Info]] (method: calls)
-- [[config-server/config-server/src/telegram/manager_test.go.md|mockLogger.Warning]] (method: calls)
+- [[config-server/src/grpc_control/grpc_service.go.md|NewGRPCService]] (function: calls) — *NewGRPCService creates a new GRPCService instance*
+- [[config-server/src/grpc_control/service.go.md|service.go]] (imports)
+- [[config-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from live config-server sources.*
+- [[config-server/src/rest/mfe.js.md|mfe.js]] (imports)
+- [[config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
+- [[config-server/src/server/controller.go.md|controller.go]] (imports)
+- [[config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
+- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
+- [[config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
+- [[config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
+- [[config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
+- [[config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
+- [[config-server/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
+- [[config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
+- [[config-server/src/telegram/manager_test.go.md|mockLogger.Critical]] (method: calls)
+- [[config-server/src/telegram/manager_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/src/telegram/manager_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/src/telegram/manager_test.go.md|mockLogger.Warning]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/cmd/config-server/main.go.md|main]] (function: belongs_to)
+- [[config-server/cmd/config-server/main.go.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

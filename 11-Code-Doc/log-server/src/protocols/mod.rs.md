@@ -22,5 +22,5 @@ Automatically generated mirror for `log-server/src/protocols/mod.rs`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
+- [[log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (imports)
 <!-- SYNC:END -->

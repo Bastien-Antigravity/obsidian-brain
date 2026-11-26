@@ -26,10 +26,10 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/src/fund
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|ConnectStockDatabase]] (function: belongs_to) — *the service schema exists.*
-- [[web-interface/web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|FormData]] (struct: belongs_to) — *FormData holds view-level stock collections.*
-- [[web-interface/web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|GetTopStocks]] (function: belongs_to) — *GetTopStocks fetches top stocks from the specified table ordered by overall score.*
-- [[web-interface/web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|Stock]] (struct: belongs_to) — *Stock model represents an equity asset with fundamental analysis indicators.*
+- [[web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|ConnectStockDatabase]] (function: belongs_to) — *the service schema exists.*
+- [[web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|FormData]] (struct: belongs_to) — *FormData holds view-level stock collections.*
+- [[web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|GetTopStocks]] (function: belongs_to) — *GetTopStocks fetches top stocks from the specified table ordered by overall score.*
+- [[web-interface/backup_cleaned_assets/src/fundamental_analysis/fundamental_analysis.go.md|Stock]] (struct: belongs_to) — *Stock model represents an equity asset with fundamental analysis indicators.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

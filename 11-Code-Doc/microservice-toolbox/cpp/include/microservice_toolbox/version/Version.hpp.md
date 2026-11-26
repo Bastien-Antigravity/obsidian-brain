@@ -26,21 +26,21 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.hpp]] (imports)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|GetCachedVersionRef]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|GetVersionMutex]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|GetVersion]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|MICROSERVICE_TOOLBOX_VERSION_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_VERSION_HPP*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|ReadVersionFile]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|ResetVersion]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|ResolveVersion]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|SetVersion]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|Trim]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|get_version]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|reset_version]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|resolve_version]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|set_version]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/network/tls.go.md|tls.go]] (calls)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.hpp]] (imports)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|GetCachedVersionRef]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|GetVersionMutex]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|GetVersion]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|MICROSERVICE_TOOLBOX_VERSION_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_VERSION_HPP*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|ReadVersionFile]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|ResetVersion]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|ResolveVersion]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|SetVersion]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|Trim]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|get_version]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|reset_version]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|resolve_version]] (function: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/version/Version.hpp.md|set_version]] (function: belongs_to)
+- [[microservice-toolbox/go/pkg/network/tls.go.md|tls.go]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

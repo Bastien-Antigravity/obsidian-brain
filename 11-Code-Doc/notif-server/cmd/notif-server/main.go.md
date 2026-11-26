@@ -19,25 +19,25 @@ Automatically generated mirror for `notif-server/cmd/notif-server/main.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
-- [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
-- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
-- [[notif-server/notif-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from notif-server sources.*
-- [[notif-server/notif-server/src/rest/mfe.js.md|mfe.js]] (imports)
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts an HTTP server for the REST API on the specified address (e.g. "127.0.0.1:1029" or ":1029").*
-- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
-- [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
-- [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)
-- [[notif-server/notif-server/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
-- [[notif-server/notif-server/src/telegram/manager.go.md|manager.go]] (imports)
+- [[notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
+- [[notif-server/src/core/controller.go.md|controller.go]] (imports)
+- [[notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
+- [[notif-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: calls) — *BuildExchangeContracts constructs the exhaustive contract catalog from notif-server sources.*
+- [[notif-server/src/rest/mfe.js.md|mfe.js]] (imports)
+- [[notif-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
+- [[notif-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: calls) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
+- [[notif-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: calls) — *StartServer starts an HTTP server for the REST API on the specified address (e.g. "127.0.0.1:1029" or ":1029").*
+- [[notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
+- [[notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
+- [[notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
+- [[notif-server/src/server/server.go.md|server.go]] (imports)
+- [[notif-server/src/telegram/manager.go.md|SetupTelegram]] (function: calls) — *SetupTelegram initializes the Tele-Remote client, binds dynamic updates, and registers with Lifecycle Manager.*
+- [[notif-server/src/telegram/manager.go.md|manager.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|main]] (function: belongs_to)
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|verifyTelegramConfig]] (function: belongs_to) — *Fails fast if the token is missing, cannot be decrypted, or fails Telegram API verification.*
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|verifyTelegramToken]] (function: belongs_to) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
-- [[notif-server/notif-server/cmd/notif-server/main_test.go.md|main_test.go]] (calls)
-- [[notif-server/notif-server/cmd/notif-server/main_test.go.md|main_test.go]] (same_package)
+- [[notif-server/cmd/notif-server/main.go.md|main]] (function: belongs_to)
+- [[notif-server/cmd/notif-server/main.go.md|verifyTelegramConfig]] (function: belongs_to) — *Fails fast if the token is missing, cannot be decrypted, or fails Telegram API verification.*
+- [[notif-server/cmd/notif-server/main.go.md|verifyTelegramToken]] (function: belongs_to) — *verifyTelegramToken validates a Telegram bot token against the getMe endpoint.*
+- [[notif-server/cmd/notif-server/main_test.go.md|main_test.go]] (calls)
+- [[notif-server/cmd/notif-server/main_test.go.md|main_test.go]] (same_package)
 <!-- SYNC:END -->

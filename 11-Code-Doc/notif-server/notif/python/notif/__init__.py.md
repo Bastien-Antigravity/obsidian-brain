@@ -23,20 +23,20 @@ Automatically generated mirror for `notif-server/notif/python/notif/__init__.py`
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_FreeString]] (function: calls) — *export Notif_FreeString*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_GetLastError]] (function: calls) — *export Notif_GetLastError*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_SendWithTimeout]] (function: calls) — *export Notif_SendWithTimeout*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_FreeString]] (function: calls) — *export Notif_FreeString*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_GetLastError]] (function: calls) — *export Notif_GetLastError*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_SendWithTimeout]] (function: calls) — *export Notif_SendWithTimeout*
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|NotifClient]] (class: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|NotifError]] (class: belongs_to) — *Exception raised when notification dispatch fails.*
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|__init__]] (function: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|_dispatch]] (function: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|_load_lib]] (function: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|close]] (function: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|send]] (function: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|send_alert]] (function: belongs_to)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|send_with_attachment]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|NotifClient]] (class: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|NotifError]] (class: belongs_to) — *Exception raised when notification dispatch fails.*
+- [[notif-server/notif/python/notif/__init__.py.md|__init__]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|_dispatch]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|_load_lib]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|close]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|send]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|send_alert]] (function: belongs_to)
+- [[notif-server/notif/python/notif/__init__.py.md|send_with_attachment]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

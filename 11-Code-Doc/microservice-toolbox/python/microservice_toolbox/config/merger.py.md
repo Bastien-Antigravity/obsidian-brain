@@ -22,6 +22,6 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/merger.py.md|deep_merge]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/config/merger.py.md|deep_merge]] (function: belongs_to)
 <!-- SYNC:END -->

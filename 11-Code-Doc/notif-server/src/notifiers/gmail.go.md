@@ -19,42 +19,42 @@ Automatically generated mirror for `notif-server/src/notifiers/gmail.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/notifiers/config.go.md|config.go]] (same_package)
-- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: calls) — *getOption retrieves an option from the config map trying multiple case variations.*
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.GetLogLevel]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.GetTag]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.SendMessage]] (method: defines_method) — *- source: System or notifier source tag (used to construct the email Subject).*
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.buildEmail]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.dialAndSend]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.readAttachment]] (method: defines_method) — *readAttachment loads an attachment strictly confined inside attachmentDir via os.OpenRoot.*
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Next]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Start]] (method: defines_method)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: calls)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Error]] (method: calls)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Info]] (method: calls)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Warning]] (method: calls)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
-- [[notif-server/notif-server/src/sanitizer/sanitizer.go.md|RedactSecrets]] (function: calls) — *from error strings and telemetry messages.*
-- [[notif-server/notif-server/src/sanitizer/sanitizer.go.md|SanitizeFilename]] (function: calls) — *quotes, backslashes, and MIME parameter delimiters.*
-- [[notif-server/notif-server/src/sanitizer/sanitizer.go.md|SanitizeHeader]] (function: calls) — *and Unicode line/paragraph separators to prevent MIME/HTTP header injection.*
-- [[notif-server/notif-server/src/sanitizer/sanitizer.go.md|sanitizer.go]] (imports)
+- [[notif-server/src/notifiers/config.go.md|config.go]] (same_package)
+- [[notif-server/src/notifiers/config.go.md|getOption]] (function: calls) — *getOption retrieves an option from the config map trying multiple case variations.*
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.GetLogLevel]] (method: defines_method)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.GetTag]] (method: defines_method)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.SendMessage]] (method: defines_method) — *- source: System or notifier source tag (used to construct the email Subject).*
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.buildEmail]] (method: defines_method)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.dialAndSend]] (method: defines_method)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.readAttachment]] (method: defines_method) — *readAttachment loads an attachment strictly confined inside attachmentDir via os.OpenRoot.*
+- [[notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Next]] (method: defines_method)
+- [[notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Start]] (method: defines_method)
+- [[notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Close]] (method: calls)
+- [[notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Error]] (method: calls)
+- [[notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Info]] (method: calls)
+- [[notif-server/src/notifiers/notifiers_test.go.md|mockTestLogger.Warning]] (method: calls)
+- [[notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
+- [[notif-server/src/sanitizer/sanitizer.go.md|RedactSecrets]] (function: calls) — *from error strings and telemetry messages.*
+- [[notif-server/src/sanitizer/sanitizer.go.md|SanitizeFilename]] (function: calls) — *quotes, backslashes, and MIME parameter delimiters.*
+- [[notif-server/src/sanitizer/sanitizer.go.md|SanitizeHeader]] (function: calls) — *and Unicode line/paragraph separators to prevent MIME/HTTP header injection.*
+- [[notif-server/src/sanitizer/sanitizer.go.md|sanitizer.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (calls)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.GetLogLevel]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.GetTag]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.SendMessage]] (method: belongs_to) — *- source: System or notifier source tag (used to construct the email Subject).*
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.buildEmail]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.dialAndSend]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender.readAttachment]] (method: belongs_to) — *readAttachment loads an attachment strictly confined inside attachmentDir via os.OpenRoot.*
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender]] (struct: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|GmailSender]] (struct: defines_method)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|NewGmailSender]] (function: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|maxAttachmentSize]] (constant: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Next]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Start]] (method: belongs_to)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: belongs_to) — *bypassing Go's internal net/smtp Client.tls flag requirement.*
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: defines_method) — *bypassing Go's internal net/smtp Client.tls flag requirement.*
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)
-- [[notif-server/notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
+- [[notif-server/src/core/notifier.go.md|notifier.go]] (calls)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.GetLogLevel]] (method: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.GetTag]] (method: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.SendMessage]] (method: belongs_to) — *- source: System or notifier source tag (used to construct the email Subject).*
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.buildEmail]] (method: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.dialAndSend]] (method: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender.readAttachment]] (method: belongs_to) — *readAttachment loads an attachment strictly confined inside attachmentDir via os.OpenRoot.*
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender]] (struct: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|GmailSender]] (struct: defines_method)
+- [[notif-server/src/notifiers/gmail.go.md|NewGmailSender]] (function: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|maxAttachmentSize]] (constant: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Next]] (method: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck.Start]] (method: belongs_to)
+- [[notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: belongs_to) — *bypassing Go's internal net/smtp Client.tls flag requirement.*
+- [[notif-server/src/notifiers/gmail.go.md|plainAuthWithoutTLSCheck]] (struct: defines_method) — *bypassing Go's internal net/smtp Client.tls flag requirement.*
+- [[notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (calls)
+- [[notif-server/src/notifiers/notifiers_test.go.md|notifiers_test.go]] (same_package)
 <!-- SYNC:END -->

@@ -22,8 +22,8 @@ Automatically generated mirror for `distributed-config/src/core/defaults.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/core/config_test.go.md|config_test.go]] (calls)
-- [[distributed-config/distributed-config/src/core/config_test.go.md|config_test.go]] (same_package)
-- [[distributed-config/distributed-config/src/core/defaults.go.md|NewDefaultConfig]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (calls)
+- [[distributed-config/src/core/config_test.go.md|config_test.go]] (calls)
+- [[distributed-config/src/core/config_test.go.md|config_test.go]] (same_package)
+- [[distributed-config/src/core/defaults.go.md|NewDefaultConfig]] (function: belongs_to)
+- [[distributed-config/src/facade/config_facade.go.md|config_facade.go]] (calls)
 <!-- SYNC:END -->

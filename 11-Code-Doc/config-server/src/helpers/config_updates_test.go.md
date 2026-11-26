@@ -23,13 +23,13 @@ Automatically generated mirror for `config-server/src/helpers/config_updates_tes
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: calls) — *It also supports key deletions via the "__DELETED__" sentinel value.*
-- [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (same_package)
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
+- [[config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: calls) — *It also supports key deletions via the "__DELETED__" sentinel value.*
+- [[config-server/src/helpers/config_updates.go.md|config_updates.go]] (same_package)
+- [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (imports)
-- [[config-server/config-server/src/helpers/config_updates_test.go.md|TestApplyUpdates]] (function: belongs_to)
+- [[config-server/src/core/request_handler.go.md|request_handler.go]] (imports)
+- [[config-server/src/helpers/config_updates_test.go.md|TestApplyUpdates]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

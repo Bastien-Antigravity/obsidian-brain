@@ -19,15 +19,15 @@ Automatically generated mirror for `safe-socket/cmd/test/matrix_server/main.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/safe_socket.go.md|Create]] (function: calls) — *- autoConnect: if true, immediately calls Open() / Listen()*
-- [[safe-socket/safe-socket/safe_socket.go.md|GetIdentity]] (function: calls) — *It traverses through Heartbeat, Handshake, or Envelope wrappers to find the HelloMsg.*
-- [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromHost]] (method: calls)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromName]] (method: calls)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromPublicIP]] (method: calls)
+- [[safe-socket/safe_socket.go.md|Create]] (function: calls) — *- autoConnect: if true, immediately calls Open() / Listen()*
+- [[safe-socket/safe_socket.go.md|GetIdentity]] (function: calls) — *It traverses through Heartbeat, Handshake, or Envelope wrappers to find the HelloMsg.*
+- [[safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
+- [[safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
+- [[safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromHost]] (method: calls)
+- [[safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromName]] (method: calls)
+- [[safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromPublicIP]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/cmd/test/matrix_server/main.go.md|handleConnection]] (function: belongs_to)
-- [[safe-socket/safe-socket/cmd/test/matrix_server/main.go.md|main]] (function: belongs_to)
+- [[safe-socket/cmd/test/matrix_server/main.go.md|handleConnection]] (function: belongs_to)
+- [[safe-socket/cmd/test/matrix_server/main.go.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

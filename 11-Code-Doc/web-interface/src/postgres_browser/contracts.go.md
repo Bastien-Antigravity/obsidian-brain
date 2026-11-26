@@ -23,24 +23,24 @@ Automatically generated mirror for `web-interface/src/postgres_browser/contracts
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.resolveDBConfig]] (method: calls) — *resolveDBConfig dynamically extracts pre-validated connection parameters from AppConfig.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|BrowserHandler.GetTimescaleContracts]] (method: defines_method) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
+- [[web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/src/postgres_browser/connection.go.md|BrowserHandler.resolveDBConfig]] (method: calls) — *resolveDBConfig dynamically extracts pre-validated connection parameters from AppConfig.*
+- [[web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
+- [[web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)
+- [[web-interface/src/postgres_browser/contracts.go.md|BrowserHandler.GetTimescaleContracts]] (method: defines_method) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|BrowserHandler.GetTimescaleContracts]] (method: belongs_to) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|BrowserHandler]] (struct: defines_method) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|buildTimescaleContractsFromDB]] (function: belongs_to)
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|introspectedColumn]] (struct: belongs_to)
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|introspectedHypertable]] (struct: belongs_to)
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|introspectedTableKey]] (struct: belongs_to)
-- [[web-interface/web-interface/src/postgres_browser/contracts.go.md|synthesizeTimescaleEnvelope]] (function: belongs_to)
-- [[web-interface/web-interface/src/postgres_browser/contracts_test.go.md|contracts_test.go]] (calls)
-- [[web-interface/web-interface/src/postgres_browser/contracts_test.go.md|contracts_test.go]] (same_package)
+- [[web-interface/src/postgres_browser/contracts.go.md|BrowserHandler.GetTimescaleContracts]] (method: belongs_to) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
+- [[web-interface/src/postgres_browser/contracts.go.md|BrowserHandler]] (struct: defines_method) — *GetTimescaleContracts queries live PostgreSQL/TimescaleDB catalogs and returns exhaustive exchange contracts.*
+- [[web-interface/src/postgres_browser/contracts.go.md|buildTimescaleContractsFromDB]] (function: belongs_to)
+- [[web-interface/src/postgres_browser/contracts.go.md|introspectedColumn]] (struct: belongs_to)
+- [[web-interface/src/postgres_browser/contracts.go.md|introspectedHypertable]] (struct: belongs_to)
+- [[web-interface/src/postgres_browser/contracts.go.md|introspectedTableKey]] (struct: belongs_to)
+- [[web-interface/src/postgres_browser/contracts.go.md|synthesizeTimescaleEnvelope]] (function: belongs_to)
+- [[web-interface/src/postgres_browser/contracts_test.go.md|contracts_test.go]] (calls)
+- [[web-interface/src/postgres_browser/contracts_test.go.md|contracts_test.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

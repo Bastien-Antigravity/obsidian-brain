@@ -20,28 +20,28 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|C]] (class: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|E]] (class: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|e]] (function: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.clone]] (method: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|r]] (class: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
-- [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightAll]] (function: calls)
-- [[web-interface/web-interface/web/static/lib/prism/prism-module.js.md|highlightElement]] (function: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|C]] (class: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|E]] (class: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|e]] (function: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.clone]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|r]] (class: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|onmessage]] (function: calls) — *Legacy hook for WebSocket onmessage*
+- [[web-interface/backup_cleaned_assets/web/static/js/traded-volume.js.md|traded-volume.js]] (same_package)
+- [[web-interface/web/static/lib/prism/prism-module.js.md|highlightAll]] (function: calls)
+- [[web-interface/web/static/lib/prism/prism-module.js.md|highlightElement]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/RtTaAnalyst.html.md|RtTaAnalyst.html]] (imports)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|c]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|f]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|i]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|l]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|o]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|s]] (function: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/prism.js.md|u]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/RtTaAnalyst.html.md|RtTaAnalyst.html]] (imports)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|gridstack-all.js]] (same_package)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|c]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|f]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|i]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|l]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|o]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|s]] (function: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/prism.js.md|u]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -23,30 +23,44 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/rest/rest_
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|get_mode_details]] (function: calls) — *Returns name and description for a mode.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|list_commands]] (function: calls) — *Returns a list of available subcommands and their descriptions.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|publish_user_message]] (function: calls) — *Saves a user message and publishes it to EventBus to trigger agents.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|get_mode_details]] (function: calls) — *Returns name and description for a mode.*
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|list_commands]] (function: calls) — *Returns a list of available subcommands and their descriptions.*
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|publish_user_message]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|set_autorepair_enabled]] (function: calls) — *Enables or disables AutoRepair real-time triage dynamically on the fly.*
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|build_squad_agent_contracts]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|contracts.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/rest/contracts.py.md|contracts.py]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|SquadRESTHandler]] (class: belongs_to) — *REST API Handler exposing squad controller capabilities.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|event_generator]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_active_mode]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_chat_history]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_commands]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_github_user]] (function: belongs_to) — *Returns the configured GitHub user handle or default organization.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_status]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|is_github_configured]] (function: belongs_to) — *Verifies if a valid GitHub personal access token is configured in environment or capability config.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|msg_cb]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|post_chat_message]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|register_routes]] (function: belongs_to) — *Registers the REST routes to the FastAPI application.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|run_command_stream]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|stream_chat_messages]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|switch_mode]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/web/server.py.md|server.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/web/server.py.md|server.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|SquadRESTHandler]] (class: belongs_to) — *REST API Handler exposing squad controller capabilities.*
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|approve_incident]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|event_generator]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_active_mode]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_autorepair_status]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_chat_history]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_commands]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_contracts]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_github_user]] (function: belongs_to) — *Returns the configured GitHub user handle or default organization.*
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_incident]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|get_status]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|is_github_configured]] (function: belongs_to) — *Verifies if a valid GitHub personal access token is configured in environment or capability config.*
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|list_incidents]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|msg_cb]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|post_chat_message]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|read_json_dict]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|register_routes]] (function: belongs_to) — *Registers the REST routes to the FastAPI application.*
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|reject_incident]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|require_github]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|resolve_incident]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|run_command_stream]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|stream_chat_messages]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|switch_mode]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|toggle_autorepair]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/rest/rest_handler.py.md|unfreeze_autorepair_service]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/web/server.py.md|server.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/web/server.py.md|server.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

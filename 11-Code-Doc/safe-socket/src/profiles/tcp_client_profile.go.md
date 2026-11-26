@@ -19,34 +19,34 @@ Automatically generated mirror for `safe-socket/src/profiles/tcp_client_profile.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetAddress]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetConnectTimeout]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetName]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetProtocol]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetTransport]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetAddress]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetConnectTimeout]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetName]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetProtocol]] (method: defines_method)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetTransport]] (method: defines_method)
+- [[safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetAddress]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetConnectTimeout]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetName]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetProtocol]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetTransport]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetAddress]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetConnectTimeout]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetName]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetProtocol]] (method: defines_method)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetTransport]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpClientProfile]] (function: belongs_to) — *NewTcpClientProfile creates a new instance of a TCP profile without a protocol.*
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpHelloClientProfile]] (function: belongs_to) — *NewTcpHelloClientProfile creates a new instance of a TCP profile with the Hello protocol.*
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetAddress]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetConnectTimeout]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetName]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetProtocol]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetTransport]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: belongs_to) — *without any handshake protocol.*
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: defines_method) — *without any handshake protocol.*
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetAddress]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetConnectTimeout]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetName]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetProtocol]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetTransport]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: belongs_to) — *that performs a handshake protocol upon connection.*
-- [[safe-socket/safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: defines_method) — *that performs a handshake protocol upon connection.*
+- [[safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpClientProfile]] (function: belongs_to) — *NewTcpClientProfile creates a new instance of a TCP profile without a protocol.*
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|NewTcpHelloClientProfile]] (function: belongs_to) — *NewTcpHelloClientProfile creates a new instance of a TCP profile with the Hello protocol.*
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetAddress]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetConnectTimeout]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetName]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetProtocol]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile.GetTransport]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: belongs_to) — *without any handshake protocol.*
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpClientProfile]] (struct: defines_method) — *without any handshake protocol.*
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetAddress]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetConnectTimeout]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetName]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetProtocol]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile.GetTransport]] (method: belongs_to)
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: belongs_to) — *that performs a handshake protocol upon connection.*
+- [[safe-socket/src/profiles/tcp_client_profile.go.md|TcpHelloClientProfile]] (struct: defines_method) — *that performs a handshake protocol upon connection.*
 <!-- SYNC:END -->

@@ -23,23 +23,23 @@ Automatically generated mirror for `notif-server/src/rest/contracts.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
-- [[notif-server/notif-server/src/grpc_control/service.go.md|service.go]] (imports)
-- [[notif-server/notif-server/src/rest/contracts.go.md|RESTHandler.handleContracts]] (method: defines_method)
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: calls)
-- [[notif-server/notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)
-- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetStatus]] (method: calls)
-- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetSupportedTypes]] (method: calls)
-- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ListNotifiers]] (method: calls)
-- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|mockNotifLogger.Error]] (method: calls)
-- [[notif-server/notif-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|notif_service.pb.go]] (imports)
+- [[notif-server/src/core/controller.go.md|controller.go]] (imports)
+- [[notif-server/src/grpc_control/service.go.md|service.go]] (imports)
+- [[notif-server/src/rest/contracts.go.md|RESTHandler.handleContracts]] (method: defines_method)
+- [[notif-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: calls)
+- [[notif-server/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)
+- [[notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetStatus]] (method: calls)
+- [[notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.GetSupportedTypes]] (method: calls)
+- [[notif-server/src/rest/rest_handler_test.go.md|mockNotifControl.ListNotifiers]] (method: calls)
+- [[notif-server/src/rest/rest_handler_test.go.md|mockNotifLogger.Error]] (method: calls)
+- [[notif-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
+- [[notif-server/src/schemas/protobuf/notif_service.pb.go.md|notif_service.pb.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/notif-server/main.go.md|main.go]] (calls)
-- [[notif-server/notif-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: belongs_to) — *BuildExchangeContracts constructs the exhaustive contract catalog from notif-server sources.*
-- [[notif-server/notif-server/src/rest/contracts.go.md|RESTHandler.handleContracts]] (method: belongs_to)
-- [[notif-server/notif-server/src/rest/contracts.go.md|RESTHandler]] (struct: defines_method)
+- [[notif-server/cmd/notif-server/main.go.md|main.go]] (calls)
+- [[notif-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: belongs_to) — *BuildExchangeContracts constructs the exhaustive contract catalog from notif-server sources.*
+- [[notif-server/src/rest/contracts.go.md|RESTHandler.handleContracts]] (method: belongs_to)
+- [[notif-server/src/rest/contracts.go.md|RESTHandler]] (struct: defines_method)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

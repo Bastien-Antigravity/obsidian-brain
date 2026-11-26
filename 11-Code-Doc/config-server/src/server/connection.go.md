@@ -19,22 +19,22 @@ Automatically generated mirror for `config-server/src/server/connection.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls) — *It may also trigger a broadcast and persistence via the provided callbacks.*
-- [[config-server/config-server/src/server/connection.go.md|Server.handleConnection]] (method: defines_method)
-- [[config-server/config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
-- [[config-server/config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
-- [[config-server/config-server/src/server/server.go.md|clientMailbox.Close]] (method: calls) — *Close signals the mailbox to stop accepting or draining messages without closing send.*
-- [[config-server/config-server/src/server/server.go.md|newClientMailbox]] (function: calls)
-- [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
-- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
-- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
-- [[config-server/config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
-- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (same_package)
+- [[config-server/src/core/controller.go.md|controller.go]] (imports)
+- [[config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls) — *It may also trigger a broadcast and persistence via the provided callbacks.*
+- [[config-server/src/server/connection.go.md|Server.handleConnection]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
+- [[config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
+- [[config-server/src/server/server.go.md|clientMailbox.Close]] (method: calls) — *Close signals the mailbox to stop accepting or draining messages without closing send.*
+- [[config-server/src/server/server.go.md|newClientMailbox]] (function: calls)
+- [[config-server/src/server/server.go.md|server.go]] (same_package)
+- [[config-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
+- [[config-server/src/server/server_test.go.md|server_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/server/connection.go.md|Server.handleConnection]] (method: belongs_to)
-- [[config-server/config-server/src/server/connection.go.md|Server]] (struct: defines_method)
-- [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
-- [[config-server/config-server/src/server/server.go.md|server.go]] (same_package)
+- [[config-server/src/server/connection.go.md|Server.handleConnection]] (method: belongs_to)
+- [[config-server/src/server/connection.go.md|Server]] (struct: defines_method)
+- [[config-server/src/server/server.go.md|server.go]] (calls)
+- [[config-server/src/server/server.go.md|server.go]] (same_package)
 <!-- SYNC:END -->

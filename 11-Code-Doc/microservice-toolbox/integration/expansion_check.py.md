@@ -16,5 +16,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/integration/expansion_check.py.md|main]] (function: belongs_to)
+- [[microservice-toolbox/integration/expansion_check.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

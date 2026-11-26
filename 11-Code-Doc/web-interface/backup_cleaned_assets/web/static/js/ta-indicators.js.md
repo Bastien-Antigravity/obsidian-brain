@@ -20,24 +20,24 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|volumeChart.volume]] (method: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.addRow]] (method: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.onMessage]] (method: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderIndicators]] (method: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: defines_method)
-- [[web-interface/web-interface/web/static/lib/utils/Formatter.js.md|Formatter.date]] (method: calls)
-- [[web-interface/web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|volumeChart.volume]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|ConnectionManager.log]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/static/js/realtime-common.js.md|realtime-common.js]] (same_package)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.addRow]] (method: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.onMessage]] (method: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderIndicators]] (method: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: defines_method)
+- [[web-interface/web/static/lib/utils/Formatter.js.md|Formatter.date]] (method: calls)
+- [[web-interface/web/static/lib/utils/Logger.js.md|BastienLogger.error]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.addRow]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.onMessage]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderIndicators]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard]] (class: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard]] (class: defines_method)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|onmessage]] (function: belongs_to) — *Legacy hook for WebSocket onmessage*
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.addRow]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.onMessage]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderIndicators]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard.renderPatterns]] (method: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard]] (class: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|TAIndicatorsDashboard]] (class: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/js/ta-indicators.js.md|onmessage]] (function: belongs_to) — *Legacy hook for WebSocket onmessage*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

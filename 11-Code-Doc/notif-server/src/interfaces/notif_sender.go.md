@@ -22,5 +22,5 @@ Automatically generated mirror for `notif-server/src/interfaces/notif_sender.go`
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/src/interfaces/notif_sender.go.md|INotifSender]] (interface: belongs_to)
+- [[notif-server/src/interfaces/notif_sender.go.md|INotifSender]] (interface: belongs_to)
 <!-- SYNC:END -->

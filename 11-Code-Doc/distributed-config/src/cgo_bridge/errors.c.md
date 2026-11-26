@@ -19,13 +19,13 @@ Automatically generated mirror for `distributed-config/src/cgo_bridge/errors.c`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/distconf/libdistconf/helpers.h.md|helpers.h]] (imports)
+- [[distributed-config/distconf/libdistconf/helpers.h.md|helpers.h]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|main.go]] (calls)
-- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|DISTCONF_ERR_BUF_SIZE]] (macro: belongs_to) — *include <stdio.h>*
-- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|get_last_error]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|get_last_error_code]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|res]] (constant: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/errors.c.md|set_last_error]] (function: belongs_to)
+- [[distributed-config/cmd/libdistconf/main.go.md|main.go]] (calls)
+- [[distributed-config/src/cgo_bridge/errors.c.md|DISTCONF_ERR_BUF_SIZE]] (macro: belongs_to) — *include <stdio.h>*
+- [[distributed-config/src/cgo_bridge/errors.c.md|get_last_error]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/errors.c.md|get_last_error_code]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/errors.c.md|res]] (constant: belongs_to)
+- [[distributed-config/src/cgo_bridge/errors.c.md|set_last_error]] (function: belongs_to)
 <!-- SYNC:END -->

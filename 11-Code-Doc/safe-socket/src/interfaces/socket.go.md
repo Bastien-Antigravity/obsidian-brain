@@ -22,8 +22,8 @@ Automatically generated mirror for `safe-socket/src/interfaces/socket.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/interfaces/socket.go.md|SocketTypeClient]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/socket.go.md|SocketTypeServer]] (constant: belongs_to)
-- [[safe-socket/safe-socket/src/interfaces/socket.go.md|SocketType]] (struct: belongs_to) — *SocketType defines the role of the socket (Client or Server).*
-- [[safe-socket/safe-socket/src/interfaces/socket.go.md|Socket]] (interface: belongs_to) — *errors for unsupported operations based on their role.*
+- [[safe-socket/src/interfaces/socket.go.md|SocketTypeClient]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/socket.go.md|SocketTypeServer]] (constant: belongs_to)
+- [[safe-socket/src/interfaces/socket.go.md|SocketType]] (struct: belongs_to) — *SocketType defines the role of the socket (Client or Server).*
+- [[safe-socket/src/interfaces/socket.go.md|Socket]] (interface: belongs_to) — *errors for unsupported operations based on their role.*
 <!-- SYNC:END -->

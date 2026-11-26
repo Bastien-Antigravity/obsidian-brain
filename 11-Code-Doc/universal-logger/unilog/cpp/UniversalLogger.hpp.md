@@ -19,61 +19,61 @@ Automatically generated mirror for `universal-logger/unilog/cpp/UniversalLogger.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get]] (function: calls) — *export UniLog_Config_Get*
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Set]] (function: calls) — *export UniLog_Config_Set*
-- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Close]] (function: calls) — *export UniLog_Close*
-- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Init]] (function: calls) — *export UniLog_Init*
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_AddMetadata]] (function: calls) — *export UniLog_AddMetadata*
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_GetLevel]] (function: calls) — *export UniLog_GetLevel*
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_LogWithMetadata]] (function: calls) — *export UniLog_LogWithMetadata*
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetLevel]] (function: calls) — *export UniLog_SetLevel*
-- [[universal-logger/universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetMetadata]] (function: calls) — *export UniLog_SetMetadata*
-- [[universal-logger/universal-logger/src/cgo_bridge/notif_callback.go.md|UniLog_RegisterNotifCallback]] (function: calls) — *export UniLog_RegisterNotifCallback*
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.error]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_config]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_level]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.info]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log_with_metadata]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_config]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_level]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_metadata]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_notification_callback]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.warning]] (method: defines_method)
-- [[universal-logger/universal-logger/unilog/libunilog/libunilog.h.md|libunilog.h]] (imports)
+- [[universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get]] (function: calls) — *export UniLog_Config_Get*
+- [[universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Set]] (function: calls) — *export UniLog_Config_Set*
+- [[universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Close]] (function: calls) — *export UniLog_Close*
+- [[universal-logger/src/cgo_bridge/initialize.go.md|UniLog_Init]] (function: calls) — *export UniLog_Init*
+- [[universal-logger/src/cgo_bridge/logger.go.md|UniLog_AddMetadata]] (function: calls) — *export UniLog_AddMetadata*
+- [[universal-logger/src/cgo_bridge/logger.go.md|UniLog_GetLevel]] (function: calls) — *export UniLog_GetLevel*
+- [[universal-logger/src/cgo_bridge/logger.go.md|UniLog_LogWithMetadata]] (function: calls) — *export UniLog_LogWithMetadata*
+- [[universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetLevel]] (function: calls) — *export UniLog_SetLevel*
+- [[universal-logger/src/cgo_bridge/logger.go.md|UniLog_SetMetadata]] (function: calls) — *export UniLog_SetMetadata*
+- [[universal-logger/src/cgo_bridge/notif_callback.go.md|UniLog_RegisterNotifCallback]] (function: calls) — *export UniLog_RegisterNotifCallback*
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.error]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_config]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_level]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.info]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log_with_metadata]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_config]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_level]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_metadata]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_notification_callback]] (method: defines_method)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.warning]] (method: defines_method)
+- [[universal-logger/unilog/libunilog/libunilog.h.md|libunilog.h]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_CRITICAL]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_DEBUG]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_ERROR]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_INFO]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_WARNING]] (macro: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNIVERSAL_LOGGER_HPP]] (macro: belongs_to) — *ifndef UNIVERSAL_LOGGER_HPP*
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.error]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_config]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_level]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.info]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log_with_metadata]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_config]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_level]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_metadata]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_notification_callback]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.warning]] (method: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog]] (class: belongs_to)
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog]] (class: defines_method)
-- [[universal-logger/universal-logger/unilog/cpp/main.cpp.md|main.cpp]] (calls)
-- [[universal-logger/universal-logger/unilog/cpp/main.cpp.md|main.cpp]] (imports)
-- [[universal-logger/universal-logger/unilog/cpp/main.cpp.md|main.cpp]] (same_package)
-- [[universal-logger/universal-logger/unilog/cpp/test_unilog.cpp.md|test_unilog.cpp]] (calls)
-- [[universal-logger/universal-logger/unilog/cpp/test_unilog.cpp.md|test_unilog.cpp]] (imports)
-- [[universal-logger/universal-logger/unilog/cpp/test_unilog.cpp.md|test_unilog.cpp]] (same_package)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_CRITICAL]] (macro: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_DEBUG]] (macro: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_ERROR]] (macro: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_INFO]] (macro: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNILOG_WARNING]] (macro: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UNIVERSAL_LOGGER_HPP]] (macro: belongs_to) — *ifndef UNIVERSAL_LOGGER_HPP*
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.UniLog]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.add_metadata]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.critical]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.debug]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.error]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_config]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.get_level]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.info]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.log_with_metadata]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_config]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_level]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_metadata]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.set_notification_callback]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog.warning]] (method: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog]] (class: belongs_to)
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniLog]] (class: defines_method)
+- [[universal-logger/unilog/cpp/main.cpp.md|main.cpp]] (calls)
+- [[universal-logger/unilog/cpp/main.cpp.md|main.cpp]] (imports)
+- [[universal-logger/unilog/cpp/main.cpp.md|main.cpp]] (same_package)
+- [[universal-logger/unilog/cpp/test_unilog.cpp.md|test_unilog.cpp]] (calls)
+- [[universal-logger/unilog/cpp/test_unilog.cpp.md|test_unilog.cpp]] (imports)
+- [[universal-logger/unilog/cpp/test_unilog.cpp.md|test_unilog.cpp]] (same_package)
 <!-- SYNC:END -->

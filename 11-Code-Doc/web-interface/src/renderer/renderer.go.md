@@ -19,21 +19,21 @@ Automatically generated mirror for `web-interface/src/renderer/renderer.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: calls)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/src/logclient/log_service.pb.go.md|ContractsResponse.GetVersion]] (method: calls)
+- [[web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/renderer/renderer.go.md|PageData]] (struct: belongs_to) — *PageData wraps page-specific data with global site config and auth state for templates.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPageWithCustomTitle]] (function: belongs_to) — *RenderPageWithCustomTitle renders a page with optional custom title, subtitle, and navigation categories.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPageWithMetadata]] (function: belongs_to) — *RenderPageWithMetadata renders a page with category, title, subtitle, icon, and navigation categories.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|RenderPage]] (function: belongs_to) — *RenderPage parses templates and executes them using context-resolved configuration parameters.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|cachedTemplateEntry]] (struct: belongs_to)
-- [[web-interface/web-interface/src/renderer/renderer.go.md|deriveDynamicTitle]] (function: belongs_to) — *deriveDynamicTitle generates a readable title and subtitle dynamically from page template name.*
-- [[web-interface/web-interface/src/renderer/renderer.go.md|loadOrParseTemplate]] (function: belongs_to)
-- [[web-interface/web-interface/src/renderer/renderer.go.md|resolveTemplateFilePath]] (function: belongs_to)
-- [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (calls)
-- [[web-interface/web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (same_package)
-- [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (calls)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
-- [[web-interface/web-interface/src/router/static.go.md|static.go]] (calls)
+- [[web-interface/src/renderer/renderer.go.md|PageData]] (struct: belongs_to) — *PageData wraps page-specific data with global site config and auth state for templates.*
+- [[web-interface/src/renderer/renderer.go.md|RenderPageWithCustomTitle]] (function: belongs_to) — *RenderPageWithCustomTitle renders a page with optional custom title, subtitle, and navigation categories.*
+- [[web-interface/src/renderer/renderer.go.md|RenderPageWithMetadata]] (function: belongs_to) — *RenderPageWithMetadata renders a page with category, title, subtitle, icon, and navigation categories.*
+- [[web-interface/src/renderer/renderer.go.md|RenderPage]] (function: belongs_to) — *RenderPage parses templates and executes them using context-resolved configuration parameters.*
+- [[web-interface/src/renderer/renderer.go.md|cachedTemplateEntry]] (struct: belongs_to)
+- [[web-interface/src/renderer/renderer.go.md|deriveDynamicTitle]] (function: belongs_to) — *deriveDynamicTitle generates a readable title and subtitle dynamically from page template name.*
+- [[web-interface/src/renderer/renderer.go.md|loadOrParseTemplate]] (function: belongs_to)
+- [[web-interface/src/renderer/renderer.go.md|resolveTemplateFilePath]] (function: belongs_to)
+- [[web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (calls)
+- [[web-interface/src/renderer/renderer_test.go.md|renderer_test.go]] (same_package)
+- [[web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (calls)
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
+- [[web-interface/src/router/static.go.md|static.go]] (calls)
 <!-- SYNC:END -->

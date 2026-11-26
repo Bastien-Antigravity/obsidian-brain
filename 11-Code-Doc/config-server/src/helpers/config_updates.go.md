@@ -19,11 +19,11 @@ Automatically generated mirror for `config-server/src/helpers/config_updates.go`
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
+- [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (calls)
-- [[config-server/config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: belongs_to) — *It also supports key deletions via the "__DELETED__" sentinel value.*
-- [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (calls)
-- [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (same_package)
+- [[config-server/src/core/request_handler.go.md|request_handler.go]] (calls)
+- [[config-server/src/helpers/config_updates.go.md|ApplyUpdates]] (function: belongs_to) — *It also supports key deletions via the "__DELETED__" sentinel value.*
+- [[config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (calls)
+- [[config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (same_package)
 <!-- SYNC:END -->

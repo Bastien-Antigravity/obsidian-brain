@@ -19,81 +19,81 @@ Automatically generated mirror for `safe-socket/src/facade/socket_server.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|NewEnvelopedConnection]] (function: calls)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|enveloped_connection.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|NewHandshakeConnection]] (function: calls)
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|handshake_connection.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|NewHeartbeatConnection]] (function: calls)
-- [[safe-socket/safe-socket/src/facade/heartbeat_connection.go.md|heartbeat_connection.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|NewReliableConnection]] (function: calls)
-- [[safe-socket/safe-socket/src/facade/reliable_connection.go.md|reliable_connection.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetAddress]] (method: calls)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetConnectTimeout]] (method: calls)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetName]] (method: calls)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetProtocol]] (method: calls)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetTransport]] (method: calls)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Accept]] (method: defines_method) — *Accept accepts a new connection and performs the handshake if defined.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Close]] (method: defines_method) — *If connections remain open after the drain timeout, they are force-closed to prevent shutdown hangs.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.GetAddr]] (method: defines_method) — *GetAddr returns the listener's network address, if the server is listening.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Listen]] (method: defines_method) — *Listen starts listening on the address specified by the profile.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Open]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Read]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Receive]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Send]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetDeadline]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetIdleTimeout]] (method: defines_method) — *SetIdleTimeout updates the internal idle timeout for newly accepted connections.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetLogger]] (method: defines_method) — *Bind logger to safe-socket*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetReadDeadline]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetWriteDeadline]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Write]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|WrapConnectionWithTelemetry]] (function: calls) — *If telemetry is enabled, it decorates conn with a TelemetryConnection.*
-- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: calls)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Info]] (method: calls)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Warning]] (method: calls)
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
-- [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.WaitInitiation]] (method: calls) — *WaitInitiation waits for a HelloMsg from the client and unmarshals it.*
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: calls)
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromName]] (method: calls)
-- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|ListenTLS]] (function: calls) — *ListenTLS creates a new TLS-enabled FramedTCPListener.*
-- [[safe-socket/safe-socket/src/transports/shm_client.go.md|shm_client.go]] (imports)
-- [[safe-socket/safe-socket/src/transports/shm_server.go.md|ListenShm]] (function: calls) — *ListenShm creates (or opens) the SHM file and prepares it for a client connection.*
-- [[safe-socket/safe-socket/src/transports/udp_server.go.md|ListenUDP]] (function: calls)
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
-- [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|machine_detector_test.go]] (imports)
+- [[safe-socket/src/facade/enveloped_connection.go.md|NewEnvelopedConnection]] (function: calls)
+- [[safe-socket/src/facade/enveloped_connection.go.md|enveloped_connection.go]] (same_package)
+- [[safe-socket/src/facade/handshake_connection.go.md|NewHandshakeConnection]] (function: calls)
+- [[safe-socket/src/facade/handshake_connection.go.md|handshake_connection.go]] (same_package)
+- [[safe-socket/src/facade/heartbeat_connection.go.md|NewHeartbeatConnection]] (function: calls)
+- [[safe-socket/src/facade/heartbeat_connection.go.md|heartbeat_connection.go]] (same_package)
+- [[safe-socket/src/facade/reliable_connection.go.md|NewReliableConnection]] (function: calls)
+- [[safe-socket/src/facade/reliable_connection.go.md|reliable_connection.go]] (same_package)
+- [[safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetAddress]] (method: calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetConnectTimeout]] (method: calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetName]] (method: calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetProtocol]] (method: calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|mockProfile.GetTransport]] (method: calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (same_package)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Accept]] (method: defines_method) — *Accept accepts a new connection and performs the handshake if defined.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Close]] (method: defines_method) — *If connections remain open after the drain timeout, they are force-closed to prevent shutdown hangs.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.GetAddr]] (method: defines_method) — *GetAddr returns the listener's network address, if the server is listening.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Listen]] (method: defines_method) — *Listen starts listening on the address specified by the profile.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Open]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Read]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Receive]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Send]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetDeadline]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetIdleTimeout]] (method: defines_method) — *SetIdleTimeout updates the internal idle timeout for newly accepted connections.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetLogger]] (method: defines_method) — *Bind logger to safe-socket*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetReadDeadline]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetWriteDeadline]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Write]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: defines_method)
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: defines_method)
+- [[safe-socket/src/facade/telemetry_wrapper.go.md|WrapConnectionWithTelemetry]] (function: calls) — *If telemetry is enabled, it decorates conn with a TelemetryConnection.*
+- [[safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
+- [[safe-socket/src/interfaces/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
+- [[safe-socket/src/interfaces/logger.go.md|NoOpLogger.Debug]] (method: calls)
+- [[safe-socket/src/interfaces/logger.go.md|NoOpLogger.Info]] (method: calls)
+- [[safe-socket/src/interfaces/logger.go.md|NoOpLogger.Warning]] (method: calls)
+- [[safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
+- [[safe-socket/src/models/hybrid_timeout_test.go.md|hybrid_timeout_test.go]] (imports)
+- [[safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.WaitInitiation]] (method: calls) — *WaitInitiation waits for a HelloMsg from the client and unmarshals it.*
+- [[safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: calls)
+- [[safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
+- [[safe-socket/src/schemas/messages.capnp.go.md|HelloMsg.FromName]] (method: calls)
+- [[safe-socket/src/transports/framed_tcp_server.go.md|ListenTLS]] (function: calls) — *ListenTLS creates a new TLS-enabled FramedTCPListener.*
+- [[safe-socket/src/transports/shm_client.go.md|shm_client.go]] (imports)
+- [[safe-socket/src/transports/shm_server.go.md|ListenShm]] (function: calls) — *ListenShm creates (or opens) the SHM file and prepares it for a client connection.*
+- [[safe-socket/src/transports/udp_server.go.md|ListenUDP]] (function: calls)
+- [[safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
+- [[safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
+- [[safe-socket/src/utils/machine_detector_test.go.md|machine_detector_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|NewSocketServer]] (function: belongs_to) — *NewSocketServer creates a new instance of SocketServer.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Accept]] (method: belongs_to) — *Accept accepts a new connection and performs the handshake if defined.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Close]] (method: belongs_to) — *If connections remain open after the drain timeout, they are force-closed to prevent shutdown hangs.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.GetAddr]] (method: belongs_to) — *GetAddr returns the listener's network address, if the server is listening.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Listen]] (method: belongs_to) — *Listen starts listening on the address specified by the profile.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Open]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Read]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Receive]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Send]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetIdleTimeout]] (method: belongs_to) — *SetIdleTimeout updates the internal idle timeout for newly accepted connections.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetLogger]] (method: belongs_to) — *Bind logger to safe-socket*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetReadDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.SetWriteDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer.Write]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: belongs_to) — *does not send/receive data directly; the *accepted connection* does.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: defines_method) — *does not send/receive data directly; the *accepted connection* does.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: belongs_to) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: defines_method) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
-- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (calls)
+- [[safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (same_package)
+- [[safe-socket/src/facade/socket_server.go.md|NewSocketServer]] (function: belongs_to) — *NewSocketServer creates a new instance of SocketServer.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Accept]] (method: belongs_to) — *Accept accepts a new connection and performs the handshake if defined.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Close]] (method: belongs_to) — *If connections remain open after the drain timeout, they are force-closed to prevent shutdown hangs.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.GetAddr]] (method: belongs_to) — *GetAddr returns the listener's network address, if the server is listening.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Listen]] (method: belongs_to) — *Listen starts listening on the address specified by the profile.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Open]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Read]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Receive]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Send]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetDeadline]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetIdleTimeout]] (method: belongs_to) — *SetIdleTimeout updates the internal idle timeout for newly accepted connections.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetLogger]] (method: belongs_to) — *Bind logger to safe-socket*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetReadDeadline]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.SetWriteDeadline]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer.Write]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: belongs_to) — *does not send/receive data directly; the *accepted connection* does.*
+- [[safe-socket/src/facade/socket_server.go.md|SocketServer]] (struct: defines_method) — *does not send/receive data directly; the *accepted connection* does.*
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection.Close]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection.closeOuter]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection.setOuter]] (method: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: belongs_to) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
+- [[safe-socket/src/facade/socket_server.go.md|trackingConnection]] (struct: defines_method) — *trackingConnection wraps a TransportConnection to signal when it's closed.*
+- [[safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (calls)
 <!-- SYNC:END -->

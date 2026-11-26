@@ -19,16 +19,16 @@ Automatically generated mirror for `safe-socket/src/facade/handshake_connection.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection.SetIdleTimeout]] (method: defines_method) — *LocalAddr and RemoteAddr are promoted automatically by embedding.*
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
+- [[safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection.SetIdleTimeout]] (method: defines_method) — *LocalAddr and RemoteAddr are promoted automatically by embedding.*
+- [[safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
+- [[safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/cmd/test/identity_test.go.md|identity_test.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection.SetIdleTimeout]] (method: belongs_to) — *LocalAddr and RemoteAddr are promoted automatically by embedding.*
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection]] (struct: belongs_to) — *It implements interfaces.TransportConnection by embedding the underlying connection.*
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection]] (struct: defines_method) — *It implements interfaces.TransportConnection by embedding the underlying connection.*
-- [[safe-socket/safe-socket/src/facade/handshake_connection.go.md|NewHandshakeConnection]] (function: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
+- [[safe-socket/cmd/test/identity_test.go.md|identity_test.go]] (calls)
+- [[safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection.SetIdleTimeout]] (method: belongs_to) — *LocalAddr and RemoteAddr are promoted automatically by embedding.*
+- [[safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection]] (struct: belongs_to) — *It implements interfaces.TransportConnection by embedding the underlying connection.*
+- [[safe-socket/src/facade/handshake_connection.go.md|HandshakeConnection]] (struct: defines_method) — *It implements interfaces.TransportConnection by embedding the underlying connection.*
+- [[safe-socket/src/facade/handshake_connection.go.md|NewHandshakeConnection]] (function: belongs_to)
+- [[safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
+- [[safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
 <!-- SYNC:END -->

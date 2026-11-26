@@ -20,20 +20,20 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.connectedCallback]] (method: defines_method) — *Called when the element is added to the DOM*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.disconnectedCallback]] (method: defines_method) — *Called when the element is removed from the DOM*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.handleChoiceClick]] (method: defines_method) — *Handle choice click event*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|TA_WebSocketBindingManager.bind]] (method: calls)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|charts.js]] (imports)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|charts.js]] (same_package)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.cloneNode]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.connectedCallback]] (method: defines_method) — *Called when the element is added to the DOM*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.disconnectedCallback]] (method: defines_method) — *Called when the element is removed from the DOM*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.handleChoiceClick]] (method: defines_method) — *Handle choice click event*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|TA_WebSocketBindingManager.bind]] (method: calls)
+- [[web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|charts.js]] (imports)
+- [[web-interface/backup_cleaned_assets/web/static/analyst/charts.js.md|charts.js]] (same_package)
+- [[web-interface/backup_cleaned_assets/web/static/js/gridstack-all.js.md|i.cloneNode]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.connectedCallback]] (method: belongs_to) — *Called when the element is added to the DOM*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.disconnectedCallback]] (method: belongs_to) — *Called when the element is removed from the DOM*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.handleChoiceClick]] (method: belongs_to) — *Handle choice click event*
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard]] (class: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard]] (class: defines_method)
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.connectedCallback]] (method: belongs_to) — *Called when the element is added to the DOM*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.disconnectedCallback]] (method: belongs_to) — *Called when the element is removed from the DOM*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard.handleChoiceClick]] (method: belongs_to) — *Handle choice click event*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard]] (class: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/static/analyst/cardCreator.js.md|ChoiceCard]] (class: defines_method)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

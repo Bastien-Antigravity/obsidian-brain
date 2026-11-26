@@ -19,14 +19,14 @@ Automatically generated mirror for `distributed-config/src/loader/path_resolver_
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
-- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFileSafe]] (function: calls) — *config tags like CF_IP/CF_PORT are provided via ENV variables.*
-- [[distributed-config/distributed-config/src/loader/loader.go.md|loader.go]] (same_package)
-- [[distributed-config/distributed-config/src/loader/path_resolver.go.md|ResolveConfigPath]] (function: calls)
-- [[distributed-config/distributed-config/src/loader/path_resolver.go.md|path_resolver.go]] (same_package)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
-- [[distributed-config/distributed-config/src/utils/logger.go.md|logger.go]] (imports)
+- [[distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/src/loader/loader.go.md|LoadConfigFromFileSafe]] (function: calls) — *config tags like CF_IP/CF_PORT are provided via ENV variables.*
+- [[distributed-config/src/loader/loader.go.md|loader.go]] (same_package)
+- [[distributed-config/src/loader/path_resolver.go.md|ResolveConfigPath]] (function: calls)
+- [[distributed-config/src/loader/path_resolver.go.md|path_resolver.go]] (same_package)
+- [[distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
+- [[distributed-config/src/utils/logger.go.md|logger.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/loader/path_resolver_test.go.md|TestResolveConfigPath]] (function: belongs_to)
+- [[distributed-config/src/loader/path_resolver_test.go.md|TestResolveConfigPath]] (function: belongs_to)
 <!-- SYNC:END -->

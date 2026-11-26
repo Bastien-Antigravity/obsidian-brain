@@ -13,11 +13,11 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|NewBinSerializer]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/providers.go.md|NewJSONSerializer]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/serializers/serializer_test.go.md|serializer_test.go]] (imports)
+- [[microservice-toolbox/go/pkg/serializers/providers.go.md|NewBinSerializer]] (function: calls)
+- [[microservice-toolbox/go/pkg/serializers/providers.go.md|NewJSONSerializer]] (function: calls)
+- [[microservice-toolbox/go/pkg/serializers/serializer_test.go.md|serializer_test.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/integration/matrix_con.go.md|IntegrationData]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/integration/matrix_con.go.md|main]] (function: belongs_to)
+- [[microservice-toolbox/integration/matrix_con.go.md|IntegrationData]] (struct: belongs_to)
+- [[microservice-toolbox/integration/matrix_con.go.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

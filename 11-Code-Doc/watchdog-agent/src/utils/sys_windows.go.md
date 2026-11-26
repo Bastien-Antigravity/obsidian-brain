@@ -22,7 +22,7 @@ Automatically generated mirror for `watchdog-agent/src/utils/sys_windows.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/src/utils/sys_windows.go.md|KillProcessGroupByID]] (function: belongs_to) — *KillProcessGroupByID forcefully terminates a process group using its PID*
-- [[watchdog-agent/watchdog-agent/src/utils/sys_windows.go.md|KillProcessGroup]] (function: belongs_to) — *KillProcessGroup forcefully terminates a process and all of its subprocesses (process tree)*
-- [[watchdog-agent/watchdog-agent/src/utils/sys_windows.go.md|SetSysProcAttrGroup]] (function: belongs_to) — *SetSysProcAttrGroup sets the process group attributes for Windows systems*
+- [[watchdog-agent/src/utils/sys_windows.go.md|KillProcessGroupByID]] (function: belongs_to) — *KillProcessGroupByID forcefully terminates a process group using its PID*
+- [[watchdog-agent/src/utils/sys_windows.go.md|KillProcessGroup]] (function: belongs_to) — *KillProcessGroup forcefully terminates a process and all of its subprocesses (process tree)*
+- [[watchdog-agent/src/utils/sys_windows.go.md|SetSysProcAttrGroup]] (function: belongs_to) — *SetSysProcAttrGroup sets the process group attributes for Windows systems*
 <!-- SYNC:END -->

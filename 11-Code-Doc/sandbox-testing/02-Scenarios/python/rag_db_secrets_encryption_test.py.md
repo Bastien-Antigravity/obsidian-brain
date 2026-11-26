@@ -23,16 +23,16 @@ Automatically generated mirror for `sandbox-testing/02-Scenarios/python/rag_db_s
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py.md|decrypt_secret]] (function: calls)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py.md|squad_agent_scenario_test.py]] (same_package)
-- [[sandbox-testing/sandbox-testing/03-Orchestration/scenario_orchestrator.py.md|execute]] (function: calls)
+- [[sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py.md|decrypt_secret]] (function: calls)
+- [[sandbox-testing/02-Scenarios/python/squad_agent_scenario_test.py.md|squad_agent_scenario_test.py]] (same_package)
+- [[sandbox-testing/03-Orchestration/scenario_orchestrator.py.md|execute]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|RAG_ENGINE_DIR]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|SANDBOX_DIR]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|TEST_DIR]] (constant: belongs_to) — *Add 09-RAG-Engine to python path*
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|run_scenario_tests]] (function: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|RAG_ENGINE_DIR]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|SANDBOX_DIR]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|TEST_DIR]] (constant: belongs_to) — *Add 09-RAG-Engine to python path*
+- [[sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_db_secrets_encryption_test.py.md|run_scenario_tests]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

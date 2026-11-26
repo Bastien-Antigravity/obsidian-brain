@@ -23,22 +23,22 @@ Automatically generated mirror for `web-interface/src/router/contracts_bridges.g
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|resolveAuthoritativeEndpoint]] (function: calls) — *- Secondary Fallback: Alternate endpoint if distinct*
-- [[web-interface/web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
-- [[web-interface/web-interface/src/router/router_test.go.md|testLogger.Close]] (method: calls)
+- [[web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/src/mfe/registry.go.md|Registry.List]] (method: calls) — *6. RegisteredAt timestamp*
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
+- [[web-interface/src/router/dynamic.go.md|resolveAuthoritativeEndpoint]] (function: calls) — *- Secondary Fallback: Alternate endpoint if distinct*
+- [[web-interface/src/router/router_test.go.md|router_test.go]] (same_package)
+- [[web-interface/src/router/router_test.go.md|testLogger.Close]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/router/contracts_bridges.go.md|buildNatsContractsFromIntrospection]] (function: belongs_to)
-- [[web-interface/web-interface/src/router/contracts_bridges.go.md|handleGetNatsContracts]] (function: belongs_to)
-- [[web-interface/web-interface/src/router/contracts_bridges.go.md|handleGetTeleRemoteContracts]] (function: belongs_to)
-- [[web-interface/web-interface/src/router/contracts_bridges.go.md|natsMonitorFetcher]] (struct: belongs_to)
-- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
-- [[web-interface/web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (same_package)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
-- [[web-interface/web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
+- [[web-interface/src/router/contracts_bridges.go.md|buildNatsContractsFromIntrospection]] (function: belongs_to)
+- [[web-interface/src/router/contracts_bridges.go.md|handleGetNatsContracts]] (function: belongs_to)
+- [[web-interface/src/router/contracts_bridges.go.md|handleGetTeleRemoteContracts]] (function: belongs_to)
+- [[web-interface/src/router/contracts_bridges.go.md|natsMonitorFetcher]] (struct: belongs_to)
+- [[web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (calls)
+- [[web-interface/src/router/contracts_bridges_test.go.md|contracts_bridges_test.go]] (same_package)
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (calls)
+- [[web-interface/src/router/dynamic.go.md|dynamic.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

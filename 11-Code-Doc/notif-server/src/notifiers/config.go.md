@@ -26,16 +26,16 @@ Automatically generated mirror for `notif-server/src/notifiers/config.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/src/core/notifier.go.md|notifier.go]] (imports)
-- [[notif-server/notif-server/src/notifiers/config.go.md|getOption]] (function: belongs_to) — *getOption retrieves an option from the config map trying multiple case variations.*
-- [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (calls)
-- [[notif-server/notif-server/src/notifiers/discord.go.md|discord.go]] (same_package)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|gmail.go]] (calls)
-- [[notif-server/notif-server/src/notifiers/gmail.go.md|gmail.go]] (same_package)
-- [[notif-server/notif-server/src/notifiers/matrix.go.md|matrix.go]] (calls)
-- [[notif-server/notif-server/src/notifiers/matrix.go.md|matrix.go]] (same_package)
-- [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (calls)
-- [[notif-server/notif-server/src/notifiers/telegram.go.md|telegram.go]] (same_package)
+- [[notif-server/src/core/notifier.go.md|notifier.go]] (imports)
+- [[notif-server/src/notifiers/config.go.md|getOption]] (function: belongs_to) — *getOption retrieves an option from the config map trying multiple case variations.*
+- [[notif-server/src/notifiers/discord.go.md|discord.go]] (calls)
+- [[notif-server/src/notifiers/discord.go.md|discord.go]] (same_package)
+- [[notif-server/src/notifiers/gmail.go.md|gmail.go]] (calls)
+- [[notif-server/src/notifiers/gmail.go.md|gmail.go]] (same_package)
+- [[notif-server/src/notifiers/matrix.go.md|matrix.go]] (calls)
+- [[notif-server/src/notifiers/matrix.go.md|matrix.go]] (same_package)
+- [[notif-server/src/notifiers/telegram.go.md|telegram.go]] (calls)
+- [[notif-server/src/notifiers/telegram.go.md|telegram.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

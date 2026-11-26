@@ -20,15 +20,15 @@ Automatically generated mirror for `distributed-config/cmd/config-tool/tlsgen_te
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen.go.md|generateFleetCA]] (function: calls)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen.go.md|generateServiceCert]] (function: calls)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen.go.md|tlsgen.go]] (same_package)
+- [[distributed-config/cmd/config-tool/tlsgen.go.md|generateFleetCA]] (function: calls)
+- [[distributed-config/cmd/config-tool/tlsgen.go.md|generateServiceCert]] (function: calls)
+- [[distributed-config/cmd/config-tool/tlsgen.go.md|tlsgen.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen_test.go.md|TestTLSGen_CAAndServiceLeafChain]] (function: belongs_to)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen_test.go.md|TestTLSGen_ValidateServiceName]] (function: belongs_to)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen_test.go.md|mustReadCert]] (function: belongs_to)
-- [[distributed-config/distributed-config/cmd/config-tool/tlsgen_test.go.md|mustReadRSAPrivateKey]] (function: belongs_to)
+- [[distributed-config/cmd/config-tool/tlsgen_test.go.md|TestTLSGen_CAAndServiceLeafChain]] (function: belongs_to)
+- [[distributed-config/cmd/config-tool/tlsgen_test.go.md|TestTLSGen_ValidateServiceName]] (function: belongs_to)
+- [[distributed-config/cmd/config-tool/tlsgen_test.go.md|mustReadCert]] (function: belongs_to)
+- [[distributed-config/cmd/config-tool/tlsgen_test.go.md|mustReadRSAPrivateKey]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -22,8 +22,8 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|BinSerializer.hpp]] (imports)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/JsonSerializer.hpp.md|JsonSerializer.hpp]] (imports)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|Serializer]] (class: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/serializers/BinSerializer.hpp.md|BinSerializer.hpp]] (imports)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/serializers/JsonSerializer.hpp.md|JsonSerializer.hpp]] (imports)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_SERIALIZERS_SERIALIZER_HPP*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/serializers/Serializer.hpp.md|Serializer]] (class: belongs_to)
 <!-- SYNC:END -->

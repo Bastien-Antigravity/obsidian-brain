@@ -19,21 +19,21 @@ Automatically generated mirror for `distributed-config/src/cgo_bridge/bridge_tes
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|Get]] (function: calls) — *Get is a Go-native wrapper for DistConf_Get, using string types for cross-package compatibility.*
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|Set]] (function: calls) — *Set is a Go-native wrapper for DistConf_Set, using string types.*
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|Sync]] (function: calls) — *Sync is a Go-native wrapper for DistConf_Sync.*
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|config.go]] (same_package)
-- [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|Close]] (function: calls) — *Close is a Go-native wrapper for DistConf_Close.*
-- [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls) — *New is a Go-native wrapper for DistConf_New.*
-- [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
-- [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|GetCapability]] (function: calls) — *GetCapability is a Go-native wrapper for DistConf_GetCapability.*
-- [[distributed-config/distributed-config/src/cgo_bridge/networking.go.md|networking.go]] (same_package)
+- [[distributed-config/src/cgo_bridge/config.go.md|Get]] (function: calls) — *Get is a Go-native wrapper for DistConf_Get, using string types for cross-package compatibility.*
+- [[distributed-config/src/cgo_bridge/config.go.md|Set]] (function: calls) — *Set is a Go-native wrapper for DistConf_Set, using string types.*
+- [[distributed-config/src/cgo_bridge/config.go.md|Sync]] (function: calls) — *Sync is a Go-native wrapper for DistConf_Sync.*
+- [[distributed-config/src/cgo_bridge/config.go.md|config.go]] (same_package)
+- [[distributed-config/src/cgo_bridge/initialize.go.md|Close]] (function: calls) — *Close is a Go-native wrapper for DistConf_Close.*
+- [[distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls) — *New is a Go-native wrapper for DistConf_New.*
+- [[distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
+- [[distributed-config/src/cgo_bridge/networking.go.md|GetCapability]] (function: calls) — *GetCapability is a Go-native wrapper for DistConf_GetCapability.*
+- [[distributed-config/src/cgo_bridge/networking.go.md|networking.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_ExpandedName]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_GetSet]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_LiveCapabilityUpdate]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_LiveUpdate]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_Sync]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/bridge_test.go.md|testInit]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_ExpandedName]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_GetSet]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_LiveCapabilityUpdate]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_LiveUpdate]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/bridge_test.go.md|TestBridge_Sync]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/bridge_test.go.md|testInit]] (function: belongs_to)
 <!-- SYNC:END -->

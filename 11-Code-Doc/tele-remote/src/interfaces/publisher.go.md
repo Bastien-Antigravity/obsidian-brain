@@ -9,6 +9,12 @@ tags:
 - '#zone/3-fleet'
 ---
 
+## 📝 Description
+Automatically generated mirror for `tele-remote/src/interfaces/publisher.go`.
+
+> **Essential Process**:
+> Defines the outbound command and menu-refresh publisher contract for connected microservice streams in Tele-Remote.
+
 ## 🏗️ Architectural Context
 
 <!-- SYNC:START -->
@@ -16,5 +22,5 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/src/interfaces/publisher.go.md|IPublisher]] (interface: belongs_to) — *IPublisher defines the contract for sending commands back to a component.*
+- [[tele-remote/src/interfaces/publisher.go.md|IPublisher]] (interface: belongs_to) — *IPublisher defines the contract for sending commands back to a component.*
 <!-- SYNC:END -->

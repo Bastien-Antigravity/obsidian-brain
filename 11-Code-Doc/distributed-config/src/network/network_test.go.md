@@ -19,25 +19,25 @@ Automatically generated mirror for `distributed-config/src/network/network_test.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Delete]] (method: calls) — *If keys slice is empty, removes the entire section.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: calls) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
-- [[distributed-config/distributed-config/src/network/client.go.md|Client.GetVersion]] (method: calls) — *GetVersion returns the last seen server configuration version.*
-- [[distributed-config/distributed-config/src/network/client.go.md|client.go]] (same_package)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoingWithVersion]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnGapDetected]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnUpdateResult]] (method: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|NewConfigHandler]] (function: calls)
-- [[distributed-config/distributed-config/src/network/proto_handler.go.md|proto_handler.go]] (same_package)
-- [[distributed-config/distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)
+- [[distributed-config/src/core/config.go.md|Config.Delete]] (method: calls) — *If keys slice is empty, removes the entire section.*
+- [[distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
+- [[distributed-config/src/core/config.go.md|Config.PreviewSet]] (method: calls) — *before committing locally. Supports "__DELETED__" sentinel values to remove keys.*
+- [[distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
+- [[distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/src/network/client.go.md|Client.GetVersion]] (method: calls) — *GetVersion returns the last seen server configuration version.*
+- [[distributed-config/src/network/client.go.md|client.go]] (same_package)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoingWithVersion]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnGapDetected]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnUpdateResult]] (method: calls)
+- [[distributed-config/src/network/proto_handler.go.md|NewConfigHandler]] (function: calls)
+- [[distributed-config/src/network/proto_handler.go.md|proto_handler.go]] (same_package)
+- [[distributed-config/src/schemas/config.pb.go.md|config.pb.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/network/network_test.go.md|TestNetworkProtoHandler]] (function: belongs_to)
+- [[distributed-config/src/network/network_test.go.md|TestNetworkProtoHandler]] (function: belongs_to)
 <!-- SYNC:END -->

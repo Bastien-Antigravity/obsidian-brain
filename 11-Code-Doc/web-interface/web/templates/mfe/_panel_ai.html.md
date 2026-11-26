@@ -23,14 +23,14 @@ Automatically generated mirror for `web-interface/web/templates/mfe/_panel_ai.ht
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-doclink (code)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-drift-status (span)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-prompt-preview (div)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-results-box (div)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-btn-open-doc (a)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-btn-open-obsidian (a)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-btn-rag-search (button)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/mfe/_panel_ai.html.md|#panel-ai (div)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-doclink (code)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-drift-status (span)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-prompt-preview (div)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-ai-results-box (div)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-btn-open-doc (a)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-btn-open-obsidian (a)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#mfe-btn-rag-search (button)]] (element: belongs_to)
+- [[web-interface/web/templates/mfe/_panel_ai.html.md|#panel-ai (div)]] (element: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -23,22 +23,22 @@ Automatically generated mirror for `config-server/src/core/request_handler_test.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls) — *It may also trigger a broadcast and persistence via the provided callbacks.*
-- [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (same_package)
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
-- [[config-server/config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
-- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
+- [[config-server/src/core/request_handler.go.md|ProcessRequest]] (function: calls) — *It may also trigger a broadcast and persistence via the provided callbacks.*
+- [[config-server/src/core/request_handler.go.md|request_handler.go]] (same_package)
+- [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
+- [[config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
+- [[config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
+- [[config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_DeleteSync]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_GetSyncAndFullRefresh]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_MalformedProtobuf]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_InvalidJSON]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_OCC]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_SentinelDeletion]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_Success]] (function: belongs_to)
-- [[config-server/config-server/src/core/request_handler_test.go.md|TestProcessRequest_UnknownCommand]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_DeleteSync]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_GetSyncAndFullRefresh]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_MalformedProtobuf]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_InvalidJSON]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_OCC]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_SentinelDeletion]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_PutSync_Success]] (function: belongs_to)
+- [[config-server/src/core/request_handler_test.go.md|TestProcessRequest_UnknownCommand]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

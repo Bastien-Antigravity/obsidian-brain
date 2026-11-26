@@ -16,7 +16,7 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|scaffolding_scenario_test.py]] (calls)
-- [[sandbox-testing/sandbox-testing/04-Mock-Provider/main.go.md|main]] (function: belongs_to)
-- [[sandbox-testing/sandbox-testing/04-Mock-Provider/main.go.md|startWebSocketServer]] (function: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/scaffolding_scenario_test.py.md|scaffolding_scenario_test.py]] (calls)
+- [[sandbox-testing/04-Mock-Provider/main.go.md|main]] (function: belongs_to)
+- [[sandbox-testing/04-Mock-Provider/main.go.md|startWebSocketServer]] (function: belongs_to)
 <!-- SYNC:END -->

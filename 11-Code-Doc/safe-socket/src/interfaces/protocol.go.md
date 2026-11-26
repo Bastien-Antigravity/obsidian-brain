@@ -19,9 +19,9 @@ Automatically generated mirror for `safe-socket/src/interfaces/protocol.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
+- [[safe-socket/src/models/hybrid_timeout_test.go.md|hybrid_timeout_test.go]] (imports)
+- [[safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/interfaces/protocol.go.md|Protocol]] (interface: belongs_to) — *It decouples "What we say when we connect" from "How we connect".*
+- [[safe-socket/src/interfaces/protocol.go.md|Protocol]] (interface: belongs_to) — *It decouples "What we say when we connect" from "How we connect".*
 <!-- SYNC:END -->

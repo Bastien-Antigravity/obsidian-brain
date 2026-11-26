@@ -20,10 +20,15 @@ Automatically generated mirror for `obsidian-brain/01-Strategic-Nexus/src/store/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.Close]] (method: calls)
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.GetDecisions]] (method: calls)
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.LogAction]] (method: calls)
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.ProposeSkill]] (method: calls)
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|DBManager.UpsertDecision]] (method: calls)
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db.go.md|db.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- None detected
+- [[obsidian-brain/01-Strategic-Nexus/src/store/db_test.go.md|TestDBManager_NilReceiverSafe]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

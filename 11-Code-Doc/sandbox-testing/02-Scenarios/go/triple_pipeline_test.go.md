@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|logger_resilience_and_alerts_test.go]] (same_package)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|mockScenarioNotifier.Close]] (method: calls)
+- [[sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|logger_resilience_and_alerts_test.go]] (same_package)
+- [[sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|mockScenarioNotifier.Close]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/triple_pipeline_test.go.md|TestTriplePipeline]] (function: belongs_to)
+- [[sandbox-testing/02-Scenarios/go/triple_pipeline_test.go.md|TestTriplePipeline]] (function: belongs_to)
 <!-- SYNC:END -->

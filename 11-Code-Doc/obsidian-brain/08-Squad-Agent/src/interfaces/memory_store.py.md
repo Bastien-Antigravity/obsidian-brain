@@ -26,14 +26,14 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/interfaces
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|interfaces.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|interfaces.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|MemoryStore]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|add]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|clear]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|retrieve]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|memory.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|interfaces.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/interfaces.py.md|interfaces.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|MemoryStore]] (class: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|add]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|clear]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/memory_store.py.md|retrieve]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|memory.py]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

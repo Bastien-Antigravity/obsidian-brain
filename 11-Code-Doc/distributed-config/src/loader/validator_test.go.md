@@ -19,11 +19,11 @@ Automatically generated mirror for `distributed-config/src/loader/validator_test
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
-- [[distributed-config/distributed-config/src/loader/validator.go.md|CheckProductionIPs]] (function: calls)
-- [[distributed-config/distributed-config/src/loader/validator.go.md|CheckTestIPs]] (function: calls)
-- [[distributed-config/distributed-config/src/loader/validator.go.md|validator.go]] (same_package)
+- [[distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/src/loader/validator.go.md|CheckProductionIPs]] (function: calls)
+- [[distributed-config/src/loader/validator.go.md|CheckTestIPs]] (function: calls)
+- [[distributed-config/src/loader/validator.go.md|validator.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/loader/validator_test.go.md|TestValidator]] (function: belongs_to)
+- [[distributed-config/src/loader/validator_test.go.md|TestValidator]] (function: belongs_to)
 <!-- SYNC:END -->

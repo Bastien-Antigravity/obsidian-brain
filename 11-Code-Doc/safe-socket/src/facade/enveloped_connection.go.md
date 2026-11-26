@@ -19,45 +19,45 @@ Automatically generated mirror for `safe-socket/src/facade/enveloped_connection.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: defines_method) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: defines_method) — *LocalAddr returns the local network address.*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: defines_method) — *ReadMessage implementation for Enveloped Connection*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: defines_method) — *RemoteAddr returns the remote network address.*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetDeadline]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetIdleTimeout]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetWriteDeadline]] (method: defines_method)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Write]] (method: defines_method)
-- [[safe-socket/safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
-- [[safe-socket/safe-socket/src/models/socket_config.go.md|socket_config.go]] (imports)
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Decapsulate]] (method: calls) — *It also reconstructs a partial HelloMsg for identity verification.*
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Encapsulate]] (method: calls) — *Encapsulate wraps the user payload into a PacketEnvelope.*
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: calls)
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
-- [[safe-socket/safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: defines_method)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: defines_method) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: defines_method) — *LocalAddr returns the local network address.*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: defines_method) — *ReadMessage implementation for Enveloped Connection*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: defines_method)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: defines_method) — *RemoteAddr returns the remote network address.*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetDeadline]] (method: defines_method)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetIdleTimeout]] (method: defines_method)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: defines_method)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetWriteDeadline]] (method: defines_method)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Write]] (method: defines_method)
+- [[safe-socket/src/interfaces/transport.go.md|transport.go]] (imports)
+- [[safe-socket/src/models/hybrid_timeout_test.go.md|hybrid_timeout_test.go]] (imports)
+- [[safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Decapsulate]] (method: calls) — *It also reconstructs a partial HelloMsg for identity verification.*
+- [[safe-socket/src/protocols/hello_protocol.go.md|HelloProtocol.Encapsulate]] (method: calls) — *Encapsulate wraps the user payload into a PacketEnvelope.*
+- [[safe-socket/src/protocols/hello_protocol.go.md|NewHelloProtocol]] (function: calls)
+- [[safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
+- [[safe-socket/src/schemas/messages.capnp.go.md|messages.capnp.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: belongs_to) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: belongs_to) — *LocalAddr returns the local network address.*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: belongs_to) — *ReadMessage implementation for Enveloped Connection*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: belongs_to) — *RemoteAddr returns the remote network address.*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetIdleTimeout]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetWriteDeadline]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Write]] (method: belongs_to)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: belongs_to) — *- Decapsulate incoming data (Read Wrapped HelloMsg -> Payload)*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: defines_method) — *- Decapsulate incoming data (Read Wrapped HelloMsg -> Payload)*
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|NewEnvelopedConnection]] (function: belongs_to)
-- [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
-- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (calls)
-- [[safe-socket/safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
+- [[safe-socket/safe_socket.go.md|safe_socket.go]] (calls)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Close]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.GetLastIdentity]] (method: belongs_to) — *GetLastIdentity returns the sender identity of the last decapsulated packet in a thread-safe manner.*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.LocalAddr]] (method: belongs_to) — *LocalAddr returns the local network address.*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.ReadMessage]] (method: belongs_to) — *ReadMessage implementation for Enveloped Connection*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Read]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.RemoteAddr]] (method: belongs_to) — *RemoteAddr returns the remote network address.*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetDeadline]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetIdleTimeout]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetReadDeadline]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.SetWriteDeadline]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection.Write]] (method: belongs_to)
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: belongs_to) — *- Decapsulate incoming data (Read Wrapped HelloMsg -> Payload)*
+- [[safe-socket/src/facade/enveloped_connection.go.md|EnvelopedConnection]] (struct: defines_method) — *- Decapsulate incoming data (Read Wrapped HelloMsg -> Payload)*
+- [[safe-socket/src/facade/enveloped_connection.go.md|NewEnvelopedConnection]] (function: belongs_to)
+- [[safe-socket/src/facade/socket_client.go.md|socket_client.go]] (calls)
+- [[safe-socket/src/facade/socket_client.go.md|socket_client.go]] (same_package)
+- [[safe-socket/src/facade/socket_server.go.md|socket_server.go]] (calls)
+- [[safe-socket/src/facade/socket_server.go.md|socket_server.go]] (same_package)
+- [[safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (calls)
+- [[safe-socket/src/facade/telemetry_wrapper.go.md|telemetry_wrapper.go]] (same_package)
 <!-- SYNC:END -->

@@ -13,12 +13,12 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|discardScenarioSink.Write]] (method: calls)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|logger_resilience_and_alerts_test.go]] (same_package)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|mockScenarioNotifier.Close]] (method: calls)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|doHandshake]] (function: calls) — *doHandshake performs a standard tcp-hello handshake for testing purposes.*
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/test_utils.go.md|test_utils.go]] (same_package)
+- [[sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|discardScenarioSink.Write]] (method: calls)
+- [[sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|logger_resilience_and_alerts_test.go]] (same_package)
+- [[sandbox-testing/02-Scenarios/go/logger_resilience_and_alerts_test.go.md|mockScenarioNotifier.Close]] (method: calls)
+- [[sandbox-testing/02-Scenarios/go/test_utils.go.md|doHandshake]] (function: calls) — *doHandshake performs a standard tcp-hello handshake for testing purposes.*
+- [[sandbox-testing/02-Scenarios/go/test_utils.go.md|test_utils.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/go/config_sync_on_arrival_test.go.md|TestConfigSyncOnArrival]] (function: belongs_to)
+- [[sandbox-testing/02-Scenarios/go/config_sync_on_arrival_test.go.md|TestConfigSyncOnArrival]] (function: belongs_to)
 <!-- SYNC:END -->

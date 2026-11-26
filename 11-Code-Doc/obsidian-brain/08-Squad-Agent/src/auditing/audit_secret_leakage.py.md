@@ -23,24 +23,22 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/a
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls)
+- None detected
 
 ### 🔌 Consumers (Inbound)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|autorepair.py]] (calls)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|IGNORED_LOG_DIRS]] (constant: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|SENSITIVE_KEY_REGEX]] (constant: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|SecretLeakAuditor]] (class: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|__init__]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|_resolve_private_key]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|audit_config_files]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|audit_log_files]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|decrypt_secret]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|extract_known_secrets]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|main]] (function: belongs_to)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/clients/discord_client.py.md|discord_client.py]] (calls)
-- [[08-Squad-Agent/obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|pg_pool.py]] (calls)
-- [[09-RAG-Engine/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/agents/autorepair.py.md|autorepair.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|IGNORED_LOG_DIRS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|SENSITIVE_KEY_REGEX]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|SecretLeakAuditor]] (class: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|_resolve_private_key]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|audit_config_files]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|audit_log_files]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|decrypt_secret]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|extract_known_secrets]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_secret_leakage.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/clients/discord_client.py.md|discord_client.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|pg_pool.py]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

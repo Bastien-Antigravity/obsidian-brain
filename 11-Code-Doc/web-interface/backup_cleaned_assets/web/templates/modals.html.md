@@ -23,14 +23,14 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/temp
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#AnalystConfigForm (div)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#AnalystConfigFormBody (div)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#ConnnectionInfos (h4)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#TableConnnectionInfos (table)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#TimeframesModal (div)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#TimeframesModalBody (div)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#connectionLogModal (div)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/templates/modals.html.md|#modalContent (tbody)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#AnalystConfigForm (div)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#AnalystConfigFormBody (div)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#ConnnectionInfos (h4)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#TableConnnectionInfos (table)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#TimeframesModal (div)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#TimeframesModalBody (div)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#connectionLogModal (div)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/templates/modals.html.md|#modalContent (tbody)]] (element: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

@@ -23,30 +23,39 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/p
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|WORKSPACE_ROOT]] (constant: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/bootstrap.py.md|bootstrap.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|set]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/HtmlObjectVisualizer.js.md|walk]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/audit_ports.py.md|audit_ports]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|ComplianceAuditor]] (class: calls) — *Mechanical compliance scanner for code files.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_file]] (function: calls) — *Audits a single source file and returns a list of detected violations.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_path]] (function: calls) — *Audits a path (file or recursive directory).*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|validate_compliance.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|validate_compliance.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/bootstrap/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|fleet_version.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|inspect_repo_version]] (function: calls) — *Inspects VERSION.txt and AI-Project-DNA.md within a repository directory.*
+- [[obsidian-brain/08-Squad-Agent/src/fleet/fleet_version.py.md|resolve_target_repos]] (function: calls) — *Resolves target repositories to operate on.*
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|resolve_vault_and_workspace]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|setup_terminal]] (function: calls) — *Standardizes stdout terminal output encoding to UTF-8 on Windows and POSIX systems.*
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|SUBMODULE_MAP]] (constant: belongs_to) — *Submodule mapping: folder name inside vault -> sibling repo name*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_essential_files]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_inventory_portability]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_manifest_elements]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_mode_consistency]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_ports_and_capabilities]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_spec_parity]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_submodules]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|run_preflight]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|SUBMODULE_MAP]] (constant: belongs_to) — *Submodule mapping: folder name inside vault -> sibling repo name*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_ecosystem_tooling_parity]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_essential_files]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_ghcr_and_test_isolation]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_hardening_tests_docs_and_benchmarks]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_inventory_portability]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_manifest_elements]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_mode_consistency]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_ports_and_capabilities]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_spec_parity]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_submodules]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|_check_versioning_integrity]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|run_preflight]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

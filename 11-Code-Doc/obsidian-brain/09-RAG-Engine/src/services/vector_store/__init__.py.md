@@ -10,7 +10,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/ve
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|pgvector.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

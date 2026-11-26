@@ -26,11 +26,11 @@ Automatically generated mirror for `watchdog-agent/src/config/options.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (calls)
-- [[watchdog-agent/watchdog-agent/src/config/options.go.md|ResolveRuntimeOptions]] (function: belongs_to) — *the authoritative execution capabilities of the watchdog-agent.*
-- [[watchdog-agent/watchdog-agent/src/config/options.go.md|RuntimeOptions]] (struct: belongs_to) — *RuntimeOptions encapsulates all resolved feature switches and runtime modes.*
-- [[watchdog-agent/watchdog-agent/src/config/options_test.go.md|options_test.go]] (calls)
-- [[watchdog-agent/watchdog-agent/src/config/options_test.go.md|options_test.go]] (same_package)
+- [[watchdog-agent/main.go.md|main.go]] (calls)
+- [[watchdog-agent/src/config/options.go.md|ResolveRuntimeOptions]] (function: belongs_to) — *the authoritative execution capabilities of the watchdog-agent.*
+- [[watchdog-agent/src/config/options.go.md|RuntimeOptions]] (struct: belongs_to) — *RuntimeOptions encapsulates all resolved feature switches and runtime modes.*
+- [[watchdog-agent/src/config/options_test.go.md|options_test.go]] (calls)
+- [[watchdog-agent/src/config/options_test.go.md|options_test.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

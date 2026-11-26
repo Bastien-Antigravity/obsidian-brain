@@ -17,17 +17,20 @@ tags:
 ## 📝 Description
 Automatically generated mirror for `tele-remote/cmd/tele-remote/contracts.go`.
 
+> **Essential Process**:
+> Builds the service's ExchangeContract metadata for publication to web-interface via microservice-toolbox/go/pkg/spec, reflecting both the gRPC bidirectional control stream and the Telegram Bot API gateway.
+
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/grpc_control/teleremote.pb.go.md|teleremote.pb.go]] (imports)
+- [[tele-remote/src/grpc_control/teleremote.pb.go.md|teleremote.pb.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/cmd/tele-remote/contracts.go.md|buildTeleRemoteContracts]] (function: belongs_to)
-- [[tele-remote/tele-remote/cmd/tele-remote/contracts_test.go.md|contracts_test.go]] (calls)
-- [[tele-remote/tele-remote/cmd/tele-remote/contracts_test.go.md|contracts_test.go]] (same_package)
-- [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (calls)
-- [[tele-remote/tele-remote/cmd/tele-remote/main.go.md|main.go]] (same_package)
+- [[tele-remote/cmd/tele-remote/contracts.go.md|buildTeleRemoteContracts]] (function: belongs_to)
+- [[tele-remote/cmd/tele-remote/contracts_test.go.md|contracts_test.go]] (calls)
+- [[tele-remote/cmd/tele-remote/contracts_test.go.md|contracts_test.go]] (same_package)
+- [[tele-remote/cmd/tele-remote/main.go.md|main.go]] (calls)
+- [[tele-remote/cmd/tele-remote/main.go.md|main.go]] (same_package)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

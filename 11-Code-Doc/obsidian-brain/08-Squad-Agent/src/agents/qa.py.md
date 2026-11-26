@@ -18,24 +18,28 @@ tags:
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/qa.py`.
 
 > **Essential Process**:
-> QA Engineer agent daemon specialized in verifying logic implementation, auditing unit tests, and reporting verification reports.
+> QA Engineer agent daemon specialized in verifying logic implementation, auditing unit tests, probing internal service health/contracts endpoints safely, and reporting verification reports.
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/config/db_config.py.md|get]] (function: calls) — *Resolves public key PEM string from AppConfig or standard file paths.*
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: calls)
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|QAAgent]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|execute_tool]] (function: belongs_to) — *Executes a function call requested by the model.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|run_squad_tests]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|QAAgent]] (class: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|_ALLOWED_LOOPBACK_HOSTS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|_MAX_RESPONSE_BYTES]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|_perform_http_probe]] (function: belongs_to) — *Executes the synchronous HTTP GET probe inside a worker thread.*
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|_validate_internal_probe_url]] (function: belongs_to) — *Enforces strict SSRF allowlist permitting only 127.0.0.1, 127.0.0.2, or single-label container DNS.*
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|execute_tool]] (function: belongs_to) — *Executes a function call requested by the model.*
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|probe_service_health]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/qa.py.md|run_squad_tests]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

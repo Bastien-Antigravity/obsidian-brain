@@ -23,8 +23,8 @@ Automatically generated mirror for `web-interface/web/templates/login.html`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/web/templates/login.html.md|#password (input)]] (element: belongs_to)
-- [[web-interface/web-interface/web/templates/login.html.md|#username (input)]] (element: belongs_to)
+- [[web-interface/web/templates/login.html.md|#password (input)]] (element: belongs_to)
+- [[web-interface/web/templates/login.html.md|#username (input)]] (element: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

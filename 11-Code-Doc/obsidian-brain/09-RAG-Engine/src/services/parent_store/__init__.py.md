@@ -10,7 +10,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/pa
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|postgres.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

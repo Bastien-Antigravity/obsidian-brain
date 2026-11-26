@@ -19,9 +19,9 @@ Automatically generated mirror for `safe-socket/safesock/cpp/examples/basic_usag
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.hpp]] (imports)
-- [[safe-socket/safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.close]] (method: calls)
+- [[safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocket.hpp]] (imports)
+- [[safe-socket/safesock/cpp/SafeSocket.hpp.md|SafeSocketConnection.close]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/safesock/cpp/examples/basic_usage.cpp.md|main]] (function: belongs_to) — *include <string>*
+- [[safe-socket/safesock/cpp/examples/basic_usage.cpp.md|main]] (function: belongs_to) — *include <string>*
 <!-- SYNC:END -->

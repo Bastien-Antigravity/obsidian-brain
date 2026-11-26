@@ -23,42 +23,42 @@ Automatically generated mirror for `log-server/src/core/ring_buffer.rs`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: defines_method) — *Retrieve the most recent entries up to `limit`, with optional filters*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: defines_method) — *Create new ring buffer with given capacity and internal broadcast channel*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: defines_method) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.subscribe]] (method: defines_method) — *Subscribe to real-time log stream*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.total_ingested]] (method: defines_method) — *Return total number of logs ingested since process start*
-- [[log-server/log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: calls)
-- [[log-server/log-server/src/models/log_entry.rs.md|LogEntry]] (struct: calls) — *Internal log request wrapper for internal use*
-- [[log-server/log-server/src/models/log_entry.rs.md|log_entry.rs]] (imports)
-- [[log-server/log-server/src/models/mod.rs.md|mod.rs]] (imports)
-- [[log-server/log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: defines_method) — *Retrieve the most recent entries up to `limit`, with optional filters*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: defines_method) — *Create new ring buffer with given capacity and internal broadcast channel*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: defines_method) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.subscribe]] (method: defines_method) — *Subscribe to real-time log stream*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.total_ingested]] (method: defines_method) — *Return total number of logs ingested since process start*
+- [[log-server/src/facade/log_writer.rs.md|WriterConfig.default]] (method: calls)
+- [[log-server/src/models/log_entry.rs.md|LogEntry]] (struct: calls) — *Internal log request wrapper for internal use*
+- [[log-server/src/models/log_entry.rs.md|log_entry.rs]] (imports)
+- [[log-server/src/models/mod.rs.md|mod.rs]] (imports)
+- [[log-server/src/protocols/capnp/logger_msg.rs.md|Reader<'_,>.clone]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/core/contracts.rs.md|contracts.rs]] (calls)
-- [[log-server/log-server/src/core/contracts.rs.md|contracts.rs]] (same_package)
-- [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (calls)
-- [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (same_package)
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
-- [[log-server/log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (same_package)
-- [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
-- [[log-server/log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (same_package)
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: belongs_to) — *Retrieve the most recent entries up to `limit`, with optional filters*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: belongs_to) — *Create new ring buffer with given capacity and internal broadcast channel*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: belongs_to) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.subscribe]] (method: belongs_to) — *Subscribe to real-time log stream*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer.total_ingested]] (method: belongs_to) — *Return total number of logs ingested since process start*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer]] (struct: belongs_to) — *Thread-safe in-memory circular ring buffer with real-time broadcast*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|LogRingBuffer]] (struct: defines_method) — *Thread-safe in-memory circular ring buffer with real-time broadcast*
-- [[log-server/log-server/src/core/ring_buffer.rs.md|test_ring_buffer_broadcast]] (function: belongs_to)
-- [[log-server/log-server/src/core/ring_buffer.rs.md|test_ring_buffer_capacity_and_fifo]] (function: belongs_to)
-- [[log-server/log-server/src/core/ring_buffer.rs.md|test_ring_buffer_filters]] (function: belongs_to)
-- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
-- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (same_package)
-- [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
-- [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
-- [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (calls)
-- [[log-server/log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (imports)
+- [[log-server/src/core/contracts.rs.md|contracts.rs]] (calls)
+- [[log-server/src/core/contracts.rs.md|contracts.rs]] (same_package)
+- [[log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (calls)
+- [[log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (same_package)
+- [[log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (calls)
+- [[log-server/src/core/protocol_handlers.rs.md|protocol_handlers.rs]] (same_package)
+- [[log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (calls)
+- [[log-server/src/core/reorder_test.rs.md|reorder_test.rs]] (same_package)
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.get_tail]] (method: belongs_to) — *Retrieve the most recent entries up to `limit`, with optional filters*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.new]] (method: belongs_to) — *Create new ring buffer with given capacity and internal broadcast channel*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.push]] (method: belongs_to) — *Push a new log entry into the circular buffer and broadcast to live subscribers*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.subscribe]] (method: belongs_to) — *Subscribe to real-time log stream*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer.total_ingested]] (method: belongs_to) — *Return total number of logs ingested since process start*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer]] (struct: belongs_to) — *Thread-safe in-memory circular ring buffer with real-time broadcast*
+- [[log-server/src/core/ring_buffer.rs.md|LogRingBuffer]] (struct: defines_method) — *Thread-safe in-memory circular ring buffer with real-time broadcast*
+- [[log-server/src/core/ring_buffer.rs.md|test_ring_buffer_broadcast]] (function: belongs_to)
+- [[log-server/src/core/ring_buffer.rs.md|test_ring_buffer_capacity_and_fifo]] (function: belongs_to)
+- [[log-server/src/core/ring_buffer.rs.md|test_ring_buffer_filters]] (function: belongs_to)
+- [[log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
+- [[log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (same_package)
+- [[log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
+- [[log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
+- [[log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (calls)
+- [[log-server/src/servers/grpc_server.rs.md|grpc_server.rs]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

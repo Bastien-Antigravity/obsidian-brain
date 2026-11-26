@@ -19,7 +19,8 @@ Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/archive.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|archive.py]] (imports)
+- [[obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|main]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - None detected

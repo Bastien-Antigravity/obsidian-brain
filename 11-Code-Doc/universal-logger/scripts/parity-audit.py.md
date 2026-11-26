@@ -22,12 +22,12 @@ Automatically generated mirror for `universal-logger/scripts/parity-audit.py`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|EXPECTED_LEVELS]] (constant: belongs_to)
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|FACADES]] (constant: belongs_to)
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|ROOT_DIR]] (constant: belongs_to)
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|SOURCE_OF_TRUTH]] (constant: belongs_to)
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|check_facade_parity]] (function: belongs_to) — *Check which exported functions are implemented in the given facade.*
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|check_level_parity]] (function: belongs_to) — *Check if all 11 log levels are defined in the facade.*
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|get_exported_functions]] (function: belongs_to) — *Extract UniLog_* and DistConf_* exports from the C header.*
-- [[universal-logger/universal-logger/scripts/parity-audit.py.md|main]] (function: belongs_to)
+- [[universal-logger/scripts/parity-audit.py.md|EXPECTED_LEVELS]] (constant: belongs_to)
+- [[universal-logger/scripts/parity-audit.py.md|FACADES]] (constant: belongs_to)
+- [[universal-logger/scripts/parity-audit.py.md|ROOT_DIR]] (constant: belongs_to)
+- [[universal-logger/scripts/parity-audit.py.md|SOURCE_OF_TRUTH]] (constant: belongs_to)
+- [[universal-logger/scripts/parity-audit.py.md|check_facade_parity]] (function: belongs_to) — *Check which exported functions are implemented in the given facade.*
+- [[universal-logger/scripts/parity-audit.py.md|check_level_parity]] (function: belongs_to) — *Check if all 11 log levels are defined in the facade.*
+- [[universal-logger/scripts/parity-audit.py.md|get_exported_functions]] (function: belongs_to) — *Extract UniLog_* and DistConf_* exports from the C header.*
+- [[universal-logger/scripts/parity-audit.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

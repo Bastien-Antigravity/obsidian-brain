@@ -20,15 +20,15 @@ Automatically generated mirror for `tele-remote/src/telegram/core/rate_limiter_t
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter.go.md|NewRateLimiter]] (function: calls) — *NewRateLimiter instantiates a sliding-window rate limiter with sensible defaults.*
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter.go.md|RateLimiter.Allow]] (method: calls) — *and (allowed=false, sendWarning=false) for subsequent floods within cooldown.*
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter.go.md|rate_limiter.go]] (same_package)
+- [[tele-remote/src/telegram/core/rate_limiter.go.md|NewRateLimiter]] (function: calls) — *NewRateLimiter instantiates a sliding-window rate limiter with sensible defaults.*
+- [[tele-remote/src/telegram/core/rate_limiter.go.md|RateLimiter.Allow]] (method: calls) — *and (allowed=false, sendWarning=false) for subsequent floods within cooldown.*
+- [[tele-remote/src/telegram/core/rate_limiter.go.md|rate_limiter.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_BurstAllowedThenThrottled]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_IndependentConversations]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_MaxTrackedClientsEviction]] (function: belongs_to)
-- [[tele-remote/tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_NilSafe]] (function: belongs_to)
+- [[tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_BurstAllowedThenThrottled]] (function: belongs_to)
+- [[tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_IndependentConversations]] (function: belongs_to)
+- [[tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_MaxTrackedClientsEviction]] (function: belongs_to)
+- [[tele-remote/src/telegram/core/rate_limiter_test.go.md|TestRateLimiter_NilSafe]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

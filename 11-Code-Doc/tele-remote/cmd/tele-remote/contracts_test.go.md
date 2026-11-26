@@ -20,11 +20,11 @@ Automatically generated mirror for `tele-remote/cmd/tele-remote/contracts_test.g
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[tele-remote/tele-remote/cmd/tele-remote/contracts.go.md|buildTeleRemoteContracts]] (function: calls)
-- [[tele-remote/tele-remote/cmd/tele-remote/contracts.go.md|contracts.go]] (same_package)
+- [[tele-remote/cmd/tele-remote/contracts.go.md|buildTeleRemoteContracts]] (function: calls)
+- [[tele-remote/cmd/tele-remote/contracts.go.md|contracts.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[tele-remote/tele-remote/cmd/tele-remote/contracts_test.go.md|TestBuildTeleRemoteContracts]] (function: belongs_to)
+- [[tele-remote/cmd/tele-remote/contracts_test.go.md|TestBuildTeleRemoteContracts]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

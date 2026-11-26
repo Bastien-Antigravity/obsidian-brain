@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[docker-deployment/docker-deployment/modes/docker/run.py.md|run_mode_docker]] (function: calls) — *Run containerized Docker fleet bound to isolated loopback 127.0.0.2.*
+- [[docker-deployment/modes/docker/run.py.md|run_mode_docker]] (function: calls) — *Run containerized Docker fleet bound to isolated loopback 127.0.0.2.*
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
-- [[docker-deployment/docker-deployment/scripts/mode_docker.py.md|MODES_DIR]] (constant: belongs_to)
+- [[docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
+- [[docker-deployment/scripts/mode_docker.py.md|MODES_DIR]] (constant: belongs_to)
 <!-- SYNC:END -->

@@ -22,6 +22,6 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/helpers.h.md|HELPERS_H]] (macro: belongs_to) — *ifndef HELPERS_H*
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|libdistconf.h]] (imports)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/helpers.h.md|HELPERS_H]] (macro: belongs_to) — *ifndef HELPERS_H*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/libdistconf.h.md|libdistconf.h]] (imports)
 <!-- SYNC:END -->

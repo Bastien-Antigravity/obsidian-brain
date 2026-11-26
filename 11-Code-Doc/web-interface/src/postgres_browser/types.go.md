@@ -26,14 +26,14 @@ Automatically generated mirror for `web-interface/src/postgres_browser/types.go`
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|BrowserHandler]] (struct: belongs_to) — *BrowserHandler handles Postgres HTTP browser API operations.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|ColumnInfo]] (struct: belongs_to) — *ColumnInfo describes column schema attributes.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|QueryRequest]] (struct: belongs_to) — *QueryRequest defines the payload for ad-hoc read-only SQL queries.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|QueryResponse]] (struct: belongs_to) — *QueryResponse represents the tabulated result of an executed SQL query.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|TableData]] (struct: belongs_to) — *TableData represents paginated rows and total record counts for a table.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|TableInfo]] (struct: belongs_to) — *TableInfo encapsulates basic table identification.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|TimescaleDBCap]] (struct: belongs_to) — *TimescaleDBCap matches the timescale_db capability structure in configuration.*
-- [[web-interface/web-interface/src/postgres_browser/types.go.md|TimescaleStatsResponse]] (struct: belongs_to) — *TimescaleStatsResponse defines the statistical overview of TimescaleDB hypertables, chunks, and activity.*
+- [[web-interface/src/postgres_browser/types.go.md|BrowserHandler]] (struct: belongs_to) — *BrowserHandler handles Postgres HTTP browser API operations.*
+- [[web-interface/src/postgres_browser/types.go.md|ColumnInfo]] (struct: belongs_to) — *ColumnInfo describes column schema attributes.*
+- [[web-interface/src/postgres_browser/types.go.md|QueryRequest]] (struct: belongs_to) — *QueryRequest defines the payload for ad-hoc read-only SQL queries.*
+- [[web-interface/src/postgres_browser/types.go.md|QueryResponse]] (struct: belongs_to) — *QueryResponse represents the tabulated result of an executed SQL query.*
+- [[web-interface/src/postgres_browser/types.go.md|TableData]] (struct: belongs_to) — *TableData represents paginated rows and total record counts for a table.*
+- [[web-interface/src/postgres_browser/types.go.md|TableInfo]] (struct: belongs_to) — *TableInfo encapsulates basic table identification.*
+- [[web-interface/src/postgres_browser/types.go.md|TimescaleDBCap]] (struct: belongs_to) — *TimescaleDBCap matches the timescale_db capability structure in configuration.*
+- [[web-interface/src/postgres_browser/types.go.md|TimescaleStatsResponse]] (struct: belongs_to) — *TimescaleStatsResponse defines the statistical overview of TimescaleDB hypertables, chunks, and activity.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

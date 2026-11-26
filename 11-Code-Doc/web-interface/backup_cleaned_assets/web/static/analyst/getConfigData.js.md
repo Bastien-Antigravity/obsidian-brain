@@ -23,7 +23,7 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/stat
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/static/analyst/getConfigData.js.md|getConfigData]] (function: belongs_to) — *getConfigData.js*
+- [[web-interface/backup_cleaned_assets/web/static/analyst/getConfigData.js.md|getConfigData]] (function: belongs_to) — *getConfigData.js*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

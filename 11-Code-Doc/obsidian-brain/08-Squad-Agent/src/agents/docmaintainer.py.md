@@ -23,16 +23,22 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/agents/doc
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|BaseAgent]] (class: calls)
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/interfaces/__init__.py.md|__init__.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|DocMaintainerAgent]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|DocMaintainerAgent]] (class: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|_fetch]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|_post]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|_resolve_rag_rest_url]] (function: belongs_to) — *Resolves RAG Engine REST address dynamically from AppConfig (Zero Silent Fallback).*
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|check_documentation_drift]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|execute_tool]] (function: belongs_to) — *Dispatches DocMaintainer specialized RAG alignment and doc-sync tools.*
+- [[obsidian-brain/08-Squad-Agent/src/agents/docmaintainer.py.md|sync_code_documentation]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

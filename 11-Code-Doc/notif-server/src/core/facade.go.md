@@ -19,7 +19,7 @@ Automatically generated mirror for `notif-server/src/core/facade.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/interfaces/notifier.go.md|notifier.go]] (imports)
+- [[notif-server/src/interfaces/notifier.go.md|notifier.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

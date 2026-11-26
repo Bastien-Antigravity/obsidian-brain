@@ -19,13 +19,13 @@ Automatically generated mirror for `watchdog-agent/src/config/heal.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[watchdog-agent/watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: calls) — *LogInfo writes a formatted message with watchdog prefix to stdout/logger*
-- [[watchdog-agent/watchdog-agent/src/supervisor/types.go.md|types.go]] (imports)
+- [[watchdog-agent/src/supervisor/supervisor.go.md|LogInfo]] (function: calls) — *LogInfo writes a formatted message with watchdog prefix to stdout/logger*
+- [[watchdog-agent/src/supervisor/types.go.md|types.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (calls)
-- [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (imports)
-- [[watchdog-agent/watchdog-agent/src/config/heal.go.md|HealSymlinks]] (function: belongs_to) — *HealSymlinks heals ecosystem configuration symlinks pointing to the central standalone.yaml*
-- [[watchdog-agent/watchdog-agent/src/config/heal.go.md|SymlinkTarget]] (struct: belongs_to)
-- [[watchdog-agent/watchdog-agent/src/config/heal.go.md|safeLinkOrCopy]] (function: belongs_to)
+- [[watchdog-agent/main.go.md|main.go]] (calls)
+- [[watchdog-agent/main.go.md|main.go]] (imports)
+- [[watchdog-agent/src/config/heal.go.md|HealSymlinks]] (function: belongs_to) — *HealSymlinks heals ecosystem configuration symlinks pointing to the central standalone.yaml*
+- [[watchdog-agent/src/config/heal.go.md|SymlinkTarget]] (struct: belongs_to)
+- [[watchdog-agent/src/config/heal.go.md|safeLinkOrCopy]] (function: belongs_to)
 <!-- SYNC:END -->

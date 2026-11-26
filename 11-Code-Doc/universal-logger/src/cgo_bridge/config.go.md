@@ -13,18 +13,18 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|get_vba_buffer]] (function: calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|dispatchConfigurationUpdate]] (function: calls) — *update on non-Windows platforms (Standard FFI Callback only).*
-- [[universal-logger/universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|vba_message_pump_stub.go]] (same_package)
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.OnConfigUpdate]] (method: calls) — *OnConfigUpdate registers a callback for configuration updates.*
-- [[universal-logger/universal-logger/src/config/config_handler.go.md|DistConfig.SetConfig]] (method: calls) — *Subsystems monitoring updates via OnConfigUpdate will be notified.*
+- [[universal-logger/libunilog/libunilog.h.md|get_vba_buffer]] (function: calls)
+- [[universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|dispatchConfigurationUpdate]] (function: calls) — *update on non-Windows platforms (Standard FFI Callback only).*
+- [[universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|vba_message_pump_stub.go]] (same_package)
+- [[universal-logger/src/config/config_handler.go.md|DistConfig.OnConfigUpdate]] (method: calls) — *OnConfigUpdate registers a callback for configuration updates.*
+- [[universal-logger/src/config/config_handler.go.md|DistConfig.SetConfig]] (method: calls) — *Subsystems monitoring updates via OnConfigUpdate will be notified.*
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get]] (function: belongs_to) — *export UniLog_Config_Get*
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get_Safe]] (function: belongs_to) — *export UniLog_Config_Get_Safe*
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Set]] (function: belongs_to) — *export UniLog_Config_Set*
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|UniLog_OnConfigUpdate]] (function: belongs_to) — *export UniLog_OnConfigUpdate*
-- [[universal-logger/universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniversalLogger.hpp]] (calls)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (calls)
-- [[universal-logger/universal-logger/unilog/rust/src/lib.rs.md|lib.rs]] (calls)
+- [[universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get]] (function: belongs_to) — *export UniLog_Config_Get*
+- [[universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Get_Safe]] (function: belongs_to) — *export UniLog_Config_Get_Safe*
+- [[universal-logger/src/cgo_bridge/config.go.md|UniLog_Config_Set]] (function: belongs_to) — *export UniLog_Config_Set*
+- [[universal-logger/src/cgo_bridge/config.go.md|UniLog_OnConfigUpdate]] (function: belongs_to) — *export UniLog_OnConfigUpdate*
+- [[universal-logger/unilog/cpp/UniversalLogger.hpp.md|UniversalLogger.hpp]] (calls)
+- [[universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (calls)
+- [[universal-logger/unilog/rust/src/lib.rs.md|lib.rs]] (calls)
 <!-- SYNC:END -->

@@ -19,10 +19,10 @@ Automatically generated mirror for `universal-logger/unilog/python/test_metadata
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/unilog/python/unilog/__init__.py.md|__init__.py]] (imports)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|_get_caller_info]] (function: calls) — *Capture caller metadata from the current stack trace*
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|close]] (function: calls) — *Manually release the logger session and associated resources.*
+- [[universal-logger/unilog/python/unilog/__init__.py.md|__init__.py]] (imports)
+- [[universal-logger/unilog/python/unilog/facade.py.md|_get_caller_info]] (function: calls) — *Capture caller metadata from the current stack trace*
+- [[universal-logger/unilog/python/unilog/facade.py.md|close]] (function: calls) — *Manually release the logger session and associated resources.*
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/python/test_metadata_capture.py.md|test_metadata_capture]] (function: belongs_to)
+- [[universal-logger/unilog/python/test_metadata_capture.py.md|test_metadata_capture]] (function: belongs_to)
 <!-- SYNC:END -->

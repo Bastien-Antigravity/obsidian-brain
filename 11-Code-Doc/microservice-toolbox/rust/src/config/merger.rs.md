@@ -22,6 +22,6 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/merger.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/config/merger.rs.md|deep_merge]] (function: belongs_to) — *- Otherwise, overwrite dst with src.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|loader.rs]] (imports)
+- [[microservice-toolbox/rust/src/config/merger.rs.md|deep_merge]] (function: belongs_to) — *- Otherwise, overwrite dst with src.*
 <!-- SYNC:END -->

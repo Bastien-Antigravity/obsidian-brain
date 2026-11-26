@@ -19,9 +19,11 @@ Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/src/arch
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|write]] (function: calls)
+- None detected
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|run_archive]] (function: belongs_to)
+- [[obsidian-brain/04-Rapid-Prototyping/archive.py.md|archive.py]] (calls)
+- [[obsidian-brain/04-Rapid-Prototyping/archive.py.md|archive.py]] (imports)
+- [[obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/04-Rapid-Prototyping/src/archive.py.md|run_archive]] (function: belongs_to)
 <!-- SYNC:END -->

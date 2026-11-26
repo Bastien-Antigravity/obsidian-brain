@@ -19,12 +19,12 @@ Automatically generated mirror for `microservice-toolbox/rust/src/serializers/se
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: calls)
+- [[microservice-toolbox/python/microservice_toolbox/serializers/serializer.py.md|T]] (constant: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/mod.rs.md|mod.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/serializer.rs.md|Serializer]] (trait: belongs_to) — *- Bin (MsgPack): High-performance cross-language binary serialization.*
+- [[microservice-toolbox/rust/src/serializers/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (calls)
+- [[microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (imports)
+- [[microservice-toolbox/rust/src/serializers/providers.rs.md|providers.rs]] (same_package)
+- [[microservice-toolbox/rust/src/serializers/serializer.rs.md|Serializer]] (trait: belongs_to) — *- Bin (MsgPack): High-performance cross-language binary serialization.*
 <!-- SYNC:END -->

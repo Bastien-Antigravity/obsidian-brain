@@ -19,16 +19,16 @@ Automatically generated mirror for `distributed-config/src/core/service_schemas.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|ConfigServerCap.Validate]] (method: defines_method) — *Validate ensures all mandatory fields are present.*
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|LogServerCap.Validate]] (method: defines_method) — *Validate ensures all mandatory fields are present.*
+- [[distributed-config/src/core/service_schemas.go.md|ConfigServerCap.Validate]] (method: defines_method) — *Validate ensures all mandatory fields are present.*
+- [[distributed-config/src/core/service_schemas.go.md|LogServerCap.Validate]] (method: defines_method) — *Validate ensures all mandatory fields are present.*
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (calls)
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (same_package)
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|ConfigServerCap.Validate]] (method: belongs_to) — *Validate ensures all mandatory fields are present.*
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|ConfigServerCap]] (struct: belongs_to) — *ConfigServerCap defines the mandatory capabilities for the centralized configuration registry.*
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|ConfigServerCap]] (struct: defines_method) — *ConfigServerCap defines the mandatory capabilities for the centralized configuration registry.*
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|LogServerCap.Validate]] (method: belongs_to) — *Validate ensures all mandatory fields are present.*
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|LogServerCap]] (struct: belongs_to) — *LogServerCap defines the mandatory capabilities for the centralized logging server.*
-- [[distributed-config/distributed-config/src/core/service_schemas.go.md|LogServerCap]] (struct: defines_method) — *LogServerCap defines the mandatory capabilities for the centralized logging server.*
+- [[distributed-config/src/core/config.go.md|config.go]] (calls)
+- [[distributed-config/src/core/config.go.md|config.go]] (same_package)
+- [[distributed-config/src/core/service_schemas.go.md|ConfigServerCap.Validate]] (method: belongs_to) — *Validate ensures all mandatory fields are present.*
+- [[distributed-config/src/core/service_schemas.go.md|ConfigServerCap]] (struct: belongs_to) — *ConfigServerCap defines the mandatory capabilities for the centralized configuration registry.*
+- [[distributed-config/src/core/service_schemas.go.md|ConfigServerCap]] (struct: defines_method) — *ConfigServerCap defines the mandatory capabilities for the centralized configuration registry.*
+- [[distributed-config/src/core/service_schemas.go.md|LogServerCap.Validate]] (method: belongs_to) — *Validate ensures all mandatory fields are present.*
+- [[distributed-config/src/core/service_schemas.go.md|LogServerCap]] (struct: belongs_to) — *LogServerCap defines the mandatory capabilities for the centralized logging server.*
+- [[distributed-config/src/core/service_schemas.go.md|LogServerCap]] (struct: defines_method) — *LogServerCap defines the mandatory capabilities for the centralized logging server.*
 <!-- SYNC:END -->

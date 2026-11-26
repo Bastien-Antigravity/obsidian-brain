@@ -19,56 +19,56 @@ Automatically generated mirror for `config-server/src/rest/rest_handler.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method) — *Handler returns the REST API handler with route registration and CORS wrapping.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: defines_method) — *RegisterRoutes registers the REST routes to the provided mux*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: defines_method) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: defines_method) — *Stop gracefully shuts down the HTTP server.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleGetConfig]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleListConfig]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handlePersistConfig]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleReloadConfig]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleSetConfig]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: defines_method)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetConfig]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetStatus]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.GetStoreVersion]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.ListConfig]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.PersistConfig]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.ReloadConfig]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockControl.SetConfigWithOCC]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Error]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|mockLogger.Info]] (method: calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
-- [[config-server/config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
+- [[config-server/src/core/controller.go.md|controller.go]] (imports)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: defines_method) — *Handler returns the REST API handler with route registration and CORS wrapping.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: defines_method) — *RegisterRoutes registers the REST routes to the provided mux*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: defines_method) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: defines_method) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: defines_method) — *Stop gracefully shuts down the HTTP server.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleGetConfig]] (method: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleListConfig]] (method: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handlePersistConfig]] (method: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleReloadConfig]] (method: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleSetConfig]] (method: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: defines_method)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.GetConfig]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.GetStatus]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.GetStoreVersion]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.ListConfig]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.PersistConfig]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.ReloadConfig]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockControl.SetConfigWithOCC]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockLogger.Error]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|mockLogger.Info]] (method: calls)
+- [[config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
+- [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
+- [[config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (calls)
-- [[config-server/config-server/src/rest/contracts.go.md|contracts.go]] (same_package)
-- [[config-server/config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: belongs_to) — *NewRESTHandler creates a new RESTHandler instance*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to) — *Handler returns the REST API handler with route registration and CORS wrapping.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: belongs_to) — *RegisterRoutes registers the REST routes to the provided mux*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: belongs_to) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: belongs_to) — *Stop gracefully shuts down the HTTP server.*
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleGetConfig]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleListConfig]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handlePersistConfig]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleReloadConfig]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleSetConfig]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method)
-- [[config-server/config-server/src/rest/rest_handler.go.md|httpControlResponse]] (struct: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|httpGetResponse]] (struct: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|httpListResponse]] (struct: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|httpSetConfigRequest]] (struct: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler.go.md|httpStatusResponse]] (struct: belongs_to)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (calls)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
+- [[config-server/cmd/config-server/main.go.md|main.go]] (calls)
+- [[config-server/src/rest/contracts.go.md|contracts.go]] (calls)
+- [[config-server/src/rest/contracts.go.md|contracts.go]] (same_package)
+- [[config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: belongs_to) — *NewRESTHandler creates a new RESTHandler instance*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: belongs_to) — *Handler returns the REST API handler with route registration and CORS wrapping.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.RegisterRoutes]] (method: belongs_to) — *RegisterRoutes registers the REST routes to the provided mux*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.SetAppConfig]] (method: belongs_to) — *SetAppConfig attaches the ecosystem AppConfig for live endpoint resolution in /api/v1/contracts.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.StartServer]] (method: belongs_to) — *StartServer starts a HTTP server for the REST API on the specified address (e.g. "127.0.0.1:3308" or ":3308").*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.Stop]] (method: belongs_to) — *Stop gracefully shuts down the HTTP server.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleGetConfig]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleListConfig]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handlePersistConfig]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleReloadConfig]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleSetConfig]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.handleStatus]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.sendJSON]] (method: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler]] (struct: defines_method)
+- [[config-server/src/rest/rest_handler.go.md|httpControlResponse]] (struct: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|httpGetResponse]] (struct: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|httpListResponse]] (struct: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|httpSetConfigRequest]] (struct: belongs_to)
+- [[config-server/src/rest/rest_handler.go.md|httpStatusResponse]] (struct: belongs_to)
+- [[config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (calls)
+- [[config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (same_package)
 <!-- SYNC:END -->

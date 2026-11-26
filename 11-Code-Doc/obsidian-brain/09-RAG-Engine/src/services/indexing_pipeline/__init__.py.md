@@ -10,7 +10,7 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/in
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

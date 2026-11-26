@@ -23,22 +23,22 @@ Automatically generated mirror for `notif-server/cmd/libnotif/main.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/notif/libnotif/libnotif.h.md|get_c_last_error]] (function: calls)
-- [[notif-server/notif-server/notif/libnotif/libnotif.h.md|set_c_last_error]] (function: calls)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service.pb.go.md|notif_service.pb.go]] (imports)
-- [[notif-server/notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|NewNotifServiceClient]] (function: calls)
+- [[notif-server/notif/libnotif/libnotif.h.md|get_c_last_error]] (function: calls)
+- [[notif-server/notif/libnotif/libnotif.h.md|set_c_last_error]] (function: calls)
+- [[notif-server/src/schemas/protobuf/notif_service.pb.go.md|notif_service.pb.go]] (imports)
+- [[notif-server/src/schemas/protobuf/notif_service_grpc.pb.go.md|NewNotifServiceClient]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_Close]] (function: belongs_to) — *export Notif_Close*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_FreeString]] (function: belongs_to) — *export Notif_FreeString*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_GetLastError]] (function: belongs_to) — *export Notif_GetLastError*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_SendWithTimeout]] (function: belongs_to) — *export Notif_SendWithTimeout*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|Notif_Send]] (function: belongs_to) — *export Notif_Send*
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|getOrInitClient]] (function: belongs_to)
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|main]] (function: belongs_to)
-- [[notif-server/notif-server/cmd/libnotif/main.go.md|setLastError]] (function: belongs_to)
-- [[notif-server/notif-server/notif/cpp/NotificationClient.hpp.md|NotificationClient.hpp]] (calls)
-- [[notif-server/notif-server/notif/python/notif/__init__.py.md|__init__.py]] (calls)
+- [[notif-server/cmd/libnotif/main.go.md|Notif_Close]] (function: belongs_to) — *export Notif_Close*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_FreeString]] (function: belongs_to) — *export Notif_FreeString*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_GetLastError]] (function: belongs_to) — *export Notif_GetLastError*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_SendWithTimeout]] (function: belongs_to) — *export Notif_SendWithTimeout*
+- [[notif-server/cmd/libnotif/main.go.md|Notif_Send]] (function: belongs_to) — *export Notif_Send*
+- [[notif-server/cmd/libnotif/main.go.md|getOrInitClient]] (function: belongs_to)
+- [[notif-server/cmd/libnotif/main.go.md|main]] (function: belongs_to)
+- [[notif-server/cmd/libnotif/main.go.md|setLastError]] (function: belongs_to)
+- [[notif-server/notif/cpp/NotificationClient.hpp.md|NotificationClient.hpp]] (calls)
+- [[notif-server/notif/python/notif/__init__.py.md|__init__.py]] (calls)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

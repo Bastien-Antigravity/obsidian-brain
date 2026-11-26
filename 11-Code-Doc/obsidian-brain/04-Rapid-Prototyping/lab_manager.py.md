@@ -19,7 +19,8 @@ Automatically generated mirror for `obsidian-brain/04-Rapid-Prototyping/lab_mana
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- None detected
+- [[obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|lab_manager.py]] (imports)
+- [[obsidian-brain/04-Rapid-Prototyping/src/lab_manager.py.md|main]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
 - None detected

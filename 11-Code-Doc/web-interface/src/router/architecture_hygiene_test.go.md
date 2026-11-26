@@ -23,13 +23,13 @@ Automatically generated mirror for `web-interface/src/router/architecture_hygien
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
-- [[web-interface/web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
-- [[web-interface/web-interface/src/router/router.go.md|router.go]] (same_package)
+- [[web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/src/router/router.go.md|RegisterRoutes]] (function: calls) — *RegisterRoutes initializes the web interface endpoints on the provided ServeMux.*
+- [[web-interface/src/router/router.go.md|router.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|TestArchitectureHygiene_ASTEnforcement]] (function: belongs_to) — *that prohibited defensive coding anti-patterns are not present in the codebase.*
-- [[web-interface/web-interface/src/router/architecture_hygiene_test.go.md|TestLoginEndpoint_DynamicCredentials]] (function: belongs_to) — *against dynamic local configuration credentials and rejects hardcoded bypasses.*
+- [[web-interface/src/router/architecture_hygiene_test.go.md|TestArchitectureHygiene_ASTEnforcement]] (function: belongs_to) — *that prohibited defensive coding anti-patterns are not present in the codebase.*
+- [[web-interface/src/router/architecture_hygiene_test.go.md|TestLoginEndpoint_DynamicCredentials]] (function: belongs_to) — *against dynamic local configuration credentials and rejects hardcoded bypasses.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

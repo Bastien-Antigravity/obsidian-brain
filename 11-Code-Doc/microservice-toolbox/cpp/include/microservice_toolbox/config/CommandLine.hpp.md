@@ -19,17 +19,17 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.Parse]] (method: defines_method)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.PrintHelp]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.Parse]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.PrintHelp]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.hpp]] (imports)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CLIArgs]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.Parse]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.PrintHelp]] (method: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: defines_method)
-- [[microservice-toolbox/microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP*
-- [[microservice-toolbox/microservice-toolbox/go/pkg/config/args.go.md|args.go]] (calls)
-- [[microservice-toolbox/microservice-toolbox/go/pkg/spec/spec.go.md|spec.go]] (calls)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.hpp]] (imports)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CLIArgs]] (struct: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.Parse]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.PrintHelp]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine]] (class: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP]] (macro: belongs_to) — *ifndef MICROSERVICE_TOOLBOX_COMMAND_LINE_HPP*
+- [[microservice-toolbox/go/pkg/config/args.go.md|args.go]] (calls)
+- [[microservice-toolbox/go/pkg/spec/spec.go.md|spec.go]] (calls)
 <!-- SYNC:END -->

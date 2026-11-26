@@ -16,8 +16,8 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|config.go]] (calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|config.go]] (same_package)
-- [[universal-logger/universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|UniLog_RegisterVBAWindow]] (function: belongs_to) — *export UniLog_RegisterVBAWindow*
-- [[universal-logger/universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|dispatchConfigurationUpdate]] (function: belongs_to) — *update on non-Windows platforms (Standard FFI Callback only).*
+- [[universal-logger/src/cgo_bridge/config.go.md|config.go]] (calls)
+- [[universal-logger/src/cgo_bridge/config.go.md|config.go]] (same_package)
+- [[universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|UniLog_RegisterVBAWindow]] (function: belongs_to) — *export UniLog_RegisterVBAWindow*
+- [[universal-logger/src/cgo_bridge/vba_message_pump_stub.go.md|dispatchConfigurationUpdate]] (function: belongs_to) — *update on non-Windows platforms (Standard FFI Callback only).*
 <!-- SYNC:END -->

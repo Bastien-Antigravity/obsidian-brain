@@ -22,5 +22,5 @@ Automatically generated mirror for `log-server/src/servers/mod.rs`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
+- [[log-server/src/facade/log_server.rs.md|log_server.rs]] (imports)
 <!-- SYNC:END -->

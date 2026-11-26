@@ -19,12 +19,12 @@ Automatically generated mirror for `distributed-config/distconf/python/ffi_valid
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Close]] (function: calls) — *export DistConf_Close*
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Get]] (function: calls) — *export DistConf_Get*
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_New]] (function: calls) — *export DistConf_New*
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|DistConf_Set]] (function: calls) — *export DistConf_Set*
+- [[distributed-config/cmd/libdistconf/main.go.md|DistConf_Close]] (function: calls) — *export DistConf_Close*
+- [[distributed-config/cmd/libdistconf/main.go.md|DistConf_Get]] (function: calls) — *export DistConf_Get*
+- [[distributed-config/cmd/libdistconf/main.go.md|DistConf_New]] (function: calls) — *export DistConf_New*
+- [[distributed-config/cmd/libdistconf/main.go.md|DistConf_Set]] (function: calls) — *export DistConf_Set*
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/distconf/python/ffi_validation.py.md|LIB_PATH]] (constant: belongs_to) — *Path to the shared library*
-- [[distributed-config/distributed-config/distconf/python/ffi_validation.py.md|validate_ffi]] (function: belongs_to)
+- [[distributed-config/distconf/python/ffi_validation.py.md|LIB_PATH]] (constant: belongs_to) — *Path to the shared library*
+- [[distributed-config/distconf/python/ffi_validation.py.md|validate_ffi]] (function: belongs_to)
 <!-- SYNC:END -->

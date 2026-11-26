@@ -19,13 +19,13 @@ Automatically generated mirror for `microservice-toolbox/rust/src/utils/helpers.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.new]] (method: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (same_package)
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|UniLogger.new]] (method: calls)
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|get_base_dir]] (function: belongs_to) — *Provides a stable anchor for logs and config files, similar to the Go/Python implementations.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/helpers.rs.md|get_hostname]] (function: belongs_to) — *Get system hostname (cached)*
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (same_package)
+- [[microservice-toolbox/rust/src/utils/helpers.rs.md|get_base_dir]] (function: belongs_to) — *Provides a stable anchor for logs and config files, similar to the Go/Python implementations.*
+- [[microservice-toolbox/rust/src/utils/helpers.rs.md|get_hostname]] (function: belongs_to) — *Get system hostname (cached)*
+- [[microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
+- [[microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
+- [[microservice-toolbox/rust/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (same_package)
 <!-- SYNC:END -->

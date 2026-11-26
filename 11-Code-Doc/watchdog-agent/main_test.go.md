@@ -23,11 +23,11 @@ Automatically generated mirror for `watchdog-agent/main_test.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[watchdog-agent/watchdog-agent/main.go.md|buildMFEURL]] (function: calls)
-- [[watchdog-agent/watchdog-agent/main.go.md|main.go]] (same_package)
+- [[watchdog-agent/main.go.md|buildMFEURL]] (function: calls)
+- [[watchdog-agent/main.go.md|main.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[watchdog-agent/watchdog-agent/main_test.go.md|TestBuildMFEURL_DockerResolution]] (function: belongs_to)
+- [[watchdog-agent/main_test.go.md|TestBuildMFEURL_DockerResolution]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

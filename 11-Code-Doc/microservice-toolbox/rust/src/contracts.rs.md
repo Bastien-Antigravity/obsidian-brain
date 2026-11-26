@@ -23,11 +23,11 @@ Automatically generated mirror for `microservice-toolbox/rust/src/contracts.rs`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (imports)
+- [[microservice-toolbox/rust/src/spec.rs.md|spec.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/contracts.rs.md|LOGGER_CAPNP_SCHEMA]] (constant: belongs_to) — *Canonical ecosystem Cap'n Proto LoggerMsg schema (SSoT).*
-- [[microservice-toolbox/microservice-toolbox/rust/src/contracts.rs.md|NOTIFIER_CAPNP_SCHEMA]] (constant: belongs_to) — *Canonical ecosystem Cap'n Proto NotifierMsg schema (SSoT).*
+- [[microservice-toolbox/rust/src/contracts.rs.md|LOGGER_CAPNP_SCHEMA]] (constant: belongs_to) — *Canonical ecosystem Cap'n Proto LoggerMsg schema (SSoT).*
+- [[microservice-toolbox/rust/src/contracts.rs.md|NOTIFIER_CAPNP_SCHEMA]] (constant: belongs_to) — *Canonical ecosystem Cap'n Proto NotifierMsg schema (SSoT).*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

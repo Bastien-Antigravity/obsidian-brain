@@ -19,64 +19,64 @@ Automatically generated mirror for `notif-server/cmd/test/integration_test.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.AddMetadata]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Close]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Critical]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Debug]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Error]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.GetLevel]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Info]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.LogWithCaller]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Log]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Logon]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Logout]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Report]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Schedule]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.SetCallerSkip]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.SetLevel]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Stream]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Trade]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Warning]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: defines_method)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: defines_method)
-- [[notif-server/notif-server/notif/cpp/NotificationClient.hpp.md|NotificationClient.Send]] (method: calls)
-- [[notif-server/notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
-- [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
-- [[notif-server/notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker.*
-- [[notif-server/notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
-- [[notif-server/notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
-- [[notif-server/notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
-- [[notif-server/notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
-- [[notif-server/notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (imports)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.AddMetadata]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Close]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Critical]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Debug]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Error]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.GetLevel]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Info]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.LogWithCaller]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Log]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Logon]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Logout]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Report]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Schedule]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.SetCallerSkip]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.SetLevel]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Stream]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Trade]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Warning]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: defines_method)
+- [[notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: defines_method)
+- [[notif-server/notif/cpp/NotificationClient.hpp.md|NotificationClient.Send]] (method: calls)
+- [[notif-server/src/core/controller.go.md|NewController]] (function: calls) — *NewController creates a new Controller instance.*
+- [[notif-server/src/core/controller.go.md|controller.go]] (imports)
+- [[notif-server/src/core/notifier.go.md|NewNotifier]] (function: calls) — *NewNotifier creates a new instance of the notification service.*
+- [[notif-server/src/core/notifier.go.md|Notifier.RegisterSender]] (method: calls) — *RegisterSender registers a custom or programmatic notification sender with its dedicated worker.*
+- [[notif-server/src/core/request_handler.go.md|NewNotifHandler]] (function: calls)
+- [[notif-server/src/core/request_handler.go.md|NotifNcapHandler.NotifNcapSerialize]] (method: calls) — *Allocates a fresh message arena per call to avoid unbounded memory leaks and data races [NS-6].*
+- [[notif-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Notification Server.*
+- [[notif-server/src/server/server.go.md|Server.Start]] (method: calls) — *Start listens for incoming TCP and gRPC connections.*
+- [[notif-server/src/server/server.go.md|Server.Stop]] (method: calls) — *Stop shuts down the server.*
+- [[notif-server/src/server/server.go.md|server.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|TestE2EFlow]] (function: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.AddMetadata]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Close]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Critical]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Debug]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Error]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.GetLevel]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Info]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.LogWithCaller]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Log]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Logon]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Logout]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Report]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Schedule]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.SetCallerSkip]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.SetLevel]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Stream]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Trade]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger.Warning]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: belongs_to) — *mockLogger implementation for the integration test*
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: defines_method) — *mockLogger implementation for the integration test*
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: belongs_to)
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: belongs_to) — *mockSender to verify the final delivery*
-- [[notif-server/notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: defines_method) — *mockSender to verify the final delivery*
+- [[notif-server/cmd/test/integration_test.go.md|TestE2EFlow]] (function: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.AddMetadata]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Close]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Critical]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Debug]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Error]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.GetLevel]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Info]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.LogWithCaller]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Log]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Logon]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Logout]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Report]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Schedule]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.SetCallerSkip]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.SetLevel]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Stream]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Trade]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger.Warning]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: belongs_to) — *mockLogger implementation for the integration test*
+- [[notif-server/cmd/test/integration_test.go.md|mockLogger]] (struct: defines_method) — *mockLogger implementation for the integration test*
+- [[notif-server/cmd/test/integration_test.go.md|mockSender.GetLogLevel]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockSender.GetTag]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockSender.SendMessage]] (method: belongs_to)
+- [[notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: belongs_to) — *mockSender to verify the final delivery*
+- [[notif-server/cmd/test/integration_test.go.md|mockSender]] (struct: defines_method) — *mockSender to verify the final delivery*
 <!-- SYNC:END -->

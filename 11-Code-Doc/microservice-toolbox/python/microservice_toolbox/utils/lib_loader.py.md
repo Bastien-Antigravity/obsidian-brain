@@ -26,29 +26,29 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: belongs_to) — *Generic callback alias for backward compatibility*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CONFIG_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*config_update_cb)(GoUintptr handle, const char* json_data);*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*logger_callback_cb)(const char* json_data);*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to) — *Binds standard DistConf function signatures to a ctypesCDLL handle safely.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_try_autobuild_library]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to) — *Returns the OS-specific dynamic library file extension.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libnotif]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|resolve_library_path]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (calls)
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|loader.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (calls)
+- [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|facade.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (calls)
+- [[microservice-toolbox/python/microservice_toolbox/notification/client.py.md|client.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (calls)
+- [[microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/bootstrap.py.md|bootstrap.py]] (same_package)
+- [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
+- [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (same_package)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: belongs_to) — *Generic callback alias for backward compatibility*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CONFIG_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*config_update_cb)(GoUintptr handle, const char* json_data);*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: belongs_to) — *typedef void (*logger_callback_cb)(const char* json_data);*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_bind_distconf_signatures]] (function: belongs_to) — *Binds standard DistConf function signatures to a ctypesCDLL handle safely.*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|_try_autobuild_library]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|get_platform_extension]] (function: belongs_to) — *Returns the OS-specific dynamic library file extension.*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libnotif]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|resolve_library_path]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

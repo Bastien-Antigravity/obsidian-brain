@@ -23,16 +23,16 @@ Automatically generated mirror for `web-interface/src/postgres_browser/handler.g
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.getDatabase]] (method: calls) — *getDatabase resolves connection settings from config and caches/returns the active pool.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Error]] (method: calls)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Info]] (method: calls)
+- [[web-interface/src/postgres_browser/connection.go.md|BrowserHandler.getDatabase]] (method: calls) — *getDatabase resolves connection settings from config and caches/returns the active pool.*
+- [[web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Error]] (method: calls)
+- [[web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Info]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
-- [[web-interface/web-interface/cmd/web-interface/main.go.md|main.go]] (imports)
-- [[web-interface/web-interface/src/postgres_browser/handler.go.md|RegisterPostgresBrowserRoutes]] (function: belongs_to) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
+- [[web-interface/cmd/web-interface/main.go.md|main.go]] (calls)
+- [[web-interface/cmd/web-interface/main.go.md|main.go]] (imports)
+- [[web-interface/src/postgres_browser/handler.go.md|RegisterPostgresBrowserRoutes]] (function: belongs_to) — *RegisterPostgresBrowserRoutes maps browser HTTP endpoints and returns the wrapped handler.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

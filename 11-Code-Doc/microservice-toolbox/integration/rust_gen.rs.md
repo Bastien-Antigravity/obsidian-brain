@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/serializers/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/rust/src/serializers/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/integration/rust_gen.rs.md|IntegrationData]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/integration/rust_gen.rs.md|main]] (function: belongs_to)
+- [[microservice-toolbox/integration/rust_gen.rs.md|IntegrationData]] (struct: belongs_to)
+- [[microservice-toolbox/integration/rust_gen.rs.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

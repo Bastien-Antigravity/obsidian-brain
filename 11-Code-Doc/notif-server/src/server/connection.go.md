@@ -19,19 +19,19 @@ Automatically generated mirror for `notif-server/src/server/connection.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[notif-server/notif-server/src/core/controller.go.md|controller.go]] (imports)
-- [[notif-server/notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
-- [[notif-server/notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: calls) — *This helper is exposed for servers or other components using this library.*
-- [[notif-server/notif-server/src/server/connection.go.md|Server.handleConnection]] (method: defines_method)
-- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Close]] (method: calls)
-- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
-- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
-- [[notif-server/notif-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
-- [[notif-server/notif-server/src/server/server_test.go.md|server_test.go]] (same_package)
+- [[notif-server/src/core/controller.go.md|controller.go]] (imports)
+- [[notif-server/src/core/notifier.go.md|Notifier.Notify]] (method: calls) — *Notify sends a structured notification message.*
+- [[notif-server/src/core/request_handler.go.md|DeserializeNotifMsg]] (function: calls) — *This helper is exposed for servers or other components using this library.*
+- [[notif-server/src/server/connection.go.md|Server.handleConnection]] (method: defines_method)
+- [[notif-server/src/server/server_test.go.md|mockLogger.Close]] (method: calls)
+- [[notif-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
+- [[notif-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
+- [[notif-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
+- [[notif-server/src/server/server_test.go.md|server_test.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[notif-server/notif-server/src/server/connection.go.md|Server.handleConnection]] (method: belongs_to)
-- [[notif-server/notif-server/src/server/connection.go.md|Server]] (struct: defines_method)
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (calls)
-- [[notif-server/notif-server/src/server/server.go.md|server.go]] (same_package)
+- [[notif-server/src/server/connection.go.md|Server.handleConnection]] (method: belongs_to)
+- [[notif-server/src/server/connection.go.md|Server]] (struct: defines_method)
+- [[notif-server/src/server/server.go.md|server.go]] (calls)
+- [[notif-server/src/server/server.go.md|server.go]] (same_package)
 <!-- SYNC:END -->

@@ -19,16 +19,16 @@ Automatically generated mirror for `distributed-config/src/network/backoff.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: defines_method) — *GetDelay calculates the delay for the current attempt.*
+- [[distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: defines_method) — *GetDelay calculates the delay for the current attempt.*
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: belongs_to) — *GetDelay calculates the delay for the current attempt.*
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff]] (struct: belongs_to) — *Backoff implements exponential backoff with jitter*
-- [[distributed-config/distributed-config/src/network/backoff.go.md|Backoff]] (struct: defines_method) — *Backoff implements exponential backoff with jitter*
-- [[distributed-config/distributed-config/src/network/backoff.go.md|NewBackoff]] (function: belongs_to) — *NewBackoff creates a new backoff strategy using parameters from the config*
-- [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (calls)
-- [[distributed-config/distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (same_package)
-- [[distributed-config/distributed-config/src/network/client.go.md|client.go]] (calls)
-- [[distributed-config/distributed-config/src/network/client.go.md|client.go]] (same_package)
+- [[distributed-config/src/network/backoff.go.md|Backoff.GetDelay]] (method: belongs_to) — *GetDelay calculates the delay for the current attempt.*
+- [[distributed-config/src/network/backoff.go.md|Backoff]] (struct: belongs_to) — *Backoff implements exponential backoff with jitter*
+- [[distributed-config/src/network/backoff.go.md|Backoff]] (struct: defines_method) — *Backoff implements exponential backoff with jitter*
+- [[distributed-config/src/network/backoff.go.md|NewBackoff]] (function: belongs_to) — *NewBackoff creates a new backoff strategy using parameters from the config*
+- [[distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (calls)
+- [[distributed-config/src/network/backoff_test.go.md|backoff_test.go]] (same_package)
+- [[distributed-config/src/network/client.go.md|client.go]] (calls)
+- [[distributed-config/src/network/client.go.md|client.go]] (same_package)
 <!-- SYNC:END -->

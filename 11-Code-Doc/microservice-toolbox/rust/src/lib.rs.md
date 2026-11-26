@@ -19,8 +19,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/lib.rs`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (imports)
-- [[microservice-toolbox/microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
+- [[microservice-toolbox/rust/src/utils/logger.rs.md|logger.rs]] (imports)
+- [[microservice-toolbox/rust/src/utils/mod.rs.md|mod.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

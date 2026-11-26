@@ -19,15 +19,15 @@ Automatically generated mirror for `distributed-config/src/cgo_bridge/stress_tes
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|Get]] (function: calls) — *Get is a Go-native wrapper for DistConf_Get, using string types for cross-package compatibility.*
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|Set]] (function: calls) — *Set is a Go-native wrapper for DistConf_Set, using string types.*
-- [[distributed-config/distributed-config/src/cgo_bridge/config.go.md|config.go]] (same_package)
-- [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|Close]] (function: calls) — *Close is a Go-native wrapper for DistConf_Close.*
-- [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls) — *New is a Go-native wrapper for DistConf_New.*
-- [[distributed-config/distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
+- [[distributed-config/src/cgo_bridge/config.go.md|Get]] (function: calls) — *Get is a Go-native wrapper for DistConf_Get, using string types for cross-package compatibility.*
+- [[distributed-config/src/cgo_bridge/config.go.md|Set]] (function: calls) — *Set is a Go-native wrapper for DistConf_Set, using string types.*
+- [[distributed-config/src/cgo_bridge/config.go.md|config.go]] (same_package)
+- [[distributed-config/src/cgo_bridge/initialize.go.md|Close]] (function: calls) — *Close is a Go-native wrapper for DistConf_Close.*
+- [[distributed-config/src/cgo_bridge/initialize.go.md|New]] (function: calls) — *New is a Go-native wrapper for DistConf_New.*
+- [[distributed-config/src/cgo_bridge/initialize.go.md|initialize.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/cgo_bridge/stress_test.go.md|TestCGOBridge_StressRace]] (function: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/stress_test.go.md|iterations]] (constant: belongs_to)
-- [[distributed-config/distributed-config/src/cgo_bridge/stress_test.go.md|numGoroutines]] (constant: belongs_to) — *This should be run with -race flag.*
+- [[distributed-config/src/cgo_bridge/stress_test.go.md|TestCGOBridge_StressRace]] (function: belongs_to)
+- [[distributed-config/src/cgo_bridge/stress_test.go.md|iterations]] (constant: belongs_to)
+- [[distributed-config/src/cgo_bridge/stress_test.go.md|numGoroutines]] (constant: belongs_to) — *This should be run with -race flag.*
 <!-- SYNC:END -->

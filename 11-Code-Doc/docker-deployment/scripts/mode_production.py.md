@@ -13,9 +13,9 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[docker-deployment/docker-deployment/modes/production/run.py.md|run_mode_production]] (function: calls) — *Deploy production containerized fleet on public interfaces (0.0.0.0) with Watchtower.*
+- [[docker-deployment/modes/production/run.py.md|run_mode_production]] (function: calls) — *Deploy production containerized fleet on public interfaces (0.0.0.0) with Watchtower.*
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
-- [[docker-deployment/docker-deployment/scripts/mode_production.py.md|MODES_DIR]] (constant: belongs_to)
+- [[docker-deployment/scripts/fleet.py.md|fleet.py]] (imports)
+- [[docker-deployment/scripts/mode_production.py.md|MODES_DIR]] (constant: belongs_to)
 <!-- SYNC:END -->

@@ -23,14 +23,14 @@ Automatically generated mirror for `microservice-toolbox/rust/src/notification/f
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient.new]] (method: calls) — *Initializes a NotificationClient pointing to a specific target address.*
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (same_package)
+- [[microservice-toolbox/rust/src/notification/client.rs.md|NotificationClient.new]] (method: calls) — *Initializes a NotificationClient pointing to a specific target address.*
+- [[microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/ffi.rs.md|NotifLib]] (struct: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/rust/src/notification/ffi.rs.md|get_lib]] (function: belongs_to)
+- [[microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (calls)
+- [[microservice-toolbox/rust/src/notification/client.rs.md|client.rs]] (same_package)
+- [[microservice-toolbox/rust/src/notification/ffi.rs.md|NotifLib]] (struct: belongs_to)
+- [[microservice-toolbox/rust/src/notification/ffi.rs.md|get_lib]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

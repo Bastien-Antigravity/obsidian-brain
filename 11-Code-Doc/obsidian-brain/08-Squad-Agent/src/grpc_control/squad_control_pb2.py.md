@@ -23,7 +23,7 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/grpc_contr
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/grpc_control/squad_control_pb2.py.md|DESCRIPTOR]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/grpc_control/squad_control_pb2.py.md|DESCRIPTOR]] (constant: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

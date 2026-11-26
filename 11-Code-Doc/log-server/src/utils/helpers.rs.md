@@ -13,7 +13,7 @@ tags:
 Automatically generated mirror for `log-server/src/utils/helpers.rs`.
 
 > **Essential Process**:
-> ! Common utility helper functions for hostname discovery, folder creation, ! string truncation, sequence extraction, and timestamps. ! ! DATA FLOW: ! 1. OS environment -> helper utilities ! 2. Helpers used across core, servers, and transport components ! ! KEY PARAMETERS: ! - get_hostname: Cached system hostname lookup via OnceLock. ! - truncate: String truncation with unicode-safe boundaries. ! - line_str!: Macro to stringify source line numbers. use std::path::PathBuf; use std::process::Command; use std::sync::OnceLock;
+> ! Common utility helper functions for hostname discovery, folder creation, ! string truncation, sequence extraction, and timestamps. ! ! DATA FLOW: ! 1. OS environment -> helper utilities ! 2. Helpers used across core, servers, and transport components ! ! KEY PARAMETERS: ! - get_hostname: Cached system hostname lookup via OnceLock. ! - truncate: String truncation with unicode-safe boundaries. ! - line_str!: Macro to stringify source line numbers. cli:allow-print use std::path::PathBuf; use std::process::Command; use std::sync::OnceLock;
 
 ## 🏗️ Architectural Context
 
@@ -22,24 +22,24 @@ Automatically generated mirror for `log-server/src/utils/helpers.rs`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[log-server/log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (imports)
-- [[log-server/log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
-- [[log-server/log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
-- [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
-- [[log-server/log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
-- [[log-server/log-server/src/utils/helpers.rs.md|create_log_folder]] (function: belongs_to) — *Create log folder if not exists*
-- [[log-server/log-server/src/utils/helpers.rs.md|get_exec_parent_dir]] (function: belongs_to) — *Get executable parent directory*
-- [[log-server/log-server/src/utils/helpers.rs.md|get_hostname]] (function: belongs_to) — *Get system hostname (cached)*
-- [[log-server/log-server/src/utils/helpers.rs.md|get_utc_timestamp]] (function: belongs_to) — *Get current UTC timestamp as string*
-- [[log-server/log-server/src/utils/helpers.rs.md|is_docker_env]] (function: belongs_to) — *Report whether process is running inside a Docker container (explicit DOCKER_ENV=true).*
-- [[log-server/log-server/src/utils/helpers.rs.md|line_str]] (macro: belongs_to) — *For line!() formatting*
-- [[log-server/log-server/src/utils/helpers.rs.md|resolve_log_dir]] (function: belongs_to) — *Resolve target log directory: LOG_DIR env var -> /var/log/log-server (Docker) -> <exec_parent>/logs.*
-- [[log-server/log-server/src/utils/helpers.rs.md|resolve_log_dir_with]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|test_get_utc_timestamp]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|test_resolve_log_dir_with]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|test_truncate]] (function: belongs_to)
-- [[log-server/log-server/src/utils/helpers.rs.md|truncate]] (function: belongs_to) — *Helper to truncate long strings safely respecting UTF-8 character boundaries*
-- [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
-- [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
-- [[log-server/log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (same_package)
+- [[log-server/src/core/log_formatter.rs.md|log_formatter.rs]] (imports)
+- [[log-server/src/core/transactional_writer.rs.md|transactional_writer.rs]] (calls)
+- [[log-server/src/facade/log_server.rs.md|log_server.rs]] (calls)
+- [[log-server/src/facade/log_writer.rs.md|log_writer.rs]] (calls)
+- [[log-server/src/facade/log_writer.rs.md|log_writer.rs]] (imports)
+- [[log-server/src/utils/helpers.rs.md|create_log_folder]] (function: belongs_to) — *Create log folder if not exists*
+- [[log-server/src/utils/helpers.rs.md|get_exec_parent_dir]] (function: belongs_to) — *Get executable parent directory*
+- [[log-server/src/utils/helpers.rs.md|get_hostname]] (function: belongs_to) — *Get system hostname (cached)*
+- [[log-server/src/utils/helpers.rs.md|get_utc_timestamp]] (function: belongs_to) — *Get current UTC timestamp as string*
+- [[log-server/src/utils/helpers.rs.md|is_docker_env]] (function: belongs_to) — *Report whether process is running inside a Docker container (explicit DOCKER_ENV=true).*
+- [[log-server/src/utils/helpers.rs.md|line_str]] (macro: belongs_to) — *For line!() formatting*
+- [[log-server/src/utils/helpers.rs.md|resolve_log_dir]] (function: belongs_to) — *Resolve target log directory: LOG_DIR env var -> /var/log/log-server (Docker) -> <exec_parent>/logs.*
+- [[log-server/src/utils/helpers.rs.md|resolve_log_dir_with]] (function: belongs_to)
+- [[log-server/src/utils/helpers.rs.md|test_get_utc_timestamp]] (function: belongs_to)
+- [[log-server/src/utils/helpers.rs.md|test_resolve_log_dir_with]] (function: belongs_to)
+- [[log-server/src/utils/helpers.rs.md|test_truncate]] (function: belongs_to)
+- [[log-server/src/utils/helpers.rs.md|truncate]] (function: belongs_to) — *Helper to truncate long strings safely respecting UTF-8 character boundaries*
+- [[log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (calls)
+- [[log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (imports)
+- [[log-server/src/utils/terminal_ui.rs.md|terminal_ui.rs]] (same_package)
 <!-- SYNC:END -->

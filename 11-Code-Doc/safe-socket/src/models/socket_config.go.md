@@ -22,19 +22,5 @@ Automatically generated mirror for `safe-socket/src/models/socket_config.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/cmd/test/deadline_test.go.md|deadline_test.go]] (imports)
-- [[safe-socket/safe-socket/cmd/test/factory_test.go.md|factory_test.go]] (imports)
-- [[safe-socket/safe-socket/cmd/test/heartbeat_audit_test.go.md|heartbeat_audit_test.go]] (imports)
-- [[safe-socket/safe-socket/cmd/test/probe_resilience_test.go.md|probe_resilience_test.go]] (imports)
-- [[safe-socket/safe-socket/cmd/test/scenario_test.go.md|scenario_test.go]] (imports)
-- [[safe-socket/safe-socket/safe_socket.go.md|safe_socket.go]] (imports)
-- [[safe-socket/safe-socket/src/facade/enveloped_connection.go.md|enveloped_connection.go]] (imports)
-- [[safe-socket/safe-socket/src/facade/shutdown_test.go.md|shutdown_test.go]] (imports)
-- [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
-- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
-- [[safe-socket/safe-socket/src/factory/socket_factory_test.go.md|socket_factory_test.go]] (imports)
-- [[safe-socket/safe-socket/src/interfaces/protocol.go.md|protocol.go]] (imports)
-- [[safe-socket/safe-socket/src/models/socket_config.go.md|SocketConfig]] (struct: belongs_to) — *This decouples static profile data (what we are) from runtime environment data (where we are).*
-- [[safe-socket/safe-socket/src/protocols/hello_protocol.go.md|hello_protocol.go]] (imports)
+- [[safe-socket/src/models/socket_config.go.md|SocketConfig]] (struct: belongs_to) — *This decouples static profile data (what we are) from runtime environment data (where we are).*
 <!-- SYNC:END -->

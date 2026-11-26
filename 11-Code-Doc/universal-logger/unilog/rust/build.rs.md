@@ -19,9 +19,9 @@ Automatically generated mirror for `universal-logger/unilog/rust/build.rs`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/unilog/rust/src/lib.rs.md|UniLog.new]] (method: calls) — *Initializes a new logger session via the Go shared library.*
+- [[universal-logger/unilog/rust/src/lib.rs.md|UniLog.new]] (method: calls) — *Initializes a new logger session via the Go shared library.*
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/rust/build.rs.md|emit_link_directives]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/rust/build.rs.md|main]] (function: belongs_to)
+- [[universal-logger/unilog/rust/build.rs.md|emit_link_directives]] (function: belongs_to)
+- [[universal-logger/unilog/rust/build.rs.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

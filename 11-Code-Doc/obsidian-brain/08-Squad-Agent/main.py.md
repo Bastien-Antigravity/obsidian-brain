@@ -23,14 +23,14 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/main.py`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/bootstrap/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/bootstrap/__init__.py.md|__init__.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/main.py.md|COMMANDS_MAP]] (constant: belongs_to) — *Commands map (CLI alias -> themed python module namespace relative to src)*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/main.py.md|main]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/main.py.md|print_usage]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/main.py.md|COMMANDS_MAP]] (constant: belongs_to) — *Commands map (CLI alias -> themed python module namespace relative to src)*
+- [[obsidian-brain/08-Squad-Agent/main.py.md|main]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/main.py.md|print_usage]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

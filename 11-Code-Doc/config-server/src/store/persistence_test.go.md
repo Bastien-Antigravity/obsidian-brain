@@ -19,22 +19,22 @@ Automatically generated mirror for `config-server/src/store/persistence_test.go`
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (same_package)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Critical]] (method: defines_method)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Error]] (method: defines_method)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Info]] (method: defines_method)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Warning]] (method: defines_method)
+- [[config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|persistence.go]] (same_package)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Critical]] (method: defines_method)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Error]] (method: defines_method)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Info]] (method: defines_method)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Warning]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/store/persistence_test.go.md|TestPersistenceLoadNonExistent]] (function: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|TestPersistenceSaveLoad]] (function: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Critical]] (method: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Error]] (method: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Info]] (method: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger.Warning]] (method: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger]] (struct: belongs_to)
-- [[config-server/config-server/src/store/persistence_test.go.md|mockLogger]] (struct: defines_method)
+- [[config-server/src/store/persistence_test.go.md|TestPersistenceLoadNonExistent]] (function: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|TestPersistenceSaveLoad]] (function: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Critical]] (method: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Error]] (method: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Info]] (method: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|mockLogger.Warning]] (method: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|mockLogger]] (struct: belongs_to)
+- [[config-server/src/store/persistence_test.go.md|mockLogger]] (struct: defines_method)
 <!-- SYNC:END -->

@@ -19,33 +19,33 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: defines_method) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: defines_method) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: defines_method) — *If the file does not exist, it returns an empty ConfigMap and no error.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: defines_method) — *prevent file corruption in case of crashes during the write process.*
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/config-server/cmd/config-server/main.go.md|main.go]] (imports)
-- [[config-server/config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/core/request_handler.go.md|request_handler.go]] (imports)
-- [[config-server/config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (imports)
-- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
-- [[config-server/config-server/src/helpers/config_updates.go.md|config_updates.go]] (imports)
-- [[config-server/config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
-- [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/server/server.go.md|server.go]] (calls)
-- [[config-server/config-server/src/server/server.go.md|server.go]] (imports)
-- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (calls)
-- [[config-server/config-server/src/server/server_test.go.md|server_test.go]] (imports)
-- [[config-server/config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: belongs_to) — *NewPersistenceManager creates a new manager for the given file path.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: belongs_to) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: belongs_to) — *prevent file corruption in case of crashes during the write process.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: belongs_to) — *PersistenceManager handles saving and loading the configuration from disk.*
-- [[config-server/config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method) — *PersistenceManager handles saving and loading the configuration from disk.*
-- [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (calls)
-- [[config-server/config-server/src/store/persistence_test.go.md|persistence_test.go]] (same_package)
-- [[config-server/config-server/src/store/store.go.md|store.go]] (calls)
-- [[config-server/config-server/src/store/store.go.md|store.go]] (same_package)
-- [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
+- [[config-server/cmd/config-server/main.go.md|main.go]] (calls)
+- [[config-server/cmd/config-server/main.go.md|main.go]] (imports)
+- [[config-server/src/core/controller.go.md|controller.go]] (imports)
+- [[config-server/src/core/request_handler.go.md|request_handler.go]] (imports)
+- [[config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (imports)
+- [[config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
+- [[config-server/src/helpers/config_updates.go.md|config_updates.go]] (imports)
+- [[config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (imports)
+- [[config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
+- [[config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
+- [[config-server/src/server/controller.go.md|controller.go]] (imports)
+- [[config-server/src/server/server.go.md|server.go]] (calls)
+- [[config-server/src/server/server.go.md|server.go]] (imports)
+- [[config-server/src/server/server_test.go.md|server_test.go]] (calls)
+- [[config-server/src/server/server_test.go.md|server_test.go]] (imports)
+- [[config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: belongs_to) — *NewPersistenceManager creates a new manager for the given file path.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: belongs_to) — *If the file does not exist, it returns an empty ConfigMap and no error.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: belongs_to) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager]] (struct: belongs_to) — *PersistenceManager handles saving and loading the configuration from disk.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method) — *PersistenceManager handles saving and loading the configuration from disk.*
+- [[config-server/src/store/persistence_test.go.md|persistence_test.go]] (calls)
+- [[config-server/src/store/persistence_test.go.md|persistence_test.go]] (same_package)
+- [[config-server/src/store/store.go.md|store.go]] (calls)
+- [[config-server/src/store/store.go.md|store.go]] (same_package)
+- [[config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
 <!-- SYNC:END -->

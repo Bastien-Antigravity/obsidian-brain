@@ -19,8 +19,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/network/mod.rs
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/network/tls.rs.md|tls.rs]] (imports)
+- [[microservice-toolbox/rust/src/network/tls.rs.md|tls.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (imports)
+- [[microservice-toolbox/rust/src/teleremote/client.rs.md|client.rs]] (imports)
 <!-- SYNC:END -->

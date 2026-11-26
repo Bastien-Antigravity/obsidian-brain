@@ -19,15 +19,15 @@ Automatically generated mirror for `distributed-config/src/loader/loader_test.go
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/distributed-config/src/core/config.go.md|Config.GetCapability]] (method: calls) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
-- [[distributed-config/distributed-config/src/core/config.go.md|config.go]] (imports)
-- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFileSafe]] (function: calls) — *config tags like CF_IP/CF_PORT are provided via ENV variables.*
-- [[distributed-config/distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls) — *Fails fast if the file does not exist (never creates static fallback YAML files).*
-- [[distributed-config/distributed-config/src/loader/loader.go.md|loader.go]] (same_package)
-- [[distributed-config/distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
-- [[distributed-config/distributed-config/src/utils/logger.go.md|logger.go]] (imports)
+- [[distributed-config/src/core/config.go.md|Config.GetCapability]] (method: calls) — *GetCapability extracts a specific capability dictionary and unmarshals it into the target struct.*
+- [[distributed-config/src/core/config.go.md|config.go]] (imports)
+- [[distributed-config/src/loader/loader.go.md|LoadConfigFromFileSafe]] (function: calls) — *config tags like CF_IP/CF_PORT are provided via ENV variables.*
+- [[distributed-config/src/loader/loader.go.md|LoadConfigFromFile]] (function: calls) — *Fails fast if the file does not exist (never creates static fallback YAML files).*
+- [[distributed-config/src/loader/loader.go.md|loader.go]] (same_package)
+- [[distributed-config/src/utils/logger.go.md|EnsureSafeLogger]] (function: calls) — *In strict mode (STRICT_LOGGER=true), it panics immediately.*
+- [[distributed-config/src/utils/logger.go.md|logger.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/loader/loader_test.go.md|MockTS]] (struct: belongs_to)
-- [[distributed-config/distributed-config/src/loader/loader_test.go.md|TestLoader]] (function: belongs_to)
+- [[distributed-config/src/loader/loader_test.go.md|MockTS]] (struct: belongs_to)
+- [[distributed-config/src/loader/loader_test.go.md|TestLoader]] (function: belongs_to)
 <!-- SYNC:END -->

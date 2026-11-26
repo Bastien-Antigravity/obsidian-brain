@@ -13,35 +13,35 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[flexible-logger/flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (imports)
-- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: calls) — *CreateLogEngine creates a new fully configured LogEngine instance.*
-- [[flexible-logger/flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (imports)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetLogPath]] (function: calls) — *If name is empty, it falls back to the executable name.*
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|paths.go]] (imports)
-- [[flexible-logger/flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
-- [[flexible-logger/flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
-- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier.SetQueue]] (method: calls)
-- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|NewLocalNotifier]] (function: calls)
-- [[flexible-logger/flexible-logger/src/notifier/local_notifier.go.md|local_notifier.go]] (imports)
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.SetLocalNotifQueue]] (method: defines_method)
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.Unwrap]] (method: defines_method) — *Unwrap returns the underlying Logger instance.*
-- [[flexible-logger/flexible-logger/src/serializers/capn_serializer.go.md|NewCapnpSerializer]] (function: calls)
-- [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|NewTextSerializer]] (function: calls)
-- [[flexible-logger/flexible-logger/src/serializers/text_serializer.go.md|text_serializer.go]] (imports)
-- [[flexible-logger/flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
-- [[flexible-logger/flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
-- [[flexible-logger/flexible-logger/src/sink/multi.go.md|NewMultiSink]] (function: calls)
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|NewRollingFileWriter]] (function: calls) — *NewRollingFileWriter initializes a new RollingFileWriter.*
-- [[flexible-logger/flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (imports)
-- [[flexible-logger/flexible-logger/src/sink/writer.go.md|NewWriterSink]] (function: calls)
+- [[flexible-logger/src/engine/log_engine_test.go.md|log_engine_test.go]] (imports)
+- [[flexible-logger/src/factory/logger_factory.go.md|CreateLogEngine]] (function: calls) — *CreateLogEngine creates a new fully configured LogEngine instance.*
+- [[flexible-logger/src/factory/logger_factory.go.md|logger_factory.go]] (imports)
+- [[flexible-logger/src/helpers/paths.go.md|GetLogPath]] (function: calls) — *If name is empty, it falls back to the executable name.*
+- [[flexible-logger/src/helpers/paths.go.md|paths.go]] (imports)
+- [[flexible-logger/src/interfaces/sink.go.md|sink.go]] (imports)
+- [[flexible-logger/src/models/notif_message.go.md|notif_message.go]] (imports)
+- [[flexible-logger/src/notifier/local_notifier.go.md|LocalNotifier.SetQueue]] (method: calls)
+- [[flexible-logger/src/notifier/local_notifier.go.md|NewLocalNotifier]] (function: calls)
+- [[flexible-logger/src/notifier/local_notifier.go.md|local_notifier.go]] (imports)
+- [[flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.SetLocalNotifQueue]] (method: defines_method)
+- [[flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.Unwrap]] (method: defines_method) — *Unwrap returns the underlying Logger instance.*
+- [[flexible-logger/src/serializers/capn_serializer.go.md|NewCapnpSerializer]] (function: calls)
+- [[flexible-logger/src/serializers/text_serializer.go.md|NewTextSerializer]] (function: calls)
+- [[flexible-logger/src/serializers/text_serializer.go.md|text_serializer.go]] (imports)
+- [[flexible-logger/src/sink/async.go.md|NewAsyncSink]] (function: calls)
+- [[flexible-logger/src/sink/console.go.md|NewConsoleSink]] (function: calls)
+- [[flexible-logger/src/sink/multi.go.md|NewMultiSink]] (function: calls)
+- [[flexible-logger/src/sink/rolling_file.go.md|NewRollingFileWriter]] (function: calls) — *NewRollingFileWriter initializes a new RollingFileWriter.*
+- [[flexible-logger/src/sink/rolling_file.go.md|rolling_file.go]] (imports)
+- [[flexible-logger/src/sink/writer.go.md|NewWriterSink]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NewNotifLogger]] (function: belongs_to) — *NewNotifLogger creates a logger similar to NoLockLogger but with LocalNotifier.*
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.SetLocalNotifQueue]] (method: belongs_to)
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.Unwrap]] (method: belongs_to) — *Unwrap returns the underlying Logger instance.*
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: belongs_to) — *NotifLoggerWrapper wraps LogEngine to expose SetLocalNotifQueue*
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: defines_method) — *NotifLoggerWrapper wraps LogEngine to expose SetLocalNotifQueue*
-- [[flexible-logger/flexible-logger/src/profiles/notif_logger.go.md|ServerCap]] (struct: belongs_to)
-- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (calls)
-- [[flexible-logger/flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (same_package)
+- [[flexible-logger/src/profiles/notif_logger.go.md|NewNotifLogger]] (function: belongs_to) — *NewNotifLogger creates a logger similar to NoLockLogger but with LocalNotifier.*
+- [[flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.SetLocalNotifQueue]] (method: belongs_to)
+- [[flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper.Unwrap]] (method: belongs_to) — *Unwrap returns the underlying Logger instance.*
+- [[flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: belongs_to) — *NotifLoggerWrapper wraps LogEngine to expose SetLocalNotifQueue*
+- [[flexible-logger/src/profiles/notif_logger.go.md|NotifLoggerWrapper]] (struct: defines_method) — *NotifLoggerWrapper wraps LogEngine to expose SetLocalNotifQueue*
+- [[flexible-logger/src/profiles/notif_logger.go.md|ServerCap]] (struct: belongs_to)
+- [[flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (calls)
+- [[flexible-logger/src/profiles/profiles_test.go.md|profiles_test.go]] (same_package)
 <!-- SYNC:END -->

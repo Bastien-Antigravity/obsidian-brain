@@ -22,11 +22,11 @@ Automatically generated mirror for `universal-logger/unilog/python/setup.py`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|BuildGoLib]] (class: belongs_to) — *Custom Build Commands*
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|_load_version]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|finalize_options]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|initialize_options]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|run]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_async_logging.py]] (calls)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_async_logging.py]] (same_package)
+- [[universal-logger/unilog/python/setup.py.md|BuildGoLib]] (class: belongs_to) — *Custom Build Commands*
+- [[universal-logger/unilog/python/setup.py.md|_load_version]] (function: belongs_to)
+- [[universal-logger/unilog/python/setup.py.md|finalize_options]] (function: belongs_to)
+- [[universal-logger/unilog/python/setup.py.md|initialize_options]] (function: belongs_to)
+- [[universal-logger/unilog/python/setup.py.md|run]] (function: belongs_to)
+- [[universal-logger/unilog/python/test_async_logging.py.md|test_async_logging.py]] (calls)
+- [[universal-logger/unilog/python/test_async_logging.py.md|test_async_logging.py]] (same_package)
 <!-- SYNC:END -->

@@ -23,24 +23,24 @@ Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/bootstrap/
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|PostgresMemoryStore]] (class: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|memory.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|get_pg_pool]] (function: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|pg_pool.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/pg_pool.py.md|resolve_schema_name]] (function: calls)
+- None detected
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/main.py.md|main.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/clients/discord_client.py.md|discord_client.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|memory.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lifecycle/unlock_vault.py.md|unlock_vault.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/main.py.md|main.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/hardening_yaml.py.md|hardening_yaml.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/bootstrap/__init__.py.md|_OFFLINE_CLI_COMMANDS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/clients/discord_client.py.md|discord_client.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/core/controller.py.md|controller.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/core/start_squad.py.md|start_squad.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/fleet/convert_agents.py.md|convert_agents.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lib/orchestration_lib.py.md|orchestration_lib.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/scaffold_new_brain.py.md|scaffold_new_brain.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lifecycle/unlock_vault.py.md|unlock_vault.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/maintenance/joint_audit_purger.py.md|joint_audit_purger.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/maintenance/knowledge_compressor.py.md|knowledge_compressor.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/maintenance/maintenance_skill.py.md|maintenance_skill.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

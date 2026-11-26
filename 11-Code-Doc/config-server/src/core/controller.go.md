@@ -19,17 +19,17 @@ Automatically generated mirror for `config-server/src/core/controller.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/config-server/src/store/persistence.go.md|persistence.go]] (imports)
+- [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/config-server/src/core/controller.go.md|ConfigController]] (interface: belongs_to) — *ConfigController defines the unified interface for configuration management.*
-- [[config-server/config-server/src/core/controller.go.md|StatusInfo]] (struct: belongs_to) — *StatusInfo represents the server health and runtime statistics.*
-- [[config-server/config-server/src/grpc_control/service.go.md|service.go]] (imports)
-- [[config-server/config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
-- [[config-server/config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
-- [[config-server/config-server/src/server/connection.go.md|connection.go]] (imports)
-- [[config-server/config-server/src/server/controller.go.md|controller.go]] (imports)
-- [[config-server/config-server/src/telegram/manager.go.md|manager.go]] (imports)
-- [[config-server/config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
+- [[config-server/src/core/controller.go.md|ConfigController]] (interface: belongs_to) — *ConfigController defines the unified interface for configuration management.*
+- [[config-server/src/core/controller.go.md|StatusInfo]] (struct: belongs_to) — *StatusInfo represents the server health and runtime statistics.*
+- [[config-server/src/grpc_control/service.go.md|service.go]] (imports)
+- [[config-server/src/grpc_control/service_test.go.md|service_test.go]] (imports)
+- [[config-server/src/rest/rest_handler.go.md|rest_handler.go]] (imports)
+- [[config-server/src/rest/rest_handler_test.go.md|rest_handler_test.go]] (imports)
+- [[config-server/src/server/connection.go.md|connection.go]] (imports)
+- [[config-server/src/server/controller.go.md|controller.go]] (imports)
+- [[config-server/src/telegram/manager.go.md|manager.go]] (imports)
+- [[config-server/src/telegram/manager_test.go.md|manager_test.go]] (imports)
 <!-- SYNC:END -->

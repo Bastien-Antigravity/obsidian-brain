@@ -19,13 +19,13 @@ Automatically generated mirror for `safe-socket/src/utils/machine_detector_test.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
-- [[safe-socket/safe-socket/src/utils/machine_detector.go.md|machine_detector.go]] (same_package)
+- [[safe-socket/src/utils/machine_detector.go.md|GetMachineDetector]] (function: calls) — *GetMachineDetector returns the singleton MachineDetector instance.*
+- [[safe-socket/src/utils/machine_detector.go.md|MachineDetector.IsLocalAddress]] (method: calls) — *IsLocalAddress checks if an address ("IP:Port", "host:Port", or "IP") belongs to the local machine.*
+- [[safe-socket/src/utils/machine_detector.go.md|machine_detector.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
-- [[safe-socket/safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
-- [[safe-socket/safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
-- [[safe-socket/safe-socket/src/utils/machine_detector_test.go.md|TestMachineDetector]] (function: belongs_to)
+- [[safe-socket/src/facade/socket_client.go.md|socket_client.go]] (imports)
+- [[safe-socket/src/facade/socket_server.go.md|socket_server.go]] (imports)
+- [[safe-socket/src/factory/socket_factory.go.md|socket_factory.go]] (imports)
+- [[safe-socket/src/utils/machine_detector_test.go.md|TestMachineDetector]] (function: belongs_to)
 <!-- SYNC:END -->

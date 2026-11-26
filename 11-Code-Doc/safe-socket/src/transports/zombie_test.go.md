@@ -19,21 +19,21 @@ Automatically generated mirror for `safe-socket/src/transports/zombie_test.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[safe-socket/safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: calls)
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Close]] (method: calls)
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Read]] (method: calls) — *HEARTBEAT UPDATE: Automatically skips frames with length 0.*
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.SetIdleTimeout]] (method: calls) — *SetIdleTimeout updates the internal idle timeout and refreshes current deadlines.*
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|NewFramedTCPSocket]] (function: calls)
-- [[safe-socket/safe-socket/src/transports/framed_tcp_connection.go.md|framed_tcp_connection.go]] (same_package)
-- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|Listen]] (function: calls) — *Listen creates a new FramedTCPListener.*
-- [[safe-socket/safe-socket/src/transports/framed_tcp_server.go.md|framed_tcp_server.go]] (same_package)
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|NewShmTransport]] (function: calls)
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|ShmAddr.String]] (method: calls)
-- [[safe-socket/safe-socket/src/transports/shm_connection.go.md|shm_connection.go]] (same_package)
-- [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener.Accept]] (method: calls) — *bound to that sender.*
-- [[safe-socket/safe-socket/src/transports/udp_server.go.md|UdpListener.Addr]] (method: calls)
-- [[safe-socket/safe-socket/src/transports/udp_server.go.md|udp_server.go]] (same_package)
+- [[safe-socket/src/interfaces/logger.go.md|NoOpLogger.Error]] (method: calls)
+- [[safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Close]] (method: calls)
+- [[safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.Read]] (method: calls) — *HEARTBEAT UPDATE: Automatically skips frames with length 0.*
+- [[safe-socket/src/transports/framed_tcp_connection.go.md|FramedTCPSocket.SetIdleTimeout]] (method: calls) — *SetIdleTimeout updates the internal idle timeout and refreshes current deadlines.*
+- [[safe-socket/src/transports/framed_tcp_connection.go.md|NewFramedTCPSocket]] (function: calls)
+- [[safe-socket/src/transports/framed_tcp_connection.go.md|framed_tcp_connection.go]] (same_package)
+- [[safe-socket/src/transports/framed_tcp_server.go.md|Listen]] (function: calls) — *Listen creates a new FramedTCPListener.*
+- [[safe-socket/src/transports/framed_tcp_server.go.md|framed_tcp_server.go]] (same_package)
+- [[safe-socket/src/transports/shm_connection.go.md|NewShmTransport]] (function: calls)
+- [[safe-socket/src/transports/shm_connection.go.md|ShmAddr.String]] (method: calls)
+- [[safe-socket/src/transports/shm_connection.go.md|shm_connection.go]] (same_package)
+- [[safe-socket/src/transports/udp_server.go.md|UdpListener.Accept]] (method: calls) — *bound to that sender.*
+- [[safe-socket/src/transports/udp_server.go.md|UdpListener.Addr]] (method: calls)
+- [[safe-socket/src/transports/udp_server.go.md|udp_server.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[safe-socket/safe-socket/src/transports/zombie_test.go.md|TestZombieDetection]] (function: belongs_to)
+- [[safe-socket/src/transports/zombie_test.go.md|TestZombieDetection]] (function: belongs_to)
 <!-- SYNC:END -->

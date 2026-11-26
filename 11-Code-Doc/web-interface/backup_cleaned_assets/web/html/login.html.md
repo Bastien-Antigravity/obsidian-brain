@@ -23,8 +23,8 @@ Automatically generated mirror for `web-interface/backup_cleaned_assets/web/html
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/login.html.md|#password (input)]] (element: belongs_to)
-- [[web-interface/web-interface/backup_cleaned_assets/web/html/login.html.md|#username (input)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/login.html.md|#password (input)]] (element: belongs_to)
+- [[web-interface/backup_cleaned_assets/web/html/login.html.md|#username (input)]] (element: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

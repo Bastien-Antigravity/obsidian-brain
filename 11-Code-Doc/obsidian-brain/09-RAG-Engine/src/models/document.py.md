@@ -13,6 +13,6 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/models/docu
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/document.py.md|MDocument]] (class: belongs_to) — *Represents a source file before chunking.*
+- [[obsidian-brain/09-RAG-Engine/src/models/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/models/document.py.md|MDocument]] (class: belongs_to) — *Represents a source file before chunking.*
 <!-- SYNC:END -->

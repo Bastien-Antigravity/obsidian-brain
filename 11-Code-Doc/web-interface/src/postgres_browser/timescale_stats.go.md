@@ -23,17 +23,17 @@ Automatically generated mirror for `web-interface/src/postgres_browser/timescale
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.resolveDBConfig]] (method: calls) — *resolveDBConfig dynamically extracts pre-validated connection parameters from AppConfig.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
-- [[web-interface/web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
-- [[web-interface/web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)
-- [[web-interface/web-interface/src/postgres_browser/timescale_stats.go.md|BrowserHandler.GetTimescaleStats]] (method: defines_method) — *GetTimescaleStats queries TimescaleDB hypertables, chunk statistics, and active connections.*
+- [[web-interface/src/mfe/registry.go.md|Registry.Get]] (method: calls) — *Get looks up a registered service by name or tag (case-insensitive, flexible with hyphens/underscores/spaces).*
+- [[web-interface/src/postgres_browser/connection.go.md|BrowserHandler.resolveDBConfig]] (method: calls) — *resolveDBConfig dynamically extracts pre-validated connection parameters from AppConfig.*
+- [[web-interface/src/postgres_browser/connection.go.md|BrowserHandler.switchDatabase]] (method: calls) — *switchDatabase returns a cached *sql.DB connection pool for the target database on the configured host.*
+- [[web-interface/src/postgres_browser/connection.go.md|connection.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|connection_test.go]] (same_package)
+- [[web-interface/src/postgres_browser/connection_test.go.md|noopLogger.Close]] (method: calls)
+- [[web-interface/src/postgres_browser/timescale_stats.go.md|BrowserHandler.GetTimescaleStats]] (method: defines_method) — *GetTimescaleStats queries TimescaleDB hypertables, chunk statistics, and active connections.*
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/postgres_browser/timescale_stats.go.md|BrowserHandler.GetTimescaleStats]] (method: belongs_to) — *GetTimescaleStats queries TimescaleDB hypertables, chunk statistics, and active connections.*
-- [[web-interface/web-interface/src/postgres_browser/timescale_stats.go.md|BrowserHandler]] (struct: defines_method) — *GetTimescaleStats queries TimescaleDB hypertables, chunk statistics, and active connections.*
+- [[web-interface/src/postgres_browser/timescale_stats.go.md|BrowserHandler.GetTimescaleStats]] (method: belongs_to) — *GetTimescaleStats queries TimescaleDB hypertables, chunk statistics, and active connections.*
+- [[web-interface/src/postgres_browser/timescale_stats.go.md|BrowserHandler]] (struct: defines_method) — *GetTimescaleStats queries TimescaleDB hypertables, chunk statistics, and active connections.*
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

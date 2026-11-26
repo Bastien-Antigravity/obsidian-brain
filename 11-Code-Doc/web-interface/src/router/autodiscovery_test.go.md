@@ -23,14 +23,14 @@ Automatically generated mirror for `web-interface/src/router/autodiscovery_test.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[web-interface/web-interface/src/router/autodiscovery.go.md|FindStaticPage]] (function: calls) — *FindStaticPage searches for a static page by its route path or legacy alias.*
-- [[web-interface/web-interface/src/router/autodiscovery.go.md|GetStaticCategories]] (function: calls) — *GetStaticCategories returns a thread-safe deep copy of all discovered static categories.*
-- [[web-interface/web-interface/src/router/autodiscovery.go.md|InitAutoDiscovery]] (function: calls) — *InitAutoDiscovery scans the filesystem for static pages and compiles the navigation catalog.*
-- [[web-interface/web-interface/src/router/autodiscovery.go.md|RegisterAutoDiscoveryRoutes]] (function: calls) — *RegisterAutoDiscoveryRoutes binds static page discovery routes, alias redirects, and API.*
-- [[web-interface/web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
+- [[web-interface/src/router/autodiscovery.go.md|FindStaticPage]] (function: calls) — *FindStaticPage searches for a static page by its route path or legacy alias.*
+- [[web-interface/src/router/autodiscovery.go.md|GetStaticCategories]] (function: calls) — *GetStaticCategories returns a thread-safe deep copy of all discovered static categories.*
+- [[web-interface/src/router/autodiscovery.go.md|InitAutoDiscovery]] (function: calls) — *InitAutoDiscovery scans the filesystem for static pages and compiles the navigation catalog.*
+- [[web-interface/src/router/autodiscovery.go.md|RegisterAutoDiscoveryRoutes]] (function: calls) — *RegisterAutoDiscoveryRoutes binds static page discovery routes, alias redirects, and API.*
+- [[web-interface/src/router/autodiscovery.go.md|autodiscovery.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[web-interface/web-interface/src/router/autodiscovery_test.go.md|TestAutoDiscoveryScanningAndHierarchy]] (function: belongs_to)
+- [[web-interface/src/router/autodiscovery_test.go.md|TestAutoDiscoveryScanningAndHierarchy]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

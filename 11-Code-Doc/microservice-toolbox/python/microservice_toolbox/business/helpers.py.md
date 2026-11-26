@@ -19,20 +19,20 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/models.py.md|MarketEvent]] (class: calls) — *The primary envelope for all real-time market data across the fleet.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/models.py.md|models.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/models.py.md|models.py]] (same_package)
-- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|decode]] (function: calls)
-- [[microservice-toolbox/microservice-toolbox/rust/src/business/models.rs.md|encode]] (function: calls)
+- [[microservice-toolbox/python/microservice_toolbox/business/models.py.md|MarketEvent]] (class: calls) — *The primary envelope for all real-time market data across the fleet.*
+- [[microservice-toolbox/python/microservice_toolbox/business/models.py.md|models.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/business/models.py.md|models.py]] (same_package)
+- [[microservice-toolbox/rust/src/business/models.rs.md|decode]] (function: calls)
+- [[microservice-toolbox/rust/src/business/models.rs.md|encode]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/__init__.py.md|__init__.py]] (imports)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|BusinessEncoder]] (class: belongs_to) — *JSON encoder that handles dataclasses, enums, and byte arrays.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|_coerce_dataclass]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|_coerce_value]] (function: belongs_to) — *Recursively coerces decoded JSON values to target dataclass, Enum, or bytes types.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|default]] (function: belongs_to)
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|deserialize]] (function: belongs_to) — *Converts a JSON byte array back into a business object or dataclass.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|serialize]] (function: belongs_to) — *Converts a business object into a JSON byte array.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|system_timestamp]] (function: belongs_to) — *Returns the current unix timestamp in milliseconds.*
-- [[microservice-toolbox/microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|wrap_market_event]] (function: belongs_to) — *Creates a MarketEvent envelope for a payload.*
+- [[microservice-toolbox/python/microservice_toolbox/business/__init__.py.md|__init__.py]] (imports)
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|BusinessEncoder]] (class: belongs_to) — *JSON encoder that handles dataclasses, enums, and byte arrays.*
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|_coerce_dataclass]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|_coerce_value]] (function: belongs_to) — *Recursively coerces decoded JSON values to target dataclass, Enum, or bytes types.*
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|default]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|deserialize]] (function: belongs_to) — *Converts a JSON byte array back into a business object or dataclass.*
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|serialize]] (function: belongs_to) — *Converts a business object into a JSON byte array.*
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|system_timestamp]] (function: belongs_to) — *Returns the current unix timestamp in milliseconds.*
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|wrap_market_event]] (function: belongs_to) — *Creates a MarketEvent envelope for a payload.*
 <!-- SYNC:END -->

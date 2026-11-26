@@ -10,67 +10,66 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/facade/__in
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|config.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/config.py.md|get_db_settings]] (function: calls) — *Resolves database connection settings with decrypted credentials and target RAG database.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantAlignmentServiceProxy]] (class: calls) — *Routes self-healing alignment operations to schema-specific PostgresAlignmentService instances.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantGraphDBProxy]] (class: calls) — *Routes relational graph schema mappings to schema-specific PostgresGraphDB instances.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantLexicalStoreProxy]] (class: calls) — *Routes lexical store operations to schema-specific PostgresLexicalStore instances.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantParentStoreProxy]] (class: calls) — *Routes parent raw content storage operations to schema-specific PostgresParentStore instances.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantVectorStoreProxy]] (class: calls) — *Routes vector store operations to schema-specific PgVectorStore instances.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|close]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|multi_tenant_proxy.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|multi_tenant_proxy.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|RAGFacade]] (class: calls) — *Main entry point and orchestrator for the RAG engine.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|rag_facade.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|rag_facade.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|PostgresAlignmentService]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|postgres_alignment.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|CodeDocSynchronizer]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|synchronizer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|CodeEngineAnalyzerBridge]] (class: calls) — *Bridge analyzer that uses CodeEngine's AST-based parsers for structural chunking.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|code_analyzer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/markdown_analyzer.py.md|MarkdownAnalyzer]] (class: calls) — *Hierarchical header-based chunker for Markdown.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/markdown_analyzer.py.md|markdown_analyzer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/text_analyzer.py.md|TextAnalyzer]] (class: calls) — *Handles chunking for generic text and configuration files.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/analyzer/text_analyzer.py.md|text_analyzer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/engine.py.md|CodebaseAnalyzer]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/code_engine/engine.py.md|engine.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|LLMEnricher]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|PostgresGraphDB]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|postgres_db.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|StandardIndexingPipeline]] (class: calls) — *Coordinates the multi-stage indexing process for files.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|PostgresLexicalStore]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|postgres.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/llm/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/llm/__init__.py.md|get_llm_client]] (function: calls) — *Factory to retrieve configured LLMClient.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|PostgresParentStore]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|postgres.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_engine/graph_rag.py.md|GraphRAGQueryEngine]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_engine/graph_rag.py.md|graph_rag.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_engine/hybrid.py.md|hybrid.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|LLMQueryExpander]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|llm_expander.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|PgVectorStore]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|pgvector.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|UnifiedWatcher]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|file_watcher.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_pg_pool]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|pg_pool.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/bootstrap/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/core/constants.py.md|constants.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantAlignmentServiceProxy]] (class: calls) — *Routes self-healing alignment operations to schema-specific PostgresAlignmentService instances.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantGraphDBProxy]] (class: calls) — *Routes relational graph schema mappings to schema-specific PostgresGraphDB instances.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantLexicalStoreProxy]] (class: calls) — *Routes lexical store operations to schema-specific PostgresLexicalStore instances.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantParentStoreProxy]] (class: calls) — *Routes parent raw content storage operations to schema-specific PostgresParentStore instances.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|MultiTenantVectorStoreProxy]] (class: calls) — *Routes vector store operations to schema-specific PgVectorStore instances.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|multi_tenant_proxy.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/facade/multi_tenant_proxy.py.md|multi_tenant_proxy.py]] (same_package)
+- [[obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|RAGFacade]] (class: calls) — *Main entry point and orchestrator for the RAG engine.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|rag_facade.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/facade/rag_facade.py.md|rag_facade.py]] (same_package)
+- [[obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|PostgresAlignmentService]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/alignment/postgres_alignment.py.md|postgres_alignment.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|CodeDocSynchronizer]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/alignment/synchronizer.py.md|synchronizer.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|CodeEngineAnalyzerBridge]] (class: calls) — *Bridge analyzer that uses CodeEngine's AST-based parsers for structural chunking.*
+- [[obsidian-brain/09-RAG-Engine/src/services/analyzer/code_analyzer.py.md|code_analyzer.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/analyzer/markdown_analyzer.py.md|MarkdownAnalyzer]] (class: calls) — *Hierarchical header-based chunker for Markdown.*
+- [[obsidian-brain/09-RAG-Engine/src/services/analyzer/markdown_analyzer.py.md|markdown_analyzer.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/analyzer/text_analyzer.py.md|TextAnalyzer]] (class: calls) — *Handles chunking for generic text and configuration files.*
+- [[obsidian-brain/09-RAG-Engine/src/services/analyzer/text_analyzer.py.md|text_analyzer.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/code_engine/engine.py.md|CodebaseAnalyzer]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/code_engine/engine.py.md|engine.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|LLMEnricher]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/enricher/llm_enricher.py.md|llm_enricher.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|PostgresGraphDB]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/graph/postgres_db.py.md|postgres_db.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|StandardIndexingPipeline]] (class: calls) — *Coordinates the multi-stage indexing process for files.*
+- [[obsidian-brain/09-RAG-Engine/src/services/indexing_pipeline/standard.py.md|standard.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|PostgresLexicalStore]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|postgres.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/llm/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/llm/__init__.py.md|get_llm_client]] (function: calls) — *Factory to retrieve configured LLMClient.*
+- [[obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|PostgresParentStore]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/parent_store/postgres.py.md|postgres.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/query_engine/graph_rag.py.md|GraphRAGQueryEngine]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/query_engine/graph_rag.py.md|graph_rag.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/query_engine/hybrid.py.md|hybrid.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|LLMQueryExpander]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/query_expander/llm_expander.py.md|llm_expander.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|PgVectorStore]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/vector_store/pgvector.py.md|pgvector.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|UnifiedWatcher]] (class: calls) — *Observer-based file watcher that monitors all registered workspaces.*
+- [[obsidian-brain/09-RAG-Engine/src/services/watcher/file_watcher.py.md|file_watcher.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_pg_pool]] (function: calls)
+- [[obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|pg_pool.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/memory.py.md|memory.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: belongs_to) — *Factory to construct and return a singleton RAGFacade instance.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|patched_get_language]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|patched_get_parser]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/server.py.md|server.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (calls)
+- [[obsidian-brain/09-RAG-Engine/main.py.md|main.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (calls)
+- [[obsidian-brain/09-RAG-Engine/src/core/runners.py.md|runners.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|get_rag_facade]] (function: belongs_to) — *Factory to construct and return a singleton RAGFacade instance.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|patched_get_language]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|patched_get_parser]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|fastmcp.py]] (calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/mcp/fastmcp.py.md|fastmcp.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (calls)
+- [[obsidian-brain/09-RAG-Engine/src/services/mcp/tools.py.md|tools.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/web/server.py.md|server.py]] (calls)
+- [[obsidian-brain/09-RAG-Engine/src/web/server.py.md|server.py]] (imports)
 <!-- SYNC:END -->

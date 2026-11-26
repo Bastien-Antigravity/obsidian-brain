@@ -13,29 +13,29 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|IS_MAC]] (constant: calls)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|get_native_config]] (function: calls)
-- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
-- [[docker-deployment/docker-deployment/scripts/operations.py.md|check_debloat_prerequisites]] (function: calls)
+- [[docker-deployment/scripts/common.py.md|IS_MAC]] (constant: calls)
+- [[docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[docker-deployment/scripts/common.py.md|get_native_config]] (function: calls)
+- [[docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
+- [[docker-deployment/scripts/operations.py.md|check_debloat_prerequisites]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|SCRIPTS_DIR]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|_is_port_listening]] (function: belongs_to) — *Return True if a TCP listener is accepting connections on (host, port).*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|ensure_ai_context]] (function: belongs_to) — *Ensure AI-CONTEXT.md exists at WORKSPACE_ROOT.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|ensure_go_work]] (function: belongs_to) — *Ensure go.work multi-module manifest exists and is synchronized.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|ensure_root_symlinks]] (function: belongs_to) — *Ensure essential root standalone.yaml configuration symlink exists.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_code_workspace]] (function: belongs_to) — *Generate Bastien-Antigravity.code-workspace.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_extensions]] (function: belongs_to) — *Generate .vscode/extensions.json.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_launch]] (function: belongs_to) — *Generate .vscode/launch.json tailored to OS.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_settings]] (function: belongs_to) — *Generate .vscode/settings.json tailored to OS.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_tasks]] (function: belongs_to) — *Generate .vscode/tasks.json tailored to OS.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|get_scan_repositories]] (function: belongs_to) — *Return all repository paths (14 root repos + 9 obsidian-brain submodules) for Git discovery.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|get_workspace_folders]] (function: belongs_to) — *Return configured folders for the 14 active workspace repositories.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|resolve_mcp_ip]] (function: belongs_to) — *Resolve RAG MCP host IP: HOST_IP env, else 127.0.0.2 if Docker is listening, else 127.0.0.1.*
-- [[docker-deployment/docker-deployment/modes/local/ide/setup_ide.py.md|setup_antigravity_ide]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (calls)
-- [[docker-deployment/docker-deployment/modes/local/run.py.md|run.py]] (imports)
-- [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|SCRIPTS_DIR]] (constant: belongs_to)
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|_is_port_listening]] (function: belongs_to) — *Return True if a TCP listener is accepting connections on (host, port).*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|ensure_ai_context]] (function: belongs_to) — *Ensure AI-CONTEXT.md exists at WORKSPACE_ROOT.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|ensure_go_work]] (function: belongs_to) — *Ensure go.work multi-module manifest exists and is synchronized.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|ensure_root_symlinks]] (function: belongs_to) — *Ensure essential root standalone.yaml configuration symlink exists.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|generate_code_workspace]] (function: belongs_to) — *Generate Bastien-Antigravity.code-workspace.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_extensions]] (function: belongs_to) — *Generate .vscode/extensions.json.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_launch]] (function: belongs_to) — *Generate .vscode/launch.json tailored to OS.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_settings]] (function: belongs_to) — *Generate .vscode/settings.json tailored to OS.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|generate_vscode_tasks]] (function: belongs_to) — *Generate .vscode/tasks.json tailored to OS.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|get_scan_repositories]] (function: belongs_to) — *Return all repository paths (14 root repos + 9 obsidian-brain submodules) for Git discovery.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|get_workspace_folders]] (function: belongs_to) — *Return configured folders for the 14 active workspace repositories.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|resolve_mcp_ip]] (function: belongs_to) — *Resolve RAG MCP host IP: HOST_IP env, else 127.0.0.2 if Docker is listening, else 127.0.0.1.*
+- [[docker-deployment/modes/local/ide/setup_ide.py.md|setup_antigravity_ide]] (function: belongs_to)
+- [[docker-deployment/modes/local/run.py.md|run.py]] (calls)
+- [[docker-deployment/modes/local/run.py.md|run.py]] (imports)
+- [[docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
 <!-- SYNC:END -->

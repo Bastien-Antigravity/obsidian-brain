@@ -13,12 +13,12 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|Init]] (function: calls) — *existingConfig: OPTIONAL. If provided, the logger will use this configuration instance instead of creating a new one.*
-- [[universal-logger/universal-logger/src/bootstrap/unilog.go.md|unilog.go]] (same_package)
+- [[universal-logger/src/bootstrap/unilog.go.md|Init]] (function: calls) — *existingConfig: OPTIONAL. If provided, the logger will use this configuration instance instead of creating a new one.*
+- [[universal-logger/src/bootstrap/unilog.go.md|unilog.go]] (same_package)
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/cmd/universal-logger/main.go.md|main.go]] (imports)
-- [[universal-logger/universal-logger/src/bootstrap/unilog_test.go.md|TestInitWithLocalNotifier]] (function: belongs_to)
-- [[universal-logger/universal-logger/src/bootstrap/unilog_test.go.md|TestInitWithoutLocalNotifier]] (function: belongs_to)
-- [[universal-logger/universal-logger/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
+- [[universal-logger/cmd/universal-logger/main.go.md|main.go]] (imports)
+- [[universal-logger/src/bootstrap/unilog_test.go.md|TestInitWithLocalNotifier]] (function: belongs_to)
+- [[universal-logger/src/bootstrap/unilog_test.go.md|TestInitWithoutLocalNotifier]] (function: belongs_to)
+- [[universal-logger/src/cgo_bridge/initialize.go.md|initialize.go]] (imports)
 <!-- SYNC:END -->

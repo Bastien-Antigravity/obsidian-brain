@@ -19,13 +19,13 @@ Automatically generated mirror for `universal-logger/unilog/python/test_memory_l
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|UniLog]] (class: calls)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|close]] (function: calls) — *Manually release the logger session and associated resources.*
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (imports)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|get_config]] (function: calls) — *Retrieve a configuration value from the distributed config service (Zero-Leak FFI).*
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|set_config]] (function: calls) — *Update a configuration value in the memory configuration.*
+- [[universal-logger/unilog/python/unilog/facade.py.md|UniLog]] (class: calls)
+- [[universal-logger/unilog/python/unilog/facade.py.md|close]] (function: calls) — *Manually release the logger session and associated resources.*
+- [[universal-logger/unilog/python/unilog/facade.py.md|facade.py]] (imports)
+- [[universal-logger/unilog/python/unilog/facade.py.md|get_config]] (function: calls) — *Retrieve a configuration value from the distributed config service (Zero-Leak FFI).*
+- [[universal-logger/unilog/python/unilog/facade.py.md|set_config]] (function: calls) — *Update a configuration value in the memory configuration.*
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/python/test_memory_leak.py.md|get_memory_usage]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_memory_leak.py.md|main]] (function: belongs_to)
+- [[universal-logger/unilog/python/test_memory_leak.py.md|get_memory_usage]] (function: belongs_to)
+- [[universal-logger/unilog/python/test_memory_leak.py.md|main]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -10,29 +10,33 @@ Automatically generated mirror for `obsidian-brain/09-RAG-Engine/src/services/le
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/lexical_store.py.md|LexicalStore]] (class: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/interfaces/lexical_store.py.md|lexical_store.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|metadata.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_pg_pool]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_schema_name]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|pg_pool.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/interfaces/lexical_store.py.md|LexicalStore]] (class: calls)
+- [[obsidian-brain/09-RAG-Engine/src/interfaces/lexical_store.py.md|lexical_store.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/models/metadata.py.md|metadata.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_pg_pool]] (function: calls)
+- [[obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|get_schema_name]] (function: calls)
+- [[obsidian-brain/09-RAG-Engine/src/utils/pg_pool.py.md|pg_pool.py]] (imports)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|HAS_POSTGRES]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|PostgresLexicalStore]] (class: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_delete]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_execute_query]] (function: belongs_to) — *Helper to run queries with the thread-safe connection pool.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_init_db]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_read]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_reset]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_write]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|add_documents]] (function: belongs_to) — *Adds or updates lexical entries in Postgres (Upsert).*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|delete_by_source]] (function: belongs_to) — *Removes all lexical entries belonging to a specific source file.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|query]] (function: belongs_to) — *Helper to run queries with the thread-safe connection pool.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|reset_store]] (function: belongs_to) — *Deletes all documents from the store.*
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|set_bulk_mode]] (function: belongs_to) — *Enables or disables bulk ingestion mode.*
+- [[obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (calls)
+- [[obsidian-brain/09-RAG-Engine/src/facade/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/__init__.py.md|__init__.py]] (imports)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|HAS_POSTGRES]] (constant: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|PostgresLexicalStore]] (class: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_delete]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_execute_query]] (function: belongs_to) — *Helper to run queries with the thread-safe connection pool.*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_init_db]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_read]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_reset]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_update]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|_write]] (function: belongs_to)
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|add_documents]] (function: belongs_to) — *Adds or updates lexical entries in Postgres (Upsert).*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|close]] (function: belongs_to) — *Closes connection resource links (shared pool closed on program exit).*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|delete_by_brain]] (function: belongs_to) — *Removes all lexical entries belonging to a specific brain partition.*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|delete_by_source]] (function: belongs_to) — *Removes all lexical entries belonging to a specific source file.*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|query]] (function: belongs_to) — *Performs a lexical search query using Postgres Full Text Search (FTS).*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|reset_store]] (function: belongs_to) — *Deletes all documents from the store.*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|set_bulk_mode]] (function: belongs_to) — *Enables or disables bulk ingestion mode.*
+- [[obsidian-brain/09-RAG-Engine/src/services/lexical_store/postgres.py.md|update_metadata]] (function: belongs_to) — *Merges metadata updates into existing JSONB metadata for a chunk.*
 <!-- SYNC:END -->

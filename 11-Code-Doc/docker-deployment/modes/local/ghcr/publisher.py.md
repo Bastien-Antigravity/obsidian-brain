@@ -13,21 +13,21 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[docker-deployment/docker-deployment/modes/local/branch.py.md|branch.py]] (imports)
-- [[docker-deployment/docker-deployment/modes/local/branch.py.md|check_develop_branches]] (function: calls)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (imports)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (same_package)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/auth.py.md|setup_ghcr_credentials]] (function: calls)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
-- [[docker-deployment/docker-deployment/scripts/common.py.md|get_docker_env]] (function: calls)
-- [[docker-deployment/docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
+- [[docker-deployment/modes/local/branch.py.md|branch.py]] (imports)
+- [[docker-deployment/modes/local/branch.py.md|check_develop_branches]] (function: calls)
+- [[docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (imports)
+- [[docker-deployment/modes/local/ghcr/auth.py.md|auth.py]] (same_package)
+- [[docker-deployment/modes/local/ghcr/auth.py.md|setup_ghcr_credentials]] (function: calls)
+- [[docker-deployment/scripts/common.py.md|WORKSPACE_ROOT]] (constant: calls)
+- [[docker-deployment/scripts/common.py.md|ensure_docker_daemon]] (function: calls)
+- [[docker-deployment/scripts/common.py.md|get_docker_env]] (function: calls)
+- [[docker-deployment/scripts/fleet_guard/engine.py.md|run]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|LOCAL_MODE_DIR]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
-- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|SCRIPTS_DIR]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|SERVICES_DOCKER]] (constant: belongs_to)
-- [[docker-deployment/docker-deployment/modes/local/ghcr/publisher.py.md|publish_images_ghcr]] (function: belongs_to)
-- [[docker-deployment/docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
+- [[docker-deployment/modes/local/ghcr/publisher.py.md|LOCAL_MODE_DIR]] (constant: belongs_to)
+- [[docker-deployment/modes/local/ghcr/publisher.py.md|MODES_DIR]] (constant: belongs_to) — *Locate root directory*
+- [[docker-deployment/modes/local/ghcr/publisher.py.md|SCRIPTS_DIR]] (constant: belongs_to)
+- [[docker-deployment/modes/local/ghcr/publisher.py.md|SERVICES_DOCKER]] (constant: belongs_to)
+- [[docker-deployment/modes/local/ghcr/publisher.py.md|publish_images_ghcr]] (function: belongs_to)
+- [[docker-deployment/scripts/fleet.py.md|fleet.py]] (calls)
 <!-- SYNC:END -->

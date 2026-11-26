@@ -22,7 +22,7 @@ Automatically generated mirror for `distributed-config/src/core/merger.go`.
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/src/core/merger.go.md|DeepMerge]] (function: belongs_to) — *Entries in source override entries in target.*
-- [[distributed-config/distributed-config/src/facade/config_facade.go.md|config_facade.go]] (calls)
-- [[distributed-config/distributed-config/src/loader/loader.go.md|loader.go]] (calls)
+- [[distributed-config/src/core/merger.go.md|DeepMerge]] (function: belongs_to) — *Entries in source override entries in target.*
+- [[distributed-config/src/facade/config_facade.go.md|config_facade.go]] (calls)
+- [[distributed-config/src/loader/loader.go.md|loader.go]] (calls)
 <!-- SYNC:END -->

@@ -19,7 +19,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/lifecycle/mod.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[microservice-toolbox/microservice-toolbox/rust/src/lifecycle/manager.rs.md|manager.rs]] (imports)
+- [[microservice-toolbox/rust/src/lifecycle/manager.rs.md|manager.rs]] (imports)
 
 ### 🔌 Consumers (Inbound)
 - None detected

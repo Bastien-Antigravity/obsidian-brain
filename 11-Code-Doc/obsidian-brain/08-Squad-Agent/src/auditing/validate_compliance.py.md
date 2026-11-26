@@ -18,28 +18,55 @@ tags:
 Automatically generated mirror for `obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py`.
 
 > **Essential Process**:
-> Mechanical Code Compliance and Architectural Invariant Auditor. Scans source code files across the Bastien-Antigravity fleet to verify strict adherence to: 1. Triple-Block Header Standard (ESSENTIAL PROCESS, DATA FLOW, KEY PARAMETERS) 2. Section Divider Standard (// --------- or # ---------) 3. Dynamic Port Invariant (No hardcoded canonical ports in production code) 4. Production Cleanliness Invariant (No test mocks, EnsureSafeLogger, or nil fallbacks in bin source) 5. Dynamic Host Invariant (No hardcoded 127.0.0.1 / localhost in capability connection logic)
+> Mechanical Code Compliance and Architectural Invariant Auditor. Scans source code files across the Bastien-Antigravity fleet to verify strict adherence to: 1. Triple-Block Header Standard (ESSENTIAL PROCESS, DATA FLOW, KEY PARAMETERS) 2. Section Divider Standard (// --------- or # ---------) 3. Dynamic Port Invariant (No hardcoded canonical ports in production code) 4. Production Cleanliness Invariant (No test mocks, EnsureSafeLogger, or nil fallbacks in bin source) 5. Dynamic Host Invariant (No hardcoded 127.0.0.1 / localhost in capability connection logic) 6. Ecosystem Tooling Invariant (Entrypoints must use BootstrapService / bootstrap_microservice) 7. Observability Invariant (Zero bare print/println in production code) 8. Path Sovereignty Invariant (Zero legacy manual sys.path climbing) 9. SSoT Configuration Invariant (No direct parsing of standalone.yaml) 10. Dynamic Versioning Invariant (No manual directory loops for VERSION.txt) 11. Platform Schema SSoT Invariant (logger.capnp & notifier.capnp exclusively in microservice-toolbox; no legacy local schema imports) 12. Polyglot Local-First Workspace Resolution (Zero local filesystem path overrides in go.mod, Cargo.toml, pyproject.toml, requirements*.txt, or CMakeLists.txt) 13. Secret Invariant (Encrypted parameters, tokens, and passwords must never be logged in plaintext)
 
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|CodeTransformer]] (class: calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (imports)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|transform_path]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/main.py.md|parse_args]] (function: calls)
-- [[obsidian-brain/obsidian-brain/09-RAG-Engine/src/web/static/js/HtmlObjectVisualizer.js.md|walk]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|audit_single_file_bloat]] (function: calls) — *Audits a single source file for mechanical and cognitive over-engineering.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|debloat_audit.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/debloat_audit.py.md|debloat_audit.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|CodeTransformer]] (class: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|improved_transformer.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|is_internal_module]] (function: calls) — *Returns True if the import targets an internal project/ecosystem local module.*
+- [[obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|make_camel_alias]] (function: calls)
+- [[obsidian-brain/08-Squad-Agent/src/lib/improved_transformer.py.md|transform_path]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (calls)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (same_package)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|CANONICAL_PORTS]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|ComplianceAuditor]] (class: belongs_to) — *Mechanical compliance scanner for code files.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|EXCLUDED_DIRS]] (constant: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|__init__]] (function: belongs_to)
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_file]] (function: belongs_to) — *Audits a single source file and returns a list of detected violations.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_path]] (function: belongs_to) — *Audits a path (file or recursive directory).*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|format_report]] (function: belongs_to) — *Formats violations list into human and agent readable report.*
-- [[obsidian-brain/obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|main]] (function: belongs_to) — *CLI runner for standalone audit execution.*
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/agents/base_agent.py.md|base_agent.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/brain_health_audit.py.md|brain_health_audit.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/eval_agent.py.md|eval_agent.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (calls)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (imports)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/preflight_check.py.md|preflight_check.py]] (same_package)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|ComplianceAuditor]] (class: belongs_to) — *Mechanical compliance scanner for code files.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|EXCLUDED_DIRS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|PLATFORM_EXCLUSIVE_MODULES]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|PLATFORM_EXCLUSIVE_OS_SYMBOLS]] (constant: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|__init__]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_cross_os_top_level_imports]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_dockerenv_prohibited]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_go_mod]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_audit_unit_test_isolation]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|_is_external_local_path]] (function: belongs_to) — *Returns True if a manifest path escapes the repository root or uses an absolute/Windows path.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_cargo_toml]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_cmake_lists]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_dockerfile]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_file]] (function: belongs_to) — *Audits a single source file and returns a list of detected violations.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_github_workflow]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_path]] (function: belongs_to) — *Audits a path (file or recursive directory).*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_python_imports]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_python_manifest]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|audit_staged]] (function: belongs_to) — *Audits git staged files in the current repository / workspace.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|fix_go_mod]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|format_report]] (function: belongs_to) — *Formats violations list into human and agent readable report.*
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|load_canonical_ports_from_ssot]] (function: belongs_to)
+- [[obsidian-brain/08-Squad-Agent/src/auditing/validate_compliance.py.md|main]] (function: belongs_to) — *CLI runner for standalone audit execution.*
+- [[obsidian-brain/08-Squad-Agent/src/models/build_spec.py.md|build_spec.py]] (imports)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

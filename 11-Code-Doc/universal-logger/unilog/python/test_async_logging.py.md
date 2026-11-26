@@ -19,16 +19,16 @@ Automatically generated mirror for `universal-logger/unilog/python/test_async_lo
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|run]] (function: calls)
-- [[universal-logger/universal-logger/unilog/python/setup.py.md|setup.py]] (same_package)
-- [[universal-logger/universal-logger/unilog/python/unilog/__init__.py.md|__init__.py]] (imports)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|async_debug]] (function: calls)
-- [[universal-logger/universal-logger/unilog/python/unilog/facade.py.md|async_info]] (function: calls)
+- [[universal-logger/unilog/python/setup.py.md|run]] (function: calls)
+- [[universal-logger/unilog/python/setup.py.md|setup.py]] (same_package)
+- [[universal-logger/unilog/python/unilog/__init__.py.md|__init__.py]] (imports)
+- [[universal-logger/unilog/python/unilog/facade.py.md|async_debug]] (function: calls)
+- [[universal-logger/unilog/python/unilog/facade.py.md|async_info]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|TestAsyncLogging]] (class: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|heartbeat]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|run_test]] (function: belongs_to)
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_async_caller_metadata]] (function: belongs_to) — *Verify that caller information correctly identifies THIS file, not unilog.py*
-- [[universal-logger/universal-logger/unilog/python/test_async_logging.py.md|test_loop_responsiveness]] (function: belongs_to) — *Verify that the async loop is not blocked during intensive logging*
+- [[universal-logger/unilog/python/test_async_logging.py.md|TestAsyncLogging]] (class: belongs_to)
+- [[universal-logger/unilog/python/test_async_logging.py.md|heartbeat]] (function: belongs_to)
+- [[universal-logger/unilog/python/test_async_logging.py.md|run_test]] (function: belongs_to)
+- [[universal-logger/unilog/python/test_async_logging.py.md|test_async_caller_metadata]] (function: belongs_to) — *Verify that caller information correctly identifies THIS file, not unilog.py*
+- [[universal-logger/unilog/python/test_async_logging.py.md|test_loop_responsiveness]] (function: belongs_to) — *Verify that the async loop is not blocked during intensive logging*
 <!-- SYNC:END -->

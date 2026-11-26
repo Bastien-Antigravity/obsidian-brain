@@ -26,13 +26,13 @@ Automatically generated mirror for `sandbox-testing/02-Scenarios/python/rag_mcp_
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|DEPLOY_DIR]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|RAG_ENGINE_DIR]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|SANDBOX_DIR]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|TEST_DIR]] (constant: belongs_to) — *Add paths*
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|echo_test]] (function: belongs_to) — *Simple echo test tool.*
-- [[sandbox-testing/sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|run_mcp_sse_scenario]] (function: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|DEPLOY_DIR]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|RAG_ENGINE_DIR]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|SANDBOX_DIR]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|TEST_DIR]] (constant: belongs_to) — *Add paths*
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|WORKSPACE_ROOT]] (constant: belongs_to)
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|echo_test]] (function: belongs_to) — *Simple echo test tool.*
+- [[sandbox-testing/02-Scenarios/python/rag_mcp_sse_test.py.md|run_mcp_sse_scenario]] (function: belongs_to)
 <!-- SYNC:END -->
 
 ## 🔍 Implementation Details

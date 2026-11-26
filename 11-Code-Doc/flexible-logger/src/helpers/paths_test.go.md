@@ -13,11 +13,11 @@ tags:
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: calls) — *GetDefaultLogPath returns the default log path using the executable name.*
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|paths.go]] (same_package)
-- [[flexible-logger/flexible-logger/src/helpers/paths.go.md|resolveLogDir]] (function: calls)
+- [[flexible-logger/src/helpers/paths.go.md|GetDefaultLogPath]] (function: calls) — *GetDefaultLogPath returns the default log path using the executable name.*
+- [[flexible-logger/src/helpers/paths.go.md|paths.go]] (same_package)
+- [[flexible-logger/src/helpers/paths.go.md|resolveLogDir]] (function: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[flexible-logger/flexible-logger/src/helpers/paths_test.go.md|TestGetDefaultLogPath]] (function: belongs_to)
-- [[flexible-logger/flexible-logger/src/helpers/paths_test.go.md|TestResolveLogDir]] (function: belongs_to)
+- [[flexible-logger/src/helpers/paths_test.go.md|TestGetDefaultLogPath]] (function: belongs_to)
+- [[flexible-logger/src/helpers/paths_test.go.md|TestResolveLogDir]] (function: belongs_to)
 <!-- SYNC:END -->

@@ -16,24 +16,24 @@ tags:
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_DECRYPTION_FAILED]] (macro: belongs_to) — *define DISTCONF_ERR_NETWORK_FAILURE     5*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_GENERIC]] (macro: belongs_to) — *define DISTCONF_SUCCESS                0*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_INVALID_HANDLE]] (macro: belongs_to) — *define DISTCONF_ERR_GENERIC            1*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_INVALID_INPUT]] (macro: belongs_to) — *define DISTCONF_ERR_DECRYPTION_FAILED   6*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_KEY_NOT_FOUND]] (macro: belongs_to) — *define DISTCONF_ERR_INVALID_HANDLE      2*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_NETWORK_FAILURE]] (macro: belongs_to) — *define DISTCONF_ERR_VALIDATION_FAILED   4*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_VALIDATION_FAILED]] (macro: belongs_to) — *define DISTCONF_ERR_KEY_NOT_FOUND       3*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|DISTCONF_SUCCESS]] (macro: belongs_to) — *Standardized Error Codes*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|GO_CGO_EXPORT_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_EXPORT_PROLOGUE_H*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|GO_CGO_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_PROLOGUE_H*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|THREAD_LOCAL]] (macro: belongs_to) — *if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|call_config_update_cb]] (function: belongs_to) — *C helper to call the callback*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|call_distconf_update_cb]] (function: belongs_to) — *Helper to safely execute a C callback from Go*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|call_notif_callback]] (function: belongs_to) — *Helper to safely execute a C callback from Go*
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|get_last_error]] (function: belongs_to)
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|get_last_error_code]] (function: belongs_to)
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|get_vba_buffer]] (function: belongs_to)
-- [[universal-logger/universal-logger/libunilog/libunilog.h.md|set_last_error]] (function: belongs_to)
-- [[universal-logger/universal-logger/src/cgo_bridge/config.go.md|config.go]] (calls)
-- [[universal-logger/universal-logger/src/cgo_bridge/distconf_bridge.go.md|distconf_bridge.go]] (calls)
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_DECRYPTION_FAILED]] (macro: belongs_to) — *define DISTCONF_ERR_NETWORK_FAILURE     5*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_GENERIC]] (macro: belongs_to) — *define DISTCONF_SUCCESS                0*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_INVALID_HANDLE]] (macro: belongs_to) — *define DISTCONF_ERR_GENERIC            1*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_INVALID_INPUT]] (macro: belongs_to) — *define DISTCONF_ERR_DECRYPTION_FAILED   6*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_KEY_NOT_FOUND]] (macro: belongs_to) — *define DISTCONF_ERR_INVALID_HANDLE      2*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_NETWORK_FAILURE]] (macro: belongs_to) — *define DISTCONF_ERR_VALIDATION_FAILED   4*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_ERR_VALIDATION_FAILED]] (macro: belongs_to) — *define DISTCONF_ERR_KEY_NOT_FOUND       3*
+- [[universal-logger/libunilog/libunilog.h.md|DISTCONF_SUCCESS]] (macro: belongs_to) — *Standardized Error Codes*
+- [[universal-logger/libunilog/libunilog.h.md|GO_CGO_EXPORT_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_EXPORT_PROLOGUE_H*
+- [[universal-logger/libunilog/libunilog.h.md|GO_CGO_PROLOGUE_H]] (macro: belongs_to) — *ifndef GO_CGO_PROLOGUE_H*
+- [[universal-logger/libunilog/libunilog.h.md|THREAD_LOCAL]] (macro: belongs_to) — *if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L*
+- [[universal-logger/libunilog/libunilog.h.md|call_config_update_cb]] (function: belongs_to) — *C helper to call the callback*
+- [[universal-logger/libunilog/libunilog.h.md|call_distconf_update_cb]] (function: belongs_to) — *Helper to safely execute a C callback from Go*
+- [[universal-logger/libunilog/libunilog.h.md|call_notif_callback]] (function: belongs_to) — *Helper to safely execute a C callback from Go*
+- [[universal-logger/libunilog/libunilog.h.md|get_last_error]] (function: belongs_to)
+- [[universal-logger/libunilog/libunilog.h.md|get_last_error_code]] (function: belongs_to)
+- [[universal-logger/libunilog/libunilog.h.md|get_vba_buffer]] (function: belongs_to)
+- [[universal-logger/libunilog/libunilog.h.md|set_last_error]] (function: belongs_to)
+- [[universal-logger/src/cgo_bridge/config.go.md|config.go]] (calls)
+- [[universal-logger/src/cgo_bridge/distconf_bridge.go.md|distconf_bridge.go]] (calls)
 <!-- SYNC:END -->

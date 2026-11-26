@@ -22,8 +22,8 @@ Automatically generated mirror for `distributed-config/src/cgo_bridge/validation
 - None detected
 
 ### 🔌 Consumers (Inbound)
-- [[distributed-config/distributed-config/cmd/libdistconf/main.go.md|main.go]] (calls)
-- [[distributed-config/distributed-config/src/cgo_bridge/validation.go.md|IsValid]] (function: belongs_to) — *IsValid is a Go-native wrapper for checking handle validity.*
-- [[distributed-config/distributed-config/src/cgo_bridge/validation.go.md|ShareConfig]] (function: belongs_to) — *ShareConfig is a Go-native wrapper for DistConf_ShareConfig.*
-- [[distributed-config/distributed-config/src/cgo_bridge/validation.go.md|ValidateMandatoryServices]] (function: belongs_to) — *ValidateMandatoryServices is a Go-native wrapper.*
+- [[distributed-config/cmd/libdistconf/main.go.md|main.go]] (calls)
+- [[distributed-config/src/cgo_bridge/validation.go.md|IsValid]] (function: belongs_to) — *IsValid is a Go-native wrapper for checking handle validity.*
+- [[distributed-config/src/cgo_bridge/validation.go.md|ShareConfig]] (function: belongs_to) — *ShareConfig is a Go-native wrapper for DistConf_ShareConfig.*
+- [[distributed-config/src/cgo_bridge/validation.go.md|ValidateMandatoryServices]] (function: belongs_to) — *ValidateMandatoryServices is a Go-native wrapper.*
 <!-- SYNC:END -->
