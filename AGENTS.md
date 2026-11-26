@@ -8,7 +8,6 @@ tags:
 - '#type/rules'
 - '#state/active'
 - '#zone/0-core'
-- '#ai/ignore'
 ---
 
 # AGENTS.md: obsidian-brain

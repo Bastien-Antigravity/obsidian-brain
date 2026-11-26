@@ -7,7 +7,6 @@ tags:
 - '#type/documentation'
 - '#state/active'
 - '#zone/3-fleet'
-- '#ai/ignore'
 ---
 # Bastien-Antigravity: Obsidian Brain 🌌
 

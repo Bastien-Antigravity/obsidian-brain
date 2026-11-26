@@ -7,7 +7,6 @@ tags:
 - '#type/protocol'
 - '#state/active'
 - '#zone/3-fleet'
-- '#ai/ignore'
 ---
 # 📜 Unified Control Protocol (gRPC/REST Parity)
 
@@ -45,9 +44,10 @@ func (h *HttpHandler) UpdateConfig(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-## 3. Standard gRPC Controller
+## 3. Process Supervision vs. Domain Control (`TeleClient` & `watchdog-agent`)
 
-Every microservice MUST implement the standard `ProcessController` for lifecycle management, but specialized control (e.g., "Start Ingestion", "Flush Buffer") must also follow the parity rule.
+- **OS/Container Lifecycle (`Start / Stop / Restart`)**: Governed externally by each node's `watchdog-agent` and Docker Engine, coordinated across hosts via NATS (`<prefix>.watchdog.node.<host>.*`) and exposed in Telegram via `watchdog-agent`'s `TeleClient` menu. Microservices do NOT implement an in-process `ProcessController` `Start/Stop/Restart` gRPC proto.
+- **Domain Control**: Microservices exposing interactive Telegram actions register their callbacks outbound to `tele-remote` (`:1863`) via `microservice-toolbox` `TeleClient` (`teleremote`), sharing the exact same internal domain methods used by their REST/gRPC handlers.
 
 ## 4. Discovery & Documentation
 

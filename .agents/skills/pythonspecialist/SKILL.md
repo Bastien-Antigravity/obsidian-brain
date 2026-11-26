@@ -38,7 +38,7 @@ Develop flexible, type-hinted, high-performance wrappers, integration scripts, a
 
 ### 2. Type Safety & Design Patterns
 - **Modern Typing**: Use explicit typing. Use `typing.Any`, `typing.Optional`, and `typing.Protocol` instead of generic `object`. Prefer `typing.Annotated` for metadata-rich type hints.
-- **Model Prefixing**: Model classes inside `/src/models/model_class.py` must be prefixed with `M` (e.g. `MUserSession`).
+- **Model & Interface Naming**: Classes in `/src/models/` and `/src/interfaces/` use unprefixed descriptive `PascalCase` nouns (e.g. `UserSession`, `StatusPayload`, `MicroserviceBuildSpec` — NO `M` or `I` Hungarian prefixes).
 - **Constructor Pattern**:
   ```python
   def __init__(self, *, config: Any, logger: Any, name: Optional[str] = None):

@@ -16,7 +16,7 @@ Implement deterministic, ultra-low latency core libraries and shared objects (`.
 ### 2. Design Patterns & Naming Conventions
 - **Naming Rules**:
   - Classes: `PascalCase` (e.g. `LogManager`, `ConfigStore`).
-  - Functions/Methods: `camelCase` (e.g. `loadConfig()`, `pushLog()`).
+  - Public Functions/Methods: `PascalCase` (e.g. `LoadConfig()`, `GetVersion()`, `PublishWithLifecycle()`), matching `microservice-toolbox/cpp` parity.
   - Variables: `snake_case` (e.g. `buffer_size`, `retry_count`).
   - Constants: `SCREAMING_SNAKE_CASE` (e.g. `MAX_MESSAGE_SIZE`).
 - **Constructor Pattern**: Exclude raw `new` and `delete`. Use factory functions returning `std::unique_ptr<T>` for component instantiation.
@@ -47,7 +47,7 @@ Implement deterministic, ultra-low latency core libraries and shared objects (`.
 
 ### 4. Low-Latency & Memory Tricks (MANDATORY)
 - **RAII Memory**: Use `std::unique_ptr` for exclusive ownership, and `std::shared_ptr` only when multiple ownership is required. Stack allocation must be preferred on hotpaths.
-- **Zero-Copy Boundaries**: Use `std::string_view` and `std::span` for read-only buffers passing through module boundaries to avoid allocation overhead.
+- **Zero-Copy Boundaries (C++17 Strict)**: Use `std::string_view` and `(const uint8_t* data, size_t len)` or `const std::vector<uint8_t>&` views for read-only buffers passing through module boundaries to avoid allocation overhead (do NOT use `std::span`, which requires C++20 and breaks the `-std=c++17` baseline).
 - **Atomic Pointer Swap**: Use lock-free pointer swapping for hotpaths using `std::atomic<T*>` and Compare-And-Swap (CAS) retry loops. Avoid mutex lock contention on hotpaths.
 - **FFI Static Loading Law**: For memory safety across the Go-C bridge, C++ wrappers for Go-compiled shared libraries (`libdistconf`, `libunilog`, `libnotif`) MUST NOT trigger `dlclose()` or drop active handles.
 

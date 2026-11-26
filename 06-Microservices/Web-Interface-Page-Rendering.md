@@ -9,7 +9,6 @@ tags:
 - '#type/protocol'
 - '#state/active'
 - '#zone/3-fleet'
-- '#ai/ignore'
 ---
 # 🎨 Page Rendering & UI Styling Specification: Bastien UI
 

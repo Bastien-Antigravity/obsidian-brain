@@ -9,9 +9,7 @@ tags:
 - '#domain/observability'
 - '#state/active'
 - '#zone/3-fleet'
-- '#ai/ignore'
 ---
-
 # 📜 Microservice Logging Standard
 
 This protocol defines the standardized logging behavior, interface contracts, initialization rituals, and log-level guidelines for all microservices across the Bastien-Antigravity ecosystem.

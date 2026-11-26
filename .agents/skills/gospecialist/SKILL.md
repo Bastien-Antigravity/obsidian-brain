@@ -34,14 +34,14 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
   ```
 
 ### 2. Design Patterns & Naming Conventions
-- **Naming Prefixes & Lean Interface Rule**: 
-  - Struct Models in `/src/models/` must be prefixed with `M` (e.g. `MStructData`).
-  - Interfaces in `/src/interfaces/` must be prefixed with `I` (e.g. `IBase`) and created **only** when backing $\ge 2$ polymorphic implementations (e.g. `INotifSender`) or a public SDK seam — never create zero-consumer or 1-to-1 internal wrapper interfaces.
+- **Naming & Lean Interface Rule (Zero Hungarian Prefixes)**: 
+  - Struct Models in `/src/models/` use unprefixed descriptive nouns (e.g. `StructData`, `StatusPayload` — NO `M` prefix), relying on package qualification (`models.StatusPayload`).
+  - Interfaces in `/src/interfaces/` use idiomatic unprefixed nouns (e.g. `Service`, `Logger`, `Socket`, `NotifSender` — NO `I` prefix) and must be created **only** when backing $\ge 2$ polymorphic implementations or a public SDK seam — never create zero-consumer or 1-to-1 internal wrapper interfaces.
 - **Composition / Interface Embedding**: Embed interfaces rather than concrete types:
   ```go
   type OwnFolder struct {
-      interfaces.IBase
-      OwnPublicProperty *models.MStructData
+      interfaces.BaseService
+      OwnPublicProperty *models.StructData
       Name     string                 
       Config   *config.Config
       Logger   *logger.Logger
@@ -57,7 +57,7 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
   3. CLI Flags (higher priority)
   4. gRPC Overrides
 - **Dedicated `AppConfig` Versioning (`VERSION.txt` ONLY) & Standard Toolbox Modules**:
-  - Microservices MUST derive their version exclusively through the dedicated `appConfig.GetVersion()` method (`VERSION.txt` ONLY, fail-fast if missing). Writing ad-hoc `VERSION.txt` scanning loops, direct low-level version lookups when `appConfig` exists, runtime `APP_VERSION`/`SERVICE_VERSION` overrides, `"0.0.1"` fallbacks, or hardcoded version strings is strictly prohibited (`HARDCODED_VERSION_VIOLATION`).
+  - Microservices MUST derive their version exclusively through the dedicated `appConfig.GetVersion()` method (`VERSION.txt` ONLY, fail-fast if missing). Writing ad-hoc `VERSION.txt` scanning loops, direct low-level version lookups when `appConfig` exists, runtime `APP_VERSION`/`SERVICE_VERSION` overrides, `"0.0.1"` fallbacks, or hardcoded version strings is strictly prohibited (`HARDCODED_VERSION_TRAVERSAL`).
   - All status responses (`/api/v1/status`, `/api/v1/contracts`, gRPC `GetStatus`) expose `appConfig.GetVersion()`.
   - **Use Built-In Toolbox Tools (`spec`, `contracts`, `wiretap`, `notification`, `connectivity`, `lifecycle`)**: Use `spec.PublishWithLifecycle` (`BuildSpecFromConfig` auto-populates `URL`, `%s` `Framing` ports, `DataStructure` with `version`/`ports`/`node`, `Health`), `contracts.go` extractors (`ExtractProtoTextOperations`, `ExtractCapnpOperations`, `RenderProtoIDL`, `NewContractsEnvelope`), `go/pkg/wiretap` (auto-initialized by `BootstrapService`), and `go/pkg/notification` rather than hand-rolling HTTP loops or parsers.
 
@@ -104,7 +104,7 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
   ```
 
 ### 5. Error Partitioning & Logging
-- **CRITICAL**: Use `os.Exit(1)` or `log.Fatal()` for missing dependencies or fatal boot errors.
+- **CRITICAL**: Log via `logger.Critical(...)` and exit cleanly via `os.Exit(1)` for missing dependencies or fatal boot errors (NEVER use stdlib `log.Fatal` or `log.Panic`, which violate `NON_CANONICAL_LOG_CALL`).
 - **OPERATIONAL**: Return standard error wrapped using `%w` context wrapper.
 - All logs must prefix with the component identity using `Name string` initialized field.
 
@@ -120,7 +120,7 @@ Provide high-performance, concurrent, and memory-safe Go code for core infrastru
 ## 🧪 BDD & Testing Ownership
 You are the **QA for your own code**; since you have the code and logic, you MUST write both the implementation and its tests.
 - **Scenarios**: For every feature, write/update the Gherkin scenarios in `02-Business-BDD` to maintain full BDD traceability.
-- **Sandbox**: Add integration and adversarial tests to `sandbox-testing/implementations/go/`. Go is our standard sandbox test harness language.
+- **Sandbox**: `sandbox-testing/02-Scenarios/` is polyglot (`go/`, `python/`, etc., coordinated by `QA`). When implementing Go services or Go FFI bridges, add cross-repository integration and adversarial scenarios under `sandbox-testing/02-Scenarios/go/`.
 - **Unit Tests**: Coverage must stay above 90%+. Write tests utilizing the `testing` package. Run `go test -cover -v ./...` to verify.
 
 ---

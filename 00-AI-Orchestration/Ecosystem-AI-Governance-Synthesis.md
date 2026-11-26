@@ -33,12 +33,12 @@ flowchart TD
      - **Zero Whole-Module Imports**: Never write `import os`, `import sys`, `import re`, `import json`, `import time`, `import subprocess`, etc. outside the entrypoint `bootstrap_microservice` block.
      - **Granular & camelCase Aliased (`[module][SymbolName]`)**: Import only required symbols from stdlib/external packages and alias them in camelCase (e.g. `from os.path import join as osPathJoin, exists as osPathExists`, `from json import dumps as jsonDumps, loads as jsonLoads`, `from datetime import datetime as dtDateTime`, `from typing import Any as typeAny, Dict as typeDict, Optional as typeOptional`). Combine multiple symbols from the same module onto a single line.
      - **Do NOT Alias Local/Internal Imports**: Never alias internal project imports (`from src.interfaces import SquadEventBus`, `from .storage import Storage`).
-     - **95-Dash Dividers & `.format(self.Name)` Logging**: Separate methods with 95 dashes (`# -----------------------------------------------------------------------------------------------`) and prefix logs via `self.logger.info("{0} : ...".format(self.Name))`.
-   - **Go**: Triple-Block Header (`/* ESSENTIAL PROCESS ... */`), 4-Block Import Structure (Stdlib, Local, Ecosystem aliased, External), and 77-dash dividers.
+     - **95-Dash Dividers & `f"{self.Name} : {msg}"` Logging**: Separate methods with 95 dashes (`# -----------------------------------------------------------------------------------------------`) and prefix logs via `self.logger.info(f"{self.Name} : {msg}")`.
+   - **Go**: Triple-Block Header (`/* ESSENTIAL PROCESS ... */`), 4-Block Import Structure (Stdlib, Local, Ecosystem aliased, External), unprefixed idiomatic models and interfaces (no `M` or `I` prefixes), and 77-dash dividers.
    - **Rust**: Triple-Block Header (`//! ESSENTIAL PROCESS ...`), 95-dash dividers.
 
 2. **Mechanical Enforcement & Auto-Transformation (`validate_compliance.py` & `improved_transformer.py`)**:
-   - `ComplianceAuditor.audit_python_imports()` AST-audits Python files for whole-module imports (`PYTHON_WHOLE_MODULE_IMPORT`), unaliased external/stdlib imports (`PYTHON_UNALIASED_IMPORT`), aliased local imports (`PYTHON_LOCAL_IMPORT_ALIASED`), and unmerged same-module imports (`PYTHON_DUPLICATE_FROM_MODULE`).
+   - `ComplianceAuditor.audit_python_imports()` AST-audits Python files for whole-module imports (`PYTHON_WHOLE_MODULE_IMPORT`), unaliased external/stdlib imports (`PYTHON_UNALIASED_IMPORT`), aliased local imports (`PYTHON_LOCAL_IMPORT_ALIASED`), and unmerged same-module imports (`PYTHON_SEPARATE_MODULE_IMPORTS`).
    - `CodeTransformer._ensure_granular_imports()` generalizes AST rewriting for any stdlib/external module using `_make_camel_alias(module_name, symbol_name)`.
 
 3. **Squad-Agent Runtime Context & Tool Hardening (`base_agent.py`, `developer.py`, `convert_agents.py`)**:

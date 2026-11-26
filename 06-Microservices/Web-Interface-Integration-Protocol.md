@@ -7,54 +7,21 @@ tags:
 - '#type/protocol'
 - '#state/active'
 - '#zone/3-fleet'
-- '#ai/ignore'
 ---
 # 🌐 Web Interface Integration Protocol
 
 This protocol defines how to centralize microservice management, monitoring, and real-time data visualization within the primary `web-interface` dashboard.
 
-## 1. The Gateway Plugin Pattern
+## 1. Decentralized Zero-Touch OpenMFE Registration (Authoritative Standard)
 
-To keep the `web-interface` maintainable, every microservice integration MUST follow the **Plugin Pattern**. Instead of adding logic directly to `main.go`, create a dedicated integration package.
+Microservices NEVER hardcode Go packages, routes, or gRPC clients inside `web-interface`. Instead, every microservice (whether in the base fleet or an external Zero-Mixing Domain Workspace) integrates dynamically at runtime via `microservice-toolbox/spec`:
 
-### File Structure
-```text
-web-interface/
-  src/
-    integrations/
-      {service_name}/
-        controller.go   # REST/WebSocket handlers
-        grpc_client.go  # Communication with the microservice
-        router.go       # Route registration
-```
-
-## 2. Integration Workflow
-
-### Step 1: gRPC Client Initialization
-Use the `microservice-toolbox` to resolve the service address and initialize a gRPC client. Do NOT hardcode IPs.
-
-```go
-// Resolved via toolbox
-addr, _ := toolbox.GetGRPCListenAddr("data-ingestor")
-conn, _ := grpc.Dial(addr, grpc.WithInsecure())
-client := pb.NewControlServiceClient(conn)
-```
-
-### Step 2: Route Registration
-Implement a `RegisterRoutes` function that takes the main `http.ServeMux`.
-
-```go
-func RegisterRoutes(mux *http.ServeMux, client pb.ControlServiceClient) {
-    mux.HandleFunc("/api/v1/ingestor/start", handleStart(client))
-    mux.HandleFunc("/ws/ingestor/logs", handleLogStream(client))
-}
-```
-
-### Step 3: WebSocket Multiplexing (Live Streams)
-For real-time data (prices, logs), the backend should:
-1.  Open a gRPC stream to the microservice.
-2.  Upgrade the browser request to a WebSocket.
-3.  Forward gRPC messages to the WebSocket in a non-blocking loop.
+1. **Boot-Time `ServiceSpec` & `ExchangeContract` Publication**:
+   - Call `spec.PublishWithLifecycle` (Go), `spec.publish_with_lifecycle` (Python), `spec::publish_with_lifecycle` (Rust), or `SpecPublisher::PublishWithLifecycle` (C++17) during startup (`MaxRetries: -1`, non-blocking).
+   - `BuildSpecFromConfig` automatically populates `Version` (`appConfig.GetVersion()`), `URL`, `%s` ports in `Framing`, `DataStructure`, `Canvas`, and `Health`, posting to `POST /api/v1/register` on `web-interface`.
+2. **Embedded Web Component Bundle (`BastienMFEElement`) & Contract Introspection**:
+   - Serve the service's Web Component (`/static/mfe.js` or `/static/js/mfe-loader.js`) with CORS headers and expose `GET /api/v1/contracts` (`ContractsEnvelope`) built via `microservice-toolbox` contract extractors.
+   - Full wire and Web Component specifications are documented in [[OpenMFE-Integration-Protocol|📜 OpenMFE Microfrontend Integration Protocol]].
 
 ## 3. Frontend Standards
 
