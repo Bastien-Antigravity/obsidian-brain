@@ -49,11 +49,11 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|_run_handler]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|_send_registration]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|add_action]] (function: belongs_to) — *Registers a new action or sub-menu tree.*
-- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|close]] (function: belongs_to) — *Gracefully stops the client.*
+- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|close]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|configure_from_app_config]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|generate_menu_json]] (function: belongs_to) — *Returns the structured JSON representation of the action tree.*
-- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_log]] (function: belongs_to) — *Pushes a raw string update to the channel.*
-- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_log_tree]] (function: belongs_to) — *Pushes a menu tree update to the channel.*
+- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_log]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_log_tree]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|send_telemetry]] (function: belongs_to) — *Streams an arbitrary text message to the Telegram admin chat.*
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|set_auth_token]] (function: belongs_to) — *Configures the shared secret sent in outgoing x-tele-auth gRPC metadata.*
 - [[microservice-toolbox/python/microservice_toolbox/teleremote/client.py.md|set_local_tls]] (function: belongs_to) — *Configures service-private X.509 TLS/mTLS file paths from the local: section.*

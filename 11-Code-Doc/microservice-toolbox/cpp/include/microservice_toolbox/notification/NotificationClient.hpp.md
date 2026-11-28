@@ -33,13 +33,13 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotifBridgeLoader.FnSend]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotifBridgeLoader.Instance]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotifBridgeLoader.NotifBridgeLoader]] (method: defines_method)
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Close]] (method: defines_method) — *Marks the client as closed.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.FromConfig]] (method: defines_method) — *Fails fast if the notif_server capability or its gRPC address is unresolvable.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.NotificationClient]] (method: defines_method) — *Initializes a NotificationClient pointing to a specific target address.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendAlert]] (method: defines_method) — *(e.g., "TRADE", "CRITICAL", "WARNING", "REPORT", "INFO") and optional tags.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendWithAttachment]] (method: defines_method) — *attachment reference, and destination tags.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Send]] (method: defines_method) — *with optional destination tags (e.g. "telegram", "discord").*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SetTimeout]] (method: defines_method) — *Sets default RPC dispatch timeout in seconds.*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Close]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.FromConfig]] (method: defines_method) — *Initializes a NotificationClient by dynamically resolving the notif_server*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.NotificationClient]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendAlert]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendWithAttachment]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Send]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SetTimeout]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.TargetAddr]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
@@ -53,13 +53,13 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotifBridgeLoader.NotifBridgeLoader]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotifBridgeLoader]] (class: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotifBridgeLoader]] (class: defines_method)
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Close]] (method: belongs_to) — *Marks the client as closed.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.FromConfig]] (method: belongs_to) — *Fails fast if the notif_server capability or its gRPC address is unresolvable.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.NotificationClient]] (method: belongs_to) — *Initializes a NotificationClient pointing to a specific target address.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendAlert]] (method: belongs_to) — *(e.g., "TRADE", "CRITICAL", "WARNING", "REPORT", "INFO") and optional tags.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendWithAttachment]] (method: belongs_to) — *attachment reference, and destination tags.*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Send]] (method: belongs_to) — *with optional destination tags (e.g. "telegram", "discord").*
-- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SetTimeout]] (method: belongs_to) — *Sets default RPC dispatch timeout in seconds.*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Close]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.FromConfig]] (method: belongs_to) — *Initializes a NotificationClient by dynamically resolving the notif_server*
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.NotificationClient]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendAlert]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SendWithAttachment]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.Send]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.SetTimeout]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient.TargetAddr]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient]] (class: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/notification/NotificationClient.hpp.md|NotificationClient]] (class: defines_method)

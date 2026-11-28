@@ -34,7 +34,7 @@ Automatically generated mirror for `config-server/src/rest/contracts.go`.
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: belongs_to) — *BuildExchangeContracts constructs the exhaustive contract catalog from live config-server sources.*
+- [[config-server/src/rest/contracts.go.md|BuildExchangeContracts]] (function: belongs_to)
 - [[config-server/src/rest/contracts.go.md|RESTHandler.handleContracts]] (method: belongs_to)
 - [[config-server/src/rest/contracts.go.md|RESTHandler]] (struct: defines_method)
 <!-- SYNC:END -->

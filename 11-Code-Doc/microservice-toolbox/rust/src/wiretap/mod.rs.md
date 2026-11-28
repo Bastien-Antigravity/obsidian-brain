@@ -68,7 +68,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/wiretap/mod.rs
 - [[microservice-toolbox/rust/src/wiretap/mod.rs.md|set_local_service_name]] (function: belongs_to)
 - [[microservice-toolbox/rust/src/wiretap/mod.rs.md|set_web_hub_url]] (function: belongs_to)
 - [[microservice-toolbox/rust/src/wiretap/mod.rs.md|should_sample]] (function: belongs_to)
-- [[microservice-toolbox/rust/src/wiretap/mod.rs.md|snapshot]] (function: belongs_to)
+- [[microservice-toolbox/rust/src/wiretap/mod.rs.md|snapshot]] (function: belongs_to) — *information channels with cache-line padded atomics and branch-free power-of-two sampling.*
 - [[microservice-toolbox/rust/src/wiretap/mod.rs.md|yaml_scalar_to_string]] (function: belongs_to)
 <!-- SYNC:END -->
 

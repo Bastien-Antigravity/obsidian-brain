@@ -2,7 +2,7 @@
 microservice: ecosystem-core
 type: configuration
 status: active
-active_mode: 1
+active_mode: 4
 active_client: antigravity
 tags:
 - '#zone/0-orchestration'

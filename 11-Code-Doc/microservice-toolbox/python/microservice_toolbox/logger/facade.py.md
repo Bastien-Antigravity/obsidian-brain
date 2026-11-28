@@ -26,7 +26,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/python/microservice_toolbox/logger/models.py.md|from_str]] (function: calls)
 - [[microservice-toolbox/python/microservice_toolbox/logger/models.py.md|models.py]] (imports)
 - [[microservice-toolbox/python/microservice_toolbox/logger/models.py.md|models.py]] (same_package)
-- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: calls) — *typedef void (*logger_callback_cb)(const char* json_data);*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|LOGGER_CALLBACK_TYPE]] (constant: calls)
 - [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
 - [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libunilog]] (function: calls)
 - [[microservice-toolbox/rust/src/business/models.rs.md|decode]] (function: calls)
@@ -44,12 +44,12 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|__enter__]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|__exit__]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|__init__]] (function: belongs_to)
-- [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_async_log]] (function: belongs_to) — *Internal async Logging Method*
+- [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_async_log]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_bridge_cb]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_dispatch_log_to_cgo]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_dispatch_update]] (function: belongs_to) — *Internal bridge called from Go shared library background thread.*
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_get_caller_info]] (function: belongs_to)
-- [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_log]] (function: belongs_to) — *Internal sync Logging Method*
+- [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_log]] (function: belongs_to) — *Logging Methods*
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|_put]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|add_metadata]] (function: belongs_to) — *Add a single key-value pair to all future logs.*
 - [[microservice-toolbox/python/microservice_toolbox/logger/facade.py.md|async_critical]] (function: belongs_to)

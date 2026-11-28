@@ -31,8 +31,8 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|_coerce_dataclass]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|_coerce_value]] (function: belongs_to) — *Recursively coerces decoded JSON values to target dataclass, Enum, or bytes types.*
 - [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|default]] (function: belongs_to)
-- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|deserialize]] (function: belongs_to) — *Converts a JSON byte array back into a business object or dataclass.*
-- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|serialize]] (function: belongs_to) — *Converts a business object into a JSON byte array.*
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|deserialize]] (function: belongs_to)
+- [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|serialize]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|system_timestamp]] (function: belongs_to) — *Returns the current unix timestamp in milliseconds.*
 - [[microservice-toolbox/python/microservice_toolbox/business/helpers.py.md|wrap_market_event]] (function: belongs_to) — *Creates a MarketEvent envelope for a payload.*
 <!-- SYNC:END -->

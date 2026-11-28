@@ -21,7 +21,7 @@ Automatically generated mirror for `config-server/src/rest/rest_handler_test.go`
 ### 📦 Dependencies (Outbound)
 - [[config-server/src/core/controller.go.md|controller.go]] (imports)
 - [[config-server/src/rest/rest_handler.go.md|NewRESTHandler]] (function: calls) — *NewRESTHandler creates a new RESTHandler instance*
-- [[config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: calls) — *Handler returns the REST API handler with route registration and CORS wrapping.*
+- [[config-server/src/rest/rest_handler.go.md|RESTHandler.Handler]] (method: calls)
 - [[config-server/src/rest/rest_handler.go.md|rest_handler.go]] (same_package)
 - [[config-server/src/rest/rest_handler_test.go.md|mockControl.DeleteConfig]] (method: defines_method)
 - [[config-server/src/rest/rest_handler_test.go.md|mockControl.GetConfig]] (method: defines_method)

@@ -23,25 +23,25 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 ## 🏗️ Architectural Context
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: calls) — *DeleteConfig deletes a configuration key atomically and broadcasts the change.*
-- [[config-server/src/server/controller.go.md|Server.GetConfig]] (method: calls) — *GetConfig returns a specific configuration value from the dynamic store.*
+- [[config-server/src/server/controller.go.md|Server.DeleteConfig]] (method: calls)
+- [[config-server/src/server/controller.go.md|Server.GetConfig]] (method: calls)
 - [[config-server/src/server/controller.go.md|Server.GetStatus]] (method: calls)
-- [[config-server/src/server/controller.go.md|Server.SetConfigWithOCC]] (method: calls) — *SetConfigWithOCC updates a configuration value atomically with OCC verification, commits to persistence, and broadcasts.*
-- [[config-server/src/server/controller.go.md|Server.SetConfig]] (method: calls) — *SetConfig updates a configuration value atomically and broadcasts the change.*
+- [[config-server/src/server/controller.go.md|Server.SetConfigWithOCC]] (method: calls)
+- [[config-server/src/server/controller.go.md|Server.SetConfig]] (method: calls)
 - [[config-server/src/server/controller.go.md|controller.go]] (same_package)
 - [[config-server/src/server/server.go.md|NewServer]] (function: calls) — *NewServer creates a new Config Server.*
-- [[config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
-- [[config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
-- [[config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls) — *GetActiveClients returns the current number of connected clients lock-free.*
-- [[config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls) — *GetClientNames returns the names of all currently connected clients lock-free in sorted order.*
-- [[config-server/src/server/server.go.md|Server.ReloadConfig]] (method: calls) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
-- [[config-server/src/server/server.go.md|Server.SaveSync]] (method: calls) — *SaveSync immediately commits the current store state to disk synchronously, clearing dirty status.*
-- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
-- [[config-server/src/server/server.go.md|Server.TriggerSave]] (method: calls) — *TriggerSave marks the state as dirty to trigger background persistence.*
-- [[config-server/src/server/server.go.md|Server.addListener]] (method: calls) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
-- [[config-server/src/server/server.go.md|Server.broadcastRegistry]] (method: calls) — *broadcastRegistry sends the list of all connected active clients lock-free.*
+- [[config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.GetActiveClients]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.GetClientNames]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.ReloadConfig]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.SaveSync]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.TriggerSave]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.addListener]] (method: calls)
+- [[config-server/src/server/server.go.md|Server.broadcastRegistry]] (method: calls)
 - [[config-server/src/server/server.go.md|Server.flushDirtyOnce]] (method: calls)
-- [[config-server/src/server/server.go.md|Server.removeListener]] (method: calls) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
+- [[config-server/src/server/server.go.md|Server.removeListener]] (method: calls)
 - [[config-server/src/server/server.go.md|newClientMailbox]] (function: calls)
 - [[config-server/src/server/server.go.md|server.go]] (same_package)
 - [[config-server/src/server/server_test.go.md|mockLogger.Critical]] (method: defines_method)
@@ -50,8 +50,8 @@ Automatically generated mirror for `config-server/src/server/server_test.go`.
 - [[config-server/src/server/server_test.go.md|mockLogger.Info]] (method: defines_method)
 - [[config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: defines_method)
 - [[config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls)
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls)
 - [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/src/store/store.go.md|NewStore]] (function: calls) — *NewStore initializes a new Store with an empty config.*
 

@@ -21,33 +21,33 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 ### 📦 Dependencies (Outbound)
 - [[config-server/src/server/connection.go.md|Server.handleConnection]] (method: calls)
 - [[config-server/src/server/connection.go.md|connection.go]] (same_package)
-- [[config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: defines_method) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
-- [[config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: defines_method) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
-- [[config-server/src/server/server.go.md|Server.GetActiveClients]] (method: defines_method) — *GetActiveClients returns the current number of connected clients lock-free.*
-- [[config-server/src/server/server.go.md|Server.GetClientNames]] (method: defines_method) — *GetClientNames returns the names of all currently connected clients lock-free in sorted order.*
-- [[config-server/src/server/server.go.md|Server.ReloadConfig]] (method: defines_method) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
-- [[config-server/src/server/server.go.md|Server.SaveSync]] (method: defines_method) — *SaveSync immediately commits the current store state to disk synchronously, clearing dirty status.*
-- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: defines_method) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
-- [[config-server/src/server/server.go.md|Server.Start]] (method: defines_method) — *Start listens for incoming TCP connections.*
-- [[config-server/src/server/server.go.md|Server.Stop]] (method: defines_method) — *Stop signals the server to shutdown.*
-- [[config-server/src/server/server.go.md|Server.TriggerSave]] (method: defines_method) — *TriggerSave marks the state as dirty to trigger background persistence.*
-- [[config-server/src/server/server.go.md|Server.addListener]] (method: defines_method) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
-- [[config-server/src/server/server.go.md|Server.broadcastRegistry]] (method: defines_method) — *broadcastRegistry sends the list of all connected active clients lock-free.*
-- [[config-server/src/server/server.go.md|Server.broadcastUpdate]] (method: defines_method) — *broadcastUpdate sends configuration updates to all connected client mailboxes lock-free.*
+- [[config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.GetActiveClients]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.GetClientNames]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.ReloadConfig]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.SaveSync]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.Start]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.Stop]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.TriggerSave]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.addListener]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.broadcastRegistry]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.broadcastUpdate]] (method: defines_method)
 - [[config-server/src/server/server.go.md|Server.flushDirtyOnce]] (method: defines_method)
-- [[config-server/src/server/server.go.md|Server.persistenceWorker]] (method: defines_method) — *persistenceWorker periodically saves the configuration to disk if dirty.*
-- [[config-server/src/server/server.go.md|Server.removeListener]] (method: defines_method) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
-- [[config-server/src/server/server.go.md|clientMailbox.Close]] (method: defines_method) — *Close signals the mailbox to stop accepting or draining messages without closing send.*
+- [[config-server/src/server/server.go.md|Server.persistenceWorker]] (method: defines_method)
+- [[config-server/src/server/server.go.md|Server.removeListener]] (method: defines_method)
+- [[config-server/src/server/server.go.md|clientMailbox.Close]] (method: defines_method)
 - [[config-server/src/server/server.go.md|clientMailbox.ensureInit]] (method: defines_method)
 - [[config-server/src/server/server_test.go.md|mockLogger.Error]] (method: calls)
 - [[config-server/src/server/server_test.go.md|mockLogger.Info]] (method: calls)
 - [[config-server/src/server/server_test.go.md|mockLogger.Warning]] (method: calls)
 - [[config-server/src/server/server_test.go.md|server_test.go]] (same_package)
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls)
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls)
 - [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *Ensures the store "owns" the data by performing a deep copy.*
+- [[config-server/src/store/store.go.md|Store.Replace]] (method: calls) — *the matching monotonic version under a consistent lock.*
 - [[config-server/src/store/store.go.md|Store]] (struct: calls) — *100% lock-free reads while maintaining atomic, side-effect-free updates.*
 
 ### 🔌 Consumers (Inbound)
@@ -58,28 +58,28 @@ Automatically generated mirror for `config-server/src/server/server.go`.
 - [[config-server/src/server/controller.go.md|controller.go]] (calls)
 - [[config-server/src/server/controller.go.md|controller.go]] (same_package)
 - [[config-server/src/server/server.go.md|NewServer]] (function: belongs_to) — *NewServer creates a new Config Server.*
-- [[config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: belongs_to) — *BroadcastConfig sends a delta/merge configuration update to all connected clients.*
-- [[config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: belongs_to) — *Used when keys are deleted or configuration is reloaded from disk so clients purge removed keys.*
-- [[config-server/src/server/server.go.md|Server.GetActiveClients]] (method: belongs_to) — *GetActiveClients returns the current number of connected clients lock-free.*
-- [[config-server/src/server/server.go.md|Server.GetClientNames]] (method: belongs_to) — *GetClientNames returns the names of all currently connected clients lock-free in sorted order.*
-- [[config-server/src/server/server.go.md|Server.ReloadConfig]] (method: belongs_to) — *ReloadConfig reloads the configuration from the base YAML file and persistence store.*
-- [[config-server/src/server/server.go.md|Server.SaveSync]] (method: belongs_to) — *SaveSync immediately commits the current store state to disk synchronously, clearing dirty status.*
-- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: belongs_to) — *SetOnUpdate atomically registers the callback invoked when configuration state changes.*
-- [[config-server/src/server/server.go.md|Server.Start]] (method: belongs_to) — *Start listens for incoming TCP connections.*
-- [[config-server/src/server/server.go.md|Server.Stop]] (method: belongs_to) — *Stop signals the server to shutdown.*
-- [[config-server/src/server/server.go.md|Server.TriggerSave]] (method: belongs_to) — *TriggerSave marks the state as dirty to trigger background persistence.*
-- [[config-server/src/server/server.go.md|Server.addListener]] (method: belongs_to) — *addListener adds a client mailbox to the broadcast list via atomic pointer swap.*
-- [[config-server/src/server/server.go.md|Server.broadcastRegistry]] (method: belongs_to) — *broadcastRegistry sends the list of all connected active clients lock-free.*
-- [[config-server/src/server/server.go.md|Server.broadcastUpdate]] (method: belongs_to) — *broadcastUpdate sends configuration updates to all connected client mailboxes lock-free.*
+- [[config-server/src/server/server.go.md|Server.BroadcastConfig]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.BroadcastFullRefresh]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.GetActiveClients]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.GetClientNames]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.ReloadConfig]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.SaveSync]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.SetOnUpdate]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.Start]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.Stop]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.TriggerSave]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.addListener]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.broadcastRegistry]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.broadcastUpdate]] (method: belongs_to)
 - [[config-server/src/server/server.go.md|Server.flushDirtyOnce]] (method: belongs_to)
-- [[config-server/src/server/server.go.md|Server.persistenceWorker]] (method: belongs_to) — *persistenceWorker periodically saves the configuration to disk if dirty.*
-- [[config-server/src/server/server.go.md|Server.removeListener]] (method: belongs_to) — *removeListener removes a client from the broadcast list via atomic pointer swap.*
+- [[config-server/src/server/server.go.md|Server.persistenceWorker]] (method: belongs_to)
+- [[config-server/src/server/server.go.md|Server.removeListener]] (method: belongs_to)
 - [[config-server/src/server/server.go.md|Server]] (struct: belongs_to) — *Server represents the Config Server.*
 - [[config-server/src/server/server.go.md|Server]] (struct: defines_method) — *Server represents the Config Server.*
-- [[config-server/src/server/server.go.md|clientMailbox.Close]] (method: belongs_to) — *Close signals the mailbox to stop accepting or draining messages without closing send.*
+- [[config-server/src/server/server.go.md|clientMailbox.Close]] (method: belongs_to)
 - [[config-server/src/server/server.go.md|clientMailbox.ensureInit]] (method: belongs_to)
-- [[config-server/src/server/server.go.md|clientMailbox]] (struct: belongs_to) — *clientMailbox represents a dedicated outgoing queue for a client.*
-- [[config-server/src/server/server.go.md|clientMailbox]] (struct: defines_method) — *clientMailbox represents a dedicated outgoing queue for a client.*
+- [[config-server/src/server/server.go.md|clientMailbox]] (struct: belongs_to)
+- [[config-server/src/server/server.go.md|clientMailbox]] (struct: defines_method)
 - [[config-server/src/server/server.go.md|newClientMailbox]] (function: belongs_to)
 - [[config-server/src/server/server_test.go.md|server_test.go]] (calls)
 - [[config-server/src/server/server_test.go.md|server_test.go]] (same_package)

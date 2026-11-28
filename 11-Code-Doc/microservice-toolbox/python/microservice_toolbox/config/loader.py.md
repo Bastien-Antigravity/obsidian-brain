@@ -30,7 +30,7 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/python/microservice_toolbox/logger/__init__.py.md|__init__.py]] (imports)
 - [[microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|get_base_dir]] (function: calls)
 - [[microservice-toolbox/python/microservice_toolbox/utils/helpers.py.md|helpers.py]] (imports)
-- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls) — *Generic callback alias for backward compatibility*
+- [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|CALLBACK_TYPE]] (constant: calls)
 - [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|lib_loader.py]] (imports)
 - [[microservice-toolbox/python/microservice_toolbox/utils/lib_loader.py.md|load_libdistconf]] (function: calls)
 - [[microservice-toolbox/python/microservice_toolbox/version/__init__.py.md|__init__.py]] (imports)
@@ -75,10 +75,10 @@ Automatically generated mirror for `microservice-toolbox/python/microservice_too
 - [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|on_update]] (function: belongs_to) — *Deprecated: Use on_live_conf_update(). Semantic alias for backward compatibility.*
 - [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|set_logger]] (function: belongs_to) — *Updates the logger after instantiation.*
 - [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|share_config]] (function: belongs_to) — *Shares service configuration with the ecosystem.*
-- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Synchronizes configuration state with the remote Config Server via the bridge.*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|sync]] (function: belongs_to) — *Pulls the full configuration state from the Go bridge into self.data.*
 - [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|unmarshal_local]] (function: belongs_to)
 - [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|validate_unique_ports]] (function: belongs_to)
-- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Property alias for get_version().*
+- [[microservice-toolbox/python/microservice_toolbox/config/loader.py.md|version]] (function: belongs_to) — *Returns the dynamic semantic version of the microservice from VERSION.txt.*
 - [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (calls)
 - [[microservice-toolbox/python/microservice_toolbox/utils/init.py.md|init.py]] (imports)
 - [[microservice-toolbox/python/test_logger.py.md|test_logger.py]] (calls)

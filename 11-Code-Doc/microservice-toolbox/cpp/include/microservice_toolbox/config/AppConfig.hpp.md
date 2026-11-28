@@ -42,7 +42,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.ShareConfig]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.SyncFromBridge]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.Sync]] (method: defines_method)
-- [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.UnmarshalLocal]] (method: defines_method)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.UnmarshalLocal]] (method: defines_method) — *Look in our private local config member (Ecosystem Parity)*
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.ValidateUniquePorts]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.validateResolvedAddr]] (method: defines_method)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/CommandLine.hpp.md|CommandLine.hpp]] (imports)
@@ -83,7 +83,7 @@ Automatically generated mirror for `microservice-toolbox/cpp/include/microservic
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.ShareConfig]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.SyncFromBridge]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.Sync]] (method: belongs_to)
-- [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.UnmarshalLocal]] (method: belongs_to)
+- [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.UnmarshalLocal]] (method: belongs_to) — *Look in our private local config member (Ecosystem Parity)*
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.ValidateUniquePorts]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig.validateResolvedAddr]] (method: belongs_to)
 - [[microservice-toolbox/cpp/include/microservice_toolbox/config/AppConfig.hpp.md|AppConfig]] (class: belongs_to)

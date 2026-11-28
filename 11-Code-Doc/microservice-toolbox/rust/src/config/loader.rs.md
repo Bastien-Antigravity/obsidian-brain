@@ -44,15 +44,15 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.from_value]] (method: defines_method) — *Creates an AppConfig wrapping explicit yaml value data.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_addr]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_bridge_error]] (method: defines_method)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_capability]] (method: defines_method) — *Resolves a capability block as JSON via CGO bridge or local YAML tree.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_capability]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_capability_by_handle]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_config]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local]] (method: defines_method)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local_tls_config]] (method: defines_method) — *Precedence: `local.<service_key>.tls` (exact, then '-'/'_' normalized) -> `local.tls`.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local_tls_config]] (method: defines_method) — *Resolves service-private X.509 TLS/mTLS paths strictly from `local`.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: defines_method)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: defines_method) — *Resolves the REST Management address for a capability.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_service_name]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_version]] (method: defines_method)
@@ -69,7 +69,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.share_config]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync_from_bridge]] (method: defines_method)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.unmarshal_local]] (method: defines_method) — *Parity with Go's UnmarshalLocal.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.unmarshal_local]] (method: defines_method) — *Unmarshals the 'local' (local) configuration section into a target type.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.validate_unique_ports]] (method: defines_method)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|LocalTLSConfig.is_empty]] (method: defines_method) — *Returns true when all fields are unset/empty.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|LocalTLSConfig.should_verify_client]] (method: defines_method) — *Defaults to true whenever `ca_file` is configured and `verify_client` is not explicitly `false`.*
@@ -105,15 +105,15 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.from_value]] (method: belongs_to) — *Creates an AppConfig wrapping explicit yaml value data.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_addr]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_bridge_error]] (method: belongs_to)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_capability]] (method: belongs_to) — *Resolves a capability block as JSON via CGO bridge or local YAML tree.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_capability]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_capability_by_handle]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_config]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local]] (method: belongs_to)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local_tls_config]] (method: belongs_to) — *Precedence: `local.<service_key>.tls` (exact, then '-'/'_' normalized) -> `local.tls`.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_local_tls_config]] (method: belongs_to) — *Resolves service-private X.509 TLS/mTLS paths strictly from `local`.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: belongs_to)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: belongs_to) — *Resolves the REST Management address for a capability.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_service_name]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_version]] (method: belongs_to)
@@ -130,7 +130,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/config/loader.
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.share_config]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.sync_from_bridge]] (method: belongs_to)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.unmarshal_local]] (method: belongs_to) — *Parity with Go's UnmarshalLocal.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.unmarshal_local]] (method: belongs_to) — *Unmarshals the 'local' (local) configuration section into a target type.*
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.validate_unique_ports]] (method: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: belongs_to)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: defines_method)

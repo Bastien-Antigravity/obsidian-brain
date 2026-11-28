@@ -19,14 +19,14 @@ Automatically generated mirror for `distributed-config/src/network/proto_handler
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/src/core/config.go.md|Config.ReplaceLive]] (method: calls) — *ReplaceLive atomically replaces the entire live configuration snapshot under writeMu.*
-- [[distributed-config/src/core/config.go.md|Config.SetVersion]] (method: calls) — *SetVersion atomically updates the tracked configuration revision.*
-- [[distributed-config/src/core/config.go.md|Config.Set]] (method: calls) — *Performs a thread-safe atomic swap (Read-Copy-Update) serialized by writeMu.*
+- [[distributed-config/src/core/config.go.md|Config.ReplaceLive]] (method: calls)
+- [[distributed-config/src/core/config.go.md|Config.SetVersion]] (method: calls)
+- [[distributed-config/src/core/config.go.md|Config.Set]] (method: calls)
 - [[distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: defines_method)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: defines_method)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoingWithVersion]] (method: defines_method)
-- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: defines_method)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: defines_method) — *restarted config-server with a lower store revision can be resynchronized via GET_SYNC.*
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnGapDetected]] (method: defines_method)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: defines_method)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: defines_method)
@@ -44,7 +44,7 @@ Automatically generated mirror for `distributed-config/src/network/proto_handler
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.GetLastSeenVersion]] (method: belongs_to)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: belongs_to)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoingWithVersion]] (method: belongs_to)
-- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: belongs_to)
+- [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleOutgoing]] (method: belongs_to) — *restarted config-server with a lower store revision can be resynchronized via GET_SYNC.*
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnGapDetected]] (method: belongs_to)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnLiveConfUpdate]] (method: belongs_to)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.SetOnRegistryUpdate]] (method: belongs_to)

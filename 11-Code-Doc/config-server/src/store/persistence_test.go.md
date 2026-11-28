@@ -20,8 +20,8 @@ Automatically generated mirror for `config-server/src/store/persistence_test.go`
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: calls) — *NewPersistenceManager creates a new manager for the given file path.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: calls)
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: calls)
 - [[config-server/src/store/persistence.go.md|persistence.go]] (same_package)
 - [[config-server/src/store/persistence_test.go.md|mockLogger.Critical]] (method: defines_method)
 - [[config-server/src/store/persistence_test.go.md|mockLogger.Error]] (method: defines_method)

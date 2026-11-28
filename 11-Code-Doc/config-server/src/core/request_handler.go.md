@@ -23,11 +23,11 @@ Automatically generated mirror for `config-server/src/core/request_handler.go`.
 - [[config-server/src/helpers/config_updates_test.go.md|config_updates_test.go]] (imports)
 - [[config-server/src/store/persistence.go.md|persistence.go]] (imports)
 - [[config-server/src/store/store.go.md|Store.Get]] (method: calls) — *Callers MUST treat the returned map as immutable.*
-- [[config-server/src/store/store.go.md|Store.UpdateAtomicWithOCC]] (method: calls) — *UpdateAtomicWithOCC applies a modification function only if the current version matches expectedVersion (or expectedV...*
-- [[config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls) — *Implementation: Copy-On-Write + atomic pointer swap.*
+- [[config-server/src/store/store.go.md|Store.UpdateAtomicWithOCC]] (method: calls) — *than the current store version, the version advances to explicitVersion;*
+- [[config-server/src/store/store.go.md|Store.UpdateAtomic]] (method: calls)
 
 ### 🔌 Consumers (Inbound)
-- [[config-server/src/core/request_handler.go.md|ProcessRequest]] (function: belongs_to) — *It may also trigger a broadcast and persistence via the provided callbacks.*
+- [[config-server/src/core/request_handler.go.md|ProcessRequest]] (function: belongs_to) — *It delegates to ProcessRequestWithVersion for atomic version-stamped execution.*
 - [[config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (calls)
 - [[config-server/src/core/request_handler_test.go.md|request_handler_test.go]] (same_package)
 - [[config-server/src/server/connection.go.md|connection.go]] (calls)

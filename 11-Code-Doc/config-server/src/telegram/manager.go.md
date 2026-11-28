@@ -20,7 +20,7 @@ Automatically generated mirror for `config-server/src/telegram/manager.go`.
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
 - [[config-server/src/core/controller.go.md|controller.go]] (imports)
-- [[config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: defines_method) — *RebuildMenu dynamically pulls the configuration map and registers it with the TeleClient.*
+- [[config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: defines_method)
 - [[config-server/src/telegram/manager_test.go.md|manager_test.go]] (same_package)
 - [[config-server/src/telegram/manager_test.go.md|mockController.DeleteConfig]] (method: calls)
 - [[config-server/src/telegram/manager_test.go.md|mockController.ListConfig]] (method: calls)
@@ -33,7 +33,7 @@ Automatically generated mirror for `config-server/src/telegram/manager.go`.
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/cmd/config-server/main.go.md|main.go]] (calls)
-- [[config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: belongs_to) — *RebuildMenu dynamically pulls the configuration map and registers it with the TeleClient.*
+- [[config-server/src/telegram/manager.go.md|MenuManager.RebuildMenu]] (method: belongs_to)
 - [[config-server/src/telegram/manager.go.md|MenuManager]] (struct: belongs_to) — *MenuManager orchestrates the rebuild operations of the Telegram interactive menus.*
 - [[config-server/src/telegram/manager.go.md|MenuManager]] (struct: defines_method) — *MenuManager orchestrates the rebuild operations of the Telegram interactive menus.*
 - [[config-server/src/telegram/manager.go.md|NewMenuManager]] (function: belongs_to) — *NewMenuManager creates a new MenuManager.*

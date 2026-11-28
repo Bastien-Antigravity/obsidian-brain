@@ -19,7 +19,7 @@ Automatically generated mirror for `distributed-config/src/network/sync_logic_te
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[distributed-config/src/core/config.go.md|Config.Get]] (method: calls) — *Returns an empty string if not found.*
+- [[distributed-config/src/core/config.go.md|Config.Get]] (method: calls)
 - [[distributed-config/src/core/config.go.md|config.go]] (imports)
 - [[distributed-config/src/network/proto_handler.go.md|ConfigProtoHandler.HandleIncoming]] (method: calls)
 - [[distributed-config/src/network/proto_handler.go.md|NewConfigHandler]] (function: calls)

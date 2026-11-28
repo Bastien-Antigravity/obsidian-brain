@@ -26,7 +26,7 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_grpc_listen_addr]] (method: calls)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_listen_addr]] (method: calls)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_public_ip]] (method: calls)
-- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: calls) — *Resolves the REST Management address for a capability.*
+- [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_rest_addr]] (method: calls)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_value]] (method: calls)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig.get_version]] (method: calls)
 - [[microservice-toolbox/rust/src/config/loader.rs.md|AppConfig]] (struct: calls)
@@ -73,8 +73,8 @@ Automatically generated mirror for `microservice-toolbox/rust/src/spec.rs`.
 - [[microservice-toolbox/rust/src/spec.rs.md|is_zero_f64]] (function: belongs_to)
 - [[microservice-toolbox/rust/src/spec.rs.md|is_zero_i32]] (function: belongs_to)
 - [[microservice-toolbox/rust/src/spec.rs.md|new_contracts_envelope]] (function: belongs_to) — *Wraps microservice-owned contracts with UTC generation metadata.*
-- [[microservice-toolbox/rust/src/spec.rs.md|publish]] (function: belongs_to) — *Dynamic registration alias adhering to fleet standards.*
-- [[microservice-toolbox/rust/src/spec.rs.md|publish_service_spec]] (function: belongs_to) — *FAIL-FAST: Validates web_interface reachability and specification synchronously before spawning.*
+- [[microservice-toolbox/rust/src/spec.rs.md|publish]] (function: belongs_to) — *FAIL-FAST: Returns error immediately if web_interface or specification validation fails.*
+- [[microservice-toolbox/rust/src/spec.rs.md|publish_service_spec]] (function: belongs_to) — *FAIL-FAST: Returns error immediately if web_interface or specification validation fails.*
 - [[microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_internal]] (function: belongs_to)
 - [[microservice-toolbox/rust/src/spec.rs.md|publish_service_spec_sync]] (function: belongs_to) — *FAIL-FAST: Returns error immediately if web_interface or specification validation fails.*
 - [[microservice-toolbox/rust/src/spec.rs.md|publish_with_lifecycle]] (function: belongs_to) — *Dynamic registration with lifecycle integration alias adhering to fleet standards.*

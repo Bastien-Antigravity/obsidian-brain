@@ -19,8 +19,8 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 
 <!-- SYNC:START -->
 ### 📦 Dependencies (Outbound)
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: defines_method) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: defines_method) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: defines_method)
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: defines_method)
 
 ### 🔌 Consumers (Inbound)
 - [[config-server/cmd/config-server/main.go.md|main.go]] (calls)
@@ -39,8 +39,8 @@ Automatically generated mirror for `config-server/src/store/persistence.go`.
 - [[config-server/src/server/server_test.go.md|server_test.go]] (calls)
 - [[config-server/src/server/server_test.go.md|server_test.go]] (imports)
 - [[config-server/src/store/persistence.go.md|NewPersistenceManager]] (function: belongs_to) — *NewPersistenceManager creates a new manager for the given file path.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: belongs_to) — *If the file does not exist, it returns an empty ConfigMap and no error.*
-- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: belongs_to) — *prevent file corruption in case of crashes during the write process.*
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Load]] (method: belongs_to)
+- [[config-server/src/store/persistence.go.md|PersistenceManager.Save]] (method: belongs_to)
 - [[config-server/src/store/persistence.go.md|PersistenceManager]] (struct: belongs_to) — *PersistenceManager handles saving and loading the configuration from disk.*
 - [[config-server/src/store/persistence.go.md|PersistenceManager]] (struct: defines_method) — *PersistenceManager handles saving and loading the configuration from disk.*
 - [[config-server/src/store/persistence_test.go.md|persistence_test.go]] (calls)

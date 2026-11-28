@@ -21,7 +21,7 @@ Automatically generated mirror for `config-server/src/rest/mfe.js`.
 ### 📦 Dependencies (Outbound)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.bindEvents]] (method: defines_method)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.cacheDom]] (method: defines_method)
-- [[config-server/src/rest/mfe.js.md|ConfigServerMFE.displayConfigs]] (method: defines_method)
+- [[config-server/src/rest/mfe.js.md|ConfigServerMFE.displayConfigs]] (method: defines_method) — *>': '&gt;',*
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.displayStatus]] (method: defines_method)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.escapeAttribute]] (method: defines_method)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.escapeHTML]] (method: defines_method)
@@ -42,7 +42,7 @@ Automatically generated mirror for `config-server/src/rest/mfe.js`.
 - [[config-server/src/rest/mfe.js.md|Alias]] (class: belongs_to)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.bindEvents]] (method: belongs_to)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.cacheDom]] (method: belongs_to)
-- [[config-server/src/rest/mfe.js.md|ConfigServerMFE.displayConfigs]] (method: belongs_to)
+- [[config-server/src/rest/mfe.js.md|ConfigServerMFE.displayConfigs]] (method: belongs_to) — *>': '&gt;',*
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.displayStatus]] (method: belongs_to)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.escapeAttribute]] (method: belongs_to)
 - [[config-server/src/rest/mfe.js.md|ConfigServerMFE.escapeHTML]] (method: belongs_to)
